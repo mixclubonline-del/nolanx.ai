@@ -1,0 +1,98 @@
+{
+  "title": "Pengaturan",
+  "messages": {
+    "settingsSaved": "Pengaturan berhasil disimpan",
+    "settingsReset": "Pengaturan direset ke default",
+    "failedToSave": "Gagal menyimpan pengaturan",
+    "failedToLoad": "Gagal memuat konfigurasi",
+    "restartRequired": "Silakan restart aplikasi agar pengaturan proxy berlaku"
+  },
+  "models": {
+    "title": "Model",
+    "placeholder": "Masukkan nama model",
+    "addModel": "Tambah model",
+    "types": {
+      "text": "teks",
+      "image": "gambar",
+      "video": "video"
+    }
+  },
+  "provider": {
+    "title": "Penyedia",
+    "addProvider": "Tambah penyedia",
+    "providerName": "Nama penyedia",
+    "providerNamePlaceholder": "Masukkan nama penyedia",
+    "apiUrl": "URL API",
+    "apiUrlPlaceholder": "Masukkan URL API",
+    "apiKey": "Kunci API",
+    "apiKeyPlaceholder": "Masukkan kunci API",
+    "apiKeyDescription": "Kunci API Anda akan disimpan dengan aman",
+    "maxTokens": "Maks token",
+    "maxTokensPlaceholder": "Masukkan maks token",
+    "maxTokensDescription": "Jumlah token maksimum dalam respons",
+    "customProvider": "✨ Penyedia kustom",
+    "imageGeneration": "🎨 Pembuatan gambar",
+    "delete": "Hapus",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "noModelsSelected": "Tambahkan setidaknya satu model"
+  },
+  "proxy": {
+    "title": "Pengaturan Proxy",
+    "mode": "Mode proxy",
+    "selectMode": "Pilih mode proxy",
+    "modes": {
+      "none": "Tanpa proxy",
+      "system": "Proxy sistem",
+      "custom": "Proxy kustom"
+    },
+    "enable": "Aktifkan proxy",
+    "url": "URL proxy",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Uji koneksi",
+    "testing": "Menguji...",
+    "testSuccess": "Uji koneksi proxy berhasil",
+    "testFailed": "Uji koneksi proxy gagal: {{message}}",
+    "testError": "Terjadi kesalahan saat menguji koneksi proxy",
+    "status": {
+      "enabled": "Aktif",
+      "disabled": "Nonaktif",
+      "misconfigured": "Salah konfigurasi"
+    }
+  },
+  "comfyui.workflows": "Alur kerja",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Pembuatan gambar lokal",
+    "enable": "Aktifkan",
+    "debugStatus": "🔍 Status debug",
+    "status": {
+      "disabled": "Nonaktif",
+      "running": "Berjalan",
+      "installed": "Terpasang (Tidak berjalan)",
+      "notInstalled": "Tidak terpasang",
+      "notRunning": "Tidak berjalan",
+      "checking": "Memeriksa..."
+    },
+    "urlDescription": "URL layanan ComfyUI, masukkan alamat jika sudah terpasang",
+    "invalidUrl": "Masukkan URL yang valid (mis., http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI belum terpasang",
+    "notInstalledDescription": "Instal ComfyUI untuk mengaktifkan pembuatan gambar lokal dengan model Flux",
+    "installButton": "Instal ComfyUI",
+    "startButton": "Mulai ComfyUI",
+    "uninstallButton": "Copot ComfyUI",
+    "confirmUninstall": "Yakin ingin mencopot ComfyUI? Ini akan menghapus ComfyUI sepenuhnya dari sistem Anda, termasuk semua model yang diunduh dan konfigurasi.",
+    "confirmUninstallButton": "Konfirmasi pencopotan",
+    "uninstallProgress": {
+      "title": "Mencopot ComfyUI",
+      "preparing": "Menyiapkan pencopotan...",
+      "inProgress": "Pencopotan sedang berlangsung... Mohon tunggu.",
+      "logTitle": "Log pencopotan:",
+      "completed": "Pencopotan selesai"
+    },
+    "notInstalled": "ComfyUI tidak terpasang"
+  },
+  "saveSettings": "Simpan pengaturan",
+  "close": "Tutup",
+  "cancel": "Batal"
+}

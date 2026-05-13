@@ -1,0 +1,99 @@
+{
+  "title": "सेटिंग्स",
+  "messages": {
+    "settingsSaved": "सेटिंग्स सफलतापूर्वक सहेजी गईं",
+    "settingsReset": "सेटिंग्स डिफ़ॉल्ट पर रीसेट की गईं",
+    "failedToSave": "सेटिंग्स सहेज नहीं सके",
+    "failedToLoad": "कॉन्फ़िगरेशन लोड नहीं हो सका",
+    "restartRequired": "प्रॉक्सी सेटिंग्स लागू करने के लिए कृपया ऐप रीस्टार्ट करें"
+  },
+  "models": {
+    "title": "मॉडल",
+    "placeholder": "मॉडल नाम दर्ज करें",
+    "addModel": "मॉडल जोड़ें",
+    "types": {
+      "text": "टेक्स्ट",
+      "image": "इमेज",
+      "video": "वीडियो"
+    }
+  },
+  "provider": {
+    "title": "प्रोवाइडर्स",
+    "addProvider": "प्रोवाइडर जोड़ें",
+    "providerName": "प्रोवाइडर नाम",
+    "providerNamePlaceholder": "प्रोवाइडर नाम दर्ज करें",
+    "apiUrl": "API URL",
+    "apiUrlPlaceholder": "API URL दर्ज करें",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "API key दर्ज करें",
+    "apiKeyDescription": "आपकी API key सुरक्षित रूप से संग्रहीत होगी",
+    "maxTokens": "अधिकतम टोकन्स",
+    "maxTokensPlaceholder": "अधिकतम टोकन्स दर्ज करें",
+    "maxTokensDescription": "रेस्पॉन्स में टोकन्स की अधिकतम संख्या",
+    "customProvider": "✨ कस्टम प्रोवाइडर",
+    "imageGeneration": "🎨 इमेज जनरेशन",
+    "delete": "हटाएँ",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "noModelsSelected": "कृपया कम से कम एक मॉडल जोड़ें"
+  },
+  "proxy": {
+    "title": "प्रॉक्सी सेटिंग्स",
+    "mode": "प्रॉक्सी मोड",
+    "selectMode": "प्रॉक्सी मोड चुनें",
+    "modes": {
+      "none": "कोई प्रॉक्सी नहीं",
+      "system": "सिस्टम प्रॉक्सी",
+      "custom": "कस्टम प्रॉक्सी"
+    },
+    "enable": "प्रॉक्सी सक्षम करें",
+    "url": "प्रॉक्सी URL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "कनेक्शन टेस्ट",
+    "testing": "टेस्ट हो रहा है...",
+    "testSuccess": "प्रॉक्सी कनेक्शन टेस्ट सफल",
+    "testFailed": "प्रॉक्सी कनेक्शन टेस्ट विफल: {{message}}",
+    "testError": "प्रॉक्सी कनेक्शन टेस्ट त्रुटि",
+    "status": {
+      "enabled": "सक्षम",
+      "disabled": "अक्षम",
+      "misconfigured": "गलत कॉन्फ़िगरेशन"
+    }
+  },
+  "comfyui.workflows": "वर्कफ़्लो",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 लोकल इमेज जनरेशन",
+    "enable": "सक्षम करें",
+    "debugStatus": "🔍 डीबग स्थिति",
+    "status": {
+      "disabled": "अक्षम",
+      "running": "चल रहा है",
+      "installed": "इंस्टॉल्ड (चल नहीं रहा)",
+      "notInstalled": "इंस्टॉल्ड नहीं",
+      "notRunning": "चल नहीं रहा",
+      "checking": "जाँच हो रही है..."
+    },
+    "urlDescription": "ComfyUI सेवा URL, यदि पहले से इंस्टॉल है तो पता दर्ज करें",
+    "invalidUrl": "कृपया एक वैध URL दर्ज करें (उदा., http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI इंस्टॉल नहीं है",
+    "notInstalledDescription": "Flux मॉडलों के साथ लोकल इमेज जनरेशन सक्षम करने के लिए ComfyUI इंस्टॉल करें",
+    "installButton": "ComfyUI इंस्टॉल करें",
+    "startButton": "ComfyUI शुरू करें",
+    "uninstallButton": "ComfyUI अनइंस्टॉल करें",
+    "confirmUninstall": "क्या आप वाकई ComfyUI अनइंस्टॉल करना चाहते हैं? यह आपके सिस्टम से ComfyUI को पूरी तरह हटा देगा, जिसमें सभी डाउनलोड किए गए मॉडल और कॉन्फ़िगरेशन शामिल हैं।",
+    "confirmUninstallButton": "अनइंस्टॉल की पुष्टि करें",
+    "uninstallProgress": {
+      "title": "ComfyUI अनइंस्टॉल हो रहा है",
+      "preparing": "अनइंस्टॉल की तैयारी हो रही है...",
+      "inProgress": "अनइंस्टॉल प्रगति पर है... कृपया प्रतीक्षा करें।",
+      "logTitle": "अनइंस्टॉल लॉग:",
+      "completed": "अनइंस्टॉल पूरा हुआ"
+    },
+    "notInstalled": "ComfyUI इंस्टॉल नहीं है"
+  },
+  "saveSettings": "सेटिंग्स सहेजें",
+  "close": "बंद करें",
+  "cancel": "रद्द करें"
+}
+

@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Inglese",
+    "zh-CN": "Cinese (semplificato)"
+  },
+  "buttons": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "create": "Crea",
+    "submit": "Invia",
+    "loading": "Caricamento...",
+    "retry": "Riprova"
+  },
+  "common": {
+    "yes": "Sì",
+    "no": "No",
+    "ok": "OK",
+    "error": "Errore",
+    "success": "Successo",
+    "warning": "Avviso",
+    "info": "Informazioni"
+  },
+  "messages": {
+    "success": "Operazione completata con successo",
+    "error": "Si è verificato un errore",
+    "loading": "Caricamento, attendi...",
+    "noData": "Nessun dato disponibile",
+    "confirmDelete": "Sei sicuro di voler eliminare questo elemento?",
+    "saved": "Salvato con successo",
+    "deleted": "Eliminato con successo"
+  },
+  "notifications": {
+    "title": "Notifiche",
+    "clear": "Cancella",
+    "markAllAsRead": "Segna tutto come letto",
+    "allRead": "Tutto letto",
+    "newImageGenerated": "Nuova immagine generata"
+  },
+  "navigation": {
+    "home": "Home",
+    "canvas": "Storyboard",
+    "settings": "Impostazioni",
+    "back": "Indietro"
+  },
+  "dialog": {
+    "confirmTitle": "Conferma azione",
+    "confirmDescription": "Questa azione non può essere annullata",
+    "cancel": "Annulla",
+    "confirm": "Conferma"
+  },
+  "update": {
+    "title": "🎉 Nuova versione disponibile",
+    "description": "È disponibile una nuova versione v{{version}}. Vuoi installarla ora?",
+    "installNote": "Fai clic su \"Installa aggiornamento\" per riavviare l'app e installare l'aggiornamento.",
+    "laterButton": "Ricordamelo più tardi",
+    "installButton": "Installa aggiornamento",
+    "installing": "Installazione..."
+  },
+  "auth": {
+    "login": "Accedi",
+    "logout": "Esci",
+    "loginToJaaz": "Accedi a Jaaz",
+    "myAccount": "Il mio account",
+    "loginDescription": "Accedi per usare i modelli AI cloud",
+    "startLogin": "Avvia accesso",
+    "preparingLogin": "Preparazione accesso...",
+    "cancel": "Annulla",
+    "loginSuccessMessage": "Accesso riuscito!",
+    "authExpiredMessage": "Autorizzazione scaduta, accedi di nuovo",
+    "authErrorMessage": "Si è verificato un errore durante la verifica dell'autorizzazione",
+    "waitingForBrowser": "In attesa del completamento dell'accesso nel browser...",
+    "pollErrorMessage": "Impossibile verificare lo stato di accesso, riprova",
+    "preparingLoginMessage": "Preparazione accesso...",
+    "browserLoginMessage": "Completa l'accesso nel browser",
+    "loginRequestFailed": "Richiesta di accesso non riuscita, riprova",
+    "logoutSuccessMessage": "Disconnessione riuscita",
+    "notLoggedIn": "Non hai effettuato l'accesso",
+    "balance": "Saldo",
+    "recharge": "Ricarica"
+  },
+  "socket": {
+    "connectionError": "Errore di connessione ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Connessione non riuscita, aggiorna la pagina"
+  }
+}

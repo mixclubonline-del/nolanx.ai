@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Inggris",
+    "zh-CN": "Tionghoa (Sederhana)"
+  },
+  "buttons": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "create": "Buat",
+    "submit": "Kirim",
+    "loading": "Memuat...",
+    "retry": "Coba lagi"
+  },
+  "common": {
+    "yes": "Ya",
+    "no": "Tidak",
+    "ok": "OK",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "warning": "Peringatan",
+    "info": "Informasi"
+  },
+  "messages": {
+    "success": "Operasi berhasil diselesaikan",
+    "error": "Terjadi kesalahan",
+    "loading": "Memuat, mohon tunggu...",
+    "noData": "Tidak ada data",
+    "confirmDelete": "Apakah Anda yakin ingin menghapus item ini?",
+    "saved": "Berhasil disimpan",
+    "deleted": "Berhasil dihapus"
+  },
+  "notifications": {
+    "title": "Notifikasi",
+    "clear": "Bersihkan",
+    "markAllAsRead": "Tandai semua sebagai dibaca",
+    "allRead": "Semua sudah dibaca",
+    "newImageGenerated": "Gambar baru dihasilkan"
+  },
+  "navigation": {
+    "home": "Beranda",
+    "canvas": "Papan cerita",
+    "settings": "Pengaturan",
+    "back": "Kembali"
+  },
+  "dialog": {
+    "confirmTitle": "Konfirmasi tindakan",
+    "confirmDescription": "Tindakan ini tidak dapat dibatalkan",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi"
+  },
+  "update": {
+    "title": "🎉 Versi baru tersedia",
+    "description": "Versi baru v{{version}} tersedia. Ingin menginstalnya sekarang?",
+    "installNote": "Klik \"Instal pembaruan\" untuk memulai ulang aplikasi dan menginstal pembaruan.",
+    "laterButton": "Ingatkan nanti",
+    "installButton": "Instal pembaruan",
+    "installing": "Menginstal..."
+  },
+  "auth": {
+    "login": "Masuk",
+    "logout": "Keluar",
+    "loginToJaaz": "Masuk ke Jaaz",
+    "myAccount": "Akun saya",
+    "loginDescription": "Masuk untuk menggunakan model AI cloud",
+    "startLogin": "Mulai masuk",
+    "preparingLogin": "Menyiapkan login...",
+    "cancel": "Batal",
+    "loginSuccessMessage": "Login berhasil!",
+    "authExpiredMessage": "Otorisasi kedaluwarsa, silakan login kembali",
+    "authErrorMessage": "Terjadi kesalahan saat memeriksa status otorisasi",
+    "waitingForBrowser": "Menunggu penyelesaian login di browser...",
+    "pollErrorMessage": "Gagal memeriksa status login, silakan coba lagi",
+    "preparingLoginMessage": "Menyiapkan login...",
+    "browserLoginMessage": "Silakan selesaikan login di browser",
+    "loginRequestFailed": "Permintaan login gagal, silakan coba lagi",
+    "logoutSuccessMessage": "Berhasil keluar",
+    "notLoggedIn": "Belum masuk",
+    "balance": "Saldo",
+    "recharge": "Isi ulang"
+  },
+  "socket": {
+    "connectionError": "Kesalahan koneksi ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Koneksi gagal, silakan muat ulang halaman"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "انگلیسی",
+    "zh-CN": "چینی (ساده‌شده)"
+  },
+  "buttons": {
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "create": "ایجاد",
+    "submit": "ارسال",
+    "loading": "در حال بارگذاری...",
+    "retry": "تلاش دوباره"
+  },
+  "common": {
+    "yes": "بله",
+    "no": "خیر",
+    "ok": "تأیید",
+    "error": "خطا",
+    "success": "موفق",
+    "warning": "هشدار",
+    "info": "اطلاعات"
+  },
+  "messages": {
+    "success": "عملیات با موفقیت انجام شد",
+    "error": "خطایی رخ داد",
+    "loading": "در حال بارگذاری، لطفاً صبر کنید...",
+    "noData": "داده‌ای موجود نیست",
+    "confirmDelete": "آیا مطمئن هستید که می‌خواهید این مورد را حذف کنید؟",
+    "saved": "با موفقیت ذخیره شد",
+    "deleted": "با موفقیت حذف شد"
+  },
+  "notifications": {
+    "title": "اعلان‌ها",
+    "clear": "پاک کردن",
+    "markAllAsRead": "علامت‌گذاری همه به‌عنوان خوانده‌شده",
+    "allRead": "همه خوانده شد",
+    "newImageGenerated": "تصویر جدید تولید شد"
+  },
+  "navigation": {
+    "home": "خانه",
+    "canvas": "استوری‌بورد",
+    "settings": "تنظیمات",
+    "back": "بازگشت"
+  },
+  "dialog": {
+    "confirmTitle": "تأیید اقدام",
+    "confirmDescription": "این اقدام قابل بازگشت نیست",
+    "cancel": "لغو",
+    "confirm": "تأیید"
+  },
+  "update": {
+    "title": "🎉 نسخه جدید موجود است",
+    "description": "نسخه جدید v{{version}} موجود است. آیا می‌خواهید همین حالا نصب کنید؟",
+    "installNote": "برای راه‌اندازی مجدد برنامه و نصب به‌روزرسانی روی «نصب به‌روزرسانی» کلیک کنید.",
+    "laterButton": "بعداً یادآوری کن",
+    "installButton": "نصب به‌روزرسانی",
+    "installing": "در حال نصب..."
+  },
+  "auth": {
+    "login": "ورود",
+    "logout": "خروج",
+    "loginToJaaz": "ورود به Jaaz",
+    "myAccount": "حساب من",
+    "loginDescription": "برای استفاده از مدل‌های AI ابری وارد شوید",
+    "startLogin": "شروع ورود",
+    "preparingLogin": "در حال آماده‌سازی ورود...",
+    "cancel": "لغو",
+    "loginSuccessMessage": "ورود موفق!",
+    "authExpiredMessage": "مجوز منقضی شده است، لطفاً دوباره وارد شوید",
+    "authErrorMessage": "هنگام بررسی وضعیت مجوز خطایی رخ داد",
+    "waitingForBrowser": "در انتظار تکمیل ورود در مرورگر...",
+    "pollErrorMessage": "بررسی وضعیت ورود ناموفق بود، لطفاً دوباره تلاش کنید",
+    "preparingLoginMessage": "در حال آماده‌سازی ورود...",
+    "browserLoginMessage": "لطفاً ورود را در مرورگر کامل کنید",
+    "loginRequestFailed": "درخواست ورود ناموفق بود، لطفاً دوباره تلاش کنید",
+    "logoutSuccessMessage": "با موفقیت خارج شدید",
+    "notLoggedIn": "وارد نشده‌اید",
+    "balance": "موجودی",
+    "recharge": "شارژ"
+  },
+  "socket": {
+    "connectionError": "خطای اتصال ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "اتصال ناموفق بود، لطفاً صفحه را تازه‌سازی کنید"
+  }
+}

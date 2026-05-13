@@ -1,0 +1,166 @@
+{
+  "title": "Hikâye Panosu",
+  "rename": "Hikâye panosunu yeniden adlandır",
+  "delete": "Hikâye panosunu sil",
+  "share": "Hikâye panosunu paylaş",
+  "export": "Hikâye panosunu dışa aktar",
+  "exportImages": "Kareleri dışa aktar",
+  "import": "Hikâye panosunu içe aktar",
+  "untitled": "Adsız Sahne",
+  "back": "Yönetmen masasına dön",
+  "saveSnapshot": "Sahne anlık görüntüsünü kaydet",
+  "loadSnapshot": "Sahne anlık görüntüsünü yükle",
+  "saved": "Sahne kaydedildi ✅",
+  "messages": {
+    "canvasRenamed": "Hikâye panosu başarıyla yeniden adlandırıldı",
+    "canvasDeleted": "Hikâye panosu başarıyla silindi",
+    "canvasExported": "Hikâye panosu başarıyla dışa aktarıldı",
+    "canvasImported": "Hikâye panosu başarıyla içe aktarıldı",
+    "failedToRename": "Hikâye panosu yeniden adlandırılamadı",
+    "failedToDelete": "Hikâye panosu silinemedi",
+    "failedToCreateFile": "Sahne dosyası oluşturulamadı",
+    "noImagesSelected": "Hiç kare seçilmedi",
+    "exportingImages": "Kareler dışa aktarılıyor...",
+    "failedToExportImages": "Kareler dışa aktarılamadı"
+  },
+  "deleteDialog": {
+    "title": "Hikâye panosunu sil",
+    "description": "Bu hikâye panosunu silmek istediğinizden emin misiniz? Bu sahne sonsuza kadar kaybolacak.",
+    "cancel": "İptal",
+    "delete": "Sil"
+  },
+  "tool": {
+    "hand": "Kamerayı kaydır",
+    "selection": "Sahne seç",
+    "rectangle": "Kare kutusu",
+    "ellipse": "Spot ışığı",
+    "text": "Başlık kartı",
+    "image": "Görsel varlık",
+    "shape": "Aksesuar şekli",
+    "freedraw": "Serbest çizim",
+    "arrow": "Aksiyon oku",
+    "line": "Hareket çizgisi",
+    "zoomFit": "Tüm kareleri sığdır"
+  },
+  "popbar": {
+    "addToChat": "Nolan ile konuş"
+  },
+  "loading": {
+    "preparingCanvas": "Kanvas hazırlanıyor…",
+    "loadingSharedCanvas": "Paylaşılan kanvas yükleniyor…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Sahne başlığı",
+    "published": "Yayınlandı",
+    "checking": "Kontrol ediliyor...",
+    "publish": "Yayınla",
+    "copied": "Kopyalandı!",
+    "share": "Paylaş",
+    "sharedCanvas": "Paylaşılan kanvas",
+    "shareCopiedToast": "Paylaşım bağlantısı panoya kopyalandı!",
+    "shareCopyFailedToast": "Paylaşım bağlantısı kopyalanamadı"
+  },
+  "preview": {
+    "mute": "Sessiz",
+    "unmute": "Sesi aç",
+    "volume": "Ses: {{percent}}%",
+    "export": "Dışa aktar",
+    "exporting": "Dışa aktarılıyor...",
+    "exportVideo": "Videoyu dışa aktar",
+    "playing": "Oynatılıyor",
+    "placeholder": {
+      "title": "Önizleme penceresi",
+      "hint": "Önizlemeyi görmek için zaman çizelgesine varlık ekleyin"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Parçalar",
+    "trackLabels": {
+      "script": "Senaryo",
+      "keyframe": "Kilit kare",
+      "video": "Video",
+      "audio": "Ses",
+      "world": "Dünya"
+    },
+    "indexedTitles": {
+      "script": "Senaryo {{index}}",
+      "keyframe": "Kilit kare {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Ses {{index}}",
+      "world": "Dünya {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Uzaklaştır",
+      "zoomIn": "Yakınlaştır",
+      "rearrangeAllLanes": "Tüm şeritleri yeniden düzenle (Manyetik yakalama — 0 boşluk)",
+      "play": "Oynat",
+      "pause": "Duraklat"
+    },
+    "actions": {
+      "clickToDrop": "Bırakmak için tıkla",
+      "clickToSelect": "Seçmek için tıkla"
+    },
+    "assetTypes": {
+      "script": "Senaryo",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Ses",
+      "asset": "Varlık",
+      "world": "Dünya"
+    },
+    "fallbackTitles": {
+      "script": "Senaryo",
+      "keyframe": "Kilit kare",
+      "video": "Video",
+      "audio": "Ses",
+      "asset": "Varlık",
+      "untitled": "Adsız",
+      "world": "Dünya"
+    },
+    "alts": {
+      "keyframe": "Kilit kare",
+      "videoThumbnail": "Video küçük resmi"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Kaydetme başarısız",
+      "saving": "Kaydediliyor...",
+      "savedAt": "{{time}}'de kaydedildi"
+    }
+  },
+  "publish": {
+    "title": "Topluluğa yayınla",
+    "enterTitleError": "Lütfen bir başlık girin",
+    "success": "Kanvas topluluğa başarıyla yayınlandı!",
+    "failed": "Kanvas yayınlanamadı",
+    "warning": "Bu, bu kanvastaki tüm konuşmaları ve yaratıcı sonuçları topluluğa yayınlar.",
+    "oncePublished": "Yayınlandıktan sonra herkes çalışmanızı görüntüleyebilir ve keşfedebilir.",
+    "canvasTitleLabel": "KANVAS BAŞLIĞI",
+    "canvasTitlePlaceholder": "Kanvas başlığı girin",
+    "cancel": "İptal",
+    "publish": "Yayınla",
+    "publishing": "Yayınlanıyor..."
+  }
+}

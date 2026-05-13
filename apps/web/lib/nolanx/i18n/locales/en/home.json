@@ -1,0 +1,21 @@
+{
+  "title": "The World's First AI Agent Director: Nolan",
+  "subtitle": "Early Access Program",
+  "description": "The World's First AI Agent Director: Nolan",
+  "tabs": {
+    "myCanvases": "My Canvases",
+    "community": "Community"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan is preparing your canvas…",
+    "communitySessions": "Loading community sessions..."
+  },
+  "community": {
+    "loadFailed": "Failed to load community sessions",
+    "canvasNotAvailable": "Canvas not available for this session",
+    "likeFailed": "Failed to update like"
+  },
+  "allProjects": "All Projects",
+  "noCanvases": "No storyboards yet",
+  "newCanvas": "Untitled Scene"
+}

@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "ইংরেজি",
+    "zh-CN": "চীনা (সরলীকৃত)"
+  },
+  "buttons": {
+    "save": "সংরক্ষণ",
+    "cancel": "বাতিল",
+    "delete": "মুছুন",
+    "edit": "সম্পাদনা",
+    "create": "তৈরি করুন",
+    "submit": "জমা দিন",
+    "loading": "লোড হচ্ছে...",
+    "retry": "আবার চেষ্টা করুন"
+  },
+  "common": {
+    "yes": "হ্যাঁ",
+    "no": "না",
+    "ok": "ঠিক আছে",
+    "error": "ত্রুটি",
+    "success": "সফল",
+    "warning": "সতর্কতা",
+    "info": "তথ্য"
+  },
+  "messages": {
+    "success": "অপারেশন সফলভাবে সম্পন্ন হয়েছে",
+    "error": "একটি ত্রুটি ঘটেছে",
+    "loading": "লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...",
+    "noData": "কোনো ডেটা নেই",
+    "confirmDelete": "আপনি কি নিশ্চিত যে এই আইটেমটি মুছতে চান?",
+    "saved": "সফলভাবে সংরক্ষিত হয়েছে",
+    "deleted": "সফলভাবে মুছে ফেলা হয়েছে"
+  },
+  "notifications": {
+    "title": "বিজ্ঞপ্তি",
+    "clear": "মুছে ফেলুন",
+    "markAllAsRead": "সবগুলোকে পঠিত হিসেবে চিহ্নিত করুন",
+    "allRead": "সব পঠিত",
+    "newImageGenerated": "নতুন ছবি তৈরি হয়েছে"
+  },
+  "navigation": {
+    "home": "হোম",
+    "canvas": "স্টোরিবোর্ড",
+    "settings": "সেটিংস",
+    "back": "পিছনে"
+  },
+  "dialog": {
+    "confirmTitle": "কর্ম নিশ্চিত করুন",
+    "confirmDescription": "এই কাজটি বাতিল করা যাবে না",
+    "cancel": "বাতিল",
+    "confirm": "নিশ্চিত"
+  },
+  "update": {
+    "title": "🎉 নতুন সংস্করণ উপলব্ধ",
+    "description": "নতুন সংস্করণ v{{version}} উপলব্ধ। আপনি কি এখনই ইনস্টল করতে চান?",
+    "installNote": "\"আপডেট ইনস্টল\" ক্লিক করে অ্যাপটি রিস্টার্ট করে আপডেট ইনস্টল করুন।",
+    "laterButton": "পরে মনে করিয়ে দিন",
+    "installButton": "আপডেট ইনস্টল",
+    "installing": "ইনস্টল হচ্ছে..."
+  },
+  "auth": {
+    "login": "লগইন",
+    "logout": "লগআউট",
+    "loginToJaaz": "Jaaz-এ লগইন",
+    "myAccount": "আমার অ্যাকাউন্ট",
+    "loginDescription": "ক্লাউড AI মডেল ব্যবহার করতে লগইন করুন",
+    "startLogin": "লগইন শুরু করুন",
+    "preparingLogin": "লগইন প্রস্তুত হচ্ছে...",
+    "cancel": "বাতিল",
+    "loginSuccessMessage": "লগইন সফল!",
+    "authExpiredMessage": "অনুমোদনের মেয়াদ শেষ, আবার লগইন করুন",
+    "authErrorMessage": "অনুমোদনের অবস্থা যাচাই করতে গিয়ে ত্রুটি হয়েছে",
+    "waitingForBrowser": "ব্রাউজারে লগইন সম্পূর্ণ হওয়ার অপেক্ষায়...",
+    "pollErrorMessage": "লগইনের অবস্থা যাচাই করা যায়নি, আবার চেষ্টা করুন",
+    "preparingLoginMessage": "লগইন প্রস্তুত হচ্ছে...",
+    "browserLoginMessage": "অনুগ্রহ করে ব্রাউজারে লগইন সম্পূর্ণ করুন",
+    "loginRequestFailed": "লগইন অনুরোধ ব্যর্থ হয়েছে, আবার চেষ্টা করুন",
+    "logoutSuccessMessage": "সফলভাবে লগআউট হয়েছে",
+    "notLoggedIn": "লগইন করা নেই",
+    "balance": "ব্যালেন্স",
+    "recharge": "রিচার্জ"
+  },
+  "socket": {
+    "connectionError": "সংযোগ ত্রুটি ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "সংযোগ ব্যর্থ হয়েছে, অনুগ্রহ করে পেজ রিফ্রেশ করুন"
+  }
+}

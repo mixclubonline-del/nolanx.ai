@@ -1,0 +1,88 @@
+{
+  "languages": {
+    "en": "English",
+    "zh-CN": "简体中文"
+  },
+  "buttons": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएँ",
+    "edit": "संपादित करें",
+    "create": "बनाएँ",
+    "submit": "सबमिट",
+    "loading": "लोड हो रहा है...",
+    "retry": "फिर प्रयास करें"
+  },
+  "common": {
+    "yes": "हाँ",
+    "no": "नहीं",
+    "ok": "OK",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "warning": "चेतावनी",
+    "info": "जानकारी"
+  },
+  "messages": {
+    "success": "ऑपरेशन सफलतापूर्वक पूरा हुआ",
+    "error": "एक त्रुटि हुई",
+    "loading": "लोड हो रहा है, कृपया प्रतीक्षा करें...",
+    "noData": "कोई डेटा उपलब्ध नहीं",
+    "confirmDelete": "क्या आप वाकई इस आइटम को हटाना चाहते हैं?",
+    "saved": "सफलतापूर्वक सहेजा गया",
+    "deleted": "सफलतापूर्वक हटाया गया"
+  },
+  "notifications": {
+    "title": "सूचनाएँ",
+    "clear": "साफ़ करें",
+    "markAllAsRead": "सभी को पढ़ा हुआ चिह्नित करें",
+    "allRead": "सभी पढ़े गए",
+    "newImageGenerated": "नई छवि जनरेट हुई"
+  },
+  "navigation": {
+    "home": "होम",
+    "canvas": "स्टोरीबोर्ड",
+    "settings": "सेटिंग्स",
+    "back": "वापस"
+  },
+  "dialog": {
+    "confirmTitle": "कार्रवाई की पुष्टि करें",
+    "confirmDescription": "यह कार्रवाई वापस नहीं ली जा सकती",
+    "cancel": "रद्द करें",
+    "confirm": "पुष्टि करें"
+  },
+  "update": {
+    "title": "🎉 नया संस्करण उपलब्ध है",
+    "description": "नया संस्करण v{{version}} उपलब्ध है। क्या आप इसे अभी इंस्टॉल करना चाहेंगे?",
+    "installNote": "\"Install Update\" पर क्लिक करने से ऐप रीस्टार्ट होगा और अपडेट इंस्टॉल हो जाएगा।",
+    "laterButton": "बाद में याद दिलाएँ",
+    "installButton": "अपडेट इंस्टॉल करें",
+    "installing": "इंस्टॉल हो रहा है..."
+  },
+  "auth": {
+    "login": "लॉगिन",
+    "logout": "लॉगआउट",
+    "loginToJaaz": "Jaaz में लॉगिन करें",
+    "myAccount": "मेरा अकाउंट",
+    "loginDescription": "क्लाउड AI मॉडल उपयोग करने के लिए लॉगिन करें",
+    "startLogin": "लॉगिन शुरू करें",
+    "preparingLogin": "लॉगिन की तैयारी हो रही है...",
+    "cancel": "रद्द करें",
+    "loginSuccessMessage": "लॉगिन सफल!",
+    "authExpiredMessage": "अनुमति समाप्त हो गई है, कृपया फिर से लॉगिन करें",
+    "authErrorMessage": "अनुमति स्थिति जाँचते समय त्रुटि हुई",
+    "waitingForBrowser": "ब्राउज़र में लॉगिन पूरा होने की प्रतीक्षा...",
+    "pollErrorMessage": "लॉगिन स्थिति जाँचने में विफल, कृपया फिर प्रयास करें",
+    "preparingLoginMessage": "लॉगिन की तैयारी हो रही है...",
+    "browserLoginMessage": "कृपया ब्राउज़र में लॉगिन पूरा करें",
+    "loginRequestFailed": "लॉगिन अनुरोध विफल, कृपया फिर प्रयास करें",
+    "logoutSuccessMessage": "सफलतापूर्वक लॉगआउट हुआ",
+    "notLoggedIn": "लॉगिन नहीं",
+    "balance": "बैलेंस",
+    "recharge": "रीचार्ज"
+  },
+  "socket": {
+    "connectionError": "कनेक्शन त्रुटि ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "कनेक्शन विफल, कृपया पेज रीफ्रेश करें"
+  }
+}
+

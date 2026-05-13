@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Inglês",
+    "zh-CN": "Chinês (simplificado)"
+  },
+  "buttons": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "create": "Criar",
+    "submit": "Enviar",
+    "loading": "Carregando...",
+    "retry": "Tentar novamente"
+  },
+  "common": {
+    "yes": "Sim",
+    "no": "Não",
+    "ok": "OK",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Aviso",
+    "info": "Informação"
+  },
+  "messages": {
+    "success": "Operação concluída com sucesso",
+    "error": "Ocorreu um erro",
+    "loading": "Carregando, aguarde...",
+    "noData": "Nenhum dado disponível",
+    "confirmDelete": "Tem certeza de que deseja excluir este item?",
+    "saved": "Salvo com sucesso",
+    "deleted": "Excluído com sucesso"
+  },
+  "notifications": {
+    "title": "Notificações",
+    "clear": "Limpar",
+    "markAllAsRead": "Marcar tudo como lido",
+    "allRead": "Tudo lido",
+    "newImageGenerated": "Nova imagem gerada"
+  },
+  "navigation": {
+    "home": "Início",
+    "canvas": "Storyboard",
+    "settings": "Configurações",
+    "back": "Voltar"
+  },
+  "dialog": {
+    "confirmTitle": "Confirmar ação",
+    "confirmDescription": "Esta ação não pode ser desfeita",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "update": {
+    "title": "🎉 Nova versão disponível",
+    "description": "Uma nova versão v{{version}} está disponível. Deseja instalar agora?",
+    "installNote": "Clique em \"Instalar atualização\" para reiniciar o app e instalar a nova versão.",
+    "laterButton": "Lembrar mais tarde",
+    "installButton": "Instalar atualização",
+    "installing": "Instalando..."
+  },
+  "auth": {
+    "login": "Entrar",
+    "logout": "Sair",
+    "loginToJaaz": "Entrar no Jaaz",
+    "myAccount": "Minha conta",
+    "loginDescription": "Faça login para usar modelos de IA na nuvem",
+    "startLogin": "Iniciar login",
+    "preparingLogin": "Preparando login...",
+    "cancel": "Cancelar",
+    "loginSuccessMessage": "Login realizado com sucesso!",
+    "authExpiredMessage": "Autorização expirada, faça login novamente",
+    "authErrorMessage": "Ocorreu um erro ao verificar o status de autorização",
+    "waitingForBrowser": "Aguardando a conclusão do login no navegador...",
+    "pollErrorMessage": "Falha ao verificar o status do login, tente novamente",
+    "preparingLoginMessage": "Preparando login...",
+    "browserLoginMessage": "Conclua o login no navegador",
+    "loginRequestFailed": "A solicitação de login falhou, tente novamente",
+    "logoutSuccessMessage": "Logout realizado com sucesso",
+    "notLoggedIn": "Não conectado",
+    "balance": "Saldo",
+    "recharge": "Recarregar"
+  },
+  "socket": {
+    "connectionError": "Erro de conexão ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Falha na conexão, atualize a página"
+  }
+}

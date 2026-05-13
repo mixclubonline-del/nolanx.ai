@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Lubię to",
+      "liked": "Polubione",
+      "share": "Udostępnij",
+      "download": "Pobierz",
+      "downloading": "Pobieranie...",
+      "copying": "Kopiowanie...",
+      "recreate": "Utwórz ponownie"
+    },
+    "aria": {
+      "closeVideo": "Zamknij wideo",
+      "goBack": "Wróć",
+      "likeVideo": "Polub wideo",
+      "unlikeVideo": "Cofnij polubienie",
+      "shareVideo": "Udostępnij wideo",
+      "downloadVideo": "Pobierz wideo",
+      "copyingLink": "Kopiowanie linku...",
+      "downloading": "Pobieranie..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Link skopiowany",
+      "videoLinkCopiedMessage": "Link do wideo skopiowany do schowka",
+      "copyFailedTitle": "Nie udało się skopiować",
+      "copyFailedMessage": "Nie można skopiować linku do schowka",
+      "shareFailedTitle": "Udostępnianie nieudane",
+      "shareFailedMessage": "Nie można skopiować linku do wideo",
+      "loginFirst": "Zaloguj się najpierw",
+      "cannotFollowYourself": "Nie możesz obserwować samego siebie",
+      "followed": "Zaobserwowano",
+      "unfollowed": "Przestano obserwować",
+      "operationFailed": "Operacja nieudana"
+    },
+    "generation": {
+      "generationModel": "Model generowania",
+      "withEffect": "z {effect}",
+      "effectBadge": "EFEKT",
+      "prompt": "Podpowiedź",
+      "referenceImage": "Obraz referencyjny",
+      "referenceImageAlt": "Obraz referencyjny do generowania wideo",
+      "negativePrompt": "Negatywny prompt",
+      "parameters": "Parametry",
+      "guidance": "Prowadzenie",
+      "steps": "Kroki",
+      "seed": "Ziarno",
+      "ratio": "Proporcje"
+    },
+    "author": {
+      "uploaded": "Dodano {time}",
+      "profile": "Profil",
+      "follow": "Obserwuj",
+      "unfollow": "Przestań obserwować",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Komentarze",
+      "placeholder": "Podziel się opinią o tym wideo...",
+      "send": "Wyślij",
+      "sending": "Wysyłanie...",
+      "empty": "Bądź pierwszą osobą, która podzieli się opinią o tej kreacji!"
+    },
+    "time": {
+      "now": "Przed chwilą",
+      "minutesAgo": "{minutes, plural, one {# minutę temu} few {# minuty temu} many {# minut temu} other {# minuty temu}}",
+      "hoursAgo": "{hours, plural, one {# godzinę temu} few {# godziny temu} many {# godzin temu} other {# godziny temu}}",
+      "daysAgo": "{days, plural, one {# dzień temu} few {# dni temu} many {# dni temu} other {# dni temu}}"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Kredyty"
+    },
+    "earnCreditsCapsule": {
+      "label": "Zdobądź kredyty",
+      "aria": {
+        "openRewardCenter": "Zdobądź kredyty"
+      },
+      "badge": {
+        "claimed": "Odebrano"
+      },
+      "title": {
+        "base": "Zdobądź kredyty",
+        "canClaim": "Zdobądź kredyty (+{amount})",
+        "claimedToday": "Zdobądź kredyty (odebrane dziś)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Centrum nagród",
+      "subtitle": {
+        "main": "Polecaj i zarabiaj + Codzienne nagrody",
+        "joined": "Zobacz, kto dołączył"
+      },
+      "common": {
+        "loading": "Ładowanie..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} kredytów"
+      },
+      "actions": {
+        "back": "Wstecz",
+        "close": "Zamknij",
+        "copy": "Kopiuj",
+        "share": "Udostępnij",
+        "inviteFriends": "Zaproś znajomych",
+        "claim": "Odbierz",
+        "claiming": "Odbieranie...",
+        "claimed": "Odebrano"
+      },
+      "aria": {
+        "copyInviteCode": "Skopiuj kod zaproszenia",
+        "shareInviteLink": "Udostępnij link zaproszenia"
+      },
+      "labels": {
+        "inviteLink": "Link zaproszenia",
+        "inviteCode": "Kod zaproszenia",
+        "invited": "Zaproszono",
+        "rewarded": "Nagrodzono",
+        "pending": "Oczekuje",
+        "recentInvites": "Ostatnie zaproszenia",
+        "recentRewards": "Ostatnie nagrody",
+        "referEarn": "Polecaj i zarabiaj",
+        "dailyRewards": "Codzienne nagrody",
+        "dailyLogin": "Codzienne logowanie",
+        "rewardedProgress": "Nagrodzono: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Brak zaproszeń.",
+        "noRewards": "Brak nagród."
+      },
+      "status": {
+        "rewarded": "Nagrodzono",
+        "pending": "Oczekuje",
+        "verified": "Zweryfikowano"
+      },
+      "share": {
+        "title": "Zaproszenie ReelMind",
+        "text": "Dołącz do mnie na ReelMind i odbierz darmowe kredyty."
+      },
+      "toast": {
+        "copiedTitle": "Skopiowano",
+        "copiedDescription": "{label} skopiowano do schowka.",
+        "copyFailedTitle": "Nie udało się skopiować",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Skopiuj ręcznie.",
+        "claimFailedTitle": "Nie udało się odebrać",
+        "claimedTitle": "Odebrano",
+        "claimedDescription": "Otrzymałeś {amount} kredytów."
+      },
+      "referEarn": {
+        "tipLabel": "Zasady poleceń i zarabiania",
+        "tipTitle": "Jak to działa",
+        "tipBody1": "Udostępnij swój link zaproszenia. Gdy nowy użytkownik zarejestruje się z Twoim kodem i wykona kwalifikującą akcję, kredyty zostaną przyznane po weryfikacji systemu.",
+        "tipBody2": "Nagrody progowe: 1-5 = 50, 6-15 = 100, 16-20 = 200 kredytów.",
+        "cardTitle": "Zdobądź kredyty, zapraszając znajomych",
+        "upTo": "Do {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Zasady codziennego logowania",
+        "tipTitle": "Codzienna nagroda",
+        "tipBodyPrefix": "Nagrody zaczynają się od",
+        "tipBodyDay2": "2. dnia",
+        "tipBodySuffix": "serii i resetują się każdego dnia UTC.",
+        "status": {
+          "loading": "Ładowanie statusu...",
+          "claimed": "Odebrano",
+          "readyToClaim": "Gotowe do odbioru",
+          "locked": "Zablokowane"
+        },
+        "errors": {
+          "alreadyClaimed": "Dziś już odebrano.",
+          "notEligible": "Obecnie nie możesz odebrać.",
+          "riskBlocked": "Odbiór zablokowany przez kontrolę ryzyka.",
+          "generic": "Coś poszło nie tak. Spróbuj ponownie później."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Odkrywaj",
+      "video": "Wideo",
+      "image": "Obraz",
+      "music": "Muzyka",
+      "edit": "Edytuj",
+      "experiment": "Eksperyment"
+    },
+    "special": {
+      "nolan": "Nolana"
+    },
+    "bottom": {
+      "affiliate": "Program partnerski",
+      "contactUs": "Kontakt",
+      "blog": "Bloga",
+      "apiPlatform": "Platforma API"
+    },
+    "badges": {
+      "help": "Pomoc",
+      "new": "Nowe",
+      "free": "Darmowe"
+    },
+    "sidebar": {
+      "more": "Więcej",
+      "closeMenu": "Zamknij menu",
+      "moreTools": "Więcej narzędzi",
+      "followOnX": "Obserwuj nas na X (Twitter)",
+      "followOnTikTok": "Obserwuj nas na TikTok",
+      "subscribeOnYouTube": "Subskrybuj nasz kanał YouTube",
+      "termsOfService": "Warunki korzystania",
+      "privacyPolicy": "Polityka prywatności"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "CECHY",
+        "models": "MODELE"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Utwórz wideo",
+          "description": "Generuj filmy AI"
+        },
+        "cinemaStudioVideo": {
+          "title": "Wideo ze studia kinowego",
+          "description": "Profesjonalne wideo z ruchami kamery"
+        },
+        "mixedMedia": {
+          "title": "Media mieszane",
+          "description": "Łącz tekst, obrazy i wideo"
+        },
+        "editVideo": {
+          "title": "Edytuj wideo",
+          "description": "Edytuj sceny, ujęcia, elementy"
+        },
+        "clickToAd": {
+          "title": "Kliknij, aby reklamować",
+          "description": "Zamień klipy w reklamy"
+        },
+        "sora2Trends": {
+          "title": "Trendy Sory 2",
+          "description": "Pomysły na filmy oparte na trendach"
+        },
+        "lipsyncStudio": {
+          "title": "Studio Lipsync",
+          "description": "Synchronizuj dźwięk z twarzami"
+        },
+        "drawToVideo": {
+          "title": "Rysuj do wideo",
+          "description": "Szkic zamienia się w kino"
+        },
+        "sketchToVideo": {
+          "title": "Szkic do wideo",
+          "description": "Od szkicu do wideo z Sorą 2"
+        },
+        "ugcFactory": {
+          "title": "Fabryka UGC",
+          "description": "Szybko gotowe treści dla twórcy"
+        },
+        "videoUpscale": {
+          "title": "Ekskluzywny wideo",
+          "description": "Zwiększ rozdzielczość z przejrzystością"
+        },
+        "higgsfieldAnimate": {
+          "title": "Animacja Higgsfielda",
+          "description": "Animuj zdjęcia ze stylem"
+        },
+        "recastStudio": {
+          "title": "Studio przekształcenia",
+          "description": "Przekształcenie aktorów i stylów"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Sterowanie kamerą kinową"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Dynamiczna kontrola ruchu"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Wysokiej jakości konwersja tekstu na wideo"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Precyzyjne edycje wideo"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Generacja wideo nowej generacji"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Realistyczne kino"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Stylizowany ruch i rytm"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Szybki film wideo"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Czyste detale i ton"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Występy napędzane awatarem"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Funkcje",
+        "models": "Modele"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Utwórz obraz",
+          "description": "Generuj obrazy AI"
+        },
+        "cinemaStudioImage": {
+          "title": "Obraz studia kinowego",
+          "description": "Prawdziwa symulacja aparatu i obiektywu"
+        },
+        "createStoryboard": {
+          "title": "Utwórz Storyboard",
+          "description": "Zaprojektuj sceny z historii"
+        },
+        "soulIdCharacter": {
+          "title": "Znak identyfikacyjny duszy",
+          "description": "Stwórz niepowtarzalną postać"
+        },
+        "relight": {
+          "title": "Rozjaśnij się",
+          "description": "Dostosuj położenie, kolor i jasność oświetlenia"
+        },
+        "inpaint": {
+          "title": "Malować",
+          "description": "Wybierz obszar, opisz zmianę"
+        },
+        "imageUpscale": {
+          "title": "Ekskluzywny obraz",
+          "description": "Popraw jakość obrazu"
+        },
+        "faceSwap": {
+          "title": "Zamiana twarzy",
+          "description": "Twórz realistyczne zamiany twarzy"
+        },
+        "characterSwap": {
+          "title": "Zamiana postaci",
+          "description": "Twórz realistyczne zamiany postaci"
+        },
+        "drawToEdit": {
+          "title": "Rysuj, aby edytować",
+          "description": "Od szkicu do zdjęcia"
+        },
+        "instadump": {
+          "title": "Instagram",
+          "description": "Zamień selfie w pełną bibliotekę treści"
+        },
+        "photodumpStudio": {
+          "title": "Studio Photodump",
+          "description": "Wygeneruj swoją estetykę"
+        },
+        "fashionFactory": {
+          "title": "Fabryka Mody",
+          "description": "Twórz zestawy modowe"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Ultrarealistyczne wizualizacje mody"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Storyboard, edytuj, twórz"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Najlepszy w historii model obrazu 4K"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "Model obrazu 4K nowej generacji"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Precyzyjne renderowanie prawdziwych kolorów"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Szczegóły zoptymalizowane pod kątem szybkości"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Natychmiastowe, realistyczne portrety"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Fotorealistyczne, szybkie i dokładne obrazy"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Realistyczne obrazy"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Zaawansowany model edycji obrazu"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Skaler o wysokiej rozdzielczości"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Wszystko",
+        "recommended": "Polecane",
+        "saved": "Zapisane"
+      },
+      "labels": {
+        "camera": "APARAT",
+        "lens": "OBIEKTYW",
+        "focalLength": "OGNISKOWA",
+        "aperture": "PRZYSŁONA"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "Zapisz zestaw",
+        "removeSetup": "Usuń zestaw",
+        "close": "Zamknij"
+      },
+      "empty": "Brak zapisanych zestawów"
+    },
+    "page": {
+      "title": "Eksperyment",
+      "subtitle": "Najpierw wypróbuj nowe przepływy pracy",
+      "back": "Powrót do eksperymentu"
+    },
+    "menu": {
+      "title": "Eksperyment",
+      "open": "Otwórz"
+    },
+    "tabs": {
+      "character": "Charakter",
+      "inpaint": "Malować",
+      "cinemaStudio": "Studio kinowe",
+      "motionControl": "Sterowanie ruchem",
+      "assist": "Asysta"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Malować",
+        "description": "Zamaluj obszar i opisz zmianę"
+      },
+      "cinemaStudio": {
+        "title": "Studio kinowe",
+        "description": "Profesjonalne procesy filmowe"
+      },
+      "motionControl": {
+        "title": "Sterowanie ruchem",
+        "description": "Skopiuj ruch z filmu referencyjnego"
+      },
+      "assist": {
+        "title": "Asysta",
+        "description": "Narzędzia podpowiedzi i kreatywnego asystenta"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Charakter",
+        "subtitle": "Narzędzia spójności znaków (symbol zastępczy)"
+      },
+      "inpaint": {
+        "title": "Malować",
+        "subtitle": "Prześlij multimedia, wybierz obszar i opisz zmianę"
+      },
+      "cinemaStudio": {
+        "title": "Studio kinowe",
+        "subtitle": "Twórz kinowe ujęcia za pomocą podpowiedzi rozpoznawanych przez kamerę"
+      },
+      "motionControl": {
+        "title": "Sterowanie ruchem",
+        "subtitle": "Odtwórz ruch ze swoim obrazem"
+      },
+      "assist": {
+        "title": "Asysta",
+        "subtitle": "Czat, wskazówki i narzędzia podpowiedzi"
+      }
+    },
+    "actions": {
+      "upload": "Prześlij multimedia",
+      "generate": "Wygeneruj",
+      "history": "Historia",
+      "howItWorks": "Jak to działa",
+      "sendMessage": "Wyślij wiadomość...",
+      "tryExample": "Spróbuj przykładu",
+      "send": "Wyślij"
+    },
+    "placeholders": {
+      "exploreFeatures": "ODKRYJ FUNKCJE",
+      "settings": "Ustawienia",
+      "camera": "Kamera",
+      "cameraHint": "Wybierz zachowania kamery (symbol zastępczy)",
+      "lens": "Obiektyw",
+      "lensHint": "Wybierz opcje obiektywu (symbol zastępczy)",
+      "image": "Obraz",
+      "video": "Wideo",
+      "scenePrompt": "Opisz scenę, którą sobie wyobrażasz..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Dodaj ruch do skopiowania",
+          "description": "Czas trwania filmu: 3–30 sekund"
+        },
+        "addCharacter": {
+          "title": "Dodaj swoją postać",
+          "description": "Obraz z widoczną twarzą i ciałem"
+        }
+      },
+      "quality": {
+        "title": "Jakość",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Ustawienia zaawansowane"
+      },
+      "hero": {
+        "title": {
+          "prefix": "ODtwórz KAŻDY",
+          "highlight": "RUCH",
+          "suffix": "Z TWOIM OBRAZEM"
+        },
+        "subtitle": "Skopiuj ruch z dowolnego filmu i umieść swoją postać w tym samym ruchu"
+      },
+      "library": {
+        "title": "Zacznij od skopiowania ruchu z biblioteki"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Asystent",
+        "subtitle": "Zespół doktorantów w Twojej kieszeni, stworzony dla twórców."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Co możesz zrobić?",
+          "description": "Poznaj funkcje sztucznej inteligencji ReelMind"
+        },
+        "howToCreate": {
+          "title": "Jak mogę stworzyć oszałamiającą treść?",
+          "description": "Wskazówki dotyczące pisania lepszych podpowiedzi AI"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Wygeneruj monit dotyczący obrazu duszy",
+          "description": "Napisz monit o obrazy o wysokiej estetyce"
+        },
+        "generateVideoPrompt": {
+          "title": "Wygeneruj monit wideo",
+          "description": "Napisz zachętę do filmów wideo"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Spójność charakteru",
+          "description": "Zachowaj spójność swojej postaci w różnych klatkach (symbol zastępczy)"
+        },
+        "library": {
+          "title": "Biblioteka postaci",
+          "description": "Wybierz zapisaną postać lub zacznij od szablonów (symbol zastępczy)"
+        }
+      },
+      "placeholders": {
+        "preview": "Podgląd (symbol zastępczy)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - Darmowa społeczność twórców wideo AI do tworzenia i udostępniania filmów",
+      "description": "Odkrywaj popularne kreatywne wideo od twórców z całego świata. Znajdź inspirację, rozrywkę i remiksuj ulubione."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 jest już dostępne!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Wszystkie",
+        "latest": "Najnowsze",
+        "hot": "Popularne"
+      },
+      "tooltip": {
+        "filterByModel": "Filtruj według modelu {model}"
+      },
+      "aria": {
+        "previous": "Poprzednie kategorie",
+        "next": "Następne kategorie"
+      },
+      "error": {
+        "loadFailed": "Nie udało się wczytać kategorii"
+      },
+      "actions": {
+        "retry": "Spróbuj ponownie"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "Twórz wideo AI"
+      },
+      "nolan": {
+        "title": "Nolana",
+        "description": "Najlepszy na świecie reżyser-agent AI"
+      },
+      "badges": {
+        "models": "Modele",
+        "free": "ZA DARMO"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Odkrywaj - ReelMind",
+      "description": "Odkrywaj popularne kreatywne wideo od twórców z całego świata na ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "Modele AI i efekty - ReelMind",
+      "description": "Przeglądaj i używaj modeli oraz efektów wideo AI do tworzenia niesamowitych filmów generowanych przez AI na platformie ReelMind. Poznaj naszą kolekcję najnowocześniejszych modeli AI."
+    },
+    "page": {
+      "title": "Modele AI i efekty",
+      "description": "Przeglądaj naszą kolekcję najnowocześniejszych modeli AI i efektów do generowania wideo",
+      "footerIntro": "Odkryj naszą kolekcję {count} modeli AI do generowania wideo."
+    },
+    "sections": {
+      "models": "Modele",
+      "effects": "Efekty"
+    },
+    "actions": {
+      "viewAll": "Zobacz wszystko",
+      "viewAllModels": "Zobacz wszystkie modele",
+      "backToModels": "Wróć do modeli"
+    },
+    "types": {
+      "allModels": "Wszystkie modele",
+      "textToVideo": "Tekst → Wideo",
+      "imageToVideo": "Obraz → Wideo",
+      "videoToVideo": "Wideo → Wideo"
+    },
+    "all": {
+      "titleAll": "Wszystkie modele wideo",
+      "titleByType": "Modele {type}",
+      "description": "Przeglądaj naszą kolekcję modeli AI do generowania wideo",
+      "countAll": "({count} modeli)",
+      "countByType": "({count} modeli {type})",
+      "loadingMore": "Ładowanie kolejnych modeli...",
+      "loadMore": "Załaduj więcej modeli",
+      "end": "To już koniec! Wszystkie modele zostały wczytane.",
+      "empty": "Nie znaleziono modeli pasujących do kryteriów."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Punkt kontrolny",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "Obsługiwane funkcje",
+      "metaTitle": "{name} - Model AI | ReelMind",
+      "metaDescriptionFallback": "Poznaj model {name} do generowania wideo na ReelMind.",
+      "metaErrorTitle": "Szczegóły modelu | ReelMind",
+      "metaErrorDescription": "Poznaj modele AI do generowania wideo na ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "Efekty AI - ReelMind",
+      "description": "Przeglądaj i używaj efektów wideo AI do ulepszania filmów generowanych przez AI na platformie ReelMind."
+    },
+    "page": {
+      "title": "Efekty AI",
+      "description": "Przeglądaj naszą kolekcję efektów AI do ulepszania wideo"
+    },
+    "all": {
+      "title": "Wszystkie efekty AI",
+      "description": "Przeglądaj pełną kolekcję efektów AI do ulepszania wideo"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Wróć do efektów",
+        "goBack": "Wstecz",
+        "applyThisEffect": "Zastosuj ten efekt"
+      },
+      "badge": "Efekt",
+      "addedOn": "Dodano {date}",
+      "errors": {
+        "notFound": "Nie znaleziono efektu",
+        "loadFailed": "Nie udało się wczytać szczegółów efektu"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "Twórz wideo AI - ReelMind",
+      "description": "Twórz niesamowite filmy generowane przez AI za pomocą naszych potężnych modeli i narzędzi AI na platformie ReelMind."
+    },
+    "loading": "Ładowanie...",
+    "loadingMobile": "Ładowanie widoku mobilnego...",
+    "loadingControlPanel": "Ładowanie panelu sterowania...",
+    "controlPanel": {
+      "modelAndSettings": "Model i ustawienia",
+      "history": "Historia",
+      "model": "Model",
+      "selectModel": "Wybierz model"
+    },
+    "mobile": {
+      "backToCreate": "Wróć do tworzenia"
+    },
+    "modelSelector": {
+      "loadingModels": "Ładowanie modeli...",
+      "moreModels": "{count} modeli więcej",
+      "exploreMoreModels": "Odkryj jeszcze {count} modeli"
+    },
+    "promptInput": {
+      "title": "Podpowiedź",
+      "placeholder": "Opisz, co chcesz stworzyć...",
+      "enhance": "Ulepsz",
+      "undo": "Cofnij",
+      "restoreOriginalPromptTitle": "Przywróć oryginalny prompt",
+      "toastEnhanced": "Prompt ulepszony",
+      "toastRestored": "Oryginalny prompt przywrócony",
+      "enhanceFailed": "Nie udało się ulepszyć promptu",
+      "sensitiveError": "Wykryto wrażliwe słowo kluczowe: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "obraz",
+      "mentionVideoTokenPrefix": "wideo",
+      "mentionAudioTokenPrefix": "dźwięk"
+    },
+    "referenceUploader": {
+      "addOptional": "Dodaj opcjonalne odniesienie",
+      "referenceImage": "Obraz referencyjny",
+      "referenceImages": "Obrazy referencyjne ({current}/{max})",
+      "referenceVideo": "Wideo referencyjne",
+      "dropImage": "Upuść obraz tutaj lub kliknij, aby przesłać",
+      "dropImageMax": "Upuść do {max} obrazów tutaj lub kliknij, aby przesłać",
+      "dropVideo": "Upuść wideo tutaj lub kliknij, aby przesłać",
+      "pasteHint": "Wklej",
+      "videoUploaded": "Wideo przesłane",
+      "uploading": "Przesyłanie...",
+      "addMore": "Dodaj więcej",
+      "removeReference": "Usuń",
+      "referenceImageAlt": "Obraz referencyjny {index}",
+      "supportedFormats": "Obsługiwane: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, proporcje {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "Przesyłanie {type}...",
+      "processingFile": "Przetwarzanie pliku...",
+      "uploadReference": "Prześlij odniesienie {type}",
+      "image": "obraz",
+      "video": "wideo",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "Proporcje",
+      "duration": "Czas trwania",
+      "seconds": "{seconds}s",
+      "resolution": "Rozdzielczość",
+      "audio": "Dźwięk",
+      "on": "Włączone",
+      "off": "Wyłączone",
+      "advanced": "Zaawansowane",
+      "advancedShort": "Zaawansowane",
+      "creativityLevel": "Kreatywność",
+      "moreAccurate": "Bardziej dokładne",
+      "moreCreative": "Bardziej kreatywne",
+      "samplingSteps": "Kroki próbkowania",
+      "faster": "Szybciej ({steps} kroków)",
+      "higherQuality": "Wyższa jakość ({steps} kroków)",
+      "randomSeed": "Losowe ziarno",
+      "seedPlaceholder": "Wprowadź seed",
+      "generateRandomSeed": "Wygeneruj losowe ziarno",
+      "seedHint": "Użyj stałego seeda dla powtarzalnych wyników.",
+      "movementAmplitude": "Ruch",
+      "movementAmplitudeHint": "Kontroluje intensywność ruchu.",
+      "backgroundMusic": "Muzyka w tle",
+      "backgroundMusicHint": "Dodaje muzykę w tle, jeśli obsługiwane.",
+      "enabled": "Włączone",
+      "disabled": "Wyłączone",
+      "negativePrompt": "Negatywny prompt",
+      "negativePromptPlaceholder": "Czego unikać..."
+    },
+    "startToEndUploader": {
+      "title": "Klatki start-koniec",
+      "startFrame": "Klatka startowa",
+      "endFrame": "Klatka końcowa",
+      "dropStartImage": "Upuść obraz startowy lub kliknij, aby przesłać",
+      "dropEndImage": "Upuść obraz końcowy lub kliknij, aby przesłać",
+      "startFrameImageAlt": "Klatka startowa",
+      "endFrameImageAlt": "Klatka końcowa",
+      "uploading": "Przesyłanie...",
+      "instructions": "Prześlij obrazy startowy i końcowy, aby poprowadzić przejście.",
+      "supportedFormats": "Obsługiwane: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, proporcje {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Obrazy zostaną automatycznie skompresowane, jeśli to konieczne."
+    },
+    "modelTabs": {
+      "imageToVideo": "Obraz → Wideo",
+      "textToVideo": "Tekst → Wideo",
+      "firstLastFrame": "Pierwsza-ostatnia klatka",
+      "edit": "Edytuj",
+      "effect": "Efekt"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Film referencyjny",
+      "required": "Wymagane",
+      "removeVideo": "Usuń wideo",
+      "uploading": "Przesyłanie...",
+      "dropVideo": "Upuść film tutaj lub kliknij, aby go przesłać",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Elementy",
+      "optional": "Opcjonalnie ({current}/{max})",
+      "addElements": "Dodaj",
+      "elementAlt": "Element {index}",
+      "removeElement": "Usuń element {index}",
+      "dropElements": "Kliknij, aby dodać obrazy elementów",
+      "elementsHint": "Opcjonalne obrazy w celu zachowania znaków/stylu.",
+      "errors": {
+        "invalidVideoTitle": "Nieprawidłowy film",
+        "invalidVideoDescription": "Proszę wybrać plik wideo.",
+        "videoTooLargeTitle": "Film jest za duży",
+        "videoTooLargeDescription": "Maks. {maxMb}MB. Prześlij krótszy/mniejszy klip.",
+        "uploadFailedTitle": "Przesyłanie nie powiodło się",
+        "elementsLimitTitle": "Osiągnięto limit elementów",
+        "elementsLimitDescription": "Możesz dodać maksymalnie {max} obrazów.",
+        "imageTooSmall": "Obraz musi mieć rozmiar co najmniej {minWidth}×{minHeight} (obecnie: {width}×{height}).",
+        "imageBadRatio": "Współczynnik proporcji obrazu musi mieścić się w przedziale od {minAspectRatio} do {maxAspectRatio} (obecnie: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "Niektóre pliki zostały pominięte",
+        "someSkippedDescription": "Pliki {count} zostały pominięte ze względu na ograniczenia.",
+        "skippedTitle": "Pominięte",
+        "skippedNonImage": "W przypadku elementów dozwolone są wyłącznie obrazy.",
+        "imageCompressedTitle": "Obraz skompresowany",
+        "imageCompressedDescription": "Skompresowany z {original} do {final}.",
+        "skippedInvalidImage": "Nieprawidłowy obraz."
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to działa",
+      "hero": {
+        "title": "Twórz filmy jednym kliknięciem",
+        "subtitle": "Korzystaj z gotowych ustawień do sterowania kamerą, kadrowania i efektów wizualnych — lub korzystaj w pełni ręcznie z podpowiedziami."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "DODAJ OBRAZ",
+          "2": "WYBIERZ PRESET",
+          "3": "POBIERZ WIDEO"
+        },
+        "t2v": {
+          "1": "NAPISZ KONIECZNIE",
+          "2": "WYBIERZ MODEL",
+          "3": "POBIERZ WIDEO"
+        },
+        "flf": {
+          "1": "DODAJ RAMKI",
+          "2": "OPISZ PRZEJŚCIE",
+          "3": "POBIERZ WIDEO"
+        },
+        "edit": {
+          "1": "DODAJ WIDEO",
+          "2": "DODAJ ELEMENTY",
+          "3": "POBIERZ WIDEO"
+        }
+      },
+      "modes": {
+        "edit": "Edycja (wideo na wideo)",
+        "flf": "Pierwsza-ostatnia klatka",
+        "i2v": "Obraz na wideo",
+        "t2v": "Tekst na wideo"
+      },
+      "steps": {
+        "edit": {
+          "1": "Prześlij krótki film referencyjny.",
+          "2": "Opcjonalnie dodaj maksymalnie 4 obrazy elementów, aby zachować spójność znaków/stylu.",
+          "3": "Opisz, co zmienić (i co zachować) w monicie, a następnie wygeneruj."
+        },
+        "flf": {
+          "1": "Prześlij klatkę początkową i końcową.",
+          "2": "Opisz żądane przejście.",
+          "3": "Wygeneruj, aby uzyskać płynną transformację."
+        },
+        "i2v": {
+          "1": "Prześlij obraz referencyjny.",
+          "2": "Opisz ruch, kamerę i styl.",
+          "3": "Wybierz stosunek/czas trwania i wygeneruj."
+        },
+        "t2v": {
+          "1": "Opisz swoją scenę (temat, kamera, oświetlenie, styl).",
+          "2": "Wybierz stosunek/czas trwania i opcjonalnie dodaj podpowiedź negatywną.",
+          "3": "Generuj i iteruj z małymi zmianami."
+        }
+      },
+      "tip": "Wskazówka: bądź konkretny. Powiedz modelowi, co musi pozostać takie samo (tożsamość, logo, kompozycja).",
+      "templates": {
+        "title": "Ustawienia wstępne",
+        "subtitle": "Wybierz klasyczny preset i generuj szybciej.",
+        "use": "Użyj",
+        "clear": "Jasne",
+        "prev": "Poprzednie ustawienie wstępne",
+        "next": "Następne ustawienie wstępne",
+        "edit": {
+          "relight": {
+            "title": "Relaks i atmosfera",
+            "description": "Zmień porę dnia i oświetlenie kinowe."
+          },
+          "grade": {
+            "title": "Stopień filmowy",
+            "description": "Odcień turkusowo-pomarańczowy + ziarno filmowe, zachowanie ruchu i tożsamości."
+          },
+          "weather": {
+            "title": "Zmiana pogody",
+            "description": "Dodaj deszcz/mgłę, zachowując tożsamość."
+          },
+          "anime": {
+            "title": "Zmiana stylu anime",
+            "description": "Wygląd anime przy jednoczesnym zachowaniu tożsamości i ruchu."
+          },
+          "background": {
+            "title": "Zamień tło",
+            "description": "Zamień tło, zachowując temat."
+          },
+          "lux": {
+            "title": "Wysokiej jakości lakier",
+            "description": "Czystszy, gładszy i bardziej komercyjny charakter premium."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "Dzień → Noc",
+            "description": "Płynne przejście oświetlenia/czasu ze spójnym kadrowaniem."
+          },
+          "sketchToRender": {
+            "title": "Szkic → Renderuj",
+            "description": "Odkrywaj szczegóły stopniowo, od szkicu do ostatecznego renderowania."
+          },
+          "beforeAfter": {
+            "title": "Przed/po ujawnieniu",
+            "description": "Gustowna transformacja subtelnym ruchem."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "Życie portretowe",
+            "description": "Mrugnięcie + subtelny ruch z powolnym wciśnięciem."
+          },
+          "pan": {
+            "title": "Patelnia paralaksowa",
+            "description": "Filmowa panorama z rozmyciem głębi i ruchu."
+          },
+          "product": {
+            "title": "Spin produktu",
+            "description": "Wygląd produktu studyjnego z błyszczącymi refleksami."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "Reklama premium 8s",
+            "description": "Czyste, wysokiej klasy zdjęcie komercyjne."
+          },
+          "establish": {
+            "title": "Strzał ustalający",
+            "description": "Szerokie kinowe wprowadzenie do świata/sceny."
+          },
+          "anime": {
+            "title": "Otwarcie anime",
+            "description": "Stylizowane ujęcie w stylu otwierającym anime."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Obraz → Wideo wymaga obrazu referencyjnego.",
+        "i2vDescription": "Prześlij obraz referencyjny lub przełącz na model Tekst → Wideo.",
+        "v2vTitle": "Wideo → Wideo wymaga wideo referencyjnego.",
+        "v2vDescription": "Prześlij wideo referencyjne lub przełącz na model Tekst → Wideo."
+      },
+      "costLabel": "Koszt:",
+      "balanceLabel": "Saldo:",
+      "freeUnlimited": "Darmowe (nielimitowane)",
+      "credits": "Kredyty",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast to model Luxury i nie jest objęty darmowym użyciem Unlimited. Wymagana jest dodatkowa płatność.",
+        "veo31": "VEO 3.1 to model Luxury i nie jest objęty darmowym użyciem Unlimited. Wymagana jest dodatkowa płatność.",
+        "veo3": "VEO3 to model Luxury i nie jest objęty darmowym użyciem Unlimited. Wymagana jest dodatkowa płatność.",
+        "sora2Pro": "Sora-2 Pro to model Luxury i nie jest objęty darmowym użyciem Unlimited. Wymagana jest dodatkowa płatność."
+      },
+      "gettingCredits": "Pobieranie kredytów...",
+      "getBonusCredits": "Odbierz {amount} kredytów",
+      "submitting": "Wysyłanie...",
+      "loadingModels": "Ładowanie modeli...",
+      "uploadingAsset": "Przesyłanie zasobu...",
+      "uploadingImages": "Przesyłanie obrazów...",
+      "claimingCredits": "Odbieranie kredytów...",
+      "getMoreCredits": "Zdobądź więcej kredytów",
+      "generateVideo": "Generuj wideo"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Publikacja nie powiodła się",
+        "missingTitleDescription": "Wprowadź tytuł dla swojego wideo",
+        "processingTitle": "Przetwarzanie",
+        "processingDescription": "Przygotowywanie do publikacji wideo...",
+        "successTitle": "Opublikowano",
+        "successDescription": "Twoje wideo zostało udostępnione społeczności",
+        "failedTitle": "Publikacja nie powiodła się",
+        "failedDescription": "Sprawdź połączenie sieciowe lub spróbuj ponownie później"
+      },
+      "successTitle": "Opublikowano!",
+      "successDescription": "Twoje dzieło jest już dostępne w społeczności",
+      "publishingTitle": "Publikowanie...",
+      "publishingDescriptionDesktop": "Przygotowujemy Twoje wideo dla społeczności...",
+      "publishingDescriptionMobile": "Przygotowywanie wideo...",
+      "progressComplete": "{progress}% ukończono",
+      "title": "Udostępnij społeczności",
+      "description": "Udostępnij swoje dzieło światu",
+      "benefits": {
+        "getLikes": "Zdobądź polubienia",
+        "buildCommunityLong": "Buduj społeczność",
+        "buildCommunityShort": "Społeczność",
+        "inspireLong": "Inspiruj innych",
+        "inspireShort": "Inspiruj",
+        "earnLong": "Zdobądź +{amount} kredytów",
+        "earnShort": "+{amount} kredytów"
+      },
+      "videoTitle": "Tytuł wideo",
+      "videoTitlePlaceholder": "Nadaj swojej kreacji atrakcyjny tytuł...",
+      "videoTitleHelperDesktop": "Dobry tytuł przyciąga więcej widzów",
+      "videoTitleHelperMobile": "Dobry tytuł przyciąga widzów",
+      "descriptionLabel": "Opis",
+      "optional": "Opcjonalnie",
+      "descriptionPlaceholder": "Opowiedz społeczności o swojej kreacji...",
+      "descriptionHelper": "Podziel się procesem twórczym",
+      "cancel": "Anuluj",
+      "publish": "Opublikuj"
+    },
+    "history": {
+      "title": "Historia",
+      "refresh": "Odśwież",
+      "view": {
+        "one": "1 na rząd",
+        "three": "3 w rzędzie",
+        "nine": "9 w rzędzie"
+      },
+      "filterPlaceholder": "Filtruj",
+      "empty": "Nie znaleziono zadań: {status}",
+      "status": {
+        "all": "Wszystkie",
+        "pending": "Oczekuje",
+        "queued": "W kolejce",
+        "processing": "Przetwarzanie",
+        "completed": "Zakończone",
+        "failed": "Nieudane",
+        "canceled": "Anulowane"
+      }
+    },
+    "effectSelector": {
+      "loading": "Ładowanie efektów...",
+      "defaultDescription": "Dodaj efekty specjalne do swojego wideo",
+      "ctaTitle": "Wybierz efekt",
+      "ctaDescription": "Kliknij, aby wybrać efekt wideo",
+      "modalTitle": "Wybierz efekt",
+      "close": "Zamknij wybór efektu"
+    },
+    "modelSelectorModal": {
+      "title": "Wybierz model",
+      "description": "Wybierz model dla swojego projektu",
+      "close": "Zamknij wybór modelu",
+      "loadingMore": "Ładowanie kolejnych modeli...",
+      "allLoaded": "Wszystkie modele wczytane",
+      "noModelsFound": "Nie znaleziono modeli"
+    },
+    "modelSearch": {
+      "placeholder": "Szukaj modeli po nazwie, typie lub funkcjach...",
+      "clear": "Wyczyść wyszukiwanie",
+      "searching": "Wyszukiwanie...",
+      "foundModels": "Znaleziono {count} modeli",
+      "modelsAvailable": "{count} modeli dostępnych"
+    },
+    "modelTypeFilter": {
+      "title": "Typ modelu",
+      "clear": "Wyczyść"
+    },
+    "remixLoader": {
+      "successTitle": "Załadowano zadanie remix",
+      "successDescription": "Wczytano parametry wideo z oryginalnego zadania — możesz generować od razu lub zmienić parametry.",
+      "errorTitle": "Nie udało się wczytać parametrów",
+      "errorDescription": "Nie udało się wczytać parametrów z oryginalnego zadania — ustaw parametry ręcznie."
+    },
+    "modelCard": {
+      "select": "Wybierz",
+      "credits": "Kredyty",
+      "premium": "PREMIUM",
+      "luxury": "LUKSUS"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "Wybrane przez ReelMind",
+      "hot": "Gorąco",
+      "new": "NEW",
+      "select": "Wybierz"
+    },
+    "previewPanel": {
+      "generating": "Generowanie...",
+      "download": "Pobierz",
+      "downloading": "Pobieranie...",
+      "shareToCommunity": "Opublikuj",
+      "tips": "Wskazówka: opublikuj, aby zdobyć kredyty",
+      "quality": "Jakość",
+      "qualityHd": "HD",
+      "qualityStandard": "Standardowe",
+      "ratio": "Proporcje",
+      "fullscreen": {
+        "enter": "Pełny ekran",
+        "exit": "Wyjdź z pełnego ekranu"
+      },
+      "empty": {
+        "title": "Brak podglądu",
+        "description": "Wygeneruj wideo, aby zobaczyć podgląd tutaj."
+      },
+      "queue": {
+        "loading": "Ładowanie informacji o kolejce...",
+        "headerProcessing": "Przetwarzanie",
+        "headerQueueStatus": "Status kolejki",
+        "badgePosition": "Pozycja: {position} z {total}",
+        "badgeProcessing": "Przetwarzanie",
+        "tasksInQueue": "Zadania w kolejce",
+        "estimatedWait": "Szacowany czas oczekiwania",
+        "elapsedTime": "Czas, który upłynął",
+        "remainingTime": "Pozostały czas",
+        "startTime": "Szacowany start",
+        "completionTime": "Szacowane zakończenie"
+      },
+      "time": {
+        "calculating": "Obliczanie...",
+        "justNow": "Przed chwilą",
+        "lessThanMinute": "W mniej niż minutę",
+        "inMinutes": "Za {minutes, plural, one {# minutę} other {# minut}}",
+        "inHours": "Za {hours, plural, one {# godzinę} other {# godzin}}",
+        "inDays": "Za {days, plural, one {# dzień} other {# dni}}",
+        "seconds": "{seconds, plural, one {# sekundę} other {# sekund}}",
+        "minutesSeconds": "{minutes, plural, one {# minutę} other {# minut}} {seconds, plural, one {# sekundę} other {# sekund}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Ładowanie wideo...",
+      "notFound": "Nie znaleziono wideo",
+      "notFoundDescription": "Nie można znaleźć żądanego wideo lub jest obecnie niedostępne.",
+      "detailsTitle": "Szczegóły",
+      "videoInfoTitle": "Informacje o wideo",
+      "advancedTitle": "Zaawansowane",
+      "referenceImagesTitle": "Obrazy referencyjne",
+      "startFrameAlt": "Klatka startowa",
+      "endFrameAlt": "Klatka końcowa",
+      "endFrameLabel": "Klatka końcowa",
+      "creationDate": "Data utworzenia",
+      "fields": {
+        "model": "Modelka",
+        "generationType": "Typ generowania",
+        "resolution": "Rozdzielczość",
+        "aspectRatio": "Proporcje",
+        "duration": "Czas trwania",
+        "creativityLevel": "Kreatywność",
+        "effect": "Efekt",
+        "samplingSteps": "Kroki próbkowania",
+        "randomSeed": "Losowe ziarno",
+        "movementAmplitude": "Amplituda ruchu",
+        "backgroundMusic": "Muzyka w tle",
+        "negativePrompt": "Negatywny prompt"
+      },
+      "actions": {
+        "close": "Zamknij",
+        "closeModalTitle": "Zamknij okno",
+        "remix": "Remiks",
+        "remixTitle": "Remixuj z tymi parametrami",
+        "download": "Pobierz",
+        "downloadTitle": "Pobierz to wideo",
+        "downloading": "Pobieranie...",
+        "shareTitle": "Udostępnij to wideo"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Usuń zadanie",
+      "description": "Tej akcji nie można cofnąć",
+      "cancel": "Anuluj",
+      "confirm": "Usuń",
+      "deleting": "Usuwanie..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Obraz referencyjny"
+      },
+      "pending": {
+        "pending": "Oczekuje...",
+        "queued": "W kolejce...",
+        "waitingInQueue": "Oczekiwanie w kolejce..."
+      },
+      "processing": {
+        "phase1": "Faza 1",
+        "phase2": "Faza 2",
+        "phase3": "Faza 3",
+        "final": "Finalna",
+        "initializing": "Inicjalizacja",
+        "processing": "Przetwarzanie",
+        "rendering": "Renderowanie",
+        "finalizing": "Finalizacja",
+        "stuckMessage": "To zadanie wygląda na zawieszone. Możesz je usunąć.",
+        "deleteTitle": "Usuń to zadanie",
+        "deleteAria": "Usuń"
+      },
+      "failed": {
+        "title": "Generowanie nie powiodło się",
+        "tryAgain": "Spróbuj ponownie",
+        "tryAgainTitle": "Spróbuj ponownie z tym promptem",
+        "deleteTitle": "Usuń to zadanie"
+      },
+      "completed": {
+        "recreateDesktop": "Utwórz ponownie",
+        "remixMobile": "Remiks",
+        "remixTitle": "Utwórz nowe wideo używając tego promptu",
+        "publish": "Opublikuj",
+        "publishTitle": "Opublikuj w społeczności i zdobądź {amount} kredytów",
+        "creditsBonusDesktop": "Bonus {amount} kredytów",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Udostępnij",
+        "shareTitle": "Udostępnij to wideo",
+        "downloadTitle": "Pobierz to wideo",
+        "downloading": "Pobieranie...",
+        "deleteTitle": "Usuń to zadanie"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego — ReelMind",
+      "description": "Twórz i remiksuj wideo w workflow Lego na ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "Wróć do Buildera",
+      "history": "Historia"
+    },
+    "badges": {
+      "new": "Nowe"
+    },
+    "actions": {
+      "delete": "Usuń",
+      "select": "Wybierz",
+      "selected": "Wybrane",
+      "download": "Pobierz",
+      "downloading": "Pobieranie...",
+      "deleting": "Usuwanie...",
+      "share": "Udostępnij",
+      "close": "Zamknij"
+    },
+    "status": {
+      "pending": "Oczekuje",
+      "processing": "Przetwarzanie",
+      "failed": "Nieudane",
+      "completed": "Zakończone",
+      "generating": "Generowanie",
+      "cancelled": "Anulowane"
+    },
+    "deleteConfirmDialog": {
+      "title": "Usuń zadanie",
+      "description": "Tej akcji nie można cofnąć",
+      "cancel": "Anuluj",
+      "confirm": "Usuń",
+      "deleting": "Usuwanie..."
+    },
+    "imageViewer": {
+      "close": "Zamknij",
+      "previous": "Poprzedni",
+      "next": "Następny",
+      "view": "Zobacz {index}"
+    },
+    "historyList": {
+      "title": "Generator obrazów AI Lego",
+      "generatingFirstImage": "Generowanie pierwszego obrazu...",
+      "loadFailed": "Nie udało się wczytać historii. Spróbuj ponownie.",
+      "emptyDescription": "Twórz zachwycające obrazy, opisując pomysł i dodając zasoby, aby poprowadzić AI",
+      "loadingMore": "Ładowanie obrazów z historii...",
+      "scrollForMore": "Przewiń, aby zobaczyć więcej...",
+      "allLoaded": "Wczytano wszystkie {count} obrazy"
+    },
+    "sidebar": {
+      "addCard": "Dodaj nową kartę",
+      "expand": "Rozwiń pasek boczny",
+      "sections": {
+        "theme": "Motyw",
+        "scene": "Scena",
+        "style": "Styl"
+      }
+    },
+    "card": {
+      "placeholder": "Opisz {section}...",
+      "imageAlt": "Odniesienie {section}",
+      "options": {
+        "image": "Obraz",
+        "text": "Tekst"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Odniesienie {index}",
+      "errors": {
+        "invalidType": "Wybierz plik obrazu",
+        "tooLarge": "Rozmiar obrazu nie może przekroczyć {maxSizeMb}MB",
+        "uploadFailed": "Nie udało się przesłać obrazu. Spróbuj ponownie."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "Przewiń na dół",
+      "collapsedPlaceholder": "Opisz swój obraz...",
+      "close": "Zamknij"
+    },
+    "resultPreview": {
+      "previewTitle": "Podgląd",
+      "previewDescription": "Wygenerowany obraz pojawi się tutaj",
+      "generatedImageAlt": "Wygenerowany obraz",
+      "emptyPlaceholder": "Twoje dzieło pojawi się tutaj",
+      "dialogTitle": "Twój stworzony obraz",
+      "dialogDescription": "Oto obraz stworzony na podstawie Twojego opisu i zasobów"
+    },
+    "resourceUploader": {
+      "uploadImage": "Prześlij obraz",
+      "imageFallbackAlt": "Obraz",
+      "imageFallbackLabel": "obraz",
+      "removeImage": "Usuń {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "Pokaż pasek boczny",
+      "hideSidebar": "Ukryj pasek boczny",
+      "hideSidebarShort": "Ukryj pasek boczny",
+      "addImage": "Dodaj obraz",
+      "addImageWithLimit": "Dodaj obraz ({current}/{max})",
+      "promptPlaceholder": "Utwórz lub edytuj swój obraz...",
+      "model": "Modelka",
+      "selectModel": "Wybierz model",
+      "loading": "Ładowanie...",
+      "loadingModels": "Ładowanie modeli...",
+      "noModelsAvailable": "Brak dostępnych modeli",
+      "noModelsMatchFilters": "Brak modeli pasujących do filtrów",
+      "modelLabel": "Modelka: {name}",
+      "aspectRatio": "Proporcje",
+      "ratioLabel": "Proporcje: {value}",
+      "imagesLabel": "Obrazy: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 generuje pojedynczy obraz",
+        "hint": "Liczba obrazów do wygenerowania",
+        "numberOfImages": "Liczba obrazów"
+      },
+      "advanced": {
+        "aria": "Ustawienia zaawansowane",
+        "label": "Zaawansowane",
+        "title": "Ustawienia zaawansowane",
+        "negativePrompt": {
+          "label": "Negatywny prompt",
+          "placeholder": "Elementy do wykluczenia...",
+          "aria": "Negatywny prompt",
+          "title": "Określ elementy do wykluczenia"
+        },
+        "seed": {
+          "label": "Nasiona",
+          "random": "Losowy",
+          "randomTitle": "Generuj losowy seed",
+          "placeholder": "Losowy seed (opcjonalnie)",
+          "aria": "Wartość seeda",
+          "title": "Ustaw seed dla powtarzalnych wyników"
+        }
+      },
+      "resolution": "Rozdzielczość",
+      "resolutionLabel": "Rozdzielczość: {value}",
+      "resolutionPopoverTitle": "Rozdzielczość (Nano Banana 2)",
+      "generating": "Generowanie...",
+      "generate": "Generuj",
+      "limitReached": "Limit osiągnięty",
+      "fluxLimitTooltip": "Modele FLUX są ograniczone do {limit} użyć dla osób bez członkostwa",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 to model premium i nie jest objęty darmowym użyciem Unlimited. Za każdy wygenerowany obraz zostaną pobrane kredyty.",
+      "unlimited": {
+        "fast": "Szybki",
+        "slow": "Wolny",
+        "fastMode": "Tryb szybki",
+        "slowMode": "Tryb wolny",
+        "monthlyUsage": "Użycie miesięczne: {used}/{limit}",
+        "rateLimit": "Limit: {limit} obraz na 5 minut",
+        "switchedToSlow": "Osiągnięto limit miesięczny. Przełączono na tryb wolny."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Wygenerowany obraz",
+      "failedTitle": "Generowanie nie powiodło się",
+      "errors": {
+        "unableToComplete": "Nie można ukończyć generowania"
+      },
+      "actions": {
+        "deleteTitle": "Usuń zadanie",
+        "viewFullSize": "Kliknij, aby zobaczyć w pełnym rozmiarze",
+        "preview": "Podgląd {index}",
+        "retryTitle": "Spróbuj ponownie — te same parametry",
+        "retry": "Spróbuj ponownie",
+        "remixTitle": "Remix — użyj parametrów ponownie",
+        "remix": "Remiks",
+        "makeVideoTitle": "Utwórz wideo",
+        "makeVideo": "Utwórz wideo"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "Rozpoczęto pobieranie",
+      "downloadStartedMessage": "Pobieranie wideo zostało rozpoczęte",
+      "downloadFailedTitle": "Pobieranie nie powiodło się",
+      "downloadFailedMessage": "Nie udało się pobrać wideo",
+      "shareCopied": "Link udostępniania skopiowano do schowka",
+      "shareCopyFailed": "Nie udało się skopiować linku udostępniania"
+    },
+    "empty": {
+      "title": "Wideo niedostępne",
+      "description": "To wideo nie jest dostępne do udostępnienia lub brakuje pliku wideo.",
+      "ctaCreate": "Utwórz własne wideo"
+    },
+    "notFound": {
+      "title": "Nie znaleziono wideo",
+      "description": "Wideo, którego szukasz, nie istnieje lub nie jest już dostępne do udostępnienia.",
+      "ctaCreate": "Utwórz własne wideo",
+      "ctaHome": "Wróć do strony głównej"
+    },
+    "details": {
+      "creationDate": "Data utworzenia"
+    },
+    "actions": {
+      "remix": "Remiks",
+      "remixTitle": "Utwórz nowe wideo używając tego promptu",
+      "download": "Pobierz",
+      "downloadTitle": "Pobierz to wideo",
+      "downloading": "Pobieranie...",
+      "downloadingTitle": "Pobieranie...",
+      "shareTitle": "Udostępnij to wideo"
+    },
+    "meta": {
+      "promptFallback": "Wideo wygenerowane przez AI",
+      "watchDescription": "Obejrzyj to wideo wygenerowane przez AI: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Muzyka",
+      "description": "Generuj muzykę, efekty dźwiękowe i mowę za pomocą AI."
+    },
+    "page": {
+      "loadingSoundStudio": "Ładowanie Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "Muzyka",
+      "soundEffect": "Efekt dźwiękowy",
+      "textToSpeech": "Tekst na mowę"
+    },
+    "controlPanel": {
+      "title": "Sterowanie",
+      "reset": "Resetuj",
+      "modelLabel": {
+        "tts": "Model TTS",
+        "sound": "Model dźwięku"
+      },
+      "modelPlaceholder": "Wybierz model",
+      "noModelsAvailableTitle": "Brak dostępnych modeli",
+      "noModelsFound": {
+        "tts": "Nie znaleziono modeli TTS",
+        "soundEffect": "Nie znaleziono modeli efektów dźwiękowych"
+      },
+      "tts": {
+        "stability": "Stabilność",
+        "similarityBoost": "Podbicie podobieństwa",
+        "styleExaggeration": "Wyolbrzymienie stylu",
+        "speed": "Szybkość"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Prześlij dźwięk referencyjny",
+      "dropHere": "Upuść tutaj",
+      "supportedFormats": "Obsługiwane formaty: MP3, WAV, M4A, AAC, OGG",
+      "tip": "Wskazówka: użyj co najmniej 15 sekund wyraźnego audio dla lepszych wyników.",
+      "uploadingProgress": "Przesyłanie... {progress}%",
+      "toast": {
+        "uploadSuccess": "Przesyłanie zakończone",
+        "uploadFailed": "Przesyłanie nie powiodło się"
+      },
+      "errors": {
+        "selectAudioFile": "Wybierz plik audio.",
+        "invalidAudioFile": "Nieprawidłowy plik audio.",
+        "fileTooLarge": "Plik jest za duży (max 50MB).",
+        "durationTooShort": "Audio musi mieć co najmniej 15 sekund."
+      }
+    },
+    "audioPlayer": {
+      "play": "Odtwórz",
+      "pause": "Pauza"
+    },
+    "voiceSelector": {
+      "label": "Głos",
+      "selectVoiceTitle": "Wybierz głos",
+      "gender": {
+        "all": "Wszystkie",
+        "male": "Męski",
+        "female": "Żeński"
+      },
+      "noVoicesAvailable": "Brak dostępnych głosów",
+      "noVoicesFound": "Nie znaleziono głosów",
+      "bestFor": "Najlepsze do: {useCase}",
+      "clickToSelectVoice": "Kliknij, aby wybrać głos"
+    },
+    "historyPanel": {
+      "title": "Historia",
+      "empty": {
+        "title": "Brak generacji",
+        "description": "Twoja historia generacji pojawi się tutaj"
+      },
+      "loading": "Ładowanie...",
+      "loadMore": "Załaduj więcej"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "Przetwarzanie",
+        "failed": "Nieudane",
+        "completed": "Zakończone"
+      },
+      "actions": {
+        "copy": "Kopiuj",
+        "download": "Pobierz"
+      },
+      "time": {
+        "now": "Teraz",
+        "minutesAgo": "{minutes}m temu",
+        "hoursAgo": "{hours}h temu"
+      },
+      "unknownModel": "Nieznany model",
+      "errors": {
+        "unknown": "Nieznany błąd"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Studio dźwiękowe"
+      },
+      "menu": {
+        "open": "Otwórz menu",
+        "title": "Menu",
+        "voiceGeneration": "Utwórz",
+        "settings": "Ustawienia",
+        "history": "Historia"
+      },
+      "tabs": {
+        "generate": "Generuj",
+        "settings": "Ustawienia",
+        "history": "Historia"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Wpisz tekst do generowania mowy...",
+        "soundEffect": "Opisz efekt dźwiękowy, który chcesz stworzyć..."
+      },
+      "generateSpeech": "Generuj mowę",
+      "generateSound": "Generuj dźwięk",
+      "generating": "Generowanie...",
+      "loadingExamples": "Ładowanie przykładów...",
+      "loadingMusicStyles": "Ładowanie stylów muzycznych...",
+      "rightTabs": {
+        "examples": "Przykłady",
+        "history": "Historia"
+      },
+      "history": {
+        "generationCount": "{count} generacji"
+      },
+      "price": {
+        "placeholder": "Szacowany koszt",
+        "calculating": "Obliczanie...",
+        "credits": "{credits} kredytów"
+      },
+      "musicHistory": {
+        "title": "Historia muzyki",
+        "empty": {
+          "title": "Jeszcze nie wygenerowano muzyki",
+          "description": "Twoja historia muzyki pojawi się tutaj"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "Historia efektów dźwiękowych",
+        "empty": {
+          "title": "Jeszcze nie wygenerowano efektów dźwiękowych",
+          "description": "Twoja historia efektów dźwiękowych pojawi się tutaj"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Tekst piosenki",
+      "lyricsPlaceholder": "Tekst z opcjonalnym formatowaniem. Możesz użyć nowej linii, aby rozdzielić każdy wers. Możesz użyć dwóch nowych linii, aby dodać pauzę między wersami. Możesz użyć podwójnych znaków # (##) na początku i końcu tekstu, aby dodać akompaniament. Maksymalnie 600 znaków.",
+      "useReferenceAudio": {
+        "label": "Użyj audio referencyjnego",
+        "description": "Użyj referencji audio, aby pokierować stylem AI."
+      },
+      "referenceAudio": {
+        "title": "Audio referencyjne",
+        "description": "Prześlij utwór referencyjny zawierający zarówno muzykę, jak i wokal."
+      },
+      "musicStyle": {
+        "title": "Styl muzyki",
+        "description": "Opisz styl i nastrój muzyki, którą chcesz stworzyć.",
+        "placeholder": "np. R&B, energiczny, upbeat pop, acoustic folk, electronic dance...",
+        "tooShort": "Opis stylu muzyki musi mieć co najmniej 10 znaków."
+      },
+      "generating": "Generowanie...",
+      "generateMusicWithCredits": "Generuj muzykę ({credits} kredytów)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Czas trwania",
+        "description": "Ustaw długość efektu dźwiękowego."
+      },
+      "promptInfluence": {
+        "title": "Wpływ promptu",
+        "description": "Wyższe wartości bardziej trzymają się promptu."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Wyślij opinię do zespołu ReelMind."
+    },
+    "header": {
+      "title": "Szybka opinia",
+      "description": "Znalazłeś błąd lub masz sugestię? Daj znać w 30 sekund."
+    },
+    "card": {
+      "title": "Szybka opinia",
+      "subtitle": "Tylko 3 pola, 30 sekund"
+    },
+    "submitted": {
+      "title": "Opinia wysłana",
+      "description": "Dziękujemy za opinię. Sprawdzimy ją i w razie potrzeby odezwiemy się."
+    },
+    "auth": {
+      "required": "Zaloguj się, aby wysłać opinię."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Coś poszło nie tak. Spróbuj ponownie."
+      },
+      "type": {
+        "label": "Typ",
+        "placeholder": "Wybierz typ opinii",
+        "options": {
+          "bug": "Zgłoszenie błędu",
+          "suggestion": "Sugestia",
+          "other": "Inne"
+        },
+        "errors": {
+          "required": "Typ opinii jest wymagany.",
+          "invalid": "Nieprawidłowy typ opinii."
+        }
+      },
+      "subject": {
+        "label": "Temat *",
+        "placeholder": "Jaki jest problem lub sugestia?",
+        "errors": {
+          "required": "Temat jest wymagany.",
+          "min": "Temat musi mieć co najmniej {min} znaków.",
+          "max": "Temat musi mieć mniej niż {max} znaków.",
+          "invalid": "Temat zawiera nieprawidłowe treści."
+        }
+      },
+      "message": {
+        "label": "Szczegóły *",
+        "placeholder": "Powiedz nam więcej...",
+        "errors": {
+          "required": "Szczegóły są wymagane.",
+          "min": "Szczegóły muszą mieć co najmniej {min} znaków.",
+          "max": "Szczegóły muszą mieć mniej niż {max} znaków.",
+          "invalid": "Szczegóły zawierają nieprawidłowe treści."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Wysyłanie...",
+      "submit": "Wyślij opinię"
+    },
+    "toast": {
+      "submitSuccess": "Opinia wysłana pomyślnie!",
+      "submitFailed": "Nie udało się wysłać opinii. Spróbuj ponownie.",
+      "authRequired": "Zaloguj się, aby wysłać opinię.",
+      "rateLimited": "Zbyt wiele zgłoszeń. Spróbuj ponownie później.",
+      "rateLimitedWithRetryAfter": "Poczekaj {seconds}s przed ponownym wysłaniem.",
+      "fixErrors": "Popraw błędy w formularzu.",
+      "checkInput": "Sprawdź dane i spróbuj ponownie."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Posty",
+      "following": "Obserwowani",
+      "followingShort": "Obserwuj",
+      "followers": "Obserwujący",
+      "followersShort": "Fani",
+      "favorites": "Ulubione",
+      "favoritesShort": "Ulub"
+    },
+    "actions": {
+      "save": "Zapisz",
+      "saving": "Zapisywanie...",
+      "cancel": "Anuluj",
+      "delete": "Usuń",
+      "retry": "Spróbuj ponownie",
+      "editProfile": "Edytuj profil",
+      "signOut": "Wyloguj się",
+      "follow": "Obserwuj",
+      "unfollow": "Przestań obserwować",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "Twórca",
+      "avatarAltFallback": "Użytkownik",
+      "initialFallback": "U",
+      "edit": {
+        "displayNamePlaceholder": "Nazwa wyświetlana",
+        "bioPlaceholder": "Bio"
+      },
+      "stats": {
+        "following": "Obserwowani",
+        "followers": "Obserwujący"
+      },
+      "joined": "Dołączył {date}",
+      "joinedFallback": "marzec 2025"
+    },
+    "time": {
+      "now": "Przed chwilą",
+      "minutesAgo": "{minutes}m temu",
+      "hoursAgo": "{hours}h temu",
+      "daysAgo": "{days}d temu"
+    },
+    "toast": {
+      "loginFirst": "Najpierw zaloguj się",
+      "cannotFollowYourself": "Nie możesz obserwować siebie",
+      "followed": "Obserwowanie włączone",
+      "unfollowed": "Obserwowanie wyłączone",
+      "operationFailed": "Operacja nie powiodła się"
+    },
+    "posts": {
+      "loadingMore": "Ładowanie kolejnych postów...",
+      "error": {
+        "failedToLoad": "Nie udało się wczytać postów"
+      },
+      "empty": {
+        "title": "Brak postów",
+        "description": "Ten użytkownik nie udostępnił jeszcze żadnych postów. Wróć później!"
+      },
+      "deleteDialog": {
+        "title": "Usuń post",
+        "description": "To ukryje post w Twoim profilu i feedzie. Nie można tego cofnąć."
+      },
+      "toast": {
+        "deleted": "Post usunięty",
+        "deleteFailed": "Nie udało się usunąć postu"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Ładowanie kolejnych ulubionych...",
+      "error": {
+        "failedToLoad": "Nie udało się wczytać ulubionych"
+      },
+      "empty": {
+        "title": "Brak ulubionych",
+        "description": "Posty, które lubisz, pojawią się tutaj. Zacznij odkrywać i zapisuj ulubione!"
+      }
+    },
+    "followers": {
+      "empty": "Brak obserwujących",
+      "error": {
+        "failedToLoad": "Nie udało się wczytać obserwujących"
+      },
+      "followerSince": "Obserwuje od {time}"
+    },
+    "following": {
+      "empty": "Brak obserwowanych",
+      "error": {
+        "failedToLoad": "Nie udało się wczytać obserwowanych"
+      },
+      "followingSince": "Obserwujesz od {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Plany członkostwa - ReelMind",
+      "description": "Dołącz do planów członkostwa ReelMind, aby uzyskać więcej kredytów i funkcji premium do generowania wideo AI."
+    },
+    "plans": {
+      "hero": {
+        "title": "Plany członkostwa",
+        "subtitle": "Odblokuj pełny potencjał generowania wideo AI dzięki elastycznym planom subskrypcji ReelMind"
+      },
+      "error": {
+        "loadFailed": "Nie udało się pobrać planów członkostwa. Spróbuj ponownie później."
+      },
+      "names": {
+        "free": "Darmowy",
+        "pro": "Zawodowiec",
+        "max": "Maks",
+        "unlimited": "Nielimitowane"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Rocznie"
+      },
+      "monthly": {
+        "label": "Miesięcznie"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "70% ZNIŻKI w pierwszym miesiącu",
+        "short": "70% ZNIŻKI",
+        "description": "Nowi subskrybenci otrzymują 70% zniżki, kupon ważny 24 godziny"
+      },
+      "yearly": {
+        "full": "Pierwsze 6 miesięcy ZA DARMO",
+        "short": "6 miesięcy ZA DARMO",
+        "description": "Roczna subskrypcja: pierwsze 6 miesięcy całkowicie za darmo — to jak 50% zniżki na pierwszy rok!"
+      },
+      "percentOff": "{percent}% ZNIŻKI",
+      "badge": {
+        "preview": "🎁 {offer} dostępne",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(po odebraniu)"
+    },
+    "pricing": {
+      "perYear": "na rok",
+      "perMonth": "na miesiąc",
+      "breakdown": {
+        "originalPrice": "Cena oryginalna:",
+        "discount": "Twoja zniżka:",
+        "payFirstYear": "Płacisz (pierwszy rok):",
+        "firstMonth": "Pierwszy miesiąc:"
+      }
+    },
+    "status": {
+      "title": "Status członkostwa",
+      "loading": "Ładowanie informacji o członkostwie...",
+      "currentPlan": "Aktualny plan:",
+      "expiresOn": "Wygasa:",
+      "unlimitedDescription": "Masz nielimitowany dostęp do wszystkich funkcji generowania bez zużycia kredytów.",
+      "planDescription": "Masz dostęp do wszystkich funkcji i korzyści planu {plan}.",
+      "noActive": {
+        "title": "Nie masz aktywnego członkostwa.",
+        "subtitle": "Wybierz plan poniżej, aby odblokować funkcje premium."
+      }
+    },
+    "creditsBalance": {
+      "title": "Saldo kredytów",
+      "loading": "Ładowanie informacji o kredytach...",
+      "availableCredits": "Dostępne kredyty:",
+      "unlimited": {
+        "video": "Nielimitowane generowanie wideo",
+        "image": "Nielimitowane generowanie obrazów",
+        "audio": "Nielimitowane generowanie dźwięku"
+      },
+      "estimate": {
+        "videos": "Do {count} wideo",
+        "images": "Do {count} obrazów",
+        "audios": "Do {count} dźwięków"
+      },
+      "cost": {
+        "videos": "Wideo: od {credits} kredytów",
+        "images": "Obrazy: od {credits} kredytów",
+        "audios": "Dźwięki: od {credits} kredytów"
+      }
+    },
+    "credits": {
+      "title": "Kup kredyty",
+      "history": {
+        "toggle": {
+          "show": "Pokaż historię transakcji",
+          "hide": "Ukryj historię transakcji"
+        }
+      },
+      "card": {
+        "description": "Wybierz pakiet kredytów, aby zwiększyć możliwości generowania AI"
+      },
+      "packages": {
+        "basic": {
+          "label": "Pakiet podstawowy"
+        },
+        "standard": {
+          "label": "Pakiet standardowy"
+        },
+        "premium": {
+          "label": "Pakiet premium"
+        },
+        "pro": {
+          "label": "Pakiet Ultra"
+        },
+        "bonus": "Premia: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Stawka bazowa: 1 USD = 100 kredytów",
+        "buyMoreBonus": "Kup więcej, zyskaj większy bonus!",
+        "neverExpire": "Kredyty nigdy nie wygasają",
+        "instantDelivery": "Natychmiastowa dostawa po płatności"
+      },
+      "actions": {
+        "processing": "Przetwarzanie...",
+        "buyCredits": "Kup {credits} kredytów"
+      }
+    },
+    "creditsHistory": {
+      "title": "Historia transakcji",
+      "subtitle": "Twoje ostatnie transakcje kredytowe",
+      "actions": {
+        "retry": "Spróbuj ponownie",
+        "loading": "Ładowanie...",
+        "loadMore": "Załaduj więcej"
+      },
+      "table": {
+        "date": "Data",
+        "type": "Typ",
+        "amount": "Kwota",
+        "status": "Stan"
+      },
+      "empty": "Brak historii transakcji",
+      "types": {
+        "membershipMonthly": "Miesięczne kredyty członkostwa",
+        "membershipInitial": "Początkowe kredyty członkostwa",
+        "freeMonthly": "Darmowe miesięczne kredyty",
+        "purchase": "Zakup kredytów",
+        "platformReward": "Nagroda platformy",
+        "newUserBonus": "Bonus nowego użytkownika",
+        "postReward": "Nagroda za post",
+        "videoPostReward": "Nagroda za post wideo",
+        "refund": "Zwrot",
+        "balanceAdjustment": "Korekta salda",
+        "videoGeneration": "Generowanie wideo",
+        "imageGeneration": "Generowanie obrazów",
+        "modelTraining": "Trenowanie modelu",
+        "audioGeneration": "Generowanie audio",
+        "systemAdjustment": "Korekta systemowa"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}h {m}m {s}s",
+        "ms": "{m}m {s}s",
+        "s": "{s}s",
+        "expired": "Wygasło"
+      },
+      "toast": {
+        "claimedTitle": "Kupon odebrany",
+        "claimedDescription": "Kupon dodany do konta, ważny przez {hours} godzin",
+        "claimFailedTitle": "Nie udało się odebrać",
+        "tryAgainLater": "Spróbuj ponownie później",
+        "networkError": "Błąd sieci, spróbuj ponownie później"
+      }
+    },
+    "couponStatus": {
+      "title": "Status kuponu",
+      "active": {
+        "annualTitle": "Aktywna oferta roczna",
+        "couponTitle": "Kupon aktywowany"
+      },
+      "fields": {
+        "claimed": "Odebrano:",
+        "expires": "Wygasa:",
+        "timeLeft": "Pozostało:",
+        "usedAt": "Użyto:",
+        "discount": "Zniżka:"
+      },
+      "expired": "Kupon wygasł",
+      "used": {
+        "title": "Kupon użyty"
+      },
+      "available": "{offer} dostępne",
+      "offer": {
+        "annualSpecial": "🎁 Oferta roczna",
+        "newUserExclusive": "🎉 Dla nowych użytkowników",
+        "bestValue": "Najlepsza wartość",
+        "limitedTime": "Czasowo",
+        "claimYearly": "Odbierz ofertę 6 miesięcy gratis",
+        "claimMonthly": "Odbierz kupon teraz"
+      },
+      "none": {
+        "title": "Brak dostępnych kuponów",
+        "description": "{offer} jest dostępne tylko dla nowych użytkowników, którzy nigdy nie kupili członkostwa."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Popularne",
+        "advanced": "Zaawansowane",
+        "unlimited": "Nielimitowane"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Uzyskaj Unlimited",
+        "getUnlimitedMobile": "Unlimited",
+        "subscribeDesktop": "Rozpocznij subskrypcję",
+        "subscribeMobile": "Subskrybuj",
+        "claimAndSubscribeMobile": "Odbierz i subskrybuj",
+        "getDiscountMobile": "Odbierz {discount}",
+        "claimDiscountAndSubscribeDesktop": "Odbierz {discount} i subskrybuj"
+      },
+      "toast": {
+        "loginSuccess": "Zalogowano! Kliknij ponownie, aby odebrać zniżkę i subskrybować.",
+        "claimCouponFailed": "Nie udało się odebrać kuponu",
+        "tryAgainLater": "Spróbuj ponownie później",
+        "couponClaimed": "Kupon odebrany!",
+        "failedToProcess": "Nie udało się przetworzyć"
+      },
+      "usageEstimate": {
+        "title": "Szacowane użycie miesięczne",
+        "videos": "Do {count} wideo miesięcznie",
+        "images": "Do {count} obrazów miesięcznie",
+        "audios": "Do {count} dźwięków miesięcznie"
+      },
+      "unlimitedNotes": {
+        "title": "Uwagi o użyciu",
+        "videoTasks": {
+          "title": "Zadania wideo:",
+          "body": "Możesz uruchomić do 5 zadań jednocześnie. Limit miesięczny: 300. Po osiągnięciu limitu obowiązuje tryb wolny: limit dzienny 30 wideo na 24 godziny i 10 zadań na godzinę."
+        },
+        "imageTasks": {
+          "title": "Zadania obrazów:",
+          "body": "Do 300 zadań miesięcznie. Tryb szybki do 300. zadania (5 na minutę). Potem tryb wolny ogranicza do 1 zadania na minutę."
+        },
+        "premiumModels": {
+          "title": "Modele premium:",
+          "body": "Niektóre drogie modele nie są objęte planami UNLIMITED. Warianty VEO 3.* non-fast oraz Sora-2 /pro nadal zużywają kredyty."
+        }
+      },
+      "currentPlan": "Aktualny plan",
+      "yearlyEquivalent": "Równowartość <price>{value}</price>",
+      "yearlySavings": "Zaoszczędź <amount>{value}</amount> w porównaniu z rozliczeniami miesięcznymi"
+    },
+    "features": {
+      "monthlyCredits": "{credits} kredytów miesięcznie",
+      "monthlyVideoCredits": "{credits} kredytów wideo miesięcznie",
+      "fullAccessTopModels": "Pełny dostęp do {count} najlepszych modeli wideo AI",
+      "accessAllModels": "Dostęp do wszystkich modeli",
+      "purchaseMoreRolloverVideoCredits": "Kup więcej przenoszonych kredytów wideo",
+      "downloadNoWatermark": "Pobieraj wideo bez znaku wodnego",
+      "commercialUse": "Użytek komercyjny",
+      "fastGenerations": "Szybkie generowanie",
+      "prioritySupport": "Priorytetowe wsparcie",
+      "unlimitedVideoAndImageGeneration": "Nieograniczone generowanie wideo i obrazów"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Otwórz opcje rozliczeń"
+      },
+      "actions": {
+        "opening": "Otwieranie...",
+        "billingOptions": "Opcje rozliczeń"
+      },
+      "confirm": {
+        "title": "Zarządzaj subskrypcją",
+        "description": "Chcesz anulować subskrypcję? Chętnie poznamy Twoją opinię, zanim odejdziesz.",
+        "keep": "Zachowaj subskrypcję",
+        "continueCancel": "Kontynuuj anulowanie"
+      },
+      "toast": {
+        "openFailed": "Nie udało się otworzyć zarządzania subskrypcją",
+        "feedbackThanks": "Dziękujemy za opinię!",
+        "feedbackSaveFailed": "Nie udało się zapisać opinii, ale nadal możesz zarządzać subskrypcją"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "Chętnie poznamy Twoją opinię",
+        "subtitle": "Pomóż nam się ulepszać, odpowiadając na kilka krótkich pytań"
+      },
+      "common": {
+        "close": "Zamknij",
+        "other": "Inne",
+        "stepIndicator": "Krok {current} z {total}"
+      },
+      "actions": {
+        "back": "Wstecz",
+        "next": "Dalej",
+        "submitting": "Wysyłanie...",
+        "complete": "Zakończ i kontynuuj"
+      },
+      "satisfaction": {
+        "1": "Bardzo niezadowolony",
+        "2": "Niezadowolony",
+        "3": "Neutralnie",
+        "4": "Zadowolony",
+        "5": "Bardzo zadowolony"
+      },
+      "steps": {
+        "1": {
+          "title": "Skąd dowiedziałeś się o ReelMind?",
+          "options": {
+            "social": "Media społecznościowe (Twitter, Instagram itp.)",
+            "search": "Wyszukiwarka (Google, Bing itp.)",
+            "friend": "Polecenie znajomego lub współpracownika",
+            "ads": "Reklama online",
+            "blog": "Blog technologiczny lub strona z recenzjami"
+          }
+        },
+        "2": {
+          "title": "Do czego głównie używasz ReelMind?",
+          "description": "Zaznacz wszystkie pasujące do Twoich celów.",
+          "options": {
+            "video": "Tworzenie wideo",
+            "image": "Generowanie obrazów",
+            "music": "Komponowanie muzyki",
+            "marketing": "Reklama i marketing",
+            "socialPosts": "Posty w mediach społecznościowych",
+            "education": "Materiały edukacyjne",
+            "personal": "Projekty osobiste",
+            "exploring": "Odkrywanie nowych pomysłów"
+          }
+        },
+        "3": {
+          "title": "Który opis najlepiej do Ciebie pasuje?",
+          "options": {
+            "creator": "Twórca treści",
+            "developer": "Programista freelance",
+            "marketingPro": "Specjalista marketingu",
+            "businessOwner": "Właściciel firmy",
+            "designer": "Projektant",
+            "hobbyist": "Hobbysta",
+            "student": "Studenta",
+            "artist": "Artysta"
+          }
+        },
+        "4": {
+          "title": "Jak oceniasz swoje doświadczenie?",
+          "description": "Oceń ogólną satysfakcję z ReelMind"
+        },
+        "5": {
+          "title": "Jaki jest główny powód anulowania?",
+          "options": {
+            "price": "Za drogo",
+            "usage": "Za rzadko używałem",
+            "features": "Brak kluczowych funkcji",
+            "quality": "Jakość wyników",
+            "bugs": "Problemy techniczne lub błędy",
+            "alternative": "Znalazłem lepszą alternatywę"
+          }
+        },
+        "6": {
+          "title": "Chętnie poznamy Twoją opinię",
+          "description": "Twoje uwagi pomagają nam ulepszać ReelMind dla wszystkich.",
+          "placeholder": "Co możemy poprawić? Jakie funkcje chciałbyś zobaczyć? (opcjonalnie)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Wysłano zapytanie. Wkrótce się odezwiemy.",
+        "submitFailed": "Nie udało się wysłać zapytania"
+      },
+      "card": {
+        "title": "Plan Enterprise i niestandardowy",
+        "subtitle": "Indywidualne ceny, faktury i wsparcie",
+        "description": "Potrzebujesz faktur, wsparcia compliance lub niestandardowego workflow? Podziel się wymaganiami, a zaproponujemy najlepsze rozwiązanie.",
+        "toggle": {
+          "hide": "Ukryj formularz",
+          "show": "Skontaktuj się ze sprzedażą"
+        },
+        "highlights": {
+          "sso": "SSO i compliance",
+          "invoices": "Faktury i zamówienia",
+          "support": "Priorytetowe wsparcie",
+          "workflows": "Niestandardowe workflow"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "Typ kontaktu",
+          "placeholder": "Wybierz typ kontaktu",
+          "options": {
+            "business": "Firma",
+            "individual": "Osoba prywatna"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Szacowane miesięczne użycie (USD)",
+          "placeholder": "Wybierz szacunek",
+          "options": {
+            "0to1000": "0 – 1000 dolarów",
+            "1000to5000": "1000 dolarów – 5000 dolarów",
+            "5000to10000": "5000 dolarów – 10 000 dolarów",
+            "10000plus": "10 000 dolarów +",
+            "custom": "Kwota niestandardowa (USD)"
+          },
+          "custom": {
+            "label": "Niestandardowe miesięczne użycie (USD)",
+            "placeholder": "Wpisz kwotę w USD"
+          }
+        },
+        "firstName": {
+          "label": "Imię",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "Nazwisko",
+          "placeholder": "Łania"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "twój.e-mail@firma.com"
+        },
+        "website": {
+          "label": "Strona WWW",
+          "placeholder": "https://firma.com"
+        },
+        "requirements": {
+          "label": "Opowiedz o projekcie i wymaganiach",
+          "placeholder": "Co budujesz? Jakie workflow, potrzeby compliance i przewidywany wolumen masz?"
+        },
+        "actions": {
+          "cancel": "Anuluj",
+          "submitting": "Wysyłanie...",
+          "submit": "Wyślij"
+        },
+        "validation": {
+          "firstNameRequired": "Imię jest wymagane",
+          "lastNameRequired": "Nazwisko jest wymagane",
+          "emailInvalid": "Email musi być poprawny",
+          "websiteInvalid": "Strona musi być poprawnym URL",
+          "monthlyEstimateRequired": "Szacunek miesięczny jest wymagany",
+          "monthlyEstimateEnter": "Wprowadź szacunek miesięczny",
+          "monthlyEstimateMin": "Szacunek miesięczny musi być >= 0",
+          "requirementsMin": "Podaj więcej szczegółów (min {count} znaków)",
+          "maxChars": "Max {count} znaków"
+        }
+      }
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "items": {
+        "proBenefits": {
+          "question": "Jakie są korzyści z członkostwa PRO?",
+          "answer": "Członkostwo PRO daje 1000 kredytów co miesiąc (warte $10), priorytetowy dostęp do nowych funkcji, szybsze generowanie wideo, zaawansowane opcje edycji i priorytetowe wsparcie."
+        },
+        "cancelAnytime": {
+          "question": "Czy mogę anulować subskrypcję w dowolnym momencie?",
+          "answer": "Tak, możesz anulować subskrypcję w dowolnym momencie. Korzyści będą aktywne do końca bieżącego okresu rozliczeniowego.",
+          "discountNote": {
+            "title": "Uwaga dla subskrypcji ze zniżką:",
+            "body": "Jeśli zasubskrybowałeś z kuponem i użyłeś kredytów przekraczających wartość zniżki w pierwszym miesiącu, możesz anulować dopiero po przetworzeniu płatności za drugi miesiąc. To zapewnia uczciwe wykorzystanie promocji."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Czy jest różnica między subskrypcją miesięczną a roczną?",
+          "answer": "Tak, subskrypcja roczna oferuje znaczną zniżkę w porównaniu do miesięcznej. Oszczędzasz około 20% wybierając rozliczenie roczne."
+        },
+        "whatAreCredits": {
+          "question": "Czym są Kredyty ReelMind?",
+          "answer": "Kredyty ReelMind to wirtualna waluta używana na platformie do generowania wideo i obrazów AI. Różne funkcje wymagają różnych ilości kredytów. Np. standardowe wideo (480p) kosztuje 50 kredytów, a HD (720p) kosztuje 80."
+        },
+        "earnCredits": {
+          "question": "Jak mogę zdobyć kredyty?",
+          "intro": "Możesz zdobywać kredyty na kilka sposobów:",
+          "items": {
+            "membership": "Poprzez plany członkostwa (PRO dostaje 1000 kredytów miesięcznie, MAX 2000)",
+            "purchase": "Kupując pakiety kredytów",
+            "newUser": "Nowi użytkownicy otrzymują 100 darmowych kredytów po rejestracji",
+            "posting": "Publikując treści na ReelMind (50 kredytów dziennie)",
+            "promotions": "Specjalne promocje i nagrody"
+          }
+        },
+        "expire": {
+          "question": "Czy kredyty wygasają?",
+          "answer": "Kredyty kupione bezpośrednio nie wygasają i pozostają na koncie do wykorzystania. Kredyty przyznawane miesięcznie są resetowane na początku miesiąca. Niewykorzystane kredyty nie przechodzą na kolejny miesiąc."
+        },
+        "refund": {
+          "question": "Czy mogę otrzymać zwrot za niewykorzystane kredyty?",
+          "answer": "Nie oferujemy zwrotów za zakupione kredyty. Jeśli jednak wystąpiły problemy techniczne uniemożliwiające ich użycie, skontaktuj się z supportem."
+        },
+        "membershipVsCredits": {
+          "question": "Jaka jest różnica między członkostwem a kredytami?",
+          "answer": "Członkostwo daje miesięczny pakiet kredytów i dodatkowe korzyści (priorytet, ekskluzywne funkcje). Kredyty można kupić osobno bez członkostwa i są zużywane podczas generowania. Wybierz członkostwo przy regularnym użyciu lub kup kredyty okazjonalnie."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Wszelkie prawa zastrzeżone."
+    }
+  },
+  "Search": {
+    "placeholder": "Szukaj...",
+    "noResultsFound": "Nie znaleziono wyników",
+    "viewAllResults": "Zobacz wszystkie wyniki",
+    "sections": {
+      "posts": "Posty",
+      "users": "Użytkownicy"
+    },
+    "tabs": {
+      "posts": "Posty",
+      "users": "Użytkownicy"
+    },
+    "unknownUser": "Nieznany",
+    "loading": "Ładowanie...",
+    "searching": "Wyszukiwanie...",
+    "loadingMore": "Ładowanie więcej...",
+    "tryAgain": "Spróbuj ponownie",
+    "noPostsFound": "Nie znaleziono postów",
+    "noUsersFound": "Nie znaleziono użytkowników",
+    "empty": {
+      "title": "Szukaj",
+      "hint": "Wpisz słowa kluczowe, aby znaleźć treści"
+    },
+    "errors": {
+      "searchFailed": "Wyszukiwanie nie powiodło się"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "PROWIZJE DOŻYWOTNIO - 20% na zawsze"
+    },
+    "hero": {
+      "lifetime": "DOŻYWOTNIO",
+      "passiveIncome": "DOCHÓD PASYWNY",
+      "subtitle": {
+        "prefix": "Zarabiaj",
+        "suffix": "prowizję na zawsze"
+      }
+    },
+    "actions": {
+      "getStarted": "Zacznij",
+      "viewDashboard": "Zobacz panel",
+      "signInFirst": "Najpierw zaloguj się"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "Platforma API ReelMind",
+      "actions": {
+        "modelsPricing": "Modele i ceny",
+        "viewDocumentation": "Zobacz dokumentację"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "Utworzono API key",
+      "apiKeyCreateFailed": "Nie udało się utworzyć API key",
+      "apiKeyDeleted": "Usunięto API key",
+      "apiKeyDeletedDescription": "API key zostało usunięte",
+      "apiKeyDeleteFailed": "Nie udało się usunąć API key",
+      "apiKeyCopied": "API key skopiowano do schowka",
+      "modelIdCopied": "ID modelu skopiowano do schowka"
+    },
+    "accountCard": {
+      "notLoggedIn": "Nie zalogowano",
+      "loadingKeys": "Ładowanie API keys...",
+      "keysAvailable": "Dostępne API keys: {count}",
+      "createKey": "Utwórz API Key",
+      "helpPrefix": "Jeśli potrzebujesz pomocy, sprawdź ",
+      "apiDocumentation": "Dokumentację API"
+    },
+    "stats": {
+      "plan": "Planuj",
+      "resetDate": "Data resetu",
+      "credits": "Kredyty",
+      "tasks": "Zadania",
+      "loading": "Ładowanie...",
+      "freePlan": "Plan darmowy",
+      "na": "Brak",
+      "buyCredits": "Kup kredyty"
+    },
+    "apiKeys": {
+      "title": "Zarządzanie API keys",
+      "description": "Zarządzaj API keys do dostępu do API generowania wideo ReelMind",
+      "createNew": "Utwórz nowy API key",
+      "loading": "Ładowanie API keys...",
+      "label": "API key",
+      "created": "Utworzono {date}",
+      "active": "Aktywny",
+      "inactive": "Nieaktywny",
+      "show": "Pokaż API key",
+      "hide": "Ukryj API key",
+      "copy": "Kopiuj API key",
+      "totalCalls": "Łączna liczba wywołań",
+      "creditsUsed": "Zużyte kredyty",
+      "empty": {
+        "title": "Brak API keys",
+        "description": "Nie utworzyłeś jeszcze żadnych API keys. Utwórz pierwszy, aby zacząć używać ReelMind API.",
+        "createFirst": "Utwórz pierwszy API key"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Modele i ceny",
+      "apiDocumentation": "Dokumentacja API"
+    },
+    "documentation": {
+      "title": "Dokumentacja API",
+      "authentication": "Uwierzytelnianie",
+      "authenticationIntro": "Wszystkie żądania API wymagają uwierzytelniania za pomocą API key. Twoje API key to UUID, który możesz wygenerować w sekcji Zarządzanie API keys poniżej.",
+      "authenticationMethods": "Metody uwierzytelniania",
+      "exampleRequest": "Przykładowe żądanie",
+      "important": "Ważne",
+      "apiEndpoints": "Endpointy API",
+      "responseFormat": "Format odpowiedzi",
+      "responseFormatIntro": "Format odpowiedzi zadania generowania wideo:",
+      "parameters": "Parametry",
+      "table": {
+        "name": "Nazwa",
+        "type": "Typ",
+        "required": "Wymagane",
+        "description": "Opis"
+      },
+      "yes": "Tak",
+      "no": "Nie"
+    },
+    "pricing": {
+      "title": "Ceny API i modele",
+      "intro": "Sprawdź dostępne modele AI i ich ceny dla API generowania wideo i obrazów",
+      "loading": "Ładowanie dostępnych modeli...",
+      "available": "Dostępne",
+      "unavailable": "Niedostępne",
+      "credits": "{credits} kredytów",
+      "basePricePerImage": "Cena bazowa (za obraz)",
+      "basePrice5sVideo": "Cena bazowa (wideo 5 s)",
+      "creditsPerSecond": "+{credits} kredytów/sek.",
+      "modelId": "ID modelu",
+      "copyModelId": "Kopiuj ID modelu",
+      "noModels": {
+        "title": "Brak dostępnych modeli",
+        "description": "Obecnie nie ma modeli AI dostępnych dla API. Wróć później."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Tekst → Wideo",
+      "imageToVideo": "Obraz → Wideo",
+      "videoToVideo": "Wideo → Wideo",
+      "textToImage": "Tekst → Obraz",
+      "imageToImage": "Obraz → Obraz"
+    },
+    "deleteModal": {
+      "title": "Potwierdź usunięcie",
+      "description": "Czy na pewno chcesz usunąć ten API key? Tej akcji nie można cofnąć.",
+      "keyName": "Nazwa klucza: {name}",
+      "createdOn": "Utworzono {date}",
+      "cancel": "Anuluj",
+      "deleting": "Usuwanie...",
+      "deleteKey": "Usuń API key"
+    },
+    "modelParameters": {
+      "title": "Parametry modelu",
+      "required": "Wymagane",
+      "default": "Domyślnie: {value}",
+      "labels": {
+        "prompt": "Podpowiedź",
+        "guidance_scale": "Skala wskazówek",
+        "aspect_ratio": "Proporcje",
+        "seed": "Nasiona",
+        "image_url": "URL obrazu",
+        "duration": "Czas trwania",
+        "resolution": "Rozdzielczość",
+        "num_inference_steps": "Kroki inferencji",
+        "cfg_scale": "Skala CFG"
+      },
+      "flux": {
+        "promptDescription": "Tekstowy prompt opisujący obraz do wygenerowania",
+        "guidanceScaleDescription": "Kontroluje, jak mocno obraz podąża za promptem",
+        "aspectRatioDescription": "Proporcje wygenerowanego obrazu",
+        "seedDescription": "Losowy seed dla powtarzalnej generacji",
+        "imageUrlDescription": "URL obrazu wejściowego do generowania obraz→obraz"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Tekst → Obraz · Edycja obrazu",
+      "title": "FLUX / Nano Banan / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - Najlepszy na świecie reżyser-agent AI",
+      "description": "Najlepszy na świecie reżyser-agent AI"
+    },
+    "page": {
+      "loading": "Ładowanie Reżysera AI Nolan..."
+    },
+    "heroBanner": {
+      "label": "Rewolucyjna technologia AI",
+      "name": "Nolana",
+      "worldFirst": "Pierwszy na świecie",
+      "aiAgentDirector": "Reżyser-agent AI"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Oczekujące",
+        "queued": "W kolejce",
+        "processing": "Przetwarzanie",
+        "completed": "Ukończono",
+        "failed": "Nie udało się",
+        "canceled": "Anulowano"
+      },
+      "model": {
+        "unknown": "Nieznany model",
+        "unnamed": "Bezimienny"
+      },
+      "errors": {
+        "fetchListTitle": "Nie udało się załadować zadań",
+        "unknown": "Nieznany błąd",
+        "fetchDetails": "Nie udało się pobrać szczegółów zadania",
+        "downloadFailed": "Pobieranie nie powiodło się",
+        "retryFailed": "Ponowna próba nie powiodła się"
+      },
+      "details": {
+        "videoTitle": "Szczegóły zadania wideo",
+        "imageTitle": "Szczegóły zadania obrazu",
+        "videoPreview": "Podgląd wideo",
+        "hideVideo": "Ukryj wideo",
+        "showVideo": "Pokaż wideo",
+        "downloadVideo": "Pobierz wideo",
+        "browserNoVideoSupport": "Twoja przeglądarka nie obsługuje odtwarzania wideo.",
+        "labels": {
+          "duration": "Czas trwania",
+          "fileSize": "Rozmiar pliku",
+          "format": "Sformatuj",
+          "prompt": "Podpowiedź",
+          "model": "Modelka",
+          "ratio": "Współczynnik proporcji",
+          "resolution": "Rozdzielczość",
+          "taskId": "Identyfikator zadania",
+          "user": "Użytkownik",
+          "status": "Stan",
+          "createdTime": "Stworzony czas",
+          "startedTime": "Czas rozpoczęcia",
+          "completedTime": "Ukończony czas",
+          "generationModel": "Model generacji",
+          "priority": "Priorytet",
+          "requestId": "Identyfikator żądania",
+          "lastActivity": "Ostatnia aktywność"
+        },
+        "videoPreviewUnavailable": "Podgląd wideo niedostępny",
+        "videoNoOutput": "Zadanie ukończone, ale brak sygnału wideo",
+        "videoNotCompleted": "Zadanie nie zostało jeszcze ukończone",
+        "generationParams": "Parametry generacji",
+        "basicInfo": "Podstawowe informacje",
+        "timeInfo": "Informacje o czasie",
+        "detailData": "Szczegółowe dane",
+        "inputParams": "Parametry wejściowe",
+        "outputResult": "Wynik wyjściowy",
+        "errorLog": "Dziennik błędów",
+        "retrying": "Ponawiam próbę...",
+        "retryTask": "Ponów zadanie",
+        "generatedImage": "Wygenerowany obraz",
+        "close": "Zamknij"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Zarządzanie opiniami użytkowników",
+        "subtitle": "Zarządzaj opiniami i skargami przesłanymi przez użytkowników"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Pobieranie nie powiodło się",
+          "fetchFailedDescription": "Nie można pobrać danych opinii: {error}",
+          "unknown": "Nieznany błąd"
+        },
+        "type": {
+          "bug": "Raport o błędzie",
+          "suggestion": "Sugestia",
+          "other": "Inne"
+        },
+        "loading": "Ładowanie...",
+        "filter": {
+          "label": "Typ opinii",
+          "all": "Wszystkie typy"
+        },
+        "total": "Łącznie: {total} elementy opinii",
+        "empty": "Brak danych zwrotnych",
+        "headers": {
+          "userInfo": "Informacje o użytkowniku",
+          "type": "Wpisz",
+          "subject": "Temat",
+          "submittedAt": "Przesłane",
+          "actions": "Działania"
+        },
+        "user": {
+          "unknown": "Nieznany użytkownik",
+          "noEmail": "Brak e-maila"
+        },
+        "actions": {
+          "collapse": "Zwiń",
+          "viewDetails": "Zobacz szczegóły"
+        },
+        "contentLabel": "Informacje zwrotne:",
+        "pagination": {
+          "previous": "Poprzedni",
+          "next": "Następny"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Proszę wprowadzić wyszukiwane słowo kluczowe.",
+        "noUsersFound": "Nie znaleziono pasujących użytkowników.",
+        "searchFailed": "Nie udało się wyszukać użytkowników.",
+        "userRequired": "Wybierz użytkownika lub wprowadź identyfikator użytkownika.",
+        "amountInvalid": "Proszę wprowadzić prawidłową kwotę kredytów.",
+        "descriptionRequired": "Proszę wpisać opis dotacji.",
+        "grantFailed": "Nie udało się przyznać kredytów."
+      },
+      "success": {
+        "granted": "Kredyty przyznane pomyślnie."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Nie udało się pobrać ankiet.",
+        "fetchStats": "Nie udało się pobrać statystyk ankiety."
+      }
+    },
+    "memberships": {
+      "title": "Zarządzanie subskrypcjami użytkowników",
+      "search": {
+        "placeholder": "Wyszukaj identyfikator użytkownika, adres e-mail lub pseudonim...",
+        "button": "Szukaj"
+      },
+      "stats": {
+        "total": "Łączna liczba subskrypcji",
+        "yearly": "Członkowie roczni"
+      },
+      "list": {
+        "title": "Lista subskrypcji"
+      },
+      "loading": "Ładowanie...",
+      "actions": {
+        "retry": "Spróbuj ponownie"
+      },
+      "empty": "Brak danych subskrypcji",
+      "table": {
+        "headers": {
+          "userInfo": "Informacje o użytkowniku",
+          "plan": "Planuj",
+          "billingCycle": "Cykl rozliczeniowy",
+          "status": "Stan",
+          "credits": "Saldo kredytów",
+          "videoTasks": "Zadania wideo",
+          "imageTasks": "Zadania obrazowe",
+          "createdAt": "Stworzony czas",
+          "expiresAt": "Czas wygaśnięcia"
+        },
+        "user": {
+          "unknown": "Nieznany"
+        },
+        "status": {
+          "active": "Aktywny",
+          "inactive": "Nieaktywny",
+          "cancelAtPeriodEnd": "Anuluj na koniec okresu"
+        },
+        "creditsUnit": "kredyty",
+        "flagged": "Oznaczone",
+        "tasksUnit": "zadania",
+        "never": "Nigdy"
+      },
+      "pagination": {
+        "summary": "Wyświetlanie {start} do {end} z {total} rekordów",
+        "previous": "Poprzedni",
+        "next": "Następny",
+        "page": "Strona {currentPage} z {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Nie udało się usunąć wpisu. Spróbuj ponownie."
+      }
+    }
+  },
+  "Common": {
+    "language": "Język",
+    "onlyEnglish": "Obecnie dostępny jest tylko język angielski.",
+    "onlySupportedPages": "Dodatkowe języki są obecnie dostępne tylko na stronach Strona główna, Eksploruj, Szukaj, Twórz, Lego, Muzyka, Członkostwo, Kontakt, Użytkownik, Udostępnij, Modele, Efekty i Blog.",
+    "languages": {
+      "en": "angielski",
+      "zh-CN": "chiński (uproszczony)"
+    },
+    "actions": {
+      "viewAll": "Zobacz wszystkie",
+      "cancel": "Anulować",
+      "recreate": "Odtwarzać",
+      "download": "Pobierać",
+      "downloading": "Ściąganie...",
+      "showMore": "Pokaż więcej",
+      "showLess": "Pokaż mniej"
+    },
+    "aria": {
+      "scrollRight": "Przewiń w prawo",
+      "search": "Szukaj"
+    },
+    "search": {
+      "placeholder": "Wyszukaj posty i użytkowników..."
+    },
+    "share": {
+      "button": "Udział",
+      "toast": {
+        "copiedTitle": "Skopiowano",
+        "copiedMessage": "Link skopiowany do schowka",
+        "failedTitle": "Nie udało się skopiować",
+        "failedMessage": "Nie można skopiować linku do schowka"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Dyrektor AI Nolana",
+      "earlyAccess": "Wczesny dostęp",
+      "justOneCredit": "Tylko 1 kredyt"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Tryb światła",
+        "darkMode": "Tryb ciemny",
+        "switchToLightMode": "Przełącz na tryb oświetlenia",
+        "switchToDarkMode": "Przełącz na tryb ciemny"
+      },
+      "profile": {
+        "myProfile": "Mój profil",
+        "goToMyProfile": "Przejdź do mojego profilu"
+      },
+      "menu": {
+        "openMenu": "Otwórz menu",
+        "close": "Zamknąć"
+      },
+      "membership": {
+        "title": "Członkostwo",
+        "tapToViewPlans": "Kliknij, aby wyświetlić plany",
+        "upgrade": "Aktualizacja",
+        "plans": {
+          "free": "Bezpłatny",
+          "pro": "Zawodowiec",
+          "max": "Maks",
+          "unlimited": "Nieograniczony"
+        }
+      },
+      "actions": {
+        "pricing": "Wycena",
+        "signIn": "Zalogować się"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Wszelkie prawa zastrzeżone."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Podpowiedź",
+        "model": "Modelka",
+        "ratio": "Stosunek",
+        "guidance": "Przewodnictwo",
+        "steps": "Kroki",
+        "seed": "Nasienie",
+        "definition": "Definicja"
+      },
+      "values": {
+        "unknownModel": "Nieznany model",
+        "random": "Losowy"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Paginacja",
+        "previous": "Przejdź do poprzedniej strony",
+        "next": "Przejdź do następnej strony"
+      },
+      "previous": "Poprzedni",
+      "next": "Następny",
+      "more": "Więcej stron"
+    },
+    "concurrentLimit": {
+      "title": "Osiągnięto limit zadań",
+      "defaultMessage": "Bezpłatni użytkownicy mogą mieć jednocześnie uruchomione tylko jedno zadanie generowania wideo.",
+      "currentStatus": "Aktualny stan",
+      "currentPlan": "Aktualny plan",
+      "premiumBenefits": "Korzyści premium",
+      "plans": {
+        "unlimited": "Nieograniczony plan",
+        "free": "Bezpłatny",
+        "unlimitedTasks": "Nieograniczone zadania"
+      },
+      "unlimited": {
+        "maxTasks": "Maksymalnie 3 jednoczesne zadania",
+        "priority": "Przetwarzanie o wysokim priorytecie",
+        "features": "Wszystkie funkcje premium",
+        "waitNote": "Przed przesłaniem nowych zaczekaj, aż niektóre z bieżących zadań zostaną ukończone."
+      },
+      "free": {
+        "maxTasks": "1 równoległe zadanie",
+        "priority": "Standardowy priorytet",
+        "features": "Podstawowe funkcje"
+      },
+      "upgrade": {
+        "maxTasks": "Do 5 jednoczesnych zadań",
+        "priority": "Przetwarzanie o wyższym priorytecie",
+        "features": "Dostęp do wszystkich modeli"
+      },
+      "actions": {
+        "acknowledge": "Rozumiem",
+        "upgrade": "Aktualizacja",
+        "loading": "Załadunek..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Przesyłanie lokalne",
+      "reelmind": "Wygenerowano ReelMind"
+    },
+    "reelmind": {
+      "description": "Wybierz film wygenerowany w ReelMind.",
+      "browse": "Przeglądaj filmy ReelMind"
+    },
+    "title": {
+      "placeholder": "Dodaj tytuł..."
+    },
+    "tags": {
+      "title": "Tagi",
+      "empty": "Dodaj tagi, aby lepiej kategoryzować swój film.",
+      "placeholder": "Dodaj tag (naciśnij Enter, aby potwierdzić)",
+      "count": "{count}/{limit}",
+      "helper": "Do {limit} tagów, każdy {max} znaków."
+    },
+    "description": {
+      "placeholder": "Dodaj opis..."
+    },
+    "generationType": {
+      "title": "Typ generacji",
+      "txt2video": "Tekst na wideo",
+      "txt2videoDescription": "Generuj na podstawie podpowiedzi tekstowej.",
+      "img2video": "Obraz do wideo",
+      "img2videoDescription": "Wygeneruj z obrazu referencyjnego."
+    },
+    "prompts": {
+      "promptTitle": "Podpowiedź",
+      "promptPlaceholder": "Wprowadź monit użyty do wygenerowania tego filmu...",
+      "negativeTitle": "Podpowiedź negatywna",
+      "negativePlaceholder": "Wprowadź negatywną zachętę..."
+    },
+    "modelResources": {
+      "title": "Zasoby modelowe",
+      "placeholder": "Wymień wykorzystane zasoby modelu, np. Modele, LoRA, osadzania..."
+    },
+    "aigc": {
+      "guidanceScale": "Skala wskazówek",
+      "guidanceScalePlaceholder": "np. 7,5",
+      "steps": "Kroki",
+      "stepsPlaceholder": "np. 30",
+      "seed": "Nasienie",
+      "seedPlaceholder": "np. 1234567890"
+    },
+    "tools": {
+      "title": "Narzędzia generacji"
+    },
+    "videoPreview": {
+      "uploadComplete": "Przesyłanie zakończone",
+      "uploading": "Przesyłanie...",
+      "clickToUpload": "Kliknij, aby przesłać film",
+      "remove": "Usuń wideo"
+    },
+    "actions": {
+      "publish": "Publikować",
+      "publishing": "Wydawniczy...",
+      "back": "Z powrotem"
+    },
+    "errors": {
+      "tagEmpty": "Tag nie może być pusty.",
+      "tagTooLong": "Tag nie może przekraczać {max} znaków.",
+      "tagExists": "Ten tag już istnieje.",
+      "tagLimit": "Możesz dodać maksymalnie {limit} tagów.",
+      "authRequired": "Zaloguj się, aby przesłać.",
+      "uploadFailed": "Przesyłanie nie powiodło się. Spróbuj ponownie.",
+      "uploadParamsFailed": "Nie udało się pobrać parametrów przesyłania.",
+      "fileAddFailed": "Nie udało się dodać pliku. Spróbuj ponownie."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog - ReelMind",
+      "description": "Odkryj wskazówki, samouczki i spostrzeżenia na temat tworzenia treści AI, generowania wideo i najnowszych funkcji ReelMind."
+    },
+    "page": {
+      "title": "Bloga",
+      "empty": "Nie znaleziono wpisów na blogu"
+    },
+    "error": {
+      "title": "Błąd ładowania postów",
+      "description": "Coś poszło nie tak podczas ładowania postów na blogu.",
+      "retry": "Spróbuj ponownie"
+    },
+    "notFound": {
+      "title": "Nie znaleziono strony",
+      "description": "Żądana strona bloga nie istnieje."
+    },
+    "feed": {
+      "end": "Dotarłeś do końca",
+      "retry": "Spróbować ponownie",
+      "loadFailed": "Nie udało się załadować postów na blogu"
+    },
+    "topFeed": {
+      "refresh": "Odświeżać",
+      "exploreMore": "Odkryj więcej zabawy",
+      "loadFailed": "Nie udało się załadować losowych postów"
+    },
+    "floatingChat": {
+      "title": "Zapytaj Nolana AI",
+      "subtitle": "Dyrektor agenta nr 1 AI!",
+      "placeholder": "Zapytaj o ten artykuł lub podziel się swoimi pomysłami filmowymi...",
+      "cta": "Wyślij do Nolana"
+    },
+    "featureCard": {
+      "label": "Modele wideo",
+      "title": "Reelmind oferuje potężne narzędzia do urzeczywistniania Twoich pomysłów.",
+      "subtitle": "Przekształć swoje pomysły w oszałamiające efekty wizualne dzięki 101 modelom AI",
+      "cta": "Spróbuj teraz"
+    },
+    "breadcrumbs": {
+      "home": "Dom"
+    },
+    "article": {
+      "notFoundTitle": "Nie znaleziono artykułu",
+      "notFoundDescription": "Nie można znaleźć żądanego artykułu."
+    }
+  },
+  "Favorites": {
+    "title": "Moje ulubione",
+    "subtitle": "Tutaj możesz zarządzać swoimi ulubionymi filmami i modelkami",
+    "tabs": {
+      "video": "Wideo",
+      "model": "Modelka"
+    },
+    "empty": {
+      "title": "Nie masz jeszcze ulubionych"
+    },
+    "alert": {
+      "title": "Błąd",
+      "retry": "Spróbować ponownie",
+      "loadFailed": "Nie można wczytać ulubionych. Spróbuj ponownie.",
+      "removeFailed": "Nie można usunąć ulubionego. Spróbuj ponownie."
+    },
+    "card": {
+      "video": "Wideo",
+      "model": "Modelka"
+    },
+    "button": {
+      "favorite": "Ulubiony",
+      "favorited": "Ulubione"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Witamy w ReelMind",
+      "subtitle": "Zaloguj się lub utwórz konto twórcy",
+      "continueWithGoogle": "Kontynuuj z Google",
+      "orContinueWithEmail": "lub kontynuuj e-mailem",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "twoj@email.com",
+      "emailAddressPlaceholder": "Adres e-mail",
+      "passwordLabel": "Hasło",
+      "passwordPlaceholder": "••••••••",
+      "show": "pokaż",
+      "hide": "ukryj",
+      "inviteCodeLabelOptional": "Kod zaproszenia (opcjonalnie)",
+      "inviteCodePlaceholder": "Wpisz kod",
+      "invitedBy": "Zaproszony przez <name>{value}</name>",
+      "continue": "Kontynuuj",
+      "signIn": "Zaloguj się",
+      "createAccount": "Utwórz konto",
+      "switchToSignIn": "Masz już konto? Zaloguj się",
+      "switchToSignUp": "Nie masz konta? Zarejestruj się",
+      "pageSubtitleCreate": "Utwórz konto",
+      "pageSubtitleSignIn": "Zaloguj się na konto",
+      "termsLine": "Kontynuując, akceptujesz nasze <terms>Warunki</terms> oraz <privacy>Politykę prywatności</privacy>"
+    },
+    "verifyEmail": {
+      "title": "Zweryfikuj swój e-mail",
+      "sentLinkTo": "Wysłaliśmy link weryfikacyjny na",
+      "checkInbox": "Sprawdź skrzynkę odbiorczą i kliknij link, aby kontynuować.",
+      "understand": "Rozumiem",
+      "useDifferentEmail": "Użyj innego e-maila"
+    },
+    "errors": {
+      "invalidEmail": "Nieprawidłowy adres e-mail",
+      "suspiciousEmail": "Ten e-mail wygląda podejrzanie",
+      "verifyBeforeLogin": "Zweryfikuj e-mail przed zalogowaniem",
+      "operationFailed": "Operacja nie powiodła się, spróbuj ponownie",
+      "googleFailed": "Logowanie przez Google nie powiodło się, spróbuj ponownie",
+      "checkEmailConfirmation": "Sprawdź e-mail, aby znaleźć link potwierdzający!"
+    },
+    "brand": {
+      "headlineLine1": "Producenci kołowrotków",
+      "headlineLine2": "Witamy",
+      "taglineLine1": "Rozwiń swój umysł.",
+      "taglineLine2": "Niech AI zamieni to w rolkę.",
+      "cta": "Dołącz do naszej społeczności twórców i zacznij tworzyć."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Dodaj obraz",
+      "addMoreReferences": "Dodaj więcej referencji",
+      "auto": "Automat",
+      "back": "Powrót",
+      "character": "Charakter",
+      "clear": "Jasne",
+      "clearAll": "Wyczyść wszystko",
+      "close": "Zamknij",
+      "createPack": "Utwórz paczkę",
+      "downloadCount": "Pobierz {current}/{total}",
+      "dropOrUploadPhoto": "Upuść lub prześlij zdjęcie",
+      "goToLibrary": "Idź do biblioteki",
+      "high": "Wysoka",
+      "history": "Historia",
+      "inQueue": "W kolejce",
+      "info": "Informacje",
+      "instadump": "Instagram",
+      "manual": "Instrukcja",
+      "new": "Nowy",
+      "next": "Następny",
+      "open": "Otwórz",
+      "previous": "Poprzedni",
+      "ready": "Gotowy",
+      "recent": "Najnowsze",
+      "remove": "Usuń",
+      "replace": "Wymień",
+      "reset": "Zresetuj",
+      "restart": "Uruchom ponownie",
+      "selectPack": "Wybierz pakiet",
+      "storyboard": "Storyboard",
+      "upload": "Prześlij",
+      "uploading": "Przesyłanie..."
+    },
+    "prompts": {
+      "defaultImage": "Filmowy obraz o dużej szczegółowości z naturalnym oświetleniem",
+      "relightDefault": "Oświetl obiekt ponownie delikatnym oświetleniem studyjnym",
+      "faceSwapDefault": "Zamień twarz, zachowując scenę nienaruszoną",
+      "characterSwapDefault": "Zamień postać, zachowując styl",
+      "drawToEditDefault": "Popraw rysunek, aby uzyskać czysty i szczegółowy obraz"
+    },
+    "swap": {
+      "sourceTitle": "Źródło",
+      "targetTitle": "Cel",
+      "faceSourceDescription": "Obraz źródłowy twarzy",
+      "faceTargetDescription": "Obraz docelowy do zastąpienia",
+      "characterSourceDescription": "Obraz źródłowy postaci",
+      "characterTargetDescription": "Obraz docelowy do zastąpienia"
+    },
+    "inpaint": {
+      "sourceAlt": "Obraz źródłowy",
+      "paintHint": "Pomaluj obszar, który chcesz edytować",
+      "maskUploading": "Przesyłanie maski",
+      "maskReady": "Maska gotowa",
+      "maskPaint": "Maska malarska",
+      "paint": "Farba",
+      "erase": "Wymaż"
+    },
+    "relight": {
+      "title": "Rozjaśnij się",
+      "quickSelect": "Szybki wybór",
+      "directions": {
+        "top": "Góra",
+        "front": "Przód",
+        "right": "Jasne",
+        "left": "Lewy",
+        "back": "Powrót",
+        "bottom": "Dół"
+      },
+      "brightness": "Jasność",
+      "color": "Kolor"
+    },
+    "upscale": {
+      "title": "Ekskluzywny"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Szkic do wideo",
+      "drawToVideo": "Rysuj do wideo",
+      "drawToEdit": "Rysuj, aby edytować",
+      "pen": "Pióro",
+      "eraser": "Gumka",
+      "color": "Kolor",
+      "size": "Rozmiar",
+      "undo": "Cofnij",
+      "redo": "Powtórz",
+      "clear": "Jasne",
+      "generateVideo": "Wygeneruj wideo",
+      "uploadTitle": "Prześlij multimedia",
+      "uploadDescription": "Dodaj zdjęcie, które będzie przewodnikiem po rysunku"
+    },
+    "soulId": {
+      "heroTitle": "Znak identyfikacyjny duszy",
+      "heroDescription": "Zbuduj spójny charakter ze swoich zdjęć.",
+      "createButton": "Stwórz postać",
+      "photoCount": "{count} zdjęcia",
+      "characterLabel": "Znak {index}",
+      "emptyGallery": "Nie ma jeszcze żadnych znaków.",
+      "dialogTitle": "Utwórz identyfikator duszy",
+      "dialogSubtitle": "Prześlij zdjęcia, aby zbudować swoją postać.",
+      "addPhotosTitle": "Dodaj zdjęcia",
+      "addPhotosDescription": "Prześlij 6–12 wyraźnych zdjęć.",
+      "tip": "Wskazówka: używaj różnych kątów i wyrażeń."
+    },
+    "storyboard": {
+      "relightScene": "Scena ponownego oświetlenia",
+      "headline": "Fabryka Mody",
+      "headlineAccent": "Wygeneruj swoją estetykę",
+      "description": "Storyboard, edytuj, twórz.",
+      "resultsLabel": "Wyniki {count}",
+      "uploadHint": "Prześlij obrazy referencyjne, które poprowadzą scenę",
+      "referenceImagesTitle": "Obrazy referencyjne",
+      "referenceImagesDescription": "Dodaj maksymalnie 4 obrazy pasujące do stylu"
+    },
+    "instadump": {
+      "sidebarTitle": "Studio Instadump",
+      "stepChoosePack": "Wybierz pakiet",
+      "stepAddPhoto": "Dodaj zdjęcie",
+      "stepGetInstadump": "Pobierz Instagrama",
+      "headerTitle": "Instagram",
+      "headerDescription": "Zamień selfie w pełną bibliotekę treści.",
+      "addPhotoTitle": "Dodaj swoje zdjęcie",
+      "addPhotoDescription": "Na początek prześlij wyraźne selfie.",
+      "getInstadumpTitle": "Zdobądź swój Instagram",
+      "newPhotosReady": "Nowe zdjęcia gotowe",
+      "tryFree": "Wypróbuj za darmo",
+      "premiumTitle": "Premium",
+      "premiumBulletOne": "Więcej stylów w opakowaniu",
+      "premiumBulletTwo": "Przetwarzanie priorytetowe",
+      "premiumBulletThree": "Pliki do pobrania w pełnej rozdzielczości",
+      "upgradeNow": "Uaktualnij teraz"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Edytuj",
+      "subtitle": "Uzyskaj dostęp do funkcji i modeli edycji",
+      "back": "Powrót do edycji",
+      "workspace": {
+        "title": "Obszar roboczy",
+        "status": "Element zastępczy frontendu",
+        "uploadTitle": "Prześlij multimedia",
+        "uploadDescription": "Aby rozpocząć, upuść lub kliknij, aby przesłać obraz/film"
+      },
+      "settings": {
+        "title": "Ustawienia",
+        "modelTitle": "Modelka",
+        "modelDescription": "Wybierz model (backend już wkrótce)",
+        "promptTitle": "Podpowiedź",
+        "promptDescription": "Opisz, czego chcesz (backend wkrótce)",
+        "generate": "Wygeneruj"
+      },
+      "model": {
+        "title": "Szczegóły modelu",
+        "descriptionTitle": "Opis",
+        "descriptionBody": "To jest element zastępczy. Szczegóły zostaną wypełnione po podłączeniu backendu."
+      }
+    },
+    "menu": {
+      "title": "Edytuj",
+      "sections": {
+        "features": "Funkcje",
+        "models": "Modele"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Edytuj wideo",
+        "description": "Zaawansowana edycja wideo"
+      },
+      "inpaint": {
+        "title": "Malować",
+        "description": "Wybierz obszar, opisz zmianę"
+      },
+      "relight": {
+        "title": "Rozjaśnij się",
+        "description": "Dostosuj położenie, kolor i jasność oświetlenia"
+      },
+      "aiStylist": {
+        "title": "Stylista AI",
+        "description": "Znajdź swój idealny wygląd"
+      },
+      "upscale": {
+        "title": "Ekskluzywny",
+        "description": "Zwiększ rozdzielczość i jakość"
+      },
+      "skinEnhancer": {
+        "title": "Wzmacniacz skóry",
+        "description": "Naturalne, realistyczne tekstury skóry"
+      },
+      "angles": {
+        "title": "Kąty",
+        "description": "Generuj pod różnymi kątami"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Maksymalna szczegółowość i dokładność"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Szybkie i lekkie edycje"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Bezproblemowa integracja produktów"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Skaler o wysokiej rozdzielczości"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Kontroluj ruch za pomocą referencji wideo"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Zaawansowana edycja wideo"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Plan główny",
+      "completed": "Ukończono {completed}/{total}",
+      "steps": {
+        "script": "Scenariusz i storyboard",
+        "world": "Projekt zasobów świata",
+        "video": "Generowanie wideo",
+        "worldVideo": "Zasoby świata i generowanie wideo",
+        "audio": "Projekt głosu i audio",
+        "final": "Montaż końcowy"
+      }
+    }
+  }
+}

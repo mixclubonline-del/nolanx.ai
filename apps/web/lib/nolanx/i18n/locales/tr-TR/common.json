@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "İngilizce",
+    "zh-CN": "Çince (Basitleştirilmiş)"
+  },
+  "buttons": {
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "submit": "Gönder",
+    "loading": "Yükleniyor...",
+    "retry": "Yeniden dene"
+  },
+  "common": {
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "error": "Hata",
+    "success": "Başarılı",
+    "warning": "Uyarı",
+    "info": "Bilgi"
+  },
+  "messages": {
+    "success": "İşlem başarıyla tamamlandı",
+    "error": "Bir hata oluştu",
+    "loading": "Yükleniyor, lütfen bekleyin...",
+    "noData": "Veri yok",
+    "confirmDelete": "Bu öğeyi silmek istediğinizden emin misiniz?",
+    "saved": "Başarıyla kaydedildi",
+    "deleted": "Başarıyla silindi"
+  },
+  "notifications": {
+    "title": "Bildirimler",
+    "clear": "Temizle",
+    "markAllAsRead": "Tümünü okundu işaretle",
+    "allRead": "Tümü okundu",
+    "newImageGenerated": "Yeni görüntü oluşturuldu"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "canvas": "Hikâye Panosu",
+    "settings": "Ayarlar",
+    "back": "Geri"
+  },
+  "dialog": {
+    "confirmTitle": "Eylemi onayla",
+    "confirmDescription": "Bu işlem geri alınamaz",
+    "cancel": "İptal",
+    "confirm": "Onayla"
+  },
+  "update": {
+    "title": "🎉 Yeni sürüm mevcut",
+    "description": "Yeni sürüm v{{version}} mevcut. Şimdi yüklemek ister misiniz?",
+    "installNote": "\"Güncellemeyi yükle\"ye tıklayarak uygulamayı yeniden başlatıp güncellemeyi yükleyin.",
+    "laterButton": "Daha sonra hatırlat",
+    "installButton": "Güncellemeyi yükle",
+    "installing": "Yükleniyor..."
+  },
+  "auth": {
+    "login": "Giriş yap",
+    "logout": "Çıkış yap",
+    "loginToJaaz": "Jaaz'a giriş yap",
+    "myAccount": "Hesabım",
+    "loginDescription": "Bulut AI modellerini kullanmak için giriş yapın",
+    "startLogin": "Girişi başlat",
+    "preparingLogin": "Giriş hazırlanıyor...",
+    "cancel": "İptal",
+    "loginSuccessMessage": "Giriş başarılı!",
+    "authExpiredMessage": "Yetkilendirme süresi doldu, lütfen tekrar giriş yapın",
+    "authErrorMessage": "Yetkilendirme durumu kontrol edilirken hata oluştu",
+    "waitingForBrowser": "Tarayıcıda girişin tamamlanması bekleniyor...",
+    "pollErrorMessage": "Giriş durumu kontrol edilemedi, lütfen tekrar deneyin",
+    "preparingLoginMessage": "Giriş hazırlanıyor...",
+    "browserLoginMessage": "Lütfen tarayıcıda girişi tamamlayın",
+    "loginRequestFailed": "Giriş isteği başarısız, lütfen tekrar deneyin",
+    "logoutSuccessMessage": "Başarıyla çıkış yapıldı",
+    "notLoggedIn": "Giriş yapılmadı",
+    "balance": "Bakiye",
+    "recharge": "Yükle"
+  },
+  "socket": {
+    "connectionError": "Bağlantı hatası ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Bağlantı başarısız, lütfen sayfayı yenileyin"
+  }
+}

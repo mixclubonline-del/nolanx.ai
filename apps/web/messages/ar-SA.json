@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "إعجاب",
+      "liked": "تم الإعجاب",
+      "share": "مشاركة",
+      "download": "تنزيل",
+      "downloading": "جارٍ التنزيل...",
+      "copying": "جارٍ النسخ...",
+      "recreate": "إعادة الإنشاء"
+    },
+    "aria": {
+      "closeVideo": "إغلاق الفيديو",
+      "goBack": "رجوع",
+      "likeVideo": "إعجاب بالفيديو",
+      "unlikeVideo": "إزالة الإعجاب",
+      "shareVideo": "مشاركة الفيديو",
+      "downloadVideo": "تنزيل الفيديو",
+      "copyingLink": "جارٍ نسخ الرابط...",
+      "downloading": "جارٍ التنزيل..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "تم نسخ الرابط",
+      "videoLinkCopiedMessage": "تم نسخ رابط الفيديو إلى الحافظة",
+      "copyFailedTitle": "فشل النسخ",
+      "copyFailedMessage": "تعذر نسخ الرابط",
+      "shareFailedTitle": "فشلت المشاركة",
+      "shareFailedMessage": "تعذر نسخ رابط الفيديو",
+      "loginFirst": "يرجى تسجيل الدخول أولاً",
+      "cannotFollowYourself": "لا يمكنك متابعة نفسك",
+      "followed": "تمت المتابعة",
+      "unfollowed": "تم إلغاء المتابعة",
+      "operationFailed": "فشلت العملية"
+    },
+    "generation": {
+      "generationModel": "نموذج التوليد",
+      "withEffect": "مع {effect}",
+      "effectBadge": "تأثير",
+      "prompt": "الموجه",
+      "referenceImage": "صورة مرجعية",
+      "referenceImageAlt": "صورة مرجعية لتوليد الفيديو",
+      "negativePrompt": "موجه سلبي",
+      "parameters": "المعلمات",
+      "guidance": "التوجيه",
+      "steps": "الخطوات",
+      "seed": "البذرة",
+      "ratio": "النسبة"
+    },
+    "author": {
+      "uploaded": "نُشر {time}",
+      "profile": "الملف الشخصي",
+      "follow": "متابعة",
+      "unfollow": "إلغاء المتابعة",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "التعليقات",
+      "placeholder": "شارك أفكارك حول هذا الفيديو...",
+      "send": "إرسال",
+      "sending": "جارٍ الإرسال...",
+      "empty": "كن أول من يشارك أفكاره حول هذا العمل!"
+    },
+    "time": {
+      "now": "الآن",
+      "minutesAgo": "منذ {minutes} دقيقة",
+      "hoursAgo": "منذ {hours} ساعة",
+      "daysAgo": "منذ {days} يوم"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "أرصدة"
+    },
+    "earnCreditsCapsule": {
+      "label": "اكسب أرصدة",
+      "aria": {
+        "openRewardCenter": "اكسب أرصدة"
+      },
+      "badge": {
+        "claimed": "تم الاستلام"
+      },
+      "title": {
+        "base": "اكسب أرصدة",
+        "canClaim": "اكسب أرصدة (+{amount})",
+        "claimedToday": "اكسب أرصدة (تم الاستلام اليوم)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "مركز المكافآت",
+      "subtitle": {
+        "main": "أحِل واربح + مكافآت يومية",
+        "joined": "اطّلع على من انضم"
+      },
+      "common": {
+        "loading": "جارٍ التحميل..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} أرصدة"
+      },
+      "actions": {
+        "back": "رجوع",
+        "close": "إغلاق",
+        "copy": "نسخ",
+        "share": "مشاركة",
+        "inviteFriends": "دعوة الأصدقاء",
+        "claim": "استلام",
+        "claiming": "جارٍ الاستلام...",
+        "claimed": "تم الاستلام"
+      },
+      "aria": {
+        "copyInviteCode": "نسخ رمز الدعوة",
+        "shareInviteLink": "مشاركة رابط الدعوة"
+      },
+      "labels": {
+        "inviteLink": "رابط الدعوة",
+        "inviteCode": "رمز الدعوة",
+        "invited": "تمت الدعوة",
+        "rewarded": "تمت المكافأة",
+        "pending": "قيد الانتظار",
+        "recentInvites": "آخر الدعوات",
+        "recentRewards": "آخر المكافآت",
+        "referEarn": "أحِل واربح",
+        "dailyRewards": "مكافآت يومية",
+        "dailyLogin": "تسجيل الدخول اليومي",
+        "rewardedProgress": "تمت المكافأة: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "لا توجد دعوات بعد.",
+        "noRewards": "لا توجد مكافآت بعد."
+      },
+      "status": {
+        "rewarded": "تمت المكافأة",
+        "pending": "قيد الانتظار",
+        "verified": "تم التحقق"
+      },
+      "share": {
+        "title": "دعوة ReelMind",
+        "text": "انضم إليّ على ReelMind واحصل على أرصدة مجانية."
+      },
+      "toast": {
+        "copiedTitle": "تم النسخ",
+        "copiedDescription": "تم نسخ {label} إلى الحافظة.",
+        "copyFailedTitle": "فشل النسخ",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "يرجى النسخ يدويًا.",
+        "claimFailedTitle": "فشل الاستلام",
+        "claimedTitle": "تم الاستلام",
+        "claimedDescription": "حصلت على {amount} أرصدة."
+      },
+      "referEarn": {
+        "tipLabel": "قواعد الدعوة والربح",
+        "tipTitle": "كيف يعمل",
+        "tipBody1": "شارك رابط دعوتك. عندما يسجّل مستخدم جديد باستخدام رمزك ويُكمل إجراءً مؤهلًا، يتم إصدار الأرصدة بعد تحقق النظام.",
+        "tipBody2": "مكافآت متدرجة: 1-5 = 50، 6-15 = 100، 16-20 = 200 رصيد.",
+        "cardTitle": "احصل على أرصدة بدعوة الأصدقاء",
+        "upTo": "حتى {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "قواعد تسجيل الدخول اليومي",
+        "tipTitle": "مكافأة يومية",
+        "tipBodyPrefix": "تبدأ المكافآت في",
+        "tipBodyDay2": "اليوم الثاني",
+        "tipBodySuffix": "من سلسلتك وتُعاد يوميًا حسب توقيت UTC.",
+        "status": {
+          "loading": "جارٍ تحميل الحالة...",
+          "claimed": "تم الاستلام",
+          "readyToClaim": "جاهز للاستلام",
+          "locked": "مقفل"
+        },
+        "errors": {
+          "alreadyClaimed": "تم الاستلام اليوم بالفعل.",
+          "notEligible": "غير مؤهل للاستلام الآن.",
+          "riskBlocked": "تم حظر الاستلام بسبب التحكم بالمخاطر.",
+          "generic": "حدث خطأ ما. يرجى المحاولة لاحقًا."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "استكشاف",
+      "video": "فيديو",
+      "image": "صورة",
+      "music": "موسيقى",
+      "edit": "تحرير",
+      "experiment": "تجارب"
+    },
+    "special": {
+      "nolan": "نولان"
+    },
+    "bottom": {
+      "affiliate": "الإحالة",
+      "contactUs": "اتصل بنا",
+      "blog": "المدونة",
+      "apiPlatform": "منصة API"
+    },
+    "badges": {
+      "help": "مساعدة",
+      "new": "جديد",
+      "free": "مجاني"
+    },
+    "sidebar": {
+      "more": "المزيد",
+      "closeMenu": "إغلاق القائمة",
+      "moreTools": "مزيد من الأدوات",
+      "followOnX": "تابعنا على X (تويتر)",
+      "followOnTikTok": "تابعنا على TikTok",
+      "subscribeOnYouTube": "اشترك في قناتنا على YouTube",
+      "termsOfService": "شروط الخدمة",
+      "privacyPolicy": "سياسة الخصوصية"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "الميزات",
+        "models": "النماذج"
+      },
+      "features": {
+        "createVideo": {
+          "title": "إنشاء فيديو",
+          "description": "إنشاء مقاطع فيديو بالذكاء الاصطناعي"
+        },
+        "cinemaStudioVideo": {
+          "title": "فيديو ستوديو السينما",
+          "description": "فيديو احترافي مع حركات الكاميرا"
+        },
+        "mixedMedia": {
+          "title": "الوسائط المختلطة",
+          "description": "مزج النص والصور والفيديو"
+        },
+        "editVideo": {
+          "title": "تحرير الفيديو",
+          "description": "تحرير المشاهد واللقطات والعناصر"
+        },
+        "clickToAd": {
+          "title": "انقر للإعلان",
+          "description": "تحويل المقاطع إلى إعلانات"
+        },
+        "sora2Trends": {
+          "title": "سورا 2 الاتجاهات",
+          "description": "أفكار فيديو موجهة نحو الاتجاه"
+        },
+        "lipsyncStudio": {
+          "title": "ستوديو ليبسينك",
+          "description": "مزامنة الصوت مع الوجوه"
+        },
+        "drawToVideo": {
+          "title": "ارسم على الفيديو",
+          "description": "يتحول الرسم إلى سينما"
+        },
+        "sketchToVideo": {
+          "title": "رسم على الفيديو",
+          "description": "من الرسم إلى الفيديو مع Sora 2"
+        },
+        "ugcFactory": {
+          "title": "مصنع المحتوى الذي ينشئه المستخدمون",
+          "description": "محتوى جاهز لمنشئي المحتوى بسرعة"
+        },
+        "videoUpscale": {
+          "title": "فيديو راقي",
+          "description": "زيادة الدقة مع الوضوح"
+        },
+        "higgsfieldAnimate": {
+          "title": "الرسوم المتحركة هيغزفيلد",
+          "description": "حرك اللقطات بأناقة"
+        },
+        "recastStudio": {
+          "title": "إعادة صياغة الاستوديو",
+          "description": "إعادة صياغة الممثلين والأساليب"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "التحكم في الكاميرا السينمائية"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "التحكم الديناميكي في الحركة"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "تحويل النص إلى فيديو بجودة عالية"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "تعديلات دقيقة على الفيديو"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "الجيل القادم من الفيديو"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "تصوير سينمائي واقعي"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "حركة وإيقاع منمنمة"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "فيديو سينمائي سريع"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "تفاصيل نظيفة ونبرة"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "العروض التي تعتمد على الصور الرمزية"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "سمات",
+        "models": "نماذج"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "إنشاء صورة",
+          "description": "توليد صور الذكاء الاصطناعي"
+        },
+        "cinemaStudioImage": {
+          "title": "صورة استوديو السينما",
+          "description": "محاكاة الكاميرا والعدسة الحقيقية"
+        },
+        "createStoryboard": {
+          "title": "إنشاء القصة المصورة",
+          "description": "صمم مشاهد قصتك"
+        },
+        "soulIdCharacter": {
+          "title": "شخصية معرف الروح",
+          "description": "خلق شخصية فريدة من نوعها"
+        },
+        "relight": {
+          "title": "ريلايت",
+          "description": "ضبط موضع الإضاءة واللون والسطوع"
+        },
+        "inpaint": {
+          "title": "إنباينت",
+          "description": "حدد منطقة، ووصف التغيير"
+        },
+        "imageUpscale": {
+          "title": "صورة راقية",
+          "description": "تعزيز جودة الصورة"
+        },
+        "faceSwap": {
+          "title": "مبادلة الوجه",
+          "description": "إنشاء مقايضات وجه واقعية"
+        },
+        "characterSwap": {
+          "title": "مبادلة الأحرف",
+          "description": "إنشاء مقايضات شخصية واقعية"
+        },
+        "drawToEdit": {
+          "title": "ارسم للتحرير",
+          "description": "من الرسم إلى الصورة"
+        },
+        "instadump": {
+          "title": "إنستادومب",
+          "description": "تحويل صورة شخصية إلى مكتبة محتوى كاملة"
+        },
+        "photodumpStudio": {
+          "title": "استوديو فوتودومب",
+          "description": "توليد الجمالية الخاصة بك"
+        },
+        "fashionFactory": {
+          "title": "مصنع الأزياء",
+          "description": "إنشاء مجموعات الأزياء"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "صور أزياء واقعية للغاية"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "القصة المصورة، تحرير، إنشاء"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "أفضل نموذج صورة بدقة 4K على الإطلاق"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "نموذج صورة من الجيل التالي بدقة 4K"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "تقديم دقة الألوان الحقيقية"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "تفاصيل محسنة للسرعة"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "صور نابضة بالحياة فورية"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "صور واقعية وسريعة ودقيقة"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "صور واقعية"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "نموذج متقدم لتحرير الصور"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "جهاز ترقية عالي الدقة"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "الكل",
+        "recommended": "موصى به",
+        "saved": "محفوظ"
+      },
+      "labels": {
+        "camera": "الكاميرا",
+        "lens": "العدسة",
+        "focalLength": "البعد البؤري",
+        "aperture": "فتحة العدسة"
+      },
+      "units": {
+        "mm": "مم"
+      },
+      "actions": {
+        "saveSetup": "حفظ الإعداد",
+        "removeSetup": "إزالة الإعداد",
+        "close": "إغلاق"
+      },
+      "empty": "لا توجد إعدادات بعد"
+    },
+    "page": {
+      "title": "تجربة",
+      "subtitle": "جرب مهام سير العمل الجديدة أولاً",
+      "back": "العودة إلى التجربة"
+    },
+    "menu": {
+      "title": "تجربة",
+      "open": "يفتح"
+    },
+    "tabs": {
+      "character": "شخصية",
+      "inpaint": "إنباينت",
+      "cinemaStudio": "استوديو السينما",
+      "motionControl": "التحكم في الحركة",
+      "assist": "يساعد"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "إنباينت",
+        "description": "قم بالطلاء على منطقة ما ووصف التغيير"
+      },
+      "cinemaStudio": {
+        "title": "استوديو السينما",
+        "description": "سير العمل السينمائي الاحترافي"
+      },
+      "motionControl": {
+        "title": "التحكم في الحركة",
+        "description": "انسخ الحركة من مقطع فيديو مرجعي"
+      },
+      "assist": {
+        "title": "يساعد",
+        "description": "أدوات مساعدة سريعة ومبتكرة"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "شخصية",
+        "subtitle": "أدوات تناسق الأحرف (عنصر نائب)"
+      },
+      "inpaint": {
+        "title": "إنباينت",
+        "subtitle": "قم بتحميل الوسائط، وحدد المنطقة، ووصف التعديل"
+      },
+      "cinemaStudio": {
+        "title": "استوديو السينما",
+        "subtitle": "أنشئ لقطات سينمائية باستخدام المطالبات المدركة للكاميرا"
+      },
+      "motionControl": {
+        "title": "التحكم في الحركة",
+        "subtitle": "إعادة إنشاء الحركة مع صورتك"
+      },
+      "assist": {
+        "title": "يساعد",
+        "subtitle": "الدردشة والنصائح والمرافق السريعة"
+      }
+    },
+    "actions": {
+      "upload": "تحميل الوسائط",
+      "generate": "يولد",
+      "history": "تاريخ",
+      "howItWorks": "كيف يعمل",
+      "sendMessage": "أرسل رسالة...",
+      "tryExample": "جرب مثالا",
+      "send": "يرسل"
+    },
+    "placeholders": {
+      "exploreFeatures": "استكشاف الميزات",
+      "settings": "إعدادات",
+      "camera": "آلة تصوير",
+      "cameraHint": "اختيار سلوكيات الكاميرا (عنصر نائب)",
+      "lens": "عدسة",
+      "lensHint": "حدد خيارات العدسة (عنصر نائب)",
+      "image": "صورة",
+      "video": "فيديو",
+      "scenePrompt": "اوصف المشهد الذي تتخيله..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "إضافة حركة للنسخ",
+          "description": "مدة الفيديو: 3-30 ثانية"
+        },
+        "addCharacter": {
+          "title": "أضف شخصيتك",
+          "description": "صورة ذات وجه وجسم مرئيين"
+        }
+      },
+      "quality": {
+        "title": "جودة",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "الإعدادات المتقدمة"
+      },
+      "hero": {
+        "title": {
+          "prefix": "إعادة إنشاء أي",
+          "highlight": "حركة",
+          "suffix": "مع صورتك"
+        },
+        "subtitle": "انسخ الحركة من أي فيديو وضع شخصيتك في نفس الحركة"
+      },
+      "library": {
+        "title": "ابدأ بنسخ الحركة من المكتبة"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind مساعدة",
+        "subtitle": "فريق من حملة الدكتوراه في جيبك، مصمم للمبدعين."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "ماذا يمكنك أن تفعل؟",
+          "description": "اكتشف ميزات الذكاء الاصطناعي ReelMind"
+        },
+        "howToCreate": {
+          "title": "كيف يمكنني إنشاء محتوى مذهل؟",
+          "description": "نصائح لكتابة مطالبات الذكاء الاصطناعي بشكل أفضل"
+        },
+        "generateSoulImagePrompt": {
+          "title": "إنشاء موجه صورة الروح",
+          "description": "اكتب مطالبة بالصور عالية الجمالية"
+        },
+        "generateVideoPrompt": {
+          "title": "إنشاء مطالبة الفيديو",
+          "description": "اكتب مطالبة لمقاطع الفيديو السينمائية"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "اتساق الشخصية",
+          "description": "حافظ على تماسك شخصيتك عبر الإطارات (عنصر نائب)"
+        },
+        "library": {
+          "title": "مكتبة الشخصيات",
+          "description": "اختر حرفًا محفوظًا أو ابدأ من القوالب (عنصر نائب)"
+        }
+      },
+      "placeholders": {
+        "preview": "معاينة (عنصر نائب)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - مجتمع مجاني لصناعة فيديوهات الذكاء الاصطناعي ومشاركة الأعمال الإبداعية",
+      "description": "استكشف الفيديوهات الإبداعية الرائجة من صانعي المحتوى حول العالم. اعثر على الإلهام والترفيه وأعد مزج المفضلة لديك."
+    },
+    "banner": {
+      "nanoBanana2": "تم إطلاق Nano Banana 2 الآن!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "الكل",
+        "latest": "الأحدث",
+        "hot": "الأكثر رواجًا"
+      },
+      "tooltip": {
+        "filterByModel": "التصفية حسب نموذج {model}"
+      },
+      "aria": {
+        "previous": "الفئات السابقة",
+        "next": "الفئات التالية"
+      },
+      "error": {
+        "loadFailed": "فشل تحميل الفئات"
+      },
+      "actions": {
+        "retry": "إعادة المحاولة"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "أنشئ فيديوهات AI"
+      },
+      "nolan": {
+        "title": "نولان",
+        "description": "أفضل مدير وكيل AI في العالم"
+      },
+      "badges": {
+        "models": "النماذج",
+        "free": "مجاني"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "استكشاف - ReelMind",
+      "description": "استكشف الفيديوهات الإبداعية الرائجة من صانعي المحتوى حول العالم على ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "نماذج وتأثيرات AI - ReelMind",
+      "description": "تصفح واستخدم نماذج وتأثيرات الفيديو بالذكاء الاصطناعي لإنشاء فيديوهات مذهلة مُولدة بالذكاء الاصطناعي على منصة ReelMind. استكشف مجموعتنا من نماذج AI المتقدمة."
+    },
+    "page": {
+      "title": "نماذج وتأثيرات AI",
+      "description": "تصفح مجموعتنا من نماذج وتأثيرات AI المتقدمة لتوليد الفيديو",
+      "footerIntro": "اكتشف مجموعتنا من {count} نموذج AI لتوليد الفيديو."
+    },
+    "sections": {
+      "models": "النماذج",
+      "effects": "التأثيرات"
+    },
+    "actions": {
+      "viewAll": "عرض الكل",
+      "viewAllModels": "عرض كل النماذج",
+      "backToModels": "العودة إلى النماذج"
+    },
+    "types": {
+      "allModels": "كل النماذج",
+      "textToVideo": "نص إلى فيديو",
+      "imageToVideo": "صورة إلى فيديو",
+      "videoToVideo": "فيديو إلى فيديو"
+    },
+    "all": {
+      "titleAll": "كل نماذج الفيديو",
+      "titleByType": "نماذج {type}",
+      "description": "تصفح مجموعتنا من نماذج AI لتوليد الفيديو",
+      "countAll": "({count} نموذج)",
+      "countByType": "({count} نموذج {type})",
+      "loadingMore": "جارٍ تحميل المزيد من النماذج...",
+      "loadMore": "تحميل المزيد من النماذج",
+      "end": "لقد وصلت إلى النهاية! تم تحميل جميع النماذج.",
+      "empty": "لم يتم العثور على نماذج تطابق معاييرك."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "نقطة تفتيش",
+        "lora": "لورا"
+      },
+      "supportedFeatures": "الميزات المدعومة",
+      "metaTitle": "{name} - نموذج AI | ReelMind",
+      "metaDescriptionFallback": "استكشف نموذج {name} لتوليد الفيديو على ReelMind.",
+      "metaErrorTitle": "تفاصيل النموذج | ReelMind",
+      "metaErrorDescription": "استكشف نماذج AI لتوليد الفيديو على ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "تأثيرات AI - ReelMind",
+      "description": "تصفح واستخدم تأثيرات الفيديو بالذكاء الاصطناعي لتحسين فيديوهاتك المُولدة بالذكاء الاصطناعي على منصة ReelMind."
+    },
+    "page": {
+      "title": "تأثيرات AI",
+      "description": "تصفح مجموعتنا من تأثيرات AI لتحسين فيديوهاتك"
+    },
+    "all": {
+      "title": "كل تأثيرات AI",
+      "description": "تصفح مجموعتنا الكاملة من تأثيرات AI لتحسين فيديوهاتك"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "العودة إلى التأثيرات",
+        "goBack": "رجوع",
+        "applyThisEffect": "تطبيق هذا التأثير"
+      },
+      "badge": "تأثير",
+      "addedOn": "أُضيف في {date}",
+      "errors": {
+        "notFound": "لم يتم العثور على التأثير",
+        "loadFailed": "فشل تحميل تفاصيل التأثير"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "أنشئ فيديوهات AI - ReelMind",
+      "description": "أنشئ فيديوهات مذهلة مُولدة بالذكاء الاصطناعي باستخدام نماذج وأدوات AI القوية على منصة ReelMind."
+    },
+    "loading": "جارٍ التحميل...",
+    "loadingMobile": "جارٍ تحميل عرض الهاتف...",
+    "loadingControlPanel": "جارٍ تحميل لوحة التحكم...",
+    "controlPanel": {
+      "modelAndSettings": "النموذج والإعدادات",
+      "history": "السجل",
+      "model": "النموذج",
+      "selectModel": "اختر النموذج"
+    },
+    "mobile": {
+      "backToCreate": "العودة إلى الإنشاء"
+    },
+    "modelSelector": {
+      "loadingModels": "جارٍ تحميل النماذج...",
+      "moreModels": "{count} نماذج أخرى",
+      "exploreMoreModels": "استكشف {count} نماذج أخرى"
+    },
+    "promptInput": {
+      "title": "موجه",
+      "placeholder": "صف ما تريد إنشاءه...",
+      "enhance": "تحسين",
+      "undo": "تراجع",
+      "restoreOriginalPromptTitle": "استعادة الـPrompt الأصلي",
+      "toastEnhanced": "تم تحسين الـPrompt",
+      "toastRestored": "تمت استعادة الـPrompt الأصلي",
+      "enhanceFailed": "فشل تحسين الـPrompt",
+      "sensitiveError": "تم اكتشاف كلمة حساسة: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "صورة",
+      "mentionVideoTokenPrefix": "فيديو",
+      "mentionAudioTokenPrefix": "الصوت"
+    },
+    "referenceUploader": {
+      "addOptional": "إضافة مرجع اختياري",
+      "referenceImage": "صورة مرجعية",
+      "referenceImages": "صور مرجعية ({current}/{max})",
+      "referenceVideo": "فيديو مرجعي",
+      "dropImage": "أفلت صورة هنا أو انقر للرفع",
+      "dropImageMax": "أفلت حتى {max} صور هنا أو انقر للرفع",
+      "dropVideo": "أفلت فيديو هنا أو انقر للرفع",
+      "pasteHint": "لصق",
+      "videoUploaded": "تم رفع الفيديو",
+      "uploading": "جارٍ الرفع...",
+      "addMore": "إضافة المزيد",
+      "removeReference": "إزالة",
+      "referenceImageAlt": "صورة مرجعية {index}",
+      "supportedFormats": "المدعوم: PNG, JPG",
+      "minimumSize": "الحد الأدنى {minWidth}×{minHeight}، نسبة الأبعاد {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "جارٍ رفع {type}...",
+      "processingFile": "جارٍ معالجة الملف...",
+      "uploadReference": "رفع مرجع {type}",
+      "image": "صورة",
+      "video": "فيديو",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "نسبة الأبعاد",
+      "duration": "المدة",
+      "seconds": "{seconds}ث",
+      "resolution": "الدقة",
+      "audio": "الصوت",
+      "on": "تشغيل",
+      "off": "إيقاف",
+      "advanced": "متقدم",
+      "advancedShort": "متقدم",
+      "creativityLevel": "الإبداع",
+      "moreAccurate": "أكثر دقة",
+      "moreCreative": "أكثر إبداعًا",
+      "samplingSteps": "خطوات العيّنة",
+      "faster": "أسرع ({steps} خطوة)",
+      "higherQuality": "جودة أعلى ({steps} خطوة)",
+      "randomSeed": "Seed عشوائي",
+      "seedPlaceholder": "أدخل Seed",
+      "generateRandomSeed": "إنشاء Seed عشوائي",
+      "seedHint": "استخدم Seed ثابتًا لنتائج قابلة لإعادة الإنتاج.",
+      "movementAmplitude": "الحركة",
+      "movementAmplitudeHint": "يتحكم في شدة الحركة.",
+      "backgroundMusic": "موسيقى خلفية",
+      "backgroundMusicHint": "يضيف موسيقى خلفية عند توفر الدعم.",
+      "enabled": "مفعل",
+      "disabled": "غير مفعل",
+      "negativePrompt": "Prompt سلبي",
+      "negativePromptPlaceholder": "ما الذي يجب تجنبه..."
+    },
+    "startToEndUploader": {
+      "title": "إطارات البداية والنهاية",
+      "startFrame": "إطار البداية",
+      "endFrame": "إطار النهاية",
+      "dropStartImage": "أفلت صورة البداية أو انقر للرفع",
+      "dropEndImage": "أفلت صورة النهاية أو انقر للرفع",
+      "startFrameImageAlt": "إطار البداية",
+      "endFrameImageAlt": "إطار النهاية",
+      "uploading": "جارٍ الرفع...",
+      "instructions": "ارفع صور البداية والنهاية لتوجيه الانتقال.",
+      "supportedFormats": "المدعوم: PNG, JPG",
+      "minimumSize": "الحد الأدنى {minWidth}×{minHeight}، نسبة الأبعاد {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "سيتم ضغط الصور تلقائيًا إذا لزم الأمر."
+    },
+    "modelTabs": {
+      "imageToVideo": "صورة إلى فيديو",
+      "textToVideo": "نص إلى فيديو",
+      "firstLastFrame": "الإطار الأول-الأخير",
+      "edit": "تحرير",
+      "effect": "تأثير"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "الفيديو المرجعي",
+      "required": "مطلوب",
+      "removeVideo": "إزالة الفيديو",
+      "uploading": "جارٍ التحميل...",
+      "dropVideo": "قم بإسقاط مقطع فيديو هنا أو انقر للتحميل",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "العناصر",
+      "optional": "اختياري ({current}/{max})",
+      "addElements": "أضف",
+      "elementAlt": "العنصر {index}",
+      "removeElement": "إزالة العنصر {index}",
+      "dropElements": "انقر لإضافة صور العناصر",
+      "elementsHint": "صور اختيارية للحفاظ على الشخصيات/النمط.",
+      "errors": {
+        "invalidVideoTitle": "فيديو غير صالح",
+        "invalidVideoDescription": "الرجاء اختيار ملف فيديو.",
+        "videoTooLargeTitle": "الفيديو كبير جدًا",
+        "videoTooLargeDescription": "الحد الأقصى {maxMb} ميغابايت. الرجاء تحميل مقطع أقصر / أصغر.",
+        "uploadFailedTitle": "فشل التحميل",
+        "elementsLimitTitle": "تم الوصول إلى حد العناصر",
+        "elementsLimitDescription": "يمكنك إضافة ما يصل إلى {max} من الصور.",
+        "imageTooSmall": "يجب أن تكون الصورة على الأقل {minWidth}×{minHeight} (الحالي: {width}×{height}).",
+        "imageBadRatio": "يجب أن تكون نسبة العرض إلى الارتفاع للصورة بين {minAspectRatio} و{maxAspectRatio} (الحالي: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "تم تخطي بعض الملفات",
+        "someSkippedDescription": "تم تخطي ملفات {count} بسبب الحدود.",
+        "skippedTitle": "تم تخطيه",
+        "skippedNonImage": "يُسمح فقط بالصور للعناصر.",
+        "imageCompressedTitle": "الصورة مضغوطة",
+        "imageCompressedDescription": "مضغوط من {original} إلى {final}.",
+        "skippedInvalidImage": "صورة غير صالحة."
+      }
+    },
+    "howItWorks": {
+      "title": "كيف يعمل",
+      "hero": {
+        "title": "أنشئ مقاطع فيديو بنقرة واحدة",
+        "subtitle": "استخدم الإعدادات المسبقة للتحكم في الكاميرا، والتأطير، والمؤثرات البصرية - أو انتقل يدويًا بالكامل مع المطالبات."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "إضافة صورة",
+          "2": "اختر الإعداد المسبق",
+          "3": "احصل على الفيديو"
+        },
+        "t2v": {
+          "1": "اكتب موجه",
+          "2": "اختر الطراز",
+          "3": "احصل على الفيديو"
+        },
+        "flf": {
+          "1": "إضافة إطارات",
+          "2": "وصف الانتقال",
+          "3": "احصل على الفيديو"
+        },
+        "edit": {
+          "1": "إضافة فيديو",
+          "2": "إضافة عناصر",
+          "3": "احصل على الفيديو"
+        }
+      },
+      "modes": {
+        "edit": "تحرير (فيديو إلى فيديو)",
+        "flf": "الإطار الأول والأخير",
+        "i2v": "صورة إلى فيديو",
+        "t2v": "تحويل النص إلى فيديو"
+      },
+      "steps": {
+        "edit": {
+          "1": "قم بتحميل فيديو مرجعي قصير.",
+          "2": "يمكنك اختياريًا إضافة ما يصل إلى 4 صور عناصر للحفاظ على اتساق الأحرف/النمط.",
+          "3": "قم بوصف ما يجب تغييره (وما يجب الاحتفاظ به) في الموجه، ثم قم بإنشائه."
+        },
+        "flf": {
+          "1": "قم بتحميل إطار البداية وإطار النهاية.",
+          "2": "قم بوصف عملية الانتقال التي تريدها.",
+          "3": "إنشاء لإنشاء تحول سلس."
+        },
+        "i2v": {
+          "1": "تحميل صورة مرجعية.",
+          "2": "وصف الحركة والكاميرا والأسلوب.",
+          "3": "اختر النسبة/المدة وقم بالتوليد."
+        },
+        "t2v": {
+          "1": "قم بوصف المشهد الخاص بك (الموضوع، الكاميرا، الإضاءة، الأسلوب).",
+          "2": "اختر النسبة/المدة وأضف مطالبة سلبية اختياريًا.",
+          "3": "توليد وتكرار مع تغييرات صغيرة."
+        }
+      },
+      "tip": "نصيحة: كن محددًا. أخبر النموذج بما يجب أن يبقى كما هو (الهوية، الشعار، التكوين).",
+      "templates": {
+        "title": "الإعدادات المسبقة",
+        "subtitle": "اختر إعدادًا مسبقًا كلاسيكيًا وقم بالتوليد بشكل أسرع.",
+        "use": "استخدم",
+        "clear": "واضح",
+        "prev": "الإعداد المسبق السابق",
+        "next": "الإعداد المسبق التالي",
+        "edit": {
+          "relight": {
+            "title": "Relight والجو",
+            "description": "تغيير الوقت من اليوم والإضاءة السينمائية."
+          },
+          "grade": {
+            "title": "الدرجة السينمائية",
+            "description": "درجة اللون البرتقالي المخضر + حبيبات الفيلم، تحافظ على الحركة والهوية."
+          },
+          "weather": {
+            "title": "تغير الطقس",
+            "description": "أضف المطر/الضباب مع الحفاظ على الهوية."
+          },
+          "anime": {
+            "title": "إعادة تصميم الأنمي",
+            "description": "مظهر الأنمي مع الحفاظ على الهوية والحركة."
+          },
+          "background": {
+            "title": "استبدال الخلفية",
+            "description": "مبادلة الخلفية مع الحفاظ على الموضوع."
+          },
+          "lux": {
+            "title": "طلاء ممتاز",
+            "description": "شعور تجاري أنظف وأكثر سلاسة وأكثر تميزًا."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "يوم → ليل",
+            "description": "انتقال سلس للإضاءة/الوقت مع تأطير متسق."
+          },
+          "sketchToRender": {
+            "title": "رسم → تقديم",
+            "description": "اكشف عن التفاصيل تدريجيًا بدءًا من الرسم وحتى العرض النهائي."
+          },
+          "beforeAfter": {
+            "title": "قبل/بعد الكشف",
+            "description": "تحول لذيذ مع حركة خفية."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "صورة الحياة",
+            "description": "وميض + حركة خفية مع دفع بطيء."
+          },
+          "pan": {
+            "title": "عموم المنظر",
+            "description": "مقلاة سينمائية بعمق وضبابية الحركة."
+          },
+          "product": {
+            "title": "تدور المنتج",
+            "description": "مظهر منتج الاستوديو مع لمسات لامعة."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "إعلان مميز 8s",
+            "description": "لقطة تجارية نظيفة وعالية الجودة."
+          },
+          "establish": {
+            "title": "لقطة تأسيسية",
+            "description": "مقدمة سينمائية واسعة لعالم/مشهد."
+          },
+          "anime": {
+            "title": "افتتاح الانمي",
+            "description": "لقطة أنمي بأسلوب افتتاحي منمنمة."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "يتطلب Image-to-Video صورة مرجعية.",
+        "i2vDescription": "يرجى رفع صورة مرجعية أو التبديل إلى نموذج Text-to-Video.",
+        "v2vTitle": "يتطلب Video-to-Video فيديو مرجعي.",
+        "v2vDescription": "يرجى رفع فيديو مرجعي أو التبديل إلى نموذج Text-to-Video."
+      },
+      "costLabel": "التكلفة:",
+      "balanceLabel": "الرصيد:",
+      "freeUnlimited": "مجاني (غير محدود)",
+      "credits": "أرصدة",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast هو نموذج Luxury وليس ضمن الاستخدام المجاني لباقة Unlimited. يلزم دفع إضافي.",
+        "veo31": "VEO 3.1 هو نموذج Luxury وليس ضمن الاستخدام المجاني لباقة Unlimited. يلزم دفع إضافي.",
+        "veo3": "VEO3 هو نموذج Luxury وليس ضمن الاستخدام المجاني لباقة Unlimited. يلزم دفع إضافي.",
+        "sora2Pro": "Sora-2 Pro هو نموذج Luxury وليس ضمن الاستخدام المجاني لباقة Unlimited. يلزم دفع إضافي."
+      },
+      "gettingCredits": "جارٍ جلب الأرصدة...",
+      "getBonusCredits": "احصل على {amount} أرصدة",
+      "submitting": "جارٍ الإرسال...",
+      "loadingModels": "جارٍ تحميل النماذج...",
+      "uploadingAsset": "جارٍ رفع الأصل...",
+      "uploadingImages": "جارٍ رفع الصور...",
+      "claimingCredits": "جارٍ استلام الأرصدة...",
+      "getMoreCredits": "احصل على المزيد من الأرصدة",
+      "generateVideo": "إنشاء فيديو"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "فشل النشر",
+        "missingTitleDescription": "يرجى إدخال عنوان لفيديوك",
+        "processingTitle": "جارٍ المعالجة",
+        "processingDescription": "جارٍ التحضير لنشر فيديوك...",
+        "successTitle": "تم النشر بنجاح",
+        "successDescription": "تمت مشاركة فيديوك مع المجتمع",
+        "failedTitle": "فشل النشر",
+        "failedDescription": "يرجى التحقق من اتصال الشبكة أو المحاولة لاحقًا"
+      },
+      "successTitle": "تم النشر بنجاح!",
+      "successDescription": "إبداعك الرائع أصبح متاحًا الآن في المجتمع",
+      "publishingTitle": "جارٍ النشر...",
+      "publishingDescriptionDesktop": "نجهز فيديوك ليستمتع به المجتمع...",
+      "publishingDescriptionMobile": "جارٍ تجهيز فيديوك...",
+      "progressComplete": "{progress}% اكتمل",
+      "title": "مشاركة مع المجتمع",
+      "description": "شارك إبداعك الرائع مع العالم",
+      "benefits": {
+        "getLikes": "احصل على إعجابات",
+        "buildCommunityLong": "ابنِ مجتمعًا",
+        "buildCommunityShort": "المجتمع",
+        "inspireLong": "ألهم الآخرين",
+        "inspireShort": "إلهام",
+        "earnLong": "اكسب +{amount} أرصدة",
+        "earnShort": "+{amount} أرصدة"
+      },
+      "videoTitle": "عنوان الفيديو",
+      "videoTitlePlaceholder": "امنح إبداعك عنوانًا جذابًا...",
+      "videoTitleHelperDesktop": "العنوان القوي يجذب المزيد من المشاهدين",
+      "videoTitleHelperMobile": "العناوين الجيدة تجذب المشاهدين",
+      "descriptionLabel": "الوصف",
+      "optional": "اختياري",
+      "descriptionPlaceholder": "أخبر المجتمع عن إبداعك...",
+      "descriptionHelper": "شارك عملية إبداعك",
+      "cancel": "إلغاء",
+      "publish": "نشر"
+    },
+    "history": {
+      "title": "التاريخ",
+      "refresh": "تحديث",
+      "view": {
+        "one": "1 لكل صف",
+        "three": "3 لكل صف",
+        "nine": "9 لكل صف"
+      },
+      "filterPlaceholder": "تصفية",
+      "empty": "لم يتم العثور على مهام {status}",
+      "status": {
+        "all": "الكل",
+        "pending": "قيد الانتظار",
+        "queued": "في الطابور",
+        "processing": "جارٍ المعالجة",
+        "completed": "مكتمل",
+        "failed": "فشل",
+        "canceled": "ملغى"
+      }
+    },
+    "effectSelector": {
+      "loading": "جارٍ تحميل التأثيرات...",
+      "defaultDescription": "طبّق تأثيرات خاصة على فيديوك",
+      "ctaTitle": "اختر تأثيرًا",
+      "ctaDescription": "انقر لاختيار تأثير فيديو",
+      "modalTitle": "اختيار تأثير",
+      "close": "إغلاق محدد التأثير"
+    },
+    "modelSelectorModal": {
+      "title": "اختيار نموذج",
+      "description": "اختر نموذجًا لمشروعك",
+      "close": "إغلاق محدد النموذج",
+      "loadingMore": "جارٍ تحميل المزيد من النماذج...",
+      "allLoaded": "تم تحميل جميع النماذج",
+      "noModelsFound": "لم يتم العثور على نماذج"
+    },
+    "modelSearch": {
+      "placeholder": "ابحث عن النماذج بالاسم أو النوع أو الميزات...",
+      "clear": "مسح البحث",
+      "searching": "جارٍ البحث...",
+      "foundModels": "تم العثور على {count} نموذج",
+      "modelsAvailable": "{count} نموذج متاح"
+    },
+    "modelTypeFilter": {
+      "title": "نوع النموذج",
+      "clear": "مسح"
+    },
+    "remixLoader": {
+      "successTitle": "تم تحميل مهمة الريمكس",
+      "successDescription": "تم تحميل معلمات الفيديو من المهمة الأصلية؛ يمكنك الإنشاء مباشرةً أو تعديل المعلمات.",
+      "errorTitle": "فشل تحميل المعلمات",
+      "errorDescription": "تعذر تحميل المعلمات من المهمة الأصلية، يرجى ضبط المعلمات يدويًا."
+    },
+    "modelCard": {
+      "select": "اختيار",
+      "credits": "أرصدة",
+      "premium": "قسط",
+      "luxury": "فاخر"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "مختار من ReelMind",
+      "hot": "رائج",
+      "new": "جديد",
+      "select": "اختيار"
+    },
+    "previewPanel": {
+      "generating": "جارٍ الإنشاء...",
+      "download": "تنزيل",
+      "downloading": "جارٍ التنزيل...",
+      "shareToCommunity": "نشر",
+      "tips": "نصيحة: انشر لتحصل على أرصدة",
+      "quality": "الجودة",
+      "qualityHd": "عالية الدقة",
+      "qualityStandard": "قياسي",
+      "ratio": "النسبة",
+      "fullscreen": {
+        "enter": "ملء الشاشة",
+        "exit": "الخروج من ملء الشاشة"
+      },
+      "empty": {
+        "title": "لا توجد معاينة بعد",
+        "description": "أنشئ فيديو لرؤية المعاينة هنا."
+      },
+      "queue": {
+        "loading": "جارٍ تحميل معلومات الطابور...",
+        "headerProcessing": "جارٍ المعالجة",
+        "headerQueueStatus": "حالة الطابور",
+        "badgePosition": "الموقع: {position} من {total}",
+        "badgeProcessing": "جارٍ المعالجة",
+        "tasksInQueue": "المهام في الطابور",
+        "estimatedWait": "وقت الانتظار المتوقع",
+        "elapsedTime": "الوقت المنقضي",
+        "remainingTime": "الوقت المتبقي",
+        "startTime": "البدء المتوقع",
+        "completionTime": "الاكتمال المتوقع"
+      },
+      "time": {
+        "calculating": "جارٍ الحساب...",
+        "justNow": "الآن",
+        "lessThanMinute": "خلال أقل من دقيقة",
+        "inMinutes": "خلال {minutes, plural, one {# دقيقة} other {# دقائق}}",
+        "inHours": "خلال {hours, plural, one {# ساعة} other {# ساعات}}",
+        "inDays": "خلال {days, plural, one {# يوم} other {# أيام}}",
+        "seconds": "{seconds, plural, one {# ثانية} other {# ثوانٍ}}",
+        "minutesSeconds": "{minutes, plural, one {# دقيقة} other {# دقائق}} {seconds, plural, one {# ثانية} other {# ثوانٍ}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "جارٍ تحميل الفيديو...",
+      "notFound": "لم يتم العثور على الفيديو",
+      "notFoundDescription": "تعذر العثور على الفيديو المطلوب أو أنه غير متاح حاليًا.",
+      "detailsTitle": "التفاصيل",
+      "videoInfoTitle": "معلومات الفيديو",
+      "advancedTitle": "متقدم",
+      "referenceImagesTitle": "صور مرجعية",
+      "startFrameAlt": "إطار البداية",
+      "endFrameAlt": "إطار النهاية",
+      "endFrameLabel": "إطار النهاية",
+      "creationDate": "تاريخ الإنشاء",
+      "fields": {
+        "model": "النموذج",
+        "generationType": "نوع الإنشاء",
+        "resolution": "الدقة",
+        "aspectRatio": "نسبة الأبعاد",
+        "duration": "المدة",
+        "creativityLevel": "الإبداع",
+        "effect": "التأثير",
+        "samplingSteps": "خطوات العيّنة",
+        "randomSeed": "Seed عشوائي",
+        "movementAmplitude": "سعة الحركة",
+        "backgroundMusic": "موسيقى خلفية",
+        "negativePrompt": "Prompt سلبي"
+      },
+      "actions": {
+        "close": "إغلاق",
+        "closeModalTitle": "إغلاق النافذة",
+        "remix": "ريمكس",
+        "remixTitle": "ريمكس بهذه المعلمات",
+        "download": "تنزيل",
+        "downloadTitle": "تنزيل هذا الفيديو",
+        "downloading": "جارٍ التنزيل...",
+        "shareTitle": "مشاركة هذا الفيديو"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "حذف المهمة",
+      "description": "لا يمكن التراجع عن هذا الإجراء",
+      "cancel": "إلغاء",
+      "confirm": "حذف",
+      "deleting": "جارٍ الحذف..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "صورة مرجعية"
+      },
+      "pending": {
+        "pending": "قيد الانتظار...",
+        "queued": "في الطابور...",
+        "waitingInQueue": "بانتظار الدور..."
+      },
+      "processing": {
+        "phase1": "المرحلة 1",
+        "phase2": "المرحلة 2",
+        "phase3": "المرحلة 3",
+        "final": "النهائي",
+        "initializing": "جارٍ تهيئة العملية",
+        "processing": "جارٍ معالجة المحتوى",
+        "rendering": "جارٍ عرض النتائج",
+        "finalizing": "جارٍ الإنهاء",
+        "stuckMessage": "تبدو هذه المهمة عالقة. يمكنك حذفها.",
+        "deleteTitle": "حذف هذه المهمة",
+        "deleteAria": "حذف"
+      },
+      "failed": {
+        "title": "فشل الإنشاء",
+        "tryAgain": "إعادة المحاولة",
+        "tryAgainTitle": "أعد المحاولة بهذا الـPrompt",
+        "deleteTitle": "حذف هذه المهمة"
+      },
+      "completed": {
+        "recreateDesktop": "إعادة الإنشاء",
+        "remixMobile": "ريمكس",
+        "remixTitle": "أنشئ فيديو جديدًا باستخدام هذا الـPrompt",
+        "publish": "نشر",
+        "publishTitle": "انشر في المجتمع واكسب {amount} أرصدة",
+        "creditsBonusDesktop": "مكافأة {amount} أرصدة",
+        "creditsBonusMobile": "+{amount}",
+        "share": "مشاركة",
+        "shareTitle": "مشاركة هذا الفيديو",
+        "downloadTitle": "تنزيل هذا الفيديو",
+        "downloading": "جارٍ التنزيل...",
+        "deleteTitle": "حذف هذه المهمة"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "ليغو - ReelMind",
+      "description": "أنشئ وأعد مزج الفيديوهات باستخدام سير عمل Lego على ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "العودة إلى Builder",
+      "history": "السجل"
+    },
+    "badges": {
+      "new": "جديد"
+    },
+    "actions": {
+      "delete": "حذف",
+      "select": "اختيار",
+      "selected": "محدد",
+      "download": "تنزيل",
+      "downloading": "جارٍ التنزيل...",
+      "deleting": "جارٍ الحذف...",
+      "share": "مشاركة",
+      "close": "إغلاق"
+    },
+    "status": {
+      "pending": "قيد الانتظار",
+      "processing": "جارٍ المعالجة",
+      "failed": "فشل",
+      "completed": "مكتمل",
+      "generating": "جارٍ الإنشاء",
+      "cancelled": "ملغى"
+    },
+    "deleteConfirmDialog": {
+      "title": "حذف المهمة",
+      "description": "لا يمكن التراجع عن هذا الإجراء",
+      "cancel": "إلغاء",
+      "confirm": "حذف",
+      "deleting": "جارٍ الحذف..."
+    },
+    "imageViewer": {
+      "close": "إغلاق",
+      "previous": "السابق",
+      "next": "التالي",
+      "view": "عرض {index}"
+    },
+    "historyList": {
+      "title": "مولد صور Lego AI",
+      "generatingFirstImage": "جارٍ إنشاء صورتك الأولى...",
+      "loadFailed": "فشل تحميل السجل. يرجى المحاولة مرة أخرى.",
+      "emptyDescription": "أنشئ صورًا مذهلة بوصف فكرتك وإضافة موارد لتوجيه الذكاء الاصطناعي",
+      "loadingMore": "جارٍ تحميل صور السجل...",
+      "scrollForMore": "مرّر للمزيد...",
+      "allLoaded": "تم تحميل جميع {count} الصور"
+    },
+    "sidebar": {
+      "addCard": "إضافة بطاقة جديدة",
+      "expand": "توسيع الشريط الجانبي",
+      "sections": {
+        "theme": "السمة",
+        "scene": "المشهد",
+        "style": "الأسلوب"
+      }
+    },
+    "card": {
+      "placeholder": "صف {section}...",
+      "imageAlt": "مرجع {section}",
+      "options": {
+        "image": "صورة",
+        "text": "نص"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "مرجع {index}",
+      "errors": {
+        "invalidType": "يرجى اختيار ملف صورة",
+        "tooLarge": "لا يمكن أن يتجاوز حجم الصورة {maxSizeMb}MB",
+        "uploadFailed": "فشل رفع الصورة. يرجى المحاولة مرة أخرى."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "التمرير إلى الأسفل",
+      "collapsedPlaceholder": "صف صورتك...",
+      "close": "إغلاق"
+    },
+    "resultPreview": {
+      "previewTitle": "معاينة",
+      "previewDescription": "ستظهر صورتك المُولدة هنا",
+      "generatedImageAlt": "الصورة المُولدة",
+      "emptyPlaceholder": "سيظهر إبداعك هنا",
+      "dialogTitle": "صورتك التي أنشأتها",
+      "dialogDescription": "إليك الصورة التي أنشأناها بناءً على وصفك ومواردك"
+    },
+    "resourceUploader": {
+      "uploadImage": "رفع صورة",
+      "imageFallbackAlt": "صورة",
+      "imageFallbackLabel": "صورة",
+      "removeImage": "إزالة {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "إظهار الشريط الجانبي",
+      "hideSidebar": "إخفاء الشريط الجانبي",
+      "hideSidebarShort": "إخفاء الشريط",
+      "addImage": "إضافة صورة",
+      "addImageWithLimit": "إضافة صورة ({current}/{max})",
+      "promptPlaceholder": "أنشئ أو عدّل صورتك...",
+      "model": "النموذج",
+      "selectModel": "اختيار نموذج",
+      "loading": "جارٍ التحميل...",
+      "loadingModels": "جارٍ تحميل النماذج...",
+      "noModelsAvailable": "لا توجد نماذج متاحة",
+      "noModelsMatchFilters": "لا توجد نماذج تطابق عوامل التصفية",
+      "modelLabel": "النموذج: {name}",
+      "aspectRatio": "نسبة الأبعاد",
+      "ratioLabel": "النسبة: {value}",
+      "imagesLabel": "الصور: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 ينتج صورة واحدة",
+        "hint": "عدد الصور المراد إنشاؤها",
+        "numberOfImages": "عدد الصور"
+      },
+      "advanced": {
+        "aria": "إعدادات متقدمة",
+        "label": "متقدم",
+        "title": "إعدادات متقدمة",
+        "negativePrompt": {
+          "label": "Prompt سلبي",
+          "placeholder": "عناصر تريد استبعادها...",
+          "aria": "Prompt سلبي",
+          "title": "حدد العناصر المراد استبعادها"
+        },
+        "seed": {
+          "label": "بذرة",
+          "random": "عشوائي",
+          "randomTitle": "إنشاء Seed عشوائي",
+          "placeholder": "Seed عشوائي (اختياري)",
+          "aria": "قيمة Seed",
+          "title": "اضبط Seed لنتائج قابلة لإعادة الإنتاج"
+        }
+      },
+      "resolution": "الدقة",
+      "resolutionLabel": "الدقة: {value}",
+      "resolutionPopoverTitle": "الدقة (Nano Banana 2)",
+      "generating": "جارٍ الإنشاء...",
+      "generate": "إنشاء",
+      "limitReached": "تم الوصول إلى الحد",
+      "fluxLimitTooltip": "نماذج FLUX محدودة بـ {limit} استخدامات لغير الأعضاء",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 نموذج Premium وليس ضمن الاستخدام المجاني لباقة Unlimited. سيتم خصم أرصدة لكل صورة يتم إنشاؤها.",
+      "unlimited": {
+        "fast": "سريع",
+        "slow": "بطيء",
+        "fastMode": "وضع سريع",
+        "slowMode": "وضع بطيء",
+        "monthlyUsage": "الاستخدام الشهري: {used}/{limit}",
+        "rateLimit": "حد المعدل: {limit} صورة لكل 5 دقائق",
+        "switchedToSlow": "لقد وصلت إلى الحد الشهري. تم التحويل إلى الوضع البطيء."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "الصورة المُولدة",
+      "failedTitle": "فشل الإنشاء",
+      "errors": {
+        "unableToComplete": "تعذر إكمال الإنشاء"
+      },
+      "actions": {
+        "deleteTitle": "حذف المهمة",
+        "viewFullSize": "انقر لعرض الحجم الكامل",
+        "preview": "معاينة {index}",
+        "retryTitle": "إعادة المحاولة - أعد المحاولة بنفس المعلمات",
+        "retry": "إعادة المحاولة",
+        "remixTitle": "ريمكس - إعادة استخدام المعلمات",
+        "remix": "ريمكس",
+        "makeVideoTitle": "إنشاء فيديو",
+        "makeVideo": "إنشاء فيديو"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "بدأ التنزيل",
+      "downloadStartedMessage": "بدأ تنزيل الفيديو",
+      "downloadFailedTitle": "فشل التنزيل",
+      "downloadFailedMessage": "فشل تنزيل الفيديو",
+      "shareCopied": "تم نسخ رابط المشاركة إلى الحافظة",
+      "shareCopyFailed": "فشل نسخ رابط المشاركة"
+    },
+    "empty": {
+      "title": "الفيديو غير متاح",
+      "description": "هذا الفيديو غير متاح للمشاركة أو ملف الفيديو مفقود.",
+      "ctaCreate": "أنشئ فيديوك الخاص"
+    },
+    "notFound": {
+      "title": "لم يتم العثور على الفيديو",
+      "description": "الفيديو الذي تبحث عنه غير موجود أو لم يعد متاحًا للمشاركة.",
+      "ctaCreate": "أنشئ فيديوك الخاص",
+      "ctaHome": "العودة إلى الرئيسية"
+    },
+    "details": {
+      "creationDate": "تاريخ الإنشاء"
+    },
+    "actions": {
+      "remix": "ريمكس",
+      "remixTitle": "أنشئ فيديو جديدًا باستخدام هذا الـPrompt",
+      "download": "تنزيل",
+      "downloadTitle": "تنزيل هذا الفيديو",
+      "downloading": "جارٍ التنزيل...",
+      "downloadingTitle": "جارٍ التنزيل...",
+      "shareTitle": "مشاركة هذا الفيديو"
+    },
+    "meta": {
+      "promptFallback": "فيديو مُولّد بالذكاء الاصطناعي",
+      "watchDescription": "شاهد هذا الفيديو المُولّد بالذكاء الاصطناعي: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "موسيقى",
+      "description": "أنشئ موسيقى ومؤثرات صوتية وكلامًا بالذكاء الاصطناعي."
+    },
+    "page": {
+      "loadingSoundStudio": "جارٍ تحميل Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "موسيقى",
+      "soundEffect": "مؤثر صوتي",
+      "textToSpeech": "نص إلى كلام"
+    },
+    "controlPanel": {
+      "title": "التحكم",
+      "reset": "إعادة ضبط",
+      "modelLabel": {
+        "tts": "نموذج TTS",
+        "sound": "نموذج الصوت"
+      },
+      "modelPlaceholder": "اختيار نموذج",
+      "noModelsAvailableTitle": "لا توجد نماذج متاحة",
+      "noModelsFound": {
+        "tts": "لم يتم العثور على نماذج TTS",
+        "soundEffect": "لم يتم العثور على نماذج للمؤثرات الصوتية"
+      },
+      "tts": {
+        "stability": "الاستقرار",
+        "similarityBoost": "تعزيز التشابه",
+        "styleExaggeration": "مبالغة الأسلوب",
+        "speed": "السرعة"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "رفع صوت مرجعي",
+      "dropHere": "أفلت هنا",
+      "supportedFormats": "الصيغ المدعومة: MP3, WAV, M4A, AAC, OGG",
+      "tip": "نصيحة: استخدم ما لا يقل عن 15 ثانية من صوت واضح للحصول على نتائج أفضل.",
+      "uploadingProgress": "جارٍ الرفع... {progress}%",
+      "toast": {
+        "uploadSuccess": "اكتمل الرفع",
+        "uploadFailed": "فشل الرفع"
+      },
+      "errors": {
+        "selectAudioFile": "يرجى اختيار ملف صوتي.",
+        "invalidAudioFile": "ملف صوتي غير صالح.",
+        "fileTooLarge": "حجم الملف كبير جدًا (الحد الأقصى 50MB).",
+        "durationTooShort": "يجب ألا تقل مدة الصوت عن 15 ثانية."
+      }
+    },
+    "audioPlayer": {
+      "play": "تشغيل",
+      "pause": "إيقاف مؤقت"
+    },
+    "voiceSelector": {
+      "label": "الصوت",
+      "selectVoiceTitle": "اختيار صوت",
+      "gender": {
+        "all": "الكل",
+        "male": "ذكر",
+        "female": "أنثى"
+      },
+      "noVoicesAvailable": "لا توجد أصوات متاحة",
+      "noVoicesFound": "لم يتم العثور على أصوات",
+      "bestFor": "الأفضل لـ {useCase}",
+      "clickToSelectVoice": "انقر لاختيار الصوت"
+    },
+    "historyPanel": {
+      "title": "السجل",
+      "empty": {
+        "title": "لا توجد عمليات إنشاء بعد",
+        "description": "سيظهر سجل عمليات الإنشاء هنا"
+      },
+      "loading": "جارٍ التحميل...",
+      "loadMore": "تحميل المزيد"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "جارٍ المعالجة",
+        "failed": "فشل",
+        "completed": "مكتمل"
+      },
+      "actions": {
+        "copy": "نسخ",
+        "download": "تنزيل"
+      },
+      "time": {
+        "now": "الآن",
+        "minutesAgo": "قبل {minutes}د",
+        "hoursAgo": "قبل {hours}س"
+      },
+      "unknownModel": "نموذج غير معروف",
+      "errors": {
+        "unknown": "خطأ غير معروف"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "استوديو الصوت"
+      },
+      "menu": {
+        "open": "فتح القائمة",
+        "title": "القائمة",
+        "voiceGeneration": "إنشاء",
+        "settings": "الإعدادات",
+        "history": "السجل"
+      },
+      "tabs": {
+        "generate": "إنشاء",
+        "settings": "الإعدادات",
+        "history": "السجل"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "اكتب نصك لإنشاء الكلام...",
+        "soundEffect": "صف المؤثر الصوتي الذي تريد إنشاءه..."
+      },
+      "generateSpeech": "إنشاء كلام",
+      "generateSound": "إنشاء صوت",
+      "generating": "جارٍ الإنشاء...",
+      "loadingExamples": "جارٍ تحميل الأمثلة...",
+      "loadingMusicStyles": "جارٍ تحميل أنماط الموسيقى...",
+      "rightTabs": {
+        "examples": "أمثلة",
+        "history": "السجل"
+      },
+      "history": {
+        "generationCount": "{count} عملية إنشاء"
+      },
+      "price": {
+        "placeholder": "التكلفة التقديرية",
+        "calculating": "جارٍ الحساب...",
+        "credits": "{credits} أرصدة"
+      },
+      "musicHistory": {
+        "title": "سجل الموسيقى",
+        "empty": {
+          "title": "لم يتم إنشاء موسيقى بعد",
+          "description": "سيظهر سجل الموسيقى هنا"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "سجل المؤثرات الصوتية",
+        "empty": {
+          "title": "لم يتم إنشاء مؤثرات صوتية بعد",
+          "description": "سيظهر سجل المؤثرات الصوتية هنا"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "كلمات الأغنية",
+      "lyricsPlaceholder": "كلمات مع تنسيق اختياري. يمكنك استخدام سطر جديد للفصل بين كل سطر. ويمكن استخدام سطرين جديدين لإضافة توقف بين الأسطر. ويمكن استخدام علامتي هاش (##) في بداية الكلمات ونهايتها لإضافة مرافقة. الحد الأقصى 600 حرف.",
+      "useReferenceAudio": {
+        "label": "استخدم صوتًا مرجعيًا",
+        "description": "استخدم صوتًا مرجعيًا لتوجيه أسلوب الذكاء الاصطناعي."
+      },
+      "referenceAudio": {
+        "title": "صوت مرجعي",
+        "description": "ارفع أغنية مرجعية تحتوي على موسيقى وغناء."
+      },
+      "musicStyle": {
+        "title": "نمط الموسيقى",
+        "description": "صف نمط الموسيقى والمزاج الذي تريد إنشاءه.",
+        "placeholder": "مثل: R&B، حيوي، بوب سريع، فولك أكوستيك، دانس إلكتروني...",
+        "tooShort": "يجب أن لا يقل وصف نمط الموسيقى عن 10 أحرف."
+      },
+      "generating": "جارٍ الإنشاء...",
+      "generateMusicWithCredits": "إنشاء موسيقى ({credits} أرصدة)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "المدة",
+        "description": "حدد مدة المؤثر الصوتي."
+      },
+      "promptInfluence": {
+        "title": "تأثير الـPrompt",
+        "description": "القيم الأعلى تتبع الـPrompt بشكل أقرب."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "اتصل بنا",
+      "description": "أرسل ملاحظاتك إلى فريق ReelMind."
+    },
+    "header": {
+      "title": "ملاحظات سريعة",
+      "description": "هل وجدت خطأ أو لديك اقتراح؟ أخبرنا خلال 30 ثانية."
+    },
+    "card": {
+      "title": "ملاحظات سريعة",
+      "subtitle": "3 حقول فقط، تستغرق 30 ثانية"
+    },
+    "submitted": {
+      "title": "تم إرسال الملاحظات",
+      "description": "شكرًا لملاحظاتك. سنراجعها وسنتواصل معك إذا لزم الأمر."
+    },
+    "auth": {
+      "required": "يرجى تسجيل الدخول لإرسال الملاحظات."
+    },
+    "form": {
+      "errors": {
+        "unknown": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+      },
+      "type": {
+        "label": "النوع",
+        "placeholder": "اختر نوع الملاحظات",
+        "options": {
+          "bug": "بلاغ عن خطأ",
+          "suggestion": "اقتراح",
+          "other": "أخرى"
+        },
+        "errors": {
+          "required": "نوع الملاحظات مطلوب.",
+          "invalid": "نوع الملاحظات غير صالح."
+        }
+      },
+      "subject": {
+        "label": "الموضوع *",
+        "placeholder": "ما المشكلة أو الاقتراح؟",
+        "errors": {
+          "required": "الموضوع مطلوب.",
+          "min": "يجب ألا يقل الموضوع عن {min} أحرف.",
+          "max": "يجب ألا يزيد الموضوع عن {max} أحرف.",
+          "invalid": "الموضوع يحتوي على محتوى غير صالح."
+        }
+      },
+      "message": {
+        "label": "التفاصيل *",
+        "placeholder": "أخبرنا المزيد...",
+        "errors": {
+          "required": "التفاصيل مطلوبة.",
+          "min": "يجب ألا تقل التفاصيل عن {min} أحرف.",
+          "max": "يجب ألا تزيد التفاصيل عن {max} أحرف.",
+          "invalid": "التفاصيل تحتوي على محتوى غير صالح."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "جارٍ الإرسال...",
+      "submit": "إرسال الملاحظات"
+    },
+    "toast": {
+      "submitSuccess": "تم إرسال الملاحظات بنجاح!",
+      "submitFailed": "فشل إرسال الملاحظات. يرجى المحاولة مرة أخرى.",
+      "authRequired": "يرجى تسجيل الدخول لإرسال الملاحظات.",
+      "rateLimited": "عدد كبير من الإرسالات. يرجى المحاولة لاحقًا.",
+      "rateLimitedWithRetryAfter": "يرجى الانتظار {seconds}ث قبل الإرسال مرة أخرى.",
+      "fixErrors": "يرجى إصلاح الأخطاء في النموذج.",
+      "checkInput": "يرجى التحقق من إدخالاتك والمحاولة مرة أخرى."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "المنشورات",
+      "following": "يتابع",
+      "followingShort": "متابعة",
+      "followers": "المتابعون",
+      "followersShort": "المعجبون",
+      "favorites": "المفضلة",
+      "favoritesShort": "مفضلة"
+    },
+    "actions": {
+      "save": "حفظ",
+      "saving": "جارٍ الحفظ...",
+      "cancel": "إلغاء",
+      "delete": "حذف",
+      "retry": "إعادة المحاولة",
+      "editProfile": "تعديل الملف الشخصي",
+      "signOut": "تسجيل الخروج",
+      "follow": "متابعة",
+      "unfollow": "إلغاء المتابعة",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "منشئ محتوى",
+      "avatarAltFallback": "مستخدم",
+      "initialFallback": "ش",
+      "edit": {
+        "displayNamePlaceholder": "اسم العرض",
+        "bioPlaceholder": "نبذة"
+      },
+      "stats": {
+        "following": "يتابع",
+        "followers": "المتابعون"
+      },
+      "joined": "انضم {date}",
+      "joinedFallback": "مارس 2025"
+    },
+    "time": {
+      "now": "الآن",
+      "minutesAgo": "قبل {minutes}د",
+      "hoursAgo": "قبل {hours}س",
+      "daysAgo": "قبل {days}ي"
+    },
+    "toast": {
+      "loginFirst": "يرجى تسجيل الدخول أولاً",
+      "cannotFollowYourself": "لا يمكنك متابعة نفسك",
+      "followed": "تمت المتابعة بنجاح",
+      "unfollowed": "تم إلغاء المتابعة بنجاح",
+      "operationFailed": "فشلت العملية"
+    },
+    "posts": {
+      "loadingMore": "جارٍ تحميل المزيد من المنشورات...",
+      "error": {
+        "failedToLoad": "فشل تحميل المنشورات"
+      },
+      "empty": {
+        "title": "لا توجد منشورات بعد",
+        "description": "لم يشارك هذا المستخدم أي منشورات بعد. عُد لاحقًا!"
+      },
+      "deleteDialog": {
+        "title": "حذف المنشور",
+        "description": "سيؤدي ذلك إلى إخفاء المنشور من ملفك الشخصي والخلاصة. لا يمكنك التراجع عن هذا الإجراء."
+      },
+      "toast": {
+        "deleted": "تم حذف المنشور",
+        "deleteFailed": "فشل حذف المنشور"
+      }
+    },
+    "favorites": {
+      "loadingMore": "جارٍ تحميل المزيد من المفضلة...",
+      "error": {
+        "failedToLoad": "فشل تحميل المفضلة"
+      },
+      "empty": {
+        "title": "لا توجد مفضلة بعد",
+        "description": "ستظهر هنا المنشورات التي تعجبك. ابدأ الاستكشاف واحفظ المفضلة!"
+      }
+    },
+    "followers": {
+      "empty": "لا يوجد متابعون بعد",
+      "error": {
+        "failedToLoad": "فشل تحميل المتابعين"
+      },
+      "followerSince": "متابع منذ {time}"
+    },
+    "following": {
+      "empty": "لا تتابع أحدًا بعد",
+      "error": {
+        "failedToLoad": "فشل تحميل المتابَعين"
+      },
+      "followingSince": "يتابع منذ {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "خطط العضوية - ReelMind",
+      "description": "انضم إلى خطط عضوية ReelMind للحصول على المزيد من الأرصدة والميزات المميزة لتوليد الفيديو بالذكاء الاصطناعي."
+    },
+    "plans": {
+      "hero": {
+        "title": "خطط العضوية",
+        "subtitle": "افتح الإمكانات الكاملة لتوليد الفيديو بالذكاء الاصطناعي مع خطط اشتراك ReelMind المرنة"
+      },
+      "error": {
+        "loadFailed": "فشل الحصول على خطط العضوية، يرجى المحاولة لاحقًا."
+      },
+      "names": {
+        "free": "مجاني",
+        "pro": "برو",
+        "max": "ماكس",
+        "unlimited": "غير محدود"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "سنوي"
+      },
+      "monthly": {
+        "label": "شهري"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "خصم 70% للشهر الأول",
+        "short": "خصم 70%",
+        "description": "يحصل مشتركو العضوية لأول مرة على خصم 70%، القسيمة صالحة لمدة 24 ساعة"
+      },
+      "yearly": {
+        "full": "أول 6 أشهر مجانًا",
+        "short": "6 أشهر مجانًا",
+        "description": "يحصل المشتركون سنويًا على أول 6 أشهر مجانًا بالكامل - ما يعادل خصم 50% في السنة الأولى!"
+      },
+      "percentOff": "خصم {percent}%",
+      "badge": {
+        "preview": "🎁 {offer} متاح",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(بعد الاستلام)"
+    },
+    "pricing": {
+      "perYear": "سنوياً",
+      "perMonth": "شهرياً",
+      "breakdown": {
+        "originalPrice": "السعر الأصلي:",
+        "discount": "خصمك:",
+        "payFirstYear": "تدفع (السنة الأولى):",
+        "firstMonth": "الشهر الأول:"
+      }
+    },
+    "status": {
+      "title": "حالة العضوية",
+      "loading": "جارٍ تحميل معلومات العضوية...",
+      "currentPlan": "الخطة الحالية:",
+      "expiresOn": "تنتهي في:",
+      "unlimitedDescription": "لديك وصول غير محدود إلى جميع ميزات التوليد دون استهلاك الأرصدة.",
+      "planDescription": "لديك وصول إلى جميع ميزات ومزايا {plan}.",
+      "noActive": {
+        "title": "ليس لديك عضوية نشطة.",
+        "subtitle": "اشترك في إحدى الخطط أدناه لفتح الميزات المميزة."
+      }
+    },
+    "creditsBalance": {
+      "title": "رصيد الأرصدة",
+      "loading": "جارٍ تحميل معلومات الأرصدة...",
+      "availableCredits": "الأرصدة المتاحة:",
+      "unlimited": {
+        "video": "توليد فيديو غير محدود",
+        "image": "توليد صور غير محدود",
+        "audio": "توليد صوت غير محدود"
+      },
+      "estimate": {
+        "videos": "حتى {count} فيديو",
+        "images": "حتى {count} صورة",
+        "audios": "حتى {count} صوت"
+      },
+      "cost": {
+        "videos": "الفيديوهات: من {credits} رصيد",
+        "images": "الصور: من {credits} رصيد",
+        "audios": "الأصوات: من {credits} رصيد"
+      }
+    },
+    "credits": {
+      "title": "شراء أرصدة",
+      "history": {
+        "toggle": {
+          "show": "إظهار سجل المعاملات",
+          "hide": "إخفاء سجل المعاملات"
+        }
+      },
+      "card": {
+        "description": "اختر باقة أرصدة لتعزيز قدرات التوليد بالذكاء الاصطناعي"
+      },
+      "packages": {
+        "basic": {
+          "label": "باقة أساسية"
+        },
+        "standard": {
+          "label": "باقة قياسية"
+        },
+        "premium": {
+          "label": "باقة Premium"
+        },
+        "pro": {
+          "label": "باقة Ultra"
+        },
+        "bonus": "مكافأة: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "السعر الأساسي: 1 USD = 100 رصيد",
+        "buyMoreBonus": "اشترِ أكثر لتحصل على مكافآت أكثر!",
+        "neverExpire": "الأرصدة لا تنتهي صلاحيتها",
+        "instantDelivery": "تسليم فوري بعد الدفع"
+      },
+      "actions": {
+        "processing": "جارٍ المعالجة...",
+        "buyCredits": "شراء {credits} رصيد"
+      }
+    },
+    "creditsHistory": {
+      "title": "سجل المعاملات",
+      "subtitle": "آخر معاملات الأرصدة لديك",
+      "actions": {
+        "retry": "إعادة المحاولة",
+        "loading": "جارٍ التحميل...",
+        "loadMore": "تحميل المزيد"
+      },
+      "table": {
+        "date": "التاريخ",
+        "type": "النوع",
+        "amount": "المبلغ",
+        "status": "الحالة"
+      },
+      "empty": "لا يوجد سجل معاملات متاح",
+      "types": {
+        "membershipMonthly": "أرصدة العضوية الشهرية",
+        "membershipInitial": "أرصدة العضوية الأولية",
+        "freeMonthly": "أرصدة شهرية مجانية",
+        "purchase": "شراء أرصدة",
+        "platformReward": "مكافأة المنصة",
+        "newUserBonus": "مكافأة مستخدم جديد",
+        "postReward": "مكافأة منشور",
+        "videoPostReward": "مكافأة منشور فيديو",
+        "refund": "استرداد",
+        "balanceAdjustment": "تعديل الرصيد",
+        "videoGeneration": "توليد فيديو",
+        "imageGeneration": "توليد صورة",
+        "modelTraining": "تدريب نموذج",
+        "audioGeneration": "توليد صوت",
+        "systemAdjustment": "تعديل النظام"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}س {m}د {s}ث",
+        "ms": "{m}د {s}ث",
+        "s": "{s}ث",
+        "expired": "منتهي"
+      },
+      "toast": {
+        "claimedTitle": "تم استلام القسيمة بنجاح",
+        "claimedDescription": "تمت إضافة القسيمة إلى حسابك، صالحة لمدة {hours} ساعة",
+        "claimFailedTitle": "فشل الاستلام",
+        "tryAgainLater": "يرجى المحاولة لاحقًا",
+        "networkError": "خطأ في الشبكة، يرجى المحاولة لاحقًا"
+      }
+    },
+    "couponStatus": {
+      "title": "حالة القسيمة",
+      "active": {
+        "annualTitle": "العرض السنوي نشط",
+        "couponTitle": "تم تفعيل القسيمة"
+      },
+      "fields": {
+        "claimed": "تم الاستلام:",
+        "expires": "تنتهي:",
+        "timeLeft": "الوقت المتبقي:",
+        "usedAt": "استُخدمت في:",
+        "discount": "الخصم:"
+      },
+      "expired": "انتهت صلاحية القسيمة",
+      "used": {
+        "title": "تم استخدام القسيمة"
+      },
+      "available": "{offer} متاح",
+      "offer": {
+        "annualSpecial": "🎁 عرض سنوي خاص",
+        "newUserExclusive": "🎉 حصري للمستخدمين الجدد",
+        "bestValue": "أفضل قيمة",
+        "limitedTime": "وقت محدود",
+        "claimYearly": "استلم عرض 6 أشهر مجانًا",
+        "claimMonthly": "استلم القسيمة الآن"
+      },
+      "none": {
+        "title": "لا توجد قسائم متاحة",
+        "description": "{offer} متاح فقط للمستخدمين الجدد الذين لم يشتروا عضوية من قبل."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "شائع",
+        "advanced": "متقدم",
+        "unlimited": "غير محدود"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "احصل على وصول غير محدود",
+        "getUnlimitedMobile": "احصل على Unlimited",
+        "subscribeDesktop": "ابدأ الاشتراك",
+        "subscribeMobile": "اشترك",
+        "claimAndSubscribeMobile": "استلم واشترك",
+        "getDiscountMobile": "احصل على {discount}",
+        "claimDiscountAndSubscribeDesktop": "استلم {discount} واشترك"
+      },
+      "toast": {
+        "loginSuccess": "تم تسجيل الدخول بنجاح! انقر الزر مرة أخرى لاستلام خصمك والاشتراك.",
+        "claimCouponFailed": "فشل استلام القسيمة",
+        "tryAgainLater": "يرجى المحاولة لاحقًا",
+        "couponClaimed": "تم استلام القسيمة بنجاح!",
+        "failedToProcess": "فشل المعالجة"
+      },
+      "usageEstimate": {
+        "title": "تقدير الاستخدام الشهري",
+        "videos": "حتى {count} فيديو شهريًا",
+        "images": "حتى {count} صورة شهريًا",
+        "audios": "حتى {count} صوت شهريًا"
+      },
+      "unlimitedNotes": {
+        "title": "ملاحظات الاستخدام",
+        "videoTasks": {
+          "title": "مهام الفيديو:",
+          "body": "يمكنك تشغيل ما يصل إلى 5 مهام في الوقت نفسه. الحد الشهري: 300. بعد الوصول إلى الحد الشهري، يتم تطبيق الوضع البطيء: حد يومي 30 فيديو لكل 24 ساعة و10 مهام في الساعة."
+        },
+        "imageTasks": {
+          "title": "مهام الصور:",
+          "body": "حتى 300 مهمة شهريًا. ينطبق الوضع السريع حتى المهمة رقم 300 (5 في الدقيقة). بعد ذلك، يحد الوضع البطيء من مهمة واحدة في الدقيقة."
+        },
+        "premiumModels": {
+          "title": "النماذج المميزة:",
+          "body": "بعض النماذج عالية التكلفة غير مشمولة في خطط UNLIMITED. ما تزال نسخ VEO 3.* غير السريعة ونسخ Sora-2 /pro تستهلك الأرصدة."
+        }
+      },
+      "currentPlan": "الخطة الحالية",
+      "yearlyEquivalent": "يعادل <price>{value}</price>",
+      "yearlySavings": "يمكنك توفير <amount>{value}</amount> مقارنة بالفاتورة الشهرية"
+    },
+    "features": {
+      "monthlyCredits": "{credits} رصيد شهري",
+      "monthlyVideoCredits": "{credits} رصيد فيديو شهري",
+      "fullAccessTopModels": "وصول كامل إلى أفضل {count} نموذج فيديو بالذكاء الاصطناعي",
+      "accessAllModels": "الوصول إلى جميع النماذج",
+      "purchaseMoreRolloverVideoCredits": "شراء المزيد من أرصدة الفيديو القابلة للترحيل",
+      "downloadNoWatermark": "تنزيل الفيديوهات بدون علامة مائية",
+      "commercialUse": "استخدام تجاري",
+      "fastGenerations": "توليد سريع",
+      "prioritySupport": "دعم أولوية",
+      "unlimitedVideoAndImageGeneration": "توليد فيديو وصور بلا حدود"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "فتح خيارات الفوترة"
+      },
+      "actions": {
+        "opening": "جارٍ الفتح...",
+        "billingOptions": "خيارات الفوترة"
+      },
+      "confirm": {
+        "title": "إدارة اشتراكك",
+        "description": "هل ترغب في إلغاء اشتراكك؟ نود سماع ملاحظاتك قبل المغادرة.",
+        "keep": "الاحتفاظ باشتراكي",
+        "continueCancel": "المتابعة للإلغاء"
+      },
+      "toast": {
+        "openFailed": "فشل فتح إدارة الاشتراك",
+        "feedbackThanks": "شكرًا لملاحظاتك!",
+        "feedbackSaveFailed": "فشل حفظ الملاحظات، لكن يمكنك ما زلت إدارة اشتراكك"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "نود سماع ملاحظاتك",
+        "subtitle": "ساعدنا على التحسين بالإجابة عن بعض الأسئلة السريعة"
+      },
+      "common": {
+        "close": "إغلاق",
+        "other": "أخرى",
+        "stepIndicator": "الخطوة {current} من {total}"
+      },
+      "actions": {
+        "back": "رجوع",
+        "next": "التالي",
+        "submitting": "جارٍ الإرسال...",
+        "complete": "إكمال ومتابعة"
+      },
+      "satisfaction": {
+        "1": "غير راضٍ جدًا",
+        "2": "غير راضٍ",
+        "3": "محايد",
+        "4": "راضٍ",
+        "5": "راضٍ جدًا"
+      },
+      "steps": {
+        "1": {
+          "title": "كيف سمعت عن ReelMind؟",
+          "options": {
+            "social": "وسائل التواصل الاجتماعي (Twitter، Instagram، إلخ)",
+            "search": "محرك البحث (Google، Bing، إلخ)",
+            "friend": "توصية من صديق أو زميل",
+            "ads": "إعلانات عبر الإنترنت",
+            "blog": "مدونة تقنية أو موقع مراجعات"
+          }
+        },
+        "2": {
+          "title": "لِمَ تستخدم ReelMind بشكل أساسي؟",
+          "description": "اختر كل ما يتوافق مع أهدافك الإبداعية.",
+          "options": {
+            "video": "إنشاء فيديو",
+            "image": "توليد صور",
+            "music": "تأليف موسيقى",
+            "marketing": "محتوى إعلانات وتسويق",
+            "socialPosts": "منشورات التواصل الاجتماعي",
+            "education": "مواد تعليمية",
+            "personal": "مشاريع شخصية",
+            "exploring": "استكشاف أفكار جديدة"
+          }
+        },
+        "3": {
+          "title": "ما الذي يصفك بشكل أفضل؟",
+          "options": {
+            "creator": "صانع محتوى",
+            "developer": "مطور مستقل",
+            "marketingPro": "محترف تسويق",
+            "businessOwner": "صاحب عمل",
+            "designer": "مصمم",
+            "hobbyist": "هاوٍ",
+            "student": "طالب",
+            "artist": "فنان"
+          }
+        },
+        "4": {
+          "title": "كيف تقيّم تجربتك؟",
+          "description": "يرجى تقييم رضاك العام عن ReelMind"
+        },
+        "5": {
+          "title": "ما السبب الرئيسي الذي دفعك للإلغاء؟",
+          "options": {
+            "price": "مكلف جدًا",
+            "usage": "لم أستخدمه بما يكفي",
+            "features": "ميزات أساسية مفقودة",
+            "quality": "جودة النتائج المُولدة",
+            "bugs": "مشكلات تقنية أو أخطاء",
+            "alternative": "وجدت بديلًا أفضل"
+          }
+        },
+        "6": {
+          "title": "نود سماع ملاحظاتك",
+          "description": "أفكارك تساعدنا على جعل ReelMind أفضل للجميع.",
+          "placeholder": "ما الذي يمكننا تحسينه؟ هل هناك ميزات ترغب برؤيتها؟ (اختياري)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "تم إرسال الطلب. سنتواصل قريبًا.",
+        "submitFailed": "فشل إرسال الطلب"
+      },
+      "card": {
+        "title": "Enterprise وخطة مخصصة",
+        "subtitle": "تسعير مخصص وفواتير ودعم",
+        "description": "هل تحتاج فواتير أو دعم امتثال أو سير عمل مخصص؟ شارك متطلباتك وسنقترح الأنسب.",
+        "toggle": {
+          "hide": "إخفاء النموذج",
+          "show": "اتصل بالمبيعات"
+        },
+        "highlights": {
+          "sso": "SSO والامتثال",
+          "invoices": "الفواتير وأوامر الشراء",
+          "support": "دعم أولوية",
+          "workflows": "سير عمل مخصص"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "نوع التواصل",
+          "placeholder": "اختر نوع التواصل",
+          "options": {
+            "business": "أعمال",
+            "individual": "فرد"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "تقدير الاستخدام الشهري (USD)",
+          "placeholder": "اختر تقديرًا",
+          "options": {
+            "0to1000": "0 دولار - 1000 دولار",
+            "1000to5000": "1000 دولار - 5000 دولار",
+            "5000to10000": "5000 دولار - 10000 دولار",
+            "10000plus": "10,000 دولار+",
+            "custom": "مبلغ مخصص (USD)"
+          },
+          "custom": {
+            "label": "استخدام شهري مخصص (USD)",
+            "placeholder": "أدخل مبلغًا بالدولار"
+          }
+        },
+        "firstName": {
+          "label": "الاسم الأول",
+          "placeholder": "جين"
+        },
+        "lastName": {
+          "label": "اسم العائلة",
+          "placeholder": "ظبية"
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "الموقع الإلكتروني",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "أخبرنا عن مشروعك ومتطلباتك",
+          "placeholder": "ما الذي تبنيه؟ ما سير العمل واحتياجات الامتثال والحجم المتوقع لديك؟"
+        },
+        "actions": {
+          "cancel": "إلغاء",
+          "submitting": "جارٍ الإرسال...",
+          "submit": "إرسال"
+        },
+        "validation": {
+          "firstNameRequired": "الاسم الأول مطلوب",
+          "lastNameRequired": "اسم العائلة مطلوب",
+          "emailInvalid": "يجب أن يكون البريد الإلكتروني صالحًا",
+          "websiteInvalid": "يجب أن يكون الموقع الإلكتروني رابطًا صالحًا",
+          "monthlyEstimateRequired": "تقدير الاستخدام الشهري مطلوب",
+          "monthlyEstimateEnter": "يرجى إدخال تقدير شهري",
+          "monthlyEstimateMin": "يجب أن يكون التقدير الشهري >= 0",
+          "requirementsMin": "يرجى تقديم تفاصيل أكثر (الحد الأدنى {count} حرفًا)",
+          "maxChars": "الحد الأقصى {count} حرفًا"
+        }
+      }
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "items": {
+        "proBenefits": {
+          "question": "ما فوائد عضوية PRO؟",
+          "answer": "تمنحك عضوية PRO 1000 رصيد كل شهر (بقيمة $10)، ووصولًا ذا أولوية إلى الميزات الجديدة، وتوليد فيديو أسرع، وخيارات تحرير متقدمة، ودعم عملاء ذو أولوية."
+        },
+        "cancelAnytime": {
+          "question": "هل يمكنني إلغاء اشتراكي في أي وقت؟",
+          "answer": "نعم، يمكنك إلغاء اشتراكك في أي وقت. ستستمر مزاياك حتى نهاية فترة الفوترة الحالية.",
+          "discountNote": {
+            "title": "ملاحظة خاصة للاشتراكات المخفضة:",
+            "body": "إذا اشتركت باستخدام قسيمة خصم واستخدمت أرصدة تتجاوز قيمة الخصم خلال الشهر الأول، فلا يمكنك إلغاء الاشتراك إلا بعد معالجة دفع الشهر الثاني. تضمن هذه السياسة الاستخدام العادل للعروض الترويجية."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "هل هناك فرق بين الاشتراك الشهري والسنوي؟",
+          "answer": "نعم، الاشتراكات السنوية تقدم خصمًا كبيرًا مقارنة بالاشتراكات الشهرية. ستوفر حوالي 20% عند اختيار الفوترة السنوية."
+        },
+        "whatAreCredits": {
+          "question": "ما هي أرصدة ReelMind؟",
+          "answer": "أرصدة ReelMind هي العملة الافتراضية المستخدمة على منصتنا لتوليد فيديوهات وصور AI. تتطلب الميزات المختلفة كميات مختلفة من الأرصدة. على سبيل المثال، توليد فيديو قياسي (480p) يكلف 50 رصيدًا، بينما فيديو HD (720p) يكلف 80 رصيدًا."
+        },
+        "earnCredits": {
+          "question": "كيف يمكنني كسب الأرصدة؟",
+          "intro": "يمكنك كسب الأرصدة بعدة طرق:",
+          "items": {
+            "membership": "من خلال خطط العضوية (يحصل أعضاء PRO على 1000 رصيد شهريًا، وأعضاء MAX على 2000)",
+            "purchase": "بشراء باقات الأرصدة",
+            "newUser": "يحصل المستخدمون الجدد على 100 رصيد مجاني عند التسجيل",
+            "posting": "بنشر محتوى على ReelMind (50 رصيدًا يوميًا)",
+            "promotions": "عروض ومكافآت خاصة"
+          }
+        },
+        "expire": {
+          "question": "هل تنتهي صلاحية الأرصدة؟",
+          "answer": "الأرصدة التي تشتريها مباشرةً لا تنتهي صلاحيتها وستبقى في حسابك حتى تستخدمها. سيتم إعادة تعيين الأرصدة الشهرية الممنوحة في بداية كل شهر. لن تُرحّل الأرصدة غير المستخدمة من الأشهر السابقة."
+        },
+        "refund": {
+          "question": "هل يمكنني استرداد الأرصدة غير المستخدمة؟",
+          "answer": "نحن لا نقدم استردادًا للأرصدة التي تم شراؤها. ومع ذلك، إذا واجهت مشاكل تقنية منعت الاستخدام الصحيح للأرصدة، يرجى التواصل مع فريق الدعم وسنتعامل مع الأمر."
+        },
+        "membershipVsCredits": {
+          "question": "ما الفرق بين العضوية والأرصدة؟",
+          "answer": "توفر العضويات حصة شهرية من الأرصدة مع مزايا إضافية مثل أولوية المعالجة والوصول إلى ميزات حصرية. يمكن شراء الأرصدة بشكل منفصل دون عضوية ويتم استهلاكها عند إنشاء المحتوى. اختر العضوية للاستخدام المنتظم أو اشترِ الأرصدة للاستخدام العرضي."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. جميع الحقوق محفوظة."
+    }
+  },
+  "Search": {
+    "placeholder": "بحث...",
+    "noResultsFound": "لم يتم العثور على نتائج",
+    "viewAllResults": "عرض كل النتائج",
+    "sections": {
+      "posts": "المنشورات",
+      "users": "المستخدمون"
+    },
+    "tabs": {
+      "posts": "المنشورات",
+      "users": "المستخدمون"
+    },
+    "unknownUser": "غير معروف",
+    "loading": "جارٍ التحميل...",
+    "searching": "جارٍ البحث...",
+    "loadingMore": "جارٍ تحميل المزيد...",
+    "tryAgain": "إعادة المحاولة",
+    "noPostsFound": "لم يتم العثور على منشورات",
+    "noUsersFound": "لم يتم العثور على مستخدمين",
+    "empty": {
+      "title": "بحث",
+      "hint": "أدخل كلمات مفتاحية للعثور على المحتوى"
+    },
+    "errors": {
+      "searchFailed": "فشل البحث"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "عمولات مدى الحياة - 20% للأبد"
+    },
+    "hero": {
+      "lifetime": "مدى الحياة",
+      "passiveIncome": "دخل سلبي",
+      "subtitle": {
+        "prefix": "اكسب",
+        "suffix": "عمولة للأبد"
+      }
+    },
+    "actions": {
+      "getStarted": "ابدأ",
+      "viewDashboard": "عرض لوحة التحكم",
+      "signInFirst": "يرجى تسجيل الدخول أولاً"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "منصة ReelMind API",
+      "actions": {
+        "modelsPricing": "النماذج والأسعار",
+        "viewDocumentation": "عرض الوثائق"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "تم إنشاء مفتاح API بنجاح",
+      "apiKeyCreateFailed": "فشل إنشاء مفتاح API",
+      "apiKeyDeleted": "تم حذف مفتاح API بنجاح",
+      "apiKeyDeletedDescription": "تم حذف مفتاح API",
+      "apiKeyDeleteFailed": "فشل حذف مفتاح API",
+      "apiKeyCopied": "تم نسخ مفتاح API إلى الحافظة",
+      "modelIdCopied": "تم نسخ معرف النموذج إلى الحافظة"
+    },
+    "accountCard": {
+      "notLoggedIn": "غير مسجل الدخول",
+      "loadingKeys": "جارٍ تحميل مفاتيح API...",
+      "keysAvailable": "{count} {count, plural, one {مفتاح API متاح} other {مفاتيح API متاحة}}",
+      "createKey": "إنشاء مفتاح API",
+      "helpPrefix": "إذا كنت بحاجة إلى مساعدة، يرجى الاطلاع على ",
+      "apiDocumentation": "وثائق API"
+    },
+    "stats": {
+      "plan": "الخطة",
+      "resetDate": "تاريخ إعادة الضبط",
+      "credits": "أرصدة",
+      "tasks": "المهام",
+      "loading": "جارٍ التحميل...",
+      "freePlan": "الخطة المجانية",
+      "na": "غير متاح",
+      "buyCredits": "شراء أرصدة"
+    },
+    "apiKeys": {
+      "title": "إدارة مفاتيح API",
+      "description": "أدر مفاتيح API للوصول إلى API توليد الفيديو في ReelMind",
+      "createNew": "إنشاء مفتاح API جديد",
+      "loading": "جارٍ تحميل مفاتيح API...",
+      "label": "مفتاح API",
+      "created": "تم الإنشاء {date}",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "show": "إظهار مفتاح API",
+      "hide": "إخفاء مفتاح API",
+      "copy": "نسخ مفتاح API",
+      "totalCalls": "إجمالي الاستدعاءات",
+      "creditsUsed": "الأرصدة المستخدمة",
+      "empty": {
+        "title": "لا توجد مفاتيح API",
+        "description": "لم تقم بإنشاء أي مفاتيح API بعد. أنشئ أول مفتاح API للبدء باستخدام ReelMind API.",
+        "createFirst": "أنشئ أول مفتاح API"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "النماذج والأسعار",
+      "apiDocumentation": "وثائق API"
+    },
+    "documentation": {
+      "title": "وثائق API",
+      "authentication": "المصادقة",
+      "authenticationIntro": "تتطلب جميع طلبات API مصادقة باستخدام مفتاح API. مفتاح API الخاص بك هو UUID يمكنك إنشاؤه أدناه في قسم إدارة مفاتيح API.",
+      "authenticationMethods": "طرق المصادقة",
+      "exampleRequest": "مثال طلب",
+      "important": "مهم",
+      "apiEndpoints": "نقاط نهاية API",
+      "responseFormat": "تنسيق الاستجابة",
+      "responseFormatIntro": "تنسيق استجابة مهمة توليد الفيديو:",
+      "parameters": "المعلمات",
+      "table": {
+        "name": "الاسم",
+        "type": "النوع",
+        "required": "مطلوب",
+        "description": "الوصف"
+      },
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "pricing": {
+      "title": "أسعار ونماذج API",
+      "intro": "استكشف نماذج AI المتاحة وأسعارها لواجهات API لتوليد الفيديو والصور",
+      "loading": "جارٍ تحميل النماذج المتاحة...",
+      "available": "متاح",
+      "unavailable": "غير متاح",
+      "credits": "{credits} أرصدة",
+      "basePricePerImage": "السعر الأساسي (لكل صورة)",
+      "basePrice5sVideo": "السعر الأساسي (فيديو 5 ثوانٍ)",
+      "creditsPerSecond": "+{credits} رصيد/ثانية",
+      "modelId": "معرف النموذج",
+      "copyModelId": "نسخ معرف النموذج",
+      "noModels": {
+        "title": "لا توجد نماذج متاحة",
+        "description": "لا توجد نماذج AI متاحة حاليًا للوصول عبر API. يرجى العودة لاحقًا."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "نص إلى فيديو",
+      "imageToVideo": "صورة إلى فيديو",
+      "videoToVideo": "فيديو إلى فيديو",
+      "textToImage": "نص إلى صورة",
+      "imageToImage": "صورة إلى صورة"
+    },
+    "deleteModal": {
+      "title": "تأكيد الحذف",
+      "description": "هل أنت متأكد أنك تريد حذف مفتاح API هذا؟ لا يمكن التراجع عن هذا الإجراء.",
+      "keyName": "اسم المفتاح: {name}",
+      "createdOn": "تم الإنشاء في {date}",
+      "cancel": "إلغاء",
+      "deleting": "جارٍ الحذف...",
+      "deleteKey": "حذف مفتاح API"
+    },
+    "modelParameters": {
+      "title": "معلمات النموذج",
+      "required": "مطلوب",
+      "default": "الافتراضي: {value}",
+      "labels": {
+        "prompt": "موجه",
+        "guidance_scale": "مقياس التوجيه",
+        "aspect_ratio": "نسبة الأبعاد",
+        "seed": "بذرة",
+        "image_url": "رابط الصورة",
+        "duration": "المدة",
+        "resolution": "الدقة",
+        "num_inference_steps": "خطوات الاستدلال",
+        "cfg_scale": "مقياس CFG"
+      },
+      "flux": {
+        "promptDescription": "Prompt نصي يصف الصورة المراد إنشاؤها",
+        "guidanceScaleDescription": "يتحكم في مدى اتباع الصورة للـPrompt",
+        "aspectRatioDescription": "نسبة أبعاد الصورة المُولدة",
+        "seedDescription": "Seed عشوائي لتوليد قابل لإعادة الإنتاج",
+        "imageUrlDescription": "رابط صورة الإدخال لتوليد صورة-إلى-صورة"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "نص إلى صورة · تحرير الصور",
+      "title": "فلوكس / نانو الموز / سيدريم"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - أفضل مدير وكيل AI في العالم",
+      "description": "أفضل مدير وكيل AI في العالم"
+    },
+    "page": {
+      "loading": "جارٍ تحميل مدير Nolan بالذكاء الاصطناعي..."
+    },
+    "heroBanner": {
+      "label": "تقنية AI ثورية",
+      "name": "نولان",
+      "worldFirst": "الأول في العالم",
+      "aiAgentDirector": "مدير وكيل AI"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "في انتظار",
+        "queued": "في قائمة الانتظار",
+        "processing": "المعالجة",
+        "completed": "مكتمل",
+        "failed": "فشل",
+        "canceled": "تم الإلغاء"
+      },
+      "model": {
+        "unknown": "نموذج غير معروف",
+        "unnamed": "لم يذكر اسمه"
+      },
+      "errors": {
+        "fetchListTitle": "فشل في تحميل المهام",
+        "unknown": "خطأ غير معروف",
+        "fetchDetails": "فشل في جلب تفاصيل المهمة",
+        "downloadFailed": "فشل التنزيل",
+        "retryFailed": "فشلت إعادة المحاولة"
+      },
+      "details": {
+        "videoTitle": "تفاصيل مهمة الفيديو",
+        "imageTitle": "تفاصيل مهمة الصورة",
+        "videoPreview": "معاينة الفيديو",
+        "hideVideo": "إخفاء الفيديو",
+        "showVideo": "عرض الفيديو",
+        "downloadVideo": "تحميل فيديو",
+        "browserNoVideoSupport": "متصفحك لا يدعم تشغيل الفيديو.",
+        "labels": {
+          "duration": "المدة",
+          "fileSize": "حجم الملف",
+          "format": "التنسيق",
+          "prompt": "موجه",
+          "model": "نموذج",
+          "ratio": "نسبة الارتفاع",
+          "resolution": "القرار",
+          "taskId": "معرف المهمة",
+          "user": "المستخدم",
+          "status": "الحالة",
+          "createdTime": "وقت الإنشاء",
+          "startedTime": "وقت البدء",
+          "completedTime": "الوقت المكتمل",
+          "generationModel": "نموذج الجيل",
+          "priority": "الأولوية",
+          "requestId": "معرف الطلب",
+          "lastActivity": "النشاط الأخير"
+        },
+        "videoPreviewUnavailable": "معاينة الفيديو غير متاحة",
+        "videoNoOutput": "اكتملت المهمة ولكن لا يوجد إخراج فيديو",
+        "videoNotCompleted": "المهمة لم تكتمل بعد",
+        "generationParams": "معلمات الجيل",
+        "basicInfo": "المعلومات الأساسية",
+        "timeInfo": "معلومات الوقت",
+        "detailData": "البيانات التفصيلية",
+        "inputParams": "معلمات الإدخال",
+        "outputResult": "نتيجة الإخراج",
+        "errorLog": "سجل الأخطاء",
+        "retrying": "جارٍ إعادة المحاولة...",
+        "retryTask": "إعادة محاولة المهمة",
+        "generatedImage": "الصورة المولدة",
+        "close": "إغلاق"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "إدارة ملاحظات المستخدم",
+        "subtitle": "إدارة الملاحظات والشكاوى المقدمة من المستخدم"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "فشل الجلب",
+          "fetchFailedDescription": "غير قادر على جلب بيانات التعليقات: {error}",
+          "unknown": "خطأ غير معروف"
+        },
+        "type": {
+          "bug": "تقرير الأخطاء",
+          "suggestion": "اقتراح",
+          "other": "أخرى"
+        },
+        "loading": "جار التحميل...",
+        "filter": {
+          "label": "نوع ردود الفعل",
+          "all": "جميع الأنواع"
+        },
+        "total": "الإجمالي: {total} عناصر التعليقات",
+        "empty": "لا توجد بيانات ردود الفعل",
+        "headers": {
+          "userInfo": "معلومات المستخدم",
+          "type": "اكتب",
+          "subject": "الموضوع",
+          "submittedAt": "تم الإرسال",
+          "actions": "الإجراءات"
+        },
+        "user": {
+          "unknown": "مستخدم غير معروف",
+          "noEmail": "لا يوجد بريد إلكتروني"
+        },
+        "actions": {
+          "collapse": "طي",
+          "viewDetails": "عرض التفاصيل"
+        },
+        "contentLabel": "ردود الفعل:",
+        "pagination": {
+          "previous": "السابق",
+          "next": "التالي"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "الرجاء إدخال كلمة البحث.",
+        "noUsersFound": "لم يتم العثور على مستخدمين متطابقين.",
+        "searchFailed": "فشل البحث عن المستخدمين.",
+        "userRequired": "الرجاء تحديد مستخدم أو إدخال معرف المستخدم.",
+        "amountInvalid": "الرجاء إدخال مبلغ صالح للاعتمادات.",
+        "descriptionRequired": "الرجاء إدخال وصف المنحة.",
+        "grantFailed": "فشل في منح الاعتمادات."
+      },
+      "success": {
+        "granted": "الاعتمادات الممنوحة بنجاح."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "فشل جلب الاستطلاعات.",
+        "fetchStats": "فشل جلب إحصائيات الاستطلاع."
+      }
+    },
+    "memberships": {
+      "title": "إدارة اشتراكات المستخدم",
+      "search": {
+        "placeholder": "ابحث عن معرف المستخدم أو البريد الإلكتروني أو اللقب...",
+        "button": "بحث"
+      },
+      "stats": {
+        "total": "إجمالي الاشتراكات",
+        "yearly": "الأعضاء السنوية"
+      },
+      "list": {
+        "title": "قائمة الاشتراك"
+      },
+      "loading": "جار التحميل...",
+      "actions": {
+        "retry": "أعد المحاولة"
+      },
+      "empty": "لا توجد بيانات الاشتراك",
+      "table": {
+        "headers": {
+          "userInfo": "معلومات المستخدم",
+          "plan": "خطة",
+          "billingCycle": "دورة الفواتير",
+          "status": "الحالة",
+          "credits": "رصيد الاعتمادات",
+          "videoTasks": "مهام الفيديو",
+          "imageTasks": "مهام الصورة",
+          "createdAt": "وقت الإنشاء",
+          "expiresAt": "وقت انتهاء الصلاحية"
+        },
+        "user": {
+          "unknown": "غير معروف"
+        },
+        "status": {
+          "active": "نشط",
+          "inactive": "غير نشط",
+          "cancelAtPeriodEnd": "إلغاء في نهاية الفترة"
+        },
+        "creditsUnit": "الاعتمادات",
+        "flagged": "تم وضع علامة عليها",
+        "tasksUnit": "المهام",
+        "never": "أبدا"
+      },
+      "pagination": {
+        "summary": "عرض {start} إلى {end} من سجلات {total}",
+        "previous": "السابق",
+        "next": "التالي",
+        "page": "الصفحة {currentPage} من {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "فشل في حذف المشاركة. يرجى المحاولة مرة أخرى."
+      }
+    }
+  },
+  "Common": {
+    "language": "لغة",
+    "onlyEnglish": "اللغة الإنجليزية فقط متاحة حاليا.",
+    "onlySupportedPages": "تتوفر لغات إضافية حاليًا على الصفحة الرئيسية، والاستكشاف، والبحث، والإنشاء، والليغو، والموسيقى، والعضوية، وجهات الاتصال، والمستخدم، والمشاركة، والنماذج، والتأثيرات، وصفحات المدونة فقط.",
+    "languages": {
+      "en": "إنجليزي",
+      "zh-CN": "الصينية (المبسطة)"
+    },
+    "actions": {
+      "viewAll": "عرض الكل",
+      "cancel": "يلغي",
+      "recreate": "إعادة إنشاء",
+      "download": "تحميل",
+      "downloading": "جارٍ التنزيل...",
+      "showMore": "عرض المزيد",
+      "showLess": "عرض أقل"
+    },
+    "aria": {
+      "scrollRight": "قم بالتمرير إلى اليمين",
+      "search": "يبحث"
+    },
+    "search": {
+      "placeholder": "البحث في المشاركات والمستخدمين..."
+    },
+    "share": {
+      "button": "يشارك",
+      "toast": {
+        "copiedTitle": "منقول",
+        "copiedMessage": "تم نسخ الرابط إلى الحافظة",
+        "failedTitle": "فشل النسخ",
+        "failedMessage": "غير قادر على نسخ الرابط إلى الحافظة"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "نولان مدير الذكاء الاصطناعي",
+      "earlyAccess": "الوصول المبكر",
+      "justOneCredit": "رصيد واحد فقط"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "وضع الضوء",
+        "darkMode": "الوضع المظلم",
+        "switchToLightMode": "التبديل إلى وضع الضوء",
+        "switchToDarkMode": "التبديل إلى الوضع الداكن"
+      },
+      "profile": {
+        "myProfile": "ملفي الشخصي",
+        "goToMyProfile": "اذهب إلى ملفي الشخصي"
+      },
+      "menu": {
+        "openMenu": "فتح القائمة",
+        "close": "يغلق"
+      },
+      "membership": {
+        "title": "عضوية",
+        "tapToViewPlans": "انقر لعرض الخطط",
+        "upgrade": "يرقي",
+        "plans": {
+          "free": "حر",
+          "pro": "برو",
+          "max": "الأعلى",
+          "unlimited": "غير محدود"
+        }
+      },
+      "actions": {
+        "pricing": "التسعير",
+        "signIn": "تسجيل الدخول"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ريل مايند. جميع الحقوق محفوظة."
+    },
+    "video": {
+      "labels": {
+        "prompt": "اِسْتَدْعَى",
+        "model": "نموذج",
+        "ratio": "نسبة",
+        "guidance": "إرشاد",
+        "steps": "خطوات",
+        "seed": "بذرة",
+        "definition": "تعريف"
+      },
+      "values": {
+        "unknownModel": "نموذج غير معروف",
+        "random": "عشوائي"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "ترقيم الصفحات",
+        "previous": "انتقل إلى الصفحة السابقة",
+        "next": "انتقل إلى الصفحة التالية"
+      },
+      "previous": "سابق",
+      "next": "التالي",
+      "more": "المزيد من الصفحات"
+    },
+    "concurrentLimit": {
+      "title": "تم الوصول إلى الحد الأقصى للمهمة",
+      "defaultMessage": "يمكن للمستخدمين المجانيين تشغيل مهمة إنشاء فيديو واحدة فقط في كل مرة.",
+      "currentStatus": "الوضع الحالي",
+      "currentPlan": "الخطة الحالية",
+      "premiumBenefits": "فوائد متميزة",
+      "plans": {
+        "unlimited": "خطة غير محدودة",
+        "free": "حر",
+        "unlimitedTasks": "مهام غير محدودة"
+      },
+      "unlimited": {
+        "maxTasks": "الحد الأقصى 3 مهام متزامنة",
+        "priority": "معالجة ذات أولوية عالية",
+        "features": "جميع الميزات المتميزة",
+        "waitNote": "يرجى الانتظار حتى تكتمل بعض مهامك الحالية قبل إرسال مهام جديدة."
+      },
+      "free": {
+        "maxTasks": "1 مهمة متزامنة",
+        "priority": "الأولوية القياسية",
+        "features": "الميزات الأساسية"
+      },
+      "upgrade": {
+        "maxTasks": "ما يصل إلى 5 مهام متزامنة",
+        "priority": "معالجة ذات أولوية أعلى",
+        "features": "الوصول إلى جميع النماذج"
+      },
+      "actions": {
+        "acknowledge": "فهمتها",
+        "upgrade": "يرقي",
+        "loading": "تحميل..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "التحميل المحلي",
+      "reelmind": "تم إنشاء ReelMind"
+    },
+    "reelmind": {
+      "description": "حدد مقطع فيديو تم إنشاؤه على ReelMind.",
+      "browse": "تصفح مقاطع فيديو ReelMind"
+    },
+    "title": {
+      "placeholder": "إضافة عنوان..."
+    },
+    "tags": {
+      "title": "العلامات",
+      "empty": "أضف علامات لتصنيف الفيديو الخاص بك بشكل أفضل.",
+      "placeholder": "إضافة علامة (اضغط على Enter للتأكيد)",
+      "count": "{count}/{limit}",
+      "helper": "ما يصل إلى {limit} من العلامات، و{max} من الأحرف لكل منها."
+    },
+    "description": {
+      "placeholder": "إضافة وصف..."
+    },
+    "generationType": {
+      "title": "نوع الجيل",
+      "txt2video": "النص إلى الفيديو",
+      "txt2videoDescription": "إنشاء من موجه النص.",
+      "img2video": "الصورة إلى الفيديو",
+      "img2videoDescription": "توليد من صورة مرجعية."
+    },
+    "prompts": {
+      "promptTitle": "اِسْتَدْعَى",
+      "promptPlaceholder": "أدخل المطالبة المستخدمة لإنشاء هذا الفيديو...",
+      "negativeTitle": "موجه سلبي",
+      "negativePlaceholder": "أدخل رسالة سلبية..."
+    },
+    "modelResources": {
+      "title": "الموارد النموذجية",
+      "placeholder": "قم بإدراج موارد النموذج المستخدمة، على سبيل المثال. النماذج، LoRAs، التضمينات..."
+    },
+    "aigc": {
+      "guidanceScale": "مقياس التوجيه",
+      "guidanceScalePlaceholder": "على سبيل المثال 7.5",
+      "steps": "خطوات",
+      "stepsPlaceholder": "على سبيل المثال 30",
+      "seed": "بذرة",
+      "seedPlaceholder": "على سبيل المثال 1234567890"
+    },
+    "tools": {
+      "title": "أدوات التوليد"
+    },
+    "videoPreview": {
+      "uploadComplete": "اكتمل التحميل",
+      "uploading": "جارٍ التحميل...",
+      "clickToUpload": "انقر لتحميل الفيديو",
+      "remove": "إزالة الفيديو"
+    },
+    "actions": {
+      "publish": "نشر",
+      "publishing": "نشر...",
+      "back": "خلف"
+    },
+    "errors": {
+      "tagEmpty": "لا يمكن أن تكون العلامة فارغة.",
+      "tagTooLong": "لا يمكن أن تتجاوز العلامة {max} حرفًا.",
+      "tagExists": "هذه العلامة موجودة بالفعل.",
+      "tagLimit": "يمكنك إضافة ما يصل إلى {limit} من العلامات.",
+      "authRequired": "الرجاء تسجيل الدخول للتحميل.",
+      "uploadFailed": "فشل التحميل. يرجى المحاولة مرة أخرى.",
+      "uploadParamsFailed": "فشل جلب معلمات التحميل.",
+      "fileAddFailed": "فشلت إضافة الملف. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "المدونة – ريل مايند",
+      "description": "اكتشف النصائح والبرامج التعليمية والرؤى حول إنشاء محتوى الذكاء الاصطناعي وإنشاء الفيديو وأحدث ميزات ReelMind."
+    },
+    "page": {
+      "title": "مدونة",
+      "empty": "لم يتم العثور على مشاركات مدونة"
+    },
+    "error": {
+      "title": "حدث خطأ أثناء تحميل المشاركات",
+      "description": "حدث خطأ ما أثناء تحميل مشاركات المدونة.",
+      "retry": "حاول ثانية"
+    },
+    "notFound": {
+      "title": "لم يتم العثور على الصفحة",
+      "description": "صفحة المدونة التي طلبتها غير موجودة."
+    },
+    "feed": {
+      "end": "لقد وصلت إلى النهاية",
+      "retry": "أعد المحاولة",
+      "loadFailed": "فشل تحميل مشاركات المدونة"
+    },
+    "topFeed": {
+      "refresh": "ينعش",
+      "exploreMore": "اكتشف المزيد من المرح",
+      "loadFailed": "فشل تحميل المشاركات العشوائية"
+    },
+    "floatingChat": {
+      "title": "اسأل نولان الذكاء الاصطناعي",
+      "subtitle": "مدير وكيل الذكاء الاصطناعي رقم 1!",
+      "placeholder": "اسأل عن هذا المقال أو شارك بأفكارك السينمائية...",
+      "cta": "أرسل إلى نولان"
+    },
+    "featureCard": {
+      "label": "نماذج الفيديو",
+      "title": "يقدم Reelmind أدوات قوية لإضفاء الحيوية على أفكارك.",
+      "subtitle": "قم بتحويل أفكارك إلى صور مذهلة باستخدام 101 نموذجًا من نماذج الذكاء الاصطناعي",
+      "cta": "جرب الآن"
+    },
+    "breadcrumbs": {
+      "home": "بيت"
+    },
+    "article": {
+      "notFoundTitle": "لم يتم العثور على المادة",
+      "notFoundDescription": "تعذر العثور على المقالة المطلوبة."
+    }
+  },
+  "Favorites": {
+    "title": "المفضلة",
+    "subtitle": "هنا يمكنك إدارة مقاطع الفيديو والنماذج المفضلة لديك",
+    "tabs": {
+      "video": "فيديو",
+      "model": "نموذج"
+    },
+    "empty": {
+      "title": "ليس لديك مفضلة حتى الآن"
+    },
+    "alert": {
+      "title": "خطأ",
+      "retry": "أعد المحاولة",
+      "loadFailed": "غير قادر على تحميل المفضلة. يرجى المحاولة مرة أخرى.",
+      "removeFailed": "غير قادر على إزالة المفضلة. يرجى المحاولة مرة أخرى."
+    },
+    "card": {
+      "video": "فيديو",
+      "model": "نموذج"
+    },
+    "button": {
+      "favorite": "مفضل",
+      "favorited": "المفضلة"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "مرحبًا بك في ReelMind",
+      "subtitle": "سجّل الدخول أو أنشئ حساب المبدع الخاص بك",
+      "continueWithGoogle": "المتابعة باستخدام Google",
+      "orContinueWithEmail": "أو المتابعة باستخدام البريد الإلكتروني",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "عنوان البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "••••••••",
+      "show": "إظهار",
+      "hide": "إخفاء",
+      "inviteCodeLabelOptional": "رمز الدعوة (اختياري)",
+      "inviteCodePlaceholder": "أدخل الرمز",
+      "invitedBy": "بدعوة من <name>{value}</name>",
+      "continue": "متابعة",
+      "signIn": "تسجيل الدخول",
+      "createAccount": "إنشاء حساب",
+      "switchToSignIn": "لديك حساب بالفعل؟ سجّل الدخول",
+      "switchToSignUp": "ليس لديك حساب؟ أنشئ حسابًا",
+      "pageSubtitleCreate": "أنشئ حسابك",
+      "pageSubtitleSignIn": "سجّل الدخول إلى حسابك",
+      "termsLine": "بالمتابعة، فإنك توافق على <terms>الشروط</terms> و<privacy>سياسة الخصوصية</privacy>"
+    },
+    "verifyEmail": {
+      "title": "تحقق من بريدك الإلكتروني",
+      "sentLinkTo": "لقد أرسلنا رابط التحقق إلى",
+      "checkInbox": "يرجى التحقق من صندوق الوارد والنقر على الرابط للمتابعة.",
+      "understand": "حسنًا",
+      "useDifferentEmail": "استخدم بريدًا إلكترونيًا آخر"
+    },
+    "errors": {
+      "invalidEmail": "عنوان بريد إلكتروني غير صالح",
+      "suspiciousEmail": "يبدو أن هذا البريد الإلكتروني مشبوه",
+      "verifyBeforeLogin": "يرجى التحقق من بريدك الإلكتروني قبل تسجيل الدخول",
+      "operationFailed": "فشلت العملية، يرجى المحاولة مرة أخرى",
+      "googleFailed": "فشل تسجيل الدخول باستخدام Google، يرجى المحاولة مرة أخرى",
+      "checkEmailConfirmation": "تحقق من بريدك الإلكتروني للحصول على رابط التأكيد!"
+    },
+    "brand": {
+      "headlineLine1": "صناع بكرة",
+      "headlineLine2": "مرحبًا بك",
+      "taglineLine1": "أطلق خيالك.",
+      "taglineLine2": "دع الذكاء الاصطناعي يحوّلها إلى فيلم.",
+      "cta": "انضم إلى مجتمع المبدعين وابدأ الإبداع."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "أضف صورة",
+      "addMoreReferences": "إضافة المزيد من المراجع",
+      "auto": "تلقائي",
+      "back": "العودة",
+      "character": "الشخصية",
+      "clear": "واضح",
+      "clearAll": "مسح الكل",
+      "close": "إغلاق",
+      "createPack": "إنشاء حزمة",
+      "downloadCount": "تنزيل {current}/{total}",
+      "dropOrUploadPhoto": "قم بإسقاط أو تحميل صورة",
+      "goToLibrary": "اذهب إلى المكتبة",
+      "high": "عالية",
+      "history": "التاريخ",
+      "inQueue": "في قائمة الانتظار",
+      "info": "معلومات",
+      "instadump": "إنستادومب",
+      "manual": "دليل",
+      "new": "جديد",
+      "next": "التالي",
+      "open": "مفتوح",
+      "previous": "السابق",
+      "ready": "جاهز",
+      "recent": "الأخيرة",
+      "remove": "إزالة",
+      "replace": "استبدال",
+      "reset": "إعادة تعيين",
+      "restart": "إعادة التشغيل",
+      "selectPack": "اختر الحزمة",
+      "storyboard": "القصة المصورة",
+      "upload": "تحميل",
+      "uploading": "جارٍ التحميل..."
+    },
+    "prompts": {
+      "defaultImage": "صورة سينمائية عالية التفاصيل مع إضاءة طبيعية",
+      "relightDefault": "أعد إضاءة الموضوع باستخدام إضاءة الاستوديو الناعمة",
+      "faceSwapDefault": "قم بتبديل الوجه مع الحفاظ على المشهد سليمًا",
+      "characterSwapDefault": "قم بتبديل الشخصية مع الحفاظ على الأسلوب",
+      "drawToEditDefault": "قم بتحسين الرسم إلى صورة نظيفة ومفصلة"
+    },
+    "swap": {
+      "sourceTitle": "المصدر",
+      "targetTitle": "الهدف",
+      "faceSourceDescription": "مصدر الصورة للوجه",
+      "faceTargetDescription": "الصورة المستهدفة للاستبدال",
+      "characterSourceDescription": "الصورة المصدر للشخصية",
+      "characterTargetDescription": "الصورة المستهدفة للاستبدال"
+    },
+    "inpaint": {
+      "sourceAlt": "صورة المصدر",
+      "paintHint": "قم برسم المنطقة التي تريد تحريرها",
+      "maskUploading": "تحميل القناع",
+      "maskReady": "القناع جاهز",
+      "maskPaint": "قناع الطلاء",
+      "paint": "الطلاء",
+      "erase": "محو"
+    },
+    "relight": {
+      "title": "ريلايت",
+      "quickSelect": "اختيار سريع",
+      "directions": {
+        "top": "أعلى",
+        "front": "الجبهة",
+        "right": "صحيح",
+        "left": "اليسار",
+        "back": "العودة",
+        "bottom": "أسفل"
+      },
+      "brightness": "السطوع",
+      "color": "اللون"
+    },
+    "upscale": {
+      "title": "الراقي"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "رسم على الفيديو",
+      "drawToVideo": "ارسم على الفيديو",
+      "drawToEdit": "ارسم للتحرير",
+      "pen": "قلم",
+      "eraser": "ممحاة",
+      "color": "اللون",
+      "size": "الحجم",
+      "undo": "تراجع",
+      "redo": "إعادة",
+      "clear": "واضح",
+      "generateVideo": "توليد الفيديو",
+      "uploadTitle": "تحميل الوسائط",
+      "uploadDescription": "أضف صورة لتوجيه الرسم"
+    },
+    "soulId": {
+      "heroTitle": "شخصية معرف الروح",
+      "heroDescription": "قم ببناء شخصية متسقة من صورك.",
+      "createButton": "إنشاء شخصية",
+      "photoCount": "{count} الصور",
+      "characterLabel": "الحرف {index}",
+      "emptyGallery": "لا توجد شخصيات حتى الآن.",
+      "dialogTitle": "إنشاء معرف الروح",
+      "dialogSubtitle": "قم بتحميل الصور لبناء شخصيتك.",
+      "addPhotosTitle": "إضافة الصور",
+      "addPhotosDescription": "قم بتحميل 6-12 صورة واضحة.",
+      "tip": "نصيحة: استخدم زوايا وتعبيرات متنوعة."
+    },
+    "storyboard": {
+      "relightScene": "مشهد إعادة الإضاءة",
+      "headline": "مصنع الأزياء",
+      "headlineAccent": "توليد الجمالية الخاصة بك",
+      "description": "القصة المصورة، تحرير، إنشاء.",
+      "resultsLabel": "{count} النتائج",
+      "uploadHint": "تحميل الصور المرجعية لتوجيه المشهد",
+      "referenceImagesTitle": "الصور المرجعية",
+      "referenceImagesDescription": "أضف ما يصل إلى 4 صور لتتناسب مع النمط"
+    },
+    "instadump": {
+      "sidebarTitle": "استوديو إنستادومب",
+      "stepChoosePack": "اختر حزمة",
+      "stepAddPhoto": "أضف صورة",
+      "stepGetInstadump": "احصل على إنستادومب",
+      "headerTitle": "إنستادومب",
+      "headerDescription": "تحويل صورة شخصية إلى مكتبة محتوى كاملة.",
+      "addPhotoTitle": "أضف صورتك",
+      "addPhotoDescription": "قم بتحميل صورة شخصية واضحة للبدء.",
+      "getInstadumpTitle": "احصل على Instadump الخاص بك",
+      "newPhotosReady": "صور جديدة جاهزة",
+      "tryFree": "جرب مجانًا",
+      "premiumTitle": "قسط",
+      "premiumBulletOne": "المزيد من الأنماط في كل عبوة",
+      "premiumBulletTwo": "معالجة الأولوية",
+      "premiumBulletThree": "التنزيلات كاملة الدقة",
+      "upgradeNow": "قم بالترقية الآن"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "يحرر",
+      "subtitle": "الوصول إلى ميزات التحرير والنماذج",
+      "back": "العودة إلى التحرير",
+      "workspace": {
+        "title": "مساحة العمل",
+        "status": "العنصر النائب للواجهة الأمامية",
+        "uploadTitle": "تحميل الوسائط",
+        "uploadDescription": "أسقط أو انقر لتحميل صورة/مقطع فيديو للبدء"
+      },
+      "settings": {
+        "title": "إعدادات",
+        "modelTitle": "نموذج",
+        "modelDescription": "اختر نموذجًا (الواجهة الخلفية ستتوفر قريبًا)",
+        "promptTitle": "اِسْتَدْعَى",
+        "promptDescription": "قم بوصف ما تريد (الواجهة الخلفية ستتوفر قريبًا)",
+        "generate": "يولد"
+      },
+      "model": {
+        "title": "تفاصيل النموذج",
+        "descriptionTitle": "وصف",
+        "descriptionBody": "هذا عنصر نائب. سيتم ملء التفاصيل بمجرد توصيل الواجهة الخلفية."
+      }
+    },
+    "menu": {
+      "title": "يحرر",
+      "sections": {
+        "features": "سمات",
+        "models": "نماذج"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "تحرير الفيديو",
+        "description": "تحرير الفيديو المتقدم"
+      },
+      "inpaint": {
+        "title": "إنباينت",
+        "description": "حدد منطقة، ووصف التغيير"
+      },
+      "relight": {
+        "title": "ريلايت",
+        "description": "ضبط موضع الإضاءة واللون والسطوع"
+      },
+      "aiStylist": {
+        "title": "مصمم الذكاء الاصطناعي",
+        "description": "ابحث عن مظهرك المثالي"
+      },
+      "upscale": {
+        "title": "الراقي",
+        "description": "تعزيز القرار والجودة"
+      },
+      "skinEnhancer": {
+        "title": "محسن الجلد",
+        "description": "ملمس بشرة طبيعي وواقعي"
+      },
+      "angles": {
+        "title": "الزوايا",
+        "description": "توليد من زوايا مختلفة"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "أقصى قدر من التفاصيل والدقة"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "تعديلات سريعة وخفيفة الوزن"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "التكامل السلس للمنتج"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "جهاز ترقية عالي الدقة"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "السيطرة على الحركة مع مراجع الفيديو"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "تحرير الفيديو المتقدم"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "الخطة الرئيسية",
+      "completed": "اكتمل {completed}/{total}",
+      "steps": {
+        "script": "تصميم النص والستوري بورد",
+        "world": "تصميم أصول العالم",
+        "video": "توليد الفيديو",
+        "worldVideo": "أصول العالم وتوليد الفيديو",
+        "audio": "تصميم الصوت والأداء",
+        "final": "التجميع النهائي"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "اولین کارگردان عامل هوش مصنوعی جهان: Nolan",
+  "subtitle": "برنامه دسترسی زودهنگام",
+  "description": "اولین کارگردان عامل هوش مصنوعی جهان: Nolan",
+  "tabs": {
+    "myCanvases": "بوم‌های من",
+    "community": "جامعه"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan در حال آماده‌سازی بوم شماست…",
+    "communitySessions": "در حال بارگذاری نشست‌های جامعه..."
+  },
+  "community": {
+    "loadFailed": "بارگذاری نشست‌های جامعه ناموفق بود",
+    "canvasNotAvailable": "بوم برای این نشست در دسترس نیست",
+    "likeFailed": "به‌روزرسانی پسندیدن ناموفق بود"
+  },
+  "allProjects": "همه پروژه‌ها",
+  "noCanvases": "هنوز استوری‌بوردی وجود ندارد",
+  "newCanvas": "صحنه بدون عنوان"
+}

@@ -1,0 +1,166 @@
+{
+  "title": "Storyboard",
+  "rename": "Rinomina storyboard",
+  "delete": "Elimina storyboard",
+  "share": "Condividi storyboard",
+  "export": "Esporta storyboard",
+  "exportImages": "Esporta fotogrammi",
+  "import": "Importa storyboard",
+  "untitled": "Scena senza titolo",
+  "back": "Torna alla scrivania del regista",
+  "saveSnapshot": "Salva istantanea della scena",
+  "loadSnapshot": "Carica istantanea della scena",
+  "saved": "Scena salvata ✅",
+  "messages": {
+    "canvasRenamed": "Storyboard rinominato con successo",
+    "canvasDeleted": "Storyboard eliminato con successo",
+    "canvasExported": "Storyboard esportato con successo",
+    "canvasImported": "Storyboard importato con successo",
+    "failedToRename": "Impossibile rinominare lo storyboard",
+    "failedToDelete": "Impossibile eliminare lo storyboard",
+    "failedToCreateFile": "Impossibile creare il file della scena",
+    "noImagesSelected": "Nessun fotogramma selezionato",
+    "exportingImages": "Esportazione fotogrammi...",
+    "failedToExportImages": "Impossibile esportare i fotogrammi"
+  },
+  "deleteDialog": {
+    "title": "Elimina storyboard",
+    "description": "Sei sicuro di voler eliminare questo storyboard? Questa scena andrà persa per sempre.",
+    "cancel": "Annulla",
+    "delete": "Elimina"
+  },
+  "tool": {
+    "hand": "Panoramica camera",
+    "selection": "Seleziona scena",
+    "rectangle": "Riquadro fotogramma",
+    "ellipse": "Riflettore",
+    "text": "Cartello titolo",
+    "image": "Risorsa visiva",
+    "shape": "Forma oggetto",
+    "freedraw": "Disegno libero",
+    "arrow": "Freccia d'azione",
+    "line": "Linea di movimento",
+    "zoomFit": "Inquadra tutto"
+  },
+  "popbar": {
+    "addToChat": "Parla con Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Preparazione canvas…",
+    "loadingSharedCanvas": "Caricamento canvas condiviso…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Titolo scena",
+    "published": "Pubblicato",
+    "checking": "Verifica...",
+    "publish": "Pubblica",
+    "copied": "Copiato!",
+    "share": "Condividi",
+    "sharedCanvas": "Canvas condiviso",
+    "shareCopiedToast": "Link di condivisione copiato negli appunti!",
+    "shareCopyFailedToast": "Impossibile copiare il link di condivisione"
+  },
+  "preview": {
+    "mute": "Muto",
+    "unmute": "Audio attivo",
+    "volume": "Volume: {{percent}}%",
+    "export": "Esporta",
+    "exporting": "Esportazione...",
+    "exportVideo": "Esporta video",
+    "playing": "Riproduzione",
+    "placeholder": {
+      "title": "Finestra anteprima",
+      "hint": "Aggiungi risorse alla timeline per vedere l'anteprima"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Tracce",
+    "trackLabels": {
+      "script": "Script",
+      "keyframe": "Fotogramma chiave",
+      "video": "Video",
+      "audio": "Audio",
+      "world": "Mondo"
+    },
+    "indexedTitles": {
+      "script": "Script {{index}}",
+      "keyframe": "Fotogramma chiave {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "Mondo {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Zoom indietro",
+      "zoomIn": "Zoom avanti",
+      "rearrangeAllLanes": "Riordina tutte le corsie (Snap magnetico — 0 gap)",
+      "play": "Play",
+      "pause": "Pausa"
+    },
+    "actions": {
+      "clickToDrop": "Clicca per rilasciare",
+      "clickToSelect": "Clicca per selezionare"
+    },
+    "assetTypes": {
+      "script": "Script",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Risorsa",
+      "world": "Mondo"
+    },
+    "fallbackTitles": {
+      "script": "Script",
+      "keyframe": "Fotogramma chiave",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Risorsa",
+      "untitled": "Senza titolo",
+      "world": "Mondo"
+    },
+    "alts": {
+      "keyframe": "Fotogramma chiave",
+      "videoThumbnail": "Miniatura video"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Salvataggio non riuscito",
+      "saving": "Salvataggio...",
+      "savedAt": "Salvato {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Pubblica nella community",
+    "enterTitleError": "Inserisci un titolo",
+    "success": "Canvas pubblicato nella community con successo!",
+    "failed": "Impossibile pubblicare il canvas",
+    "warning": "Questo pubblicherà tutte le conversazioni e i risultati creativi di questo canvas nella community.",
+    "oncePublished": "Una volta pubblicato, chiunque potrà visualizzare e scoprire il tuo lavoro.",
+    "canvasTitleLabel": "TITOLO CANVAS",
+    "canvasTitlePlaceholder": "Inserisci il titolo del canvas",
+    "cancel": "Annulla",
+    "publish": "Pubblica",
+    "publishing": "Pubblicazione..."
+  }
+}

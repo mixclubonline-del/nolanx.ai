@@ -1,0 +1,98 @@
+{
+  "title": "การตั้งค่า",
+  "messages": {
+    "settingsSaved": "บันทึกการตั้งค่าสำเร็จ",
+    "settingsReset": "รีเซ็ตการตั้งค่าเป็นค่าเริ่มต้นแล้ว",
+    "failedToSave": "บันทึกการตั้งค่าไม่สำเร็จ",
+    "failedToLoad": "โหลดการกำหนดค่าไม่สำเร็จ",
+    "restartRequired": "โปรดรีสตาร์ตแอปเพื่อให้การตั้งค่าพร็อกซีมีผล"
+  },
+  "models": {
+    "title": "โมเดล",
+    "placeholder": "ใส่ชื่อโมเดล",
+    "addModel": "เพิ่มโมเดล",
+    "types": {
+      "text": "ข้อความ",
+      "image": "ภาพ",
+      "video": "วิดีโอ"
+    }
+  },
+  "provider": {
+    "title": "ผู้ให้บริการ",
+    "addProvider": "เพิ่มผู้ให้บริการ",
+    "providerName": "ชื่อผู้ให้บริการ",
+    "providerNamePlaceholder": "ใส่ชื่อผู้ให้บริการ",
+    "apiUrl": "URL ของ API",
+    "apiUrlPlaceholder": "ใส่ URL ของ API",
+    "apiKey": "คีย์ API",
+    "apiKeyPlaceholder": "ใส่คีย์ API",
+    "apiKeyDescription": "คีย์ API ของคุณจะถูกเก็บอย่างปลอดภัย",
+    "maxTokens": "โทเค็นสูงสุด",
+    "maxTokensPlaceholder": "ใส่โทเค็นสูงสุด",
+    "maxTokensDescription": "จำนวนโทเค็นสูงสุดในคำตอบ",
+    "customProvider": "✨ ผู้ให้บริการแบบกำหนดเอง",
+    "imageGeneration": "🎨 สร้างภาพ",
+    "delete": "ลบ",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "noModelsSelected": "โปรดเพิ่มอย่างน้อยหนึ่งโมเดล"
+  },
+  "proxy": {
+    "title": "การตั้งค่าพร็อกซี",
+    "mode": "โหมดพร็อกซี",
+    "selectMode": "เลือกโหมดพร็อกซี",
+    "modes": {
+      "none": "ไม่ใช้พร็อกซี",
+      "system": "พร็อกซีระบบ",
+      "custom": "พร็อกซีแบบกำหนดเอง"
+    },
+    "enable": "เปิดใช้พร็อกซี",
+    "url": "URL พร็อกซี",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "ทดสอบการเชื่อมต่อ",
+    "testing": "กำลังทดสอบ...",
+    "testSuccess": "ทดสอบการเชื่อมต่อพร็อกซีสำเร็จ",
+    "testFailed": "ทดสอบการเชื่อมต่อพร็อกซีไม่สำเร็จ: {{message}}",
+    "testError": "เกิดข้อผิดพลาดในการทดสอบการเชื่อมต่อพร็อกซี",
+    "status": {
+      "enabled": "เปิดใช้งาน",
+      "disabled": "ปิดใช้งาน",
+      "misconfigured": "กำหนดค่าไม่ถูกต้อง"
+    }
+  },
+  "comfyui.workflows": "เวิร์กโฟลว์",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 สร้างภาพแบบโลคอล",
+    "enable": "เปิดใช้",
+    "debugStatus": "🔍 สถานะดีบัก",
+    "status": {
+      "disabled": "ปิดใช้งาน",
+      "running": "กำลังทำงาน",
+      "installed": "ติดตั้งแล้ว (ไม่ทำงาน)",
+      "notInstalled": "ยังไม่ได้ติดตั้ง",
+      "notRunning": "ไม่ทำงาน",
+      "checking": "กำลังตรวจสอบ..."
+    },
+    "urlDescription": "URL ของบริการ ComfyUI หากติดตั้งแล้วให้ใส่ที่อยู่",
+    "invalidUrl": "โปรดใส่ URL ที่ถูกต้อง (เช่น http://127.0.0.1:8188)",
+    "notInstalledTitle": "ยังไม่ได้ติดตั้ง ComfyUI",
+    "notInstalledDescription": "ติดตั้ง ComfyUI เพื่อเปิดใช้งานการสร้างภาพแบบโลคอลด้วยโมเดล Flux",
+    "installButton": "ติดตั้ง ComfyUI",
+    "startButton": "เริ่ม ComfyUI",
+    "uninstallButton": "ถอนการติดตั้ง ComfyUI",
+    "confirmUninstall": "คุณแน่ใจหรือไม่ว่าต้องการถอนการติดตั้ง ComfyUI? การทำรายการนี้จะลบ ComfyUI ออกจากระบบของคุณทั้งหมด รวมถึงโมเดลที่ดาวน์โหลดและการกำหนดค่า",
+    "confirmUninstallButton": "ยืนยันการถอนการติดตั้ง",
+    "uninstallProgress": {
+      "title": "กำลังถอนการติดตั้ง ComfyUI",
+      "preparing": "กำลังเตรียมการถอนการติดตั้ง...",
+      "inProgress": "กำลังถอนการติดตั้ง... โปรดรอ",
+      "logTitle": "บันทึกการถอนการติดตั้ง:",
+      "completed": "ถอนการติดตั้งเสร็จสิ้น"
+    },
+    "notInstalled": "ComfyUI ยังไม่ได้ติดตั้ง"
+  },
+  "saveSettings": "บันทึกการตั้งค่า",
+  "close": "ปิด",
+  "cancel": "ยกเลิก"
+}

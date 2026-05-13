@@ -1,0 +1,21 @@
+{
+  "title": "Il primo regista agente AI al mondo: Nolan",
+  "subtitle": "Programma Early Access",
+  "description": "Il primo regista agente AI al mondo: Nolan",
+  "tabs": {
+    "myCanvases": "I miei canvas",
+    "community": "Community"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan sta preparando il tuo canvas…",
+    "communitySessions": "Caricamento delle sessioni community..."
+  },
+  "community": {
+    "loadFailed": "Impossibile caricare le sessioni della community",
+    "canvasNotAvailable": "Il canvas non è disponibile per questa sessione",
+    "likeFailed": "Impossibile aggiornare il like"
+  },
+  "allProjects": "Tutti i progetti",
+  "noCanvases": "Nessuno storyboard per ora",
+  "newCanvas": "Scena senza titolo"
+}

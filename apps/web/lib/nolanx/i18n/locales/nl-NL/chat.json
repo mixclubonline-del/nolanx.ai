@@ -1,0 +1,113 @@
+{
+  "newChat": "Nieuwe chat",
+  "placeholder": "Typ hier je bericht...",
+  "textarea": {
+    "placeholder": "Welke story wil je samen met Nolan maken?",
+    "selectModel": "Selecteer een tekstmodel! Ga naar Instellingen om je API‑sleutels in te stellen als je dat nog niet hebt gedaan.",
+    "enterPrompt": "Voer een prompt in",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Ga naar afbeelding",
+    "audioPositioning": "Ga naar audio",
+    "videoPositioning": "Ga naar video",
+    "showMore": "Meer tonen",
+    "showLess": "Minder tonen"
+  },
+  "jsonCard": {
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd",
+    "showCode": "Code tonen",
+    "hideCode": "Code verbergen"
+  },
+  "welcome": {
+    "greeting": "Hé, ReelMaker!",
+    "help": "Waarmee kan ik je vandaag helpen?"
+  },
+  "replay": {
+    "replaying": "Gesprek wordt opnieuw afgespeeld... ({{current}}/{{total}})",
+    "completed": "Herhaling van het gesprek voltooid",
+    "ready": "Klaar om het gesprek opnieuw af te spelen",
+    "skipToEnd": "Naar het einde",
+    "replayAgain": "Opnieuw afspelen",
+    "startReplay": "Herhaling starten",
+    "continueConversation": "Gesprek voortzetten",
+    "forking": "Fork maken...",
+    "forkingToast": "Canvas forken...",
+    "forkSuccessToast": "Canvas geforkt! Doorsturen...",
+    "forkFailedToast": "Canvas forken mislukt"
+  },
+  "errors": {
+    "createSessionError": "Chat-sessie maken mislukt"
+  },
+  "toolCallNames": {
+    "generate_image": "Afbeeldingsgenerator",
+    "edit_image": "Afbeeldingseditor",
+    "generate_audio": "Audio genereren",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "FLF-video",
+    "generate_tts_audio": "TTS-audio genereren",
+    "generate_music": "Muziek genereren",
+    "generate_structured_output": "Gestructureerde output genereren",
+    "execute_storyboard": "Storyboard uitvoeren",
+    "analyze_timeline_state": "Tijdlijn analyseren",
+    "recommend_generation_strategy": "Strategie aanbevelen",
+    "execute_code": "Code uitvoeren",
+    "analyze_documents": "Documenten analyseren",
+    "analyze_media": "Media analyseren",
+    "execute_function_call": "Functieaanroep uitvoeren",
+    "analyze_web_context": "Webcontext analyseren",
+    "search_and_generate": "Zoeken & genereren",
+    "prompt_user_multi_choice": "Meerkeuzevraag",
+    "prompt_user_single_choice": "Enkelkeuzevraag",
+    "write_plan": "Plan schrijven",
+    "finish": "Afronden"
+  },
+  "publish": {
+    "title": "Publiceren naar de community",
+    "titleLabel": "Titel *",
+    "titlePlaceholder": "Voer een pakkende titel in voor je gesprek",
+    "descriptionLabel": "Beschrijving",
+    "descriptionPlaceholder": "Beschrijf wat dit gesprek interessant maakt...",
+    "tagsLabel": "Tags (max 5)",
+    "tagPlaceholder": "Tag toevoegen...",
+    "visibilityLabel": "Zichtbaarheid",
+    "visibilityPublic": "Openbaar",
+    "visibilityUnlisted": "Niet vermeld",
+    "visibilityPublicHint": "Iedereen kan dit gesprek ontdekken en bekijken",
+    "visibilityUnlistedHint": "Alleen mensen met de link kunnen dit gesprek bekijken",
+    "cancel": "Annuleren",
+    "publish": "Publiceren",
+    "publishing": "Publiceren...",
+    "enterTitleError": "Voer een titel in",
+    "success": "Sessie succesvol gepubliceerd!",
+    "failed": "Sessie publiceren mislukt",
+    "publishButton": "Publiceren"
+  },
+  "sessionSelector": {
+    "placeholder": "Thema"
+  },
+  "thinking": {
+    "title": "Denken"
+  },
+  "plan": {
+    "title": "Plan",
+    "steps": {
+      "singular": "stap",
+      "plural": "stappen"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "newChat": "Chat baru",
+  "placeholder": "Ketik pesan Anda di sini...",
+  "textarea": {
+    "placeholder": "Ada cerita yang ingin Anda buat bersama Nolan?",
+    "selectModel": "Silakan pilih model teks! Buka Pengaturan untuk mengatur kunci API Anda jika belum.",
+    "enterPrompt": "Silakan masukkan prompt",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Ke gambar",
+    "audioPositioning": "Ke audio",
+    "videoPositioning": "Ke video",
+    "showMore": "Tampilkan lebih banyak",
+    "showLess": "Tampilkan lebih sedikit"
+  },
+  "jsonCard": {
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "showCode": "Tampilkan kode",
+    "hideCode": "Sembunyikan kode"
+  },
+  "welcome": {
+    "greeting": "Hai, ReelMaker!",
+    "help": "Apa yang bisa saya bantu hari ini?"
+  },
+  "replay": {
+    "replaying": "Memutar ulang percakapan... ({{current}}/{{total}})",
+    "completed": "Pemutaran ulang percakapan selesai",
+    "ready": "Siap memutar ulang percakapan",
+    "skipToEnd": "Lewati ke akhir",
+    "replayAgain": "Putar ulang lagi",
+    "startReplay": "Mulai putar ulang",
+    "continueConversation": "Lanjutkan percakapan",
+    "forking": "Membuat fork...",
+    "forkingToast": "Membuat fork kanvas...",
+    "forkSuccessToast": "Kanvas berhasil di-fork! Mengalihkan...",
+    "forkFailedToast": "Gagal membuat fork kanvas"
+  },
+  "errors": {
+    "createSessionError": "Gagal membuat sesi chat"
+  },
+  "toolCallNames": {
+    "generate_image": "Generator gambar",
+    "edit_image": "Editor gambar",
+    "generate_audio": "Buat audio",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "Video FLF",
+    "generate_tts_audio": "Buat audio TTS",
+    "generate_music": "Buat musik",
+    "generate_structured_output": "Buat output terstruktur",
+    "execute_storyboard": "Jalankan storyboard",
+    "analyze_timeline_state": "Analisis timeline",
+    "recommend_generation_strategy": "Rekomendasikan strategi",
+    "execute_code": "Jalankan kode",
+    "analyze_documents": "Analisis dokumen",
+    "analyze_media": "Analisis media",
+    "execute_function_call": "Jalankan pemanggilan fungsi",
+    "analyze_web_context": "Analisis konteks web",
+    "search_and_generate": "Cari & buat",
+    "prompt_user_multi_choice": "Tanya pilihan ganda",
+    "prompt_user_single_choice": "Tanya pilihan tunggal",
+    "write_plan": "Tulis rencana",
+    "finish": "Selesai"
+  },
+  "publish": {
+    "title": "Publikasikan ke Komunitas",
+    "titleLabel": "Judul *",
+    "titlePlaceholder": "Masukkan judul menarik untuk percakapan Anda",
+    "descriptionLabel": "Deskripsi",
+    "descriptionPlaceholder": "Jelaskan apa yang membuat percakapan ini menarik...",
+    "tagsLabel": "Tag (maks 5)",
+    "tagPlaceholder": "Tambahkan tag...",
+    "visibilityLabel": "Visibilitas",
+    "visibilityPublic": "Publik",
+    "visibilityUnlisted": "Tidak terdaftar",
+    "visibilityPublicHint": "Siapa pun dapat menemukan dan melihat percakapan ini",
+    "visibilityUnlistedHint": "Hanya orang dengan tautan yang dapat melihat percakapan ini",
+    "cancel": "Batal",
+    "publish": "Publikasikan",
+    "publishing": "Memublikasikan...",
+    "enterTitleError": "Silakan masukkan judul",
+    "success": "Sesi berhasil dipublikasikan!",
+    "failed": "Gagal memublikasikan sesi",
+    "publishButton": "Publikasikan"
+  },
+  "sessionSelector": {
+    "placeholder": "Tema"
+  },
+  "thinking": {
+    "title": "Berpikir"
+  },
+  "plan": {
+    "title": "Rencana",
+    "steps": {
+      "singular": "langkah",
+      "plural": "langkah"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

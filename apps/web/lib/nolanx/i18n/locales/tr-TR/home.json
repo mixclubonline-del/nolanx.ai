@@ -1,0 +1,21 @@
+{
+  "title": "Dünyanın İlk AI Ajan Yönetmeni: Nolan",
+  "subtitle": "Erken Erişim Programı",
+  "description": "Dünyanın İlk AI Ajan Yönetmeni: Nolan",
+  "tabs": {
+    "myCanvases": "Kanvaslarım",
+    "community": "Topluluk"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan kanvasınızı hazırlıyor…",
+    "communitySessions": "Topluluk oturumları yükleniyor..."
+  },
+  "community": {
+    "loadFailed": "Topluluk oturumları yüklenemedi",
+    "canvasNotAvailable": "Bu oturum için kanvas mevcut değil",
+    "likeFailed": "Beğeni güncellenemedi"
+  },
+  "allProjects": "Tüm projeler",
+  "noCanvases": "Henüz hikâye panosu yok",
+  "newCanvas": "Adsız Sahne"
+}

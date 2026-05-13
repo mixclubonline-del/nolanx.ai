@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Englisch",
+    "zh-CN": "Chinesisch (vereinfacht)"
+  },
+  "buttons": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "submit": "Senden",
+    "loading": "Wird geladen...",
+    "retry": "Erneut versuchen"
+  },
+  "common": {
+    "yes": "Ja",
+    "no": "Nein",
+    "ok": "OK",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "warning": "Warnung",
+    "info": "Information"
+  },
+  "messages": {
+    "success": "Vorgang erfolgreich abgeschlossen",
+    "error": "Ein Fehler ist aufgetreten",
+    "loading": "Wird geladen, bitte warten...",
+    "noData": "Keine Daten verfügbar",
+    "confirmDelete": "Möchtest du dieses Element wirklich löschen?",
+    "saved": "Erfolgreich gespeichert",
+    "deleted": "Erfolgreich gelöscht"
+  },
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "clear": "Leeren",
+    "markAllAsRead": "Alle als gelesen markieren",
+    "allRead": "Alles gelesen",
+    "newImageGenerated": "Neues Bild generiert"
+  },
+  "navigation": {
+    "home": "Start",
+    "canvas": "Storyboard",
+    "settings": "Einstellungen",
+    "back": "Zurück"
+  },
+  "dialog": {
+    "confirmTitle": "Aktion bestätigen",
+    "confirmDescription": "Diese Aktion kann nicht rückgängig gemacht werden",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen"
+  },
+  "update": {
+    "title": "🎉 Neue Version verfügbar",
+    "description": "Eine neue Version v{{version}} ist verfügbar. Jetzt installieren?",
+    "installNote": "Klicke auf „Update installieren“, um die App neu zu starten und das Update zu installieren.",
+    "laterButton": "Später erinnern",
+    "installButton": "Update installieren",
+    "installing": "Installation..."
+  },
+  "auth": {
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "loginToJaaz": "Bei Jaaz anmelden",
+    "myAccount": "Mein Konto",
+    "loginDescription": "Melde dich an, um Cloud‑KI‑Modelle zu nutzen",
+    "startLogin": "Anmeldung starten",
+    "preparingLogin": "Anmeldung wird vorbereitet...",
+    "cancel": "Abbrechen",
+    "loginSuccessMessage": "Anmeldung erfolgreich!",
+    "authExpiredMessage": "Autorisierung abgelaufen, bitte erneut anmelden",
+    "authErrorMessage": "Beim Prüfen des Autorisierungsstatus ist ein Fehler aufgetreten",
+    "waitingForBrowser": "Warte auf Abschluss der Anmeldung im Browser...",
+    "pollErrorMessage": "Anmeldestatus konnte nicht geprüft werden, bitte erneut versuchen",
+    "preparingLoginMessage": "Anmeldung wird vorbereitet...",
+    "browserLoginMessage": "Bitte schließe die Anmeldung im Browser ab",
+    "loginRequestFailed": "Anmeldeanfrage fehlgeschlagen, bitte erneut versuchen",
+    "logoutSuccessMessage": "Erfolgreich abgemeldet",
+    "notLoggedIn": "Nicht angemeldet",
+    "balance": "Guthaben",
+    "recharge": "Aufladen"
+  },
+  "socket": {
+    "connectionError": "Verbindungsfehler ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Verbindung fehlgeschlagen, bitte Seite aktualisieren"
+  }
+}

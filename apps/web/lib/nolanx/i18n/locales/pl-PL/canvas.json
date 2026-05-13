@@ -1,0 +1,166 @@
+{
+  "title": "Storyboard",
+  "rename": "Zmień nazwę storyboardu",
+  "delete": "Usuń storyboard",
+  "share": "Udostępnij storyboard",
+  "export": "Eksportuj storyboard",
+  "exportImages": "Eksportuj klatki",
+  "import": "Importuj storyboard",
+  "untitled": "Scena bez tytułu",
+  "back": "Wróć do biurka reżysera",
+  "saveSnapshot": "Zapisz zrzut sceny",
+  "loadSnapshot": "Wczytaj zrzut sceny",
+  "saved": "Scena zapisana ✅",
+  "messages": {
+    "canvasRenamed": "Zmieniono nazwę storyboardu",
+    "canvasDeleted": "Usunięto storyboard",
+    "canvasExported": "Wyeksportowano storyboard",
+    "canvasImported": "Zaimportowano storyboard",
+    "failedToRename": "Nie udało się zmienić nazwy storyboardu",
+    "failedToDelete": "Nie udało się usunąć storyboardu",
+    "failedToCreateFile": "Nie udało się utworzyć pliku sceny",
+    "noImagesSelected": "Nie wybrano klatek",
+    "exportingImages": "Eksportowanie klatek...",
+    "failedToExportImages": "Nie udało się wyeksportować klatek"
+  },
+  "deleteDialog": {
+    "title": "Usuń storyboard",
+    "description": "Czy na pewno chcesz usunąć ten storyboard? Ta scena zostanie utracona na zawsze.",
+    "cancel": "Anuluj",
+    "delete": "Usuń"
+  },
+  "tool": {
+    "hand": "Przesuwanie kamery",
+    "selection": "Wybór sceny",
+    "rectangle": "Ramka klatki",
+    "ellipse": "Reflektor",
+    "text": "Karta tytułowa",
+    "image": "Zasób wizualny",
+    "shape": "Kształt rekwizytu",
+    "freedraw": "Rysunek odręczny",
+    "arrow": "Strzałka akcji",
+    "line": "Linia ruchu",
+    "zoomFit": "Dopasuj wszystko"
+  },
+  "popbar": {
+    "addToChat": "Omów z Nolanem"
+  },
+  "loading": {
+    "preparingCanvas": "Przygotowywanie płótna…",
+    "loadingSharedCanvas": "Ładowanie udostępnionego płótna…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Tytuł sceny",
+    "published": "Opublikowano",
+    "checking": "Sprawdzanie...",
+    "publish": "Opublikuj",
+    "copied": "Skopiowano!",
+    "share": "Udostępnij",
+    "sharedCanvas": "Udostępnione płótno",
+    "shareCopiedToast": "Link udostępniania skopiowany do schowka!",
+    "shareCopyFailedToast": "Nie udało się skopiować linku udostępniania"
+  },
+  "preview": {
+    "mute": "Wycisz",
+    "unmute": "Włącz dźwięk",
+    "volume": "Głośność: {{percent}}%",
+    "export": "Eksportuj",
+    "exporting": "Eksportowanie...",
+    "exportVideo": "Eksportuj wideo",
+    "playing": "Odtwarzanie",
+    "placeholder": {
+      "title": "Okno podglądu",
+      "hint": "Dodaj zasoby do osi czasu, aby zobaczyć podgląd"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Ścieżki",
+    "trackLabels": {
+      "script": "Skrypt",
+      "keyframe": "Klatka kluczowa",
+      "video": "Wideo",
+      "audio": "Audio",
+      "world": "Świat"
+    },
+    "indexedTitles": {
+      "script": "Skrypt {{index}}",
+      "keyframe": "Klatka kluczowa {{index}}",
+      "video": "Wideo {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "Świat {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Pomniejsz",
+      "zoomIn": "Powiększ",
+      "rearrangeAllLanes": "Uporządkuj wszystkie ścieżki (magnetyczne przyciąganie — 0 przerw)",
+      "play": "Odtwórz",
+      "pause": "Pauza"
+    },
+    "actions": {
+      "clickToDrop": "Kliknij, aby upuścić",
+      "clickToSelect": "Kliknij, aby zaznaczyć"
+    },
+    "assetTypes": {
+      "script": "Skrypt",
+      "keyframe": "Keyframe",
+      "video": "Wideo",
+      "audio": "Audio",
+      "asset": "Zasób",
+      "world": "Świat"
+    },
+    "fallbackTitles": {
+      "script": "Skrypt",
+      "keyframe": "Klatka kluczowa",
+      "video": "Wideo",
+      "audio": "Audio",
+      "asset": "Zasób",
+      "untitled": "Bez tytułu",
+      "world": "Świat"
+    },
+    "alts": {
+      "keyframe": "Klatka kluczowa",
+      "videoThumbnail": "Miniatura wideo"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Zapis nieudany",
+      "saving": "Zapisywanie...",
+      "savedAt": "Zapisano {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Opublikuj w społeczności",
+    "enterTitleError": "Wprowadź tytuł",
+    "success": "Płótno zostało opublikowane w społeczności!",
+    "failed": "Nie udało się opublikować płótna",
+    "warning": "Spowoduje to opublikowanie wszystkich rozmów i wyników twórczych z tego płótna w społeczności.",
+    "oncePublished": "Po opublikowaniu każdy może zobaczyć i odkryć Twoją pracę.",
+    "canvasTitleLabel": "TYTUŁ PŁÓTNA",
+    "canvasTitlePlaceholder": "Wprowadź tytuł płótna",
+    "cancel": "Anuluj",
+    "publish": "Opublikuj",
+    "publishing": "Publikowanie..."
+  }
+}

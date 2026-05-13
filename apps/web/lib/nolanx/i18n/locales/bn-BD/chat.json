@@ -1,0 +1,113 @@
+{
+  "newChat": "নতুন চ্যাট",
+  "placeholder": "এখানে আপনার বার্তা লিখুন...",
+  "textarea": {
+    "placeholder": "Nolan-এর সাথে কোন গল্পে আপনি সহযোগিতা করতে চান?",
+    "selectModel": "অনুগ্রহ করে একটি টেক্সট মডেল নির্বাচন করুন! যদি এখনও না করে থাকেন, সেটিংসে গিয়ে আপনার API কী সেট করুন।",
+    "enterPrompt": "অনুগ্রহ করে একটি প্রম্পট লিখুন",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "ছবিতে যান",
+    "audioPositioning": "অডিওতে যান",
+    "videoPositioning": "ভিডিওতে যান",
+    "showMore": "আরও দেখুন",
+    "showLess": "কম দেখুন"
+  },
+  "jsonCard": {
+    "copy": "কপি",
+    "copied": "কপি হয়েছে",
+    "showCode": "কোড দেখুন",
+    "hideCode": "কোড লুকান"
+  },
+  "welcome": {
+    "greeting": "হেই, ReelMaker!",
+    "help": "আজ আমি কীভাবে আপনাকে সাহায্য করতে পারি?"
+  },
+  "replay": {
+    "replaying": "কথোপকথন পুনরায় চালানো হচ্ছে... ({{current}}/{{total}})",
+    "completed": "কথোপকথন পুনরায় চালানো সম্পন্ন",
+    "ready": "কথোপকথন পুনরায় চালানোর জন্য প্রস্তুত",
+    "skipToEnd": "শেষে যান",
+    "replayAgain": "আবার চালান",
+    "startReplay": "পুনরায় চালানো শুরু করুন",
+    "continueConversation": "কথোপকথন চালিয়ে যান",
+    "forking": "ফর্ক করা হচ্ছে...",
+    "forkingToast": "ক্যানভাস ফর্ক করা হচ্ছে...",
+    "forkSuccessToast": "ক্যানভাস ফর্ক হয়েছে! রিডাইরেক্ট হচ্ছে...",
+    "forkFailedToast": "ক্যানভাস ফর্ক করতে ব্যর্থ হয়েছে"
+  },
+  "errors": {
+    "createSessionError": "চ্যাট সেশন তৈরি করতে ব্যর্থ হয়েছে"
+  },
+  "toolCallNames": {
+    "generate_image": "ইমেজ জেনারেটর",
+    "edit_image": "ইমেজ এডিটর",
+    "generate_audio": "অডিও তৈরি করুন",
+    "generate_video": "ভিডিও",
+    "generate_video_first_last_frame": "FLF ভিডিও",
+    "generate_tts_audio": "TTS অডিও তৈরি করুন",
+    "generate_music": "মিউজিক তৈরি করুন",
+    "generate_structured_output": "স্ট্রাকচারড আউটপুট তৈরি করুন",
+    "execute_storyboard": "স্টোরিবোর্ড চালান",
+    "analyze_timeline_state": "টাইমলাইন বিশ্লেষণ",
+    "recommend_generation_strategy": "কৌশল সুপারিশ",
+    "execute_code": "কোড চালান",
+    "analyze_documents": "ডকুমেন্ট বিশ্লেষণ",
+    "analyze_media": "মিডিয়া বিশ্লেষণ",
+    "execute_function_call": "ফাংশন কল চালান",
+    "analyze_web_context": "ওয়েব কনটেক্সট বিশ্লেষণ",
+    "search_and_generate": "সার্চ ও জেনারেট",
+    "prompt_user_multi_choice": "মাল্টি-চয়েস প্রশ্ন",
+    "prompt_user_single_choice": "সিঙ্গল-চয়েস প্রশ্ন",
+    "write_plan": "পরিকল্পনা লিখুন",
+    "finish": "শেষ"
+  },
+  "publish": {
+    "title": "কমিউনিটিতে প্রকাশ করুন",
+    "titleLabel": "শিরোনাম *",
+    "titlePlaceholder": "আপনার কথোপকথনের জন্য আকর্ষণীয় শিরোনাম লিখুন",
+    "descriptionLabel": "বর্ণনা",
+    "descriptionPlaceholder": "এই কথোপকথনটি আকর্ষণীয় কেন তা বর্ণনা করুন...",
+    "tagsLabel": "ট্যাগ (সর্বোচ্চ ৫)",
+    "tagPlaceholder": "একটি ট্যাগ যোগ করুন...",
+    "visibilityLabel": "দৃশ্যমানতা",
+    "visibilityPublic": "পাবলিক",
+    "visibilityUnlisted": "তালিকাবহির্ভূত",
+    "visibilityPublicHint": "যে কেউ এই কথোপকথনটি খুঁজে পেতে এবং দেখতে পারবে",
+    "visibilityUnlistedHint": "শুধুমাত্র লিংক থাকা ব্যক্তিরা এই কথোপকথনটি দেখতে পারবে",
+    "cancel": "বাতিল",
+    "publish": "প্রকাশ করুন",
+    "publishing": "প্রকাশ হচ্ছে...",
+    "enterTitleError": "অনুগ্রহ করে একটি শিরোনাম দিন",
+    "success": "সেশন সফলভাবে প্রকাশ হয়েছে!",
+    "failed": "সেশন প্রকাশ করতে ব্যর্থ হয়েছে",
+    "publishButton": "প্রকাশ করুন"
+  },
+  "sessionSelector": {
+    "placeholder": "থিম"
+  },
+  "thinking": {
+    "title": "ভাবছে"
+  },
+  "plan": {
+    "title": "পরিকল্পনা",
+    "steps": {
+      "singular": "ধাপ",
+      "plural": "ধাপ"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

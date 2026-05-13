@@ -1,0 +1,21 @@
+{
+  "title": "Đạo diễn tác nhân AI đầu tiên trên thế giới: Nolan",
+  "subtitle": "Chương trình truy cập sớm",
+  "description": "Đạo diễn tác nhân AI đầu tiên trên thế giới: Nolan",
+  "tabs": {
+    "myCanvases": "Canvas của tôi",
+    "community": "Cộng đồng"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan đang chuẩn bị canvas của bạn…",
+    "communitySessions": "Đang tải các phiên cộng đồng..."
+  },
+  "community": {
+    "loadFailed": "Không thể tải các phiên cộng đồng",
+    "canvasNotAvailable": "Canvas không khả dụng cho phiên này",
+    "likeFailed": "Không thể cập nhật lượt thích"
+  },
+  "allProjects": "Tất cả dự án",
+  "noCanvases": "Chưa có bảng phân cảnh",
+  "newCanvas": "Cảnh chưa có tiêu đề"
+}

@@ -1,0 +1,60 @@
+/* Canvas chat should inherit the default Nolan input styling.
+   Only keep layout-safe overrides here. */
+
+[data-canvas-page] .nolan-chat-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  border-radius: 1.75rem !important;
+  overflow: hidden !important;
+}
+
+[data-canvas-page] .nolan-chat-container::before {
+  display: none !important;
+}
+
+[data-canvas-page] .nolan-chat-box,
+[data-canvas-page] .nolan-chat-container .nolan-chat-box {
+  min-height: 80px !important;
+  max-height: 200px !important;
+  padding: 1rem !important;
+  border-radius: 1.75rem !important;
+  overflow: hidden !important;
+}
+
+[data-canvas-page] .nolan-chat-box::after,
+[data-canvas-page] .nolan-chat-box.focused::after {
+  display: none !important;
+}
+
+[data-canvas-page] .nolan-chat-box .rc-textarea,
+[data-canvas-page] .nolan-chat-box .rc-textarea-affix-wrapper,
+[data-canvas-page] .nolan-chat-box .rc-textarea-show-count,
+[data-canvas-page] .nolan-chat-box textarea {
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+[data-canvas-page] .nolan-chat-box .rc-textarea::before,
+[data-canvas-page] .nolan-chat-box .rc-textarea::after,
+[data-canvas-page] .nolan-chat-box .rc-textarea-affix-wrapper::before,
+[data-canvas-page] .nolan-chat-box .rc-textarea-affix-wrapper::after {
+  display: none !important;
+}
+
+[data-canvas-page] .nolan-controls {
+  margin-top: 0.5rem !important;
+}
+
+[data-canvas-page] .nolan-image-area {
+  margin-bottom: 0.75rem !important;
+}
+
+@media (max-width: 768px) {
+  [data-canvas-page] .nolan-chat-box {
+    min-height: 72px !important;
+    padding: 0.875rem !important;
+  }
+}

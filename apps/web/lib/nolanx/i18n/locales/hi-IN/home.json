@@ -1,0 +1,22 @@
+{
+  "title": "दुनिया का पहला AI एजेंट निर्देशक: Nolan",
+  "subtitle": "अर्ली एक्सेस प्रोग्राम",
+  "description": "दुनिया का पहला AI एजेंट निर्देशक: Nolan",
+  "tabs": {
+    "myCanvases": "मेरे कैनवस",
+    "community": "कम्युनिटी"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan आपका कैनवस तैयार कर रहा है…",
+    "communitySessions": "कम्युनिटी सेशन लोड हो रहे हैं..."
+  },
+  "community": {
+    "loadFailed": "कम्युनिटी सेशन लोड नहीं हो सके",
+    "canvasNotAvailable": "इस सेशन के लिए कैनवस उपलब्ध नहीं है",
+    "likeFailed": "लाइक अपडेट नहीं हो सका"
+  },
+  "allProjects": "सभी प्रोजेक्ट्स",
+  "noCanvases": "अभी तक कोई स्टोरीबोर्ड नहीं",
+  "newCanvas": "अनटाइटल्ड सीन"
+}
+

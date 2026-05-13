@@ -1,0 +1,113 @@
+{
+  "newChat": "แชตใหม่",
+  "placeholder": "พิมพ์ข้อความของคุณที่นี่...",
+  "textarea": {
+    "placeholder": "มีเรื่องราวที่อยากสร้างร่วมกับ Nolan ไหม?",
+    "selectModel": "โปรดเลือกโมเดลข้อความ! ไปที่การตั้งค่าเพื่อกำหนดคีย์ API หากยังไม่ได้ทำ",
+    "enterPrompt": "โปรดใส่พรอมป์ต์",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "ไปที่ภาพ",
+    "audioPositioning": "ไปที่เสียง",
+    "videoPositioning": "ไปที่วิดีโอ",
+    "showMore": "แสดงเพิ่มเติม",
+    "showLess": "แสดงน้อยลง"
+  },
+  "jsonCard": {
+    "copy": "คัดลอก",
+    "copied": "คัดลอกแล้ว",
+    "showCode": "แสดงโค้ด",
+    "hideCode": "ซ่อนโค้ด"
+  },
+  "welcome": {
+    "greeting": "สวัสดี, ReelMaker!",
+    "help": "วันนี้ฉันช่วยอะไรคุณได้บ้าง?"
+  },
+  "replay": {
+    "replaying": "กำลังเล่นซ้ำการสนทนา... ({{current}}/{{total}})",
+    "completed": "เล่นซ้ำการสนทนาเสร็จสิ้น",
+    "ready": "พร้อมเล่นซ้ำการสนทนา",
+    "skipToEnd": "ข้ามไปท้ายสุด",
+    "replayAgain": "เล่นซ้ำอีกครั้ง",
+    "startReplay": "เริ่มเล่นซ้ำ",
+    "continueConversation": "สนทนาต่อ",
+    "forking": "กำลังฟอร์ก...",
+    "forkingToast": "กำลังฟอร์กแคนวาส...",
+    "forkSuccessToast": "ฟอร์กแคนวาสแล้ว! กำลังเปลี่ยนเส้นทาง...",
+    "forkFailedToast": "ฟอร์กแคนวาสไม่สำเร็จ"
+  },
+  "errors": {
+    "createSessionError": "สร้างเซสชันแชตไม่สำเร็จ"
+  },
+  "toolCallNames": {
+    "generate_image": "ตัวสร้างภาพ",
+    "edit_image": "ตัวแก้ไขภาพ",
+    "generate_audio": "สร้างเสียง",
+    "generate_video": "วิดีโอ",
+    "generate_video_first_last_frame": "วิดีโอ FLF",
+    "generate_tts_audio": "สร้างเสียง TTS",
+    "generate_music": "สร้างเพลง",
+    "generate_structured_output": "สร้างเอาต์พุตแบบมีโครงสร้าง",
+    "execute_storyboard": "รันสตอรี่บอร์ด",
+    "analyze_timeline_state": "วิเคราะห์ไทม์ไลน์",
+    "recommend_generation_strategy": "แนะนำกลยุทธ์",
+    "execute_code": "รันโค้ด",
+    "analyze_documents": "วิเคราะห์เอกสาร",
+    "analyze_media": "วิเคราะห์สื่อ",
+    "execute_function_call": "รันการเรียกใช้ฟังก์ชัน",
+    "analyze_web_context": "วิเคราะห์บริบทเว็บ",
+    "search_and_generate": "ค้นหาและสร้าง",
+    "prompt_user_multi_choice": "ถามแบบหลายตัวเลือก",
+    "prompt_user_single_choice": "ถามแบบตัวเลือกเดียว",
+    "write_plan": "เขียนแผน",
+    "finish": "เสร็จสิ้น"
+  },
+  "publish": {
+    "title": "เผยแพร่สู่ชุมชน",
+    "titleLabel": "ชื่อเรื่อง *",
+    "titlePlaceholder": "ใส่ชื่อเรื่องที่ดึงดูดสำหรับการสนทนาของคุณ",
+    "descriptionLabel": "คำอธิบาย",
+    "descriptionPlaceholder": "อธิบายว่าอะไรทำให้การสนทนานี้น่าสนใจ...",
+    "tagsLabel": "แท็ก (สูงสุด 5)",
+    "tagPlaceholder": "เพิ่มแท็ก...",
+    "visibilityLabel": "การมองเห็น",
+    "visibilityPublic": "สาธารณะ",
+    "visibilityUnlisted": "ไม่แสดงในรายการ",
+    "visibilityPublicHint": "ทุกคนสามารถค้นพบและดูการสนทนานี้ได้",
+    "visibilityUnlistedHint": "เฉพาะคนที่มีลิงก์เท่านั้นที่ดูการสนทนานี้ได้",
+    "cancel": "ยกเลิก",
+    "publish": "เผยแพร่",
+    "publishing": "กำลังเผยแพร่...",
+    "enterTitleError": "โปรดใส่ชื่อเรื่อง",
+    "success": "เผยแพร่เซสชันสำเร็จ!",
+    "failed": "เผยแพร่เซสชันไม่สำเร็จ",
+    "publishButton": "เผยแพร่"
+  },
+  "sessionSelector": {
+    "placeholder": "ธีม"
+  },
+  "thinking": {
+    "title": "กำลังคิด"
+  },
+  "plan": {
+    "title": "แผน",
+    "steps": {
+      "singular": "ขั้น",
+      "plural": "ขั้น"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

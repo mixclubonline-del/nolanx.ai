@@ -1,0 +1,21 @@
+{
+  "title": "Direktur Agen AI Pertama di Dunia: Nolan",
+  "subtitle": "Program Akses Awal",
+  "description": "Direktur Agen AI Pertama di Dunia: Nolan",
+  "tabs": {
+    "myCanvases": "Kanvas Saya",
+    "community": "Komunitas"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan sedang menyiapkan kanvas Anda…",
+    "communitySessions": "Memuat sesi komunitas..."
+  },
+  "community": {
+    "loadFailed": "Gagal memuat sesi komunitas",
+    "canvasNotAvailable": "Kanvas tidak tersedia untuk sesi ini",
+    "likeFailed": "Gagal memperbarui suka"
+  },
+  "allProjects": "Semua Proyek",
+  "noCanvases": "Belum ada storyboard",
+  "newCanvas": "Adegan Tanpa Judul"
+}

@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "ถูกใจ",
+      "liked": "ถูกใจแล้ว",
+      "share": "แชร์",
+      "download": "ดาวน์โหลด",
+      "downloading": "กำลังดาวน์โหลด...",
+      "copying": "กำลังคัดลอก...",
+      "recreate": "สร้างใหม่"
+    },
+    "aria": {
+      "closeVideo": "ปิดวิดีโอ",
+      "goBack": "ย้อนกลับ",
+      "likeVideo": "ถูกใจวิดีโอ",
+      "unlikeVideo": "ยกเลิกถูกใจ",
+      "shareVideo": "แชร์วิดีโอ",
+      "downloadVideo": "ดาวน์โหลดวิดีโอ",
+      "copyingLink": "กำลังคัดลอกลิงก์...",
+      "downloading": "กำลังดาวน์โหลด..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "คัดลอกลิงก์แล้ว",
+      "videoLinkCopiedMessage": "คัดลอกลิงก์วิดีโอไปยังคลิปบอร์ดแล้ว",
+      "copyFailedTitle": "คัดลอกไม่สำเร็จ",
+      "copyFailedMessage": "ไม่สามารถคัดลอกลิงก์ได้",
+      "shareFailedTitle": "แชร์ไม่สำเร็จ",
+      "shareFailedMessage": "ไม่สามารถคัดลอกลิงก์วิดีโอได้",
+      "loginFirst": "กรุณาเข้าสู่ระบบก่อน",
+      "cannotFollowYourself": "ไม่สามารถติดตามตัวเองได้",
+      "followed": "ติดตามแล้ว",
+      "unfollowed": "เลิกติดตามแล้ว",
+      "operationFailed": "ดำเนินการไม่สำเร็จ"
+    },
+    "generation": {
+      "generationModel": "โมเดลการสร้าง",
+      "withEffect": "พร้อมเอฟเฟกต์ {effect}",
+      "effectBadge": "เอฟเฟกต์",
+      "prompt": "พรอมต์",
+      "referenceImage": "ภาพอ้างอิง",
+      "referenceImageAlt": "ภาพอ้างอิงสำหรับการสร้างวิดีโอ",
+      "negativePrompt": "พรอมต์เชิงลบ",
+      "parameters": "พารามิเตอร์",
+      "guidance": "ไกด์",
+      "steps": "สเต็ป",
+      "seed": "ซีด",
+      "ratio": "สัดส่วน"
+    },
+    "author": {
+      "uploaded": "อัปโหลดเมื่อ {time}",
+      "profile": "โปรไฟล์",
+      "follow": "ติดตาม",
+      "unfollow": "เลิกติดตาม",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "ความคิดเห็น",
+      "placeholder": "แชร์ความคิดของคุณเกี่ยวกับวิดีโอนี้...",
+      "send": "ส่ง",
+      "sending": "กำลังส่ง...",
+      "empty": "เป็นคนแรกที่แชร์ความคิดเห็นเกี่ยวกับผลงานนี้!"
+    },
+    "time": {
+      "now": "เมื่อสักครู่",
+      "minutesAgo": "{minutes} นาทีที่แล้ว",
+      "hoursAgo": "{hours} ชั่วโมงที่แล้ว",
+      "daysAgo": "{days} วันที่แล้ว"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "เครดิต"
+    },
+    "earnCreditsCapsule": {
+      "label": "รับเครดิต",
+      "aria": {
+        "openRewardCenter": "รับเครดิต"
+      },
+      "badge": {
+        "claimed": "รับแล้ว"
+      },
+      "title": {
+        "base": "รับเครดิต",
+        "canClaim": "รับเครดิต (+{amount})",
+        "claimedToday": "รับเครดิต (รับแล้ววันนี้)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "ศูนย์รางวัล",
+      "subtitle": {
+        "main": "ชวนเพื่อนรับเครดิต + รางวัลรายวัน",
+        "joined": "ดูผู้ที่เข้าร่วม"
+      },
+      "common": {
+        "loading": "กำลังโหลด..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} เครดิต"
+      },
+      "actions": {
+        "back": "กลับ",
+        "close": "ปิด",
+        "copy": "คัดลอก",
+        "share": "แชร์",
+        "inviteFriends": "ชวนเพื่อน",
+        "claim": "รับ",
+        "claiming": "กำลังรับ...",
+        "claimed": "รับแล้ว"
+      },
+      "aria": {
+        "copyInviteCode": "คัดลอกโค้ดเชิญ",
+        "shareInviteLink": "แชร์ลิงก์เชิญ"
+      },
+      "labels": {
+        "inviteLink": "ลิงก์เชิญ",
+        "inviteCode": "โค้ดเชิญ",
+        "invited": "เชิญแล้ว",
+        "rewarded": "ได้รับรางวัล",
+        "pending": "รอดำเนินการ",
+        "recentInvites": "การเชิญล่าสุด",
+        "recentRewards": "รางวัลล่าสุด",
+        "referEarn": "ชวนเพื่อนรับเครดิต",
+        "dailyRewards": "รางวัลรายวัน",
+        "dailyLogin": "ล็อกอินรายวัน",
+        "rewardedProgress": "ได้รับรางวัล: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "ยังไม่มีการเชิญ",
+        "noRewards": "ยังไม่มีรางวัล"
+      },
+      "status": {
+        "rewarded": "ได้รับรางวัล",
+        "pending": "รอดำเนินการ",
+        "verified": "ยืนยันแล้ว"
+      },
+      "share": {
+        "title": "คำเชิญ ReelMind",
+        "text": "เข้าร่วม ReelMind กับฉันและรับเครดิตฟรี"
+      },
+      "toast": {
+        "copiedTitle": "คัดลอกแล้ว",
+        "copiedDescription": "คัดลอก {label} ไปยังคลิปบอร์ดแล้ว",
+        "copyFailedTitle": "คัดลอกไม่สำเร็จ",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "กรุณาคัดลอกด้วยตนเอง",
+        "claimFailedTitle": "รับไม่สำเร็จ",
+        "claimedTitle": "รับแล้ว",
+        "claimedDescription": "คุณได้รับ {amount} เครดิต"
+      },
+      "referEarn": {
+        "tipLabel": "กติกาการชวนเพื่อนและรับเครดิต",
+        "tipTitle": "วิธีการทำงาน",
+        "tipBody1": "แชร์ลิงก์เชิญของคุณ เมื่อผู้ใช้ใหม่สมัครด้วยโค้ดของคุณและทำกิจกรรมที่เข้าเกณฑ์ ระบบจะตรวจสอบและแจกเครดิตให้หลังจากยืนยันแล้ว",
+        "tipBody2": "รางวัลแบบขั้น: 1-5 = 50, 6-15 = 100, 16-20 = 200 เครดิต",
+        "cardTitle": "รับเครดิตด้วยการชวนเพื่อน",
+        "upTo": "สูงสุด {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "กติกาการล็อกอินรายวัน",
+        "tipTitle": "รางวัลรายวัน",
+        "tipBodyPrefix": "รางวัลเริ่มตั้งแต่",
+        "tipBodyDay2": "วันที่ 2",
+        "tipBodySuffix": "ของสตรีค และจะรีเซ็ตทุกวันตามเวลา UTC",
+        "status": {
+          "loading": "กำลังโหลดสถานะ...",
+          "claimed": "รับแล้ว",
+          "readyToClaim": "พร้อมรับ",
+          "locked": "ล็อก"
+        },
+        "errors": {
+          "alreadyClaimed": "วันนี้รับไปแล้ว",
+          "notEligible": "ยังไม่สามารถรับได้ในขณะนี้",
+          "riskBlocked": "ถูกบล็อกรับเนื่องจากการควบคุมความเสี่ยง",
+          "generic": "เกิดข้อผิดพลาด โปรดลองใหม่ภายหลัง"
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "สำรวจ",
+      "video": "วิดีโอ",
+      "image": "รูปภาพ",
+      "music": "เพลง",
+      "edit": "แก้ไข",
+      "experiment": "ทดลอง"
+    },
+    "special": {
+      "nolan": "โนแลน"
+    },
+    "bottom": {
+      "affiliate": "พันธมิตร",
+      "contactUs": "ติดต่อเรา",
+      "blog": "บล็อก",
+      "apiPlatform": "แพลตฟอร์ม API"
+    },
+    "badges": {
+      "help": "ช่วยเหลือ",
+      "new": "ใหม่",
+      "free": "ฟรี"
+    },
+    "sidebar": {
+      "more": "เพิ่มเติม",
+      "closeMenu": "ปิดเมนู",
+      "moreTools": "เครื่องมือเพิ่มเติม",
+      "followOnX": "ติดตามเราบน X (Twitter)",
+      "followOnTikTok": "ติดตามเราบน TikTok",
+      "subscribeOnYouTube": "สมัครรับข้อมูลช่อง YouTube ของเรา",
+      "termsOfService": "ข้อกำหนดการให้บริการ",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "คุณสมบัติ",
+        "models": "โมเดล"
+      },
+      "features": {
+        "createVideo": {
+          "title": "สร้างวิดีโอ",
+          "description": "สร้างวิดีโอ AI"
+        },
+        "cinemaStudioVideo": {
+          "title": "วิดีโอสตูดิโอภาพยนตร์",
+          "description": "วิดีโอระดับมืออาชีพพร้อมการเคลื่อนไหวของกล้อง"
+        },
+        "mixedMedia": {
+          "title": "สื่อผสม",
+          "description": "ผสมผสานข้อความ รูปภาพ และวิดีโอ"
+        },
+        "editVideo": {
+          "title": "แก้ไขวิดีโอ",
+          "description": "แก้ไขฉาก ช็อต องค์ประกอบ"
+        },
+        "clickToAd": {
+          "title": "คลิกเพื่อลงโฆษณา",
+          "description": "เปลี่ยนคลิปให้เป็นโฆษณา"
+        },
+        "sora2Trends": {
+          "title": "โซระ 2 เทรนด์",
+          "description": "แนวคิดเกี่ยวกับวิดีโอที่ขับเคลื่อนด้วยเทรนด์"
+        },
+        "lipsyncStudio": {
+          "title": "ลิปซิงค์ สตูดิโอ",
+          "description": "ซิงค์เสียงกับใบหน้า"
+        },
+        "drawToVideo": {
+          "title": "วาดเป็นวิดีโอ",
+          "description": "Sketch กลายเป็นภาพยนตร์"
+        },
+        "sketchToVideo": {
+          "title": "ร่างเป็นวิดีโอ",
+          "description": "จากภาพร่างไปจนถึงวิดีโอด้วย Sora 2"
+        },
+        "ugcFactory": {
+          "title": "โรงงานยูจีซี",
+          "description": "เนื้อหาพร้อมสำหรับผู้สร้างอย่างรวดเร็ว"
+        },
+        "videoUpscale": {
+          "title": "วิดีโอสุดหรู",
+          "description": "เพิ่มความละเอียดด้วยความคมชัด"
+        },
+        "higgsfieldAnimate": {
+          "title": "Higgsfield เคลื่อนไหว",
+          "description": "สร้างภาพเคลื่อนไหวอย่างมีสไตล์"
+        },
+        "recastStudio": {
+          "title": "รีแคสสตูดิโอ",
+          "description": "หล่อนักแสดงและสไตล์ใหม่"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "การควบคุมกล้องภาพยนตร์"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "การควบคุมการเคลื่อนไหวแบบไดนามิก"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "ข้อความเป็นวิดีโอคุณภาพสูง"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "การตัดต่อวิดีโอที่แม่นยำ"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "การสร้างวิดีโอยุคถัดไป"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "การถ่ายภาพยนตร์ที่สมจริง"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "การเคลื่อนไหวและจังหวะอย่างมีสไตล์"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "วิดีโอภาพยนตร์ที่รวดเร็ว"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "รายละเอียดและโทนสีที่สะอาดตา"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "การแสดงที่ขับเคลื่อนด้วยอวตาร"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "คุณสมบัติ",
+        "models": "โมเดล"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "สร้างภาพ",
+          "description": "สร้างภาพ AI"
+        },
+        "cinemaStudioImage": {
+          "title": "ภาพสตูดิโอภาพยนตร์",
+          "description": "การจำลองกล้องและเลนส์จริง"
+        },
+        "createStoryboard": {
+          "title": "สร้างสตอรี่บอร์ด",
+          "description": "ออกแบบฉากเรื่องราวของคุณ"
+        },
+        "soulIdCharacter": {
+          "title": "ตัวละครโซลไอดี",
+          "description": "สร้างตัวละครที่เป็นเอกลักษณ์"
+        },
+        "relight": {
+          "title": "รีไลท์",
+          "description": "ปรับตำแหน่งแสง สี และความสว่าง"
+        },
+        "inpaint": {
+          "title": "อินเพนท์",
+          "description": "เลือกพื้นที่ อธิบายการเปลี่ยนแปลง"
+        },
+        "imageUpscale": {
+          "title": "ยกระดับภาพ",
+          "description": "เพิ่มคุณภาพของภาพ"
+        },
+        "faceSwap": {
+          "title": "สลับหน้า",
+          "description": "สร้างการแลกเปลี่ยนใบหน้าที่สมจริง"
+        },
+        "characterSwap": {
+          "title": "สลับตัวละคร",
+          "description": "สร้างการสลับตัวละครที่สมจริง"
+        },
+        "drawToEdit": {
+          "title": "วาดเพื่อแก้ไข",
+          "description": "จากภาพร่างสู่ภาพ"
+        },
+        "instadump": {
+          "title": "อินสตาดัมป์",
+          "description": "เปลี่ยนเซลฟี่ให้เป็นคลังเนื้อหาเต็มรูปแบบ"
+        },
+        "photodumpStudio": {
+          "title": "โฟโต้ดัมพ์ สตูดิโอ",
+          "description": "สร้างสุนทรียภาพของคุณ"
+        },
+        "fashionFactory": {
+          "title": "โรงงานแฟชั่น",
+          "description": "สร้างชุดแฟชั่น"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "ภาพแฟชั่นที่สมจริงเป็นพิเศษ"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "สตอรี่บอร์ด แก้ไข สร้างสรรค์"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "โมเดลภาพ 4K ที่ดีที่สุดเท่าที่เคยมีมา"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "โมเดลภาพ 4K เจเนอเรชันถัดไป"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "การแสดงสีที่แม่นยำสมจริง"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "รายละเอียดที่ปรับความเร็วให้เหมาะสม"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "ภาพเหมือนจริงทันที"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "ภาพเสมือนจริงและแม่นยำทันที"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "ภาพที่สมจริง"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "รูปแบบการแก้ไขภาพขั้นสูง"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "ตัวขยายสเกลที่มีความละเอียดสูง"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "ทั้งหมด",
+        "recommended": "แนะนำ",
+        "saved": "บันทึกแล้ว"
+      },
+      "labels": {
+        "camera": "กล้อง",
+        "lens": "เลนส์",
+        "focalLength": "ระยะโฟกัส",
+        "aperture": "รูรับแสง"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "บันทึกชุดค่า",
+        "removeSetup": "ลบชุดค่า",
+        "close": "ปิด"
+      },
+      "empty": "ยังไม่มีชุดค่า"
+    },
+    "page": {
+      "title": "การทดลอง",
+      "subtitle": "ลองขั้นตอนการทำงานใหม่ก่อน",
+      "back": "กลับสู่การทดลอง"
+    },
+    "menu": {
+      "title": "การทดลอง",
+      "open": "เปิด"
+    },
+    "tabs": {
+      "character": "ตัวละคร",
+      "inpaint": "อินเพนท์",
+      "cinemaStudio": "สตูดิโอภาพยนตร์",
+      "motionControl": "การควบคุมการเคลื่อนไหว",
+      "assist": "ช่วยเหลือ"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "อินเพนท์",
+        "description": "ทาสีทับพื้นที่และอธิบายการเปลี่ยนแปลง"
+      },
+      "cinemaStudio": {
+        "title": "สตูดิโอภาพยนตร์",
+        "description": "ขั้นตอนการทำงานภาพยนตร์ระดับมืออาชีพ"
+      },
+      "motionControl": {
+        "title": "การควบคุมการเคลื่อนไหว",
+        "description": "คัดลอกการเคลื่อนไหวจากวิดีโออ้างอิง"
+      },
+      "assist": {
+        "title": "ช่วยเหลือ",
+        "description": "เครื่องมือช่วยแจ้งและสร้างสรรค์"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "ตัวละคร",
+        "subtitle": "เครื่องมือความสอดคล้องของอักขระ (ตัวยึดตำแหน่ง)"
+      },
+      "inpaint": {
+        "title": "อินเพนท์",
+        "subtitle": "อัปโหลดสื่อ เลือกพื้นที่ และอธิบายการแก้ไข"
+      },
+      "cinemaStudio": {
+        "title": "สตูดิโอภาพยนตร์",
+        "subtitle": "สร้างช็อตภาพยนตร์ด้วยการแจ้งเตือนจากกล้อง"
+      },
+      "motionControl": {
+        "title": "การควบคุมการเคลื่อนไหว",
+        "subtitle": "สร้างภาพเคลื่อนไหวด้วยภาพของคุณ"
+      },
+      "assist": {
+        "title": "ช่วยเหลือ",
+        "subtitle": "แชท เคล็ดลับ และสาธารณูปโภคที่รวดเร็ว"
+      }
+    },
+    "actions": {
+      "upload": "อัพโหลดสื่อ",
+      "generate": "สร้าง",
+      "history": "ประวัติศาสตร์",
+      "howItWorks": "มันทำงานอย่างไร",
+      "sendMessage": "ส่งข้อความ...",
+      "tryExample": "ลองตัวอย่าง",
+      "send": "ส่ง"
+    },
+    "placeholders": {
+      "exploreFeatures": "สำรวจคุณสมบัติ",
+      "settings": "การตั้งค่า",
+      "camera": "กล้อง",
+      "cameraHint": "เลือกลักษณะการทำงานของกล้อง (ตัวยึดตำแหน่ง)",
+      "lens": "เลนส์",
+      "lensHint": "เลือกตัวเลือกเลนส์ (ตัวยึดตำแหน่ง)",
+      "image": "รูปภาพ",
+      "video": "วีดีโอ",
+      "scenePrompt": "บรรยายฉากที่คุณจินตนาการ..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "เพิ่มการเคลื่อนไหวเพื่อคัดลอก",
+          "description": "ระยะเวลาวิดีโอ: 3–30 วินาที"
+        },
+        "addCharacter": {
+          "title": "เพิ่มตัวละครของคุณ",
+          "description": "ภาพที่เห็นใบหน้าและร่างกาย"
+        }
+      },
+      "quality": {
+        "title": "คุณภาพ",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "การตั้งค่าขั้นสูง"
+      },
+      "hero": {
+        "title": {
+          "prefix": "สร้างใหม่ใด ๆ",
+          "highlight": "การเคลื่อนไหว",
+          "suffix": "ด้วยภาพของคุณ"
+        },
+        "subtitle": "คัดลอกการเคลื่อนไหวจากวิดีโอและวางตัวละครของคุณลงในการเคลื่อนไหวเดียวกัน"
+      },
+      "library": {
+        "title": "เริ่มต้นด้วยการคัดลอกการเคลื่อนไหวจากห้องสมุด"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind ช่วยเหลือ",
+        "subtitle": "ทีมปริญญาเอกในกระเป๋าของคุณ สร้างขึ้นเพื่อผู้สร้าง"
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "คุณสามารถทำอะไรได้บ้าง?",
+          "description": "สำรวจคุณสมบัติ ReelMind AI"
+        },
+        "howToCreate": {
+          "title": "ฉันจะสร้างเนื้อหาที่น่าทึ่งได้อย่างไร?",
+          "description": "เคล็ดลับในการเขียนพร้อมท์ AI ที่ดีขึ้น"
+        },
+        "generateSoulImagePrompt": {
+          "title": "สร้างพรอมต์ภาพวิญญาณ",
+          "description": "เขียนข้อความแจ้งสำหรับภาพที่มีความสวยงามสูง"
+        },
+        "generateVideoPrompt": {
+          "title": "สร้างพรอมต์วิดีโอ",
+          "description": "เขียนข้อความแจ้งสำหรับวิดีโอภาพยนตร์"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "ความสม่ำเสมอของตัวละคร",
+          "description": "ทำให้ตัวละครของคุณสอดคล้องกันในเฟรมต่างๆ (ตัวยึดตำแหน่ง)"
+        },
+        "library": {
+          "title": "ห้องสมุดตัวละคร",
+          "description": "เลือกอักขระที่บันทึกไว้หรือเริ่มจากเทมเพลต (ตัวยึดตำแหน่ง)"
+        }
+      },
+      "placeholders": {
+        "preview": "ดูตัวอย่าง (ตัวยึดตำแหน่ง)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - คอมมูนิตี้ผู้สร้างวิดีโอ AI ฟรีสำหรับสร้างและแชร์วิดีโอ",
+      "description": "สำรวจวิดีโอสร้างสรรค์ที่กำลังมาแรงจากครีเอเตอร์ทั่วโลก รับแรงบันดาลใจ ความบันเทิง และรีมิกซ์วิดีโอโปรดของคุณ"
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 พร้อมใช้งานแล้ว!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "ทั้งหมด",
+        "latest": "ล่าสุด",
+        "hot": "มาแรง"
+      },
+      "tooltip": {
+        "filterByModel": "กรองตามโมเดล {model}"
+      },
+      "aria": {
+        "previous": "หมวดหมู่ก่อนหน้า",
+        "next": "หมวดหมู่ถัดไป"
+      },
+      "error": {
+        "loadFailed": "โหลดหมวดหมู่ไม่สำเร็จ"
+      },
+      "actions": {
+        "retry": "ลองอีกครั้ง"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "สร้างวิดีโอ AI"
+      },
+      "nolan": {
+        "title": "โนแลน",
+        "description": "ผู้กำกับเอเจนต์ AI อันดับ 1 ของโลก"
+      },
+      "badges": {
+        "models": "โมเดล",
+        "free": "ฟรี"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "สำรวจ - ReelMind",
+      "description": "สำรวจวิดีโอสร้างสรรค์ที่กำลังมาแรงจากครีเอเตอร์ทั่วโลกบน ReelMind"
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "โมเดล AI และเอฟเฟกต์ - ReelMind",
+      "description": "เลือกดูและใช้งานโมเดลวิดีโอ AI และเอฟเฟกต์เพื่อสร้างวิดีโอที่สร้างด้วย AI ที่น่าทึ่งบน ReelMind สำรวจคอลเลกชันโมเดล AI ที่ล้ำสมัยของเรา"
+    },
+    "page": {
+      "title": "โมเดล AI และเอฟเฟกต์",
+      "description": "เลือกดูคอลเลกชันโมเดล AI และเอฟเฟกต์สำหรับการสร้างวิดีโอ",
+      "footerIntro": "ค้นพบคอลเลกชัน {count} โมเดล AI สำหรับการสร้างวิดีโอ"
+    },
+    "sections": {
+      "models": "โมเดล",
+      "effects": "เอฟเฟกต์"
+    },
+    "actions": {
+      "viewAll": "ดูทั้งหมด",
+      "viewAllModels": "ดูโมเดลทั้งหมด",
+      "backToModels": "กลับไปที่โมเดล"
+    },
+    "types": {
+      "allModels": "โมเดลทั้งหมด",
+      "textToVideo": "ข้อความเป็นวิดีโอ",
+      "imageToVideo": "รูปภาพเป็นวิดีโอ",
+      "videoToVideo": "วิดีโอเป็นวิดีโอ"
+    },
+    "all": {
+      "titleAll": "โมเดลวิดีโอทั้งหมด",
+      "titleByType": "โมเดล {type}",
+      "description": "เลือกดูคอลเลกชันโมเดล AI สำหรับการสร้างวิดีโอ",
+      "countAll": "({count} โมเดล)",
+      "countByType": "({count} โมเดล {type})",
+      "loadingMore": "กำลังโหลดโมเดลเพิ่มเติม...",
+      "loadMore": "โหลดโมเดลเพิ่มเติม",
+      "end": "คุณมาถึงท้ายแล้ว! โหลดโมเดลทั้งหมดแล้ว",
+      "empty": "ไม่พบโมเดลที่ตรงกับเงื่อนไขของคุณ"
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "ด่าน",
+        "lora": "โลรา"
+      },
+      "supportedFeatures": "ฟีเจอร์ที่รองรับ",
+      "metaTitle": "{name} - โมเดล AI | ReelMind",
+      "metaDescriptionFallback": "สำรวจโมเดล {name} สำหรับการสร้างวิดีโอบน ReelMind",
+      "metaErrorTitle": "รายละเอียดโมเดล | ReelMind",
+      "metaErrorDescription": "สำรวจโมเดล AI สำหรับการสร้างวิดีโอบน ReelMind"
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "เอฟเฟกต์ AI - ReelMind",
+      "description": "เลือกดูและใช้งานเอฟเฟกต์วิดีโอ AI เพื่อเพิ่มคุณภาพวิดีโอที่สร้างด้วย AI ของคุณบน ReelMind"
+    },
+    "page": {
+      "title": "เอฟเฟกต์ AI",
+      "description": "เลือกดูคอลเลกชันเอฟเฟกต์ AI เพื่อเพิ่มคุณภาพวิดีโอของคุณ"
+    },
+    "all": {
+      "title": "เอฟเฟกต์ AI ทั้งหมด",
+      "description": "เลือกดูคอลเลกชันเอฟเฟกต์ AI ทั้งหมดเพื่อเพิ่มคุณภาพวิดีโอของคุณ"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "กลับไปที่เอฟเฟกต์",
+        "goBack": "กลับ",
+        "applyThisEffect": "ใช้เอฟเฟกต์นี้"
+      },
+      "badge": "เอฟเฟกต์",
+      "addedOn": "เพิ่มเมื่อ {date}",
+      "errors": {
+        "notFound": "ไม่พบเอฟเฟกต์",
+        "loadFailed": "โหลดรายละเอียดเอฟเฟกต์ไม่สำเร็จ"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "สร้างวิดีโอ AI - ReelMind",
+      "description": "สร้างวิดีโอที่สร้างด้วย AI ที่น่าทึ่งด้วยโมเดลและเครื่องมือ AI ที่ทรงพลังของเราบน ReelMind"
+    },
+    "loading": "กำลังโหลด...",
+    "loadingMobile": "กำลังโหลดมุมมองมือถือ...",
+    "loadingControlPanel": "กำลังโหลดแผงควบคุม...",
+    "controlPanel": {
+      "modelAndSettings": "โมเดลและการตั้งค่า",
+      "history": "ประวัติ",
+      "model": "โมเดล",
+      "selectModel": "เลือกโมเดล"
+    },
+    "mobile": {
+      "backToCreate": "กลับไปที่สร้าง"
+    },
+    "modelSelector": {
+      "loadingModels": "กำลังโหลดโมเดล...",
+      "moreModels": "อีก {count} โมเดล",
+      "exploreMoreModels": "สำรวจอีก {count} โมเดล"
+    },
+    "promptInput": {
+      "title": "พรอมต์",
+      "placeholder": "อธิบายสิ่งที่คุณต้องการสร้าง...",
+      "enhance": "ปรับปรุง",
+      "undo": "เลิกทำ",
+      "restoreOriginalPromptTitle": "กู้คืนพรอมต์เดิม",
+      "toastEnhanced": "ปรับปรุงพรอมต์แล้ว",
+      "toastRestored": "กู้คืนพรอมต์เดิมแล้ว",
+      "enhanceFailed": "ปรับปรุงพรอมต์ไม่สำเร็จ",
+      "sensitiveError": "ตรวจพบคำที่อ่อนไหว: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "รูปภาพ",
+      "mentionVideoTokenPrefix": "วิดีโอ",
+      "mentionAudioTokenPrefix": "เสียง"
+    },
+    "referenceUploader": {
+      "addOptional": "เพิ่มอ้างอิง (ไม่บังคับ)",
+      "referenceImage": "รูปภาพอ้างอิง",
+      "referenceImages": "รูปภาพอ้างอิง ({current}/{max})",
+      "referenceVideo": "วิดีโออ้างอิง",
+      "dropImage": "วางรูปภาพที่นี่หรือคลิกเพื่ออัปโหลด",
+      "dropImageMax": "วางได้สูงสุด {max} รูปภาพที่นี่หรือคลิกเพื่ออัปโหลด",
+      "dropVideo": "วางวิดีโอที่นี่หรือคลิกเพื่ออัปโหลด",
+      "pasteHint": "วาง",
+      "videoUploaded": "อัปโหลดวิดีโอแล้ว",
+      "uploading": "กำลังอัปโหลด...",
+      "addMore": "เพิ่มอีก",
+      "removeReference": "ลบ",
+      "referenceImageAlt": "รูปภาพอ้างอิง {index}",
+      "supportedFormats": "รองรับ: PNG, JPG",
+      "minimumSize": "ขั้นต่ำ {minWidth}×{minHeight} อัตราส่วน {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "กำลังอัปโหลด {type}...",
+      "processingFile": "กำลังประมวลผลไฟล์...",
+      "uploadReference": "อัปโหลดอ้างอิง {type}",
+      "image": "รูปภาพ",
+      "video": "วิดีโอ",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "อัตราส่วนภาพ",
+      "duration": "ความยาว",
+      "seconds": "{seconds}ส",
+      "resolution": "ความละเอียด",
+      "audio": "เสียง",
+      "on": "เปิด",
+      "off": "ปิด",
+      "advanced": "ขั้นสูง",
+      "advancedShort": "ขั้นสูง",
+      "creativityLevel": "ความสร้างสรรค์",
+      "moreAccurate": "แม่นยำขึ้น",
+      "moreCreative": "สร้างสรรค์ขึ้น",
+      "samplingSteps": "จำนวนสเต็ป",
+      "faster": "เร็วขึ้น ({steps} สเต็ป)",
+      "higherQuality": "คุณภาพสูงขึ้น ({steps} สเต็ป)",
+      "randomSeed": "Seed แบบสุ่ม",
+      "seedPlaceholder": "ใส่ seed",
+      "generateRandomSeed": "สร้าง seed แบบสุ่ม",
+      "seedHint": "ใช้ seed คงที่เพื่อให้ได้ผลลัพธ์ที่ทำซ้ำได้",
+      "movementAmplitude": "การเคลื่อนไหว",
+      "movementAmplitudeHint": "ควบคุมความแรงของการเคลื่อนไหว",
+      "backgroundMusic": "เพลงพื้นหลัง",
+      "backgroundMusicHint": "เพิ่มเพลงพื้นหลังเมื่อรองรับ",
+      "enabled": "เปิดใช้งาน",
+      "disabled": "ปิดใช้งาน",
+      "negativePrompt": "พรอมต์เชิงลบ",
+      "negativePromptPlaceholder": "สิ่งที่ควรหลีกเลี่ยง..."
+    },
+    "startToEndUploader": {
+      "title": "เฟรมเริ่มต้น-สิ้นสุด",
+      "startFrame": "เฟรมเริ่มต้น",
+      "endFrame": "เฟรมสิ้นสุด",
+      "dropStartImage": "วางรูปเริ่มต้นหรือคลิกเพื่ออัปโหลด",
+      "dropEndImage": "วางรูปสิ้นสุดหรือคลิกเพื่ออัปโหลด",
+      "startFrameImageAlt": "เฟรมเริ่มต้น",
+      "endFrameImageAlt": "เฟรมสิ้นสุด",
+      "uploading": "กำลังอัปโหลด...",
+      "instructions": "อัปโหลดรูปเริ่มต้นและสิ้นสุดเพื่อช่วยกำหนดการเปลี่ยนฉาก",
+      "supportedFormats": "รองรับ: PNG, JPG",
+      "minimumSize": "ขั้นต่ำ {minWidth}×{minHeight} อัตราส่วน {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "รูปภาพจะถูกบีบอัดอัตโนมัติหากจำเป็น"
+    },
+    "modelTabs": {
+      "imageToVideo": "รูปภาพเป็นวิดีโอ",
+      "textToVideo": "ข้อความเป็นวิดีโอ",
+      "firstLastFrame": "เฟรมแรก-เฟรมสุดท้าย",
+      "edit": "แก้ไข",
+      "effect": "เอฟเฟกต์"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "วิดีโออ้างอิง",
+      "required": "จำเป็น",
+      "removeVideo": "ลบวิดีโอ",
+      "uploading": "กำลังอัปโหลด...",
+      "dropVideo": "วางวิดีโอที่นี่หรือคลิกเพื่ออัปโหลด",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "องค์ประกอบ",
+      "optional": "ไม่บังคับ ({current}/{max})",
+      "addElements": "เพิ่ม",
+      "elementAlt": "องค์ประกอบ {index}",
+      "removeElement": "ลบองค์ประกอบ {index}",
+      "dropElements": "คลิกเพื่อเพิ่มรูปภาพองค์ประกอบ",
+      "elementsHint": "รูปภาพเสริมเพื่อรักษาตัวละคร/สไตล์",
+      "errors": {
+        "invalidVideoTitle": "วิดีโอไม่ถูกต้อง",
+        "invalidVideoDescription": "โปรดเลือกไฟล์วิดีโอ",
+        "videoTooLargeTitle": "วิดีโอมีขนาดใหญ่เกินไป",
+        "videoTooLargeDescription": "สูงสุด {maxMb}MB โปรดอัปโหลดคลิปที่สั้นลง/เล็กลง",
+        "uploadFailedTitle": "การอัปโหลดล้มเหลว",
+        "elementsLimitTitle": "ถึงขีดจำกัดองค์ประกอบแล้ว",
+        "elementsLimitDescription": "คุณสามารถเพิ่มรูปภาพได้สูงสุด {max} ภาพ",
+        "imageTooSmall": "รูปภาพต้องมีอย่างน้อย {minWidth}×{minHeight} (ปัจจุบัน: {width}×{height})",
+        "imageBadRatio": "อัตราส่วนภาพต้องอยู่ระหว่าง {minAspectRatio} ถึง {maxAspectRatio} (ปัจจุบัน: {current})"
+      },
+      "warnings": {
+        "someSkippedTitle": "ไฟล์บางไฟล์ถูกข้าม",
+        "someSkippedDescription": "ไฟล์ {count} ถูกข้ามเนื่องจากขีดจำกัด",
+        "skippedTitle": "ข้ามไป",
+        "skippedNonImage": "อนุญาตเฉพาะรูปภาพสำหรับองค์ประกอบเท่านั้น",
+        "imageCompressedTitle": "บีบอัดรูปภาพแล้ว",
+        "imageCompressedDescription": "บีบอัดจาก {original} ถึง {final}",
+        "skippedInvalidImage": "รูปภาพไม่ถูกต้อง"
+      }
+    },
+    "howItWorks": {
+      "title": "มันทำงานอย่างไร",
+      "hero": {
+        "title": "สร้างวิดีโอได้ในคลิกเดียว",
+        "subtitle": "ใช้ค่าที่ตั้งไว้ล่วงหน้าสำหรับการควบคุมกล้อง การจัดเฟรม และ VFX — หรือดำเนินการแบบแมนนวลพร้อมคำแนะนำ"
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "เพิ่มรูปภาพ",
+          "2": "เลือกการตั้งค่าล่วงหน้า",
+          "3": "รับวิดีโอ"
+        },
+        "t2v": {
+          "1": "เขียนพร้อมท์",
+          "2": "เลือกรุ่น",
+          "3": "รับวิดีโอ"
+        },
+        "flf": {
+          "1": "เพิ่มเฟรม",
+          "2": "อธิบายการเปลี่ยนแปลง",
+          "3": "รับวิดีโอ"
+        },
+        "edit": {
+          "1": "เพิ่มวิดีโอ",
+          "2": "เพิ่มองค์ประกอบ",
+          "3": "รับวิดีโอ"
+        }
+      },
+      "modes": {
+        "edit": "แก้ไข (วิดีโอเป็นวิดีโอ)",
+        "flf": "เฟรมแรก-เฟรมสุดท้าย",
+        "i2v": "รูปภาพเป็นวิดีโอ",
+        "t2v": "ข้อความเป็นวิดีโอ"
+      },
+      "steps": {
+        "edit": {
+          "1": "อัปโหลดวิดีโออ้างอิงสั้นๆ",
+          "2": "คุณสามารถเลือกเพิ่มรูปภาพองค์ประกอบได้สูงสุด 4 รูปเพื่อให้อักขระ/สไตล์สอดคล้องกัน",
+          "3": "อธิบายสิ่งที่ต้องเปลี่ยนแปลง (และสิ่งที่ต้องเก็บ) ในพรอมต์ จากนั้นจึงสร้าง"
+        },
+        "flf": {
+          "1": "อัปโหลดเฟรมเริ่มต้นและเฟรมสิ้นสุด",
+          "2": "อธิบายการเปลี่ยนแปลงที่คุณต้องการ",
+          "3": "สร้างเพื่อสร้างการเปลี่ยนแปลงที่ราบรื่น"
+        },
+        "i2v": {
+          "1": "อัปโหลดภาพอ้างอิง",
+          "2": "อธิบายการเคลื่อนไหว กล้อง และสไตล์",
+          "3": "เลือกอัตราส่วน/ระยะเวลาและสร้าง"
+        },
+        "t2v": {
+          "1": "อธิบายฉากของคุณ (ตัวแบบ กล้อง การจัดแสง สไตล์)",
+          "2": "เลือกอัตราส่วน/ระยะเวลา และเพิ่มข้อความแจ้งเชิงลบหรือไม่ก็ได้",
+          "3": "สร้างและทำซ้ำด้วยการเปลี่ยนแปลงเล็กๆ น้อยๆ"
+        }
+      },
+      "tip": "เคล็ดลับ: เฉพาะเจาะจง บอกโมเดลว่าอะไรจะต้องเหมือนเดิม (ตัวตน โลโก้ องค์ประกอบ)",
+      "templates": {
+        "title": "ค่าที่ตั้งล่วงหน้า",
+        "subtitle": "เลือกพรีเซ็ตแบบคลาสสิกและสร้างได้เร็วขึ้น",
+        "use": "ใช้",
+        "clear": "ชัดเจน",
+        "prev": "ค่าที่ตั้งล่วงหน้าก่อนหน้า",
+        "next": "ค่าที่ตั้งล่วงหน้าถัดไป",
+        "edit": {
+          "relight": {
+            "title": "แสงสว่างและบรรยากาศ",
+            "description": "เปลี่ยนเวลาของวันและแสงแบบภาพยนตร์"
+          },
+          "grade": {
+            "title": "เกรดภาพยนตร์",
+            "description": "เกรด Teal-orange + เนื้อฟิล์ม คงความเคลื่อนไหวและเอกลักษณ์"
+          },
+          "weather": {
+            "title": "การเปลี่ยนแปลงสภาพอากาศ",
+            "description": "เพิ่มฝน/หมอกโดยยังคงรักษาเอกลักษณ์"
+          },
+          "anime": {
+            "title": "อะนิเมะรีสไตล์",
+            "description": "รูปลักษณ์แบบอนิเมะโดยยังคงรักษาเอกลักษณ์และการเคลื่อนไหวเอาไว้"
+          },
+          "background": {
+            "title": "แทนที่พื้นหลัง",
+            "description": "สลับพื้นหลังโดยยังคงรักษาวัตถุไว้"
+          },
+          "lux": {
+            "title": "น้ำยาขัดเงาระดับพรีเมี่ยม",
+            "description": "สะอาดขึ้น นุ่มนวลขึ้น และให้ความรู้สึกเชิงพาณิชย์ระดับพรีเมียมยิ่งขึ้น"
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "กลางวัน → กลางคืน",
+            "description": "การเปลี่ยนแสง/เวลาอย่างราบรื่นด้วยการจัดเฟรมที่สม่ำเสมอ"
+          },
+          "sketchToRender": {
+            "title": "ร่าง → เรนเดอร์",
+            "description": "เปิดเผยรายละเอียดทีละน้อยตั้งแต่แบบร่างไปจนถึงการเรนเดอร์ขั้นสุดท้าย"
+          },
+          "beforeAfter": {
+            "title": "ก่อน/หลัง เผย.",
+            "description": "การเปลี่ยนแปลงอย่างมีรสนิยมด้วยการเคลื่อนไหวที่ละเอียดอ่อน"
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "ภาพชีวิต",
+            "description": "กะพริบตา + เคลื่อนไหวเบาๆ พร้อมกดเข้าช้าๆ"
+          },
+          "pan": {
+            "title": "กระทะพารัลแลกซ์",
+            "description": "การแพนแบบภาพยนตร์ที่มีความลึกและภาพเบลอจากการเคลื่อนไหว"
+          },
+          "product": {
+            "title": "ปั่นสินค้า",
+            "description": "ลุคผลิตภัณฑ์สตูดิโอพร้อมไฮไลท์มันวาว"
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "โฆษณาพรีเมียม 8s",
+            "description": "ภาพเชิงพาณิชย์ระดับไฮเอนด์ที่สะอาดตา"
+          },
+          "establish": {
+            "title": "การสร้างช็อต",
+            "description": "ช่วงแนะนำภาพยนตร์แบบกว้างสำหรับโลก/ฉาก"
+          },
+          "anime": {
+            "title": "เปิดอนิเมะ",
+            "description": "ภาพสไตล์การเปิดอะนิเมะที่มีสไตล์"
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "รูปภาพเป็นวิดีโอต้องมีรูปภาพอ้างอิง",
+        "i2vDescription": "โปรดอัปโหลดรูปภาพอ้างอิง หรือสลับไปยังโมเดลข้อความเป็นวิดีโอ",
+        "v2vTitle": "วิดีโอเป็นวิดีโอต้องมีวิดีโออ้างอิง",
+        "v2vDescription": "โปรดอัปโหลดวิดีโออ้างอิง หรือสลับไปยังโมเดลข้อความเป็นวิดีโอ"
+      },
+      "costLabel": "ค่าใช้จ่าย:",
+      "balanceLabel": "ยอดคงเหลือ:",
+      "freeUnlimited": "ฟรี (ไม่จำกัด)",
+      "credits": "เครดิต",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast เป็นโมเดล Luxury และไม่รวมในสิทธิ์ใช้ฟรีของ Unlimited ต้องชำระเงินเพิ่ม",
+        "veo31": "VEO 3.1 เป็นโมเดล Luxury และไม่รวมในสิทธิ์ใช้ฟรีของ Unlimited ต้องชำระเงินเพิ่ม",
+        "veo3": "VEO3 เป็นโมเดล Luxury และไม่รวมในสิทธิ์ใช้ฟรีของ Unlimited ต้องชำระเงินเพิ่ม",
+        "sora2Pro": "Sora-2 Pro เป็นโมเดล Luxury และไม่รวมในสิทธิ์ใช้ฟรีของ Unlimited ต้องชำระเงินเพิ่ม"
+      },
+      "gettingCredits": "กำลังดึงเครดิต...",
+      "getBonusCredits": "รับ {amount} เครดิต",
+      "submitting": "กำลังส่ง...",
+      "loadingModels": "กำลังโหลดโมเดล...",
+      "uploadingAsset": "กำลังอัปโหลดไฟล์...",
+      "uploadingImages": "กำลังอัปโหลดรูปภาพ...",
+      "claimingCredits": "กำลังรับเครดิต...",
+      "getMoreCredits": "รับเครดิตเพิ่ม",
+      "generateVideo": "สร้างวิดีโอ"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "เผยแพร่ไม่สำเร็จ",
+        "missingTitleDescription": "กรุณาใส่ชื่อวิดีโอของคุณ",
+        "processingTitle": "กำลังประมวลผล",
+        "processingDescription": "กำลังเตรียมเผยแพร่วิดีโอของคุณ...",
+        "successTitle": "เผยแพร่สำเร็จ",
+        "successDescription": "วิดีโอของคุณถูกแชร์ไปยังคอมมูนิตี้แล้ว",
+        "failedTitle": "เผยแพร่ไม่สำเร็จ",
+        "failedDescription": "โปรดตรวจสอบการเชื่อมต่อเครือข่ายหรือทดลองใหม่ภายหลัง"
+      },
+      "successTitle": "เผยแพร่สำเร็จ!",
+      "successDescription": "ผลงานของคุณพร้อมให้ชมในคอมมูนิตี้แล้ว",
+      "publishingTitle": "กำลังเผยแพร่...",
+      "publishingDescriptionDesktop": "เรากำลังเตรียมวิดีโอของคุณให้คอมมูนิตี้ได้ชม...",
+      "publishingDescriptionMobile": "กำลังเตรียมวิดีโอ...",
+      "progressComplete": "เสร็จสิ้น {progress}%",
+      "title": "แชร์ไปยังคอมมูนิตี้",
+      "description": "แชร์ผลงานของคุณให้โลกได้เห็น",
+      "benefits": {
+        "getLikes": "รับไลก์",
+        "buildCommunityLong": "สร้างคอมมูนิตี้",
+        "buildCommunityShort": "คอมมูนิตี้",
+        "inspireLong": "สร้างแรงบันดาลใจ",
+        "inspireShort": "แรงบันดาลใจ",
+        "earnLong": "รับ +{amount} เครดิต",
+        "earnShort": "+{amount} เครดิต"
+      },
+      "videoTitle": "ชื่อวิดีโอ",
+      "videoTitlePlaceholder": "ตั้งชื่อที่น่าสนใจให้ผลงานของคุณ...",
+      "videoTitleHelperDesktop": "ชื่อที่ดีจะดึงดูดผู้ชมได้มากขึ้น",
+      "videoTitleHelperMobile": "ชื่อที่ดีช่วยดึงดูดผู้ชม",
+      "descriptionLabel": "คำอธิบาย",
+      "optional": "ไม่บังคับ",
+      "descriptionPlaceholder": "บอกเล่าเกี่ยวกับผลงานของคุณให้คอมมูนิตี้รู้...",
+      "descriptionHelper": "แชร์กระบวนการสร้างสรรค์ของคุณ",
+      "cancel": "ยกเลิก",
+      "publish": "เผยแพร่"
+    },
+    "history": {
+      "title": "ประวัติศาสตร์",
+      "refresh": "รีเฟรช",
+      "view": {
+        "one": "แถวละ 1 ตัว",
+        "three": "3 ต่อแถว",
+        "nine": "9 ต่อแถว"
+      },
+      "filterPlaceholder": "กรอง",
+      "empty": "ไม่พบงานสถานะ {status}",
+      "status": {
+        "all": "ทั้งหมด",
+        "pending": "รอดำเนินการ",
+        "queued": "เข้าคิว",
+        "processing": "กำลังประมวลผล",
+        "completed": "เสร็จสิ้น",
+        "failed": "ล้มเหลว",
+        "canceled": "ยกเลิกแล้ว"
+      }
+    },
+    "effectSelector": {
+      "loading": "กำลังโหลดเอฟเฟกต์...",
+      "defaultDescription": "เพิ่มเอฟเฟกต์พิเศษให้วิดีโอของคุณ",
+      "ctaTitle": "เลือกเอฟเฟกต์",
+      "ctaDescription": "คลิกเพื่อเลือกเอฟเฟกต์วิดีโอ",
+      "modalTitle": "เลือกเอฟเฟกต์",
+      "close": "ปิดตัวเลือกเอฟเฟกต์"
+    },
+    "modelSelectorModal": {
+      "title": "เลือกโมเดล",
+      "description": "เลือกโมเดลสำหรับโปรเจกต์ของคุณ",
+      "close": "ปิดตัวเลือกโมเดล",
+      "loadingMore": "กำลังโหลดโมเดลเพิ่มเติม...",
+      "allLoaded": "โหลดโมเดลทั้งหมดแล้ว",
+      "noModelsFound": "ไม่พบโมเดล"
+    },
+    "modelSearch": {
+      "placeholder": "ค้นหาโมเดลตามชื่อ ประเภท หรือฟีเจอร์...",
+      "clear": "ล้างการค้นหา",
+      "searching": "กำลังค้นหา...",
+      "foundModels": "พบ {count} โมเดล",
+      "modelsAvailable": "มี {count} โมเดล"
+    },
+    "modelTypeFilter": {
+      "title": "ประเภทโมเดล",
+      "clear": "ล้าง"
+    },
+    "remixLoader": {
+      "successTitle": "โหลดงาน Remix แล้ว",
+      "successDescription": "โหลดพารามิเตอร์วิดีโอจากงานต้นฉบับแล้ว คุณสามารถสร้างได้ทันทีหรือปรับพารามิเตอร์ได้",
+      "errorTitle": "โหลดพารามิเตอร์ไม่สำเร็จ",
+      "errorDescription": "ไม่สามารถโหลดพารามิเตอร์จากงานต้นฉบับได้ โปรดตั้งค่าด้วยตนเอง"
+    },
+    "modelCard": {
+      "select": "เลือก",
+      "credits": "เครดิต",
+      "premium": "พรีเมี่ยม",
+      "luxury": "ความหรูหรา"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "คัดสรรโดย ReelMind",
+      "hot": "ร้อน",
+      "new": "NEW",
+      "select": "เลือก"
+    },
+    "previewPanel": {
+      "generating": "กำลังสร้าง...",
+      "download": "ดาวน์โหลด",
+      "downloading": "กำลังดาวน์โหลด...",
+      "shareToCommunity": "เผยแพร่",
+      "tips": "ทิป: เผยแพร่เพื่อรับเครดิต",
+      "quality": "คุณภาพ",
+      "qualityHd": "เอชดี",
+      "qualityStandard": "มาตรฐาน",
+      "ratio": "อัตราส่วน",
+      "fullscreen": {
+        "enter": "เต็มหน้าจอ",
+        "exit": "ออกจากเต็มหน้าจอ"
+      },
+      "empty": {
+        "title": "ยังไม่มีพรีวิว",
+        "description": "สร้างวิดีโอเพื่อดูพรีวิวที่นี่"
+      },
+      "queue": {
+        "loading": "กำลังโหลดข้อมูลคิว...",
+        "headerProcessing": "กำลังประมวลผล",
+        "headerQueueStatus": "สถานะคิว",
+        "badgePosition": "ลำดับ: {position} จาก {total}",
+        "badgeProcessing": "กำลังประมวลผล",
+        "tasksInQueue": "งานในคิว",
+        "estimatedWait": "เวลารอโดยประมาณ",
+        "elapsedTime": "เวลาที่ผ่านไป",
+        "remainingTime": "เวลาที่เหลือ",
+        "startTime": "เริ่มโดยประมาณ",
+        "completionTime": "เสร็จสิ้นโดยประมาณ"
+      },
+      "time": {
+        "calculating": "กำลังคำนวณ...",
+        "justNow": "เมื่อสักครู่",
+        "lessThanMinute": "ในไม่ถึงหนึ่งนาที",
+        "inMinutes": "ใน {minutes, plural, one {# นาที} other {# นาที}}",
+        "inHours": "ใน {hours, plural, one {# ชั่วโมง} other {# ชั่วโมง}}",
+        "inDays": "ใน {days, plural, one {# วัน} other {# วัน}}",
+        "seconds": "{seconds, plural, one {# วินาที} other {# วินาที}}",
+        "minutesSeconds": "{minutes, plural, one {# นาที} other {# นาที}} {seconds, plural, one {# วินาที} other {# วินาที}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "กำลังโหลดวิดีโอ...",
+      "notFound": "ไม่พบวิดีโอ",
+      "notFoundDescription": "ไม่พบวิดีโอที่ร้องขอหรือไม่พร้อมใช้งานในขณะนี้",
+      "detailsTitle": "รายละเอียด",
+      "videoInfoTitle": "ข้อมูลวิดีโอ",
+      "advancedTitle": "ขั้นสูง",
+      "referenceImagesTitle": "รูปภาพอ้างอิง",
+      "startFrameAlt": "เฟรมเริ่มต้น",
+      "endFrameAlt": "เฟรมสิ้นสุด",
+      "endFrameLabel": "เฟรมสิ้นสุด",
+      "creationDate": "วันที่สร้าง",
+      "fields": {
+        "model": "โมเดล",
+        "generationType": "ประเภทการสร้าง",
+        "resolution": "ความละเอียด",
+        "aspectRatio": "อัตราส่วนภาพ",
+        "duration": "ความยาว",
+        "creativityLevel": "ความสร้างสรรค์",
+        "effect": "เอฟเฟกต์",
+        "samplingSteps": "จำนวนสเต็ป",
+        "randomSeed": "Seed แบบสุ่ม",
+        "movementAmplitude": "แอมพลิจูดการเคลื่อนไหว",
+        "backgroundMusic": "เพลงพื้นหลัง",
+        "negativePrompt": "พรอมต์เชิงลบ"
+      },
+      "actions": {
+        "close": "ปิด",
+        "closeModalTitle": "ปิดหน้าต่าง",
+        "remix": "รีมิกซ์",
+        "remixTitle": "Remix ด้วยพารามิเตอร์นี้",
+        "download": "ดาวน์โหลด",
+        "downloadTitle": "ดาวน์โหลดวิดีโอนี้",
+        "downloading": "กำลังดาวน์โหลด...",
+        "shareTitle": "แชร์วิดีโอนี้"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "ลบงาน",
+      "description": "การทำรายการนี้ไม่สามารถยกเลิกได้",
+      "cancel": "ยกเลิก",
+      "confirm": "ลบ",
+      "deleting": "กำลังลบ..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "รูปภาพอ้างอิง"
+      },
+      "pending": {
+        "pending": "รอดำเนินการ...",
+        "queued": "เข้าคิว...",
+        "waitingInQueue": "กำลังรอในคิว..."
+      },
+      "processing": {
+        "phase1": "เฟส 1",
+        "phase2": "เฟส 2",
+        "phase3": "เฟส 3",
+        "final": "สุดท้าย",
+        "initializing": "กำลังเริ่มต้น",
+        "processing": "กำลังประมวลผล",
+        "rendering": "กำลังเรนเดอร์",
+        "finalizing": "กำลังสรุปผล",
+        "stuckMessage": "งานนี้ดูเหมือนจะค้าง คุณสามารถลบได้",
+        "deleteTitle": "ลบงานนี้",
+        "deleteAria": "ลบ"
+      },
+      "failed": {
+        "title": "สร้างไม่สำเร็จ",
+        "tryAgain": "ลองอีกครั้ง",
+        "tryAgainTitle": "ลองอีกครั้งด้วยพรอมต์นี้",
+        "deleteTitle": "ลบงานนี้"
+      },
+      "completed": {
+        "recreateDesktop": "สร้างใหม่",
+        "remixMobile": "รีมิกซ์",
+        "remixTitle": "สร้างวิดีโอใหม่ด้วยพรอมต์นี้",
+        "publish": "เผยแพร่",
+        "publishTitle": "เผยแพร่ไปยังคอมมูนิตี้และรับ {amount} เครดิต",
+        "creditsBonusDesktop": "โบนัส {amount} เครดิต",
+        "creditsBonusMobile": "+{amount}",
+        "share": "แชร์",
+        "shareTitle": "แชร์วิดีโอนี้",
+        "downloadTitle": "ดาวน์โหลดวิดีโอนี้",
+        "downloading": "กำลังดาวน์โหลด...",
+        "deleteTitle": "ลบงานนี้"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "เลโก้ - ReelMind",
+      "description": "สร้างและรีมิกซ์วิดีโอด้วยเวิร์กโฟลว์ Lego บน ReelMind"
+    },
+    "mobile": {
+      "backToBuilder": "กลับไปที่ Builder",
+      "history": "ประวัติ"
+    },
+    "badges": {
+      "new": "ใหม่"
+    },
+    "actions": {
+      "delete": "ลบ",
+      "select": "เลือก",
+      "selected": "เลือกแล้ว",
+      "download": "ดาวน์โหลด",
+      "downloading": "กำลังดาวน์โหลด...",
+      "deleting": "กำลังลบ...",
+      "share": "แชร์",
+      "close": "ปิด"
+    },
+    "status": {
+      "pending": "รอดำเนินการ",
+      "processing": "กำลังประมวลผล",
+      "failed": "ล้มเหลว",
+      "completed": "เสร็จสิ้น",
+      "generating": "กำลังสร้าง",
+      "cancelled": "ยกเลิกแล้ว"
+    },
+    "deleteConfirmDialog": {
+      "title": "ลบงาน",
+      "description": "การทำรายการนี้ไม่สามารถยกเลิกได้",
+      "cancel": "ยกเลิก",
+      "confirm": "ลบ",
+      "deleting": "กำลังลบ..."
+    },
+    "imageViewer": {
+      "close": "ปิด",
+      "previous": "ก่อนหน้า",
+      "next": "ถัดไป",
+      "view": "ดู {index}"
+    },
+    "historyList": {
+      "title": "เครื่องมือสร้างภาพ AI Lego",
+      "generatingFirstImage": "กำลังสร้างภาพแรกของคุณ...",
+      "loadFailed": "โหลดประวัติไม่สำเร็จ โปรดลองอีกครั้ง",
+      "emptyDescription": "สร้างภาพที่สวยงามด้วยการอธิบายไอเดียและเพิ่มทรัพยากรเพื่อช่วยนำทาง AI",
+      "loadingMore": "กำลังโหลดภาพในประวัติ...",
+      "scrollForMore": "เลื่อนเพื่อดูเพิ่มเติม...",
+      "allLoaded": "โหลดภาพทั้งหมด {count} ภาพแล้ว"
+    },
+    "sidebar": {
+      "addCard": "เพิ่มการ์ดใหม่",
+      "expand": "ขยายแถบด้านข้าง",
+      "sections": {
+        "theme": "ธีม",
+        "scene": "ฉาก",
+        "style": "สไตล์"
+      }
+    },
+    "card": {
+      "placeholder": "อธิบาย {section}...",
+      "imageAlt": "อ้างอิง {section}",
+      "options": {
+        "image": "รูปภาพ",
+        "text": "ข้อความ"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "อ้างอิง {index}",
+      "errors": {
+        "invalidType": "โปรดเลือกไฟล์รูปภาพ",
+        "tooLarge": "ขนาดรูปภาพต้องไม่เกิน {maxSizeMb}MB",
+        "uploadFailed": "อัปโหลดรูปภาพไม่สำเร็จ โปรดลองอีกครั้ง"
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "เลื่อนไปด้านล่าง",
+      "collapsedPlaceholder": "อธิบายรูปภาพของคุณ...",
+      "close": "ปิด"
+    },
+    "resultPreview": {
+      "previewTitle": "พรีวิว",
+      "previewDescription": "รูปภาพที่สร้างจะปรากฏที่นี่",
+      "generatedImageAlt": "รูปภาพที่สร้าง",
+      "emptyPlaceholder": "ผลงานของคุณจะปรากฏที่นี่",
+      "dialogTitle": "รูปภาพที่คุณสร้าง",
+      "dialogDescription": "นี่คือรูปภาพที่เราสร้างตามคำอธิบายและทรัพยากรของคุณ"
+    },
+    "resourceUploader": {
+      "uploadImage": "อัปโหลดรูปภาพ",
+      "imageFallbackAlt": "รูปภาพ",
+      "imageFallbackLabel": "รูปภาพ",
+      "removeImage": "ลบ {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "แสดงแถบด้านข้าง",
+      "hideSidebar": "ซ่อนแถบด้านข้าง",
+      "hideSidebarShort": "ซ่อนแถบด้านข้าง",
+      "addImage": "เพิ่มรูปภาพ",
+      "addImageWithLimit": "เพิ่มรูปภาพ ({current}/{max})",
+      "promptPlaceholder": "สร้างหรือแก้ไขรูปภาพของคุณ...",
+      "model": "โมเดล",
+      "selectModel": "เลือกโมเดล",
+      "loading": "กำลังโหลด...",
+      "loadingModels": "กำลังโหลดโมเดล...",
+      "noModelsAvailable": "ไม่มีโมเดลให้ใช้",
+      "noModelsMatchFilters": "ไม่มีโมเดลที่ตรงกับตัวกรอง",
+      "modelLabel": "โมเดล: {name}",
+      "aspectRatio": "อัตราส่วนภาพ",
+      "ratioLabel": "อัตราส่วน: {value}",
+      "imagesLabel": "รูปภาพ: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 จะได้รูปภาพเดียว",
+        "hint": "จำนวนรูปภาพที่จะสร้าง",
+        "numberOfImages": "จำนวนรูปภาพ"
+      },
+      "advanced": {
+        "aria": "การตั้งค่าขั้นสูง",
+        "label": "ขั้นสูง",
+        "title": "การตั้งค่าขั้นสูง",
+        "negativePrompt": {
+          "label": "พรอมต์เชิงลบ",
+          "placeholder": "สิ่งที่คุณต้องการตัดออก...",
+          "aria": "พรอมต์เชิงลบ",
+          "title": "ระบุสิ่งที่ต้องการตัดออก"
+        },
+        "seed": {
+          "label": "เมล็ดพันธุ์",
+          "random": "สุ่ม",
+          "randomTitle": "สร้าง seed แบบสุ่ม",
+          "placeholder": "Seed แบบสุ่ม (ไม่บังคับ)",
+          "aria": "ค่า seed",
+          "title": "ตั้งค่า seed เพื่อให้ได้ผลลัพธ์ที่ทำซ้ำได้"
+        }
+      },
+      "resolution": "ความละเอียด",
+      "resolutionLabel": "ความละเอียด: {value}",
+      "resolutionPopoverTitle": "ความละเอียด (Nano Banana 2)",
+      "generating": "กำลังสร้าง...",
+      "generate": "สร้าง",
+      "limitReached": "ถึงขีดจำกัดแล้ว",
+      "fluxLimitTooltip": "โมเดล FLUX จำกัด {limit} ครั้งสำหรับผู้ที่ไม่เป็นสมาชิก",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 เป็นโมเดลพรีเมียมและไม่รวมในสิทธิ์ใช้ฟรีของ Unlimited ระบบจะหักเครดิตต่อรูปภาพที่สร้าง",
+      "unlimited": {
+        "fast": "เร็ว",
+        "slow": "ช้า",
+        "fastMode": "โหมดเร็ว",
+        "slowMode": "โหมดช้า",
+        "monthlyUsage": "การใช้งานรายเดือน: {used}/{limit}",
+        "rateLimit": "จำกัดความถี่: {limit} รูป/5 นาที",
+        "switchedToSlow": "คุณถึงขีดจำกัดรายเดือนแล้ว เปลี่ยนเป็นโหมดช้า"
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "รูปภาพที่สร้าง",
+      "failedTitle": "สร้างไม่สำเร็จ",
+      "errors": {
+        "unableToComplete": "ไม่สามารถสร้างให้เสร็จสมบูรณ์ได้"
+      },
+      "actions": {
+        "deleteTitle": "ลบงาน",
+        "viewFullSize": "คลิกเพื่อดูขนาดเต็ม",
+        "preview": "พรีวิว {index}",
+        "retryTitle": "ลองอีกครั้ง - ใช้พารามิเตอร์เดิม",
+        "retry": "ลองอีกครั้ง",
+        "remixTitle": "Remix - ใช้พารามิเตอร์เดิม",
+        "remix": "รีมิกซ์",
+        "makeVideoTitle": "ทำวิดีโอ",
+        "makeVideo": "สร้างวิดีโอ"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "เริ่มดาวน์โหลดแล้ว",
+      "downloadStartedMessage": "เริ่มดาวน์โหลดวิดีโอแล้ว",
+      "downloadFailedTitle": "ดาวน์โหลดไม่สำเร็จ",
+      "downloadFailedMessage": "ไม่สามารถดาวน์โหลดวิดีโอได้",
+      "shareCopied": "คัดลอกลิงก์แชร์ไปยังคลิปบอร์ดแล้ว",
+      "shareCopyFailed": "คัดลอกลิงก์แชร์ไม่สำเร็จ"
+    },
+    "empty": {
+      "title": "วิดีโอไม่พร้อมใช้งาน",
+      "description": "วิดีโอนี้ไม่พร้อมสำหรับการแชร์ หรือไฟล์วิดีโอหายไป",
+      "ctaCreate": "สร้างวิดีโอของคุณเอง"
+    },
+    "notFound": {
+      "title": "ไม่พบวิดีโอ",
+      "description": "วิดีโอที่คุณกำลังหาไม่มีอยู่หรือไม่พร้อมสำหรับการแชร์อีกต่อไป",
+      "ctaCreate": "สร้างวิดีโอของคุณเอง",
+      "ctaHome": "กลับไปหน้าแรก"
+    },
+    "details": {
+      "creationDate": "วันที่สร้าง"
+    },
+    "actions": {
+      "remix": "รีมิกซ์",
+      "remixTitle": "สร้างวิดีโอใหม่ด้วยพรอมต์นี้",
+      "download": "ดาวน์โหลด",
+      "downloadTitle": "ดาวน์โหลดวิดีโอนี้",
+      "downloading": "กำลังดาวน์โหลด...",
+      "downloadingTitle": "กำลังดาวน์โหลด...",
+      "shareTitle": "แชร์วิดีโอนี้"
+    },
+    "meta": {
+      "promptFallback": "วิดีโอที่สร้างด้วย AI",
+      "watchDescription": "รับชมวิดีโอที่สร้างด้วย AI นี้: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "เพลง",
+      "description": "สร้างเพลง เอฟเฟกต์เสียง และเสียงพูดด้วย AI"
+    },
+    "page": {
+      "loadingSoundStudio": "กำลังโหลด Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "เพลง",
+      "soundEffect": "เอฟเฟกต์เสียง",
+      "textToSpeech": "ข้อความเป็นเสียงพูด"
+    },
+    "controlPanel": {
+      "title": "ควบคุม",
+      "reset": "รีเซ็ต",
+      "modelLabel": {
+        "tts": "โมเดล TTS",
+        "sound": "โมเดลเสียง"
+      },
+      "modelPlaceholder": "เลือกโมเดล",
+      "noModelsAvailableTitle": "ไม่มีโมเดลให้ใช้",
+      "noModelsFound": {
+        "tts": "ไม่พบโมเดล TTS",
+        "soundEffect": "ไม่พบโมเดลเอฟเฟกต์เสียง"
+      },
+      "tts": {
+        "stability": "ความเสถียร",
+        "similarityBoost": "ความเหมือน",
+        "styleExaggeration": "ความเกินจริงของสไตล์",
+        "speed": "ความเร็ว"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "อัปโหลดเสียงอ้างอิง",
+      "dropHere": "วางที่นี่",
+      "supportedFormats": "รูปแบบที่รองรับ: MP3, WAV, M4A, AAC, OGG",
+      "tip": "ทิป: ใช้เสียงที่ชัดเจนอย่างน้อย 15 วินาทีเพื่อผลลัพธ์ที่ดีกว่า",
+      "uploadingProgress": "กำลังอัปโหลด... {progress}%",
+      "toast": {
+        "uploadSuccess": "อัปโหลดเสร็จสิ้น",
+        "uploadFailed": "อัปโหลดไม่สำเร็จ"
+      },
+      "errors": {
+        "selectAudioFile": "โปรดเลือกไฟล์เสียง",
+        "invalidAudioFile": "ไฟล์เสียงไม่ถูกต้อง",
+        "fileTooLarge": "ไฟล์ใหญ่เกินไป (สูงสุด 50MB)",
+        "durationTooShort": "เสียงต้องยาวอย่างน้อย 15 วินาที"
+      }
+    },
+    "audioPlayer": {
+      "play": "เล่น",
+      "pause": "หยุดชั่วคราว"
+    },
+    "voiceSelector": {
+      "label": "เสียง",
+      "selectVoiceTitle": "เลือกเสียง",
+      "gender": {
+        "all": "ทั้งหมด",
+        "male": "ชาย",
+        "female": "หญิง"
+      },
+      "noVoicesAvailable": "ไม่มีเสียงให้ใช้",
+      "noVoicesFound": "ไม่พบเสียง",
+      "bestFor": "เหมาะที่สุดสำหรับ {useCase}",
+      "clickToSelectVoice": "คลิกเพื่อเลือกเสียง"
+    },
+    "historyPanel": {
+      "title": "ประวัติ",
+      "empty": {
+        "title": "ยังไม่มีการสร้าง",
+        "description": "ประวัติการสร้างของคุณจะแสดงที่นี่"
+      },
+      "loading": "กำลังโหลด...",
+      "loadMore": "โหลดเพิ่ม"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "กำลังประมวลผล",
+        "failed": "ล้มเหลว",
+        "completed": "เสร็จสิ้น"
+      },
+      "actions": {
+        "copy": "คัดลอก",
+        "download": "ดาวน์โหลด"
+      },
+      "time": {
+        "now": "ตอนนี้",
+        "minutesAgo": "{minutes} นาทีที่แล้ว",
+        "hoursAgo": "{hours} ชั่วโมงที่แล้ว"
+      },
+      "unknownModel": "โมเดลไม่ทราบชื่อ",
+      "errors": {
+        "unknown": "ข้อผิดพลาดที่ไม่ทราบสาเหตุ"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "สตูดิโอเสียง"
+      },
+      "menu": {
+        "open": "เปิดเมนู",
+        "title": "เมนู",
+        "voiceGeneration": "สร้าง",
+        "settings": "การตั้งค่า",
+        "history": "ประวัติ"
+      },
+      "tabs": {
+        "generate": "สร้าง",
+        "settings": "การตั้งค่า",
+        "history": "ประวัติ"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "พิมพ์ข้อความเพื่อสร้างเสียงพูด...",
+        "soundEffect": "อธิบายเอฟเฟกต์เสียงที่คุณต้องการสร้าง..."
+      },
+      "generateSpeech": "สร้างเสียงพูด",
+      "generateSound": "สร้างเสียง",
+      "generating": "กำลังสร้าง...",
+      "loadingExamples": "กำลังโหลดตัวอย่าง...",
+      "loadingMusicStyles": "กำลังโหลดสไตล์เพลง...",
+      "rightTabs": {
+        "examples": "ตัวอย่าง",
+        "history": "ประวัติ"
+      },
+      "history": {
+        "generationCount": "{count} การสร้าง"
+      },
+      "price": {
+        "placeholder": "ค่าใช้จ่ายโดยประมาณ",
+        "calculating": "กำลังคำนวณ...",
+        "credits": "{credits} เครดิต"
+      },
+      "musicHistory": {
+        "title": "ประวัติเพลง",
+        "empty": {
+          "title": "ยังไม่มีการสร้างเพลง",
+          "description": "ประวัติเพลงของคุณจะแสดงที่นี่"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "ประวัติเอฟเฟกต์เสียง",
+        "empty": {
+          "title": "ยังไม่มีการสร้างเอฟเฟกต์เสียง",
+          "description": "ประวัติเอฟเฟกต์เสียงของคุณจะแสดงที่นี่"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "เนื้อเพลง",
+      "lyricsPlaceholder": "เนื้อเพลงพร้อมรูปแบบเพิ่มเติม คุณสามารถขึ้นบรรทัดใหม่เพื่อแยกแต่ละบรรทัดได้ และใช้ขึ้นบรรทัดใหม่สองครั้งเพื่อเพิ่มช่วงพักระหว่างบรรทัด คุณสามารถใส่เครื่องหมาย ## ที่ต้นและท้ายเนื้อเพลงเพื่อเพิ่มดนตรีประกอบ สูงสุด 600 ตัวอักษร",
+      "useReferenceAudio": {
+        "label": "ใช้เสียงอ้างอิง",
+        "description": "ใช้เสียงอ้างอิงเพื่อช่วยกำหนดสไตล์ของ AI"
+      },
+      "referenceAudio": {
+        "title": "เสียงอ้างอิง",
+        "description": "อัปโหลดเพลงอ้างอิงที่มีทั้งดนตรีและเสียงร้อง"
+      },
+      "musicStyle": {
+        "title": "สไตล์เพลง",
+        "description": "อธิบายสไตล์และอารมณ์ของเพลงที่คุณต้องการสร้าง",
+        "placeholder": "เช่น R&B, energetic, upbeat pop, acoustic folk, electronic dance...",
+        "tooShort": "คำอธิบายสไตล์เพลงต้องยาวอย่างน้อย 10 ตัวอักษร"
+      },
+      "generating": "กำลังสร้าง...",
+      "generateMusicWithCredits": "สร้างเพลง ({credits} เครดิต)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "ความยาว",
+        "description": "ตั้งค่าความยาวของเอฟเฟกต์เสียง"
+      },
+      "promptInfluence": {
+        "title": "อิทธิพลของพรอมต์",
+        "description": "ค่ายิ่งสูงยิ่งทำตามพรอมต์มากขึ้น"
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "ติดต่อ",
+      "description": "ส่งข้อเสนอแนะให้ทีม ReelMind"
+    },
+    "header": {
+      "title": "ข้อเสนอแนะด่วน",
+      "description": "เจอบั๊กหรือมีข้อเสนอแนะ? แจ้งให้เราทราบภายใน 30 วินาที"
+    },
+    "card": {
+      "title": "ข้อเสนอแนะด่วน",
+      "subtitle": "เพียง 3 ช่อง ใช้เวลา 30 วินาที"
+    },
+    "submitted": {
+      "title": "ส่งข้อเสนอแนะแล้ว",
+      "description": "ขอบคุณสำหรับข้อเสนอแนะ เราจะตรวจสอบและติดต่อกลับหากจำเป็น"
+    },
+    "auth": {
+      "required": "โปรดเข้าสู่ระบบเพื่อส่งข้อเสนอแนะ"
+    },
+    "form": {
+      "errors": {
+        "unknown": "เกิดข้อผิดพลาด โปรดลองอีกครั้ง"
+      },
+      "type": {
+        "label": "ประเภท",
+        "placeholder": "เลือกประเภทข้อเสนอแนะ",
+        "options": {
+          "bug": "รายงานบั๊ก",
+          "suggestion": "ข้อเสนอแนะ",
+          "other": "อื่นๆ"
+        },
+        "errors": {
+          "required": "ต้องเลือกประเภทข้อเสนอแนะ",
+          "invalid": "ประเภทข้อเสนอแนะไม่ถูกต้อง"
+        }
+      },
+      "subject": {
+        "label": "หัวข้อ *",
+        "placeholder": "ปัญหาหรือข้อเสนอแนะคืออะไร?",
+        "errors": {
+          "required": "ต้องใส่หัวข้อ",
+          "min": "หัวข้อต้องมีอย่างน้อย {min} ตัวอักษร",
+          "max": "หัวข้อต้องน้อยกว่า {max} ตัวอักษร",
+          "invalid": "หัวข้อมีเนื้อหาไม่ถูกต้อง"
+        }
+      },
+      "message": {
+        "label": "รายละเอียด *",
+        "placeholder": "บอกเราเพิ่มเติม...",
+        "errors": {
+          "required": "ต้องใส่รายละเอียด",
+          "min": "รายละเอียดต้องมีอย่างน้อย {min} ตัวอักษร",
+          "max": "รายละเอียดต้องน้อยกว่า {max} ตัวอักษร",
+          "invalid": "รายละเอียดมีเนื้อหาไม่ถูกต้อง"
+        }
+      }
+    },
+    "actions": {
+      "submitting": "กำลังส่ง...",
+      "submit": "ส่งข้อเสนอแนะ"
+    },
+    "toast": {
+      "submitSuccess": "ส่งข้อเสนอแนะสำเร็จ!",
+      "submitFailed": "ส่งข้อเสนอแนะไม่สำเร็จ โปรดลองอีกครั้ง",
+      "authRequired": "โปรดเข้าสู่ระบบเพื่อส่งข้อเสนอแนะ",
+      "rateLimited": "ส่งมากเกินไป โปรดลองใหม่ภายหลัง",
+      "rateLimitedWithRetryAfter": "โปรดรอ {seconds}s ก่อนส่งอีกครั้ง",
+      "fixErrors": "โปรดแก้ไขข้อผิดพลาดในแบบฟอร์ม",
+      "checkInput": "โปรดตรวจสอบข้อมูลและลองอีกครั้ง"
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "โพสต์",
+      "following": "กำลังติดตาม",
+      "followingShort": "ติดตาม",
+      "followers": "ผู้ติดตาม",
+      "followersShort": "แฟน",
+      "favorites": "รายการโปรด",
+      "favoritesShort": "โปรด"
+    },
+    "actions": {
+      "save": "บันทึก",
+      "saving": "กำลังบันทึก...",
+      "cancel": "ยกเลิก",
+      "delete": "ลบ",
+      "retry": "ลองอีกครั้ง",
+      "editProfile": "แก้ไขโปรไฟล์",
+      "signOut": "ออกจากระบบ",
+      "follow": "ติดตาม",
+      "unfollow": "เลิกติดตาม",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "ครีเอเตอร์",
+      "avatarAltFallback": "ผู้ใช้",
+      "initialFallback": "คุณ",
+      "edit": {
+        "displayNamePlaceholder": "ชื่อที่แสดง",
+        "bioPlaceholder": "แนะนำตัว"
+      },
+      "stats": {
+        "following": "กำลังติดตาม",
+        "followers": "ผู้ติดตาม"
+      },
+      "joined": "เข้าร่วม {date}",
+      "joinedFallback": "มี.ค. 2025"
+    },
+    "time": {
+      "now": "เมื่อสักครู่",
+      "minutesAgo": "{minutes} นาทีที่แล้ว",
+      "hoursAgo": "{hours} ชั่วโมงที่แล้ว",
+      "daysAgo": "{days} วันที่แล้ว"
+    },
+    "toast": {
+      "loginFirst": "โปรดเข้าสู่ระบบก่อน",
+      "cannotFollowYourself": "ไม่สามารถติดตามตัวเองได้",
+      "followed": "ติดตามสำเร็จ",
+      "unfollowed": "เลิกติดตามแล้ว",
+      "operationFailed": "ดำเนินการไม่สำเร็จ"
+    },
+    "posts": {
+      "loadingMore": "กำลังโหลดโพสต์เพิ่มเติม...",
+      "error": {
+        "failedToLoad": "โหลดโพสต์ไม่สำเร็จ"
+      },
+      "empty": {
+        "title": "ยังไม่มีโพสต์",
+        "description": "ผู้ใช้นี้ยังไม่ได้แชร์โพสต์ใดๆ กลับมาดูใหม่ภายหลัง!"
+      },
+      "deleteDialog": {
+        "title": "ลบโพสต์",
+        "description": "การทำรายการนี้จะซ่อนโพสต์จากโปรไฟล์และฟีดของคุณ และไม่สามารถยกเลิกได้"
+      },
+      "toast": {
+        "deleted": "ลบโพสต์แล้ว",
+        "deleteFailed": "ลบโพสต์ไม่สำเร็จ"
+      }
+    },
+    "favorites": {
+      "loadingMore": "กำลังโหลดรายการโปรดเพิ่มเติม...",
+      "error": {
+        "failedToLoad": "โหลดรายการโปรดไม่สำเร็จ"
+      },
+      "empty": {
+        "title": "ยังไม่มีรายการโปรด",
+        "description": "โพสต์ที่คุณชอบจะปรากฏที่นี่ เริ่มสำรวจและบันทึกรายการโปรดของคุณ!"
+      }
+    },
+    "followers": {
+      "empty": "ยังไม่มีผู้ติดตาม",
+      "error": {
+        "failedToLoad": "โหลดผู้ติดตามไม่สำเร็จ"
+      },
+      "followerSince": "ติดตามตั้งแต่ {time}"
+    },
+    "following": {
+      "empty": "ยังไม่ได้ติดตามใคร",
+      "error": {
+        "failedToLoad": "โหลดรายการกำลังติดตามไม่สำเร็จ"
+      },
+      "followingSince": "ติดตามตั้งแต่ {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "แพ็กเกจสมาชิก - ReelMind",
+      "description": "เข้าร่วมแพ็กเกจสมาชิก ReelMind เพื่อรับเครดิตเพิ่มเติมและฟีเจอร์พรีเมียมสำหรับการสร้างวิดีโอ AI"
+    },
+    "plans": {
+      "hero": {
+        "title": "แพ็กเกจสมาชิก",
+        "subtitle": "ปลดล็อกศักยภาพการสร้างวิดีโอ AI ด้วยแพ็กเกจสมัครสมาชิกที่ยืดหยุ่นของ ReelMind"
+      },
+      "error": {
+        "loadFailed": "ไม่สามารถดึงแพ็กเกจสมาชิกได้ โปรดลองใหม่ภายหลัง"
+      },
+      "names": {
+        "free": "ฟรี",
+        "pro": "โปร",
+        "max": "สูงสุด",
+        "unlimited": "ไม่จำกัด"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "รายปี"
+      },
+      "monthly": {
+        "label": "รายเดือน"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "ลด 70% เดือนแรก",
+        "short": "ลด 70%",
+        "description": "สมาชิกใหม่รับส่วนลด 70% คูปองใช้ได้ 24 ชั่วโมง"
+      },
+      "yearly": {
+        "full": "ฟรี 6 เดือนแรก",
+        "short": "ฟรี 6 เดือน",
+        "description": "สมาชิกแบบรายปีได้ฟรี 6 เดือนแรก เทียบเท่าส่วนลด 50% ของปีแรก"
+      },
+      "percentOff": "ลด {percent}%",
+      "badge": {
+        "preview": "🎁 มี {offer}",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(หลังรับสิทธิ์)"
+    },
+    "pricing": {
+      "perYear": "ต่อปี",
+      "perMonth": "ต่อเดือน",
+      "breakdown": {
+        "originalPrice": "ราคาปกติ:",
+        "discount": "ส่วนลดของคุณ:",
+        "payFirstYear": "คุณจ่าย (ปีแรก):",
+        "firstMonth": "เดือนแรก:"
+      }
+    },
+    "status": {
+      "title": "สถานะสมาชิก",
+      "loading": "กำลังโหลดข้อมูลสมาชิก...",
+      "currentPlan": "แพ็กเกจปัจจุบัน:",
+      "expiresOn": "หมดอายุวันที่:",
+      "unlimitedDescription": "คุณสามารถใช้งานฟีเจอร์การสร้างทั้งหมดได้แบบไม่จำกัดโดยไม่หักเครดิต",
+      "planDescription": "คุณสามารถใช้งานฟีเจอร์และสิทธิประโยชน์ทั้งหมดของแพ็กเกจ {plan}",
+      "noActive": {
+        "title": "คุณยังไม่มีสมาชิกที่ใช้งานอยู่",
+        "subtitle": "สมัครแพ็กเกจด้านล่างเพื่อปลดล็อกฟีเจอร์พรีเมียม"
+      }
+    },
+    "creditsBalance": {
+      "title": "ยอดเครดิต",
+      "loading": "กำลังโหลดข้อมูลเครดิต...",
+      "availableCredits": "เครดิตที่ใช้ได้:",
+      "unlimited": {
+        "video": "สร้างวิดีโอไม่จำกัด",
+        "image": "สร้างรูปภาพไม่จำกัด",
+        "audio": "สร้างเสียงไม่จำกัด"
+      },
+      "estimate": {
+        "videos": "สูงสุด {count} วิดีโอ",
+        "images": "สูงสุด {count} รูปภาพ",
+        "audios": "สูงสุด {count} เสียง"
+      },
+      "cost": {
+        "videos": "วิดีโอ: เริ่ม {credits} เครดิต",
+        "images": "รูปภาพ: เริ่ม {credits} เครดิต",
+        "audios": "เสียง: เริ่ม {credits} เครดิต"
+      }
+    },
+    "credits": {
+      "title": "ซื้อเครดิต",
+      "history": {
+        "toggle": {
+          "show": "แสดงประวัติธุรกรรม",
+          "hide": "ซ่อนประวัติธุรกรรม"
+        }
+      },
+      "card": {
+        "description": "เลือกแพ็กเกจเครดิตเพื่อเพิ่มความสามารถในการสร้างด้วย AI"
+      },
+      "packages": {
+        "basic": {
+          "label": "แพ็กเกจพื้นฐาน"
+        },
+        "standard": {
+          "label": "แพ็กเกจมาตรฐาน"
+        },
+        "premium": {
+          "label": "แพ็กเกจพรีเมียม"
+        },
+        "pro": {
+          "label": "แพ็กเกจอัลตรา"
+        },
+        "bonus": "โบนัส: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "อัตราพื้นฐาน: 1 USD = 100 เครดิต",
+        "buyMoreBonus": "ซื้อมากได้โบนัสมาก!",
+        "neverExpire": "เครดิตไม่มีวันหมดอายุ",
+        "instantDelivery": "ได้รับทันทีหลังชำระเงิน"
+      },
+      "actions": {
+        "processing": "กำลังประมวลผล...",
+        "buyCredits": "ซื้อ {credits} เครดิต"
+      }
+    },
+    "creditsHistory": {
+      "title": "ประวัติธุรกรรม",
+      "subtitle": "ธุรกรรมเครดิตล่าสุดของคุณ",
+      "actions": {
+        "retry": "ลองอีกครั้ง",
+        "loading": "กำลังโหลด...",
+        "loadMore": "โหลดเพิ่ม"
+      },
+      "table": {
+        "date": "วันที่",
+        "type": "ประเภท",
+        "amount": "จำนวน",
+        "status": "สถานะ"
+      },
+      "empty": "ไม่มีประวัติธุรกรรม",
+      "types": {
+        "membershipMonthly": "เครดิตรายเดือนสมาชิก",
+        "membershipInitial": "เครดิตเริ่มต้นสมาชิก",
+        "freeMonthly": "เครดิตรายเดือนฟรี",
+        "purchase": "ซื้อเครดิต",
+        "platformReward": "รางวัลแพลตฟอร์ม",
+        "newUserBonus": "โบนัสผู้ใช้ใหม่",
+        "postReward": "รางวัลโพสต์",
+        "videoPostReward": "รางวัลโพสต์วิดีโอ",
+        "refund": "คืนเงิน",
+        "balanceAdjustment": "ปรับยอดคงเหลือ",
+        "videoGeneration": "สร้างวิดีโอ",
+        "imageGeneration": "สร้างรูปภาพ",
+        "modelTraining": "ฝึกโมเดล",
+        "audioGeneration": "สร้างเสียง",
+        "systemAdjustment": "ปรับระบบ"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}h {m}ม {s}s",
+        "ms": "{m}m {s}s",
+        "s": "{s}ส",
+        "expired": "หมดอายุ"
+      },
+      "toast": {
+        "claimedTitle": "รับคูปองสำเร็จ",
+        "claimedDescription": "เพิ่มคูปองในบัญชีแล้ว ใช้ได้ {hours} ชั่วโมง",
+        "claimFailedTitle": "รับไม่สำเร็จ",
+        "tryAgainLater": "โปรดลองใหม่ภายหลัง",
+        "networkError": "เครือข่ายมีปัญหา โปรดลองใหม่ภายหลัง"
+      }
+    },
+    "couponStatus": {
+      "title": "สถานะคูปอง",
+      "active": {
+        "annualTitle": "ข้อเสนอรายปีกำลังใช้งาน",
+        "couponTitle": "เปิดใช้คูปองแล้ว"
+      },
+      "fields": {
+        "claimed": "รับแล้ว:",
+        "expires": "หมดอายุ:",
+        "timeLeft": "เวลาที่เหลือ:",
+        "usedAt": "ใช้เมื่อ:",
+        "discount": "ส่วนลด:"
+      },
+      "expired": "คูปองหมดอายุ",
+      "used": {
+        "title": "ใช้คูปองแล้ว"
+      },
+      "available": "มี {offer}",
+      "offer": {
+        "annualSpecial": "🎁 โปรรายปี",
+        "newUserExclusive": "🎉 เฉพาะผู้ใช้ใหม่",
+        "bestValue": "คุ้มที่สุด",
+        "limitedTime": "จำกัดเวลา",
+        "claimYearly": "รับสิทธิ์ฟรี 6 เดือน",
+        "claimMonthly": "รับคูปองตอนนี้"
+      },
+      "none": {
+        "title": "ไม่มีคูปองให้ใช้",
+        "description": "{offer} มีให้เฉพาะผู้ใช้ใหม่ที่ไม่เคยซื้อสมาชิกมาก่อน"
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "ยอดนิยม",
+        "advanced": "ขั้นสูง",
+        "unlimited": "ไม่จำกัด"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "รับสิทธิ์ไม่จำกัด",
+        "getUnlimitedMobile": "รับ Unlimited",
+        "subscribeDesktop": "เริ่มสมัครสมาชิก",
+        "subscribeMobile": "สมัครสมาชิก",
+        "claimAndSubscribeMobile": "รับสิทธิ์และสมัคร",
+        "getDiscountMobile": "รับ {discount}",
+        "claimDiscountAndSubscribeDesktop": "รับ {discount} และสมัครสมาชิก"
+      },
+      "toast": {
+        "loginSuccess": "เข้าสู่ระบบสำเร็จ! คลิกอีกครั้งเพื่อรับส่วนลดและสมัครสมาชิก",
+        "claimCouponFailed": "รับคูปองไม่สำเร็จ",
+        "tryAgainLater": "โปรดลองใหม่ภายหลัง",
+        "couponClaimed": "รับคูปองสำเร็จ!",
+        "failedToProcess": "ประมวลผลไม่สำเร็จ"
+      },
+      "usageEstimate": {
+        "title": "ประมาณการใช้งานรายเดือน",
+        "videos": "สูงสุด {count} วิดีโอต่อเดือน",
+        "images": "สูงสุด {count} รูปภาพต่อเดือน",
+        "audios": "สูงสุด {count} เสียงต่อเดือน"
+      },
+      "unlimitedNotes": {
+        "title": "หมายเหตุการใช้งาน",
+        "videoTasks": {
+          "title": "งานวิดีโอ:",
+          "body": "คุณสามารถรันงานพร้อมกันได้สูงสุด 5 งาน ขีดจำกัดรายเดือน: 300 เมื่อถึงขีดจำกัดจะเข้าสู่โหมดช้า: จำกัดรายวัน 30 วิดีโอใน 24 ชั่วโมง และ 10 งานต่อชั่วโมง"
+        },
+        "imageTasks": {
+          "title": "งานรูปภาพ:",
+          "body": "สูงสุด 300 งานต่อเดือน โหมดเร็วใช้ได้จนถึงงานที่ 300 (5 งาน/นาที) หลังจากนั้นโหมดช้าจำกัด 1 งาน/นาที"
+        },
+        "premiumModels": {
+          "title": "โมเดลพรีเมียม:",
+          "body": "บางโมเดลที่มีต้นทุนสูงไม่รวมในแพ็กเกจ UNLIMITED โดย VEO 3.* แบบไม่เร็ว และ Sora-2 /pro ยังคงหักเครดิต"
+        }
+      },
+      "currentPlan": "แผนปัจจุบัน",
+      "yearlyEquivalent": "เทียบเท่ากับ <ราคา>{value}</ราคา>",
+      "yearlySavings": "ประหยัด <amount>{value}</amount> เมื่อเทียบกับการเรียกเก็บเงินรายเดือน"
+    },
+    "features": {
+      "monthlyCredits": "เครดิตรายเดือน {credits}",
+      "monthlyVideoCredits": "เครดิตวิดีโอรายเดือน {credits}",
+      "fullAccessTopModels": "เข้าถึงโมเดลวิดีโอ AI ชั้นนำ {count} รุ่นแบบเต็ม",
+      "accessAllModels": "เข้าถึงโมเดลทั้งหมด",
+      "purchaseMoreRolloverVideoCredits": "ซื้อเครดิตวิดีโอเพิ่มเติมที่โอนยอดได้",
+      "downloadNoWatermark": "ดาวน์โหลดวิดีโอไม่มีลายน้ำ",
+      "commercialUse": "ใช้งานเชิงพาณิชย์ได้",
+      "fastGenerations": "สร้างได้เร็ว",
+      "prioritySupport": "ซัพพอร์ตแบบลำดับความสำคัญ",
+      "unlimitedVideoAndImageGeneration": "สร้างวิดีโอและรูปภาพได้ไม่จำกัด"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "เปิดตัวเลือกการเรียกเก็บเงิน"
+      },
+      "actions": {
+        "opening": "กำลังเปิด...",
+        "billingOptions": "ตัวเลือกการเรียกเก็บเงิน"
+      },
+      "confirm": {
+        "title": "จัดการการสมัครสมาชิก",
+        "description": "คุณต้องการยกเลิกการสมัครสมาชิกหรือไม่? เราอยากรับฟังความคิดเห็นก่อนที่คุณจะไป",
+        "keep": "คงการสมัครสมาชิกไว้",
+        "continueCancel": "ยกเลิกต่อ"
+      },
+      "toast": {
+        "openFailed": "เปิดหน้าจัดการการสมัครสมาชิกไม่สำเร็จ",
+        "feedbackThanks": "ขอบคุณสำหรับความคิดเห็น!",
+        "feedbackSaveFailed": "บันทึกความคิดเห็นไม่สำเร็จ แต่คุณยังสามารถจัดการการสมัครสมาชิกได้"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "เราอยากได้ความคิดเห็นของคุณ",
+        "subtitle": "ช่วยเราปรับปรุงโดยตอบคำถามสั้นๆ"
+      },
+      "common": {
+        "close": "ปิด",
+        "other": "อื่นๆ",
+        "stepIndicator": "ขั้นตอน {current} จาก {total}"
+      },
+      "actions": {
+        "back": "กลับ",
+        "next": "ถัดไป",
+        "submitting": "กำลังส่ง...",
+        "complete": "เสร็จสิ้นและไปต่อ"
+      },
+      "satisfaction": {
+        "1": "ไม่พอใจมาก",
+        "2": "ไม่พอใจ",
+        "3": "เฉยๆ",
+        "4": "พอใจ",
+        "5": "พอใจมาก"
+      },
+      "steps": {
+        "1": {
+          "title": "คุณรู้จัก ReelMind จากที่ไหน?",
+          "options": {
+            "social": "โซเชียลมีเดีย (Twitter, Instagram ฯลฯ)",
+            "search": "เสิร์ชเอนจิน (Google, Bing ฯลฯ)",
+            "friend": "เพื่อนหรือเพื่อนร่วมงานแนะนำ",
+            "ads": "โฆษณาออนไลน์",
+            "blog": "บล็อกเทคหรือเว็บไซต์รีวิว"
+          }
+        },
+        "2": {
+          "title": "คุณใช้ ReelMind เพื่ออะไรเป็นหลัก?",
+          "description": "เลือกทั้งหมดที่ตรงกับเป้าหมายสร้างสรรค์ของคุณ",
+          "options": {
+            "video": "สร้างวิดีโอ",
+            "image": "สร้างรูปภาพ",
+            "music": "แต่งเพลง",
+            "marketing": "คอนเทนต์โฆษณาและการตลาด",
+            "socialPosts": "โพสต์โซเชียล",
+            "education": "สื่อการเรียนการสอน",
+            "personal": "โปรเจกต์ส่วนตัว",
+            "exploring": "สำรวจไอเดียใหม่"
+          }
+        },
+        "3": {
+          "title": "คำอธิบายใดตรงกับคุณมากที่สุด?",
+          "options": {
+            "creator": "ครีเอเตอร์คอนเทนต์",
+            "developer": "นักพัฒนาอิสระ",
+            "marketingPro": "ผู้เชี่ยวชาญการตลาด",
+            "businessOwner": "เจ้าของธุรกิจ",
+            "designer": "ดีไซเนอร์",
+            "hobbyist": "สายงานอดิเรก",
+            "student": "นักเรียน/นักศึกษา",
+            "artist": "ศิลปิน"
+          }
+        },
+        "4": {
+          "title": "คุณให้คะแนนประสบการณ์อย่างไร?",
+          "description": "โปรดให้คะแนนความพึงพอใจโดยรวมกับ ReelMind"
+        },
+        "5": {
+          "title": "เหตุผลหลักที่คุณตัดสินใจยกเลิกคืออะไร?",
+          "options": {
+            "price": "แพงเกินไป",
+            "usage": "ใช้น้อยเกินไป",
+            "features": "ขาดฟีเจอร์สำคัญ",
+            "quality": "คุณภาพผลลัพธ์ที่สร้าง",
+            "bugs": "ปัญหาทางเทคนิคหรือบั๊ก",
+            "alternative": "พบทางเลือกที่ดีกว่า"
+          }
+        },
+        "6": {
+          "title": "เราอยากรับฟังความคิดเห็นของคุณ",
+          "description": "ความคิดเห็นของคุณช่วยให้เราทำ ReelMind ให้ดีขึ้นสำหรับทุกคน",
+          "placeholder": "ควรปรับปรุงอะไรบ้าง? มีฟีเจอร์ที่อยากเห็นไหม? (ไม่บังคับ)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "ส่งคำขอแล้ว เราจะติดต่อกลับเร็วๆ นี้",
+        "submitFailed": "ส่งคำขอไม่สำเร็จ"
+      },
+      "card": {
+        "title": "แผน Enterprise และแบบกำหนดเอง",
+        "subtitle": "ราคาปรับแต่ง ใบแจ้งหนี้ และการสนับสนุน",
+        "description": "ต้องการใบแจ้งหนี้ การสนับสนุนด้าน compliance หรือเวิร์กโฟลว์แบบกำหนดเอง? แชร์ความต้องการของคุณแล้วเราจะเสนอทางเลือกที่เหมาะสมที่สุด",
+        "toggle": {
+          "hide": "ซ่อนแบบฟอร์ม",
+          "show": "ติดต่อฝ่ายขาย"
+        },
+        "highlights": {
+          "sso": "SSO และ compliance",
+          "invoices": "ใบแจ้งหนี้และใบสั่งซื้อ",
+          "support": "ซัพพอร์ตแบบเร่งด่วน",
+          "workflows": "เวิร์กโฟลว์แบบกำหนดเอง"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "ประเภทการติดต่อ",
+          "placeholder": "เลือกประเภทการติดต่อ",
+          "options": {
+            "business": "ธุรกิจ",
+            "individual": "บุคคล"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "ประมาณการใช้งานรายเดือน (USD)",
+          "placeholder": "เลือกช่วงประมาณการ",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "1,000 ดอลลาร์ – 5,000 ดอลลาร์",
+            "5000to10000": "5,000 ดอลลาร์ – 10,000 ดอลลาร์",
+            "10000plus": "$10,000+",
+            "custom": "กำหนดเอง (USD)"
+          },
+          "custom": {
+            "label": "ประมาณการใช้งานรายเดือนแบบกำหนดเอง (USD)",
+            "placeholder": "ใส่จำนวนเงินเป็น USD"
+          }
+        },
+        "firstName": {
+          "label": "ชื่อ",
+          "placeholder": "เจน"
+        },
+        "lastName": {
+          "label": "นามสกุล",
+          "placeholder": "โด้"
+        },
+        "email": {
+          "label": "อีเมล",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "เว็บไซต์",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "บอกเราเกี่ยวกับโปรเจกต์และความต้องการของคุณ",
+          "placeholder": "คุณกำลังสร้างอะไร? ต้องการเวิร์กโฟลว์/การปฏิบัติตามข้อกำหนดอะไร และคาดการณ์ปริมาณเท่าไร?"
+        },
+        "actions": {
+          "cancel": "ยกเลิก",
+          "submitting": "กำลังส่ง...",
+          "submit": "ส่ง"
+        },
+        "validation": {
+          "firstNameRequired": "ต้องใส่ชื่อ",
+          "lastNameRequired": "ต้องใส่นามสกุล",
+          "emailInvalid": "อีเมลต้องถูกต้อง",
+          "websiteInvalid": "เว็บไซต์ต้องเป็น URL ที่ถูกต้อง",
+          "monthlyEstimateRequired": "ต้องเลือกประมาณการรายเดือน",
+          "monthlyEstimateEnter": "โปรดใส่ประมาณการรายเดือน",
+          "monthlyEstimateMin": "ประมาณการรายเดือนต้อง >= 0",
+          "requirementsMin": "โปรดให้รายละเอียดเพิ่ม (อย่างน้อย {count} ตัวอักษร)",
+          "maxChars": "สูงสุด {count} ตัวอักษร"
+        }
+      }
+    },
+    "faq": {
+      "title": "คำถามที่พบบ่อย",
+      "items": {
+        "proBenefits": {
+          "question": "สมาชิก PRO มีข้อดีอะไรบ้าง?",
+          "answer": "สมาชิก PRO จะได้ 1000 เครดิตทุกเดือน (มูลค่า $10) เข้าถึงฟีเจอร์ใหม่ก่อน สร้างวิดีโอได้เร็วขึ้น ตัวเลือกแก้ไขขั้นสูง และซัพพอร์ตแบบเร่งด่วน"
+        },
+        "cancelAnytime": {
+          "question": "ฉันยกเลิกการสมัครสมาชิกได้ทุกเมื่อไหม?",
+          "answer": "ได้ คุณสามารถยกเลิกได้ทุกเมื่อ สิทธิประโยชน์จะคงอยู่จนสิ้นสุดรอบบิลปัจจุบัน",
+          "discountNote": {
+            "title": "หมายเหตุสำหรับการสมัครสมาชิกที่มีส่วนลด:",
+            "body": "หากคุณสมัครด้วยคูปองส่วนลดและใช้เครดิตเกินจำนวนส่วนลดในเดือนแรก คุณจะยกเลิกได้หลังจากชำระเงินเดือนที่สองเสร็จเท่านั้น นโยบายนี้เพื่อให้การใช้งานโปรโมชันเป็นธรรม"
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "สมัครรายเดือนกับรายปีต่างกันไหม?",
+          "answer": "ต่าง สมัครรายปีมีส่วนลดมากกว่ารายเดือน คุณจะประหยัดประมาณ 20% เมื่อเลือกชำระรายปี"
+        },
+        "whatAreCredits": {
+          "question": "เครดิต ReelMind คืออะไร?",
+          "answer": "เครดิต ReelMind คือสกุลเงินเสมือนบนแพลตฟอร์ม ใช้สำหรับสร้างวิดีโอและรูปภาพด้วย AI ฟีเจอร์ต่างกันใช้เครดิตต่างกัน เช่น วิดีโอมาตรฐาน (480p) ราคา 50 เครดิต และวิดีโอ HD (720p) ราคา 80 เครดิต"
+        },
+        "earnCredits": {
+          "question": "ฉันจะรับเครดิตได้อย่างไร?",
+          "intro": "คุณสามารถรับเครดิตได้หลายวิธี:",
+          "items": {
+            "membership": "ผ่านแพ็กเกจสมาชิก (PRO ได้ 1000 เครดิตต่อเดือน, MAX ได้ 2000)",
+            "purchase": "ซื้อแพ็กเกจเครดิต",
+            "newUser": "ผู้ใช้ใหม่ได้ 100 เครดิตฟรีเมื่อสมัคร",
+            "posting": "โพสต์คอนเทนต์บน ReelMind (50 เครดิตต่อวัน)",
+            "promotions": "โปรโมชันและรางวัลพิเศษ"
+          }
+        },
+        "expire": {
+          "question": "เครดิตหมดอายุไหม?",
+          "answer": "เครดิตที่คุณซื้อโดยตรงจะไม่หมดอายุและคงอยู่ในบัญชีจนกว่าจะใช้ เครดิตที่ได้รับรายเดือนจะถูกรีเซ็ตต้นเดือน เครดิตที่เหลือจากเดือนก่อนจะไม่ถูกโอนต่อ"
+        },
+        "refund": {
+          "question": "ขอคืนเงินเครดิตที่ยังไม่ได้ใช้ได้ไหม?",
+          "answer": "เราไม่คืนเงินสำหรับเครดิตที่ซื้อ อย่างไรก็ตาม หากคุณพบปัญหาทางเทคนิคที่ทำให้ใช้เครดิตไม่ได้อย่างถูกต้อง โปรดติดต่อทีมซัพพอร์ตและเราจะช่วยแก้ไข"
+        },
+        "membershipVsCredits": {
+          "question": "สมาชิกกับเครดิตต่างกันอย่างไร?",
+          "answer": "สมาชิกจะให้เครดิตรายเดือนพร้อมสิทธิประโยชน์เพิ่มเติม เช่น การประมวลผลแบบลำดับความสำคัญและฟีเจอร์พิเศษ เครดิตสามารถซื้อแยกได้โดยไม่ต้องเป็นสมาชิก และจะถูกหักเมื่อสร้างคอนเทนต์ เลือกสมาชิกหากใช้งานสม่ำเสมอ หรือซื้อเครดิตหากใช้งานเป็นครั้งคราว"
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. สงวนลิขสิทธิ์ทั้งหมด"
+    }
+  },
+  "Search": {
+    "placeholder": "ค้นหา...",
+    "noResultsFound": "ไม่พบผลลัพธ์",
+    "viewAllResults": "ดูผลลัพธ์ทั้งหมด",
+    "sections": {
+      "posts": "โพสต์",
+      "users": "ผู้ใช้"
+    },
+    "tabs": {
+      "posts": "โพสต์",
+      "users": "ผู้ใช้"
+    },
+    "unknownUser": "ไม่ทราบชื่อ",
+    "loading": "กำลังโหลด...",
+    "searching": "กำลังค้นหา...",
+    "loadingMore": "กำลังโหลดเพิ่มเติม...",
+    "tryAgain": "ลองอีกครั้ง",
+    "noPostsFound": "ไม่พบโพสต์",
+    "noUsersFound": "ไม่พบผู้ใช้",
+    "empty": {
+      "title": "ค้นหา",
+      "hint": "ใส่คีย์เวิร์ดเพื่อค้นหาคอนเทนต์"
+    },
+    "errors": {
+      "searchFailed": "ค้นหาไม่สำเร็จ"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "คอมมิชชันตลอดชีพ - 20% ตลอดไป"
+    },
+    "hero": {
+      "lifetime": "ตลอดชีพ",
+      "passiveIncome": "รายได้แบบพาสซีฟ",
+      "subtitle": {
+        "prefix": "รับ",
+        "suffix": "คอมมิชชันตลอดไป"
+      }
+    },
+    "actions": {
+      "getStarted": "เริ่มต้นใช้งาน",
+      "viewDashboard": "ดูแดชบอร์ด",
+      "signInFirst": "โปรดเข้าสู่ระบบก่อน"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "แพลตฟอร์ม API ของ ReelMind",
+      "actions": {
+        "modelsPricing": "โมเดลและราคา",
+        "viewDocumentation": "ดูเอกสาร"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "สร้าง API key สำเร็จ",
+      "apiKeyCreateFailed": "สร้าง API key ไม่สำเร็จ",
+      "apiKeyDeleted": "ลบ API key สำเร็จ",
+      "apiKeyDeletedDescription": "ลบ API key แล้ว",
+      "apiKeyDeleteFailed": "ลบ API key ไม่สำเร็จ",
+      "apiKeyCopied": "คัดลอก API key ไปยังคลิปบอร์ดแล้ว",
+      "modelIdCopied": "คัดลอก Model ID ไปยังคลิปบอร์ดแล้ว"
+    },
+    "accountCard": {
+      "notLoggedIn": "ยังไม่ได้เข้าสู่ระบบ",
+      "loadingKeys": "กำลังโหลด API keys...",
+      "keysAvailable": "มี {count} API key",
+      "createKey": "สร้าง API Key",
+      "helpPrefix": "หากต้องการความช่วยเหลือ โปรดดู ",
+      "apiDocumentation": "เอกสาร API"
+    },
+    "stats": {
+      "plan": "แพ็กเกจ",
+      "resetDate": "วันที่รีเซ็ต",
+      "credits": "เครดิต",
+      "tasks": "งาน",
+      "loading": "กำลังโหลด...",
+      "freePlan": "แพ็กเกจฟรี",
+      "na": "ไม่มี",
+      "buyCredits": "ซื้อเครดิต"
+    },
+    "apiKeys": {
+      "title": "จัดการ API Keys",
+      "description": "จัดการ API keys เพื่อเข้าถึง API การสร้างวิดีโอของ ReelMind",
+      "createNew": "สร้าง API Key ใหม่",
+      "loading": "กำลังโหลด API keys...",
+      "label": "คีย์ API",
+      "created": "สร้างเมื่อ {date}",
+      "active": "ใช้งาน",
+      "inactive": "ไม่ใช้งาน",
+      "show": "แสดง API key",
+      "hide": "ซ่อน API key",
+      "copy": "คัดลอก API key",
+      "totalCalls": "จำนวนเรียกทั้งหมด",
+      "creditsUsed": "เครดิตที่ใช้ไป",
+      "empty": {
+        "title": "ไม่มี API Keys",
+        "description": "คุณยังไม่ได้สร้าง API key สร้างอันแรกเพื่อเริ่มใช้งาน ReelMind API",
+        "createFirst": "สร้าง API Key แรก"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "โมเดลและราคา",
+      "apiDocumentation": "เอกสาร API"
+    },
+    "documentation": {
+      "title": "เอกสาร API",
+      "authentication": "การยืนยันตัวตน",
+      "authenticationIntro": "คำขอ API ทุกครั้งต้องยืนยันตัวตนด้วย API key โดย API key ของคุณเป็น UUID ที่สามารถสร้างได้ในส่วนจัดการ API Keys ด้านล่าง",
+      "authenticationMethods": "วิธีการยืนยันตัวตน",
+      "exampleRequest": "ตัวอย่างคำขอ",
+      "important": "สำคัญ",
+      "apiEndpoints": "จุดสิ้นสุด API",
+      "responseFormat": "รูปแบบการตอบกลับ",
+      "responseFormatIntro": "รูปแบบการตอบกลับงานสร้างวิดีโอ:",
+      "parameters": "พารามิเตอร์",
+      "table": {
+        "name": "ชื่อ",
+        "type": "ประเภท",
+        "required": "จำเป็น",
+        "description": "คำอธิบาย"
+      },
+      "yes": "ใช่",
+      "no": "ไม่"
+    },
+    "pricing": {
+      "title": "ราคา API และโมเดล",
+      "intro": "สำรวจโมเดล AI ที่พร้อมใช้งานและราคา สำหรับ API สร้างวิดีโอและรูปภาพ",
+      "loading": "กำลังโหลดโมเดลที่พร้อมใช้งาน...",
+      "available": "พร้อมใช้งาน",
+      "unavailable": "ไม่พร้อมใช้งาน",
+      "credits": "{credits} เครดิต",
+      "basePricePerImage": "ราคาพื้นฐาน (ต่อรูปภาพ)",
+      "basePrice5sVideo": "ราคาพื้นฐาน (วิดีโอ 5 วินาที)",
+      "creditsPerSecond": "+{credits} เครดิต/วินาที",
+      "modelId": "รหัสรุ่น",
+      "copyModelId": "คัดลอก Model ID",
+      "noModels": {
+        "title": "ไม่มีโมเดลให้ใช้",
+        "description": "ขณะนี้ไม่มีโมเดล AI สำหรับการเข้าถึงผ่าน API โปรดกลับมาตรวจสอบใหม่ภายหลัง"
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "ข้อความเป็นวิดีโอ",
+      "imageToVideo": "รูปภาพเป็นวิดีโอ",
+      "videoToVideo": "วิดีโอเป็นวิดีโอ",
+      "textToImage": "ข้อความเป็นรูปภาพ",
+      "imageToImage": "รูปภาพเป็นรูปภาพ"
+    },
+    "deleteModal": {
+      "title": "ยืนยันการลบ",
+      "description": "คุณแน่ใจหรือไม่ว่าต้องการลบ API key นี้? การทำรายการนี้ไม่สามารถยกเลิกได้",
+      "keyName": "ชื่อคีย์: {name}",
+      "createdOn": "สร้างเมื่อ {date}",
+      "cancel": "ยกเลิก",
+      "deleting": "กำลังลบ...",
+      "deleteKey": "ลบ API Key"
+    },
+    "modelParameters": {
+      "title": "พารามิเตอร์โมเดล",
+      "required": "จำเป็น",
+      "default": "ค่าเริ่มต้น: {value}",
+      "labels": {
+        "prompt": "พรอมต์",
+        "guidance_scale": "ขนาดคำแนะนำ",
+        "aspect_ratio": "อัตราส่วนภาพ",
+        "seed": "เมล็ดพันธุ์",
+        "image_url": "URL รูปภาพ",
+        "duration": "ความยาว",
+        "resolution": "ความละเอียด",
+        "num_inference_steps": "จำนวนขั้นตอน",
+        "cfg_scale": "ขนาด CFG"
+      },
+      "flux": {
+        "promptDescription": "พรอมต์ข้อความอธิบายรูปภาพที่ต้องการสร้าง",
+        "guidanceScaleDescription": "ควบคุมว่ารูปภาพจะตามพรอมต์มากแค่ไหน",
+        "aspectRatioDescription": "อัตราส่วนภาพของรูปภาพที่สร้าง",
+        "seedDescription": "Seed แบบสุ่มสำหรับการสร้างที่ทำซ้ำได้",
+        "imageUrlDescription": "URL รูปภาพอินพุตสำหรับการสร้างรูปภาพเป็นรูปภาพ"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "ข้อความเป็นรูปภาพ · แก้ไขรูปภาพ",
+      "title": "ฟลักซ์ / นาโน บานาน่า / ซีดรีม"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - ผู้กำกับเอเจนต์ AI อันดับ 1 ของโลก",
+      "description": "ผู้กำกับเอเจนต์ AI อันดับ 1 ของโลก"
+    },
+    "page": {
+      "loading": "กำลังโหลดผู้กำกับ AI Nolan..."
+    },
+    "heroBanner": {
+      "label": "เทคโนโลยี AI ปฏิวัติวงการ",
+      "name": "โนแลน",
+      "worldFirst": "ครั้งแรกของโลก",
+      "aiAgentDirector": "ผู้กำกับเอเจนต์ AI"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "รอดำเนินการ",
+        "queued": "เข้าคิว",
+        "processing": "กำลังประมวลผล",
+        "completed": "เสร็จสิ้น",
+        "failed": "ล้มเหลว",
+        "canceled": "ยกเลิกแล้ว"
+      },
+      "model": {
+        "unknown": "ไม่ทราบรุ่น",
+        "unnamed": "ไม่มีชื่อ"
+      },
+      "errors": {
+        "fetchListTitle": "โหลดงานไม่สำเร็จ",
+        "unknown": "ข้อผิดพลาดที่ไม่รู้จัก",
+        "fetchDetails": "เรียกรายละเอียดงานไม่สำเร็จ",
+        "downloadFailed": "การดาวน์โหลดล้มเหลว",
+        "retryFailed": "ลองอีกครั้งล้มเหลว"
+      },
+      "details": {
+        "videoTitle": "รายละเอียดงานวิดีโอ",
+        "imageTitle": "รายละเอียดงานรูปภาพ",
+        "videoPreview": "ตัวอย่างวิดีโอ",
+        "hideVideo": "ซ่อนวิดีโอ",
+        "showVideo": "แสดงวิดีโอ",
+        "downloadVideo": "ดาวน์โหลดวิดีโอ",
+        "browserNoVideoSupport": "เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ",
+        "labels": {
+          "duration": "ระยะเวลา",
+          "fileSize": "ขนาดไฟล์",
+          "format": "รูปแบบ",
+          "prompt": "พรอมต์",
+          "model": "รุ่น",
+          "ratio": "อัตราส่วนภาพ",
+          "resolution": "ความละเอียด",
+          "taskId": "รหัสงาน",
+          "user": "ผู้ใช้",
+          "status": "สถานะ",
+          "createdTime": "เวลาที่สร้าง",
+          "startedTime": "เวลาเริ่มต้น",
+          "completedTime": "เวลาที่เสร็จสมบูรณ์",
+          "generationModel": "โมเดลการสร้าง",
+          "priority": "ลำดับความสำคัญ",
+          "requestId": "ขอรหัส",
+          "lastActivity": "กิจกรรมสุดท้าย"
+        },
+        "videoPreviewUnavailable": "ดูตัวอย่างวิดีโอไม่พร้อมใช้งาน",
+        "videoNoOutput": "งานเสร็จสมบูรณ์แต่ไม่มีเอาต์พุตวิดีโอ",
+        "videoNotCompleted": "งานยังไม่เสร็จสิ้น",
+        "generationParams": "พารามิเตอร์การสร้าง",
+        "basicInfo": "ข้อมูลพื้นฐาน",
+        "timeInfo": "ข้อมูลเวลา",
+        "detailData": "ข้อมูลโดยละเอียด",
+        "inputParams": "พารามิเตอร์อินพุต",
+        "outputResult": "ผลลัพธ์เอาท์พุต",
+        "errorLog": "บันทึกข้อผิดพลาด",
+        "retrying": "กำลังลองอีกครั้ง...",
+        "retryTask": "ลองงานอีกครั้ง",
+        "generatedImage": "รูปภาพที่สร้างขึ้น",
+        "close": "ปิด"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "การจัดการผลตอบรับของผู้ใช้",
+        "subtitle": "จัดการข้อเสนอแนะและการร้องเรียนที่ผู้ใช้ส่งมา"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "การดึงข้อมูลล้มเหลว",
+          "fetchFailedDescription": "ไม่สามารถดึงข้อมูลข้อเสนอแนะ: {error}",
+          "unknown": "ข้อผิดพลาดที่ไม่รู้จัก"
+        },
+        "type": {
+          "bug": "รายงานข้อผิดพลาด",
+          "suggestion": "ข้อเสนอแนะ",
+          "other": "อื่นๆ"
+        },
+        "loading": "กำลังโหลด...",
+        "filter": {
+          "label": "ประเภทคำติชม",
+          "all": "ทุกประเภท"
+        },
+        "total": "ทั้งหมด: {total} รายการคำติชม",
+        "empty": "ไม่มีข้อมูลตอบรับ",
+        "headers": {
+          "userInfo": "ข้อมูลผู้ใช้",
+          "type": "ประเภท",
+          "subject": "เรื่อง",
+          "submittedAt": "ส่งแล้ว",
+          "actions": "การดำเนินการ"
+        },
+        "user": {
+          "unknown": "ผู้ใช้ที่ไม่รู้จัก",
+          "noEmail": "ไม่มีอีเมล"
+        },
+        "actions": {
+          "collapse": "ยุบ",
+          "viewDetails": "ดูรายละเอียด"
+        },
+        "contentLabel": "ข้อเสนอแนะ:",
+        "pagination": {
+          "previous": "ก่อนหน้า",
+          "next": "ถัดไป"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "กรุณาใส่คำค้นหา",
+        "noUsersFound": "ไม่พบผู้ใช้ที่ตรงกัน",
+        "searchFailed": "การค้นหาผู้ใช้ล้มเหลว",
+        "userRequired": "โปรดเลือกผู้ใช้หรือป้อนรหัสผู้ใช้",
+        "amountInvalid": "กรุณากรอกจำนวนเครดิตที่ถูกต้อง",
+        "descriptionRequired": "กรุณากรอกรายละเอียดการให้ทุน",
+        "grantFailed": "ไม่สามารถให้เครดิตได้"
+      },
+      "success": {
+        "granted": "มอบเครดิตเรียบร้อยแล้ว"
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "ดึงข้อมูลแบบสำรวจไม่สำเร็จ",
+        "fetchStats": "ดึงข้อมูลสถิติแบบสำรวจไม่สำเร็จ"
+      }
+    },
+    "memberships": {
+      "title": "การจัดการการสมัครสมาชิกของผู้ใช้",
+      "search": {
+        "placeholder": "ค้นหา ID ผู้ใช้ อีเมล หรือชื่อเล่น...",
+        "button": "ค้นหา"
+      },
+      "stats": {
+        "total": "การสมัครสมาชิกทั้งหมด",
+        "yearly": "สมาชิกรายปี"
+      },
+      "list": {
+        "title": "รายการสมัครสมาชิก"
+      },
+      "loading": "กำลังโหลด...",
+      "actions": {
+        "retry": "ลองอีกครั้ง"
+      },
+      "empty": "ไม่มีข้อมูลการสมัครสมาชิก",
+      "table": {
+        "headers": {
+          "userInfo": "ข้อมูลผู้ใช้",
+          "plan": "แผน",
+          "billingCycle": "รอบการเรียกเก็บเงิน",
+          "status": "สถานะ",
+          "credits": "เครดิตคงเหลือ",
+          "videoTasks": "งานวิดีโอ",
+          "imageTasks": "งานรูปภาพ",
+          "createdAt": "เวลาที่สร้าง",
+          "expiresAt": "เวลาหมดอายุ"
+        },
+        "user": {
+          "unknown": "ไม่ทราบ"
+        },
+        "status": {
+          "active": "ใช้งานอยู่",
+          "inactive": "ไม่ได้ใช้งาน",
+          "cancelAtPeriodEnd": "ยกเลิกเมื่อสิ้นสุดระยะเวลา"
+        },
+        "creditsUnit": "เครดิต",
+        "flagged": "ติดธง",
+        "tasksUnit": "งาน",
+        "never": "ไม่เคย"
+      },
+      "pagination": {
+        "summary": "กำลังแสดง {start} ถึง {end} จาก {total} บันทึก",
+        "previous": "ก่อนหน้า",
+        "next": "ถัดไป",
+        "page": "หน้า {currentPage} จาก {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "ลบโพสต์ไม่สำเร็จ โปรดลองอีกครั้ง"
+      }
+    }
+  },
+  "Common": {
+    "language": "ภาษา",
+    "onlyEnglish": "ขณะนี้มีให้บริการเฉพาะภาษาอังกฤษเท่านั้น",
+    "onlySupportedPages": "ขณะนี้ภาษาเพิ่มเติมมีให้บริการบนหน้าแรก สำรวจ ค้นหา สร้าง เลโก้ เพลง การเป็นสมาชิก ติดต่อ ผู้ใช้ แชร์ โมเดล เอฟเฟกต์ และบล็อกเท่านั้น",
+    "languages": {
+      "en": "ภาษาอังกฤษ",
+      "zh-CN": "จีน (ตัวย่อ)"
+    },
+    "actions": {
+      "viewAll": "ดูทั้งหมด",
+      "cancel": "ยกเลิก",
+      "recreate": "สร้างใหม่",
+      "download": "ดาวน์โหลด",
+      "downloading": "กำลังดาวน์โหลด...",
+      "showMore": "แสดงเพิ่มเติม",
+      "showLess": "แสดงน้อยลง"
+    },
+    "aria": {
+      "scrollRight": "เลื่อนไปทางขวา",
+      "search": "ค้นหา"
+    },
+    "search": {
+      "placeholder": "ค้นหาโพสต์และผู้ใช้ ..."
+    },
+    "share": {
+      "button": "แบ่งปัน",
+      "toast": {
+        "copiedTitle": "คัดลอกแล้ว",
+        "copiedMessage": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว",
+        "failedTitle": "คัดลอกไม่สำเร็จ",
+        "failedMessage": "ไม่สามารถคัดลอกลิงก์ไปยังคลิปบอร์ดได้"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "ผู้อำนวยการ AI ของโนแลน",
+      "earlyAccess": "การเข้าถึงก่อน",
+      "justOneCredit": "เพียง 1 เครดิต"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "โหมดแสง",
+        "darkMode": "โหมดมืด",
+        "switchToLightMode": "สลับไปที่โหมดแสง",
+        "switchToDarkMode": "สลับไปที่โหมดมืด"
+      },
+      "profile": {
+        "myProfile": "โปรไฟล์ของฉัน",
+        "goToMyProfile": "ไปที่โปรไฟล์ของฉัน"
+      },
+      "menu": {
+        "openMenu": "เปิดเมนู",
+        "close": "ปิด"
+      },
+      "membership": {
+        "title": "สมาชิกภาพ",
+        "tapToViewPlans": "แตะเพื่อดูแผน",
+        "upgrade": "อัพเกรด",
+        "plans": {
+          "free": "ฟรี",
+          "pro": "โปร",
+          "max": "สูงสุด",
+          "unlimited": "ไม่จำกัด"
+        }
+      },
+      "actions": {
+        "pricing": "ราคา",
+        "signIn": "เข้าสู่ระบบ"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind สงวนลิขสิทธิ์."
+    },
+    "video": {
+      "labels": {
+        "prompt": "พรอมต์",
+        "model": "แบบอย่าง",
+        "ratio": "อัตราส่วน",
+        "guidance": "คำแนะนำ",
+        "steps": "ขั้นตอน",
+        "seed": "เมล็ดพันธุ์",
+        "definition": "คำนิยาม"
+      },
+      "values": {
+        "unknownModel": "ไม่ทราบรุ่น",
+        "random": "สุ่ม"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "การแบ่งหน้า",
+        "previous": "ไปที่หน้าก่อนหน้า",
+        "next": "ไปที่หน้าถัดไป"
+      },
+      "previous": "ก่อนหน้า",
+      "next": "ต่อไป",
+      "more": "หน้าเพิ่มเติม"
+    },
+    "concurrentLimit": {
+      "title": "ถึงขีดจำกัดงานแล้ว",
+      "defaultMessage": "ผู้ใช้ฟรีสามารถมีงานสร้างวิดีโอได้ครั้งละหนึ่งงานเท่านั้น",
+      "currentStatus": "สถานะปัจจุบัน",
+      "currentPlan": "แผนปัจจุบัน",
+      "premiumBenefits": "สิทธิประโยชน์ระดับพรีเมียม",
+      "plans": {
+        "unlimited": "แผนไม่จำกัด",
+        "free": "ฟรี",
+        "unlimitedTasks": "งานไม่จำกัด"
+      },
+      "unlimited": {
+        "maxTasks": "สูงสุด 3 งานพร้อมกัน",
+        "priority": "การประมวลผลที่มีลำดับความสำคัญสูง",
+        "features": "คุณสมบัติพิเศษทั้งหมด",
+        "waitNote": "โปรดรอให้งานปัจจุบันบางส่วนของคุณเสร็จสิ้นก่อนที่จะส่งงานใหม่"
+      },
+      "free": {
+        "maxTasks": "1 งานที่เกิดขึ้นพร้อมกัน",
+        "priority": "ลำดับความสำคัญมาตรฐาน",
+        "features": "คุณสมบัติพื้นฐาน"
+      },
+      "upgrade": {
+        "maxTasks": "มากถึง 5 งานพร้อมกัน",
+        "priority": "การประมวลผลที่มีลำดับความสำคัญสูงกว่า",
+        "features": "เข้าได้ทุกรุ่น"
+      },
+      "actions": {
+        "acknowledge": "เข้าใจแล้ว",
+        "upgrade": "อัพเกรด",
+        "loading": "กำลังโหลด..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "การอัปโหลดในเครื่อง",
+      "reelmind": "สร้าง ReelMind แล้ว"
+    },
+    "reelmind": {
+      "description": "เลือกวิดีโอที่สร้างบน ReelMind",
+      "browse": "เรียกดูวิดีโอ ReelMind"
+    },
+    "title": {
+      "placeholder": "เพิ่มชื่อ..."
+    },
+    "tags": {
+      "title": "แท็ก",
+      "empty": "เพิ่มแท็กเพื่อจัดหมวดหมู่วิดีโอของคุณให้ดียิ่งขึ้น",
+      "placeholder": "เพิ่มแท็ก (กด Enter เพื่อยืนยัน)",
+      "count": "{count}/{limit}",
+      "helper": "สูงสุด {limit} แท็ก แต่ละ {max} อักขระ"
+    },
+    "description": {
+      "placeholder": "เพิ่มคำอธิบาย..."
+    },
+    "generationType": {
+      "title": "ประเภทการสร้าง",
+      "txt2video": "ข้อความเป็นวิดีโอ",
+      "txt2videoDescription": "สร้างจากข้อความแจ้ง",
+      "img2video": "รูปภาพเป็นวิดีโอ",
+      "img2videoDescription": "สร้างจากรูปภาพอ้างอิง"
+    },
+    "prompts": {
+      "promptTitle": "พรอมต์",
+      "promptPlaceholder": "ป้อนข้อความแจ้งที่ใช้ในการสร้างวิดีโอนี้...",
+      "negativeTitle": "พรอมต์เชิงลบ",
+      "negativePlaceholder": "ป้อนข้อความแจ้งเชิงลบ..."
+    },
+    "modelResources": {
+      "title": "ทรัพยากรแบบจำลอง",
+      "placeholder": "แสดงรายการทรัพยากรแบบจำลองที่ใช้ เช่น โมเดล, LoRA, การฝัง..."
+    },
+    "aigc": {
+      "guidanceScale": "มาตราส่วนคำแนะนำ",
+      "guidanceScalePlaceholder": "เช่น 7.5",
+      "steps": "ขั้นตอน",
+      "stepsPlaceholder": "เช่น 30",
+      "seed": "เมล็ดพันธุ์",
+      "seedPlaceholder": "เช่น 1234567890"
+    },
+    "tools": {
+      "title": "เครื่องมือสร้าง"
+    },
+    "videoPreview": {
+      "uploadComplete": "อัปโหลดเสร็จสมบูรณ์",
+      "uploading": "กำลังอัปโหลด...",
+      "clickToUpload": "คลิกเพื่ออัปโหลดวิดีโอ",
+      "remove": "ลบวิดีโอ"
+    },
+    "actions": {
+      "publish": "เผยแพร่",
+      "publishing": "กำลังเผยแพร่...",
+      "back": "กลับ"
+    },
+    "errors": {
+      "tagEmpty": "แท็กต้องไม่เว้นว่าง",
+      "tagTooLong": "แท็กต้องไม่เกิน {max} อักขระ",
+      "tagExists": "มีแท็กนี้อยู่แล้ว",
+      "tagLimit": "คุณสามารถเพิ่มแท็กได้สูงสุด {limit}",
+      "authRequired": "กรุณาเข้าสู่ระบบเพื่ออัพโหลด",
+      "uploadFailed": "การอัปโหลดล้มเหลว โปรดลองอีกครั้ง",
+      "uploadParamsFailed": "ไม่สามารถเรียกพารามิเตอร์การอัปโหลด",
+      "fileAddFailed": "ไม่สามารถเพิ่มไฟล์ โปรดลองอีกครั้ง"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "บล็อก - ReelMind",
+      "description": "ค้นพบเคล็ดลับ บทช่วยสอน และข้อมูลเชิงลึกเกี่ยวกับการสร้างเนื้อหา AI การสร้างวิดีโอ และฟีเจอร์ล่าสุดของ ReelMind"
+    },
+    "page": {
+      "title": "บล็อก",
+      "empty": "ไม่พบบทความในบล็อก"
+    },
+    "error": {
+      "title": "เกิดข้อผิดพลาดในการโหลดโพสต์",
+      "description": "เกิดข้อผิดพลาดขณะโหลดโพสต์ในบล็อก",
+      "retry": "ลองอีกครั้ง"
+    },
+    "notFound": {
+      "title": "ไม่พบหน้า",
+      "description": "ไม่มีหน้าบล็อกที่คุณร้องขอ"
+    },
+    "feed": {
+      "end": "คุณมาถึงจุดสิ้นสุดแล้ว",
+      "retry": "ลองอีกครั้ง",
+      "loadFailed": "โหลดโพสต์ในบล็อกไม่สำเร็จ"
+    },
+    "topFeed": {
+      "refresh": "รีเฟรช",
+      "exploreMore": "สำรวจความสนุกสนานมากขึ้น",
+      "loadFailed": "โหลดโพสต์แบบสุ่มไม่สำเร็จ"
+    },
+    "floatingChat": {
+      "title": "ถามโนแลน เอไอ",
+      "subtitle": "ผู้อำนวยการตัวแทน AI อันดับ 1!",
+      "placeholder": "ถามเกี่ยวกับบทความนี้หรือแบ่งปันไอเดียภาพยนตร์ของคุณ...",
+      "cta": "ส่งให้โนแลน"
+    },
+    "featureCard": {
+      "label": "โมเดลวิดีโอ",
+      "title": "Reelmind นำเสนอเครื่องมืออันทรงพลังเพื่อทำให้ไอเดียของคุณเป็นจริง",
+      "subtitle": "เปลี่ยนความคิดของคุณให้เป็นภาพที่น่าทึ่งด้วยโมเดล AI 101 แบบ",
+      "cta": "ลองตอนนี้"
+    },
+    "breadcrumbs": {
+      "home": "บ้าน"
+    },
+    "article": {
+      "notFoundTitle": "ไม่พบบทความ",
+      "notFoundDescription": "ไม่พบบทความที่ร้องขอ"
+    }
+  },
+  "Favorites": {
+    "title": "รายการโปรดของฉัน",
+    "subtitle": "ที่นี่คุณสามารถจัดการวิดีโอและโมเดลที่คุณชื่นชอบได้",
+    "tabs": {
+      "video": "วีดีโอ",
+      "model": "แบบอย่าง"
+    },
+    "empty": {
+      "title": "คุณยังไม่มีรายการโปรด"
+    },
+    "alert": {
+      "title": "ข้อผิดพลาด",
+      "retry": "ลองอีกครั้ง",
+      "loadFailed": "ไม่สามารถโหลดรายการโปรดได้ โปรดลองอีกครั้ง",
+      "removeFailed": "ไม่สามารถลบรายการโปรดได้ โปรดลองอีกครั้ง"
+    },
+    "card": {
+      "video": "วีดีโอ",
+      "model": "แบบอย่าง"
+    },
+    "button": {
+      "favorite": "ที่ชื่นชอบ",
+      "favorited": "รายการโปรด"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ยินดีต้อนรับสู่ ReelMind",
+      "subtitle": "เข้าสู่ระบบหรือสร้างบัญชีครีเอเตอร์ของคุณ",
+      "continueWithGoogle": "ดำเนินการต่อด้วย Google",
+      "orContinueWithEmail": "หรือดำเนินการต่อด้วยอีเมล",
+      "emailLabel": "อีเมล",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "ที่อยู่อีเมล",
+      "passwordLabel": "รหัสผ่าน",
+      "passwordPlaceholder": "••••••••",
+      "show": "แสดง",
+      "hide": "ซ่อน",
+      "inviteCodeLabelOptional": "โค้ดเชิญ (ไม่บังคับ)",
+      "inviteCodePlaceholder": "กรอกโค้ด",
+      "invitedBy": "ได้รับเชิญโดย <name>{value}</name>",
+      "continue": "ดำเนินการต่อ",
+      "signIn": "เข้าสู่ระบบ",
+      "createAccount": "สร้างบัญชี",
+      "switchToSignIn": "มีบัญชีอยู่แล้ว? เข้าสู่ระบบ",
+      "switchToSignUp": "ยังไม่มีบัญชี? สมัครสมาชิก",
+      "pageSubtitleCreate": "สร้างบัญชีของคุณ",
+      "pageSubtitleSignIn": "เข้าสู่ระบบบัญชีของคุณ",
+      "termsLine": "เมื่อดำเนินการต่อ แสดงว่าคุณยอมรับ <terms>ข้อกำหนด</terms> และ <privacy>นโยบายความเป็นส่วนตัว</privacy> ของเรา"
+    },
+    "verifyEmail": {
+      "title": "ยืนยันอีเมลของคุณ",
+      "sentLinkTo": "เราได้ส่งลิงก์ยืนยันไปที่",
+      "checkInbox": "โปรดตรวจสอบกล่องจดหมายและคลิกลิงก์เพื่อดำเนินการต่อ",
+      "understand": "เข้าใจแล้ว",
+      "useDifferentEmail": "ใช้อีเมลอื่น"
+    },
+    "errors": {
+      "invalidEmail": "ที่อยู่อีเมลไม่ถูกต้อง",
+      "suspiciousEmail": "อีเมลนี้ดูน่าสงสัย",
+      "verifyBeforeLogin": "โปรดยืนยันอีเมลก่อนเข้าสู่ระบบ",
+      "operationFailed": "ดำเนินการไม่สำเร็จ โปรดลองอีกครั้ง",
+      "googleFailed": "เข้าสู่ระบบด้วย Google ไม่สำเร็จ โปรดลองอีกครั้ง",
+      "checkEmailConfirmation": "ตรวจสอบอีเมลของคุณสำหรับลิงก์ยืนยัน!"
+    },
+    "brand": {
+      "headlineLine1": "ผู้ผลิตรอก",
+      "headlineLine2": "ยินดีต้อนรับ",
+      "taglineLine1": "ปลดปล่อยความคิดของคุณ.",
+      "taglineLine2": "ให้ AI เปลี่ยนเป็นภาพยนตร์.",
+      "cta": "เข้าร่วมชุมชนครีเอเตอร์และเริ่มสร้างสรรค์ได้เลย"
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "เพิ่มรูปภาพ",
+      "addMoreReferences": "เพิ่มข้อมูลอ้างอิงเพิ่มเติม",
+      "auto": "อัตโนมัติ",
+      "back": "กลับ",
+      "character": "ตัวละคร",
+      "clear": "ชัดเจน",
+      "clearAll": "เคลียร์ทั้งหมด",
+      "close": "ปิด",
+      "createPack": "สร้างแพ็ค",
+      "downloadCount": "ดาวน์โหลด {current}/{total}",
+      "dropOrUploadPhoto": "วางหรืออัปโหลดรูปภาพ",
+      "goToLibrary": "ไปที่ห้องสมุด",
+      "high": "สูง",
+      "history": "ประวัติศาสตร์",
+      "inQueue": "ในคิว",
+      "info": "ข้อมูล",
+      "instadump": "อินสตาดัมป์",
+      "manual": "คู่มือ",
+      "new": "ใหม่",
+      "next": "ถัดไป",
+      "open": "เปิด",
+      "previous": "ก่อนหน้า",
+      "ready": "พร้อม",
+      "recent": "ล่าสุด",
+      "remove": "ลบ",
+      "replace": "แทนที่",
+      "reset": "รีเซ็ต",
+      "restart": "รีสตาร์ท",
+      "selectPack": "เลือกแพ็ค",
+      "storyboard": "สตอรี่บอร์ด",
+      "upload": "อัปโหลด",
+      "uploading": "กำลังอัปโหลด..."
+    },
+    "prompts": {
+      "defaultImage": "ภาพระดับภาพยนตร์ที่มีรายละเอียดสูงพร้อมแสงธรรมชาติ",
+      "relightDefault": "ปรับความสว่างให้กับวัตถุด้วยแสงสตูดิโอที่นุ่มนวล",
+      "faceSwapDefault": "สลับใบหน้าในขณะที่รักษาฉากให้สมบูรณ์",
+      "characterSwapDefault": "สลับตัวละครในขณะที่ยังคงสไตล์ไว้",
+      "drawToEditDefault": "ปรับแต่งภาพวาดให้เป็นภาพที่สะอาดและมีรายละเอียด"
+    },
+    "swap": {
+      "sourceTitle": "แหล่งที่มา",
+      "targetTitle": "เป้าหมาย",
+      "faceSourceDescription": "ที่มาของภาพใบหน้า",
+      "faceTargetDescription": "กำหนดเป้าหมายรูปภาพที่จะแทนที่",
+      "characterSourceDescription": "ที่มาของภาพตัวละคร",
+      "characterTargetDescription": "กำหนดเป้าหมายรูปภาพที่จะแทนที่"
+    },
+    "inpaint": {
+      "sourceAlt": "ที่มาของภาพ",
+      "paintHint": "ทาสีพื้นที่ที่คุณต้องการแก้ไข",
+      "maskUploading": "กำลังอัปโหลดมาสก์",
+      "maskReady": "หน้ากากพร้อม",
+      "maskPaint": "หน้ากากเพ้นท์",
+      "paint": "ทาสี",
+      "erase": "ลบ"
+    },
+    "relight": {
+      "title": "รีไลท์",
+      "quickSelect": "เลือกด่วน",
+      "directions": {
+        "top": "ด้านบน",
+        "front": "ด้านหน้า",
+        "right": "ถูกต้อง",
+        "left": "ซ้าย",
+        "back": "กลับ",
+        "bottom": "ก้น"
+      },
+      "brightness": "ความสว่าง",
+      "color": "สี"
+    },
+    "upscale": {
+      "title": "หรู"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "ร่างเป็นวิดีโอ",
+      "drawToVideo": "วาดเป็นวิดีโอ",
+      "drawToEdit": "วาดเพื่อแก้ไข",
+      "pen": "ปากกา",
+      "eraser": "ยางลบ",
+      "color": "สี",
+      "size": "ขนาด",
+      "undo": "เลิกทำ",
+      "redo": "ทำซ้ำ",
+      "clear": "ชัดเจน",
+      "generateVideo": "สร้างวิดีโอ",
+      "uploadTitle": "อัพโหลดสื่อ",
+      "uploadDescription": "เพิ่มรูปภาพเพื่อเป็นแนวทางในการวาดภาพ"
+    },
+    "soulId": {
+      "heroTitle": "ตัวละครโซลไอดี",
+      "heroDescription": "สร้างตัวละครที่สอดคล้องกันจากภาพถ่ายของคุณ",
+      "createButton": "สร้างตัวละคร",
+      "photoCount": "{count} รูปภาพ",
+      "characterLabel": "ตัวละคร {index}",
+      "emptyGallery": "ยังไม่มีตัวละคร",
+      "dialogTitle": "สร้างโซลไอดี",
+      "dialogSubtitle": "อัปโหลดรูปภาพเพื่อสร้างตัวละครของคุณ",
+      "addPhotosTitle": "เพิ่มรูปถ่าย",
+      "addPhotosDescription": "อัปโหลดรูปถ่ายที่ชัดเจน 6-12 รูป",
+      "tip": "เคล็ดลับ: ใช้มุมและสำนวนที่หลากหลาย"
+    },
+    "storyboard": {
+      "relightScene": "ฉากรีไลท์",
+      "headline": "โรงงานแฟชั่น",
+      "headlineAccent": "สร้างสุนทรียภาพของคุณ",
+      "description": "สตอรี่บอร์ด แก้ไข สร้างสรรค์",
+      "resultsLabel": "{count} ผลลัพธ์",
+      "uploadHint": "อัปโหลดภาพอ้างอิงเพื่อเป็นแนวทางในฉาก",
+      "referenceImagesTitle": "รูปภาพอ้างอิง",
+      "referenceImagesDescription": "เพิ่มรูปภาพได้สูงสุด 4 ภาพเพื่อให้เข้ากับสไตล์"
+    },
+    "instadump": {
+      "sidebarTitle": "อินสตาดัมพ์ สตูดิโอ",
+      "stepChoosePack": "เลือกแพ็ค",
+      "stepAddPhoto": "เพิ่มรูปถ่าย",
+      "stepGetInstadump": "รับ Instadump",
+      "headerTitle": "อินสตาดัมป์",
+      "headerDescription": "เปลี่ยนเซลฟี่ให้เป็นคลังเนื้อหาเต็มรูปแบบ",
+      "addPhotoTitle": "เพิ่มรูปภาพของคุณ",
+      "addPhotoDescription": "อัปโหลดภาพเซลฟี่ที่ชัดเจนเพื่อเริ่มต้น",
+      "getInstadumpTitle": "รับ Instadump ของคุณ",
+      "newPhotosReady": "รูปภาพใหม่พร้อมแล้ว",
+      "tryFree": "ลองฟรี",
+      "premiumTitle": "พรีเมี่ยม",
+      "premiumBulletOne": "รูปแบบเพิ่มเติมต่อแพ็ค",
+      "premiumBulletTwo": "การประมวลผลลำดับความสำคัญ",
+      "premiumBulletThree": "ดาวน์โหลดความละเอียดเต็ม",
+      "upgradeNow": "อัพเกรดตอนนี้"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "แก้ไข",
+      "subtitle": "เข้าถึงคุณสมบัติและโมเดลการแก้ไข",
+      "back": "กลับไปแก้ไข",
+      "workspace": {
+        "title": "พื้นที่ทำงาน",
+        "status": "ตัวยึดตำแหน่งส่วนหน้า",
+        "uploadTitle": "อัพโหลดสื่อ",
+        "uploadDescription": "วางหรือคลิกเพื่ออัปโหลดรูปภาพ/วิดีโอเพื่อเริ่มต้น"
+      },
+      "settings": {
+        "title": "การตั้งค่า",
+        "modelTitle": "รุ่น",
+        "modelDescription": "เลือกรุ่น (แบ็กเอนด์จะมาเร็วๆ นี้)",
+        "promptTitle": "พรอมต์",
+        "promptDescription": "อธิบายสิ่งที่คุณต้องการ (แบ็กเอนด์จะมาเร็ว ๆ นี้)",
+        "generate": "สร้าง"
+      },
+      "model": {
+        "title": "รายละเอียดรุ่น",
+        "descriptionTitle": "คำอธิบาย",
+        "descriptionBody": "นี่คือตัวยึดตำแหน่ง รายละเอียดจะถูกเติมเมื่อมีการต่อสายแบ็กเอนด์แล้ว"
+      }
+    },
+    "menu": {
+      "title": "แก้ไข",
+      "sections": {
+        "features": "คุณสมบัติ",
+        "models": "โมเดล"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "แก้ไขวิดีโอ",
+        "description": "การตัดต่อวิดีโอขั้นสูง"
+      },
+      "inpaint": {
+        "title": "อินเพนท์",
+        "description": "เลือกพื้นที่ อธิบายการเปลี่ยนแปลง"
+      },
+      "relight": {
+        "title": "รีไลท์",
+        "description": "ปรับตำแหน่งแสง สี และความสว่าง"
+      },
+      "aiStylist": {
+        "title": "เอไอ สไตลิสต์",
+        "description": "ค้นหารูปลักษณ์ที่สมบูรณ์แบบของคุณ"
+      },
+      "upscale": {
+        "title": "หรู",
+        "description": "ปรับปรุงความละเอียดและคุณภาพ"
+      },
+      "skinEnhancer": {
+        "title": "สารเพิ่มประสิทธิภาพผิว",
+        "description": "เนื้อสัมผัสของผิวเป็นธรรมชาติและสมจริง"
+      },
+      "angles": {
+        "title": "มุม",
+        "description": "สร้างขึ้นจากมุมที่แตกต่างกัน"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "รายละเอียดและความแม่นยำสูงสุด"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "การแก้ไขที่รวดเร็วและมีน้ำหนักเบา"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "บูรณาการผลิตภัณฑ์ที่ไร้รอยต่อ"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "ตัวขยายสเกลที่มีความละเอียดสูง"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "ควบคุมการเคลื่อนไหวด้วยการอ้างอิงวิดีโอ"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "การตัดต่อวิดีโอขั้นสูง"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "แผนหลัก",
+      "completed": "เสร็จแล้ว {completed}/{total}",
+      "steps": {
+        "script": "ออกแบบบทและสตอรี่บอร์ด",
+        "world": "ออกแบบแอสเซ็ตโลก",
+        "video": "สร้างวิดีโอ",
+        "worldVideo": "แอสเซ็ตโลกและการสร้างวิดีโอ",
+        "audio": "ออกแบบเสียงพูดและเสียงประกอบ",
+        "final": "ประกอบขั้นสุดท้าย"
+      }
+    }
+  }
+}

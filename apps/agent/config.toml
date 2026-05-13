@@ -1,0 +1,46 @@
+[openrouter]
+url = "https://openrouter.ai/api/v1"
+api_key = ""
+model = "google/gemini-3.1-pro-preview"
+site_url = "http://localhost:3000"
+site_name = "NolanX"
+max_tokens = 8192
+disable_streaming = true
+
+[fal_ai]
+api_key = ""
+image_model = "openai/gpt-image-2"
+image_edit_model = "openai/gpt-image-2"
+
+[reelmind]
+api_key = ""
+endpoint = "https://nestapi.reelmind.ai/external-api/video/generate"
+task_endpoint_base = "https://nestapi.reelmind.ai/external-api/video/task"
+model = "dreamina-seedance-2-0-260128"
+
+[r2_storage]
+account_id = ""
+access_key_id = ""
+secret_access_key = ""
+bucket_name = ""
+public_url = ""
+
+[nolanx_api]
+url = "http://localhost:8080"
+internal_api_key = "dev-internal-api-key"
+
+[system]
+user_data_dir = "./user_data"
+config_path = "config.toml"
+environment = "development"
+production_domain = "localhost"
+
+[server]
+host = "127.0.0.1"
+port = 52178
+
+[nolanx.provider_preferences]
+text = ["openrouter"]
+image = ["fal_ai"]
+audio = ["fal_ai"]
+video = ["reelmind"]

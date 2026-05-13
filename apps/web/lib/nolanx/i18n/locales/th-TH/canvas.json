@@ -1,0 +1,166 @@
+{
+  "title": "สตอรี่บอร์ด",
+  "rename": "เปลี่ยนชื่อสตอรี่บอร์ด",
+  "delete": "ลบสตอรี่บอร์ด",
+  "share": "แชร์สตอรี่บอร์ด",
+  "export": "ส่งออกสตอรี่บอร์ด",
+  "exportImages": "ส่งออกเฟรม",
+  "import": "นำเข้าสตอรี่บอร์ด",
+  "untitled": "ฉากไม่มีชื่อ",
+  "back": "กลับไปที่โต๊ะผู้กำกับ",
+  "saveSnapshot": "บันทึกสแนปชอตของฉาก",
+  "loadSnapshot": "โหลดสแนปชอตของฉาก",
+  "saved": "บันทึกฉากแล้ว ✅",
+  "messages": {
+    "canvasRenamed": "เปลี่ยนชื่อสตอรี่บอร์ดสำเร็จ",
+    "canvasDeleted": "ลบสตอรี่บอร์ดสำเร็จ",
+    "canvasExported": "ส่งออกสตอรี่บอร์ดสำเร็จ",
+    "canvasImported": "นำเข้าสตอรี่บอร์ดสำเร็จ",
+    "failedToRename": "เปลี่ยนชื่อสตอรี่บอร์ดไม่สำเร็จ",
+    "failedToDelete": "ลบสตอรี่บอร์ดไม่สำเร็จ",
+    "failedToCreateFile": "สร้างไฟล์ฉากไม่สำเร็จ",
+    "noImagesSelected": "ยังไม่ได้เลือกเฟรม",
+    "exportingImages": "กำลังส่งออกเฟรม...",
+    "failedToExportImages": "ส่งออกเฟรมไม่สำเร็จ"
+  },
+  "deleteDialog": {
+    "title": "ลบสตอรี่บอร์ด",
+    "description": "คุณแน่ใจหรือไม่ว่าต้องการลบสตอรี่บอร์ดนี้? ฉากนี้จะหายไปตลอดกาล",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ"
+  },
+  "tool": {
+    "hand": "เลื่อนกล้อง",
+    "selection": "เลือกฉาก",
+    "rectangle": "กรอบเฟรม",
+    "ellipse": "สปอตไลต์",
+    "text": "การ์ดชื่อเรื่อง",
+    "image": "แอสเซ็ตภาพ",
+    "shape": "รูปทรงพร็อพ",
+    "freedraw": "วาดอิสระ",
+    "arrow": "ลูกศรแอคชัน",
+    "line": "เส้นการเคลื่อนไหว",
+    "zoomFit": "พอดีทั้งหมด"
+  },
+  "popbar": {
+    "addToChat": "คุยกับ Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "กำลังเตรียมแคนวาส…",
+    "loadingSharedCanvas": "กำลังโหลดแคนวาสที่แชร์…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "ชื่อฉาก",
+    "published": "เผยแพร่แล้ว",
+    "checking": "กำลังตรวจสอบ...",
+    "publish": "เผยแพร่",
+    "copied": "คัดลอกแล้ว!",
+    "share": "แชร์",
+    "sharedCanvas": "แคนวาสที่แชร์",
+    "shareCopiedToast": "คัดลอกลิงก์แชร์ไปยังคลิปบอร์ดแล้ว!",
+    "shareCopyFailedToast": "คัดลอกลิงก์แชร์ไม่สำเร็จ"
+  },
+  "preview": {
+    "mute": "ปิดเสียง",
+    "unmute": "เปิดเสียง",
+    "volume": "ระดับเสียง: {{percent}}%",
+    "export": "ส่งออก",
+    "exporting": "กำลังส่งออก...",
+    "exportVideo": "ส่งออกวิดีโอ",
+    "playing": "กำลังเล่น",
+    "placeholder": {
+      "title": "หน้าต่างพรีวิว",
+      "hint": "เพิ่มแอสเซ็ตลงไทม์ไลน์เพื่อดูพรีวิว"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "แทร็ก",
+    "trackLabels": {
+      "script": "สคริปต์",
+      "keyframe": "คีย์เฟรม",
+      "video": "วิดีโอ",
+      "audio": "เสียง",
+      "world": "โลก"
+    },
+    "indexedTitles": {
+      "script": "สคริปต์ {{index}}",
+      "keyframe": "คีย์เฟรม {{index}}",
+      "video": "วิดีโอ {{index}}",
+      "audio": "เสียง {{index}}",
+      "world": "โลก {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "ซูมออก",
+      "zoomIn": "ซูมเข้า",
+      "rearrangeAllLanes": "จัดเรียงทุกเลนใหม่ (สแนปแม่เหล็ก — ช่องว่างเวลา 0)",
+      "play": "เล่น",
+      "pause": "หยุดชั่วคราว"
+    },
+    "actions": {
+      "clickToDrop": "คลิกเพื่อวาง",
+      "clickToSelect": "คลิกเพื่อเลือก"
+    },
+    "assetTypes": {
+      "script": "สคริปต์",
+      "keyframe": "Keyframe",
+      "video": "วิดีโอ",
+      "audio": "เสียง",
+      "asset": "แอสเซ็ต",
+      "world": "โลก"
+    },
+    "fallbackTitles": {
+      "script": "สคริปต์",
+      "keyframe": "คีย์เฟรม",
+      "video": "วิดีโอ",
+      "audio": "เสียง",
+      "asset": "แอสเซ็ต",
+      "untitled": "ไม่มีชื่อ",
+      "world": "โลก"
+    },
+    "alts": {
+      "keyframe": "คีย์เฟรม",
+      "videoThumbnail": "ภาพตัวอย่างวิดีโอ"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "บันทึกไม่สำเร็จ",
+      "saving": "กำลังบันทึก...",
+      "savedAt": "บันทึกเมื่อ {{time}}"
+    }
+  },
+  "publish": {
+    "title": "เผยแพร่สู่ชุมชน",
+    "enterTitleError": "โปรดใส่ชื่อเรื่อง",
+    "success": "เผยแพร่แคนวาสสู่ชุมชนสำเร็จ!",
+    "failed": "เผยแพร่แคนวาสไม่สำเร็จ",
+    "warning": "การทำรายการนี้จะเผยแพร่การสนทนาและผลงานสร้างสรรค์ทั้งหมดจากแคนวาสนี้สู่ชุมชน",
+    "oncePublished": "เมื่อเผยแพร่แล้ว ทุกคนจะสามารถดูและค้นพบผลงานของคุณได้",
+    "canvasTitleLabel": "ชื่อแคนวาส",
+    "canvasTitlePlaceholder": "ใส่ชื่อแคนวาส",
+    "cancel": "ยกเลิก",
+    "publish": "เผยแพร่",
+    "publishing": "กำลังเผยแพร่..."
+  }
+}

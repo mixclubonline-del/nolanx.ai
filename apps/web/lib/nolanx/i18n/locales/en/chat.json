@@ -1,0 +1,114 @@
+{
+  "newChat": "New Chat",
+  "placeholder": "Type your message here...",
+  "textarea": {
+    "placeholder": "Any story you would like to collaborate with Nolan?",
+    "selectModel": "Please select a text model! Go to Settings to set your API keys if you haven't done so.",
+    "enterPrompt": "Please enter a prompt",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Go to image",
+    "audioPositioning": "Go to audio",
+    "videoPositioning": "Go to video",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "jsonCard": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "showCode": "Show code",
+    "hideCode": "Hide code"
+  },
+  "welcome": {
+    "greeting": "Hey, ReelMaker!",
+    "help": "How could I help you today?"
+  },
+  "replay": {
+    "replaying": "Replaying conversation... ({{current}}/{{total}})",
+    "completed": "Conversation replay completed",
+    "ready": "Ready to replay conversation",
+    "skipToEnd": "Skip to End",
+    "replayAgain": "Replay Again",
+    "startReplay": "Start Replay",
+    "continueConversation": "Continue Conversation",
+    "forking": "Forking...",
+    "forkingToast": "Forking canvas...",
+    "forkSuccessToast": "Canvas forked! Redirecting...",
+    "forkFailedToast": "Failed to fork canvas"
+  },
+  "errors": {
+    "createSessionError": "Failed to create chat session"
+  },
+  "toolCallNames": {
+    "generate_image": "Image Generator",
+    "edit_image": "Image Editor",
+    "generate_audio": "Generate Audio",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "FLF Video",
+    "generate_tts_audio": "Generate TTS Audio",
+    "generate_music": "Generate Music",
+    "generate_structured_output": "Generate Structured Output",
+    "execute_storyboard": "Execute Storyboard",
+    "analyze_timeline_state": "Analyze Timeline",
+    "recommend_generation_strategy": "Recommend Strategy",
+    "execute_code": "Execute Code",
+    "analyze_documents": "Analyze Documents",
+    "analyze_media": "Analyze Media",
+    "execute_function_call": "Execute Function Call",
+    "analyze_web_context": "Analyze Web Context",
+    "search_and_generate": "Search & Generate",
+    "prompt_user_multi_choice": "Prompt Multi-Choice",
+    "prompt_user_single_choice": "Prompt Single-Choice",
+    "write_plan": "Write Plan",
+    "finish": "Finish"
+  },
+  "publish": {
+    "title": "Publish to Community",
+    "titleLabel": "Title *",
+    "titlePlaceholder": "Enter a catchy title for your conversation",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Describe what makes this conversation interesting...",
+    "tagsLabel": "Tags (max 5)",
+    "tagPlaceholder": "Add a tag...",
+    "visibilityLabel": "Visibility",
+    "visibilityPublic": "Public",
+    "visibilityUnlisted": "Unlisted",
+    "visibilityPublicHint": "Anyone can discover and view this conversation",
+    "visibilityUnlistedHint": "Only people with the link can view this conversation",
+    "cancel": "Cancel",
+    "publish": "Publish",
+    "publishing": "Publishing...",
+    "enterTitleError": "Please enter a title",
+    "success": "Session published successfully!",
+    "failed": "Failed to publish session",
+    "publishButton": "Publish"
+  },
+  "sessionSelector": {
+    "placeholder": "Theme"
+  },
+  "thinking": {
+    "title": "Thinking",
+    "expand": "Expand thinking"
+  },
+  "plan": {
+    "title": "Plan",
+    "steps": {
+      "singular": "step",
+      "plural": "steps"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

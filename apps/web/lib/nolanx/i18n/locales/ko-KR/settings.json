@@ -1,0 +1,98 @@
+{
+  "title": "설정",
+  "messages": {
+    "settingsSaved": "설정이 저장되었습니다",
+    "settingsReset": "설정이 기본값으로 재설정되었습니다",
+    "failedToSave": "설정 저장에 실패했습니다",
+    "failedToLoad": "구성을 불러오지 못했습니다",
+    "restartRequired": "프록시 설정을 적용하려면 앱을 다시 시작해 주세요"
+  },
+  "models": {
+    "title": "모델",
+    "placeholder": "모델 이름 입력",
+    "addModel": "모델 추가",
+    "types": {
+      "text": "텍스트",
+      "image": "이미지",
+      "video": "비디오"
+    }
+  },
+  "provider": {
+    "title": "공급자",
+    "addProvider": "공급자 추가",
+    "providerName": "공급자 이름",
+    "providerNamePlaceholder": "공급자 이름 입력",
+    "apiUrl": "API URL",
+    "apiUrlPlaceholder": "API URL 입력",
+    "apiKey": "API 키",
+    "apiKeyPlaceholder": "API 키 입력",
+    "apiKeyDescription": "API 키는 안전하게 저장됩니다",
+    "maxTokens": "최대 토큰",
+    "maxTokensPlaceholder": "최대 토큰 입력",
+    "maxTokensDescription": "응답에서의 최대 토큰 수",
+    "customProvider": "✨ 사용자 지정 공급자",
+    "imageGeneration": "🎨 이미지 생성",
+    "delete": "삭제",
+    "save": "저장",
+    "cancel": "취소",
+    "noModelsSelected": "최소 1개의 모델을 추가해 주세요"
+  },
+  "proxy": {
+    "title": "프록시 설정",
+    "mode": "프록시 모드",
+    "selectMode": "프록시 모드 선택",
+    "modes": {
+      "none": "프록시 없음",
+      "system": "시스템 프록시",
+      "custom": "사용자 지정 프록시"
+    },
+    "enable": "프록시 활성화",
+    "url": "프록시 URL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "연결 테스트",
+    "testing": "테스트 중...",
+    "testSuccess": "프록시 연결 테스트 성공",
+    "testFailed": "프록시 연결 테스트 실패: {{message}}",
+    "testError": "프록시 연결 테스트 오류",
+    "status": {
+      "enabled": "활성화",
+      "disabled": "비활성화",
+      "misconfigured": "잘못 구성됨"
+    }
+  },
+  "comfyui.workflows": "워크플로",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 로컬 이미지 생성",
+    "enable": "활성화",
+    "debugStatus": "🔍 디버그 상태",
+    "status": {
+      "disabled": "비활성화",
+      "running": "실행 중",
+      "installed": "설치됨(실행 중 아님)",
+      "notInstalled": "설치되지 않음",
+      "notRunning": "실행 중 아님",
+      "checking": "확인 중..."
+    },
+    "urlDescription": "ComfyUI 서비스 URL입니다. 이미 설치되어 있다면 주소를 입력하세요",
+    "invalidUrl": "유효한 URL을 입력해 주세요 (예: http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI가 설치되어 있지 않습니다",
+    "notInstalledDescription": "Flux 모델로 로컬 이미지 생성을 사용하려면 ComfyUI를 설치하세요",
+    "installButton": "ComfyUI 설치",
+    "startButton": "ComfyUI 시작",
+    "uninstallButton": "ComfyUI 제거",
+    "confirmUninstall": "ComfyUI를 제거하시겠습니까? 다운로드된 모델과 구성 등 ComfyUI가 시스템에서 완전히 제거됩니다.",
+    "confirmUninstallButton": "제거 확인",
+    "uninstallProgress": {
+      "title": "ComfyUI 제거 중",
+      "preparing": "제거 준비 중...",
+      "inProgress": "제거가 진행 중입니다... 잠시만 기다려 주세요.",
+      "logTitle": "제거 로그:",
+      "completed": "제거 완료"
+    },
+    "notInstalled": "ComfyUI가 설치되어 있지 않습니다"
+  },
+  "saveSettings": "설정 저장",
+  "close": "닫기",
+  "cancel": "취소"
+}

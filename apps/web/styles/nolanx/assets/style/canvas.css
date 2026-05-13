@@ -1,0 +1,75 @@
+.excalidraw .shapes-section {
+  display: none !important;
+}
+
+.excalidraw .Stack.Stack_vertical.App-menu_top__left > div {
+  display: none !important;
+}
+
+/* 🔧 只对不需要的工具隐藏快捷键，保留需要的工具的快捷键显示 */
+.ToolIcon__keybinding {
+  display: none !important;
+}
+
+/* 🔧 为需要的工具重新显示快捷键 */
+.App-toolbar button[data-testid="toolbar-hand"] .ToolIcon__keybinding,
+.App-toolbar button[data-testid="toolbar-selection"] .ToolIcon__keybinding,
+.App-toolbar button[data-testid="toolbar-text"] .ToolIcon__keybinding,
+.App-toolbar button[data-testid="toolbar-image"] .ToolIcon__keybinding {
+  display: block !important;
+}
+
+.excalidraw
+  .dropdown-menu
+  .dropdown-menu-item[data-testid='toolbar-embeddable'] {
+  display: none !important;
+}
+
+.excalidraw
+  .dropdown-menu
+  .dropdown-menu-item[data-testid='toolbar-laser']
+  + div {
+  display: none !important;
+}
+
+.excalidraw .layer-ui__wrapper__top-right {
+  display: none !important;
+}
+
+.excalidraw .FixedSideContainer.FixedSideContainer_side_top.App-top-bar {
+  display: none !important;
+}
+
+.excalidraw .layer-ui__wrapper__footer.App-menu.App-menu_bottom {
+  display: none !important;
+}
+
+.excalidraw .App-bottom-bar {
+  display: none !important;
+}
+
+.scroll-back-to-content {
+  bottom: 80px !important;
+}
+
+.excalidraw .popover {
+  z-index: 60 !important;
+}
+
+.excalidraw .popover .context-menu {
+  border-radius: 10px !important;
+  border-color: color-mix(in oklab, var(--primary) 10%, transparent) !important;
+  background-color: color-mix(
+    in oklab,
+    var(--background) 70%,
+    transparent
+  ) !important;
+  backdrop-filter: blur(60px) !important;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1) !important;
+  font-size: 14px !important;
+}
+
+.excalidraw .popover .context-menu .context-menu-item-separator {
+  border-color: color-mix(in oklab, var(--primary) 8%, transparent) !important;
+  margin: 4px 0 !important;
+}

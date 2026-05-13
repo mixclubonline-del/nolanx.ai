@@ -1,0 +1,21 @@
+{
+  "title": "Первый в мире AI-агент-режиссёр: Nolan",
+  "subtitle": "Программа раннего доступа",
+  "description": "Первый в мире AI-агент-режиссёр: Nolan",
+  "tabs": {
+    "myCanvases": "Мои холсты",
+    "community": "Сообщество"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan готовит ваш холст…",
+    "communitySessions": "Загрузка сессий сообщества..."
+  },
+  "community": {
+    "loadFailed": "Не удалось загрузить сессии сообщества",
+    "canvasNotAvailable": "Холст недоступен для этой сессии",
+    "likeFailed": "Не удалось обновить лайк"
+  },
+  "allProjects": "Все проекты",
+  "noCanvases": "Пока нет раскадровок",
+  "newCanvas": "Сцена без названия"
+}

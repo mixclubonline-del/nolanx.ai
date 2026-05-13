@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Нравится",
+      "liked": "Понравилось",
+      "share": "Поделиться",
+      "download": "Скачать",
+      "downloading": "Скачивание...",
+      "copying": "Копирование...",
+      "recreate": "Пересоздать"
+    },
+    "aria": {
+      "closeVideo": "Закрыть видео",
+      "goBack": "Назад",
+      "likeVideo": "Поставить лайк",
+      "unlikeVideo": "Убрать лайк",
+      "shareVideo": "Поделиться видео",
+      "downloadVideo": "Скачать видео",
+      "copyingLink": "Копирование ссылки...",
+      "downloading": "Скачивание..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Ссылка скопирована",
+      "videoLinkCopiedMessage": "Ссылка на видео скопирована в буфер обмена",
+      "copyFailedTitle": "Не удалось скопировать",
+      "copyFailedMessage": "Не удалось скопировать ссылку",
+      "shareFailedTitle": "Не удалось поделиться",
+      "shareFailedMessage": "Не удалось скопировать ссылку на видео",
+      "loginFirst": "Сначала войдите",
+      "cannotFollowYourself": "Нельзя подписаться на себя",
+      "followed": "Подписка оформлена",
+      "unfollowed": "Вы отписались",
+      "operationFailed": "Не удалось выполнить операцию"
+    },
+    "generation": {
+      "generationModel": "Модель генерации",
+      "withEffect": "с эффектом {effect}",
+      "effectBadge": "ЭФФЕКТ",
+      "prompt": "Промпт",
+      "referenceImage": "Референс",
+      "referenceImageAlt": "Референс для генерации видео",
+      "negativePrompt": "Негативный промпт",
+      "parameters": "Параметры",
+      "guidance": "Гайд",
+      "steps": "Шаги",
+      "seed": "Сид",
+      "ratio": "Соотношение"
+    },
+    "author": {
+      "uploaded": "Опубликовано {time}",
+      "profile": "Профиль",
+      "follow": "Подписаться",
+      "unfollow": "Отписаться",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Комментарии",
+      "placeholder": "Поделитесь мыслями об этом видео...",
+      "send": "Отправить",
+      "sending": "Отправка...",
+      "empty": "Станьте первым, кто поделится мнением об этой работе!"
+    },
+    "time": {
+      "now": "Только что",
+      "minutesAgo": "{minutes, plural, one {# минуту назад} few {# минуты назад} many {# минут назад} other {# минуты назад}}",
+      "hoursAgo": "{hours, plural, one {# час назад} few {# часа назад} many {# часов назад} other {# часа назад}}",
+      "daysAgo": "{days, plural, one {# день назад} few {# дня назад} many {# дней назад} other {# дня назад}}"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Кредиты"
+    },
+    "earnCreditsCapsule": {
+      "label": "Заработать кредиты",
+      "aria": {
+        "openRewardCenter": "Заработать кредиты"
+      },
+      "badge": {
+        "claimed": "Получено"
+      },
+      "title": {
+        "base": "Заработать кредиты",
+        "canClaim": "Заработать кредиты (+{amount})",
+        "claimedToday": "Заработать кредиты (получено сегодня)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Центр наград",
+      "subtitle": {
+        "main": "Приглашай и зарабатывай + Ежедневные награды",
+        "joined": "Посмотреть, кто присоединился"
+      },
+      "common": {
+        "loading": "Загрузка..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} кредитов"
+      },
+      "actions": {
+        "back": "Назад",
+        "close": "Закрыть",
+        "copy": "Копировать",
+        "share": "Поделиться",
+        "inviteFriends": "Пригласить друзей",
+        "claim": "Получить",
+        "claiming": "Получение...",
+        "claimed": "Получено"
+      },
+      "aria": {
+        "copyInviteCode": "Скопировать код приглашения",
+        "shareInviteLink": "Поделиться ссылкой приглашения"
+      },
+      "labels": {
+        "inviteLink": "Ссылка приглашения",
+        "inviteCode": "Код приглашения",
+        "invited": "Приглашено",
+        "rewarded": "Начислено",
+        "pending": "В ожидании",
+        "recentInvites": "Последние приглашения",
+        "recentRewards": "Последние начисления",
+        "referEarn": "Приглашай и зарабатывай",
+        "dailyRewards": "Ежедневные награды",
+        "dailyLogin": "Ежедневный вход",
+        "rewardedProgress": "Начислено: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Пока нет приглашений.",
+        "noRewards": "Пока нет начислений."
+      },
+      "status": {
+        "rewarded": "Начислено",
+        "pending": "В ожидании",
+        "verified": "Проверено"
+      },
+      "share": {
+        "title": "Приглашение ReelMind",
+        "text": "Присоединяйся ко мне на ReelMind и получай бесплатные кредиты."
+      },
+      "toast": {
+        "copiedTitle": "Скопировано",
+        "copiedDescription": "{label} скопировано в буфер обмена.",
+        "copyFailedTitle": "Не удалось скопировать",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Пожалуйста, скопируйте вручную.",
+        "claimFailedTitle": "Не удалось получить",
+        "claimedTitle": "Получено",
+        "claimedDescription": "Вы получили {amount} кредитов."
+      },
+      "referEarn": {
+        "tipLabel": "Правила приглашений",
+        "tipTitle": "Как это работает",
+        "tipBody1": "Поделитесь ссылкой приглашения. Когда новый пользователь зарегистрируется по вашему коду и выполнит подходящее действие, кредиты будут начислены после проверки системой.",
+        "tipBody2": "Уровни наград: 1-5 = 50, 6-15 = 100, 16-20 = 200 кредитов.",
+        "cardTitle": "Получайте кредиты, приглашая друзей",
+        "upTo": "До {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Правила ежедневного входа",
+        "tipTitle": "Ежедневная награда",
+        "tipBodyPrefix": "Награды начинаются с",
+        "tipBodyDay2": "2-го дня",
+        "tipBodySuffix": "серии и сбрасываются каждый день по UTC.",
+        "status": {
+          "loading": "Загрузка статуса...",
+          "claimed": "Получено",
+          "readyToClaim": "Можно получить",
+          "locked": "Недоступно"
+        },
+        "errors": {
+          "alreadyClaimed": "Уже получено сегодня.",
+          "notEligible": "Сейчас нельзя получить награду.",
+          "riskBlocked": "Получение заблокировано из-за контроля рисков.",
+          "generic": "Что-то пошло не так. Попробуйте позже."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Исследовать",
+      "video": "Видео",
+      "image": "Изображения",
+      "music": "Музыка",
+      "edit": "Редактировать",
+      "experiment": "Эксперимент"
+    },
+    "special": {
+      "nolan": "Нолан"
+    },
+    "bottom": {
+      "affiliate": "Партнёрская программа",
+      "contactUs": "Связаться с нами",
+      "blog": "Блог",
+      "apiPlatform": "Платформа API"
+    },
+    "badges": {
+      "help": "Помощь",
+      "new": "Новое",
+      "free": "Бесплатно"
+    },
+    "sidebar": {
+      "more": "Ещё",
+      "closeMenu": "Закрыть меню",
+      "moreTools": "Больше инструментов",
+      "followOnX": "Подписывайтесь на нас в X (Twitter)",
+      "followOnTikTok": "Подписывайтесь на нас в TikTok",
+      "subscribeOnYouTube": "Подпишитесь на наш канал YouTube",
+      "termsOfService": "Условия использования",
+      "privacyPolicy": "Политика конфиденциальности"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "ОСОБЕННОСТИ",
+        "models": "МОДЕЛИ"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Создать видео",
+          "description": "Создавайте видео с искусственным интеллектом"
+        },
+        "cinemaStudioVideo": {
+          "title": "Киностудия Видео",
+          "description": "Профессиональное видео с движениями камеры"
+        },
+        "mixedMedia": {
+          "title": "Смешанная техника",
+          "description": "Смешивайте текст, изображения и видео"
+        },
+        "editVideo": {
+          "title": "Редактировать видео",
+          "description": "Редактировать сцены, кадры, элементы"
+        },
+        "clickToAd": {
+          "title": "Нажмите, чтобы объявить",
+          "description": "Превратите клипы в рекламу"
+        },
+        "sora2Trends": {
+          "title": "Сора 2 Тенденции",
+          "description": "Модные идеи видео"
+        },
+        "lipsyncStudio": {
+          "title": "Липсинк Студия",
+          "description": "Синхронизировать звук с лицами"
+        },
+        "drawToVideo": {
+          "title": "Нарисовать в видео",
+          "description": "Скетч превращается в кинотеатр"
+        },
+        "sketchToVideo": {
+          "title": "Эскиз в видео",
+          "description": "От эскиза к видео с Сорой 2"
+        },
+        "ugcFactory": {
+          "title": "Фабрика пользовательского контента",
+          "description": "Готовый для автора контент быстро"
+        },
+        "videoUpscale": {
+          "title": "Видео Высококлассное",
+          "description": "Увеличьте разрешение и четкость"
+        },
+        "higgsfieldAnimate": {
+          "title": "Хиггсфилд Анимат",
+          "description": "Стильная анимация фотографий"
+        },
+        "recastStudio": {
+          "title": "Рекаст Студия",
+          "description": "Переделайте актеров и стили"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Кинематографическое управление камерой"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Динамическое управление движением"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Высококачественное преобразование текста в видео"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Точный монтаж видео"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Поколение видео нового поколения"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Реалистичная кинематография"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Стилизованное движение и ритм"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Быстрое кинематографическое видео"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Чистые детали и тон"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Спектакли, основанные на аватарах"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Особенности",
+        "models": "Модели"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Создать изображение",
+          "description": "Генерация изображений AI"
+        },
+        "cinemaStudioImage": {
+          "title": "Изображение киностудии",
+          "description": "Реальная симуляция камеры и объектива"
+        },
+        "createStoryboard": {
+          "title": "Создать раскадровку",
+          "description": "Создайте свои сюжетные сцены"
+        },
+        "soulIdCharacter": {
+          "title": "Персонаж идентификатора души",
+          "description": "Создайте уникального персонажа"
+        },
+        "relight": {
+          "title": "Перезажечь",
+          "description": "Отрегулируйте положение, цвет и яркость освещения"
+        },
+        "inpaint": {
+          "title": "Inpaint",
+          "description": "Выберите область, опишите изменение"
+        },
+        "imageUpscale": {
+          "title": "Высококачественное изображение",
+          "description": "Улучшите качество изображения"
+        },
+        "faceSwap": {
+          "title": "Смена лица",
+          "description": "Создавайте реалистичные замены лиц"
+        },
+        "characterSwap": {
+          "title": "Обмен персонажами",
+          "description": "Создавайте реалистичные замены персонажей"
+        },
+        "drawToEdit": {
+          "title": "Нарисуйте, чтобы редактировать",
+          "description": "От эскиза к картинке"
+        },
+        "instadump": {
+          "title": "Инстадамп",
+          "description": "Превратите селфи в полноценную библиотеку контента"
+        },
+        "photodumpStudio": {
+          "title": "Студия фотодампа",
+          "description": "Создайте свою эстетику"
+        },
+        "fashionFactory": {
+          "title": "Фабрика Моды",
+          "description": "Создавайте модные комплекты"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Ультрареалистичные модные визуальные эффекты"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Раскадровка, редактирование, создание"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Лучшая модель изображения 4K на свете"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "Модель изображения 4K нового поколения"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Точная цветопередача"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Детали, оптимизированные по скорости"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Мгновенные реалистичные портреты"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Фотореалистичные и точные изображения."
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Реалистичные изображения"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Расширенная модель редактирования изображений"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Масштабирование высокого разрешения"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Все",
+        "recommended": "Рекомендуемые",
+        "saved": "Сохранённые"
+      },
+      "labels": {
+        "camera": "КАМЕРА",
+        "lens": "ОБЪЕКТИВ",
+        "focalLength": "ФОКУСНОЕ РАССТОЯНИЕ",
+        "aperture": "ДИАФРАГМА"
+      },
+      "units": {
+        "mm": "мм"
+      },
+      "actions": {
+        "saveSetup": "Сохранить набор",
+        "removeSetup": "Удалить набор",
+        "close": "Закрыть"
+      },
+      "empty": "Пока нет наборов"
+    },
+    "page": {
+      "title": "Эксперимент",
+      "subtitle": "Сначала попробуйте новые рабочие процессы",
+      "back": "Вернуться к эксперименту"
+    },
+    "menu": {
+      "title": "Эксперимент",
+      "open": "Открыть"
+    },
+    "tabs": {
+      "character": "Персонаж",
+      "inpaint": "Inpaint",
+      "cinemaStudio": "Киностудия",
+      "motionControl": "Управление движением",
+      "assist": "Помощь"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "Закрасьте область и опишите изменение"
+      },
+      "cinemaStudio": {
+        "title": "Киностудия",
+        "description": "Профессиональные кинематографические рабочие процессы"
+      },
+      "motionControl": {
+        "title": "Управление движением",
+        "description": "Копирование движения из эталонного видео"
+      },
+      "assist": {
+        "title": "Помощь",
+        "description": "Инструменты подсказок и творческих помощников"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Персонаж",
+        "subtitle": "Инструменты согласованности символов (заполнитель)"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "subtitle": "Загрузите медиафайлы, выберите область и опишите редактирование."
+      },
+      "cinemaStudio": {
+        "title": "Киностудия",
+        "subtitle": "Создавайте кинематографические кадры с помощью подсказок, учитывающих особенности камеры."
+      },
+      "motionControl": {
+        "title": "Управление движением",
+        "subtitle": "Воссоздайте движение с помощью вашего изображения"
+      },
+      "assist": {
+        "title": "Помощь",
+        "subtitle": "Чат, советы и подсказки"
+      }
+    },
+    "actions": {
+      "upload": "Загрузить медиа",
+      "generate": "Генерировать",
+      "history": "История",
+      "howItWorks": "Как это работает",
+      "sendMessage": "Отправить сообщение...",
+      "tryExample": "Попробуйте пример",
+      "send": "Отправить"
+    },
+    "placeholders": {
+      "exploreFeatures": "ИЗУЧИТЕ ВОЗМОЖНОСТИ",
+      "settings": "Настройки",
+      "camera": "Камера",
+      "cameraHint": "Выберите поведение камеры (заполнитель)",
+      "lens": "Объектив",
+      "lensHint": "Выберите параметры объектива (заполнитель)",
+      "image": "Изображение",
+      "video": "Видео",
+      "scenePrompt": "Опишите сцену, которую вы себе представляете..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Добавить движение для копирования",
+          "description": "Продолжительность видео: 3–30 секунд."
+        },
+        "addCharacter": {
+          "title": "Добавьте своего персонажа",
+          "description": "Изображение с видимым лицом и телом"
+        }
+      },
+      "quality": {
+        "title": "Качество",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Расширенные настройки"
+      },
+      "hero": {
+        "title": {
+          "prefix": "ВОСОЗДАЙТЕ ЛЮБОЙ",
+          "highlight": "ДВИЖЕНИЕ",
+          "suffix": "С ВАШИМ ИЗОБРАЖЕНИЕМ"
+        },
+        "subtitle": "Скопируйте движение из любого видео и поместите своего персонажа в то же движение."
+      },
+      "library": {
+        "title": "Начните с копирования движения из библиотеки."
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Помощь",
+        "subtitle": "Команда докторов наук в вашем кармане, созданная для авторов."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Что вы можете сделать?",
+          "description": "Изучите возможности искусственного интеллекта ReelMind"
+        },
+        "howToCreate": {
+          "title": "Как я могу создать потрясающий контент?",
+          "description": "Советы по написанию лучших подсказок ИИ"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Создать подсказку образа души",
+          "description": "Напишите запрос на высокоэстетичные изображения"
+        },
+        "generateVideoPrompt": {
+          "title": "Создать видео-подсказку",
+          "description": "Напишите запрос на кинематографические видеоролики"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Постоянство характера",
+          "description": "Сохраняйте целостность вашего персонажа во всех кадрах (заполнитель)"
+        },
+        "library": {
+          "title": "Библиотека персонажей",
+          "description": "Выберите сохраненного персонажа или начните с шаблонов (заполнитель)"
+        }
+      },
+      "placeholders": {
+        "preview": "Предварительный просмотр (заполнитель)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - Бесплатное сообщество создателей AI-видео для создания и публикации роликов",
+      "description": "Исследуйте самые популярные креативные видео от авторов со всего мира. Находите вдохновение, развлечения и ремиксируйте любимое."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 уже доступен!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Все",
+        "latest": "Новые",
+        "hot": "Популярное"
+      },
+      "tooltip": {
+        "filterByModel": "Фильтр по модели {model}"
+      },
+      "aria": {
+        "previous": "Предыдущие категории",
+        "next": "Следующие категории"
+      },
+      "error": {
+        "loadFailed": "Не удалось загрузить категории"
+      },
+      "actions": {
+        "retry": "Повторить"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "Создавайте AI‑видео"
+      },
+      "nolan": {
+        "title": "Нолан",
+        "description": "AI‑агент‑директор №1 в мире"
+      },
+      "badges": {
+        "models": "Модели",
+        "free": "БЕСПЛАТНО"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Исследовать - ReelMind",
+      "description": "Исследуйте популярные креативные видео от авторов со всего мира на ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI‑модели и эффекты - ReelMind",
+      "description": "Просматривайте и используйте AI‑модели и эффекты для создания потрясающих AI‑видео на платформе ReelMind. Исследуйте коллекцию передовых AI‑моделей."
+    },
+    "page": {
+      "title": "AI‑модели и эффекты",
+      "description": "Просматривайте коллекцию передовых AI‑моделей и эффектов для генерации видео",
+      "footerIntro": "Откройте для себя {count} AI‑моделей для генерации видео."
+    },
+    "sections": {
+      "models": "Модели",
+      "effects": "Эффекты"
+    },
+    "actions": {
+      "viewAll": "Показать все",
+      "viewAllModels": "Показать все модели",
+      "backToModels": "Назад к моделям"
+    },
+    "types": {
+      "allModels": "Все модели",
+      "textToVideo": "Текст → видео",
+      "imageToVideo": "Изображение → видео",
+      "videoToVideo": "Видео → видео"
+    },
+    "all": {
+      "titleAll": "Все видеомодели",
+      "titleByType": "Модели {type}",
+      "description": "Просматривайте коллекцию AI‑моделей для генерации видео",
+      "countAll": "({count} моделей)",
+      "countByType": "({count} моделей {type})",
+      "loadingMore": "Загрузка новых моделей...",
+      "loadMore": "Загрузить ещё модели",
+      "end": "Вы дошли до конца! Все модели загружены.",
+      "empty": "Не найдено моделей, соответствующих вашим критериям."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Контрольно-пропускной пункт",
+        "lora": "ЛоРА"
+      },
+      "supportedFeatures": "Поддерживаемые функции",
+      "metaTitle": "{name} - AI‑модель | ReelMind",
+      "metaDescriptionFallback": "Изучите модель {name} для генерации видео на ReelMind.",
+      "metaErrorTitle": "Детали модели | ReelMind",
+      "metaErrorDescription": "Изучите AI‑модели для генерации видео на ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI‑эффекты - ReelMind",
+      "description": "Просматривайте и используйте AI‑эффекты для улучшения ваших AI‑видео на платформе ReelMind."
+    },
+    "page": {
+      "title": "AI‑эффекты",
+      "description": "Просматривайте коллекцию AI‑эффектов для улучшения ваших видео"
+    },
+    "all": {
+      "title": "Все AI‑эффекты",
+      "description": "Просматривайте полную коллекцию AI‑эффектов для улучшения ваших видео"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Назад к эффектам",
+        "goBack": "Назад",
+        "applyThisEffect": "Применить эффект"
+      },
+      "badge": "Эффект",
+      "addedOn": "Добавлено {date}",
+      "errors": {
+        "notFound": "Эффект не найден",
+        "loadFailed": "Не удалось загрузить детали эффекта"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "Создавайте AI‑видео - ReelMind",
+      "description": "Создавайте потрясающие AI‑видео с помощью мощных AI‑моделей и инструментов на платформе ReelMind."
+    },
+    "loading": "Загрузка...",
+    "loadingMobile": "Загрузка мобильного вида...",
+    "loadingControlPanel": "Загрузка панели управления...",
+    "controlPanel": {
+      "modelAndSettings": "Модель и настройки",
+      "history": "История",
+      "model": "Модель",
+      "selectModel": "Выбрать модель"
+    },
+    "mobile": {
+      "backToCreate": "Назад к созданию"
+    },
+    "modelSelector": {
+      "loadingModels": "Загрузка моделей...",
+      "moreModels": "Ещё {count} моделей",
+      "exploreMoreModels": "Посмотреть ещё {count} моделей"
+    },
+    "promptInput": {
+      "title": "Промпт",
+      "placeholder": "Опишите, что вы хотите создать...",
+      "enhance": "Улучшить",
+      "undo": "Отменить",
+      "restoreOriginalPromptTitle": "Восстановить исходный промпт",
+      "toastEnhanced": "Промпт улучшен",
+      "toastRestored": "Исходный промпт восстановлен",
+      "enhanceFailed": "Не удалось улучшить промпт",
+      "sensitiveError": "Обнаружено чувствительное слово: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "изображение",
+      "mentionVideoTokenPrefix": "видео",
+      "mentionAudioTokenPrefix": "аудио"
+    },
+    "referenceUploader": {
+      "addOptional": "Добавить необязательный референс",
+      "referenceImage": "Референс‑изображение",
+      "referenceImages": "Референс‑изображения ({current}/{max})",
+      "referenceVideo": "Референс‑видео",
+      "dropImage": "Перетащите изображение сюда или нажмите, чтобы загрузить",
+      "dropImageMax": "Перетащите до {max} изображений сюда или нажмите, чтобы загрузить",
+      "dropVideo": "Перетащите видео сюда или нажмите, чтобы загрузить",
+      "pasteHint": "Вставить",
+      "videoUploaded": "Видео загружено",
+      "uploading": "Загрузка...",
+      "addMore": "Добавить ещё",
+      "removeReference": "Удалить",
+      "referenceImageAlt": "Референс‑изображение {index}",
+      "supportedFormats": "Поддерживается: PNG, JPG",
+      "minimumSize": "Мин {minWidth}×{minHeight}, соотношение {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "Загрузка {type}...",
+      "processingFile": "Обработка файла...",
+      "uploadReference": "Загрузить референс {type}",
+      "image": "изображение",
+      "video": "видео",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "Соотношение",
+      "duration": "Длительность",
+      "seconds": "{seconds}с",
+      "resolution": "Разрешение",
+      "audio": "Аудио",
+      "on": "Вкл",
+      "off": "Выкл",
+      "advanced": "Дополнительно",
+      "advancedShort": "Доп.",
+      "creativityLevel": "Креативность",
+      "moreAccurate": "Точнее",
+      "moreCreative": "Креативнее",
+      "samplingSteps": "Шаги сэмплирования",
+      "faster": "Быстрее ({steps} шагов)",
+      "higherQuality": "Выше качество ({steps} шагов)",
+      "randomSeed": "Случайный seed",
+      "seedPlaceholder": "Введите seed",
+      "generateRandomSeed": "Сгенерировать seed",
+      "seedHint": "Используйте фиксированный seed для воспроизводимых результатов.",
+      "movementAmplitude": "Движение",
+      "movementAmplitudeHint": "Управляет интенсивностью движения.",
+      "backgroundMusic": "Фоновая музыка",
+      "backgroundMusicHint": "Добавляет фоновую музыку, если поддерживается.",
+      "enabled": "Включено",
+      "disabled": "Отключено",
+      "negativePrompt": "Негативный промпт",
+      "negativePromptPlaceholder": "Что исключить..."
+    },
+    "startToEndUploader": {
+      "title": "Кадры начала‑конца",
+      "startFrame": "Начальный кадр",
+      "endFrame": "Конечный кадр",
+      "dropStartImage": "Перетащите стартовое изображение или нажмите, чтобы загрузить",
+      "dropEndImage": "Перетащите финальное изображение или нажмите, чтобы загрузить",
+      "startFrameImageAlt": "Начальный кадр",
+      "endFrameImageAlt": "Конечный кадр",
+      "uploading": "Загрузка...",
+      "instructions": "Загрузите начальное и конечное изображения, чтобы направить переход.",
+      "supportedFormats": "Поддерживается: PNG, JPG",
+      "minimumSize": "Мин {minWidth}×{minHeight}, соотношение {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Изображения будут автоматически сжаты при необходимости."
+    },
+    "modelTabs": {
+      "imageToVideo": "Изображение → видео",
+      "textToVideo": "Текст → видео",
+      "firstLastFrame": "Первый‑последний кадр",
+      "edit": "Редактировать",
+      "effect": "Эффект"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Справочное видео",
+      "required": "Требуется",
+      "removeVideo": "Удалить видео",
+      "uploading": "Загрузка...",
+      "dropVideo": "Загрузите видео сюда или нажмите, чтобы загрузить",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Элементы",
+      "optional": "Необязательно ({current}/{max})",
+      "addElements": "Добавить",
+      "elementAlt": "Элемент {index}",
+      "removeElement": "Удалить элемент {index}",
+      "dropElements": "Нажмите, чтобы добавить изображения элементов",
+      "elementsHint": "Дополнительные изображения для сохранения персонажей/стиля.",
+      "errors": {
+        "invalidVideoTitle": "Недопустимое видео",
+        "invalidVideoDescription": "Пожалуйста, выберите видеофайл.",
+        "videoTooLargeTitle": "Видео слишком большое",
+        "videoTooLargeDescription": "Макс {maxMb}MB. Пожалуйста, загрузите более короткий/меньший клип.",
+        "uploadFailedTitle": "Загрузка не удалась",
+        "elementsLimitTitle": "Достигнут лимит элементов",
+        "elementsLimitDescription": "Вы можете добавить до {max} изображений.",
+        "imageTooSmall": "Размер изображения должен быть не ниже {minWidth}×{minHeight} (текущий: {width}×{height}).",
+        "imageBadRatio": "Соотношение сторон изображения должно находиться в диапазоне от {minAspectRatio} до {maxAspectRatio} (текущее: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "Некоторые файлы пропущены",
+        "someSkippedDescription": "Файлы {count} были пропущены из-за ограничений.",
+        "skippedTitle": "Пропущено",
+        "skippedNonImage": "Для элементов разрешены только изображения.",
+        "imageCompressedTitle": "Изображение сжато",
+        "imageCompressedDescription": "Сжато с {original} на {final}.",
+        "skippedInvalidImage": "Недопустимое изображение."
+      }
+    },
+    "howItWorks": {
+      "title": "Как это работает",
+      "hero": {
+        "title": "СОЗДАВАЙТЕ ВИДЕО В ОДИН КЛИК",
+        "subtitle": "Используйте предустановки для управления камерой, кадрирования и визуальных эффектов — или полностью воспользуйтесь подсказками вручную."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "ДОБАВИТЬ ИЗОБРАЖЕНИЕ",
+          "2": "ВЫБЕРИТЕ ПРЕДСЕТ",
+          "3": "ПОЛУЧИТЬ ВИДЕО"
+        },
+        "t2v": {
+          "1": "НАПИСАТЬ ПОДСКАЗКУ",
+          "2": "ВЫБЕРИТЕ МОДЕЛЬ",
+          "3": "ПОЛУЧИТЬ ВИДЕО"
+        },
+        "flf": {
+          "1": "ДОБАВИТЬ РАМКИ",
+          "2": "ОПИСАНИЕ ПЕРЕХОДА",
+          "3": "ПОЛУЧИТЬ ВИДЕО"
+        },
+        "edit": {
+          "1": "ДОБАВИТЬ ВИДЕО",
+          "2": "ДОБАВИТЬ ЭЛЕМЕНТЫ",
+          "3": "ПОЛУЧИТЬ ВИДЕО"
+        }
+      },
+      "modes": {
+        "edit": "Редактировать (видео в видео)",
+        "flf": "Первый-последний кадр",
+        "i2v": "Преобразование изображения в видео",
+        "t2v": "Преобразование текста в видео"
+      },
+      "steps": {
+        "edit": {
+          "1": "Загрузите короткое справочное видео.",
+          "2": "При желании добавьте до 4 изображений элементов, чтобы сохранить единообразие символов и стиля.",
+          "3": "Опишите, что изменить (а что оставить) в командной строке, а затем сгенерируйте."
+        },
+        "flf": {
+          "1": "Загрузите начальный и конечный кадр.",
+          "2": "Опишите желаемый переход.",
+          "3": "Сгенерируйте, чтобы создать плавное преобразование."
+        },
+        "i2v": {
+          "1": "Загрузите эталонное изображение.",
+          "2": "Опишите движение, камеру и стиль.",
+          "3": "Выберите соотношение/длительность и сгенерируйте."
+        },
+        "t2v": {
+          "1": "Опишите сцену (предмет, камера, освещение, стиль).",
+          "2": "Выберите соотношение/продолжительность и при необходимости добавьте отрицательную подсказку.",
+          "3": "Генерируйте и повторяйте с небольшими изменениями."
+        }
+      },
+      "tip": "Совет: будьте конкретны. Скажите модели, что должно остаться прежним (айдентика, логотип, композиция).",
+      "templates": {
+        "title": "Пресеты",
+        "subtitle": "Выберите классический пресет и создавайте быстрее.",
+        "use": "Использование",
+        "clear": "Очистить",
+        "prev": "Предыдущий пресет",
+        "next": "Следующий пресет",
+        "edit": {
+          "relight": {
+            "title": "Пересвет и атмосфера",
+            "description": "Меняйте время суток и кинематографическое освещение."
+          },
+          "grade": {
+            "title": "Кинематографическая оценка",
+            "description": "Бирюзово-оранжевый цвет + пленочная зернистость, сохраняет движение и индивидуальность."
+          },
+          "weather": {
+            "title": "Изменение погоды",
+            "description": "Добавьте дождь/туман, сохраняя при этом индивидуальность."
+          },
+          "anime": {
+            "title": "Рестайлинг аниме",
+            "description": "Смотрится в стиле аниме, сохраняя при этом индивидуальность и движение."
+          },
+          "background": {
+            "title": "Замена фона",
+            "description": "Поменяйте фон, сохраняя объект."
+          },
+          "lux": {
+            "title": "Премиум лак",
+            "description": "Более чистый, плавный и более премиальный коммерческий вид."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "День → Ночь",
+            "description": "Плавный переход освещения/времени с последовательным кадрированием."
+          },
+          "sketchToRender": {
+            "title": "Эскиз → Рендеринг",
+            "description": "Постепенно раскрывайте детали от эскиза до окончательного рендеринга."
+          },
+          "beforeAfter": {
+            "title": "До/После раскрытия",
+            "description": "Изысканная трансформация с тонким движением."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "Портретная жизнь",
+            "description": "Мигание + легкое движение с медленным толчком."
+          },
+          "pan": {
+            "title": "Панорамирование параллакса",
+            "description": "Кинематографическое панорамирование с глубиной и размытием изображения."
+          },
+          "product": {
+            "title": "Вращение продукта",
+            "description": "Студийный вид продукта с глянцевыми бликами."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "Премиум-объявление 8s",
+            "description": "Чистый, высококачественный рекламный кадр."
+          },
+          "establish": {
+            "title": "Установление выстрела",
+            "description": "Широкое кинематографическое вступление к миру/сцене."
+          },
+          "anime": {
+            "title": "Открытие аниме",
+            "description": "Стилизованный кадр в стиле аниме."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Для Image‑to‑Video требуется референс‑изображение.",
+        "i2vDescription": "Загрузите референс‑изображение или переключитесь на модель Text‑to‑Video.",
+        "v2vTitle": "Для Video‑to‑Video требуется референс‑видео.",
+        "v2vDescription": "Загрузите референс‑видео или переключитесь на модель Text‑to‑Video."
+      },
+      "costLabel": "Стоимость:",
+      "balanceLabel": "Баланс:",
+      "freeUnlimited": "Бесплатно (Безлимит)",
+      "credits": "Кредиты",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast — Luxury‑модель и не входит в бесплатное использование Unlimited. Требуется доплата.",
+        "veo31": "VEO 3.1 — Luxury‑модель и не входит в бесплатное использование Unlimited. Требуется доплата.",
+        "veo3": "VEO3 — Luxury‑модель и не входит в бесплатное использование Unlimited. Требуется доплата.",
+        "sora2Pro": "Sora‑2 Pro — Luxury‑модель и не входит в бесплатное использование Unlimited. Требуется доплата."
+      },
+      "gettingCredits": "Получаем кредиты...",
+      "getBonusCredits": "Получить {amount} кредитов",
+      "submitting": "Отправка...",
+      "loadingModels": "Загрузка моделей...",
+      "uploadingAsset": "Загрузка ассета...",
+      "uploadingImages": "Загрузка изображений...",
+      "claimingCredits": "Получаем кредиты...",
+      "getMoreCredits": "Получить больше кредитов",
+      "generateVideo": "Сгенерировать видео"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Публикация не удалась",
+        "missingTitleDescription": "Введите заголовок для вашего видео",
+        "processingTitle": "Обработка",
+        "processingDescription": "Подготавливаем публикацию видео...",
+        "successTitle": "Опубликовано",
+        "successDescription": "Ваше видео поделилось с сообществом",
+        "failedTitle": "Публикация не удалась",
+        "failedDescription": "Проверьте подключение к сети или попробуйте позже"
+      },
+      "successTitle": "Успешно опубликовано!",
+      "successDescription": "Ваше потрясающее творение теперь доступно сообществу",
+      "publishingTitle": "Публикация...",
+      "publishingDescriptionDesktop": "Готовим видео, чтобы сообщество смогло им насладиться...",
+      "publishingDescriptionMobile": "Готовим видео...",
+      "progressComplete": "{progress}% готово",
+      "title": "Поделиться с сообществом",
+      "description": "Поделитесь своим творением со всем миром",
+      "benefits": {
+        "getLikes": "Получайте лайки",
+        "buildCommunityLong": "Стройте сообщество",
+        "buildCommunityShort": "Сообщество",
+        "inspireLong": "Вдохновляйте других",
+        "inspireShort": "Вдохновение",
+        "earnLong": "Заработайте +{amount} кредитов",
+        "earnShort": "+{amount} кредитов"
+      },
+      "videoTitle": "Заголовок видео",
+      "videoTitlePlaceholder": "Придумайте привлекательный заголовок...",
+      "videoTitleHelperDesktop": "Сильный заголовок привлекает больше зрителей",
+      "videoTitleHelperMobile": "Хорошие заголовки привлекают зрителей",
+      "descriptionLabel": "Описание",
+      "optional": "Необязательно",
+      "descriptionPlaceholder": "Расскажите сообществу о своём творении...",
+      "descriptionHelper": "Поделитесь творческим процессом",
+      "cancel": "Отмена",
+      "publish": "Опубликовать"
+    },
+    "history": {
+      "title": "История",
+      "refresh": "Обновить",
+      "view": {
+        "one": "1 в ряд",
+        "three": "3 в ряд",
+        "nine": "9 в ряд"
+      },
+      "filterPlaceholder": "Фильтр",
+      "empty": "Задачи со статусом {status} не найдены",
+      "status": {
+        "all": "Все",
+        "pending": "В ожидании",
+        "queued": "В очереди",
+        "processing": "Обработка",
+        "completed": "Готово",
+        "failed": "Неудачно",
+        "canceled": "Отменено"
+      }
+    },
+    "effectSelector": {
+      "loading": "Загрузка эффектов...",
+      "defaultDescription": "Примените спецэффекты к видео",
+      "ctaTitle": "Выберите эффект",
+      "ctaDescription": "Нажмите, чтобы выбрать эффект",
+      "modalTitle": "Выбор эффекта",
+      "close": "Закрыть выбор эффекта"
+    },
+    "modelSelectorModal": {
+      "title": "Выбор модели",
+      "description": "Выберите модель для проекта",
+      "close": "Закрыть выбор модели",
+      "loadingMore": "Загрузка новых моделей...",
+      "allLoaded": "Все модели загружены",
+      "noModelsFound": "Модели не найдены"
+    },
+    "modelSearch": {
+      "placeholder": "Поиск моделей по имени, типу или возможностям...",
+      "clear": "Очистить поиск",
+      "searching": "Поиск...",
+      "foundModels": "Найдено {count} моделей",
+      "modelsAvailable": "{count} моделей доступно"
+    },
+    "modelTypeFilter": {
+      "title": "Тип модели",
+      "clear": "Очистить"
+    },
+    "remixLoader": {
+      "successTitle": "Задача ремикса загружена",
+      "successDescription": "Параметры видео загружены из исходной задачи — вы можете сразу генерировать или изменить параметры.",
+      "errorTitle": "Не удалось загрузить параметры",
+      "errorDescription": "Не удалось загрузить параметры исходной задачи — задайте параметры вручную."
+    },
+    "modelCard": {
+      "select": "Выбрать",
+      "credits": "Кредиты",
+      "premium": "ПРЕМИУМ",
+      "luxury": "ЛЮКС"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "Выбор ReelMind",
+      "hot": "Популярно",
+      "new": "НОВОЕ",
+      "select": "Выбрать"
+    },
+    "previewPanel": {
+      "generating": "Генерация...",
+      "download": "Скачать",
+      "downloading": "Скачивание...",
+      "shareToCommunity": "Опубликовать",
+      "tips": "Совет: публикуйте, чтобы получать кредиты",
+      "quality": "Качество",
+      "qualityHd": "HD",
+      "qualityStandard": "Стандарт",
+      "ratio": "Соотношение",
+      "fullscreen": {
+        "enter": "Полный экран",
+        "exit": "Выйти из полного экрана"
+      },
+      "empty": {
+        "title": "Пока нет предпросмотра",
+        "description": "Сгенерируйте видео, чтобы увидеть предпросмотр здесь."
+      },
+      "queue": {
+        "loading": "Загрузка информации очереди...",
+        "headerProcessing": "Обработка",
+        "headerQueueStatus": "Статус очереди",
+        "badgePosition": "Позиция: {position} из {total}",
+        "badgeProcessing": "Обработка",
+        "tasksInQueue": "Задач в очереди",
+        "estimatedWait": "Ожидаемое время",
+        "elapsedTime": "Прошло времени",
+        "remainingTime": "Осталось времени",
+        "startTime": "Ожидаемый старт",
+        "completionTime": "Ожидаемое завершение"
+      },
+      "time": {
+        "calculating": "Считаем...",
+        "justNow": "Только что",
+        "lessThanMinute": "Меньше чем через минуту",
+        "inMinutes": "Через {minutes, plural, one {# минуту} other {# минут}}",
+        "inHours": "Через {hours, plural, one {# час} other {# часов}}",
+        "inDays": "Через {days, plural, one {# день} other {# дней}}",
+        "seconds": "{seconds, plural, one {# секунду} other {# секунд}}",
+        "minutesSeconds": "{minutes, plural, one {# минуту} other {# минут}} {seconds, plural, one {# секунду} other {# секунд}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Загрузка видео...",
+      "notFound": "Видео не найдено",
+      "notFoundDescription": "Запрошенное видео не найдено или сейчас недоступно.",
+      "detailsTitle": "Детали",
+      "videoInfoTitle": "Информация о видео",
+      "advancedTitle": "Дополнительно",
+      "referenceImagesTitle": "Референс‑изображения",
+      "startFrameAlt": "Начальный кадр",
+      "endFrameAlt": "Конечный кадр",
+      "endFrameLabel": "Конечный кадр",
+      "creationDate": "Дата создания",
+      "fields": {
+        "model": "Модель",
+        "generationType": "Тип генерации",
+        "resolution": "Разрешение",
+        "aspectRatio": "Соотношение",
+        "duration": "Длительность",
+        "creativityLevel": "Креативность",
+        "effect": "Эффект",
+        "samplingSteps": "Шаги сэмплирования",
+        "randomSeed": "Случайный seed",
+        "movementAmplitude": "Амплитуда движения",
+        "backgroundMusic": "Фоновая музыка",
+        "negativePrompt": "Негативный промпт"
+      },
+      "actions": {
+        "close": "Закрыть",
+        "closeModalTitle": "Закрыть окно",
+        "remix": "Ремикс",
+        "remixTitle": "Сделать ремикс с этими параметрами",
+        "download": "Скачать",
+        "downloadTitle": "Скачать это видео",
+        "downloading": "Скачивание...",
+        "shareTitle": "Поделиться этим видео"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Удалить задачу",
+      "description": "Это действие нельзя отменить",
+      "cancel": "Отмена",
+      "confirm": "Удалить",
+      "deleting": "Удаление..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Референс‑изображение"
+      },
+      "pending": {
+        "pending": "В ожидании...",
+        "queued": "В очереди...",
+        "waitingInQueue": "Ожидание в очереди..."
+      },
+      "processing": {
+        "phase1": "Фаза 1",
+        "phase2": "Фаза 2",
+        "phase3": "Фаза 3",
+        "final": "Финал",
+        "initializing": "Инициализация процесса",
+        "processing": "Обработка контента",
+        "rendering": "Рендер результата",
+        "finalizing": "Завершение",
+        "stuckMessage": "Кажется, задача зависла. Её можно удалить.",
+        "deleteTitle": "Удалить эту задачу",
+        "deleteAria": "Удалить"
+      },
+      "failed": {
+        "title": "Генерация не удалась",
+        "tryAgain": "Повторить",
+        "tryAgainTitle": "Повторить с этим промптом",
+        "deleteTitle": "Удалить эту задачу"
+      },
+      "completed": {
+        "recreateDesktop": "Повторить",
+        "remixMobile": "Ремикс",
+        "remixTitle": "Создать новое видео по этому промпту",
+        "publish": "Опубликовать",
+        "publishTitle": "Опубликуйте и получите {amount} кредитов",
+        "creditsBonusDesktop": "Бонус {amount} кредитов",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Поделиться",
+        "shareTitle": "Поделиться этим видео",
+        "downloadTitle": "Скачать это видео",
+        "downloading": "Скачивание...",
+        "deleteTitle": "Удалить эту задачу"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Лего - ReelMind",
+      "description": "Создавайте и ремиксируйте видео с помощью Lego‑workflow на ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "Назад к Builder",
+      "history": "История"
+    },
+    "badges": {
+      "new": "Новое"
+    },
+    "actions": {
+      "delete": "Удалить",
+      "select": "Выбрать",
+      "selected": "Выбрано",
+      "download": "Скачать",
+      "downloading": "Скачивание...",
+      "deleting": "Удаление...",
+      "share": "Поделиться",
+      "close": "Закрыть"
+    },
+    "status": {
+      "pending": "В ожидании",
+      "processing": "Обработка",
+      "failed": "Неудачно",
+      "completed": "Готово",
+      "generating": "Генерация",
+      "cancelled": "Отменено"
+    },
+    "deleteConfirmDialog": {
+      "title": "Удалить задачу",
+      "description": "Это действие нельзя отменить",
+      "cancel": "Отмена",
+      "confirm": "Удалить",
+      "deleting": "Удаление..."
+    },
+    "imageViewer": {
+      "close": "Закрыть",
+      "previous": "Предыдущее",
+      "next": "Следующее",
+      "view": "Просмотр {index}"
+    },
+    "historyList": {
+      "title": "Генератор изображений LEGO AI",
+      "generatingFirstImage": "Генерируем ваше первое изображение...",
+      "loadFailed": "Не удалось загрузить историю. Попробуйте снова.",
+      "emptyDescription": "Создавайте потрясающие изображения, описывая идею и добавляя ресурсы для направления AI",
+      "loadingMore": "Загрузка изображений истории...",
+      "scrollForMore": "Прокрутите для загрузки...",
+      "allLoaded": "Загружены все {count} изображений"
+    },
+    "sidebar": {
+      "addCard": "Добавить новую карточку",
+      "expand": "Развернуть боковую панель",
+      "sections": {
+        "theme": "Тема",
+        "scene": "Сцена",
+        "style": "Стиль"
+      }
+    },
+    "card": {
+      "placeholder": "Опишите {section}...",
+      "imageAlt": "Референс {section}",
+      "options": {
+        "image": "Изображение",
+        "text": "Текст"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Референс {index}",
+      "errors": {
+        "invalidType": "Выберите файл изображения",
+        "tooLarge": "Размер изображения не должен превышать {maxSizeMb}MB",
+        "uploadFailed": "Не удалось загрузить изображение. Попробуйте снова."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "Прокрутить вниз",
+      "collapsedPlaceholder": "Опишите ваше изображение...",
+      "close": "Закрыть"
+    },
+    "resultPreview": {
+      "previewTitle": "Предпросмотр",
+      "previewDescription": "Сгенерированное изображение появится здесь",
+      "generatedImageAlt": "Сгенерированное изображение",
+      "emptyPlaceholder": "Ваше творение появится здесь",
+      "dialogTitle": "Ваше созданное изображение",
+      "dialogDescription": "Вот изображение, созданное по вашему описанию и ресурсам"
+    },
+    "resourceUploader": {
+      "uploadImage": "Загрузить изображение",
+      "imageFallbackAlt": "Изображение",
+      "imageFallbackLabel": "изображение",
+      "removeImage": "Удалить {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "Показать боковую панель",
+      "hideSidebar": "Скрыть боковую панель",
+      "hideSidebarShort": "Скрыть панель",
+      "addImage": "Добавить изображение",
+      "addImageWithLimit": "Добавить изображение ({current}/{max})",
+      "promptPlaceholder": "Создайте или отредактируйте изображение...",
+      "model": "Модель",
+      "selectModel": "Выбрать модель",
+      "loading": "Загрузка...",
+      "loadingModels": "Загрузка моделей...",
+      "noModelsAvailable": "Нет доступных моделей",
+      "noModelsMatchFilters": "Нет моделей по выбранным фильтрам",
+      "modelLabel": "Модель: {name}",
+      "aspectRatio": "Соотношение",
+      "ratioLabel": "Соотношение: {value}",
+      "imagesLabel": "Изображения: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 выдаёт одно изображение",
+        "hint": "Количество изображений для генерации",
+        "numberOfImages": "Количество изображений"
+      },
+      "advanced": {
+        "aria": "Дополнительные настройки",
+        "label": "Дополнительно",
+        "title": "Дополнительные настройки",
+        "negativePrompt": {
+          "label": "Негативный промпт",
+          "placeholder": "Элементы, которые нужно исключить...",
+          "aria": "Негативный промпт",
+          "title": "Укажите элементы для исключения"
+        },
+        "seed": {
+          "label": "Семена",
+          "random": "Случайный",
+          "randomTitle": "Сгенерировать случайный seed",
+          "placeholder": "Случайный seed (опционально)",
+          "aria": "Значение seed",
+          "title": "Задайте seed для воспроизводимых результатов"
+        }
+      },
+      "resolution": "Разрешение",
+      "resolutionLabel": "Разрешение: {value}",
+      "resolutionPopoverTitle": "Разрешение (Nano Banana 2)",
+      "generating": "Генерация...",
+      "generate": "Сгенерировать",
+      "limitReached": "Лимит достигнут",
+      "fluxLimitTooltip": "Модели FLUX ограничены {limit} использованием для не‑участников",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 — премиальная модель и не входит в бесплатное использование Unlimited. За каждое изображение будут списываться кредиты.",
+      "unlimited": {
+        "fast": "Быстро",
+        "slow": "Медленно",
+        "fastMode": "Быстрый режим",
+        "slowMode": "Медленный режим",
+        "monthlyUsage": "Месячное использование: {used}/{limit}",
+        "rateLimit": "Лимит: {limit} изображение за 5 минут",
+        "switchedToSlow": "Вы достигли месячного лимита. Переключились на медленный режим."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Сгенерированное изображение",
+      "failedTitle": "Генерация не удалась",
+      "errors": {
+        "unableToComplete": "Не удалось завершить генерацию"
+      },
+      "actions": {
+        "deleteTitle": "Удалить задачу",
+        "viewFullSize": "Нажмите, чтобы открыть в полном размере",
+        "preview": "Предпросмотр {index}",
+        "retryTitle": "Повторить — те же параметры",
+        "retry": "Повторить",
+        "remixTitle": "Ремикс — повторно использовать параметры",
+        "remix": "Ремикс",
+        "makeVideoTitle": "Сделать видео",
+        "makeVideo": "Создать видео"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "Скачивание началось",
+      "downloadStartedMessage": "Скачивание видео началось",
+      "downloadFailedTitle": "Не удалось скачать",
+      "downloadFailedMessage": "Не удалось скачать видео",
+      "shareCopied": "Ссылка для поделиться скопирована",
+      "shareCopyFailed": "Не удалось скопировать ссылку для поделиться"
+    },
+    "empty": {
+      "title": "Видео недоступно",
+      "description": "Это видео недоступно для просмотра или отсутствует файл видео.",
+      "ctaCreate": "Создайте своё видео"
+    },
+    "notFound": {
+      "title": "Видео не найдено",
+      "description": "Видео, которое вы ищете, не существует или больше недоступно для шаринга.",
+      "ctaCreate": "Создайте своё видео",
+      "ctaHome": "На главную"
+    },
+    "details": {
+      "creationDate": "Дата создания"
+    },
+    "actions": {
+      "remix": "Ремикс",
+      "remixTitle": "Создать новое видео по этому промпту",
+      "download": "Скачать",
+      "downloadTitle": "Скачать это видео",
+      "downloading": "Скачивание...",
+      "downloadingTitle": "Скачивание...",
+      "shareTitle": "Поделиться этим видео"
+    },
+    "meta": {
+      "promptFallback": "AI‑видео",
+      "watchDescription": "Смотрите это AI‑видео: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Музыка",
+      "description": "Генерируйте музыку, звуковые эффекты и речь с помощью AI."
+    },
+    "page": {
+      "loadingSoundStudio": "Загрузка Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "Музыка",
+      "soundEffect": "Звуковой эффект",
+      "textToSpeech": "Текст в речь"
+    },
+    "controlPanel": {
+      "title": "Управление",
+      "reset": "Сбросить",
+      "modelLabel": {
+        "tts": "Модель TTS",
+        "sound": "Звуковая модель"
+      },
+      "modelPlaceholder": "Выберите модель",
+      "noModelsAvailableTitle": "Нет доступных моделей",
+      "noModelsFound": {
+        "tts": "Не найдено моделей TTS",
+        "soundEffect": "Не найдено моделей звуковых эффектов"
+      },
+      "tts": {
+        "stability": "Стабильность",
+        "similarityBoost": "Сходство",
+        "styleExaggeration": "Выразительность",
+        "speed": "Скорость"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Загрузить референс‑аудио",
+      "dropHere": "Перетащите сюда",
+      "supportedFormats": "Поддерживаемые форматы: MP3, WAV, M4A, AAC, OGG",
+      "tip": "Совет: используйте минимум 15 секунд чистого звука для лучшего результата.",
+      "uploadingProgress": "Загрузка... {progress}%",
+      "toast": {
+        "uploadSuccess": "Загрузка завершена",
+        "uploadFailed": "Загрузка не удалась"
+      },
+      "errors": {
+        "selectAudioFile": "Выберите аудиофайл.",
+        "invalidAudioFile": "Некорректный аудиофайл.",
+        "fileTooLarge": "Файл слишком большой (макс. 50MB).",
+        "durationTooShort": "Аудио должно быть не короче 15 секунд."
+      }
+    },
+    "audioPlayer": {
+      "play": "Воспроизвести",
+      "pause": "Пауза"
+    },
+    "voiceSelector": {
+      "label": "Голос",
+      "selectVoiceTitle": "Выбрать голос",
+      "gender": {
+        "all": "Все",
+        "male": "Мужской",
+        "female": "Женский"
+      },
+      "noVoicesAvailable": "Нет доступных голосов",
+      "noVoicesFound": "Голоса не найдены",
+      "bestFor": "Лучше всего для {useCase}",
+      "clickToSelectVoice": "Нажмите, чтобы выбрать голос"
+    },
+    "historyPanel": {
+      "title": "История",
+      "empty": {
+        "title": "Пока нет генераций",
+        "description": "История генераций появится здесь"
+      },
+      "loading": "Загрузка...",
+      "loadMore": "Загрузить ещё"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "Обработка",
+        "failed": "Неудачно",
+        "completed": "Готово"
+      },
+      "actions": {
+        "copy": "Копировать",
+        "download": "Скачать"
+      },
+      "time": {
+        "now": "Сейчас",
+        "minutesAgo": "{minutes}м назад",
+        "hoursAgo": "{hours}ч назад"
+      },
+      "unknownModel": "Неизвестная модель",
+      "errors": {
+        "unknown": "Неизвестная ошибка"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Звуковая студия"
+      },
+      "menu": {
+        "open": "Открыть меню",
+        "title": "Меню",
+        "voiceGeneration": "Создать",
+        "settings": "Настройки",
+        "history": "История"
+      },
+      "tabs": {
+        "generate": "Создать",
+        "settings": "Настройки",
+        "history": "История"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Введите текст для генерации речи...",
+        "soundEffect": "Опишите, какой звуковой эффект вы хотите создать..."
+      },
+      "generateSpeech": "Сгенерировать речь",
+      "generateSound": "Сгенерировать звук",
+      "generating": "Генерация...",
+      "loadingExamples": "Загрузка примеров...",
+      "loadingMusicStyles": "Загрузка музыкальных стилей...",
+      "rightTabs": {
+        "examples": "Примеры",
+        "history": "История"
+      },
+      "history": {
+        "generationCount": "{count} генераций"
+      },
+      "price": {
+        "placeholder": "Оценка стоимости",
+        "calculating": "Расчёт...",
+        "credits": "{credits} кредитов"
+      },
+      "musicHistory": {
+        "title": "История музыки",
+        "empty": {
+          "title": "Пока нет музыки",
+          "description": "История музыки появится здесь"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "История эффектов",
+        "empty": {
+          "title": "Пока нет звуковых эффектов",
+          "description": "История звуковых эффектов появится здесь"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Текст песни",
+      "lyricsPlaceholder": "Текст с необязательным форматированием. Можно использовать новую строку для разделения строк. Две пустые строки — для паузы. Двойные решётки (##) в начале и конце — для аккомпанемента. Максимум 600 символов.",
+      "useReferenceAudio": {
+        "label": "Использовать референс‑аудио",
+        "description": "Используйте аудио‑референс, чтобы направить стиль AI."
+      },
+      "referenceAudio": {
+        "title": "Референс‑аудио",
+        "description": "Загрузите референс‑трек, содержащий музыку и вокал."
+      },
+      "musicStyle": {
+        "title": "Музыкальный стиль",
+        "description": "Опишите стиль и настроение музыки, которую хотите создать.",
+        "placeholder": "например: R&B, энергичный, upbeat pop, акустический фолк, электронный данс...",
+        "tooShort": "Описание музыкального стиля должно быть не менее 10 символов."
+      },
+      "generating": "Генерация...",
+      "generateMusicWithCredits": "Сгенерировать музыку ({credits} кредитов)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Длительность",
+        "description": "Задайте длительность звукового эффекта."
+      },
+      "promptInfluence": {
+        "title": "Влияние промпта",
+        "description": "Чем выше значение, тем точнее AI следует вашему промпту."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Контакты",
+      "description": "Отправьте отзыв команде ReelMind."
+    },
+    "header": {
+      "title": "Быстрый отзыв",
+      "description": "Нашли баг или есть предложение? Сообщите нам за 30 секунд."
+    },
+    "card": {
+      "title": "Быстрый отзыв",
+      "subtitle": "Всего 3 поля, займёт 30 секунд"
+    },
+    "submitted": {
+      "title": "Отзыв отправлен",
+      "description": "Спасибо за отзыв. Мы рассмотрим его и при необходимости свяжемся с вами."
+    },
+    "auth": {
+      "required": "Войдите, чтобы отправить отзыв."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Что-то пошло не так. Попробуйте ещё раз."
+      },
+      "type": {
+        "label": "Тип",
+        "placeholder": "Выберите тип отзыва",
+        "options": {
+          "bug": "Сообщение об ошибке",
+          "suggestion": "Предложение",
+          "other": "Другое"
+        },
+        "errors": {
+          "required": "Тип отзыва обязателен.",
+          "invalid": "Некорректный тип отзыва."
+        }
+      },
+      "subject": {
+        "label": "Тема *",
+        "placeholder": "В чём проблема или предложение?",
+        "errors": {
+          "required": "Тема обязательна.",
+          "min": "Тема должна быть не короче {min} символов.",
+          "max": "Тема должна быть короче {max} символов.",
+          "invalid": "Тема содержит некорректный контент."
+        }
+      },
+      "message": {
+        "label": "Подробности *",
+        "placeholder": "Расскажите подробнее...",
+        "errors": {
+          "required": "Подробности обязательны.",
+          "min": "Подробности должны быть не короче {min} символов.",
+          "max": "Подробности должны быть короче {max} символов.",
+          "invalid": "Подробности содержат некорректный контент."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Отправка...",
+      "submit": "Отправить отзыв"
+    },
+    "toast": {
+      "submitSuccess": "Отзыв успешно отправлен!",
+      "submitFailed": "Не удалось отправить отзыв. Попробуйте снова.",
+      "authRequired": "Войдите, чтобы отправить отзыв.",
+      "rateLimited": "Слишком много отправок. Попробуйте позже.",
+      "rateLimitedWithRetryAfter": "Подождите {seconds}с перед повторной отправкой.",
+      "fixErrors": "Пожалуйста, исправьте ошибки в форме.",
+      "checkInput": "Проверьте ввод и попробуйте снова."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Посты",
+      "following": "Подписки",
+      "followingShort": "Подписки",
+      "followers": "Подписчики",
+      "followersShort": "Фанаты",
+      "favorites": "Избранное",
+      "favoritesShort": "Избр."
+    },
+    "actions": {
+      "save": "Сохранить",
+      "saving": "Сохранение...",
+      "cancel": "Отмена",
+      "delete": "Удалить",
+      "retry": "Повторить",
+      "editProfile": "Редактировать профиль",
+      "signOut": "Выйти",
+      "follow": "Подписаться",
+      "unfollow": "Отписаться",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "Автор",
+      "avatarAltFallback": "Пользователь",
+      "initialFallback": "ты",
+      "edit": {
+        "displayNamePlaceholder": "Имя",
+        "bioPlaceholder": "О себе"
+      },
+      "stats": {
+        "following": "Подписки",
+        "followers": "Подписчики"
+      },
+      "joined": "Присоединился {date}",
+      "joinedFallback": "Март 2025"
+    },
+    "time": {
+      "now": "Только что",
+      "minutesAgo": "{minutes}м назад",
+      "hoursAgo": "{hours}ч назад",
+      "daysAgo": "{days}д назад"
+    },
+    "toast": {
+      "loginFirst": "Сначала войдите",
+      "cannotFollowYourself": "Нельзя подписаться на себя",
+      "followed": "Подписка оформлена",
+      "unfollowed": "Подписка отменена",
+      "operationFailed": "Операция не удалась"
+    },
+    "posts": {
+      "loadingMore": "Загрузка новых постов...",
+      "error": {
+        "failedToLoad": "Не удалось загрузить посты"
+      },
+      "empty": {
+        "title": "Пока нет постов",
+        "description": "Этот пользователь ещё не публиковал посты. Загляните позже!"
+      },
+      "deleteDialog": {
+        "title": "Удалить пост",
+        "description": "Пост будет скрыт из профиля и ленты. Это действие нельзя отменить."
+      },
+      "toast": {
+        "deleted": "Пост удалён",
+        "deleteFailed": "Не удалось удалить пост"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Загрузка избранного...",
+      "error": {
+        "failedToLoad": "Не удалось загрузить избранное"
+      },
+      "empty": {
+        "title": "Пока нет избранного",
+        "description": "Понравившиеся посты появятся здесь. Начните исследовать и сохраняйте избранное!"
+      }
+    },
+    "followers": {
+      "empty": "Пока нет подписчиков",
+      "error": {
+        "failedToLoad": "Не удалось загрузить подписчиков"
+      },
+      "followerSince": "Подписчик с {time}"
+    },
+    "following": {
+      "empty": "Пока нет подписок",
+      "error": {
+        "failedToLoad": "Не удалось загрузить подписки"
+      },
+      "followingSince": "Подписан с {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Планы подписки - ReelMind",
+      "description": "Подпишитесь на планы ReelMind, чтобы получить больше кредитов и премиум‑функций для генерации AI‑видео."
+    },
+    "plans": {
+      "hero": {
+        "title": "Планы подписки",
+        "subtitle": "Раскройте потенциал AI‑генерации видео с гибкими планами ReelMind"
+      },
+      "error": {
+        "loadFailed": "Не удалось получить планы подписки, попробуйте позже."
+      },
+      "names": {
+        "free": "Бесплатно",
+        "pro": "Про",
+        "max": "Макс",
+        "unlimited": "Безлимит"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Год"
+      },
+      "monthly": {
+        "label": "Месяц"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "СКИДКА 70% в первый месяц",
+        "short": "СКИДКА 70%",
+        "description": "Новым подписчикам — скидка 70% на первый месяц, купон действует 24 часа"
+      },
+      "yearly": {
+        "full": "Первые 6 месяцев БЕСПЛАТНО",
+        "short": "6 месяцев БЕСПЛАТНО",
+        "description": "Годовая подписка: первые 6 месяцев бесплатно — это эквивалент скидки 50% в первый год!"
+      },
+      "percentOff": "СКИДКА {percent}%",
+      "badge": {
+        "preview": "🎁 доступно: {offer}",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(после получения)"
+    },
+    "pricing": {
+      "perYear": "в год",
+      "perMonth": "в месяц",
+      "breakdown": {
+        "originalPrice": "Обычная цена:",
+        "discount": "Ваша скидка:",
+        "payFirstYear": "Вы платите (первый год):",
+        "firstMonth": "Первый месяц:"
+      }
+    },
+    "status": {
+      "title": "Статус подписки",
+      "loading": "Загрузка информации о подписке...",
+      "currentPlan": "Текущий план:",
+      "expiresOn": "Истекает:",
+      "unlimitedDescription": "У вас неограниченный доступ ко всем функциям генерации без списания кредитов.",
+      "planDescription": "У вас есть доступ ко всем преимуществам плана {plan}.",
+      "noActive": {
+        "title": "У вас нет активной подписки.",
+        "subtitle": "Оформите план ниже, чтобы открыть премиум‑функции."
+      }
+    },
+    "creditsBalance": {
+      "title": "Баланс кредитов",
+      "loading": "Загрузка информации о кредитах...",
+      "availableCredits": "Доступные кредиты:",
+      "unlimited": {
+        "video": "Безлимитная генерация видео",
+        "image": "Безлимитная генерация изображений",
+        "audio": "Безлимитная генерация звука"
+      },
+      "estimate": {
+        "videos": "До {count} видео",
+        "images": "До {count} изображений",
+        "audios": "До {count} звуков"
+      },
+      "cost": {
+        "videos": "Видео: от {credits} кредитов",
+        "images": "Изображения: от {credits} кредитов",
+        "audios": "Звуки: от {credits} кредитов"
+      }
+    },
+    "credits": {
+      "title": "Купить кредиты",
+      "history": {
+        "toggle": {
+          "show": "Показать историю транзакций",
+          "hide": "Скрыть историю транзакций"
+        }
+      },
+      "card": {
+        "description": "Выберите пакет кредитов, чтобы усилить возможности AI‑генерации"
+      },
+      "packages": {
+        "basic": {
+          "label": "Базовый пакет"
+        },
+        "standard": {
+          "label": "Стандартный пакет"
+        },
+        "premium": {
+          "label": "Премиум‑пакет"
+        },
+        "pro": {
+          "label": "Ultra‑пакет"
+        },
+        "bonus": "Бонус: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Базовый курс: 1 USD = 100 кредитов",
+        "buyMoreBonus": "Чем больше покупаете — тем больше бонус!",
+        "neverExpire": "Кредиты не сгорают",
+        "instantDelivery": "Мгновенная доставка после оплаты"
+      },
+      "actions": {
+        "processing": "Обработка...",
+        "buyCredits": "Купить {credits} кредитов"
+      }
+    },
+    "creditsHistory": {
+      "title": "История транзакций",
+      "subtitle": "Ваши последние операции с кредитами",
+      "actions": {
+        "retry": "Повторить",
+        "loading": "Загрузка...",
+        "loadMore": "Загрузить ещё"
+      },
+      "table": {
+        "date": "Дата",
+        "type": "Тип",
+        "amount": "Сумма",
+        "status": "Статус"
+      },
+      "empty": "История транзакций отсутствует",
+      "types": {
+        "membershipMonthly": "Ежемесячные кредиты по подписке",
+        "membershipInitial": "Стартовые кредиты по подписке",
+        "freeMonthly": "Бесплатные ежемесячные кредиты",
+        "purchase": "Покупка кредитов",
+        "platformReward": "Награда платформы",
+        "newUserBonus": "Бонус новичка",
+        "postReward": "Награда за пост",
+        "videoPostReward": "Награда за видео‑пост",
+        "refund": "Возврат",
+        "balanceAdjustment": "Корректировка баланса",
+        "videoGeneration": "Генерация видео",
+        "imageGeneration": "Генерация изображений",
+        "modelTraining": "Обучение модели",
+        "audioGeneration": "Генерация аудио",
+        "systemAdjustment": "Системная корректировка"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}ч {m}м {s}с",
+        "ms": "{m}м {s}с",
+        "s": "{s}с",
+        "expired": "Истекло"
+      },
+      "toast": {
+        "claimedTitle": "Купон успешно получен",
+        "claimedDescription": "Купон добавлен в аккаунт и действует {hours} часов",
+        "claimFailedTitle": "Не удалось получить",
+        "tryAgainLater": "Попробуйте позже",
+        "networkError": "Сетевая ошибка, попробуйте позже"
+      }
+    },
+    "couponStatus": {
+      "title": "Статус купона",
+      "active": {
+        "annualTitle": "Годовая акция активна",
+        "couponTitle": "Купон активирован"
+      },
+      "fields": {
+        "claimed": "Получено:",
+        "expires": "Истекает:",
+        "timeLeft": "Осталось:",
+        "usedAt": "Использовано:",
+        "discount": "Скидка:"
+      },
+      "expired": "Купон истёк",
+      "used": {
+        "title": "Купон использован"
+      },
+      "available": "{offer} доступно",
+      "offer": {
+        "annualSpecial": "🎁 Годовая акция",
+        "newUserExclusive": "🎉 Только для новых пользователей",
+        "bestValue": "Лучшее предложение",
+        "limitedTime": "Ограниченное время",
+        "claimYearly": "Получить 6 месяцев бесплатно",
+        "claimMonthly": "Получить купон"
+      },
+      "none": {
+        "title": "Нет доступных купонов",
+        "description": "{offer} доступно только новым пользователям, которые никогда не покупали подписку."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Популярно",
+        "advanced": "Продвинуто",
+        "unlimited": "Безлимит"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Получить безлимитный доступ",
+        "getUnlimitedMobile": "Получить Unlimited",
+        "subscribeDesktop": "Оформить подписку",
+        "subscribeMobile": "Подписаться",
+        "claimAndSubscribeMobile": "Получить и подписаться",
+        "getDiscountMobile": "Получить {discount}",
+        "claimDiscountAndSubscribeDesktop": "Получить {discount} и подписаться"
+      },
+      "toast": {
+        "loginSuccess": "Вход выполнен! Нажмите кнопку ещё раз, чтобы получить скидку и подписаться.",
+        "claimCouponFailed": "Не удалось получить купон",
+        "tryAgainLater": "Попробуйте позже",
+        "couponClaimed": "Купон получен!",
+        "failedToProcess": "Не удалось обработать"
+      },
+      "usageEstimate": {
+        "title": "Оценка месячного использования",
+        "videos": "До {count} видео в месяц",
+        "images": "До {count} изображений в месяц",
+        "audios": "До {count} звуков в месяц"
+      },
+      "unlimitedNotes": {
+        "title": "Примечания по использованию",
+        "videoTasks": {
+          "title": "Видео‑задачи:",
+          "body": "Можно запускать до 5 задач одновременно. Месячный лимит: 300. После достижения лимита включается медленный режим: дневной лимит 30 видео за 24 часа и 10 задач в час."
+        },
+        "imageTasks": {
+          "title": "Задачи изображений:",
+          "body": "До 300 задач в месяц. Быстрый режим действует до 300‑й задачи (5 в минуту). После этого медленный режим ограничивает 1 задачу в минуту."
+        },
+        "premiumModels": {
+          "title": "Премиум‑модели:",
+          "body": "Некоторые дорогие модели не входят в планы UNLIMITED. Варианты VEO 3.* (не fast) и варианты Sora‑2 /pro продолжают расходовать кредиты."
+        }
+      },
+      "currentPlan": "Текущий план",
+      "yearlyEquivalent": "Эквивалент <price>{value}</price>",
+      "yearlySavings": "Сэкономьте <amount>{value}</amount> по сравнению с ежемесячной оплатой"
+    },
+    "features": {
+      "monthlyCredits": "{credits} кредитов в месяц",
+      "monthlyVideoCredits": "{credits} видеокредитов в месяц",
+      "fullAccessTopModels": "Полный доступ к топ-{count} AI видео-моделям",
+      "accessAllModels": "Доступ ко всем моделям",
+      "purchaseMoreRolloverVideoCredits": "Покупка дополнительных переносимых видеокредитов",
+      "downloadNoWatermark": "Скачивание видео без водяного знака",
+      "commercialUse": "Коммерческое использование",
+      "fastGenerations": "Быстрая генерация",
+      "prioritySupport": "Приоритетная поддержка",
+      "unlimitedVideoAndImageGeneration": "Безлимитная генерация видео и изображений"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Открыть параметры оплаты"
+      },
+      "actions": {
+        "opening": "Открываем...",
+        "billingOptions": "Параметры оплаты"
+      },
+      "confirm": {
+        "title": "Управление подпиской",
+        "description": "Хотите отменить подписку? Нам важен ваш отзыв перед уходом.",
+        "keep": "Оставить подписку",
+        "continueCancel": "Продолжить отмену"
+      },
+      "toast": {
+        "openFailed": "Не удалось открыть управление подпиской",
+        "feedbackThanks": "Спасибо за отзыв!",
+        "feedbackSaveFailed": "Не удалось сохранить отзыв, но вы всё равно можете управлять подпиской"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "Нам важен ваш отзыв",
+        "subtitle": "Помогите нам стать лучше — ответьте на несколько коротких вопросов"
+      },
+      "common": {
+        "close": "Закрыть",
+        "other": "Другое",
+        "stepIndicator": "Шаг {current} из {total}"
+      },
+      "actions": {
+        "back": "Назад",
+        "next": "Далее",
+        "submitting": "Отправка...",
+        "complete": "Завершить и продолжить"
+      },
+      "satisfaction": {
+        "1": "Очень недоволен",
+        "2": "Недоволен",
+        "3": "Нейтрально",
+        "4": "Доволен",
+        "5": "Очень доволен"
+      },
+      "steps": {
+        "1": {
+          "title": "Как вы узнали о ReelMind?",
+          "options": {
+            "social": "Социальные сети (Twitter, Instagram и т. д.)",
+            "search": "Поисковые системы (Google, Bing и т. д.)",
+            "friend": "Рекомендация друга или коллеги",
+            "ads": "Онлайн‑реклама",
+            "blog": "Тех‑блог или сайт обзоров"
+          }
+        },
+        "2": {
+          "title": "Для чего вы в основном используете ReelMind?",
+          "description": "Выберите все варианты, которые подходят вашим целям.",
+          "options": {
+            "video": "Создание видео",
+            "image": "Генерация изображений",
+            "music": "Создание музыки",
+            "marketing": "Маркетинг и реклама",
+            "socialPosts": "Посты в соцсетях",
+            "education": "Обучающие материалы",
+            "personal": "Личные проекты",
+            "exploring": "Поиск новых идей"
+          }
+        },
+        "3": {
+          "title": "Кто вы?",
+          "options": {
+            "creator": "Создатель контента",
+            "developer": "Фриланс‑разработчик",
+            "marketingPro": "Маркетолог",
+            "businessOwner": "Владелец бизнеса",
+            "designer": "Дизайнер",
+            "hobbyist": "Любитель",
+            "student": "Студент",
+            "artist": "Художник"
+          }
+        },
+        "4": {
+          "title": "Как бы вы оценили опыт?",
+          "description": "Оцените общую удовлетворённость ReelMind"
+        },
+        "5": {
+          "title": "Почему вы решили отменить подписку?",
+          "options": {
+            "price": "Слишком дорого",
+            "usage": "Почти не использовал(а)",
+            "features": "Не хватает нужных функций",
+            "quality": "Качество результатов",
+            "bugs": "Технические проблемы или баги",
+            "alternative": "Нашёл(ла) альтернативу лучше"
+          }
+        },
+        "6": {
+          "title": "Поделитесь отзывом",
+          "description": "Ваши мысли помогают сделать ReelMind лучше для всех.",
+          "placeholder": "Что можно улучшить? Какие функции хотите видеть? (необязательно)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Запрос отправлен. Мы скоро свяжемся с вами.",
+        "submitFailed": "Не удалось отправить запрос"
+      },
+      "card": {
+        "title": "Enterprise и кастомный план",
+        "subtitle": "Индивидуальные цены, счета и поддержка",
+        "description": "Нужны счета, помощь с соответствием или особый workflow? Опишите требования — мы предложим лучший вариант.",
+        "toggle": {
+          "hide": "Скрыть форму",
+          "show": "Связаться с продажами"
+        },
+        "highlights": {
+          "sso": "SSO и соответствие",
+          "invoices": "Счета и purchase orders",
+          "support": "Приоритетная поддержка",
+          "workflows": "Кастомные workflow"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "Тип обращения",
+          "placeholder": "Выберите тип обращения",
+          "options": {
+            "business": "Бизнес",
+            "individual": "Частное лицо"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Оценка месячного использования (USD)",
+          "placeholder": "Выберите оценку",
+          "options": {
+            "0to1000": "0–1000 долларов США",
+            "1000to5000": "1000–5000 долларов США",
+            "5000to10000": "5000–10 000 долларов США",
+            "10000plus": "$10 000+",
+            "custom": "Другая сумма (USD)"
+          },
+          "custom": {
+            "label": "Своя оценка месячного использования (USD)",
+            "placeholder": "Введите сумму в USD"
+          }
+        },
+        "firstName": {
+          "label": "Имя",
+          "placeholder": "Джейн"
+        },
+        "lastName": {
+          "label": "Фамилия",
+          "placeholder": "Доу"
+        },
+        "email": {
+          "label": "электронная почта",
+          "placeholder": "ваш.электронная почта@company.com"
+        },
+        "website": {
+          "label": "Сайт",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "Расскажите о проекте и требованиях",
+          "placeholder": "Что вы создаёте? Какие нужны workflow, соответствие и ожидаемый объём?"
+        },
+        "actions": {
+          "cancel": "Отмена",
+          "submitting": "Отправка...",
+          "submit": "Отправить"
+        },
+        "validation": {
+          "firstNameRequired": "Имя обязательно",
+          "lastNameRequired": "Фамилия обязательна",
+          "emailInvalid": "Email должен быть корректным",
+          "websiteInvalid": "Сайт должен быть корректным URL",
+          "monthlyEstimateRequired": "Оценка обязательна",
+          "monthlyEstimateEnter": "Введите оценку месячного использования",
+          "monthlyEstimateMin": "Оценка должна быть >= 0",
+          "requirementsMin": "Пожалуйста, опишите подробнее (мин {count} символов)",
+          "maxChars": "Макс {count} символов"
+        }
+      }
+    },
+    "faq": {
+      "title": "Частые вопросы",
+      "items": {
+        "proBenefits": {
+          "question": "Какие преимущества у PRO?",
+          "answer": "PRO даёт 1000 кредитов каждый месяц (на $10), приоритетный доступ к новым функциям, более быструю генерацию видео, расширенные опции редактирования и приоритетную поддержку."
+        },
+        "cancelAnytime": {
+          "question": "Можно ли отменить подписку в любой момент?",
+          "answer": "Да, вы можете отменить подписку в любой момент. Преимущества будут действовать до конца текущего платежного периода.",
+          "discountNote": {
+            "title": "Особая примечание для подписок со скидкой:",
+            "body": "Если вы оформили подписку по купону и использовали кредитов больше, чем покрывает скидка в первый месяц, отменить подписку можно только после оплаты второго месяца. Это обеспечивает справедливое использование промо‑предложений."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Есть ли разница между месячной и годовой подпиской?",
+          "answer": "Да, годовая подписка заметно дешевле месячной. Экономия примерно 20% при ежегодной оплате."
+        },
+        "whatAreCredits": {
+          "question": "Что такое кредиты ReelMind?",
+          "answer": "Кредиты ReelMind — виртуальная валюта платформы для генерации AI‑видео и изображений. Разные функции требуют разное количество кредитов. Например, стандартное видео (480p) стоит 50 кредитов, а HD‑видео (720p) — 80."
+        },
+        "earnCredits": {
+          "question": "Как заработать кредиты?",
+          "intro": "Заработать кредиты можно несколькими способами:",
+          "items": {
+            "membership": "По подписке (PRO — 1000 кредитов в месяц, MAX — 2000)",
+            "purchase": "Покупая пакеты кредитов",
+            "newUser": "Новые пользователи получают 100 бесплатных кредитов при регистрации",
+            "posting": "Публикуя контент на ReelMind (50 кредитов в день)",
+            "promotions": "Промо‑акции и специальные награды"
+          }
+        },
+        "expire": {
+          "question": "Кредиты сгорают?",
+          "answer": "Кредиты, купленные напрямую, не сгорают и остаются на аккаунте до использования. Ежемесячно начисляемые кредиты сбрасываются в начале месяца. Неиспользованные кредиты с прошлого месяца не переносятся."
+        },
+        "refund": {
+          "question": "Можно ли вернуть деньги за неиспользованные кредиты?",
+          "answer": "Мы не возвращаем деньги за купленные кредиты. Если технические проблемы помешали корректному использованию кредитов, свяжитесь с поддержкой — мы разберёмся."
+        },
+        "membershipVsCredits": {
+          "question": "В чём разница между подпиской и кредитами?",
+          "answer": "Подписка даёт ежемесячные кредиты и преимущества (приоритетная обработка, эксклюзивные функции). Кредиты можно покупать отдельно и расходовать при генерации. Выбирайте подписку для регулярного использования или кредиты — для разового."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Все права защищены."
+    }
+  },
+  "Search": {
+    "placeholder": "Поиск...",
+    "noResultsFound": "Ничего не найдено",
+    "viewAllResults": "Показать все результаты",
+    "sections": {
+      "posts": "Посты",
+      "users": "Пользователи"
+    },
+    "tabs": {
+      "posts": "Посты",
+      "users": "Пользователи"
+    },
+    "unknownUser": "Неизвестно",
+    "loading": "Загрузка...",
+    "searching": "Поиск...",
+    "loadingMore": "Загрузка...",
+    "tryAgain": "Повторить",
+    "noPostsFound": "Посты не найдены",
+    "noUsersFound": "Пользователи не найдены",
+    "empty": {
+      "title": "Поиск",
+      "hint": "Введите ключевые слова для поиска контента"
+    },
+    "errors": {
+      "searchFailed": "Поиск не удался"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "ПОЖИЗНЕННЫЕ КОМИССИИ - 20% Навсегда"
+    },
+    "hero": {
+      "lifetime": "ПОЖИЗНЕННО",
+      "passiveIncome": "ПАССИВНЫЙ ДОХОД",
+      "subtitle": {
+        "prefix": "Зарабатывайте",
+        "suffix": "комиссию навсегда"
+      }
+    },
+    "actions": {
+      "getStarted": "Начать",
+      "viewDashboard": "Открыть панель",
+      "signInFirst": "Сначала войдите"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "Платформа ReelMind API",
+      "actions": {
+        "modelsPricing": "Модели и цены",
+        "viewDocumentation": "Документация"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API‑ключ успешно создан",
+      "apiKeyCreateFailed": "Не удалось создать API‑ключ",
+      "apiKeyDeleted": "API‑ключ успешно удалён",
+      "apiKeyDeletedDescription": "API‑ключ удалён",
+      "apiKeyDeleteFailed": "Не удалось удалить API‑ключ",
+      "apiKeyCopied": "API‑ключ скопирован в буфер обмена",
+      "modelIdCopied": "ID модели скопирован в буфер обмена"
+    },
+    "accountCard": {
+      "notLoggedIn": "Не выполнен вход",
+      "loadingKeys": "Загрузка API‑ключей...",
+      "keysAvailable": "{count} {count, plural, one {API‑ключ доступен} other {API‑ключей доступно}}",
+      "createKey": "Создать API‑ключ",
+      "helpPrefix": "Нужна помощь? Смотрите нашу ",
+      "apiDocumentation": "документацию API"
+    },
+    "stats": {
+      "plan": "План",
+      "resetDate": "Дата сброса",
+      "credits": "Кредиты",
+      "tasks": "Задачи",
+      "loading": "Загрузка...",
+      "freePlan": "Бесплатный план",
+      "na": "Н/Д",
+      "buyCredits": "Купить кредиты"
+    },
+    "apiKeys": {
+      "title": "Управление API‑ключами",
+      "description": "Управляйте API‑ключами для доступа к API генерации видео ReelMind",
+      "createNew": "Создать новый API‑ключ",
+      "loading": "Загрузка API‑ключей...",
+      "label": "API‑ключ",
+      "created": "Создан {date}",
+      "active": "Активен",
+      "inactive": "Неактивен",
+      "show": "Показать API‑ключ",
+      "hide": "Скрыть API‑ключ",
+      "copy": "Скопировать API‑ключ",
+      "totalCalls": "Всего вызовов",
+      "creditsUsed": "Потрачено кредитов",
+      "empty": {
+        "title": "Нет API‑ключей",
+        "description": "Вы ещё не создали API‑ключи. Создайте первый ключ, чтобы начать использовать ReelMind API.",
+        "createFirst": "Создать первый API‑ключ"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Модели и цены",
+      "apiDocumentation": "Документация API"
+    },
+    "documentation": {
+      "title": "Документация API",
+      "authentication": "Аутентификация",
+      "authenticationIntro": "Все запросы API требуют аутентификации с помощью API‑ключа. Ваш API‑ключ — это UUID, который можно создать ниже в разделе управления API‑ключами.",
+      "authenticationMethods": "Методы аутентификации",
+      "exampleRequest": "Пример запроса",
+      "important": "Важно",
+      "apiEndpoints": "Эндпоинты API",
+      "responseFormat": "Формат ответа",
+      "responseFormatIntro": "Формат ответа задачи генерации видео:",
+      "parameters": "Параметры",
+      "table": {
+        "name": "Название",
+        "type": "Тип",
+        "required": "Обязательно",
+        "description": "Описание"
+      },
+      "yes": "Да",
+      "no": "Нет"
+    },
+    "pricing": {
+      "title": "Цены и модели API",
+      "intro": "Изучите доступные AI‑модели и их цены для API генерации видео и изображений",
+      "loading": "Загрузка доступных моделей...",
+      "available": "Доступно",
+      "unavailable": "Недоступно",
+      "credits": "{credits} кредитов",
+      "basePricePerImage": "Базовая цена (за изображение)",
+      "basePrice5sVideo": "Базовая цена (видео 5с)",
+      "creditsPerSecond": "+{credits} кредитов/сек",
+      "modelId": "ID модели",
+      "copyModelId": "Скопировать ID модели",
+      "noModels": {
+        "title": "Нет доступных моделей",
+        "description": "Сейчас нет AI‑моделей для доступа через API. Загляните позже."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Текст → видео",
+      "imageToVideo": "Изображение → видео",
+      "videoToVideo": "Видео → видео",
+      "textToImage": "Текст → изображение",
+      "imageToImage": "Изображение → изображение"
+    },
+    "deleteModal": {
+      "title": "Подтвердите удаление",
+      "description": "Удалить этот API‑ключ? Это действие нельзя отменить.",
+      "keyName": "Имя ключа: {name}",
+      "createdOn": "Создан: {date}",
+      "cancel": "Отмена",
+      "deleting": "Удаление...",
+      "deleteKey": "Удалить API‑ключ"
+    },
+    "modelParameters": {
+      "title": "Параметры модели",
+      "required": "Обязательно",
+      "default": "По умолчанию: {value}",
+      "labels": {
+        "prompt": "Промпт",
+        "guidance_scale": "Ориентировочная шкала",
+        "aspect_ratio": "Соотношение",
+        "seed": "Семена",
+        "image_url": "URL изображения",
+        "duration": "Длительность",
+        "resolution": "Разрешение",
+        "num_inference_steps": "Шаги инференса",
+        "cfg_scale": "масштаб CFG"
+      },
+      "flux": {
+        "promptDescription": "Текстовый промпт, описывающий изображение для генерации",
+        "guidanceScaleDescription": "Контролирует, насколько близко изображение следует промпту",
+        "aspectRatioDescription": "Соотношение сторон сгенерированного изображения",
+        "seedDescription": "Случайный seed для воспроизводимой генерации",
+        "imageUrlDescription": "URL входного изображения для image‑to‑image"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Текст → изображение · Редактирование",
+      "title": "FLUX / Нано Банан / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - AI‑агент‑директор №1 в мире",
+      "description": "AI‑агент‑директор №1 в мире"
+    },
+    "page": {
+      "loading": "Загрузка AI‑директора Nolan..."
+    },
+    "heroBanner": {
+      "label": "Революционная AI‑технология",
+      "name": "Нолан",
+      "worldFirst": "Первый в мире",
+      "aiAgentDirector": "AI‑агент‑директор"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Ожидается",
+        "queued": "В очереди",
+        "processing": "Обработка",
+        "completed": "Завершено",
+        "failed": "Не удалось",
+        "canceled": "Отменено"
+      },
+      "model": {
+        "unknown": "Неизвестная модель",
+        "unnamed": "Безымянный"
+      },
+      "errors": {
+        "fetchListTitle": "Не удалось загрузить задачи.",
+        "unknown": "Неизвестная ошибка",
+        "fetchDetails": "Не удалось получить сведения о задаче.",
+        "downloadFailed": "Загрузка не удалась",
+        "retryFailed": "Повторная попытка не удалась"
+      },
+      "details": {
+        "videoTitle": "Подробности видео-задачи",
+        "imageTitle": "Подробности задачи изображения",
+        "videoPreview": "Предварительный просмотр видео",
+        "hideVideo": "Скрыть видео",
+        "showVideo": "Показать видео",
+        "downloadVideo": "Скачать видео",
+        "browserNoVideoSupport": "Ваш браузер не поддерживает воспроизведение видео.",
+        "labels": {
+          "duration": "Продолжительность",
+          "fileSize": "Размер файла",
+          "format": "Формат",
+          "prompt": "Подскажите",
+          "model": "Модель",
+          "ratio": "Соотношение сторон",
+          "resolution": "Разрешение",
+          "taskId": "Идентификатор задачи",
+          "user": "Пользователь",
+          "status": "Статус",
+          "createdTime": "Время создания",
+          "startedTime": "Время начала",
+          "completedTime": "Завершенное время",
+          "generationModel": "Модель поколения",
+          "priority": "Приоритет",
+          "requestId": "Идентификатор запроса",
+          "lastActivity": "Последняя активность"
+        },
+        "videoPreviewUnavailable": "Предварительный просмотр видео недоступен.",
+        "videoNoOutput": "Задача выполнена, но видео не выводится",
+        "videoNotCompleted": "Задача еще не завершена",
+        "generationParams": "Параметры генерации",
+        "basicInfo": "Основная информация",
+        "timeInfo": "Информация о времени",
+        "detailData": "Подробные данные",
+        "inputParams": "Входные параметры",
+        "outputResult": "Выходной результат",
+        "errorLog": "Журнал ошибок",
+        "retrying": "Повторная попытка...",
+        "retryTask": "Повторить задачу",
+        "generatedImage": "Сгенерированное изображение",
+        "close": "Закрыть"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Управление отзывами пользователей",
+        "subtitle": "Управляйте отзывами и жалобами, отправленными пользователями"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Не удалось получить данные.",
+          "fetchFailedDescription": "Не удалось получить данные обратной связи: {error}.",
+          "unknown": "Неизвестная ошибка"
+        },
+        "type": {
+          "bug": "Отчет об ошибке",
+          "suggestion": "Предложение",
+          "other": "Другое"
+        },
+        "loading": "Загрузка...",
+        "filter": {
+          "label": "Тип обратной связи",
+          "all": "Все типы"
+        },
+        "total": "Всего: {total} элементов отзывов",
+        "empty": "Нет данных обратной связи",
+        "headers": {
+          "userInfo": "Информация о пользователе",
+          "type": "Тип",
+          "subject": "Тема",
+          "submittedAt": "Отправлено",
+          "actions": "Действия"
+        },
+        "user": {
+          "unknown": "Неизвестный пользователь",
+          "noEmail": "Нет электронной почты"
+        },
+        "actions": {
+          "collapse": "Свернуть",
+          "viewDetails": "Посмотреть детали"
+        },
+        "contentLabel": "Обратная связь:",
+        "pagination": {
+          "previous": "Предыдущий",
+          "next": "Далее"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Пожалуйста, введите ключевое слово для поиска.",
+        "noUsersFound": "Подходящих пользователей не найдено.",
+        "searchFailed": "Не удалось найти пользователей.",
+        "userRequired": "Пожалуйста, выберите пользователя или введите идентификатор пользователя.",
+        "amountInvalid": "Пожалуйста, введите действительную сумму кредита.",
+        "descriptionRequired": "Введите описание гранта.",
+        "grantFailed": "Не удалось предоставить кредиты."
+      },
+      "success": {
+        "granted": "Кредиты выданы успешно."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Не удалось получить опросы.",
+        "fetchStats": "Не удалось получить статистику опроса."
+      }
+    },
+    "memberships": {
+      "title": "Управление подпиской пользователей",
+      "search": {
+        "placeholder": "Поиск по идентификатору пользователя, адресу электронной почты или псевдониму...",
+        "button": "Поиск"
+      },
+      "stats": {
+        "total": "Всего подписок",
+        "yearly": "Ежегодные участники"
+      },
+      "list": {
+        "title": "Список подписки"
+      },
+      "loading": "Загрузка...",
+      "actions": {
+        "retry": "Повторить попытку"
+      },
+      "empty": "Нет данных о подписке",
+      "table": {
+        "headers": {
+          "userInfo": "Информация о пользователе",
+          "plan": "План",
+          "billingCycle": "Биллинговый цикл",
+          "status": "Статус",
+          "credits": "Кредитный баланс",
+          "videoTasks": "Видео Задания",
+          "imageTasks": "Задачи с изображениями",
+          "createdAt": "Время создания",
+          "expiresAt": "Срок действия"
+        },
+        "user": {
+          "unknown": "Неизвестно"
+        },
+        "status": {
+          "active": "Активный",
+          "inactive": "Неактивный",
+          "cancelAtPeriodEnd": "Отменить в конце периода"
+        },
+        "creditsUnit": "кредиты",
+        "flagged": "Помечено",
+        "tasksUnit": "задачи",
+        "never": "Никогда"
+      },
+      "pagination": {
+        "summary": "Показаны записи от {start} до {end} из {total}.",
+        "previous": "Предыдущий",
+        "next": "Далее",
+        "page": "Страница {currentPage} из {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Не удалось удалить сообщение. Пожалуйста, попробуйте еще раз."
+      }
+    }
+  },
+  "Common": {
+    "language": "Язык",
+    "onlyEnglish": "На данный момент доступен только английский.",
+    "onlySupportedPages": "Дополнительные языки в настоящее время доступны только на страницах «Домашняя страница», «Изучение», «Поиск», «Создание», «Лего», «Музыка», «Членство», «Контакты», «Пользователь», «Поделиться», «Модели», «Эффекты» и «Блог».",
+    "languages": {
+      "en": "Английский",
+      "zh-CN": "Китайский (упрощенный)"
+    },
+    "actions": {
+      "viewAll": "Посмотреть все",
+      "cancel": "Отмена",
+      "recreate": "Воссоздать",
+      "download": "Скачать",
+      "downloading": "Загрузка...",
+      "showMore": "Показать больше",
+      "showLess": "Показать меньше"
+    },
+    "aria": {
+      "scrollRight": "Прокрутите вправо",
+      "search": "Поиск"
+    },
+    "search": {
+      "placeholder": "Поиск сообщений и пользователей..."
+    },
+    "share": {
+      "button": "Делиться",
+      "toast": {
+        "copiedTitle": "Скопировано",
+        "copiedMessage": "Ссылка скопирована в буфер обмена",
+        "failedTitle": "Не удалось скопировать",
+        "failedMessage": "Невозможно скопировать ссылку в буфер обмена"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Нолан AI Директор",
+      "earlyAccess": "Ранний доступ",
+      "justOneCredit": "Всего 1 кредит"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Светлый режим",
+        "darkMode": "Темный режим",
+        "switchToLightMode": "Переключиться в светлый режим",
+        "switchToDarkMode": "Переключиться в темный режим"
+      },
+      "profile": {
+        "myProfile": "Мой профиль",
+        "goToMyProfile": "Перейти в мой профиль"
+      },
+      "menu": {
+        "openMenu": "Открыть меню",
+        "close": "Закрывать"
+      },
+      "membership": {
+        "title": "Членство",
+        "tapToViewPlans": "Нажмите, чтобы просмотреть планы",
+        "upgrade": "Обновление",
+        "plans": {
+          "free": "Бесплатно",
+          "pro": "Про",
+          "max": "Макс",
+          "unlimited": "Безлимитный"
+        }
+      },
+      "actions": {
+        "pricing": "Цены",
+        "signIn": "Войти"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Все права защищены."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Быстрый",
+        "model": "Модель",
+        "ratio": "Соотношение",
+        "guidance": "Руководство",
+        "steps": "Шаги",
+        "seed": "Семя",
+        "definition": "Определение"
+      },
+      "values": {
+        "unknownModel": "Неизвестная модель",
+        "random": "Случайный"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Пагинация",
+        "previous": "Перейти на предыдущую страницу",
+        "next": "Перейти на следующую страницу"
+      },
+      "previous": "Предыдущий",
+      "next": "Следующий",
+      "more": "Больше страниц"
+    },
+    "concurrentLimit": {
+      "title": "Достигнут лимит задач",
+      "defaultMessage": "Бесплатные пользователи могут одновременно запускать только одну задачу создания видео.",
+      "currentStatus": "Текущий статус",
+      "currentPlan": "Текущий план",
+      "premiumBenefits": "Премиальные преимущества",
+      "plans": {
+        "unlimited": "Безлимитный план",
+        "free": "Бесплатно",
+        "unlimitedTasks": "Неограниченное количество задач"
+      },
+      "unlimited": {
+        "maxTasks": "Максимум 3 одновременных задачи",
+        "priority": "Высокоприоритетная обработка",
+        "features": "Все премиум-функции",
+        "waitNote": "Прежде чем отправлять новые, дождитесь завершения некоторых текущих задач."
+      },
+      "free": {
+        "maxTasks": "1 одновременная задача",
+        "priority": "Стандартный приоритет",
+        "features": "Основные функции"
+      },
+      "upgrade": {
+        "maxTasks": "До 5 одновременных задач",
+        "priority": "Обработка с более высоким приоритетом",
+        "features": "Доступ ко всем моделям"
+      },
+      "actions": {
+        "acknowledge": "Понятно",
+        "upgrade": "Обновление",
+        "loading": "Загрузка..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Локальная загрузка",
+      "reelmind": "Создано ReelMind"
+    },
+    "reelmind": {
+      "description": "Выберите видео, созданное в ReelMind.",
+      "browse": "Просмотреть видео ReelMind"
+    },
+    "title": {
+      "placeholder": "Добавьте заголовок..."
+    },
+    "tags": {
+      "title": "Теги",
+      "empty": "Добавьте теги, чтобы лучше классифицировать ваше видео.",
+      "placeholder": "Добавить тег (нажмите Enter для подтверждения)",
+      "count": "{count}/{limit}",
+      "helper": "До {limit} тегов, {max} символов каждый."
+    },
+    "description": {
+      "placeholder": "Добавить описание..."
+    },
+    "generationType": {
+      "title": "Тип поколения",
+      "txt2video": "Текст в видео",
+      "txt2videoDescription": "Генерировать из текстовой подсказки.",
+      "img2video": "Изображение в видео",
+      "img2videoDescription": "Создать из эталонного изображения."
+    },
+    "prompts": {
+      "promptTitle": "Быстрый",
+      "promptPlaceholder": "Введите подсказку, использованную для создания этого видео...",
+      "negativeTitle": "Отрицательная подсказка",
+      "negativePlaceholder": "Введите отрицательную подсказку..."
+    },
+    "modelResources": {
+      "title": "Модельные ресурсы",
+      "placeholder": "Перечислите используемые ресурсы модели, например. Модели, LoRA, вложения..."
+    },
+    "aigc": {
+      "guidanceScale": "Ориентировочная шкала",
+      "guidanceScalePlaceholder": "например 7,5",
+      "steps": "Шаги",
+      "stepsPlaceholder": "например 30",
+      "seed": "Семя",
+      "seedPlaceholder": "например 1234567890"
+    },
+    "tools": {
+      "title": "Инструменты генерации"
+    },
+    "videoPreview": {
+      "uploadComplete": "Загрузка завершена",
+      "uploading": "Загрузка...",
+      "clickToUpload": "Нажмите, чтобы загрузить видео",
+      "remove": "Удалить видео"
+    },
+    "actions": {
+      "publish": "Публиковать",
+      "publishing": "Издательский...",
+      "back": "Назад"
+    },
+    "errors": {
+      "tagEmpty": "Тег не может быть пустым.",
+      "tagTooLong": "Тег не может превышать {max} символов.",
+      "tagExists": "Этот тег уже существует.",
+      "tagLimit": "Вы можете добавить до {limit} тегов.",
+      "authRequired": "Пожалуйста, войдите, чтобы загрузить.",
+      "uploadFailed": "Загрузка не удалась. Пожалуйста, попробуйте еще раз.",
+      "uploadParamsFailed": "Не удалось получить параметры загрузки.",
+      "fileAddFailed": "Не удалось добавить файл. Пожалуйста, попробуйте еще раз."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Блог - ReelMind",
+      "description": "Ознакомьтесь с советами, учебными пособиями и информацией о создании контента с помощью ИИ, создании видео и новейших функциях ReelMind."
+    },
+    "page": {
+      "title": "Блог",
+      "empty": "Сообщений в блоге не найдено"
+    },
+    "error": {
+      "title": "Ошибка загрузки сообщений",
+      "description": "Что-то пошло не так при загрузке сообщений в блоге.",
+      "retry": "Попробуйте еще раз"
+    },
+    "notFound": {
+      "title": "Страница не найдена",
+      "description": "Запрошенная вами страница блога не существует."
+    },
+    "feed": {
+      "end": "Вы достигли конца",
+      "retry": "Повторить попытку",
+      "loadFailed": "Не удалось загрузить сообщения в блоге."
+    },
+    "topFeed": {
+      "refresh": "Обновить",
+      "exploreMore": "Узнайте больше удовольствия",
+      "loadFailed": "Не удалось загрузить случайные сообщения."
+    },
+    "floatingChat": {
+      "title": "Спросите Нолана А.И.",
+      "subtitle": "Режиссер ИИ-агента №1!",
+      "placeholder": "Спросите об этой статье или поделитесь своими идеями для фильмов...",
+      "cta": "Отправить Нолану"
+    },
+    "featureCard": {
+      "label": "Видео модели",
+      "title": "Reelmind предлагает мощные инструменты для воплощения ваших идей в жизнь.",
+      "subtitle": "Превратите свои идеи в потрясающие визуальные эффекты с помощью 101 модели искусственного интеллекта.",
+      "cta": "Попробуйте сейчас"
+    },
+    "breadcrumbs": {
+      "home": "Дом"
+    },
+    "article": {
+      "notFoundTitle": "Статья не найдена",
+      "notFoundDescription": "Запрошенная статья не найдена."
+    }
+  },
+  "Favorites": {
+    "title": "Мои избранные",
+    "subtitle": "Здесь вы можете управлять своими любимыми видео и моделями.",
+    "tabs": {
+      "video": "Видео",
+      "model": "Модель"
+    },
+    "empty": {
+      "title": "У вас пока нет избранных"
+    },
+    "alert": {
+      "title": "Ошибка",
+      "retry": "Повторить попытку",
+      "loadFailed": "Не удалось загрузить избранное. Пожалуйста, попробуйте еще раз.",
+      "removeFailed": "Невозможно удалить избранное. Пожалуйста, попробуйте еще раз."
+    },
+    "card": {
+      "video": "Видео",
+      "model": "Модель"
+    },
+    "button": {
+      "favorite": "Любимый",
+      "favorited": "Избранное"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Добро пожаловать в ReelMind",
+      "subtitle": "Войдите или создайте аккаунт создателя",
+      "continueWithGoogle": "Продолжить с Google",
+      "orContinueWithEmail": "или продолжить с email",
+      "emailLabel": "электронная почта",
+      "emailPlaceholder": "ваш@email.com",
+      "emailAddressPlaceholder": "Адрес электронной почты",
+      "passwordLabel": "Пароль",
+      "passwordPlaceholder": "••••••••",
+      "show": "показать",
+      "hide": "скрыть",
+      "inviteCodeLabelOptional": "Код приглашения (необязательно)",
+      "inviteCodePlaceholder": "Введите код",
+      "invitedBy": "Пригласил(а) <name>{value}</name>",
+      "continue": "Продолжить",
+      "signIn": "Войти",
+      "createAccount": "Создать аккаунт",
+      "switchToSignIn": "Уже есть аккаунт? Войти",
+      "switchToSignUp": "Нет аккаунта? Зарегистрироваться",
+      "pageSubtitleCreate": "Создайте аккаунт",
+      "pageSubtitleSignIn": "Войдите в свой аккаунт",
+      "termsLine": "Продолжая, вы соглашаетесь с <terms>Условиями</terms> и <privacy>Политикой конфиденциальности</privacy>"
+    },
+    "verifyEmail": {
+      "title": "Подтвердите email",
+      "sentLinkTo": "Мы отправили ссылку для подтверждения на",
+      "checkInbox": "Проверьте входящие и нажмите ссылку, чтобы продолжить.",
+      "understand": "Понятно",
+      "useDifferentEmail": "Использовать другой email"
+    },
+    "errors": {
+      "invalidEmail": "Неверный адрес email",
+      "suspiciousEmail": "Этот email выглядит подозрительно",
+      "verifyBeforeLogin": "Пожалуйста, подтвердите email перед входом",
+      "operationFailed": "Не удалось выполнить операцию, попробуйте ещё раз",
+      "googleFailed": "Не удалось войти через Google, попробуйте ещё раз",
+      "checkEmailConfirmation": "Проверьте email для ссылки подтверждения!"
+    },
+    "brand": {
+      "headlineLine1": "производители катушек",
+      "headlineLine2": "Добро пожаловать",
+      "taglineLine1": "Разверни свой ум.",
+      "taglineLine2": "Пусть ИИ превратит это в Reel.",
+      "cta": "Присоединяйтесь к нашему сообществу создателей и начните творить."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Добавить изображение",
+      "addMoreReferences": "Добавить больше ссылок",
+      "auto": "Авто",
+      "back": "Назад",
+      "character": "Персонаж",
+      "clear": "Очистить",
+      "clearAll": "Очистить все",
+      "close": "Закрыть",
+      "createPack": "Создать пакет",
+      "downloadCount": "Скачать {current}/{total}",
+      "dropOrUploadPhoto": "Перетащите или загрузите фотографию",
+      "goToLibrary": "Перейти в библиотеку",
+      "high": "Высокий",
+      "history": "История",
+      "inQueue": "В очереди",
+      "info": "Информация",
+      "instadump": "Инстадамп",
+      "manual": "Руководство",
+      "new": "Новый",
+      "next": "Далее",
+      "open": "Открыть",
+      "previous": "Предыдущий",
+      "ready": "Готов",
+      "recent": "Недавние",
+      "remove": "Удалить",
+      "replace": "Заменить",
+      "reset": "Сброс",
+      "restart": "Перезапустить",
+      "selectPack": "Выберите пакет",
+      "storyboard": "Раскадровка",
+      "upload": "Загрузить",
+      "uploading": "Загрузка..."
+    },
+    "prompts": {
+      "defaultImage": "Кинематографическое изображение с высокой детализацией и естественным освещением.",
+      "relightDefault": "Осветите объект мягким студийным светом.",
+      "faceSwapDefault": "Поменяйте лицо, сохранив сцену нетронутой.",
+      "characterSwapDefault": "Поменяйте персонажа, сохранив стиль.",
+      "drawToEditDefault": "Преобразуйте рисунок в чистое, детальное изображение."
+    },
+    "swap": {
+      "sourceTitle": "Источник",
+      "targetTitle": "Цель",
+      "faceSourceDescription": "Исходное изображение лица",
+      "faceTargetDescription": "Целевое изображение для замены",
+      "characterSourceDescription": "Исходное изображение персонажа",
+      "characterTargetDescription": "Целевое изображение для замены"
+    },
+    "inpaint": {
+      "sourceAlt": "Исходное изображение",
+      "paintHint": "Закрасьте область, которую хотите отредактировать.",
+      "maskUploading": "Загрузка маски",
+      "maskReady": "Маска готова",
+      "maskPaint": "Маска краски",
+      "paint": "Краска",
+      "erase": "Стереть"
+    },
+    "relight": {
+      "title": "Перезажечь",
+      "quickSelect": "Быстрый выбор",
+      "directions": {
+        "top": "Топ",
+        "front": "Фронт",
+        "right": "Правильно",
+        "left": "Левый",
+        "back": "Назад",
+        "bottom": "Внизу"
+      },
+      "brightness": "Яркость",
+      "color": "Цвет"
+    },
+    "upscale": {
+      "title": "высококлассный"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Эскиз в видео",
+      "drawToVideo": "Нарисовать в видео",
+      "drawToEdit": "Нарисуйте, чтобы редактировать",
+      "pen": "Ручка",
+      "eraser": "Ластик",
+      "color": "Цвет",
+      "size": "Размер",
+      "undo": "Отменить",
+      "redo": "Повторить",
+      "clear": "Очистить",
+      "generateVideo": "Создать видео",
+      "uploadTitle": "Загрузить медиа",
+      "uploadDescription": "Добавьте фотографию для наглядности рисунка."
+    },
+    "soulId": {
+      "heroTitle": "Персонаж идентификатора души",
+      "heroDescription": "Создайте целостного персонажа из своих фотографий.",
+      "createButton": "Создать персонажа",
+      "photoCount": "{count} фотографий",
+      "characterLabel": "Персонаж {index}",
+      "emptyGallery": "Персонажей пока нет.",
+      "dialogTitle": "Создать идентификатор души",
+      "dialogSubtitle": "Загрузите фотографии, чтобы создать своего персонажа.",
+      "addPhotosTitle": "Добавить фотографии",
+      "addPhotosDescription": "Загрузите 6–12 четких фотографий.",
+      "tip": "Совет: используйте разнообразные ракурсы и выражения."
+    },
+    "storyboard": {
+      "relightScene": "Пересвет сцены",
+      "headline": "Фабрика Моды",
+      "headlineAccent": "Создайте свою эстетику",
+      "description": "Раскадровка, редактирование, создание.",
+      "resultsLabel": "{count} результаты",
+      "uploadHint": "Загрузите эталонные изображения для наглядности сцены.",
+      "referenceImagesTitle": "Справочные изображения",
+      "referenceImagesDescription": "Добавьте до 4 изображений в соответствии со стилем"
+    },
+    "instadump": {
+      "sidebarTitle": "Инстадамп Студия",
+      "stepChoosePack": "Выберите пакет",
+      "stepAddPhoto": "Добавить фото",
+      "stepGetInstadump": "Получить Инстадамп",
+      "headerTitle": "Инстадамп",
+      "headerDescription": "Превратите селфи в полноценную библиотеку контента.",
+      "addPhotoTitle": "Добавьте свою фотографию",
+      "addPhotoDescription": "Для начала загрузите четкое селфи.",
+      "getInstadumpTitle": "Получите свой Инстадамп",
+      "newPhotosReady": "Новые фотографии готовы.",
+      "tryFree": "Попробуйте бесплатно",
+      "premiumTitle": "Премиум",
+      "premiumBulletOne": "Больше стилей в упаковке",
+      "premiumBulletTwo": "Приоритетная обработка",
+      "premiumBulletThree": "Загрузки в полном разрешении",
+      "upgradeNow": "Обновите сейчас"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Редактировать",
+      "subtitle": "Доступ к функциям редактирования и моделям",
+      "back": "Вернуться к редактированию",
+      "workspace": {
+        "title": "Рабочая область",
+        "status": "Заполнитель интерфейса",
+        "uploadTitle": "Загрузить медиа",
+        "uploadDescription": "Перетащите или щелкните, чтобы загрузить изображение/видео, чтобы начать"
+      },
+      "settings": {
+        "title": "Настройки",
+        "modelTitle": "Модель",
+        "modelDescription": "Выберите модель (бэкэнд скоро появится)",
+        "promptTitle": "Подскажите",
+        "promptDescription": "Опишите, что вы хотите (бэкэнд скоро появится)",
+        "generate": "Генерировать"
+      },
+      "model": {
+        "title": "Детали модели",
+        "descriptionTitle": "Описание",
+        "descriptionBody": "Это заполнитель. Подробности будут заполнены после подключения серверной части."
+      }
+    },
+    "menu": {
+      "title": "Редактировать",
+      "sections": {
+        "features": "Особенности",
+        "models": "Модели"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Редактировать видео",
+        "description": "Расширенное редактирование видео"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "Выберите область, опишите изменение"
+      },
+      "relight": {
+        "title": "Перезажечь",
+        "description": "Отрегулируйте положение, цвет и яркость освещения"
+      },
+      "aiStylist": {
+        "title": "AI-стилист",
+        "description": "Найдите свой идеальный образ"
+      },
+      "upscale": {
+        "title": "высококлассный",
+        "description": "Увеличьте разрешение и качество"
+      },
+      "skinEnhancer": {
+        "title": "Усилитель кожи",
+        "description": "Естественные, реалистичные текстуры кожи."
+      },
+      "angles": {
+        "title": "Углы",
+        "description": "Генерация под разными углами"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Максимальная детализация и точность"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Быстрое и легкое редактирование"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Бесшовная интеграция продуктов"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Масштабирование высокого разрешения"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Управляйте движением с помощью видеосправок"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Расширенное редактирование видео"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Главный план",
+      "completed": "Выполнено {completed}/{total}",
+      "steps": {
+        "script": "Сценарий и раскадровка",
+        "world": "Дизайн мировых ассетов",
+        "video": "Генерация видео",
+        "worldVideo": "Мировые ассеты и генерация видео",
+        "audio": "Дизайн голоса и аудио",
+        "final": "Финальная сборка"
+      }
+    }
+  }
+}

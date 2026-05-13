@@ -1,0 +1,98 @@
+{
+  "title": "Cài đặt",
+  "messages": {
+    "settingsSaved": "Đã lưu cài đặt",
+    "settingsReset": "Đã đặt lại cài đặt về mặc định",
+    "failedToSave": "Không thể lưu cài đặt",
+    "failedToLoad": "Không thể tải cấu hình",
+    "restartRequired": "Vui lòng khởi động lại ứng dụng để áp dụng cài đặt proxy"
+  },
+  "models": {
+    "title": "Mô hình",
+    "placeholder": "Nhập tên mô hình",
+    "addModel": "Thêm mô hình",
+    "types": {
+      "text": "văn bản",
+      "image": "hình ảnh",
+      "video": "video"
+    }
+  },
+  "provider": {
+    "title": "Nhà cung cấp",
+    "addProvider": "Thêm nhà cung cấp",
+    "providerName": "Tên nhà cung cấp",
+    "providerNamePlaceholder": "Nhập tên nhà cung cấp",
+    "apiUrl": "URL API",
+    "apiUrlPlaceholder": "Nhập URL API",
+    "apiKey": "API key",
+    "apiKeyPlaceholder": "Nhập API key",
+    "apiKeyDescription": "API key của bạn sẽ được lưu trữ an toàn",
+    "maxTokens": "Token tối đa",
+    "maxTokensPlaceholder": "Nhập token tối đa",
+    "maxTokensDescription": "Số lượng token tối đa trong phản hồi",
+    "customProvider": "✨ Nhà cung cấp tùy chỉnh",
+    "imageGeneration": "🎨 Tạo ảnh",
+    "delete": "Xóa",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "noModelsSelected": "Vui lòng thêm ít nhất một mô hình"
+  },
+  "proxy": {
+    "title": "Cài đặt Proxy",
+    "mode": "Chế độ proxy",
+    "selectMode": "Chọn chế độ proxy",
+    "modes": {
+      "none": "Không dùng proxy",
+      "system": "Proxy hệ thống",
+      "custom": "Proxy tùy chỉnh"
+    },
+    "enable": "Bật proxy",
+    "url": "URL proxy",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Kiểm tra kết nối",
+    "testing": "Đang kiểm tra...",
+    "testSuccess": "Kiểm tra kết nối proxy thành công",
+    "testFailed": "Kiểm tra kết nối proxy thất bại: {{message}}",
+    "testError": "Lỗi kiểm tra kết nối proxy",
+    "status": {
+      "enabled": "Đã bật",
+      "disabled": "Đã tắt",
+      "misconfigured": "Cấu hình sai"
+    }
+  },
+  "comfyui.workflows": "Workflows",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Tạo ảnh cục bộ",
+    "enable": "Bật",
+    "debugStatus": "🔍 Trạng thái debug",
+    "status": {
+      "disabled": "Đã tắt",
+      "running": "Đang chạy",
+      "installed": "Đã cài (không chạy)",
+      "notInstalled": "Chưa cài",
+      "notRunning": "Không chạy",
+      "checking": "Đang kiểm tra..."
+    },
+    "urlDescription": "URL dịch vụ ComfyUI; nhập địa chỉ nếu đã cài đặt",
+    "invalidUrl": "Vui lòng nhập URL hợp lệ (vd: http://127.0.0.1:8188)",
+    "notInstalledTitle": "Chưa cài ComfyUI",
+    "notInstalledDescription": "Cài ComfyUI để bật tạo ảnh cục bộ với mô hình Flux",
+    "installButton": "Cài ComfyUI",
+    "startButton": "Chạy ComfyUI",
+    "uninstallButton": "Gỡ ComfyUI",
+    "confirmUninstall": "Bạn có chắc muốn gỡ ComfyUI không? Việc này sẽ gỡ hoàn toàn ComfyUI khỏi hệ thống, bao gồm tất cả mô hình đã tải và cấu hình.",
+    "confirmUninstallButton": "Xác nhận gỡ",
+    "uninstallProgress": {
+      "title": "Đang gỡ ComfyUI",
+      "preparing": "Đang chuẩn bị gỡ...",
+      "inProgress": "Đang gỡ... Vui lòng đợi.",
+      "logTitle": "Nhật ký gỡ:",
+      "completed": "Đã gỡ xong"
+    },
+    "notInstalled": "ComfyUI chưa được cài đặt"
+  },
+  "saveSettings": "Lưu cài đặt",
+  "close": "Đóng",
+  "cancel": "Hủy"
+}

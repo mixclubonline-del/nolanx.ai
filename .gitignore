@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+apps/*/node_modules/
+apps/agent/.venv/
+
+# Builds
+dist/
+build/
+.next/
+out/
+apps/*/dist/
+apps/*/build/
+apps/web/.next/
+apps/web/out/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+apps/*/.env
+apps/*/.env.*
+!apps/*/.env.example
+apps/agent/user_data/config.toml
+
+# Runtime data
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.tsbuildinfo
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite
+*.sqlite3
+*.db
+apps/agent/user_data/files/
+apps/agent/user_data/nolanx-memory/
+apps/api/data/runtime-config.json
+apps/api/data/nolanx-db.json
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json

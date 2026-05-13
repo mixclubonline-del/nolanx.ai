@@ -1,0 +1,21 @@
+{
+  "title": "El primer director agente de IA del mundo: Nolan",
+  "subtitle": "Programa de acceso anticipado",
+  "description": "El primer director agente de IA del mundo: Nolan",
+  "tabs": {
+    "myCanvases": "Mis lienzos",
+    "community": "Comunidad"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan está preparando tu lienzo…",
+    "communitySessions": "Cargando sesiones de la comunidad..."
+  },
+  "community": {
+    "loadFailed": "No se pudieron cargar las sesiones de la comunidad",
+    "canvasNotAvailable": "El lienzo no está disponible para esta sesión",
+    "likeFailed": "No se pudo actualizar el «me gusta»"
+  },
+  "allProjects": "Todos los proyectos",
+  "noCanvases": "Aún no hay guiones gráficos",
+  "newCanvas": "Escena sin título"
+}

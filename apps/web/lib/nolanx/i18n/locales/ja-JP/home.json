@@ -1,0 +1,22 @@
+{
+  "title": "世界初のAIエージェント監督：Nolan",
+  "subtitle": "早期アクセスプログラム",
+  "description": "世界初のAIエージェント監督：Nolan",
+  "tabs": {
+    "myCanvases": "マイキャンバス",
+    "community": "コミュニティ"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan がキャンバスを準備しています…",
+    "communitySessions": "コミュニティセッションを読み込み中..."
+  },
+  "community": {
+    "loadFailed": "コミュニティセッションの読み込みに失敗しました",
+    "canvasNotAvailable": "このセッションではキャンバスを開けません",
+    "likeFailed": "いいねの更新に失敗しました"
+  },
+  "allProjects": "すべてのプロジェクト",
+  "noCanvases": "まだストーリーボードはありません",
+  "newCanvas": "無題のシーン"
+}
+

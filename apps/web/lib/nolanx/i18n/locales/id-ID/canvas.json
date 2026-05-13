@@ -1,0 +1,166 @@
+{
+  "title": "Papan cerita",
+  "rename": "Ganti nama storyboard",
+  "delete": "Hapus storyboard",
+  "share": "Bagikan storyboard",
+  "export": "Ekspor storyboard",
+  "exportImages": "Ekspor frame",
+  "import": "Impor storyboard",
+  "untitled": "Adegan Tanpa Judul",
+  "back": "Kembali ke meja sutradara",
+  "saveSnapshot": "Simpan snapshot adegan",
+  "loadSnapshot": "Muat snapshot adegan",
+  "saved": "Adegan disimpan ✅",
+  "messages": {
+    "canvasRenamed": "Storyboard berhasil diganti nama",
+    "canvasDeleted": "Storyboard berhasil dihapus",
+    "canvasExported": "Storyboard berhasil diekspor",
+    "canvasImported": "Storyboard berhasil diimpor",
+    "failedToRename": "Gagal mengganti nama storyboard",
+    "failedToDelete": "Gagal menghapus storyboard",
+    "failedToCreateFile": "Gagal membuat file adegan",
+    "noImagesSelected": "Tidak ada frame yang dipilih",
+    "exportingImages": "Mengekspor frame...",
+    "failedToExportImages": "Gagal mengekspor frame"
+  },
+  "deleteDialog": {
+    "title": "Hapus storyboard",
+    "description": "Yakin ingin menghapus storyboard ini? Adegan ini akan hilang selamanya.",
+    "cancel": "Batal",
+    "delete": "Hapus"
+  },
+  "tool": {
+    "hand": "Geser kamera",
+    "selection": "Pilih adegan",
+    "rectangle": "Kotak frame",
+    "ellipse": "Sorotan",
+    "text": "Kartu judul",
+    "image": "Aset visual",
+    "shape": "Bentuk properti",
+    "freedraw": "Gambar bebas",
+    "arrow": "Panah aksi",
+    "line": "Garis gerak",
+    "zoomFit": "Tampilkan semua frame"
+  },
+  "popbar": {
+    "addToChat": "Diskusikan dengan Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Menyiapkan kanvas…",
+    "loadingSharedCanvas": "Memuat kanvas yang dibagikan…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Judul adegan",
+    "published": "Dipublikasikan",
+    "checking": "Memeriksa...",
+    "publish": "Publikasikan",
+    "copied": "Tersalin!",
+    "share": "Bagikan",
+    "sharedCanvas": "Kanvas dibagikan",
+    "shareCopiedToast": "Tautan berbagi disalin ke papan klip!",
+    "shareCopyFailedToast": "Gagal menyalin tautan berbagi"
+  },
+  "preview": {
+    "mute": "Bisukan",
+    "unmute": "Aktifkan suara",
+    "volume": "Volume: {{percent}}%",
+    "export": "Ekspor",
+    "exporting": "Mengekspor...",
+    "exportVideo": "Ekspor video",
+    "playing": "Memutar",
+    "placeholder": {
+      "title": "Jendela pratinjau",
+      "hint": "Tambahkan aset ke timeline untuk melihat pratinjau"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Track",
+    "trackLabels": {
+      "script": "Skrip",
+      "keyframe": "Frame kunci",
+      "video": "Video",
+      "audio": "Audio",
+      "world": "Dunia"
+    },
+    "indexedTitles": {
+      "script": "Skrip {{index}}",
+      "keyframe": "Frame kunci {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "Dunia {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Perkecil",
+      "zoomIn": "Perbesar",
+      "rearrangeAllLanes": "Atur ulang semua jalur (Snap magnetik — 0 jeda waktu)",
+      "play": "Putar",
+      "pause": "Jeda"
+    },
+    "actions": {
+      "clickToDrop": "Klik untuk meletakkan",
+      "clickToSelect": "Klik untuk memilih"
+    },
+    "assetTypes": {
+      "script": "Skrip",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Aset",
+      "world": "Dunia"
+    },
+    "fallbackTitles": {
+      "script": "Skrip",
+      "keyframe": "Frame kunci",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Aset",
+      "untitled": "Tanpa judul",
+      "world": "Dunia"
+    },
+    "alts": {
+      "keyframe": "Frame kunci",
+      "videoThumbnail": "Thumbnail video"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Gagal menyimpan",
+      "saving": "Menyimpan...",
+      "savedAt": "Disimpan {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Publikasikan ke Komunitas",
+    "enterTitleError": "Silakan masukkan judul",
+    "success": "Kanvas berhasil dipublikasikan ke komunitas!",
+    "failed": "Gagal memublikasikan kanvas",
+    "warning": "Ini akan memublikasikan semua percakapan dan hasil kreatif dari kanvas ini ke komunitas.",
+    "oncePublished": "Setelah dipublikasikan, siapa pun dapat melihat dan menemukan karya Anda.",
+    "canvasTitleLabel": "JUDUL KANVAS",
+    "canvasTitlePlaceholder": "Masukkan judul kanvas",
+    "cancel": "Batal",
+    "publish": "Publikasikan",
+    "publishing": "Memublikasikan..."
+  }
+}

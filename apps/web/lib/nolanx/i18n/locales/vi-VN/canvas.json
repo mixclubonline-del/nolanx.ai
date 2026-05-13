@@ -1,0 +1,166 @@
+{
+  "title": "Bảng phân cảnh",
+  "rename": "Đổi tên bảng phân cảnh",
+  "delete": "Xóa bảng phân cảnh",
+  "share": "Chia sẻ bảng phân cảnh",
+  "export": "Xuất bảng phân cảnh",
+  "exportImages": "Xuất khung hình",
+  "import": "Nhập bảng phân cảnh",
+  "untitled": "Cảnh chưa có tiêu đề",
+  "back": "Quay lại bàn đạo diễn",
+  "saveSnapshot": "Lưu ảnh chụp cảnh",
+  "loadSnapshot": "Tải ảnh chụp cảnh",
+  "saved": "Đã lưu cảnh ✅",
+  "messages": {
+    "canvasRenamed": "Đã đổi tên bảng phân cảnh",
+    "canvasDeleted": "Đã xóa bảng phân cảnh",
+    "canvasExported": "Đã xuất bảng phân cảnh",
+    "canvasImported": "Đã nhập bảng phân cảnh",
+    "failedToRename": "Không thể đổi tên bảng phân cảnh",
+    "failedToDelete": "Không thể xóa bảng phân cảnh",
+    "failedToCreateFile": "Không thể tạo tệp cảnh",
+    "noImagesSelected": "Chưa chọn khung hình nào",
+    "exportingImages": "Đang xuất khung hình...",
+    "failedToExportImages": "Không thể xuất khung hình"
+  },
+  "deleteDialog": {
+    "title": "Xóa bảng phân cảnh",
+    "description": "Bạn có chắc muốn xóa bảng phân cảnh này không? Cảnh này sẽ mất vĩnh viễn.",
+    "cancel": "Hủy",
+    "delete": "Xóa"
+  },
+  "tool": {
+    "hand": "Di chuyển camera",
+    "selection": "Chọn cảnh",
+    "rectangle": "Khung hình",
+    "ellipse": "Đèn chiếu",
+    "text": "Thẻ tiêu đề",
+    "image": "Tài nguyên hình ảnh",
+    "shape": "Hình đạo cụ",
+    "freedraw": "Vẽ tự do",
+    "arrow": "Mũi tên hành động",
+    "line": "Đường chuyển động",
+    "zoomFit": "Vừa tất cả khung"
+  },
+  "popbar": {
+    "addToChat": "Thảo luận với Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Đang chuẩn bị canvas…",
+    "loadingSharedCanvas": "Đang tải canvas được chia sẻ…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Tiêu đề cảnh",
+    "published": "Đã xuất bản",
+    "checking": "Đang kiểm tra...",
+    "publish": "Xuất bản",
+    "copied": "Đã sao chép!",
+    "share": "Chia sẻ",
+    "sharedCanvas": "Canvas được chia sẻ",
+    "shareCopiedToast": "Đã sao chép liên kết chia sẻ vào clipboard!",
+    "shareCopyFailedToast": "Không thể sao chép liên kết chia sẻ"
+  },
+  "preview": {
+    "mute": "Tắt tiếng",
+    "unmute": "Bật tiếng",
+    "volume": "Âm lượng: {{percent}}%",
+    "export": "Xuất",
+    "exporting": "Đang xuất...",
+    "exportVideo": "Xuất video",
+    "playing": "Đang phát",
+    "placeholder": {
+      "title": "Cửa sổ xem trước",
+      "hint": "Thêm tài nguyên vào timeline để xem trước"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Track",
+    "trackLabels": {
+      "script": "Kịch bản",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Âm thanh",
+      "world": "Thế giới"
+    },
+    "indexedTitles": {
+      "script": "Kịch bản {{index}}",
+      "keyframe": "Keyframe {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Âm thanh {{index}}",
+      "world": "Thế giới {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Thu nhỏ",
+      "zoomIn": "Phóng to",
+      "rearrangeAllLanes": "Sắp xếp lại tất cả lane (Snap nam châm — 0 khoảng trống)",
+      "play": "Phát",
+      "pause": "Tạm dừng"
+    },
+    "actions": {
+      "clickToDrop": "Nhấp để thả",
+      "clickToSelect": "Nhấp để chọn"
+    },
+    "assetTypes": {
+      "script": "Kịch bản",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Âm thanh",
+      "asset": "Tài nguyên",
+      "world": "Thế giới"
+    },
+    "fallbackTitles": {
+      "script": "Kịch bản",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Âm thanh",
+      "asset": "Tài nguyên",
+      "untitled": "Không tiêu đề",
+      "world": "Thế giới"
+    },
+    "alts": {
+      "keyframe": "Keyframe",
+      "videoThumbnail": "Hình thu nhỏ video"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Lưu thất bại",
+      "saving": "Đang lưu...",
+      "savedAt": "Đã lưu {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Xuất bản lên Cộng đồng",
+    "enterTitleError": "Vui lòng nhập tiêu đề",
+    "success": "Canvas đã được xuất bản lên cộng đồng!",
+    "failed": "Không thể xuất bản canvas",
+    "warning": "Thao tác này sẽ xuất bản tất cả cuộc trò chuyện và kết quả sáng tạo từ canvas này lên cộng đồng.",
+    "oncePublished": "Sau khi xuất bản, bất kỳ ai cũng có thể xem và khám phá tác phẩm của bạn.",
+    "canvasTitleLabel": "TIÊU ĐỀ CANVAS",
+    "canvasTitlePlaceholder": "Nhập tiêu đề canvas",
+    "cancel": "Hủy",
+    "publish": "Xuất bản",
+    "publishing": "Đang xuất bản..."
+  }
+}

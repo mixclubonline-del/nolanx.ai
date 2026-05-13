@@ -1,0 +1,190 @@
+{
+  "title": "Storyboard",
+  "rename": "Rename Storyboard",
+  "delete": "Delete Storyboard",
+  "share": "Share Storyboard",
+  "export": "Export Storyboard",
+  "exportImages": "Export Frames",
+  "import": "Import Storyboard",
+  "untitled": "Untitled Scene",
+  "back": "Back to Director's Desk",
+  "saveSnapshot": "Save Scene Snapshot",
+  "loadSnapshot": "Load Scene Snapshot",
+  "saved": "Scene Saved ✅",
+  "messages": {
+    "canvasRenamed": "Storyboard renamed successfully",
+    "canvasDeleted": "Storyboard deleted successfully",
+    "canvasExported": "Storyboard exported successfully",
+    "canvasImported": "Storyboard imported successfully",
+    "failedToRename": "Failed to rename storyboard",
+    "failedToDelete": "Failed to delete storyboard",
+    "failedToCreateFile": "Failed to create scene file",
+    "noImagesSelected": "No frames selected",
+    "exportingImages": "Exporting frames...",
+    "failedToExportImages": "Failed to export frames"
+  },
+  "deleteDialog": {
+    "title": "Delete Storyboard",
+    "description": "Are you sure you want to delete this storyboard? This scene will be lost forever.",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "tool": {
+    "hand": "Camera Pan",
+    "selection": "Scene Select",
+    "rectangle": "Frame Box",
+    "ellipse": "Spotlight",
+    "text": "Title Card",
+    "image": "Visual Asset",
+    "shape": "Prop Shape",
+    "freedraw": "Free Draw",
+    "arrow": "Action Arrow",
+    "line": "Motion Line",
+    "zoomFit": "Frame All"
+  },
+  "popbar": {
+    "addToChat": "Discuss with Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Preparing canvas…",
+    "loadingSharedCanvas": "Loading shared canvas…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Scene Title",
+    "published": "Published",
+    "checking": "Checking...",
+    "publish": "Publish",
+    "copied": "Copied!",
+    "share": "Share",
+    "sharedCanvas": "Shared Canvas",
+    "shareCopiedToast": "Share link copied to clipboard!",
+    "shareCopyFailedToast": "Failed to copy share link"
+  },
+  "preview": {
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "volume": "Volume: {{percent}}%",
+    "export": "Export",
+    "exporting": "Exporting...",
+    "exportVideo": "Export Video",
+    "playing": "Playing",
+    "placeholder": {
+      "title": "Preview Window",
+      "hint": "Add assets to timeline to see preview"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Tracks",
+    "trackLabels": {
+      "script": "Script",
+      "keyframe": "Key Frame",
+      "video": "Video",
+      "audio": "Audio",
+      "world": "World"
+    },
+    "indexedTitles": {
+      "script": "Script {{index}}",
+      "keyframe": "Key Frame {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "World {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Zoom Out",
+      "zoomIn": "Zoom In",
+      "rearrangeAllLanes": "Rearrange All Lanes (Magnetic Snap - 0 Time Gap)",
+      "play": "Play",
+      "pause": "Pause"
+    },
+    "actions": {
+      "clickToDrop": "Click to drop",
+      "clickToSelect": "Click to select",
+      "regenerate": "Regenerate",
+      "howToModify": "How to modify?",
+      "regenerateNow": "Regenerate now",
+      "modifyThenRegenerate": "Modify and regenerate"
+    },
+    "assetActions": {
+      "unsupported": "This asset type does not support point-to-point regenerate yet.",
+      "title": "Modify This Asset",
+      "description": "Describe the exact change for this clip or image. The system will keep the original shot intent and regenerate only this asset.",
+      "quickDescription": "Regenerate this single asset directly, or describe a targeted adjustment first.",
+      "placeholder": "Example: keep the same framing, but make the dialogue tenser and the lighting colder.",
+      "cancel": "Cancel",
+      "success": "Asset regenerated.",
+      "failed": "Failed to regenerate asset."
+    },
+    "assetTypes": {
+      "script": "Script",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Asset",
+      "world": "World"
+    },
+    "fallbackTitles": {
+      "script": "Script",
+      "keyframe": "Key Frame",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Asset",
+      "untitled": "Untitled",
+      "world": "World"
+    },
+    "alts": {
+      "keyframe": "Keyframe",
+      "videoThumbnail": "Video thumbnail"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Save failed",
+      "saving": "Saving...",
+      "savedAt": "Saved {{time}}"
+    },
+    "videoGate": {
+      "title": "Video Generation Checkpoint",
+      "description": "The next video batch is ready. Review credits and continue now, or pause the whole agent pipeline before clip generation starts.",
+      "batchLabel": "Batch {{current}} / {{total}}",
+      "clipLabel": "{{count}} clips queued",
+      "countdownLabel": "Auto-generate in {{seconds}}s",
+      "generateNow": "Generate now",
+      "pauseNow": "Pause now",
+      "starting": "Starting this batch..."
+    }
+  },
+  "publish": {
+    "title": "Publish to Community",
+    "enterTitleError": "Please enter a title",
+    "success": "Canvas published to community successfully!",
+    "failed": "Failed to publish canvas",
+    "warning": "This will publish all conversations and creative results from this canvas to the community.",
+    "oncePublished": "Once published, anyone can view and discover your work.",
+    "canvasTitleLabel": "CANVAS TITLE",
+    "canvasTitlePlaceholder": "Enter canvas title",
+    "cancel": "Cancel",
+    "publish": "Publish",
+    "publishing": "Publishing..."
+  }
+}

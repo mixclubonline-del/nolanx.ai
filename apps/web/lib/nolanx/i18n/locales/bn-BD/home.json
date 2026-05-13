@@ -1,0 +1,21 @@
+{
+  "title": "বিশ্বের প্রথম AI এজেন্ট পরিচালক: Nolan",
+  "subtitle": "আর্লি অ্যাক্সেস প্রোগ্রাম",
+  "description": "বিশ্বের প্রথম AI এজেন্ট পরিচালক: Nolan",
+  "tabs": {
+    "myCanvases": "আমার ক্যানভাস",
+    "community": "কমিউনিটি"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan আপনার ক্যানভাস প্রস্তুত করছে…",
+    "communitySessions": "কমিউনিটি সেশন লোড হচ্ছে..."
+  },
+  "community": {
+    "loadFailed": "কমিউনিটি সেশন লোড করা যায়নি",
+    "canvasNotAvailable": "এই সেশনের জন্য ক্যানভাস উপলব্ধ নয়",
+    "likeFailed": "লাইক আপডেট করা যায়নি"
+  },
+  "allProjects": "সব প্রজেক্ট",
+  "noCanvases": "এখনও কোনো স্টোরিবোর্ড নেই",
+  "newCanvas": "শিরোনামহীন দৃশ্য"
+}

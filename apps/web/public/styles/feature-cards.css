@@ -1,0 +1,39 @@
+/* 特性卡片样式 - 提取为单独的CSS文件以优化加载 */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  contain: content;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card-badge {
+  background: linear-gradient(to right, #ef4444, #9333ea);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shimmer-effect {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}
+
+/* 优化内容可见性 */
+.feature-card-content {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 200px;
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Pierwszy na świecie reżyser‑agent AI: Nolan",
+  "subtitle": "Program wczesnego dostępu",
+  "description": "Pierwszy na świecie reżyser‑agent AI: Nolan",
+  "tabs": {
+    "myCanvases": "Moje płótna",
+    "community": "Społeczność"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan przygotowuje Twoje płótno…",
+    "communitySessions": "Ładowanie sesji społeczności..."
+  },
+  "community": {
+    "loadFailed": "Nie udało się załadować sesji społeczności",
+    "canvasNotAvailable": "Płótno nie jest dostępne dla tej sesji",
+    "likeFailed": "Nie udało się zaktualizować polubienia"
+  },
+  "allProjects": "Wszystkie projekty",
+  "noCanvases": "Brak storyboardów",
+  "newCanvas": "Scena bez tytułu"
+}

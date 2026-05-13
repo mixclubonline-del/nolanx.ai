@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Vind ik leuk",
+      "liked": "Leuk",
+      "share": "Delen",
+      "download": "Downloaden",
+      "downloading": "Downloaden...",
+      "copying": "Kopiëren...",
+      "recreate": "Opnieuw maken"
+    },
+    "aria": {
+      "closeVideo": "Video sluiten",
+      "goBack": "Terug",
+      "likeVideo": "Vind-ik-leuk",
+      "unlikeVideo": "Vind-ik-leuk verwijderen",
+      "shareVideo": "Video delen",
+      "downloadVideo": "Video downloaden",
+      "copyingLink": "Link kopiëren...",
+      "downloading": "Downloaden..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Link gekopieerd",
+      "videoLinkCopiedMessage": "Videolink gekopieerd naar klembord",
+      "copyFailedTitle": "Kopiëren mislukt",
+      "copyFailedMessage": "Kan link niet kopiëren",
+      "shareFailedTitle": "Delen mislukt",
+      "shareFailedMessage": "Kan videolink niet kopiëren",
+      "loginFirst": "Log eerst in",
+      "cannotFollowYourself": "Je kunt jezelf niet volgen",
+      "followed": "Succesvol gevolgd",
+      "unfollowed": "Ontvolgd",
+      "operationFailed": "Actie mislukt"
+    },
+    "generation": {
+      "generationModel": "Generatiemodel",
+      "withEffect": "met {effect}",
+      "effectBadge": "EFFECT",
+      "prompt": "Prompt",
+      "referenceImage": "Referentieafbeelding",
+      "referenceImageAlt": "Referentieafbeelding voor videogeneratie",
+      "negativePrompt": "Negatieve prompt",
+      "parameters": "Parameters",
+      "guidance": "Begeleiding",
+      "steps": "Stappen",
+      "seed": "Zaad",
+      "ratio": "Verhouding"
+    },
+    "author": {
+      "uploaded": "Geüpload {time}",
+      "profile": "Profiel",
+      "follow": "Volgen",
+      "unfollow": "Ontvolgen",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Reacties",
+      "placeholder": "Deel je gedachten over deze video...",
+      "send": "Versturen",
+      "sending": "Versturen...",
+      "empty": "Wees de eerste die zijn gedachten over deze creatie deelt!"
+    },
+    "time": {
+      "now": "Zojuist",
+      "minutesAgo": "{minutes, plural, one {# minuut geleden} other {# minuten geleden}}",
+      "hoursAgo": "{hours, plural, one {# uur geleden} other {# uur geleden}}",
+      "daysAgo": "{days, plural, one {# dag geleden} other {# dagen geleden}}"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Kredieten"
+    },
+    "earnCreditsCapsule": {
+      "label": "Credits verdienen",
+      "aria": {
+        "openRewardCenter": "Credits verdienen"
+      },
+      "badge": {
+        "claimed": "Geclaimd"
+      },
+      "title": {
+        "base": "Credits verdienen",
+        "canClaim": "Credits verdienen (+{amount})",
+        "claimedToday": "Credits verdienen (vandaag geclaimd)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Beloningscentrum",
+      "subtitle": {
+        "main": "Verwijs & Verdien + Dagelijkse beloningen",
+        "joined": "Bekijk wie heeft meegedaan"
+      },
+      "common": {
+        "loading": "Laden..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} Tegoeden"
+      },
+      "actions": {
+        "back": "Terug",
+        "close": "Sluiten",
+        "copy": "Kopiëren",
+        "share": "Delen",
+        "inviteFriends": "Vrienden uitnodigen",
+        "claim": "Claimen",
+        "claiming": "Bezig met claimen...",
+        "claimed": "Geclaimd"
+      },
+      "aria": {
+        "copyInviteCode": "Uitnodigingscode kopiëren",
+        "shareInviteLink": "Uitnodigingslink delen"
+      },
+      "labels": {
+        "inviteLink": "Uitnodigingslink",
+        "inviteCode": "Uitnodigingscode",
+        "invited": "Uitgenodigd",
+        "rewarded": "Beloond",
+        "pending": "In behandeling",
+        "recentInvites": "Recente uitnodigingen",
+        "recentRewards": "Recente beloningen",
+        "referEarn": "Verwijs & Verdien",
+        "dailyRewards": "Dagelijkse beloningen",
+        "dailyLogin": "Dagelijkse login",
+        "rewardedProgress": "Beloond: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Nog geen uitnodigingen.",
+        "noRewards": "Nog geen beloningen."
+      },
+      "status": {
+        "rewarded": "Beloond",
+        "pending": "In behandeling",
+        "verified": "Geverifieerd"
+      },
+      "share": {
+        "title": "ReelMind-uitnodiging",
+        "text": "Doe met me mee op ReelMind en ontvang gratis credits."
+      },
+      "toast": {
+        "copiedTitle": "Gekopieerd",
+        "copiedDescription": "{label} naar klembord gekopieerd.",
+        "copyFailedTitle": "Kopiëren mislukt",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Kopieer handmatig.",
+        "claimFailedTitle": "Claimen mislukt",
+        "claimedTitle": "Geclaimd",
+        "claimedDescription": "Je hebt {amount} Credits ontvangen."
+      },
+      "referEarn": {
+        "tipLabel": "Regels voor uitnodigen & verdienen",
+        "tipTitle": "Hoe het werkt",
+        "tipBody1": "Deel je uitnodigingslink. Wanneer een nieuwe gebruiker zich aanmeldt met je code en een kwalificerende actie voltooit, worden credits uitgegeven na systeemverificatie.",
+        "tipBody2": "Gelaagde beloningen: 1-5 = 50, 6-15 = 100, 16-20 = 200 credits.",
+        "cardTitle": "Krijg credits door vrienden uit te nodigen",
+        "upTo": "Tot {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Regels voor dagelijkse login",
+        "tipTitle": "Dagelijkse beloning",
+        "tipBodyPrefix": "Beloningen starten op",
+        "tipBodyDay2": "dag 2",
+        "tipBodySuffix": "van je reeks en worden elke UTC-dag gereset.",
+        "status": {
+          "loading": "Status laden...",
+          "claimed": "Geclaimd",
+          "readyToClaim": "Klaar om te claimen",
+          "locked": "Vergrendeld"
+        },
+        "errors": {
+          "alreadyClaimed": "Vandaag al geclaimd.",
+          "notEligible": "Momenteel niet beschikbaar om te claimen.",
+          "riskBlocked": "Claim geblokkeerd door risicocontrole.",
+          "generic": "Er ging iets mis. Probeer het later opnieuw."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Ontdekken",
+      "video": "Video",
+      "image": "Afbeelding",
+      "music": "Muziek",
+      "edit": "Bewerken",
+      "experiment": "Experimenteer"
+    },
+    "special": {
+      "nolan": "Nolan"
+    },
+    "bottom": {
+      "affiliate": "Partner",
+      "contactUs": "Neem contact op",
+      "blog": "Bloggen",
+      "apiPlatform": "API-platform"
+    },
+    "badges": {
+      "help": "Hulp",
+      "new": "Nieuw",
+      "free": "Gratis"
+    },
+    "sidebar": {
+      "more": "Meer",
+      "closeMenu": "Menu sluiten",
+      "moreTools": "Meer tools",
+      "followOnX": "Volg ons op X (Twitter)",
+      "followOnTikTok": "Volg ons op TikTok",
+      "subscribeOnYouTube": "Abonneer je op ons YouTube-kanaal",
+      "termsOfService": "Gebruiksvoorwaarden",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "EIGENSCHAPPEN",
+        "models": "MODELLEN"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Maak een video",
+          "description": "Genereer AI-video's"
+        },
+        "cinemaStudioVideo": {
+          "title": "Bioscoopstudiovideo",
+          "description": "Pro-video met camerabewegingen"
+        },
+        "mixedMedia": {
+          "title": "Gemengde media",
+          "description": "Combineer tekst, afbeeldingen en video"
+        },
+        "editVideo": {
+          "title": "Bewerk video",
+          "description": "Bewerk scènes, shots, elementen"
+        },
+        "clickToAd": {
+          "title": "Klik om te adverteren",
+          "description": "Zet clips om in advertenties"
+        },
+        "sora2Trends": {
+          "title": "Sora 2 trends",
+          "description": "Trendgedreven video-ideeën"
+        },
+        "lipsyncStudio": {
+          "title": "Lipsync-studio",
+          "description": "Synchroniseer audio met gezichten"
+        },
+        "drawToVideo": {
+          "title": "Teken naar video",
+          "description": "Schets verandert in een bioscoop"
+        },
+        "sketchToVideo": {
+          "title": "Schets naar video",
+          "description": "Van schets tot video met Sora 2"
+        },
+        "ugcFactory": {
+          "title": "UGC-fabriek",
+          "description": "Snel inhoud klaar voor makers"
+        },
+        "videoUpscale": {
+          "title": "Video-upscale",
+          "description": "Verhoog de resolutie met duidelijkheid"
+        },
+        "higgsfieldAnimate": {
+          "title": "Higgsfield-animatie",
+          "description": "Animeer foto's met stijl"
+        },
+        "recastStudio": {
+          "title": "Herschikking van Studio",
+          "description": "Herschikking van acteurs en stijlen"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Filmische camerabediening"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Dynamische bewegingsbesturing"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Tekst-naar-video van hoge kwaliteit"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Precisie videobewerkingen"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Videogeneratie van de volgende generatie"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Realistische cinematografie"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Gestileerde beweging en ritme"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Snelle filmische video"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Zuivere details en toon"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Avatar-gedreven optredens"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Kenmerken",
+        "models": "Modellen"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Afbeelding maken",
+          "description": "Genereer AI-afbeeldingen"
+        },
+        "cinemaStudioImage": {
+          "title": "Bioscoopstudio-afbeelding",
+          "description": "Echte camera- en lenssimulatie"
+        },
+        "createStoryboard": {
+          "title": "Maak een storyboard",
+          "description": "Ontwerp uw verhaalscènes"
+        },
+        "soulIdCharacter": {
+          "title": "Soul ID-karakter",
+          "description": "Creëer een uniek karakter"
+        },
+        "relight": {
+          "title": "Opnieuw aansteken",
+          "description": "Pas de verlichtingspositie, kleur en helderheid aan"
+        },
+        "inpaint": {
+          "title": "Inschilderen",
+          "description": "Selecteer een gebied, beschrijf de verandering"
+        },
+        "imageUpscale": {
+          "title": "Afbeelding opwaarderen",
+          "description": "Verbeter de beeldkwaliteit"
+        },
+        "faceSwap": {
+          "title": "Gezicht wisselen",
+          "description": "Creëer realistische face-swaps"
+        },
+        "characterSwap": {
+          "title": "Karakterwissel",
+          "description": "Creëer realistische karakterwissels"
+        },
+        "drawToEdit": {
+          "title": "Teken om te bewerken",
+          "description": "Van schets tot foto"
+        },
+        "instadump": {
+          "title": "Instadump",
+          "description": "Verander een selfie in een bibliotheek met volledige inhoud"
+        },
+        "photodumpStudio": {
+          "title": "Fotodump Studio",
+          "description": "Genereer uw esthetiek"
+        },
+        "fashionFactory": {
+          "title": "Modefabriek",
+          "description": "Maak modesets"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Ultrarealistische modebeelden"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Storyboard, bewerken, creëren"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Beste 4K-beeldmodel ooit"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "4K-beeldmodel van de volgende generatie"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Precisieweergave in ware kleuren"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Snelheidsgeoptimaliseerde details"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Direct levensechte portretten"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Fotorealistische, snel nauwkeurige afbeeldingen"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Realistische afbeeldingen"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Geavanceerd beeldbewerkingsmodel"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Upscaler met hoge resolutie"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Alles",
+        "recommended": "Aanbevolen",
+        "saved": "Opgeslagen"
+      },
+      "labels": {
+        "camera": "CAMERA",
+        "lens": "OBJECTIEF",
+        "focalLength": "BRANDPUNTSAFSTAND",
+        "aperture": "DIAFRAGMA"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "Setup opslaan",
+        "removeSetup": "Setup verwijderen",
+        "close": "Sluiten"
+      },
+      "empty": "Nog geen setups"
+    },
+    "page": {
+      "title": "Experimenteer",
+      "subtitle": "Probeer eerst nieuwe workflows",
+      "back": "Terug naar Experimenteren"
+    },
+    "menu": {
+      "title": "Experimenteer",
+      "open": "Openen"
+    },
+    "tabs": {
+      "character": "Karakter",
+      "inpaint": "Inschilderen",
+      "cinemaStudio": "Bioscoopstudio",
+      "motionControl": "Bewegingscontrole",
+      "assist": "Assisteren"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Inschilderen",
+        "description": "Schilder over een gebied en beschrijf de verandering"
+      },
+      "cinemaStudio": {
+        "title": "Bioscoopstudio",
+        "description": "Professionele filmische workflows"
+      },
+      "motionControl": {
+        "title": "Bewegingscontrole",
+        "description": "Kopieer beweging uit een referentievideo"
+      },
+      "assist": {
+        "title": "Assisteren",
+        "description": "Hulpmiddelen voor prompting en creatieve assistenten"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Karakter",
+        "subtitle": "Hulpmiddelen voor tekenconsistentie (tijdelijke aanduiding)"
+      },
+      "inpaint": {
+        "title": "Inschilderen",
+        "subtitle": "Upload media, selecteer een gebied en beschrijf de bewerking"
+      },
+      "cinemaStudio": {
+        "title": "Bioscoopstudio",
+        "subtitle": "Genereer filmische opnamen met camerabewuste aanwijzingen"
+      },
+      "motionControl": {
+        "title": "Bewegingscontrole",
+        "subtitle": "Creëer beweging met uw afbeelding"
+      },
+      "assist": {
+        "title": "Assisteren",
+        "subtitle": "Chat, tips en snelle hulpprogramma's"
+      }
+    },
+    "actions": {
+      "upload": "Media uploaden",
+      "generate": "Genereer",
+      "history": "Geschiedenis",
+      "howItWorks": "Hoe het werkt",
+      "sendMessage": "Stuur een bericht...",
+      "tryExample": "Probeer een voorbeeld",
+      "send": "Verzenden"
+    },
+    "placeholders": {
+      "exploreFeatures": "ONTDEK FUNCTIES",
+      "settings": "Instellingen",
+      "camera": "Camera",
+      "cameraHint": "Cameragedrag kiezen (placeholder)",
+      "lens": "Lens",
+      "lensHint": "Lensopties selecteren (tijdelijke aanduiding)",
+      "image": "Afbeelding",
+      "video": "Video",
+      "scenePrompt": "Beschrijf de scène die je je voorstelt..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Voeg beweging toe om te kopiëren",
+          "description": "Videoduur: 3-30 seconden"
+        },
+        "addCharacter": {
+          "title": "Voeg je karakter toe",
+          "description": "Afbeelding met zichtbaar gezicht en lichaam"
+        }
+      },
+      "quality": {
+        "title": "Kwaliteit",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Geavanceerde instellingen"
+      },
+      "hero": {
+        "title": {
+          "prefix": "RECREËER ALLES",
+          "highlight": "BEWEGING",
+          "suffix": "MET UW BEELD"
+        },
+        "subtitle": "Kopieer beweging uit elke video en plaats je personage in dezelfde beweging"
+      },
+      "library": {
+        "title": "Begin met het kopiëren van beweging uit de bibliotheek"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Assist",
+        "subtitle": "Een team van PhD's op zak, gebouwd voor makers."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Wat kunt u doen?",
+          "description": "Ontdek ReelMind AI-functies"
+        },
+        "howToCreate": {
+          "title": "Hoe kan ik verbluffende inhoud creëren?",
+          "description": "Tips voor het schrijven van betere AI-prompts"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Genereer een zielsbeeldprompt",
+          "description": "Schrijf een prompt voor hoogesthetische afbeeldingen"
+        },
+        "generateVideoPrompt": {
+          "title": "Videoprompt genereren",
+          "description": "Schrijf een prompt voor filmische video's"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Karakterconsistentie",
+          "description": "Houd je karakter coherent over de frames heen (placeholder)"
+        },
+        "library": {
+          "title": "Karakterbibliotheek",
+          "description": "Kies een opgeslagen karakter of begin met sjablonen (placeholder)"
+        }
+      },
+      "placeholders": {
+        "preview": "Voorbeeld (tijdelijke aanduiding)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - Gratis AI-videomakercommunity om videos te maken en te delen",
+      "description": "Ontdek trending creatieve video's van content creators over de hele wereld. Vind inspiratie, entertainment en remix je favorieten."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 is nu live!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Alles",
+        "latest": "Nieuwste",
+        "hot": "Populair"
+      },
+      "tooltip": {
+        "filterByModel": "Filter op {model}-model"
+      },
+      "aria": {
+        "previous": "Vorige categorieën",
+        "next": "Volgende categorieën"
+      },
+      "error": {
+        "loadFailed": "Categorieën laden mislukt"
+      },
+      "actions": {
+        "retry": "Opnieuw proberen"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "Maak AI-video's"
+      },
+      "nolan": {
+        "title": "Nolan",
+        "description": "Wereld #1 AI-agentregisseur"
+      },
+      "badges": {
+        "models": "Modellen",
+        "free": "GRATIS"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Ontdekken - ReelMind",
+      "description": "Ontdek trending creatieve videos van content creators over de hele wereld op ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI-modellen & effecten - ReelMind",
+      "description": "Blader en gebruik AI-videomodellen en effecten om geweldige AI-gegenereerde video's te maken op het ReelMind-platform. Ontdek onze collectie state-of-the-art AI-modellen."
+    },
+    "page": {
+      "title": "AI-modellen & effecten",
+      "description": "Blader door onze collectie state-of-the-art AI-modellen en effecten voor videogeneratie",
+      "footerIntro": "Ontdek onze collectie van {count} AI-modellen voor videogeneratie."
+    },
+    "sections": {
+      "models": "Modellen",
+      "effects": "Effecten"
+    },
+    "actions": {
+      "viewAll": "Alles bekijken",
+      "viewAllModels": "Alle modellen bekijken",
+      "backToModels": "Terug naar Modellen"
+    },
+    "types": {
+      "allModels": "Alle modellen",
+      "textToVideo": "Tekst naar video",
+      "imageToVideo": "Afbeelding naar video",
+      "videoToVideo": "Video naar video"
+    },
+    "all": {
+      "titleAll": "Alle videomodellen",
+      "titleByType": "{type}-modellen",
+      "description": "Blader door onze collectie AI-modellen voor videogeneratie",
+      "countAll": "({count} modellen)",
+      "countByType": "({count} {type}-modellen)",
+      "loadingMore": "Meer modellen laden...",
+      "loadMore": "Meer modellen laden",
+      "end": "Je hebt het einde bereikt! Alle modellen geladen.",
+      "empty": "Geen modellen gevonden die aan je criteria voldoen."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Controlepunt",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "Ondersteunde functies",
+      "metaTitle": "{name} - AI-model | ReelMind",
+      "metaDescriptionFallback": "Ontdek het {name}-model voor videogeneratie op ReelMind.",
+      "metaErrorTitle": "Modeldetails | ReelMind",
+      "metaErrorDescription": "Ontdek AI-modellen voor videogeneratie op ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI-effecten - ReelMind",
+      "description": "Blader en gebruik AI-video-effecten om je AI-gegenereerde video's te verbeteren op het ReelMind-platform."
+    },
+    "page": {
+      "title": "AI-effecten",
+      "description": "Blader door onze collectie AI-effecten om je video's te verbeteren"
+    },
+    "all": {
+      "title": "Alle AI-effecten",
+      "description": "Blader door onze volledige collectie AI-effecten om je video's te verbeteren"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Terug naar Effecten",
+        "goBack": "Ga terug",
+        "applyThisEffect": "Pas dit effect toe"
+      },
+      "badge": "Effect",
+      "addedOn": "Toegevoegd op {date}",
+      "errors": {
+        "notFound": "Effect niet gevonden",
+        "loadFailed": "Effectdetails laden mislukt"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "Maak AI-video's - ReelMind",
+      "description": "Maak geweldige AI-gegenereerde video's met onze krachtige AI-modellen en tools op het ReelMind-platform."
+    },
+    "loading": "Laden...",
+    "loadingMobile": "Mobiele weergave laden...",
+    "loadingControlPanel": "Bedieningspaneel laden...",
+    "controlPanel": {
+      "modelAndSettings": "Model & instellingen",
+      "history": "Geschiedenis",
+      "model": "Model",
+      "selectModel": "Model selecteren"
+    },
+    "mobile": {
+      "backToCreate": "Terug naar Create"
+    },
+    "modelSelector": {
+      "loadingModels": "Modellen laden...",
+      "moreModels": "{count} meer modellen",
+      "exploreMoreModels": "Ontdek {count} meer modellen"
+    },
+    "promptInput": {
+      "title": "Prompt",
+      "placeholder": "Beschrijf wat je wilt maken...",
+      "enhance": "Verbeteren",
+      "undo": "Ongedaan maken",
+      "restoreOriginalPromptTitle": "Originele prompt herstellen",
+      "toastEnhanced": "Prompt verbeterd",
+      "toastRestored": "Originele prompt hersteld",
+      "enhanceFailed": "Prompt verbeteren mislukt",
+      "sensitiveError": "Gevoelig sleutelwoord gedetecteerd: {keyword}",
+      "insertReference": "Referentie invoegen",
+      "noMatchingReference": "Geen overeenkomende referentie",
+      "mentionImageTokenPrefix": "afbeelding",
+      "mentionVideoTokenPrefix": "filmpje",
+      "mentionAudioTokenPrefix": "audio"
+    },
+    "referenceUploader": {
+      "addOptional": "Optionele referentie toevoegen",
+      "referenceImage": "Referentieafbeelding",
+      "referenceImages": "Referentieafbeeldingen ({current}/{max})",
+      "referenceVideo": "Referentievideo",
+      "dropImage": "Sleep een afbeelding hierheen of klik om te uploaden",
+      "dropImageMax": "Sleep maximaal {max} afbeeldingen hierheen of klik om te uploaden",
+      "dropVideo": "Sleep een video hierheen of klik om te uploaden",
+      "pasteHint": "Plakken",
+      "videoUploaded": "Video geüpload",
+      "uploading": "Uploaden...",
+      "addMore": "Meer toevoegen",
+      "removeReference": "Verwijderen",
+      "referenceImageAlt": "Referentieafbeelding {index}",
+      "supportedFormats": "Ondersteund: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, beeldverhouding {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} uploaden...",
+      "processingFile": "Bestand verwerken...",
+      "uploadReference": "Referentie {type} uploaden",
+      "image": "afbeelding",
+      "video": "filmpje",
+      "audio": "audio",
+      "library": "Bibliotheek",
+      "videoLimitReachedTitle": "Videolimiet bereikt",
+      "videoLimitReachedDescription": "Maximaal {max} referentievideo's toegestaan",
+      "audioLimitReachedTitle": "Audiolimiet bereikt",
+      "audioLimitReachedDescription": "Maximaal {max} referentie-audio's toegestaan",
+      "someVideoFilesSkippedTitle": "Sommige videobestanden zijn overgeslagen",
+      "someAudioFilesSkippedTitle": "Sommige audiobestanden zijn overgeslagen",
+      "onlyFilesAdded": "Slechts {count} bestanden zijn toegevoegd",
+      "skippedUnsupportedFilesTitle": "Niet-ondersteunde bestanden overgeslagen",
+      "skippedUnsupportedFilesDescription": "{count} bestanden zijn genegeerd",
+      "onlyVideoFilesAllowed": "Alleen videobestanden kunnen als referentievideo worden gebruikt",
+      "onlyAudioFilesAllowed": "Alleen audiobestanden kunnen als referentie-audio worden gebruikt",
+      "removeReferenceVideo": "Referentievideo {index} verwijderen",
+      "removeReferenceAudio": "Referentie-audio {index} verwijderen",
+      "referenceVideoRemovedTitle": "Referentievideo's verwijderd",
+      "referenceVideoRemovedDescription": "Het geselecteerde model ondersteunt geen referentievideo's.",
+      "referenceAudioRemovedTitle": "Referentie-audio verwijderd",
+      "referenceAudioRemovedDescription": "Het geselecteerde model ondersteunt geen referentie-audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "Beeldverhouding",
+      "duration": "Duur",
+      "seconds": "{seconds}s",
+      "resolution": "Resolutie",
+      "audio": "Audio",
+      "on": "Aan",
+      "off": "Uit",
+      "advanced": "Geavanceerd",
+      "advancedShort": "Geav.",
+      "creativityLevel": "Creativiteit",
+      "moreAccurate": "Nauwkeuriger",
+      "moreCreative": "Creatiever",
+      "samplingSteps": "Sampling-stappen",
+      "faster": "Sneller ({steps} stappen)",
+      "higherQuality": "Hogere kwaliteit ({steps} stappen)",
+      "randomSeed": "Willekeurige seed",
+      "seedPlaceholder": "Seed invoeren",
+      "generateRandomSeed": "Willekeurige seed genereren",
+      "seedHint": "Gebruik een vaste seed voor reproduceerbare resultaten.",
+      "movementAmplitude": "Beweging",
+      "movementAmplitudeHint": "Regelt de bewegingsintensiteit.",
+      "backgroundMusic": "Achtergrondmuziek",
+      "backgroundMusicHint": "Voegt achtergrondmuziek toe wanneer ondersteund.",
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld",
+      "negativePrompt": "Negatieve prompt",
+      "negativePromptPlaceholder": "Wat te vermijden..."
+    },
+    "startToEndUploader": {
+      "title": "Begin-tot-eindframes",
+      "startFrame": "Beginframe",
+      "endFrame": "Eindframe",
+      "dropStartImage": "Sleep een startafbeelding hierheen of klik om te uploaden",
+      "dropEndImage": "Sleep een eindafbeelding hierheen of klik om te uploaden",
+      "startFrameImageAlt": "Beginframe",
+      "endFrameImageAlt": "Eindframe",
+      "uploading": "Uploaden...",
+      "instructions": "Upload begin- en eindafbeeldingen om de overgang te sturen.",
+      "supportedFormats": "Ondersteund: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, beeldverhouding {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Afbeeldingen worden indien nodig automatisch gecomprimeerd."
+    },
+    "modelTabs": {
+      "imageToVideo": "Afbeelding naar video",
+      "textToVideo": "Tekst naar video",
+      "firstLastFrame": "Eerste-laatste frame",
+      "edit": "Bewerken",
+      "effect": "Effect"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Referentievideo",
+      "required": "Vereist",
+      "removeVideo": "Video verwijderen",
+      "uploading": "Uploaden...",
+      "dropVideo": "Drop hier een video of klik om te uploaden",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Elementen",
+      "optional": "Optioneel ({current}/{max})",
+      "addElements": "Toevoegen",
+      "elementAlt": "Element {index}",
+      "removeElement": "Element {index} verwijderen",
+      "dropElements": "Klik om elementafbeeldingen toe te voegen",
+      "elementsHint": "Optionele afbeeldingen om karakters/stijl te behouden.",
+      "errors": {
+        "invalidVideoTitle": "Ongeldige video",
+        "invalidVideoDescription": "Kies een videobestand.",
+        "videoTooLargeTitle": "Video te groot",
+        "videoTooLargeDescription": "Maximaal {maxMb}MB. Upload een kortere/kleinere clip.",
+        "uploadFailedTitle": "Uploaden mislukt",
+        "elementsLimitTitle": "Elementenlimiet bereikt",
+        "elementsLimitDescription": "U kunt maximaal {max} afbeeldingen toevoegen.",
+        "imageTooSmall": "Afbeelding moet minimaal {minWidth}×{minHeight} zijn (huidig: {width}×{height}).",
+        "imageBadRatio": "De beeldverhouding moet tussen {minAspectRatio} en {maxAspectRatio} liggen (huidig: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "Sommige bestanden zijn overgeslagen",
+        "someSkippedDescription": "{count} bestanden zijn overgeslagen vanwege limieten.",
+        "skippedTitle": "Overgeslagen",
+        "skippedNonImage": "Voor elementen zijn alleen afbeeldingen toegestaan.",
+        "imageCompressedTitle": "Afbeelding gecomprimeerd",
+        "imageCompressedDescription": "Gecomprimeerd van {original} tot {final}.",
+        "skippedInvalidImage": "Ongeldige afbeelding."
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe het werkt",
+      "hero": {
+        "title": "MAAK VIDEO'S IN ÉÉN KLIK",
+        "subtitle": "Gebruik presets voor camerabediening, kadrering en VFX – of ga volledig handmatig te werk met aanwijzingen."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "AFBEELDING TOEVOEGEN",
+          "2": "KIES VOORINSTELLING",
+          "3": "KRIJG VIDEO"
+        },
+        "t2v": {
+          "1": "SCHRIJF PROMPT",
+          "2": "KIES MODEL",
+          "3": "KRIJG VIDEO"
+        },
+        "flf": {
+          "1": "VOEG FRAMES TOE",
+          "2": "BESCHRIJF OVERGANG",
+          "3": "KRIJG VIDEO"
+        },
+        "edit": {
+          "1": "VIDEO TOEVOEGEN",
+          "2": "ELEMENTEN TOEVOEGEN",
+          "3": "KRIJG VIDEO"
+        }
+      },
+      "modes": {
+        "edit": "Bewerken (video-naar-video)",
+        "flf": "Eerste-laatste frame",
+        "i2v": "Afbeelding-naar-video",
+        "t2v": "Tekst-naar-video"
+      },
+      "steps": {
+        "edit": {
+          "1": "Upload een korte referentievideo.",
+          "2": "Voeg optioneel maximaal 4 elementafbeeldingen toe om de karakters/stijl consistent te houden.",
+          "3": "Beschrijf wat u moet veranderen (en wat u moet behouden) in de prompt en genereer vervolgens."
+        },
+        "flf": {
+          "1": "Upload een startframe en een eindframe.",
+          "2": "Beschrijf de gewenste transitie.",
+          "3": "Genereer om een soepele transformatie te creëren."
+        },
+        "i2v": {
+          "1": "Upload een referentieafbeelding.",
+          "2": "Beschrijf beweging, camera en stijl.",
+          "3": "Kies verhouding/duur en genereer."
+        },
+        "t2v": {
+          "1": "Beschrijf je scène (onderwerp, camera, belichting, stijl).",
+          "2": "Kies verhouding/duur en voeg optioneel een negatieve prompt toe.",
+          "3": "Genereer en herhaal met kleine wijzigingen."
+        }
+      },
+      "tip": "Tip: wees specifiek. Vertel het model wat hetzelfde moet blijven (identiteit, logo, compositie).",
+      "templates": {
+        "title": "Voorinstellingen",
+        "subtitle": "Kies een klassieke preset en genereer sneller.",
+        "use": "Gebruik",
+        "clear": "Duidelijk",
+        "prev": "Vorige voorinstelling",
+        "next": "Volgende voorinstelling",
+        "edit": {
+          "relight": {
+            "title": "Verlicht & sfeer",
+            "description": "Verander de tijd van de dag en de filmische verlichting."
+          },
+          "grade": {
+            "title": "Filmische kwaliteit",
+            "description": "Blauwgroen-oranje kwaliteit + filmkorrel, behoud beweging en identiteit."
+          },
+          "weather": {
+            "title": "Weersverandering",
+            "description": "Voeg regen/mist toe met behoud van identiteit."
+          },
+          "anime": {
+            "title": "Anime-restyle",
+            "description": "Anime-look met behoud van identiteit en beweging."
+          },
+          "background": {
+            "title": "Achtergrond vervangen",
+            "description": "Wissel van achtergrond met behoud van het onderwerp."
+          },
+          "lux": {
+            "title": "Premium polijstmiddel",
+            "description": "Schoner, soepeler en premium commercieel gevoel."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "Dag → Nacht",
+            "description": "Vloeiende verlichting/tijdovergang met consistente kadrering."
+          },
+          "sketchToRender": {
+            "title": "Schets → Render",
+            "description": "Onthul details geleidelijk, van schets tot uiteindelijke weergave."
+          },
+          "beforeAfter": {
+            "title": "Voor/na onthulling",
+            "description": "Smaakvolle transformatie met subtiele beweging."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "Portret leven",
+            "description": "Knipperen + subtiele beweging met langzaam induwen."
+          },
+          "pan": {
+            "title": "Parallaxpan",
+            "description": "Filmische pan met diepte en bewegingsonscherpte."
+          },
+          "product": {
+            "title": "Productdraai",
+            "description": "Studioproductlook met glanzende highlights."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8s premium-advertentie",
+            "description": "Een zuivere, hoogwaardige commerciële opname."
+          },
+          "establish": {
+            "title": "Schot tot stand brengen",
+            "description": "Brede filmische intro voor een wereld/scène."
+          },
+          "anime": {
+            "title": "Anime-opening",
+            "description": "Gestileerde anime-openingsopname."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Afbeelding-naar-video vereist een referentieafbeelding.",
+        "i2vDescription": "Upload een referentieafbeelding of schakel over naar een tekst-naar-video-model.",
+        "v2vTitle": "Video-naar-video vereist een referentievideo.",
+        "v2vDescription": "Upload een referentievideo of schakel over naar een tekst-naar-video-model."
+      },
+      "costLabel": "Kosten:",
+      "balanceLabel": "Saldo:",
+      "freeUnlimited": "Gratis (Onbeperkt)",
+      "credits": "Kredieten",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast is een Luxury-model en is niet inbegrepen in Unlimited gratis gebruik. Extra betaling is vereist.",
+        "veo31": "VEO 3.1 is een Luxury-model en is niet inbegrepen in Unlimited gratis gebruik. Extra betaling is vereist.",
+        "veo3": "VEO3 is een Luxury-model en is niet inbegrepen in Unlimited gratis gebruik. Extra betaling is vereist.",
+        "sora2Pro": "Sora-2 Pro is een Luxury-model en is niet inbegrepen in Unlimited gratis gebruik. Extra betaling is vereist."
+      },
+      "gettingCredits": "Credits ophalen...",
+      "getBonusCredits": "Ontvang {amount} Credits",
+      "submitting": "Verzenden...",
+      "loadingModels": "Modellen laden...",
+      "uploadingAsset": "Asset uploaden...",
+      "uploadingImages": "Afbeeldingen uploaden...",
+      "claimingCredits": "Credits claimen...",
+      "getMoreCredits": "Meer credits krijgen",
+      "generateVideo": "Video genereren"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Publicatie mislukt",
+        "missingTitleDescription": "Voer een titel voor je video in",
+        "processingTitle": "Verwerken",
+        "processingDescription": "Je video voorbereiden om te publiceren...",
+        "successTitle": "Succesvol gepubliceerd",
+        "successDescription": "Je video is gedeeld met de community",
+        "failedTitle": "Publicatie mislukt",
+        "failedDescription": "Controleer je netwerkverbinding of probeer het later opnieuw"
+      },
+      "successTitle": "Succesvol gepubliceerd!",
+      "successDescription": "Je geweldige creatie staat nu live in de community",
+      "publishingTitle": "Publiceren...",
+      "publishingDescriptionDesktop": "We bereiden je video voor zodat de community ervan kan genieten...",
+      "publishingDescriptionMobile": "Je video voorbereiden...",
+      "progressComplete": "{progress}% voltooid",
+      "title": "Delen met community",
+      "description": "Deel je geweldige creatie met de wereld",
+      "benefits": {
+        "getLikes": "Likes krijgen",
+        "buildCommunityLong": "Community opbouwen",
+        "buildCommunityShort": "Gemeenschap",
+        "inspireLong": "Anderen inspireren",
+        "inspireShort": "Inspireren",
+        "earnLong": "Verdien +{amount} Credits",
+        "earnShort": "+{amount} Tegoeden"
+      },
+      "videoTitle": "Videotitel",
+      "videoTitlePlaceholder": "Geef je creatie een pakkende titel...",
+      "videoTitleHelperDesktop": "Een sterke titel trekt meer kijkers",
+      "videoTitleHelperMobile": "Goede titels trekken kijkers",
+      "descriptionLabel": "Beschrijving",
+      "optional": "Optioneel",
+      "descriptionPlaceholder": "Vertel de community over je creatie...",
+      "descriptionHelper": "Deel je creatieve proces",
+      "cancel": "Annuleren",
+      "publish": "Publiceren"
+    },
+    "history": {
+      "title": "Geschiedenis",
+      "refresh": "Vernieuwen",
+      "view": {
+        "one": "1 per rij",
+        "three": "3 per rij",
+        "nine": "9 per rij"
+      },
+      "filterPlaceholder": "Filteren",
+      "empty": "Geen {status} taken gevonden",
+      "status": {
+        "all": "Alles",
+        "pending": "In behandeling",
+        "queued": "In wachtrij",
+        "processing": "Verwerken",
+        "completed": "Voltooid",
+        "failed": "Mislukt",
+        "canceled": "Geannuleerd"
+      }
+    },
+    "effectSelector": {
+      "loading": "Effecten laden...",
+      "defaultDescription": "Pas speciale effecten toe op je video",
+      "ctaTitle": "Selecteer een effect",
+      "ctaDescription": "Klik om een video-effect te kiezen",
+      "modalTitle": "Effect selecteren",
+      "close": "Effectselector sluiten"
+    },
+    "modelSelectorModal": {
+      "title": "Model selecteren",
+      "description": "Kies een model voor je project",
+      "close": "Modelselector sluiten",
+      "loadingMore": "Meer modellen laden...",
+      "allLoaded": "Alle modellen geladen",
+      "noModelsFound": "Geen modellen gevonden"
+    },
+    "modelSearch": {
+      "placeholder": "Zoek modellen op naam, type of functies...",
+      "clear": "Zoekopdracht wissen",
+      "searching": "Zoeken...",
+      "foundModels": "{count} modellen gevonden",
+      "modelsAvailable": "{count} modellen beschikbaar"
+    },
+    "modelTypeFilter": {
+      "title": "Modeltype",
+      "clear": "Wissen"
+    },
+    "remixLoader": {
+      "successTitle": "Remix-taak geladen",
+      "successDescription": "Videoparameters geladen van de originele taak; je kunt direct genereren of de parameters wijzigen.",
+      "errorTitle": "Parameters laden mislukt",
+      "errorDescription": "Kan parameters van de originele taak niet laden; stel de parameters handmatig in."
+    },
+    "modelCard": {
+      "select": "Selecteren",
+      "credits": "Kredieten",
+      "premium": "PREMIUM",
+      "luxury": "LUXE"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind geselecteerd",
+      "hot": "Populair",
+      "new": "NIEUW",
+      "select": "Selecteren"
+    },
+    "previewPanel": {
+      "generating": "Genereren...",
+      "download": "Downloaden",
+      "downloading": "Downloaden...",
+      "shareToCommunity": "Publiceren",
+      "tips": "Tip: Publiceer om credits te verdienen",
+      "quality": "Kwaliteit",
+      "qualityHd": "HD",
+      "qualityStandard": "Standaard",
+      "ratio": "Verhouding",
+      "fullscreen": {
+        "enter": "Volledig scherm",
+        "exit": "Volledig scherm verlaten"
+      },
+      "empty": {
+        "title": "Nog geen preview",
+        "description": "Genereer een video om de preview hier te zien."
+      },
+      "queue": {
+        "loading": "Wachtrij-info laden...",
+        "headerProcessing": "Verwerken",
+        "headerQueueStatus": "Wachtrijstatus",
+        "badgePosition": "Positie: {position} van {total}",
+        "badgeProcessing": "Verwerken",
+        "tasksInQueue": "Taken in wachtrij",
+        "estimatedWait": "Geschatte wachttijd",
+        "elapsedTime": "Verstreken tijd",
+        "remainingTime": "Resterende tijd",
+        "startTime": "Geschatte start",
+        "completionTime": "Geschatte voltooiing"
+      },
+      "time": {
+        "calculating": "Berekenen...",
+        "justNow": "Zojuist",
+        "lessThanMinute": "Binnen minder dan een minuut",
+        "inMinutes": "Over {minutes, plural, one {# minuut} other {# minuten}}",
+        "inHours": "Over {hours, plural, one {# uur} other {# uur}}",
+        "inDays": "Over {days, plural, one {# dag} other {# dagen}}",
+        "seconds": "{seconds, plural, one {# seconde} other {# seconden}}",
+        "minutesSeconds": "{minutes, plural, one {# minuut} other {# minuten}} {seconds, plural, one {# seconde} other {# seconden}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Video laden...",
+      "notFound": "Video niet gevonden",
+      "notFoundDescription": "De gevraagde video kan niet worden gevonden of is momenteel niet beschikbaar.",
+      "detailsTitle": "Details",
+      "videoInfoTitle": "Videoinfo",
+      "advancedTitle": "Geavanceerd",
+      "referenceImagesTitle": "Referentieafbeeldingen",
+      "startFrameAlt": "Beginframe",
+      "endFrameAlt": "Eindframe",
+      "endFrameLabel": "Eindframe",
+      "creationDate": "Aanmaakdatum",
+      "fields": {
+        "model": "Model",
+        "generationType": "Generatietype",
+        "resolution": "Resolutie",
+        "aspectRatio": "Beeldverhouding",
+        "duration": "Duur",
+        "creativityLevel": "Creativiteit",
+        "effect": "Effect",
+        "samplingSteps": "Sampling-stappen",
+        "randomSeed": "Willekeurige seed",
+        "movementAmplitude": "Bewegingsamplitude",
+        "backgroundMusic": "Achtergrondmuziek",
+        "negativePrompt": "Negatieve prompt"
+      },
+      "actions": {
+        "close": "Sluiten",
+        "closeModalTitle": "Modal sluiten",
+        "remix": "Remixen",
+        "remixTitle": "Remixen met deze parameters",
+        "download": "Downloaden",
+        "downloadTitle": "Deze video downloaden",
+        "downloading": "Downloaden...",
+        "shareTitle": "Deze video delen"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Taak verwijderen",
+      "description": "Deze actie kan niet ongedaan worden gemaakt",
+      "cancel": "Annuleren",
+      "confirm": "Verwijderen",
+      "deleting": "Verwijderen..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Referentieafbeelding"
+      },
+      "pending": {
+        "pending": "In behandeling...",
+        "queued": "In wachtrij...",
+        "waitingInQueue": "Wachten in wachtrij..."
+      },
+      "processing": {
+        "phase1": "Fase 1",
+        "phase2": "Fase 2",
+        "phase3": "Fase 3",
+        "final": "Laatste",
+        "initializing": "Proces initialiseren",
+        "processing": "Content verwerken",
+        "rendering": "Output renderen",
+        "finalizing": "Afronden",
+        "stuckMessage": "Deze taak lijkt vast te zitten. Je kunt hem verwijderen.",
+        "deleteTitle": "Deze taak verwijderen",
+        "deleteAria": "Verwijderen"
+      },
+      "failed": {
+        "title": "Generatie mislukt",
+        "tryAgain": "Opnieuw proberen",
+        "tryAgainTitle": "Probeer opnieuw met deze prompt",
+        "deleteTitle": "Deze taak verwijderen"
+      },
+      "completed": {
+        "recreateDesktop": "Opnieuw maken",
+        "remixMobile": "Remixen",
+        "remixTitle": "Maak een nieuwe video met deze prompt",
+        "publish": "Publiceren",
+        "publishTitle": "Publiceer naar de community en verdien {amount} credits",
+        "creditsBonusDesktop": "{amount} creditbonus",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Delen",
+        "shareTitle": "Deze video delen",
+        "downloadTitle": "Deze video downloaden",
+        "downloading": "Downloaden...",
+        "deleteTitle": "Deze taak verwijderen"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego - ReelMind",
+      "description": "Maak en remix video's met Lego-workflow op ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "Terug naar Builder",
+      "history": "Geschiedenis"
+    },
+    "badges": {
+      "new": "Nieuw"
+    },
+    "actions": {
+      "delete": "Verwijderen",
+      "select": "Selecteren",
+      "selected": "Geselecteerd",
+      "download": "Downloaden",
+      "downloading": "Downloaden...",
+      "deleting": "Verwijderen...",
+      "share": "Delen",
+      "close": "Sluiten"
+    },
+    "status": {
+      "pending": "In behandeling",
+      "processing": "Verwerken",
+      "failed": "Mislukt",
+      "completed": "Voltooid",
+      "generating": "Genereren",
+      "cancelled": "Geannuleerd"
+    },
+    "deleteConfirmDialog": {
+      "title": "Taak verwijderen",
+      "description": "Deze actie kan niet ongedaan worden gemaakt",
+      "cancel": "Annuleren",
+      "confirm": "Verwijderen",
+      "deleting": "Verwijderen..."
+    },
+    "imageViewer": {
+      "close": "Sluiten",
+      "previous": "Vorige",
+      "next": "Volgende",
+      "view": "Bekijk {index}"
+    },
+    "historyList": {
+      "title": "Lego AI-beeldgenerator",
+      "generatingFirstImage": "Je eerste afbeelding genereren...",
+      "loadFailed": "Geschiedenis laden mislukt. Probeer het opnieuw.",
+      "emptyDescription": "Maak prachtige afbeeldingen door je idee te beschrijven en resources toe te voegen om de AI te sturen",
+      "loadingMore": "Geschiedenisafbeeldingen laden...",
+      "scrollForMore": "Scroll voor meer...",
+      "allLoaded": "Alle {count} afbeeldingen geladen"
+    },
+    "sidebar": {
+      "addCard": "Nieuwe kaart toevoegen",
+      "expand": "Zijbalk uitklappen",
+      "sections": {
+        "theme": "Thema",
+        "scene": "Scène",
+        "style": "Stijl"
+      }
+    },
+    "card": {
+      "placeholder": "Beschrijf {section}...",
+      "imageAlt": "{section}-referentie",
+      "options": {
+        "image": "Afbeelding",
+        "text": "Tekst"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Referentie {index}",
+      "errors": {
+        "invalidType": "Selecteer een afbeeldingsbestand",
+        "tooLarge": "Afbeeldingsgrootte mag {maxSizeMb}MB niet overschrijden",
+        "uploadFailed": "Afbeelding uploaden mislukt. Probeer het opnieuw."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "Scroll naar beneden",
+      "collapsedPlaceholder": "Beschrijf je afbeelding...",
+      "close": "Sluiten"
+    },
+    "resultPreview": {
+      "previewTitle": "Voorbeeld",
+      "previewDescription": "Je gegenereerde afbeelding verschijnt hier",
+      "generatedImageAlt": "Gegenereerde afbeelding",
+      "emptyPlaceholder": "Je creatie verschijnt hier",
+      "dialogTitle": "Je gemaakte afbeelding",
+      "dialogDescription": "Hier is de afbeelding die we hebben gemaakt op basis van je beschrijving en resources"
+    },
+    "resourceUploader": {
+      "uploadImage": "Afbeelding uploaden",
+      "imageFallbackAlt": "Afbeelding",
+      "imageFallbackLabel": "afbeelding",
+      "removeImage": "Verwijder {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "Zijbalk tonen",
+      "hideSidebar": "Zijbalk verbergen",
+      "hideSidebarShort": "Zijbalk verbergen",
+      "addImage": "Afbeelding toevoegen",
+      "addImageWithLimit": "Afbeelding toevoegen ({current}/{max})",
+      "promptPlaceholder": "Maak of bewerk je afbeelding...",
+      "model": "Model",
+      "selectModel": "Model selecteren",
+      "loading": "Laden...",
+      "loadingModels": "Modellen laden...",
+      "noModelsAvailable": "Geen modellen beschikbaar",
+      "noModelsMatchFilters": "Geen modellen komen overeen met je filters",
+      "modelLabel": "Model: {name}",
+      "aspectRatio": "Beeldverhouding",
+      "ratioLabel": "Verhouding: {value}",
+      "imagesLabel": "Afbeeldingen: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 levert één afbeelding op",
+        "hint": "Het aantal te genereren afbeeldingen",
+        "numberOfImages": "Aantal afbeeldingen"
+      },
+      "advanced": {
+        "aria": "Geavanceerde instellingen",
+        "label": "Geavanceerd",
+        "title": "Geavanceerde instellingen",
+        "negativePrompt": {
+          "label": "Negatieve prompt",
+          "placeholder": "Elementen die je wilt uitsluiten...",
+          "aria": "Negatieve prompt",
+          "title": "Specificeer elementen om uit te sluiten"
+        },
+        "seed": {
+          "label": "Zaad",
+          "random": "Willekeurig",
+          "randomTitle": "Willekeurige seed genereren",
+          "placeholder": "Willekeurige seed (optioneel)",
+          "aria": "Seed-waarde",
+          "title": "Stel seed in voor reproduceerbare resultaten"
+        }
+      },
+      "resolution": "Resolutie",
+      "resolutionLabel": "Resolutie: {value}",
+      "resolutionPopoverTitle": "Resolutie (Nano Banana 2)",
+      "generating": "Genereren...",
+      "generate": "Genereren",
+      "limitReached": "Limiet bereikt",
+      "fluxLimitTooltip": "FLUX-modellen beperkt tot {limit} gebruiken voor niet-leden",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 is een premium model en is niet inbegrepen in Unlimited gratis gebruik. Credits worden in rekening gebracht voor elke gegenereerde afbeelding.",
+      "unlimited": {
+        "fast": "Snel",
+        "slow": "Langzaam",
+        "fastMode": "Snelle modus",
+        "slowMode": "Langzame modus",
+        "monthlyUsage": "Maandelijks gebruik: {used}/{limit}",
+        "rateLimit": "Snelheidslimiet: {limit} afbeelding per 5 minuten",
+        "switchedToSlow": "Je hebt de maandelijkse limiet bereikt. Overgeschakeld naar langzame modus."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Gegenereerde afbeelding",
+      "failedTitle": "Generatie mislukt",
+      "errors": {
+        "unableToComplete": "Kan generatie niet voltooien"
+      },
+      "actions": {
+        "deleteTitle": "Taak verwijderen",
+        "viewFullSize": "Klik om volledige grootte te bekijken",
+        "preview": "Voorbeeld {index}",
+        "retryTitle": "Opnieuw proberen - Probeer opnieuw met dezelfde parameters",
+        "retry": "Opnieuw proberen",
+        "remixTitle": "Remix - Parameters hergebruiken",
+        "remix": "Remixen",
+        "makeVideoTitle": "Video maken",
+        "makeVideo": "Video creëren"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "Download gestart",
+      "downloadStartedMessage": "Video-download is gestart",
+      "downloadFailedTitle": "Download mislukt",
+      "downloadFailedMessage": "Video downloaden mislukt",
+      "shareCopied": "Deellink naar klembord gekopieerd",
+      "shareCopyFailed": "Deellink kopiëren mislukt"
+    },
+    "empty": {
+      "title": "Video niet beschikbaar",
+      "description": "Deze video is niet beschikbaar om te delen of het videobestand ontbreekt.",
+      "ctaCreate": "Maak je eigen video"
+    },
+    "notFound": {
+      "title": "Video niet gevonden",
+      "description": "De video die je zoekt bestaat niet of is niet langer beschikbaar om te delen.",
+      "ctaCreate": "Maak je eigen video",
+      "ctaHome": "Terug naar Home"
+    },
+    "details": {
+      "creationDate": "Aanmaakdatum"
+    },
+    "actions": {
+      "remix": "Remixen",
+      "remixTitle": "Maak een nieuwe video met deze prompt",
+      "download": "Downloaden",
+      "downloadTitle": "Deze video downloaden",
+      "downloading": "Downloaden...",
+      "downloadingTitle": "Downloaden...",
+      "shareTitle": "Deze video delen"
+    },
+    "meta": {
+      "promptFallback": "AI-gegenereerde video",
+      "watchDescription": "Bekijk deze AI-gegenereerde video: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Muziek",
+      "description": "Genereer muziek, geluidseffecten en spraak met AI."
+    },
+    "page": {
+      "loadingSoundStudio": "Sound Studio laden..."
+    },
+    "functionToggle": {
+      "music": "Muziek",
+      "soundEffect": "Geluidseffect",
+      "textToSpeech": "Tekst naar spraak"
+    },
+    "controlPanel": {
+      "title": "Bediening",
+      "reset": "Resetten",
+      "modelLabel": {
+        "tts": "TTS-model",
+        "sound": "Geluidmodel"
+      },
+      "modelPlaceholder": "Model selecteren",
+      "noModelsAvailableTitle": "Geen modellen beschikbaar",
+      "noModelsFound": {
+        "tts": "Geen TTS-modellen gevonden",
+        "soundEffect": "Geen geluidseffectmodellen gevonden"
+      },
+      "tts": {
+        "stability": "Stabiliteit",
+        "similarityBoost": "Gelijkenis-boost",
+        "styleExaggeration": "Stijl-overdrijving",
+        "speed": "Snelheid"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Referentie-audio uploaden",
+      "dropHere": "Hier neerzetten",
+      "supportedFormats": "Ondersteunde formaten: MP3, WAV, M4A, AAC, OGG",
+      "tip": "Tip: Gebruik minstens 15 seconden duidelijke audio voor betere resultaten.",
+      "uploadingProgress": "Uploaden... {progress}%",
+      "toast": {
+        "uploadSuccess": "Upload voltooid",
+        "uploadFailed": "Upload mislukt"
+      },
+      "errors": {
+        "selectAudioFile": "Selecteer een audiobestand.",
+        "invalidAudioFile": "Ongeldig audiobestand.",
+        "fileTooLarge": "Bestand is te groot (max 50MB).",
+        "durationTooShort": "Audio moet minimaal 15 seconden lang zijn."
+      }
+    },
+    "audioPlayer": {
+      "play": "Afspelen",
+      "pause": "Pauzeren"
+    },
+    "voiceSelector": {
+      "label": "Stem",
+      "selectVoiceTitle": "Stem selecteren",
+      "gender": {
+        "all": "Alle",
+        "male": "Man",
+        "female": "Vrouw"
+      },
+      "noVoicesAvailable": "Geen stemmen beschikbaar",
+      "noVoicesFound": "Geen stemmen gevonden",
+      "bestFor": "Beste voor {useCase}",
+      "clickToSelectVoice": "Klik om een stem te selecteren"
+    },
+    "historyPanel": {
+      "title": "Geschiedenis",
+      "empty": {
+        "title": "Nog geen generaties",
+        "description": "Je generatiegeschiedenis verschijnt hier"
+      },
+      "loading": "Laden...",
+      "loadMore": "Meer laden"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "Verwerken",
+        "failed": "Mislukt",
+        "completed": "Voltooid"
+      },
+      "actions": {
+        "copy": "Kopiëren",
+        "download": "Downloaden"
+      },
+      "time": {
+        "now": "Nu",
+        "minutesAgo": "{minutes}m geleden",
+        "hoursAgo": "{hours}u geleden"
+      },
+      "unknownModel": "Onbekend model",
+      "errors": {
+        "unknown": "Onbekende fout"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Geluidsstudio"
+      },
+      "menu": {
+        "open": "Menu openen",
+        "title": "Menukaart",
+        "voiceGeneration": "Maken",
+        "settings": "Instellingen",
+        "history": "Geschiedenis"
+      },
+      "tabs": {
+        "generate": "Genereren",
+        "settings": "Instellingen",
+        "history": "Geschiedenis"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Typ je tekst voor spraakgeneratie...",
+        "soundEffect": "Beschrijf het geluidseffect dat je wilt maken..."
+      },
+      "generateSpeech": "Spraak genereren",
+      "generateSound": "Geluid genereren",
+      "generating": "Genereren...",
+      "loadingExamples": "Voorbeelden laden...",
+      "loadingMusicStyles": "Muziekstijlen laden...",
+      "rightTabs": {
+        "examples": "Voorbeelden",
+        "history": "Geschiedenis"
+      },
+      "history": {
+        "generationCount": "{count} generaties"
+      },
+      "price": {
+        "placeholder": "Geschatte kosten",
+        "calculating": "Berekenen...",
+        "credits": "{credits} tegoeden"
+      },
+      "musicHistory": {
+        "title": "Muziekgeschiedenis",
+        "empty": {
+          "title": "Nog geen muziek gegenereerd",
+          "description": "Je muziekgeschiedenis verschijnt hier"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "Geluidseffectgeschiedenis",
+        "empty": {
+          "title": "Nog geen geluidseffecten gegenereerd",
+          "description": "Je geluidseffectgeschiedenis verschijnt hier"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Songtekst",
+      "lyricsPlaceholder": "Songtekst met optionele opmaak. Je kunt een nieuwe regel gebruiken om elke regel te scheiden. Je kunt twee nieuwe regels gebruiken om een pauze tussen regels toe te voegen. Je kunt dubbele hekjes (##) aan het begin en einde van de songtekst gebruiken om begeleiding toe te voegen. Maximaal 600 tekens.",
+      "useReferenceAudio": {
+        "label": "Referentie-audio gebruiken",
+        "description": "Gebruik een audioreferentie om de stijl van de AI te sturen."
+      },
+      "referenceAudio": {
+        "title": "Referentie-audio",
+        "description": "Upload een referentielied dat zowel muziek als zang bevat."
+      },
+      "musicStyle": {
+        "title": "Muziekstijl",
+        "description": "Beschrijf de stijl en sfeer van de muziek die je wilt maken.",
+        "placeholder": "bijv. R&B, energiek, upbeat pop, akoestische folk, elektronische dance...",
+        "tooShort": "Beschrijving van muziekstijl moet minimaal 10 tekens lang zijn."
+      },
+      "generating": "Genereren...",
+      "generateMusicWithCredits": "Muziek genereren ({credits} credits)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Duur",
+        "description": "Stel de lengte van het geluidseffect in."
+      },
+      "promptInfluence": {
+        "title": "Prompt-invloed",
+        "description": "Hogere waarden volgen je prompt nauwkeuriger."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contacteer",
+      "description": "Stuur feedback naar het ReelMind-team."
+    },
+    "header": {
+      "title": "Snelle feedback",
+      "description": "Een bug gevonden of een suggestie? Laat het ons in 30 seconden weten."
+    },
+    "card": {
+      "title": "Snelle feedback",
+      "subtitle": "Slechts 3 velden, kost 30 seconden"
+    },
+    "submitted": {
+      "title": "Feedback verzonden",
+      "description": "Bedankt voor je feedback. We bekijken het en nemen contact op als dat nodig is."
+    },
+    "auth": {
+      "required": "Log in om feedback te verzenden."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Er ging iets mis. Probeer het opnieuw."
+      },
+      "type": {
+        "label": "Typ",
+        "placeholder": "Selecteer feedbacktype",
+        "options": {
+          "bug": "Bugmelding",
+          "suggestion": "Suggestie",
+          "other": "Overig"
+        },
+        "errors": {
+          "required": "Feedbacktype is verplicht.",
+          "invalid": "Ongeldig feedbacktype."
+        }
+      },
+      "subject": {
+        "label": "Onderwerp *",
+        "placeholder": "Wat is het probleem of de suggestie?",
+        "errors": {
+          "required": "Onderwerp is verplicht.",
+          "min": "Onderwerp moet minimaal {min} tekens zijn.",
+          "max": "Onderwerp moet minder dan {max} tekens zijn.",
+          "invalid": "Onderwerp bevat ongeldige inhoud."
+        }
+      },
+      "message": {
+        "label": "Details *",
+        "placeholder": "Vertel ons meer...",
+        "errors": {
+          "required": "Details zijn verplicht.",
+          "min": "Details moeten minimaal {min} tekens zijn.",
+          "max": "Details moeten minder dan {max} tekens zijn.",
+          "invalid": "Details bevatten ongeldige inhoud."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Verzenden...",
+      "submit": "Feedback verzenden"
+    },
+    "toast": {
+      "submitSuccess": "Feedback succesvol verzonden!",
+      "submitFailed": "Feedback verzenden mislukt. Probeer het opnieuw.",
+      "authRequired": "Log in om feedback te verzenden.",
+      "rateLimited": "Te veel inzendingen. Probeer het later opnieuw.",
+      "rateLimitedWithRetryAfter": "Wacht {seconds}s voordat je opnieuw verzendt.",
+      "fixErrors": "Los de fouten in het formulier op.",
+      "checkInput": "Controleer je invoer en probeer opnieuw."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Berichten",
+      "following": "Volgend",
+      "followingShort": "Volgen",
+      "followers": "Volgers",
+      "followersShort": "Fans",
+      "favorites": "Favorieten",
+      "favoritesShort": "Favoriet"
+    },
+    "actions": {
+      "save": "Opslaan",
+      "saving": "Opslaan...",
+      "cancel": "Annuleren",
+      "delete": "Verwijderen",
+      "retry": "Opnieuw proberen",
+      "editProfile": "Profiel bewerken",
+      "signOut": "Uitloggen",
+      "follow": "Volgen",
+      "unfollow": "Ontvolgen",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "Maker",
+      "avatarAltFallback": "Gebruiker",
+      "initialFallback": "U",
+      "edit": {
+        "displayNamePlaceholder": "Weergavenaam",
+        "bioPlaceholder": "Biografie"
+      },
+      "stats": {
+        "following": "Volgend",
+        "followers": "Volgers"
+      },
+      "joined": "Lid sinds {date}",
+      "joinedFallback": "mrt 2025"
+    },
+    "time": {
+      "now": "Zojuist",
+      "minutesAgo": "{minutes}m geleden",
+      "hoursAgo": "{hours}u geleden",
+      "daysAgo": "{days}d geleden"
+    },
+    "toast": {
+      "loginFirst": "Log eerst in",
+      "cannotFollowYourself": "Je kunt jezelf niet volgen",
+      "followed": "Volgen gelukt",
+      "unfollowed": "Ontvolgen gelukt",
+      "operationFailed": "Actie mislukt"
+    },
+    "posts": {
+      "loadingMore": "Meer posts laden...",
+      "error": {
+        "failedToLoad": "Posts laden mislukt"
+      },
+      "empty": {
+        "title": "Nog geen posts",
+        "description": "Deze gebruiker heeft nog geen posts gedeeld. Kom later terug!"
+      },
+      "deleteDialog": {
+        "title": "Post verwijderen",
+        "description": "Dit verbergt de post uit je profiel en feed. Je kunt deze actie niet ongedaan maken."
+      },
+      "toast": {
+        "deleted": "Post verwijderd",
+        "deleteFailed": "Post verwijderen mislukt"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Meer favorieten laden...",
+      "error": {
+        "failedToLoad": "Favorieten laden mislukt"
+      },
+      "empty": {
+        "title": "Nog geen favorieten",
+        "description": "Posts die je leuk vindt verschijnen hier. Ga ontdekken en sla je favorieten op!"
+      }
+    },
+    "followers": {
+      "empty": "Nog geen volgers",
+      "error": {
+        "failedToLoad": "Volgers laden mislukt"
+      },
+      "followerSince": "Volger sinds {time}"
+    },
+    "following": {
+      "empty": "Nog niemand gevolgd",
+      "error": {
+        "failedToLoad": "Volgend laden mislukt"
+      },
+      "followingSince": "Volgend sinds {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Lidmaatschapsplannen - ReelMind",
+      "description": "Word lid van ReelMind-lidmaatschapsplannen om meer credits en premium functies voor AI-videogeneratie te krijgen."
+    },
+    "plans": {
+      "hero": {
+        "title": "Lidmaatschapsplannen",
+        "subtitle": "Ontgrendel het volledige potentieel van AI-videogeneratie met ReelMind's flexibele abonnementsplannen"
+      },
+      "error": {
+        "loadFailed": "Kan lidmaatschapsplannen niet ophalen, probeer het later opnieuw."
+      },
+      "names": {
+        "free": "Gratis",
+        "pro": "Pro",
+        "max": "Max",
+        "unlimited": "Onbeperkt"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Jaarlijks"
+      },
+      "monthly": {
+        "label": "Maandelijks"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "70% KORTING eerste maand",
+        "short": "70% KORTING",
+        "description": "Eerste keer lidmaatschap krijgt 70% KORTING, coupon 24 uur geldig"
+      },
+      "yearly": {
+        "full": "Eerste 6 maanden GRATIS",
+        "short": "6 maanden GRATIS",
+        "description": "Jaarabonnees krijgen de eerste 6 maanden helemaal gratis - gelijk aan 50% KORTING op je eerste jaar!"
+      },
+      "percentOff": "{percent}% KORTING",
+      "badge": {
+        "preview": "🎁 {offer} beschikbaar",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(na claimen)"
+    },
+    "pricing": {
+      "perYear": "per jaar",
+      "perMonth": "per maand",
+      "breakdown": {
+        "originalPrice": "Originele prijs:",
+        "discount": "Jouw korting:",
+        "payFirstYear": "Je betaalt (eerste jaar):",
+        "firstMonth": "Eerste maand:"
+      }
+    },
+    "status": {
+      "title": "Lidmaatschapsstatus",
+      "loading": "Lidmaatschapsinfo laden...",
+      "currentPlan": "Huidig plan:",
+      "expiresOn": "Verloopt op:",
+      "unlimitedDescription": "Je hebt onbeperkte toegang tot alle generatiefuncties zonder creditverbruik.",
+      "planDescription": "Je hebt toegang tot alle {plan}-functies en voordelen.",
+      "noActive": {
+        "title": "Je hebt geen actief lidmaatschap.",
+        "subtitle": "Abonneer je op een plan hieronder om premium functies te ontgrendelen."
+      }
+    },
+    "creditsBalance": {
+      "title": "Creditssaldo",
+      "loading": "Creditsinfo laden...",
+      "availableCredits": "Beschikbare credits:",
+      "unlimited": {
+        "video": "Onbeperkte videogeneratie",
+        "image": "Onbeperkte afbeeldingsgeneratie",
+        "audio": "Onbeperkte geluidsgeneratie"
+      },
+      "estimate": {
+        "videos": "Tot {count} video's",
+        "images": "Tot {count} afbeeldingen",
+        "audios": "Tot {count} geluiden"
+      },
+      "cost": {
+        "videos": "Video's: vanaf {credits} credits",
+        "images": "Afbeeldingen: vanaf {credits} credits",
+        "audios": "Geluiden: vanaf {credits} credits"
+      }
+    },
+    "credits": {
+      "title": "Credits kopen",
+      "history": {
+        "toggle": {
+          "show": "Transactiegeschiedenis tonen",
+          "hide": "Transactiegeschiedenis verbergen"
+        }
+      },
+      "card": {
+        "description": "Selecteer een creditpakket om je AI-generatiecapaciteiten te verbeteren"
+      },
+      "packages": {
+        "basic": {
+          "label": "Basispakket"
+        },
+        "standard": {
+          "label": "Standaardpakket"
+        },
+        "premium": {
+          "label": "Premiumpakket"
+        },
+        "pro": {
+          "label": "Ultra-pakket"
+        },
+        "bonus": "Bonus: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Basistarief: 1 USD = 100 credits",
+        "buyMoreBonus": "Koop meer, krijg meer bonus!",
+        "neverExpire": "Credits verlopen nooit",
+        "instantDelivery": "Direct geleverd na betaling"
+      },
+      "actions": {
+        "processing": "Verwerken...",
+        "buyCredits": "Koop {credits} credits"
+      }
+    },
+    "creditsHistory": {
+      "title": "Transactiegeschiedenis",
+      "subtitle": "Je recente credittransacties",
+      "actions": {
+        "retry": "Opnieuw proberen",
+        "loading": "Laden...",
+        "loadMore": "Meer laden"
+      },
+      "table": {
+        "date": "Datum",
+        "type": "Typ",
+        "amount": "Bedrag",
+        "status": "Status"
+      },
+      "empty": "Geen transactiegeschiedenis beschikbaar",
+      "types": {
+        "membershipMonthly": "Maandelijkse lidmaatschapscredits",
+        "membershipInitial": "Initiële lidmaatschapscredits",
+        "freeMonthly": "Gratis maandelijkse credits",
+        "purchase": "Credits aankoop",
+        "platformReward": "Platformbeloning",
+        "newUserBonus": "Nieuwe-gebruikerbonus",
+        "postReward": "Postbeloning",
+        "videoPostReward": "Videopostbeloning",
+        "refund": "Terugbetaling",
+        "balanceAdjustment": "Saldo-aanpassing",
+        "videoGeneration": "Videogeneratie",
+        "imageGeneration": "Afbeeldingsgeneratie",
+        "modelTraining": "Modeltraining",
+        "audioGeneration": "Audiogeneratie",
+        "systemAdjustment": "Systeemaanpassing"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}u {m}m {s}s",
+        "ms": "{m}m {s}s",
+        "s": "{s}s",
+        "expired": "Verlopen"
+      },
+      "toast": {
+        "claimedTitle": "Coupon succesvol geclaimd",
+        "claimedDescription": "Coupon toegevoegd aan je account, geldig voor {hours} uur",
+        "claimFailedTitle": "Claimen mislukt",
+        "tryAgainLater": "Probeer het later opnieuw",
+        "networkError": "Netwerkfout, probeer het later opnieuw"
+      }
+    },
+    "couponStatus": {
+      "title": "Couponstatus",
+      "active": {
+        "annualTitle": "Jaarlijkse aanbieding actief",
+        "couponTitle": "Coupon geactiveerd"
+      },
+      "fields": {
+        "claimed": "Geclaimd:",
+        "expires": "Verloopt:",
+        "timeLeft": "Resterende tijd:",
+        "usedAt": "Gebruikt op:",
+        "discount": "Korting:"
+      },
+      "expired": "Coupon verlopen",
+      "used": {
+        "title": "Coupon gebruikt"
+      },
+      "available": "{offer} beschikbaar",
+      "offer": {
+        "annualSpecial": "🎁 Jaarlijkse special",
+        "newUserExclusive": "🎉 Exclusief voor nieuwe gebruikers",
+        "bestValue": "Beste waarde",
+        "limitedTime": "Beperkte tijd",
+        "claimYearly": "Claim 6 maanden gratis aanbod",
+        "claimMonthly": "Claim coupon nu"
+      },
+      "none": {
+        "title": "Geen beschikbare coupons",
+        "description": "{offer} is alleen beschikbaar voor nieuwe gebruikers die nog nooit een lidmaatschap hebben gekocht."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Populair",
+        "advanced": "Geavanceerd",
+        "unlimited": "Onbeperkt"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Onbeperkte toegang krijgen",
+        "getUnlimitedMobile": "Onbeperkt",
+        "subscribeDesktop": "Abonnement starten",
+        "subscribeMobile": "Abonneren",
+        "claimAndSubscribeMobile": "Claimen & abonneren",
+        "getDiscountMobile": "{discount} krijgen",
+        "claimDiscountAndSubscribeDesktop": "{discount} claimen & abonneren"
+      },
+      "toast": {
+        "loginSuccess": "Inloggen gelukt! Klik opnieuw op de knop om je korting te claimen en te abonneren.",
+        "claimCouponFailed": "Coupon claimen mislukt",
+        "tryAgainLater": "Probeer het later opnieuw",
+        "couponClaimed": "Coupon succesvol geclaimd!",
+        "failedToProcess": "Verwerken mislukt"
+      },
+      "usageEstimate": {
+        "title": "Geschat maandelijks gebruik",
+        "videos": "Tot {count} video's per maand",
+        "images": "Tot {count} afbeeldingen per maand",
+        "audios": "Tot {count} geluiden per maand"
+      },
+      "unlimitedNotes": {
+        "title": "Gebruiksnotities",
+        "videoTasks": {
+          "title": "Videotaken:",
+          "body": "Je kunt tot 5 taken tegelijk uitvoeren. Maandelijkse limiet: 300. Na het bereiken van de maandlimiet geldt de langzame modus: daglimiet 30 video's per 24 uur en 10 taken per uur."
+        },
+        "imageTasks": {
+          "title": "Afbeeldingstaken:",
+          "body": "Tot 300 taken per maand. Snelle modus tot en met de 300ste taak (5 per minuut). Daarna beperkt de langzame modus tot 1 taak per minuut."
+        },
+        "premiumModels": {
+          "title": "Premium modellen:",
+          "body": "Sommige duurdere modellen zijn niet inbegrepen in ONBEPERKT-plannen. VEO 3.* non-fast varianten en Sora-2 /pro varianten verbruiken nog steeds credits."
+        }
+      },
+      "currentPlan": "Huidig abonnement",
+      "yearlyEquivalent": "Gelijk aan <price>{value}</price>",
+      "yearlySavings": "Bespaar <amount>{value}</amount> vergeleken met maandelijkse facturering"
+    },
+    "features": {
+      "monthlyCredits": "{credits} credits per maand",
+      "monthlyVideoCredits": "{credits} video-credits per maand",
+      "fullAccessTopModels": "Volledige toegang tot de top {count} AI-videomodellen",
+      "accessAllModels": "Toegang tot alle modellen",
+      "purchaseMoreRolloverVideoCredits": "Koop extra overdraagbare video-credits",
+      "downloadNoWatermark": "Video's zonder watermerk downloaden",
+      "commercialUse": "Commercieel gebruik",
+      "fastGenerations": "Snelle generaties",
+      "prioritySupport": "Prioriteitsondersteuning",
+      "unlimitedVideoAndImageGeneration": "Onbeperkte video- en beeldgeneratie"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Factureringsopties openen"
+      },
+      "actions": {
+        "opening": "Openen...",
+        "billingOptions": "Factureringsopties"
+      },
+      "confirm": {
+        "title": "Beheer je abonnement",
+        "description": "Wil je je abonnement opzeggen? We horen graag je feedback voordat je gaat.",
+        "keep": "Mijn abonnement behouden",
+        "continueCancel": "Doorgaan met opzeggen"
+      },
+      "toast": {
+        "openFailed": "Abonnementbeheer openen mislukt",
+        "feedbackThanks": "Bedankt voor je feedback!",
+        "feedbackSaveFailed": "Feedback opslaan mislukt, maar je kunt je abonnement nog steeds beheren"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "We horen graag je feedback",
+        "subtitle": "Help ons verbeteren door een paar korte vragen te beantwoorden"
+      },
+      "common": {
+        "close": "Sluiten",
+        "other": "Overig",
+        "stepIndicator": "Stap {current} van {total}"
+      },
+      "actions": {
+        "back": "Terug",
+        "next": "Volgende",
+        "submitting": "Verzenden...",
+        "complete": "Voltooien & doorgaan"
+      },
+      "satisfaction": {
+        "1": "Zeer ontevreden",
+        "2": "Ontevreden",
+        "3": "Neutraal",
+        "4": "Tevreden",
+        "5": "Zeer tevreden"
+      },
+      "steps": {
+        "1": {
+          "title": "Hoe heb je over ReelMind gehoord?",
+          "options": {
+            "social": "Social media (Twitter, Instagram, etc.)",
+            "search": "Zoekmachine (Google, Bing, etc.)",
+            "friend": "Aanbeveling van vriend of collega",
+            "ads": "Online advertentie",
+            "blog": "Techblog of reviewsite"
+          }
+        },
+        "2": {
+          "title": "Waar gebruik je ReelMind vooral voor?",
+          "description": "Selecteer alles wat bij je creatieve doelen past.",
+          "options": {
+            "video": "Videocreatie",
+            "image": "Afbeeldingsgeneratie",
+            "music": "Muziekcompositie",
+            "marketing": "Advertentie- & marketingcontent",
+            "socialPosts": "Socialmediaposts",
+            "education": "Educatief materiaal",
+            "personal": "Persoonlijke projecten",
+            "exploring": "Nieuwe ideeën verkennen"
+          }
+        },
+        "3": {
+          "title": "Wat beschrijft jou het beste?",
+          "options": {
+            "creator": "Content creator",
+            "developer": "Freelance developer",
+            "marketingPro": "Marketingprofessional",
+            "businessOwner": "Ondernemer",
+            "designer": "Ontwerper",
+            "hobbyist": "Hobbyist",
+            "student": "Student",
+            "artist": "Artiest"
+          }
+        },
+        "4": {
+          "title": "Hoe beoordeel je je ervaring?",
+          "description": "Beoordeel je algehele tevredenheid met ReelMind"
+        },
+        "5": {
+          "title": "Wat is de belangrijkste reden dat je hebt opgezegd?",
+          "options": {
+            "price": "Te duur",
+            "usage": "Ik gebruikte het niet genoeg",
+            "features": "Belangrijke functies missen",
+            "quality": "Kwaliteit van resultaten",
+            "bugs": "Technische problemen of bugs",
+            "alternative": "Beter alternatief gevonden"
+          }
+        },
+        "6": {
+          "title": "We horen graag je feedback",
+          "description": "Je mening helpt ons ReelMind beter te maken voor iedereen.",
+          "placeholder": "Wat kunnen we verbeteren? Functies die je graag zou zien? (optioneel)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Aanvraag verzonden. We nemen binnenkort contact op.",
+        "submitFailed": "Aanvraag verzenden mislukt"
+      },
+      "card": {
+        "title": "Enterprise & maatwerkplan",
+        "subtitle": "Maatwerkprijzen, facturatie en support",
+        "description": "Heb je facturen, compliance-support of een aangepaste workflow nodig? Deel je vereisten en we doen een voorstel.",
+        "toggle": {
+          "hide": "Formulier verbergen",
+          "show": "Sales contacteren"
+        },
+        "highlights": {
+          "sso": "SSO en naleving",
+          "invoices": "Facturen & inkooporders",
+          "support": "Prioriteitsupport",
+          "workflows": "Aangepaste workflows"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "Contacttype",
+          "placeholder": "Selecteer contacttype",
+          "options": {
+            "business": "Zakelijk",
+            "individual": "Particulier"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Geschat maandelijks gebruik (USD)",
+          "placeholder": "Selecteer een schatting",
+          "options": {
+            "0to1000": "$0 – $1.000",
+            "1000to5000": "$ 1.000 – $ 5.000",
+            "5000to10000": "$ 5.000 – $ 10.000",
+            "10000plus": "$ 10.000+",
+            "custom": "Aangepast bedrag (USD)"
+          },
+          "custom": {
+            "label": "Aangepast maandelijks gebruik (USD)",
+            "placeholder": "Voer een bedrag in USD in"
+          }
+        },
+        "firstName": {
+          "label": "Voornaam",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "Achternaam",
+          "placeholder": "Doe"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "uw.e-mailadres@bedrijf.com"
+        },
+        "website": {
+          "label": "Website",
+          "placeholder": "https://bedrijf.com"
+        },
+        "requirements": {
+          "label": "Vertel ons over je project en vereisten",
+          "placeholder": "Wat bouw je? Welke workflows, compliance-eisen en verwacht volume heb je?"
+        },
+        "actions": {
+          "cancel": "Annuleren",
+          "submitting": "Verzenden...",
+          "submit": "Verzenden"
+        },
+        "validation": {
+          "firstNameRequired": "Voornaam is verplicht",
+          "lastNameRequired": "Achternaam is verplicht",
+          "emailInvalid": "E-mail moet geldig zijn",
+          "websiteInvalid": "Website moet een geldige URL zijn",
+          "monthlyEstimateRequired": "Maandelijkse schatting is verplicht",
+          "monthlyEstimateEnter": "Voer een maandelijkse schatting in",
+          "monthlyEstimateMin": "Maandelijkse schatting moet >= 0 zijn",
+          "requirementsMin": "Geef meer details (min {count} tekens)",
+          "maxChars": "Max {count} tekens"
+        }
+      }
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "items": {
+        "proBenefits": {
+          "question": "Wat zijn de voordelen van een PRO-lidmaatschap?",
+          "answer": "PRO-lidmaatschap geeft je elke maand 1000 credits (waarde $10), prioriteitstoegang tot nieuwe functies, snellere videogeneratie, geavanceerde bewerkingsopties en prioriteitsklantenservice."
+        },
+        "cancelAnytime": {
+          "question": "Kan ik mijn abonnement op elk moment opzeggen?",
+          "answer": "Ja, je kunt je abonnement op elk moment opzeggen. Je voordelen blijven geldig tot het einde van je huidige factureringsperiode.",
+          "discountNote": {
+            "title": "Speciale opmerking voor abonnementen met korting:",
+            "body": "Als je je hebt geabonneerd met een couponkorting en in je eerste maand credits hebt gebruikt die de kortingswaarde overstijgen, kun je je abonnement pas opzeggen nadat de betaling van de tweede maand is verwerkt. Dit beleid zorgt voor eerlijk gebruik van promotionele aanbiedingen."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Is er verschil tussen maandelijkse en jaarlijkse abonnementen?",
+          "answer": "Ja, jaarlijkse abonnementen bieden een aanzienlijke korting ten opzichte van maandelijkse abonnementen. Je bespaart ongeveer 20% als je voor jaarlijkse facturering kiest."
+        },
+        "whatAreCredits": {
+          "question": "Wat zijn ReelMind Credits?",
+          "answer": "ReelMind Credits zijn de virtuele valuta op ons platform om AI-video's en afbeeldingen te genereren. Verschillende functies vereisen verschillende aantallen credits. Bijvoorbeeld: een standaardvideo (480p) kost 50 credits, terwijl een HD-video (720p) 80 credits kost."
+        },
+        "earnCredits": {
+          "question": "Hoe kan ik credits verdienen?",
+          "intro": "Je kunt op verschillende manieren credits verdienen:",
+          "items": {
+            "membership": "Via lidmaatschapsplannen (PRO-leden krijgen maandelijks 1000 credits, MAX-leden 2000)",
+            "purchase": "Door creditpakketten te kopen",
+            "newUser": "Nieuwe gebruikers ontvangen 100 gratis credits bij registratie",
+            "posting": "Content posten op ReelMind (50 credits per dag)",
+            "promotions": "Speciale promoties en beloningen"
+          }
+        },
+        "expire": {
+          "question": "Verlopen credits?",
+          "answer": "De credits die je direct koopt verlopen niet en blijven in je account totdat ze worden gebruikt. Je maandelijkse toegekende credits worden aan het begin van elke maand gereset. Ongebruikte credits van vorige maanden worden niet meegenomen."
+        },
+        "refund": {
+          "question": "Kan ik een terugbetaling krijgen voor ongebruikte credits?",
+          "answer": "We bieden geen terugbetalingen voor gekochte credits. Als je echter technische problemen hebt ervaren die het correcte gebruik van je credits verhinderden, neem dan contact op met ons supportteam en we zullen je helpen."
+        },
+        "membershipVsCredits": {
+          "question": "Wat is het verschil tussen lidmaatschap en credits?",
+          "answer": "Lidmaatschappen bieden een maandelijkse hoeveelheid credits en extra voordelen zoals prioriteitsverwerking en toegang tot exclusieve functies. Credits kunnen ook los worden gekocht en worden verbruikt bij het genereren van content. Kies een lidmaatschap voor regelmatig gebruik of koop credits voor incidenteel gebruik."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Alle rechten voorbehouden."
+    }
+  },
+  "Search": {
+    "placeholder": "Zoeken...",
+    "noResultsFound": "Geen resultaten gevonden",
+    "viewAllResults": "Alle resultaten bekijken",
+    "sections": {
+      "posts": "Berichten",
+      "users": "Gebruikers"
+    },
+    "tabs": {
+      "posts": "Berichten",
+      "users": "Gebruikers"
+    },
+    "unknownUser": "Onbekend",
+    "loading": "Laden...",
+    "searching": "Zoeken...",
+    "loadingMore": "Meer laden...",
+    "tryAgain": "Opnieuw proberen",
+    "noPostsFound": "Geen posts gevonden",
+    "noUsersFound": "Geen gebruikers gevonden",
+    "empty": {
+      "title": "Zoeken",
+      "hint": "Voer trefwoorden in om content te vinden"
+    },
+    "errors": {
+      "searchFailed": "Zoeken mislukt"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "Levenslange commissie - altijd 20%"
+    },
+    "hero": {
+      "lifetime": "Levenslang",
+      "passiveIncome": "Passief inkomen",
+      "subtitle": {
+        "prefix": "Verdien levenslang",
+        "suffix": "commissie"
+      }
+    },
+    "actions": {
+      "getStarted": "Begin nu",
+      "viewDashboard": "Dashboard bekijken",
+      "signInFirst": "Log eerst in"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API-platform",
+      "actions": {
+        "modelsPricing": "Modellen & prijzen",
+        "viewDocumentation": "Documentatie bekijken"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API-sleutel succesvol aangemaakt",
+      "apiKeyCreateFailed": "Aanmaken van API-sleutel mislukt",
+      "apiKeyDeleted": "API-sleutel succesvol verwijderd",
+      "apiKeyDeletedDescription": "API-sleutel is verwijderd",
+      "apiKeyDeleteFailed": "Verwijderen van API-sleutel mislukt",
+      "apiKeyCopied": "API-sleutel naar klembord gekopieerd",
+      "modelIdCopied": "Model-ID naar klembord gekopieerd"
+    },
+    "accountCard": {
+      "notLoggedIn": "Niet ingelogd",
+      "loadingKeys": "API-sleutels laden...",
+      "keysAvailable": "{count} API-{count, plural, one {sleutel} other {sleutels}} beschikbaar",
+      "createKey": "API-sleutel aanmaken",
+      "helpPrefix": "Als je hulp nodig hebt, bekijk dan onze ",
+      "apiDocumentation": "API-documentatie"
+    },
+    "stats": {
+      "plan": "Plannen",
+      "resetDate": "Resetdatum",
+      "credits": "Kredieten",
+      "tasks": "Taken",
+      "loading": "Laden...",
+      "freePlan": "Gratis plan",
+      "na": "N.v.t.",
+      "buyCredits": "Credits kopen"
+    },
+    "apiKeys": {
+      "title": "Beheer van API-sleutels",
+      "description": "Beheer je API-sleutels voor toegang tot ReelMind's videogeneratie-API",
+      "createNew": "Nieuwe API-sleutel aanmaken",
+      "loading": "API-sleutels laden...",
+      "label": "API-sleutel",
+      "created": "Aangemaakt {date}",
+      "active": "Actief",
+      "inactive": "Inactief",
+      "show": "API-sleutel tonen",
+      "hide": "API-sleutel verbergen",
+      "copy": "API-sleutel kopiëren",
+      "totalCalls": "Totaal aantal calls",
+      "creditsUsed": "Gebruikte credits",
+      "empty": {
+        "title": "Geen API-sleutels",
+        "description": "Je hebt nog geen API-sleutels aangemaakt. Maak je eerste API-sleutel aan om de ReelMind API te gebruiken.",
+        "createFirst": "Maak je eerste API-sleutel aan"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Modellen & prijzen",
+      "apiDocumentation": "API-documentatie"
+    },
+    "documentation": {
+      "title": "API-documentatie",
+      "authentication": "Authenticatie",
+      "authenticationIntro": "Alle API-aanvragen vereisen authenticatie met een API-sleutel. Je API-sleutel is een UUID die je hieronder kunt genereren in het gedeelte Beheer van API-sleutels.",
+      "authenticationMethods": "Authenticatiemethoden",
+      "exampleRequest": "Voorbeeldverzoek",
+      "important": "Belangrijk",
+      "apiEndpoints": "API-endpoints",
+      "responseFormat": "Response-formaat",
+      "responseFormatIntro": "Response-formaat voor videogeneratietaak:",
+      "parameters": "Parameters",
+      "table": {
+        "name": "Naam",
+        "type": "Typ",
+        "required": "Vereist",
+        "description": "Beschrijving"
+      },
+      "yes": "Ja",
+      "no": "Nee"
+    },
+    "pricing": {
+      "title": "API-prijzen & modellen",
+      "intro": "Ontdek beschikbare AI-modellen en hun prijzen voor video- en afbeeldingsgeneratie-API's",
+      "loading": "Beschikbare modellen laden...",
+      "available": "Beschikbaar",
+      "unavailable": "Niet beschikbaar",
+      "credits": "{credits} tegoeden",
+      "basePricePerImage": "Basisprijs (per afbeelding)",
+      "basePrice5sVideo": "Basisprijs (5s video)",
+      "creditsPerSecond": "+{credits} credits/seconde",
+      "modelId": "Model-ID",
+      "copyModelId": "Model-ID kopiëren",
+      "noModels": {
+        "title": "Geen modellen beschikbaar",
+        "description": "Er zijn momenteel geen AI-modellen beschikbaar voor API-toegang. Probeer het later opnieuw."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Tekst naar video",
+      "imageToVideo": "Afbeelding naar video",
+      "videoToVideo": "Video naar video",
+      "textToImage": "Tekst naar afbeelding",
+      "imageToImage": "Afbeelding naar afbeelding"
+    },
+    "deleteModal": {
+      "title": "Verwijderen bevestigen",
+      "description": "Weet je zeker dat je deze API-sleutel wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+      "keyName": "Sleutelnaam: {name}",
+      "createdOn": "Aangemaakt op {date}",
+      "cancel": "Annuleren",
+      "deleting": "Verwijderen...",
+      "deleteKey": "API-sleutel verwijderen"
+    },
+    "modelParameters": {
+      "title": "Modelparameters",
+      "required": "Vereist",
+      "default": "Standaard: {value}",
+      "labels": {
+        "prompt": "Prompt",
+        "guidance_scale": "Begeleidingsschaal",
+        "aspect_ratio": "Beeldverhouding",
+        "seed": "Zaad",
+        "image_url": "Afbeeldings-URL",
+        "duration": "Duur",
+        "resolution": "Resolutie",
+        "num_inference_steps": "Inferentiestappen",
+        "cfg_scale": "CFG-schaal"
+      },
+      "flux": {
+        "promptDescription": "Tekstprompt die de te genereren afbeelding beschrijft",
+        "guidanceScaleDescription": "Bepaalt hoe nauw de afbeelding de prompt volgt",
+        "aspectRatioDescription": "De beeldverhouding van de gegenereerde afbeelding",
+        "seedDescription": "Willekeurige seed voor reproduceerbare generatie",
+        "imageUrlDescription": "Invoerafbeeldings-URL voor afbeelding-naar-afbeelding generatie"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Tekst naar afbeelding · Afbeeldingsbewerking",
+      "title": "FLUX / Nano Banaan / Seeddream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - Wereld #1 AI-agentregisseur",
+      "description": "Wereld #1 AI-agentregisseur"
+    },
+    "page": {
+      "loading": "Nolan AI-regisseur laden..."
+    },
+    "heroBanner": {
+      "label": "Revolutionaire AI-technologie",
+      "name": "Nolan",
+      "worldFirst": "De allereerste ter wereld",
+      "aiAgentDirector": "AI-agentregisseur"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "In behandeling",
+        "queued": "In de wachtrij",
+        "processing": "Verwerking",
+        "completed": "Voltooid",
+        "failed": "Mislukt",
+        "canceled": "Geannuleerd"
+      },
+      "model": {
+        "unknown": "Onbekend model",
+        "unnamed": "Naamloos"
+      },
+      "errors": {
+        "fetchListTitle": "Kan taken niet laden",
+        "unknown": "Onbekende fout",
+        "fetchDetails": "Kan taakdetails niet ophalen",
+        "downloadFailed": "Downloaden mislukt",
+        "retryFailed": "Opnieuw proberen mislukt"
+      },
+      "details": {
+        "videoTitle": "Details van videotaak",
+        "imageTitle": "Details afbeeldingstaak",
+        "videoPreview": "Videovoorbeeld",
+        "hideVideo": "Video verbergen",
+        "showVideo": "Toon video",
+        "downloadVideo": "Video downloaden",
+        "browserNoVideoSupport": "Uw browser ondersteunt het afspelen van video niet.",
+        "labels": {
+          "duration": "Duur",
+          "fileSize": "Bestandsgrootte",
+          "format": "Formaat",
+          "prompt": "Prompt",
+          "model": "Model",
+          "ratio": "Beeldverhouding",
+          "resolution": "Resolutie",
+          "taskId": "Taak-ID",
+          "user": "Gebruiker",
+          "status": "Status",
+          "createdTime": "Tijd gecreëerd",
+          "startedTime": "Begintijd",
+          "completedTime": "Voltooide tijd",
+          "generationModel": "Generatiemodel",
+          "priority": "Prioriteit",
+          "requestId": "ID aanvragen",
+          "lastActivity": "Laatste activiteit"
+        },
+        "videoPreviewUnavailable": "Videovoorbeeld niet beschikbaar",
+        "videoNoOutput": "Taak voltooid, maar geen video-uitvoer",
+        "videoNotCompleted": "De taak is nog niet voltooid",
+        "generationParams": "Generatieparameters",
+        "basicInfo": "Basisinformatie",
+        "timeInfo": "Tijdinformatie",
+        "detailData": "Gedetailleerde gegevens",
+        "inputParams": "Invoerparameters",
+        "outputResult": "Uitvoerresultaat",
+        "errorLog": "Foutenlogboek",
+        "retrying": "Opnieuw proberen...",
+        "retryTask": "Probeer de taak opnieuw",
+        "generatedImage": "Gegenereerde afbeelding",
+        "close": "Sluiten"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Beheer van gebruikersfeedback",
+        "subtitle": "Beheer door gebruikers ingediende feedback en klachten"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Ophalen mislukt",
+          "fetchFailedDescription": "Kan feedbackgegevens niet ophalen: {error}",
+          "unknown": "Onbekende fout"
+        },
+        "type": {
+          "bug": "Bugrapport",
+          "suggestion": "Suggestie",
+          "other": "Anders"
+        },
+        "loading": "Laden...",
+        "filter": {
+          "label": "Feedbacktype",
+          "all": "Alle soorten"
+        },
+        "total": "Totaal: {total} feedbackitems",
+        "empty": "Geen feedbackgegevens",
+        "headers": {
+          "userInfo": "Gebruikersinformatie",
+          "type": "Typ",
+          "subject": "Onderwerp",
+          "submittedAt": "Ingezonden",
+          "actions": "Acties"
+        },
+        "user": {
+          "unknown": "Onbekende gebruiker",
+          "noEmail": "Geen e-mail"
+        },
+        "actions": {
+          "collapse": "Samenvouwen",
+          "viewDetails": "Details bekijken"
+        },
+        "contentLabel": "Feedback:",
+        "pagination": {
+          "previous": "Vorige",
+          "next": "Volgende"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Voer een zoekwoord in.",
+        "noUsersFound": "Geen overeenkomende gebruikers gevonden.",
+        "searchFailed": "Kan gebruikers niet zoeken.",
+        "userRequired": "Selecteer een gebruiker of voer een gebruikers-ID in.",
+        "amountInvalid": "Voer een geldig creditbedrag in.",
+        "descriptionRequired": "Voer een subsidiebeschrijving in.",
+        "grantFailed": "Het is niet gelukt om kredieten toe te kennen."
+      },
+      "success": {
+        "granted": "Credits zijn succesvol toegekend."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Kan enquêtes niet ophalen.",
+        "fetchStats": "Kan enquêtestatistieken niet ophalen."
+      }
+    },
+    "memberships": {
+      "title": "Beheer van gebruikersabonnementen",
+      "search": {
+        "placeholder": "Zoek naar gebruikers-ID, e-mailadres of bijnaam...",
+        "button": "Zoeken"
+      },
+      "stats": {
+        "total": "Totaal aantal abonnementen",
+        "yearly": "Jaarlijkse leden"
+      },
+      "list": {
+        "title": "Abonnementenlijst"
+      },
+      "loading": "Laden...",
+      "actions": {
+        "retry": "Opnieuw proberen"
+      },
+      "empty": "Geen abonnementsgegevens",
+      "table": {
+        "headers": {
+          "userInfo": "Gebruikersinformatie",
+          "plan": "Plannen",
+          "billingCycle": "Factureringscyclus",
+          "status": "Status",
+          "credits": "Creditsaldo",
+          "videoTasks": "Videotaken",
+          "imageTasks": "Afbeeldingstaken",
+          "createdAt": "Tijd gecreëerd",
+          "expiresAt": "Vervaltijd"
+        },
+        "user": {
+          "unknown": "Onbekend"
+        },
+        "status": {
+          "active": "Actief",
+          "inactive": "Inactief",
+          "cancelAtPeriodEnd": "Annuleer aan het einde van de periode"
+        },
+        "creditsUnit": "tegoeden",
+        "flagged": "Gemarkeerd",
+        "tasksUnit": "taken",
+        "never": "Nooit"
+      },
+      "pagination": {
+        "summary": "Toont {start} tot {end} van {total} records",
+        "previous": "Vorige",
+        "next": "Volgende",
+        "page": "Pagina {currentPage} van {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Kan het bericht niet verwijderen. Probeer het opnieuw."
+      }
+    }
+  },
+  "Common": {
+    "language": "Taal",
+    "onlyEnglish": "Momenteel is alleen Engels beschikbaar.",
+    "onlySupportedPages": "Extra talen zijn momenteel alleen beschikbaar op de pagina's Home, Ontdekken, Zoeken, Maken, Lego, Muziek, Lidmaatschap, Contact, Gebruiker, Delen, Modellen, Effecten en Blog.",
+    "languages": {
+      "en": "Engels",
+      "zh-CN": "Chinees (vereenvoudigd)"
+    },
+    "actions": {
+      "viewAll": "Bekijk alles",
+      "cancel": "Annuleren",
+      "recreate": "Herscheppen",
+      "download": "Downloaden",
+      "downloading": "Downloaden...",
+      "showMore": "Laat meer zien",
+      "showLess": "Laat minder zien"
+    },
+    "aria": {
+      "scrollRight": "Scroll naar rechts",
+      "search": "Zoekopdracht"
+    },
+    "search": {
+      "placeholder": "Zoek berichten en gebruikers..."
+    },
+    "share": {
+      "button": "Deel",
+      "toast": {
+        "copiedTitle": "Gekopieerd",
+        "copiedMessage": "Link gekopieerd naar klembord",
+        "failedTitle": "Kopiëren is niet gelukt",
+        "failedMessage": "Kan de link niet naar het klembord kopiëren"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Nolan AI-directeur",
+      "earlyAccess": "Vroege toegang",
+      "justOneCredit": "Slechts 1 credit"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Lichtmodus",
+        "darkMode": "Donkere modus",
+        "switchToLightMode": "Schakel over naar de lichtmodus",
+        "switchToDarkMode": "Schakel over naar de donkere modus"
+      },
+      "profile": {
+        "myProfile": "Mijn profiel",
+        "goToMyProfile": "Ga naar mijn profiel"
+      },
+      "menu": {
+        "openMenu": "Menu openen",
+        "close": "Dichtbij"
+      },
+      "membership": {
+        "title": "Lidmaatschap",
+        "tapToViewPlans": "Tik om plannen te bekijken",
+        "upgrade": "Upgraden",
+        "plans": {
+          "free": "Vrij",
+          "pro": "Pro",
+          "max": "Max",
+          "unlimited": "Onbeperkt"
+        }
+      },
+      "actions": {
+        "pricing": "Prijzen",
+        "signIn": "Inloggen"
+      }
+    },
+    "footer": {
+      "rights": "© {year}ReelMind. Alle rechten voorbehouden."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Snel",
+        "model": "Model",
+        "ratio": "Verhouding",
+        "guidance": "Begeleiding",
+        "steps": "Stappen",
+        "seed": "Zaad",
+        "definition": "Definitie"
+      },
+      "values": {
+        "unknownModel": "Onbekend model",
+        "random": "Willekeurig"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Paginering",
+        "previous": "Ga naar de vorige pagina",
+        "next": "Ga naar de volgende pagina"
+      },
+      "previous": "Vorig",
+      "next": "Volgende",
+      "more": "Meer pagina's"
+    },
+    "concurrentLimit": {
+      "title": "Taaklimiet bereikt",
+      "defaultMessage": "Gratis gebruikers kunnen slechts één videogeneratietaak tegelijk uitvoeren.",
+      "currentStatus": "Huidige status",
+      "currentPlan": "Huidig ​​abonnement",
+      "premiumBenefits": "Premium voordelen",
+      "plans": {
+        "unlimited": "Onbeperkt abonnement",
+        "free": "Vrij",
+        "unlimitedTasks": "Onbeperkte taken"
+      },
+      "unlimited": {
+        "maxTasks": "Maximaal 3 gelijktijdige taken",
+        "priority": "Verwerking met hoge prioriteit",
+        "features": "Alle premiumfuncties",
+        "waitNote": "Wacht tot een aantal van uw huidige taken zijn voltooid voordat u nieuwe taken indient."
+      },
+      "free": {
+        "maxTasks": "1 gelijktijdige taak",
+        "priority": "Standaard prioriteit",
+        "features": "Basisfuncties"
+      },
+      "upgrade": {
+        "maxTasks": "Maximaal 5 gelijktijdige taken",
+        "priority": "Verwerking met hogere prioriteit",
+        "features": "Toegang tot alle modellen"
+      },
+      "actions": {
+        "acknowledge": "Ik heb het",
+        "upgrade": "Upgraden",
+        "loading": "Laden..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Lokaal uploaden",
+      "reelmind": "ReelMind gegenereerd"
+    },
+    "reelmind": {
+      "description": "Selecteer een video die is gegenereerd op ReelMind.",
+      "browse": "Blader door ReelMind-video's"
+    },
+    "title": {
+      "placeholder": "Voeg een titel toe..."
+    },
+    "tags": {
+      "title": "Labels",
+      "empty": "Voeg tags toe om uw video beter te categoriseren.",
+      "placeholder": "Voeg een tag toe (druk op Enter om te bevestigen)",
+      "count": "{count}/{limit}",
+      "helper": "Maximaal {limit} tags, elk {max} tekens."
+    },
+    "description": {
+      "placeholder": "Voeg een beschrijving toe..."
+    },
+    "generationType": {
+      "title": "Generatietype",
+      "txt2video": "Tekst naar video",
+      "txt2videoDescription": "Genereer op basis van een tekstprompt.",
+      "img2video": "Afbeelding naar video",
+      "img2videoDescription": "Genereer op basis van een referentieafbeelding."
+    },
+    "prompts": {
+      "promptTitle": "Snel",
+      "promptPlaceholder": "Voer de prompt in die is gebruikt om deze video te genereren...",
+      "negativeTitle": "Negatieve prompt",
+      "negativePlaceholder": "Geef een negatieve prompt op..."
+    },
+    "modelResources": {
+      "title": "Modelbronnen",
+      "placeholder": "Maak een lijst van de gebruikte modelbronnen, b.v. Modellen, LoRA's, inbedding..."
+    },
+    "aigc": {
+      "guidanceScale": "Begeleidingsschaal",
+      "guidanceScalePlaceholder": "bijv. 7.5",
+      "steps": "Stappen",
+      "stepsPlaceholder": "bijv. 30",
+      "seed": "Zaad",
+      "seedPlaceholder": "bijv. 1234567890"
+    },
+    "tools": {
+      "title": "Generatiehulpmiddelen"
+    },
+    "videoPreview": {
+      "uploadComplete": "Uploaden voltooid",
+      "uploading": "Uploaden...",
+      "clickToUpload": "Klik om een ​​video te uploaden",
+      "remove": "Video verwijderen"
+    },
+    "actions": {
+      "publish": "Publiceren",
+      "publishing": "Publiceren...",
+      "back": "Rug"
+    },
+    "errors": {
+      "tagEmpty": "Tag mag niet leeg zijn.",
+      "tagTooLong": "Tag mag niet langer zijn dan {max} tekens.",
+      "tagExists": "Deze tag bestaat al.",
+      "tagLimit": "U kunt maximaal {limit}-tags toevoegen.",
+      "authRequired": "Meld u aan om te uploaden.",
+      "uploadFailed": "Uploaden mislukt. Probeer het opnieuw.",
+      "uploadParamsFailed": "Kan uploadparameters niet ophalen.",
+      "fileAddFailed": "Kan bestand niet toevoegen. Probeer het opnieuw."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog - ReelMind",
+      "description": "Ontdek tips, tutorials en inzichten over het maken van AI-inhoud, het genereren van video's en de nieuwste ReelMind-functies."
+    },
+    "page": {
+      "title": "Bloggen",
+      "empty": "Geen blogposts gevonden"
+    },
+    "error": {
+      "title": "Fout bij het laden van berichten",
+      "description": "Er is iets misgegaan bij het laden van blogposts.",
+      "retry": "Probeer het opnieuw"
+    },
+    "notFound": {
+      "title": "Pagina niet gevonden",
+      "description": "De door u opgevraagde blogpagina bestaat niet."
+    },
+    "feed": {
+      "end": "Je hebt het einde bereikt",
+      "retry": "Opnieuw proberen",
+      "loadFailed": "Kan blogposts niet laden"
+    },
+    "topFeed": {
+      "refresh": "Vernieuwen",
+      "exploreMore": "Ontdek meer plezier",
+      "loadFailed": "Kan willekeurige berichten niet laden"
+    },
+    "floatingChat": {
+      "title": "Vraag het aan Nolan AI",
+      "subtitle": "Nr.1 AI-agentdirecteur!",
+      "placeholder": "Vraag naar dit artikel of deel uw filmideeën...",
+      "cta": "Stuur naar Nolan"
+    },
+    "featureCard": {
+      "label": "Videomodellen",
+      "title": "Reelmind biedt krachtige tools om uw ideeën tot leven te brengen.",
+      "subtitle": "Transformeer uw ideeën in verbluffende beelden met 101 AI-modellen",
+      "cta": "Probeer nu"
+    },
+    "breadcrumbs": {
+      "home": "Thuis"
+    },
+    "article": {
+      "notFoundTitle": "Artikel niet gevonden",
+      "notFoundDescription": "Het gevraagde artikel kon niet worden gevonden."
+    }
+  },
+  "Favorites": {
+    "title": "Mijn favorieten",
+    "subtitle": "Hier kunt u uw favoriete video's en modellen beheren",
+    "tabs": {
+      "video": "Video",
+      "model": "Model"
+    },
+    "empty": {
+      "title": "Je hebt nog geen favorieten"
+    },
+    "alert": {
+      "title": "Fout",
+      "retry": "Opnieuw proberen",
+      "loadFailed": "Kan favorieten niet laden. Probeer het opnieuw.",
+      "removeFailed": "Kan favoriet niet verwijderen. Probeer het opnieuw."
+    },
+    "card": {
+      "video": "Video",
+      "model": "Model"
+    },
+    "button": {
+      "favorite": "Favoriet",
+      "favorited": "Favoriet"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Welkom bij ReelMind",
+      "subtitle": "Log in of maak je creator-account aan",
+      "continueWithGoogle": "Doorgaan met Google",
+      "orContinueWithEmail": "of ga verder met e-mail",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "jij@email.com",
+      "emailAddressPlaceholder": "E-mailadres",
+      "passwordLabel": "Wachtwoord",
+      "passwordPlaceholder": "••••••••",
+      "show": "tonen",
+      "hide": "verbergen",
+      "inviteCodeLabelOptional": "Uitnodigingscode (optioneel)",
+      "inviteCodePlaceholder": "Voer code in",
+      "invitedBy": "Uitgenodigd door <name>{value}</name>",
+      "continue": "Doorgaan",
+      "signIn": "Inloggen",
+      "createAccount": "Account aanmaken",
+      "switchToSignIn": "Heb je al een account? Log in",
+      "switchToSignUp": "Geen account? Meld je aan",
+      "pageSubtitleCreate": "Maak je account aan",
+      "pageSubtitleSignIn": "Log in op je account",
+      "termsLine": "Door door te gaan, ga je akkoord met onze <terms>Voorwaarden</terms> en <privacy>Privacybeleid</privacy>"
+    },
+    "verifyEmail": {
+      "title": "Verifieer je e-mail",
+      "sentLinkTo": "We hebben een verificatielink gestuurd naar",
+      "checkInbox": "Controleer je inbox en klik op de link om door te gaan.",
+      "understand": "Ik begrijp het",
+      "useDifferentEmail": "Andere e-mail gebruiken"
+    },
+    "errors": {
+      "invalidEmail": "Ongeldig e-mailadres",
+      "suspiciousEmail": "Dit e-mailadres lijkt verdacht",
+      "verifyBeforeLogin": "Verifieer je e-mail voordat je inlogt",
+      "operationFailed": "Actie mislukt, probeer het opnieuw",
+      "googleFailed": "Inloggen met Google mislukt, probeer het opnieuw",
+      "checkEmailConfirmation": "Controleer je e-mail voor de bevestigingslink!"
+    },
+    "brand": {
+      "headlineLine1": "Molenmakers",
+      "headlineLine2": "Welkom",
+      "taglineLine1": "Ontrol je geest.",
+      "taglineLine2": "Laat AI er een reel van maken.",
+      "cta": "Sluit je aan bij onze community van creators en begin met creëren."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Afbeelding toevoegen",
+      "addMoreReferences": "Voeg meer referenties toe",
+      "auto": "Automatisch",
+      "back": "Terug",
+      "character": "Karakter",
+      "clear": "Duidelijk",
+      "clearAll": "Alles wissen",
+      "close": "Sluiten",
+      "createPack": "Pakket maken",
+      "downloadCount": "Downloaden {current}/{total}",
+      "dropOrUploadPhoto": "Plaats of upload een foto",
+      "goToLibrary": "Ga naar de bibliotheek",
+      "high": "Hoog",
+      "history": "Geschiedenis",
+      "inQueue": "In de wachtrij",
+      "info": "Info",
+      "instadump": "Instadump",
+      "manual": "Handmatig",
+      "new": "Nieuw",
+      "next": "Volgende",
+      "open": "Openen",
+      "previous": "Vorige",
+      "ready": "Klaar",
+      "recent": "Recent",
+      "remove": "Verwijderen",
+      "replace": "Vervangen",
+      "reset": "Opnieuw instellen",
+      "restart": "Opnieuw opstarten",
+      "selectPack": "Selecteer pakket",
+      "storyboard": "Storyboard",
+      "upload": "Uploaden",
+      "uploading": "Uploaden..."
+    },
+    "prompts": {
+      "defaultImage": "Een filmisch, gedetailleerd beeld met natuurlijk licht",
+      "relightDefault": "Belicht het onderwerp opnieuw met zachte studioverlichting",
+      "faceSwapDefault": "Verwissel het gezicht terwijl de scène intact blijft",
+      "characterSwapDefault": "Verwissel het personage met behoud van de stijl",
+      "drawToEditDefault": "Verfijn de tekening tot een schoon, gedetailleerd beeld"
+    },
+    "swap": {
+      "sourceTitle": "Bron",
+      "targetTitle": "Doel",
+      "faceSourceDescription": "Bronafbeelding voor het gezicht",
+      "faceTargetDescription": "Doelafbeelding om te vervangen",
+      "characterSourceDescription": "Bronafbeelding voor het personage",
+      "characterTargetDescription": "Doelafbeelding om te vervangen"
+    },
+    "inpaint": {
+      "sourceAlt": "Bron afbeelding",
+      "paintHint": "Verf het gebied dat u wilt bewerken",
+      "maskUploading": "Masker uploaden",
+      "maskReady": "Masker klaar",
+      "maskPaint": "Verf masker",
+      "paint": "Verf",
+      "erase": "Wissen"
+    },
+    "relight": {
+      "title": "Opnieuw aansteken",
+      "quickSelect": "Snel selecteren",
+      "directions": {
+        "top": "Boven",
+        "front": "Voorkant",
+        "right": "Juist",
+        "left": "Links",
+        "back": "Terug",
+        "bottom": "Onderkant"
+      },
+      "brightness": "Helderheid",
+      "color": "Kleur"
+    },
+    "upscale": {
+      "title": "Luxe"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Schets naar video",
+      "drawToVideo": "Teken naar video",
+      "drawToEdit": "Teken om te bewerken",
+      "pen": "Pen",
+      "eraser": "Gum",
+      "color": "Kleur",
+      "size": "Grootte",
+      "undo": "Ongedaan maken",
+      "redo": "Opnieuw uitvoeren",
+      "clear": "Duidelijk",
+      "generateVideo": "Genereer video",
+      "uploadTitle": "Media uploaden",
+      "uploadDescription": "Voeg een foto toe om de tekening te begeleiden"
+    },
+    "soulId": {
+      "heroTitle": "Soul ID-karakter",
+      "heroDescription": "Bouw een consistent karakter op met uw foto's.",
+      "createButton": "Creëer karakter",
+      "photoCount": "{count} foto's",
+      "characterLabel": "Karakter {index}",
+      "emptyGallery": "Nog geen karakters.",
+      "dialogTitle": "Ziel-ID maken",
+      "dialogSubtitle": "Upload foto's om je karakter op te bouwen.",
+      "addPhotosTitle": "Voeg foto's toe",
+      "addPhotosDescription": "Upload 6-12 duidelijke foto's.",
+      "tip": "Tip: gebruik gevarieerde hoeken en uitdrukkingen."
+    },
+    "storyboard": {
+      "relightScene": "Opnieuw verlichte scène",
+      "headline": "Modefabriek",
+      "headlineAccent": "Genereer uw esthetiek",
+      "description": "Storyboard, bewerken, creëren.",
+      "resultsLabel": "{count} resultaten",
+      "uploadHint": "Upload referentiebeelden om de scène te begeleiden",
+      "referenceImagesTitle": "Referentie afbeeldingen",
+      "referenceImagesDescription": "Voeg maximaal 4 afbeeldingen toe, afhankelijk van de stijl"
+    },
+    "instadump": {
+      "sidebarTitle": "Instadump Studio",
+      "stepChoosePack": "Kies een pakket",
+      "stepAddPhoto": "Voeg een foto toe",
+      "stepGetInstadump": "Download Instadump",
+      "headerTitle": "Instadump",
+      "headerDescription": "Verander een selfie in een bibliotheek met volledige inhoud.",
+      "addPhotoTitle": "Voeg uw foto toe",
+      "addPhotoDescription": "Upload een duidelijke selfie om te beginnen.",
+      "getInstadumpTitle": "Koop uw Instadump",
+      "newPhotosReady": "Nieuwe foto's klaar",
+      "tryFree": "Probeer gratis",
+      "premiumTitle": "Premie",
+      "premiumBulletOne": "Meer stijlen per verpakking",
+      "premiumBulletTwo": "Prioritaire verwerking",
+      "premiumBulletThree": "Downloads in volledige resolutie",
+      "upgradeNow": "Upgrade nu"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Bewerken",
+      "subtitle": "Toegang tot bewerkingsfuncties en modellen",
+      "back": "Terug naar Bewerken",
+      "workspace": {
+        "title": "Werkruimte",
+        "status": "Tijdelijke aanduiding voor frontend",
+        "uploadTitle": "Media uploaden",
+        "uploadDescription": "Sleep of klik om een afbeelding/video te uploaden om te beginnen"
+      },
+      "settings": {
+        "title": "Instellingen",
+        "modelTitle": "Model",
+        "modelDescription": "Kies een model (backend binnenkort beschikbaar)",
+        "promptTitle": "Prompt",
+        "promptDescription": "Beschrijf wat je wilt (backend binnenkort beschikbaar)",
+        "generate": "Genereer"
+      },
+      "model": {
+        "title": "Modeldetails",
+        "descriptionTitle": "Beschrijving",
+        "descriptionBody": "Dit is een tijdelijke aanduiding. Details worden ingevuld zodra de backend is aangesloten."
+      }
+    },
+    "menu": {
+      "title": "Bewerken",
+      "sections": {
+        "features": "Kenmerken",
+        "models": "Modellen"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Bewerk video",
+        "description": "Geavanceerde videobewerking"
+      },
+      "inpaint": {
+        "title": "Inschilderen",
+        "description": "Selecteer een gebied, beschrijf de verandering"
+      },
+      "relight": {
+        "title": "Opnieuw aansteken",
+        "description": "Pas de verlichtingspositie, kleur en helderheid aan"
+      },
+      "aiStylist": {
+        "title": "AI-stylist",
+        "description": "Vind jouw perfecte look"
+      },
+      "upscale": {
+        "title": "Luxe",
+        "description": "Verbeter de resolutie en kwaliteit"
+      },
+      "skinEnhancer": {
+        "title": "Huidversterker",
+        "description": "Natuurlijke, realistische huidtexturen"
+      },
+      "angles": {
+        "title": "Hoeken",
+        "description": "Genereer vanuit verschillende hoeken"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Maximale details en nauwkeurigheid"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Snelle, lichtgewicht bewerkingen"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Naadloze productintegratie"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Upscaler met hoge resolutie"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Bestuur beweging met videoreferenties"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Geavanceerde videobewerking"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Hoofdplan",
+      "completed": "{completed}/{total} voltooid",
+      "steps": {
+        "script": "Script- en storyboardontwerp",
+        "world": "Ontwerp van wereld-assets",
+        "video": "Videogeneratie",
+        "worldVideo": "Wereld-assets en videogeneratie",
+        "audio": "Stem- en audiodesign",
+        "final": "Eindmontage"
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "title": "استوری‌بورد",
+  "rename": "تغییر نام استوری‌بورد",
+  "delete": "حذف استوری‌بورد",
+  "share": "اشتراک‌گذاری استوری‌بورد",
+  "export": "خروجی استوری‌بورد",
+  "exportImages": "خروجی فریم‌ها",
+  "import": "وارد کردن استوری‌بورد",
+  "untitled": "صحنه بدون عنوان",
+  "back": "بازگشت به میز کارگردان",
+  "saveSnapshot": "ذخیره اسنپ‌شات صحنه",
+  "loadSnapshot": "بارگذاری اسنپ‌شات صحنه",
+  "saved": "صحنه ذخیره شد ✅",
+  "messages": {
+    "canvasRenamed": "استوری‌بورد با موفقیت تغییر نام یافت",
+    "canvasDeleted": "استوری‌بورد با موفقیت حذف شد",
+    "canvasExported": "استوری‌بورد با موفقیت خروجی گرفته شد",
+    "canvasImported": "استوری‌بورد با موفقیت وارد شد",
+    "failedToRename": "تغییر نام استوری‌بورد ناموفق بود",
+    "failedToDelete": "حذف استوری‌بورد ناموفق بود",
+    "failedToCreateFile": "ایجاد فایل صحنه ناموفق بود",
+    "noImagesSelected": "هیچ فریمی انتخاب نشده است",
+    "exportingImages": "در حال خروجی گرفتن فریم‌ها...",
+    "failedToExportImages": "خروجی گرفتن فریم‌ها ناموفق بود"
+  },
+  "deleteDialog": {
+    "title": "حذف استوری‌بورد",
+    "description": "آیا مطمئن هستید که می‌خواهید این استوری‌بورد را حذف کنید؟ این صحنه برای همیشه از دست می‌رود.",
+    "cancel": "لغو",
+    "delete": "حذف"
+  },
+  "tool": {
+    "hand": "جابجایی دوربین",
+    "selection": "انتخاب صحنه",
+    "rectangle": "کادر فریم",
+    "ellipse": "نورافکن",
+    "text": "کارت عنوان",
+    "image": "دارایی بصری",
+    "shape": "شکل شیء",
+    "freedraw": "طراحی آزاد",
+    "arrow": "پیکان اکشن",
+    "line": "خط حرکت",
+    "zoomFit": "نمایش همه فریم‌ها"
+  },
+  "popbar": {
+    "addToChat": "با Nolan گفتگو کنید"
+  },
+  "loading": {
+    "preparingCanvas": "در حال آماده‌سازی بوم…",
+    "loadingSharedCanvas": "در حال بارگذاری بوم اشتراکی…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "عنوان صحنه",
+    "published": "منتشر شد",
+    "checking": "در حال بررسی...",
+    "publish": "انتشار",
+    "copied": "کپی شد!",
+    "share": "اشتراک‌گذاری",
+    "sharedCanvas": "بوم اشتراکی",
+    "shareCopiedToast": "لینک اشتراک‌گذاری در کلیپ‌بورد کپی شد!",
+    "shareCopyFailedToast": "کپی کردن لینک اشتراک‌گذاری ناموفق بود"
+  },
+  "preview": {
+    "mute": "بی‌صدا",
+    "unmute": "پخش صدا",
+    "volume": "صدا: {{percent}}%",
+    "export": "خروجی",
+    "exporting": "در حال خروجی...",
+    "exportVideo": "خروجی ویدئو",
+    "playing": "در حال پخش",
+    "placeholder": {
+      "title": "پنجره پیش‌نمایش",
+      "hint": "برای دیدن پیش‌نمایش، دارایی‌ها را به تایم‌لاین اضافه کنید"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "ترک‌ها",
+    "trackLabels": {
+      "script": "اسکریپت",
+      "keyframe": "کی‌فریم",
+      "video": "ویدئو",
+      "audio": "صدا",
+      "world": "جهان"
+    },
+    "indexedTitles": {
+      "script": "اسکریپت {{index}}",
+      "keyframe": "کی‌فریم {{index}}",
+      "video": "ویدئو {{index}}",
+      "audio": "صدا {{index}}",
+      "world": "جهان {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "کوچک‌نمایی",
+      "zoomIn": "بزرگ‌نمایی",
+      "rearrangeAllLanes": "بازچینش همه لاین‌ها (اسنپ مغناطیسی — فاصله زمانی ۰)",
+      "play": "پخش",
+      "pause": "مکث"
+    },
+    "actions": {
+      "clickToDrop": "برای رها کردن کلیک کنید",
+      "clickToSelect": "برای انتخاب کلیک کنید"
+    },
+    "assetTypes": {
+      "script": "اسکریپت",
+      "keyframe": "Keyframe",
+      "video": "ویدئو",
+      "audio": "صدا",
+      "asset": "دارایی",
+      "world": "جهان"
+    },
+    "fallbackTitles": {
+      "script": "اسکریپت",
+      "keyframe": "کی‌فریم",
+      "video": "ویدئو",
+      "audio": "صدا",
+      "asset": "دارایی",
+      "untitled": "بدون عنوان",
+      "world": "جهان"
+    },
+    "alts": {
+      "keyframe": "کی‌فریم",
+      "videoThumbnail": "تصویر بندانگشتی ویدئو"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "ذخیره ناموفق بود",
+      "saving": "در حال ذخیره...",
+      "savedAt": "ذخیره شد {{time}}"
+    }
+  },
+  "publish": {
+    "title": "انتشار در جامعه",
+    "enterTitleError": "لطفاً یک عنوان وارد کنید",
+    "success": "بوم با موفقیت در جامعه منتشر شد!",
+    "failed": "انتشار بوم ناموفق بود",
+    "warning": "این کار همه گفتگوها و نتایج خلاقانه این بوم را در جامعه منتشر می‌کند.",
+    "oncePublished": "پس از انتشار، هرکسی می‌تواند کار شما را ببیند و کشف کند.",
+    "canvasTitleLabel": "عنوان بوم",
+    "canvasTitlePlaceholder": "عنوان بوم را وارد کنید",
+    "cancel": "لغو",
+    "publish": "انتشار",
+    "publishing": "در حال انتشار..."
+  }
+}

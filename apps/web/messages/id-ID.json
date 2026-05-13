@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Suka",
+      "liked": "Disukai",
+      "share": "Bagikan",
+      "download": "Unduh",
+      "downloading": "Mengunduh...",
+      "copying": "Menyalin...",
+      "recreate": "Buat ulang"
+    },
+    "aria": {
+      "closeVideo": "Tutup video",
+      "goBack": "Kembali",
+      "likeVideo": "Sukai video",
+      "unlikeVideo": "Batalkan suka",
+      "shareVideo": "Bagikan video",
+      "downloadVideo": "Unduh video",
+      "copyingLink": "Menyalin tautan...",
+      "downloading": "Mengunduh..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Tautan disalin",
+      "videoLinkCopiedMessage": "Tautan video disalin ke papan klip",
+      "copyFailedTitle": "Gagal menyalin",
+      "copyFailedMessage": "Tidak dapat menyalin tautan",
+      "shareFailedTitle": "Gagal membagikan",
+      "shareFailedMessage": "Tidak dapat menyalin tautan video",
+      "loginFirst": "Silakan login terlebih dahulu",
+      "cannotFollowYourself": "Tidak bisa mengikuti diri sendiri",
+      "followed": "Berhasil mengikuti",
+      "unfollowed": "Berhasil berhenti mengikuti",
+      "operationFailed": "Operasi gagal"
+    },
+    "generation": {
+      "generationModel": "Model generasi",
+      "withEffect": "dengan {effect}",
+      "effectBadge": "EFEK",
+      "prompt": "Cepat",
+      "referenceImage": "Gambar referensi",
+      "referenceImageAlt": "Gambar referensi untuk pembuatan video",
+      "negativePrompt": "Prompt negatif",
+      "parameters": "Parameter",
+      "guidance": "Panduan",
+      "steps": "Langkah",
+      "seed": "Benih",
+      "ratio": "Rasio"
+    },
+    "author": {
+      "uploaded": "Diunggah {time}",
+      "profile": "Profil",
+      "follow": "Ikuti",
+      "unfollow": "Berhenti mengikuti",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Komentar",
+      "placeholder": "Bagikan pendapatmu tentang video ini...",
+      "send": "Kirim",
+      "sending": "Mengirim...",
+      "empty": "Jadilah yang pertama berbagi pendapat tentang karya ini!"
+    },
+    "time": {
+      "now": "Baru saja",
+      "minutesAgo": "{minutes} menit yang lalu",
+      "hoursAgo": "{hours} jam yang lalu",
+      "daysAgo": "{days} hari yang lalu"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Kredit"
+    },
+    "earnCreditsCapsule": {
+      "label": "Dapatkan kredit",
+      "aria": {
+        "openRewardCenter": "Dapatkan kredit"
+      },
+      "badge": {
+        "claimed": "Diklaim"
+      },
+      "title": {
+        "base": "Dapatkan kredit",
+        "canClaim": "Dapatkan kredit (+{amount})",
+        "claimedToday": "Dapatkan kredit (sudah diklaim hari ini)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Pusat hadiah",
+      "subtitle": {
+        "main": "Ajak teman & dapatkan + Hadiah harian",
+        "joined": "Lihat siapa yang bergabung"
+      },
+      "common": {
+        "loading": "Memuat..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} kredit"
+      },
+      "actions": {
+        "back": "Kembali",
+        "close": "Tutup",
+        "copy": "Salin",
+        "share": "Bagikan",
+        "inviteFriends": "Undang teman",
+        "claim": "Klaim",
+        "claiming": "Mengklaim...",
+        "claimed": "Diklaim"
+      },
+      "aria": {
+        "copyInviteCode": "Salin kode undangan",
+        "shareInviteLink": "Bagikan tautan undangan"
+      },
+      "labels": {
+        "inviteLink": "Tautan undangan",
+        "inviteCode": "Kode undangan",
+        "invited": "Diundang",
+        "rewarded": "Dihadiahi",
+        "pending": "Tertunda",
+        "recentInvites": "Undangan terbaru",
+        "recentRewards": "Hadiah terbaru",
+        "referEarn": "Ajak & dapatkan",
+        "dailyRewards": "Hadiah harian",
+        "dailyLogin": "Login harian",
+        "rewardedProgress": "Hadiah: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Belum ada undangan.",
+        "noRewards": "Belum ada hadiah."
+      },
+      "status": {
+        "rewarded": "Dihadiahi",
+        "pending": "Tertunda",
+        "verified": "Terverifikasi"
+      },
+      "share": {
+        "title": "Undangan ReelMind",
+        "text": "Bergabunglah dengan saya di ReelMind dan dapatkan kredit gratis."
+      },
+      "toast": {
+        "copiedTitle": "Tersalin",
+        "copiedDescription": "{label} disalin ke papan klip.",
+        "copyFailedTitle": "Gagal menyalin",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Silakan salin secara manual.",
+        "claimFailedTitle": "Gagal klaim",
+        "claimedTitle": "Diklaim",
+        "claimedDescription": "Anda menerima {amount} kredit."
+      },
+      "referEarn": {
+        "tipLabel": "Aturan ajak & dapatkan",
+        "tipTitle": "Cara kerjanya",
+        "tipBody1": "Bagikan tautan undangan Anda. Saat pengguna baru mendaftar dengan kode Anda dan menyelesaikan tindakan yang memenuhi syarat, kredit akan diberikan setelah verifikasi sistem.",
+        "tipBody2": "Hadiah bertingkat: 1-5 = 50, 6-15 = 100, 16-20 = 200 kredit.",
+        "cardTitle": "Dapatkan kredit dengan mengundang teman",
+        "upTo": "Hingga {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Aturan login harian",
+        "tipTitle": "Hadiah harian",
+        "tipBodyPrefix": "Hadiah dimulai pada",
+        "tipBodyDay2": "hari ke-2",
+        "tipBodySuffix": "dari streak Anda dan direset setiap hari UTC.",
+        "status": {
+          "loading": "Memuat status...",
+          "claimed": "Diklaim",
+          "readyToClaim": "Siap diklaim",
+          "locked": "Terkunci"
+        },
+        "errors": {
+          "alreadyClaimed": "Sudah diklaim hari ini.",
+          "notEligible": "Belum memenuhi syarat untuk klaim saat ini.",
+          "riskBlocked": "Klaim diblokir karena kontrol risiko.",
+          "generic": "Terjadi kesalahan. Silakan coba lagi nanti."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Jelajahi",
+      "video": "Video",
+      "image": "Gambar",
+      "music": "Musik",
+      "edit": "Sunting",
+      "experiment": "Eksperimen"
+    },
+    "special": {
+      "nolan": "Nolan"
+    },
+    "bottom": {
+      "affiliate": "Afiliasi",
+      "contactUs": "Hubungi kami",
+      "blog": "blog",
+      "apiPlatform": "Platform API"
+    },
+    "badges": {
+      "help": "Bantuan",
+      "new": "Baru",
+      "free": "Gratis"
+    },
+    "sidebar": {
+      "more": "Lainnya",
+      "closeMenu": "Tutup menu",
+      "moreTools": "Alat lainnya",
+      "followOnX": "Ikuti kami di X (Twitter)",
+      "followOnTikTok": "Ikuti kami di TikTok",
+      "subscribeOnYouTube": "Berlangganan saluran YouTube kami",
+      "termsOfService": "Ketentuan layanan",
+      "privacyPolicy": "Kebijakan privasi"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "FITUR",
+        "models": "MODEL"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Buat Video",
+          "description": "Hasilkan video AI"
+        },
+        "cinemaStudioVideo": {
+          "title": "Video Studio Bioskop",
+          "description": "Video pro dengan gerakan kamera"
+        },
+        "mixedMedia": {
+          "title": "Media Campuran",
+          "description": "Padukan teks, gambar, dan video"
+        },
+        "editVideo": {
+          "title": "Sunting Video",
+          "description": "Edit adegan, bidikan, elemen"
+        },
+        "clickToAd": {
+          "title": "Klik untuk Iklan",
+          "description": "Ubah klip menjadi iklan"
+        },
+        "sora2Trends": {
+          "title": "Sora 2 Tren",
+          "description": "Ide video yang didorong oleh tren"
+        },
+        "lipsyncStudio": {
+          "title": "Studio Lipsync",
+          "description": "Sinkronkan audio ke wajah"
+        },
+        "drawToVideo": {
+          "title": "Menggambar ke Video",
+          "description": "Sketsa berubah menjadi bioskop"
+        },
+        "sketchToVideo": {
+          "title": "Sketsa ke Video",
+          "description": "Dari sketsa hingga video dengan Sora 2"
+        },
+        "ugcFactory": {
+          "title": "Pabrik UGC",
+          "description": "Konten yang siap untuk pembuat konten dengan cepat"
+        },
+        "videoUpscale": {
+          "title": "Video Kelas Atas",
+          "description": "Tingkatkan resolusi dengan jelas"
+        },
+        "higgsfieldAnimate": {
+          "title": "Animasi Higgsfield",
+          "description": "Animasikan gambar diam dengan gaya"
+        },
+        "recastStudio": {
+          "title": "Perombakan Studio",
+          "description": "Merombak aktor dan gaya"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Kontrol kamera sinematik"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Kontrol gerakan dinamis"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Teks-ke-video berkualitas tinggi"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Pengeditan video yang presisi"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Generasi video generasi berikutnya"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Sinematografi yang realistis"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Gerakan dan ritme bergaya"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Video sinematik cepat"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Detail dan nada yang bersih"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Pertunjukan yang digerakkan oleh avatar"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Fitur",
+        "models": "Model"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Buat Gambar",
+          "description": "Hasilkan gambar AI"
+        },
+        "cinemaStudioImage": {
+          "title": "Gambar Studio Bioskop",
+          "description": "Simulasi kamera dan lensa nyata"
+        },
+        "createStoryboard": {
+          "title": "Buat Papan Cerita",
+          "description": "Rancang adegan cerita Anda"
+        },
+        "soulIdCharacter": {
+          "title": "Karakter ID Jiwa",
+          "description": "Ciptakan karakter yang unik"
+        },
+        "relight": {
+          "title": "Menyalakan kembali",
+          "description": "Sesuaikan posisi pencahayaan, warna, dan kecerahan"
+        },
+        "inpaint": {
+          "title": "mengecat",
+          "description": "Pilih area, jelaskan perubahannya"
+        },
+        "imageUpscale": {
+          "title": "Gambar Kelas Atas",
+          "description": "Meningkatkan kualitas gambar"
+        },
+        "faceSwap": {
+          "title": "Tukar Wajah",
+          "description": "Buat pertukaran wajah yang realistis"
+        },
+        "characterSwap": {
+          "title": "Pertukaran Karakter",
+          "description": "Buat pertukaran karakter yang realistis"
+        },
+        "drawToEdit": {
+          "title": "Gambar untuk Mengedit",
+          "description": "Dari sketsa hingga gambar"
+        },
+        "instadump": {
+          "title": "Instagram",
+          "description": "Ubah selfie menjadi perpustakaan konten lengkap"
+        },
+        "photodumpStudio": {
+          "title": "Studio Foto Dump",
+          "description": "Hasilkan estetika Anda"
+        },
+        "fashionFactory": {
+          "title": "Pabrik Mode",
+          "description": "Buat set busana"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Visual mode yang sangat realistis"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Papan cerita, edit, buat"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Model gambar 4K terbaik yang pernah ada"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "Model gambar 4K generasi berikutnya"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Render presisi warna sesungguhnya"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Detail yang dioptimalkan kecepatan"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Potret instan yang nyata"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Gambar fotorealistik dan akurat"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Gambar realistis"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Model pengeditan gambar tingkat lanjut"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Peningkatan resolusi tinggi"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Semua",
+        "recommended": "Direkomendasikan",
+        "saved": "Tersimpan"
+      },
+      "labels": {
+        "camera": "KAMERA",
+        "lens": "LENSA",
+        "focalLength": "PANJANG FOKAL",
+        "aperture": "APERTUR"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "Simpan setelan",
+        "removeSetup": "Hapus setelan",
+        "close": "Tutup"
+      },
+      "empty": "Belum ada setelan"
+    },
+    "page": {
+      "title": "Eksperimen",
+      "subtitle": "Coba alur kerja baru terlebih dahulu",
+      "back": "Kembali ke Eksperimen"
+    },
+    "menu": {
+      "title": "Eksperimen",
+      "open": "Buka"
+    },
+    "tabs": {
+      "character": "Karakter",
+      "inpaint": "mengecat",
+      "cinemaStudio": "Studio Bioskop",
+      "motionControl": "Kontrol Gerakan",
+      "assist": "Membantu"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "mengecat",
+        "description": "Lukislah suatu area dan jelaskan perubahannya"
+      },
+      "cinemaStudio": {
+        "title": "Studio Bioskop",
+        "description": "Alur kerja sinematik profesional"
+      },
+      "motionControl": {
+        "title": "Kontrol Gerakan",
+        "description": "Salin gerakan dari video referensi"
+      },
+      "assist": {
+        "title": "Membantu",
+        "description": "Alat asisten yang mendorong dan kreatif"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Karakter",
+        "subtitle": "Alat konsistensi karakter (placeholder)"
+      },
+      "inpaint": {
+        "title": "mengecat",
+        "subtitle": "Unggah media, pilih area, dan jelaskan hasil editnya"
+      },
+      "cinemaStudio": {
+        "title": "Studio Bioskop",
+        "subtitle": "Hasilkan jepretan sinematik dengan perintah yang peka terhadap kamera"
+      },
+      "motionControl": {
+        "title": "Kontrol Gerakan",
+        "subtitle": "Ciptakan kembali gerakan dengan gambar Anda"
+      },
+      "assist": {
+        "title": "Membantu",
+        "subtitle": "Obrolan, tip, dan utilitas cepat"
+      }
+    },
+    "actions": {
+      "upload": "Unggah media",
+      "generate": "Hasilkan",
+      "history": "Sejarah",
+      "howItWorks": "Bagaimana cara kerjanya",
+      "sendMessage": "Kirim pesan...",
+      "tryExample": "Coba sebuah contoh",
+      "send": "Kirim"
+    },
+    "placeholders": {
+      "exploreFeatures": "JELAJAHI FITUR",
+      "settings": "Pengaturan",
+      "camera": "Kamera",
+      "cameraHint": "Pilih perilaku kamera (placeholder)",
+      "lens": "Lensa",
+      "lensHint": "Pilih opsi lensa (placeholder)",
+      "image": "Gambar",
+      "video": "Video",
+      "scenePrompt": "Gambarkan pemandangan yang kamu bayangkan..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Tambahkan gerakan untuk disalin",
+          "description": "Durasi video: 3–30 detik"
+        },
+        "addCharacter": {
+          "title": "Tambahkan karakter Anda",
+          "description": "Gambar dengan wajah dan tubuh terlihat"
+        }
+      },
+      "quality": {
+        "title": "Kualitas",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Pengaturan lanjutan"
+      },
+      "hero": {
+        "title": {
+          "prefix": "BUAT ULANG APAPUN",
+          "highlight": "GERAKAN",
+          "suffix": "DENGAN GAMBAR ANDA"
+        },
+        "subtitle": "Salin gerakan dari video mana pun dan tempatkan karakter Anda ke dalam gerakan yang sama"
+      },
+      "library": {
+        "title": "Mulailah dengan menyalin gerakan dari perpustakaan"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Bantuan",
+        "subtitle": "Sebuah tim PhD di saku Anda, dibuat untuk para pencipta."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Apa yang Dapat Anda Lakukan?",
+          "description": "Jelajahi ReelMind fitur AI"
+        },
+        "howToCreate": {
+          "title": "Bagaimana Saya Bisa Membuat Konten yang Menakjubkan?",
+          "description": "Kiat untuk menulis perintah AI yang lebih baik"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Hasilkan Prompt Gambar Jiwa",
+          "description": "Tulis permintaan untuk gambar dengan estetika tinggi"
+        },
+        "generateVideoPrompt": {
+          "title": "Hasilkan Perintah Video",
+          "description": "Tulis perintah untuk video sinematik"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Konsistensi karakter",
+          "description": "Jaga agar karakter Anda tetap koheren di seluruh bingkai (placeholder)"
+        },
+        "library": {
+          "title": "Perpustakaan karakter",
+          "description": "Pilih karakter yang disimpan atau mulai dari templat (placeholder)"
+        }
+      },
+      "placeholders": {
+        "preview": "Pratinjau (placeholder)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - Komunitas gratis pembuat video AI untuk membuat dan berbagi video",
+      "description": "Jelajahi video kreatif yang sedang tren dari kreator konten di seluruh dunia. Temukan inspirasi, hiburan, dan remix favorit Anda."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 kini sudah tersedia!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Semua",
+        "latest": "Terbaru",
+        "hot": "Populer"
+      },
+      "tooltip": {
+        "filterByModel": "Filter berdasarkan model {model}"
+      },
+      "aria": {
+        "previous": "Kategori sebelumnya",
+        "next": "Kategori berikutnya"
+      },
+      "error": {
+        "loadFailed": "Gagal memuat kategori"
+      },
+      "actions": {
+        "retry": "Coba lagi"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "Buat video AI"
+      },
+      "nolan": {
+        "title": "Nolan",
+        "description": "Direktur agen AI No.1 di dunia"
+      },
+      "badges": {
+        "models": "Model",
+        "free": "GRATIS"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Jelajahi - ReelMind",
+      "description": "Jelajahi video kreatif yang sedang tren dari kreator konten di seluruh dunia di ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "Model & efek AI - ReelMind",
+      "description": "Telusuri dan gunakan model serta efek video AI untuk membuat video luar biasa yang dihasilkan AI di platform ReelMind. Jelajahi koleksi model AI mutakhir kami."
+    },
+    "page": {
+      "title": "Model & efek AI",
+      "description": "Telusuri koleksi model dan efek AI mutakhir kami untuk pembuatan video",
+      "footerIntro": "Temukan koleksi {count} model AI kami untuk pembuatan video."
+    },
+    "sections": {
+      "models": "Model",
+      "effects": "Efek"
+    },
+    "actions": {
+      "viewAll": "Lihat semua",
+      "viewAllModels": "Lihat semua model",
+      "backToModels": "Kembali ke Model"
+    },
+    "types": {
+      "allModels": "Semua model",
+      "textToVideo": "Teks ke video",
+      "imageToVideo": "Gambar ke video",
+      "videoToVideo": "Video ke video"
+    },
+    "all": {
+      "titleAll": "Semua model video",
+      "titleByType": "Model {type}",
+      "description": "Telusuri koleksi model AI kami untuk pembuatan video",
+      "countAll": "({count} model)",
+      "countByType": "({count} model {type})",
+      "loadingMore": "Memuat lebih banyak model...",
+      "loadMore": "Muat lebih banyak model",
+      "end": "Anda sudah mencapai akhir! Semua model telah dimuat.",
+      "empty": "Tidak ada model yang sesuai dengan kriteria Anda."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Pos pemeriksaan",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "Fitur yang didukung",
+      "metaTitle": "{name} - Model AI | ReelMind",
+      "metaDescriptionFallback": "Jelajahi model {name} untuk pembuatan video di ReelMind.",
+      "metaErrorTitle": "Detail model | ReelMind",
+      "metaErrorDescription": "Jelajahi model AI untuk pembuatan video di ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "Efek AI - ReelMind",
+      "description": "Telusuri dan gunakan efek video AI untuk meningkatkan video yang dihasilkan AI di platform ReelMind."
+    },
+    "page": {
+      "title": "Efek AI",
+      "description": "Telusuri koleksi efek AI kami untuk meningkatkan video Anda"
+    },
+    "all": {
+      "title": "Semua efek AI",
+      "description": "Telusuri koleksi lengkap efek AI kami untuk meningkatkan video Anda"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Kembali ke Efek",
+        "goBack": "Kembali",
+        "applyThisEffect": "Terapkan efek ini"
+      },
+      "badge": "Efek",
+      "addedOn": "Ditambahkan pada {date}",
+      "errors": {
+        "notFound": "Efek tidak ditemukan",
+        "loadFailed": "Gagal memuat detail efek"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "Buat video AI - ReelMind",
+      "description": "Buat video luar biasa yang dihasilkan AI menggunakan model dan alat AI kami yang kuat di platform ReelMind."
+    },
+    "loading": "Memuat...",
+    "loadingMobile": "Memuat tampilan mobile...",
+    "loadingControlPanel": "Memuat panel kontrol...",
+    "controlPanel": {
+      "modelAndSettings": "Model & pengaturan",
+      "history": "Riwayat",
+      "model": "Model",
+      "selectModel": "Pilih model"
+    },
+    "mobile": {
+      "backToCreate": "Kembali ke Buat"
+    },
+    "modelSelector": {
+      "loadingModels": "Memuat model...",
+      "moreModels": "{count} model lainnya",
+      "exploreMoreModels": "Jelajahi {count} model lainnya"
+    },
+    "promptInput": {
+      "title": "Cepat",
+      "placeholder": "Jelaskan apa yang ingin Anda buat...",
+      "enhance": "Tingkatkan",
+      "undo": "Urungkan",
+      "restoreOriginalPromptTitle": "Pulihkan prompt asli",
+      "toastEnhanced": "Prompt ditingkatkan",
+      "toastRestored": "Prompt asli dipulihkan",
+      "enhanceFailed": "Gagal meningkatkan prompt",
+      "sensitiveError": "Kata kunci sensitif terdeteksi: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "gambar",
+      "mentionVideoTokenPrefix": "video",
+      "mentionAudioTokenPrefix": "audio"
+    },
+    "referenceUploader": {
+      "addOptional": "Tambahkan referensi opsional",
+      "referenceImage": "Gambar referensi",
+      "referenceImages": "Gambar referensi ({current}/{max})",
+      "referenceVideo": "Video referensi",
+      "dropImage": "Letakkan gambar di sini atau klik untuk mengunggah",
+      "dropImageMax": "Letakkan hingga {max} gambar di sini atau klik untuk mengunggah",
+      "dropVideo": "Letakkan video di sini atau klik untuk mengunggah",
+      "pasteHint": "Tempel",
+      "videoUploaded": "Video diunggah",
+      "uploading": "Mengunggah...",
+      "addMore": "Tambah lagi",
+      "removeReference": "Hapus",
+      "referenceImageAlt": "Gambar referensi {index}",
+      "supportedFormats": "Didukung: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, rasio {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "Mengunggah {type}...",
+      "processingFile": "Memproses file...",
+      "uploadReference": "Unggah referensi {type}",
+      "image": "gambar",
+      "video": "video",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "Rasio aspek",
+      "duration": "Durasi",
+      "seconds": "{seconds} dtk",
+      "resolution": "Resolusi",
+      "audio": "Audio",
+      "on": "Aktif",
+      "off": "Nonaktif",
+      "advanced": "Lanjutan",
+      "advancedShort": "Lanjutan",
+      "creativityLevel": "Kreativitas",
+      "moreAccurate": "Lebih akurat",
+      "moreCreative": "Lebih kreatif",
+      "samplingSteps": "Langkah sampling",
+      "faster": "Lebih cepat ({steps} langkah)",
+      "higherQuality": "Kualitas lebih tinggi ({steps} langkah)",
+      "randomSeed": "Seed acak",
+      "seedPlaceholder": "Masukkan seed",
+      "generateRandomSeed": "Buat seed acak",
+      "seedHint": "Gunakan seed tetap untuk hasil yang dapat direproduksi.",
+      "movementAmplitude": "Gerakan",
+      "movementAmplitudeHint": "Mengontrol intensitas gerakan.",
+      "backgroundMusic": "Musik latar",
+      "backgroundMusicHint": "Menambahkan musik latar saat didukung.",
+      "enabled": "Diaktifkan",
+      "disabled": "Dinonaktifkan",
+      "negativePrompt": "Prompt negatif",
+      "negativePromptPlaceholder": "Apa yang harus dihindari..."
+    },
+    "startToEndUploader": {
+      "title": "Frame awal-akhir",
+      "startFrame": "Frame awal",
+      "endFrame": "Frame akhir",
+      "dropStartImage": "Letakkan gambar awal atau klik untuk mengunggah",
+      "dropEndImage": "Letakkan gambar akhir atau klik untuk mengunggah",
+      "startFrameImageAlt": "Frame awal",
+      "endFrameImageAlt": "Frame akhir",
+      "uploading": "Mengunggah...",
+      "instructions": "Unggah gambar awal dan akhir untuk memandu transisi.",
+      "supportedFormats": "Didukung: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, rasio {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Gambar akan dikompresi otomatis jika diperlukan."
+    },
+    "modelTabs": {
+      "imageToVideo": "Gambar ke video",
+      "textToVideo": "Teks ke video",
+      "firstLastFrame": "Frame pertama-terakhir",
+      "edit": "Sunting",
+      "effect": "Efek"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Video Referensi",
+      "required": "Diperlukan",
+      "removeVideo": "Hapus video",
+      "uploading": "Mengunggah...",
+      "dropVideo": "Letakkan video di sini atau klik untuk mengunggah",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Elemen",
+      "optional": "Opsional ({current}/{max})",
+      "addElements": "Tambahkan",
+      "elementAlt": "Elemen {index}",
+      "removeElement": "Hapus elemen {index}",
+      "dropElements": "Klik untuk menambahkan gambar elemen",
+      "elementsHint": "Gambar opsional untuk mempertahankan karakter/gaya.",
+      "errors": {
+        "invalidVideoTitle": "Video tidak valid",
+        "invalidVideoDescription": "Silakan pilih file video.",
+        "videoTooLargeTitle": "Video terlalu besar",
+        "videoTooLargeDescription": "Maks {maxMb}MB. Silakan unggah klip yang lebih pendek/lebih kecil.",
+        "uploadFailedTitle": "Gagal mengunggah",
+        "elementsLimitTitle": "Batas elemen tercapai",
+        "elementsLimitDescription": "Anda dapat menambahkan hingga {max} gambar.",
+        "imageTooSmall": "Gambar minimal harus {minWidth}×{minHeight} (saat ini: {width}×{height}).",
+        "imageBadRatio": "Rasio aspek gambar harus antara {minAspectRatio} dan {maxAspectRatio} (saat ini: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "Beberapa file dilewati",
+        "someSkippedDescription": "{count} file dilewati karena batasan.",
+        "skippedTitle": "Dilewati",
+        "skippedNonImage": "Hanya gambar yang diperbolehkan untuk elemen.",
+        "imageCompressedTitle": "Gambar dikompresi",
+        "imageCompressedDescription": "Dikompresi dari {original} hingga {final}.",
+        "skippedInvalidImage": "Gambar tidak valid."
+      }
+    },
+    "howItWorks": {
+      "title": "Bagaimana cara kerjanya",
+      "hero": {
+        "title": "BUAT VIDEO DALAM SATU KLIK",
+        "subtitle": "Gunakan preset untuk kontrol kamera, pembingkaian, dan VFX — atau gunakan sepenuhnya manual dengan petunjuknya."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "TAMBAHKAN GAMBAR",
+          "2": "PILIH PRESET",
+          "3": "DAPATKAN VIDEO"
+        },
+        "t2v": {
+          "1": "TULIS PROMPT",
+          "2": "PILIH MODELnya",
+          "3": "DAPATKAN VIDEO"
+        },
+        "flf": {
+          "1": "TAMBAHKAN BINGKAI",
+          "2": "JELASKAN TRANSISI",
+          "3": "DAPATKAN VIDEO"
+        },
+        "edit": {
+          "1": "TAMBAHKAN VIDEO",
+          "2": "TAMBAHKAN ELEMEN",
+          "3": "DAPATKAN VIDEO"
+        }
+      },
+      "modes": {
+        "edit": "Edit (Video-ke-Video)",
+        "flf": "Bingkai Pertama-Terakhir",
+        "i2v": "Gambar-ke-Video",
+        "t2v": "Teks-ke-Video"
+      },
+      "steps": {
+        "edit": {
+          "1": "Unggah video referensi singkat.",
+          "2": "Secara opsional, tambahkan hingga 4 gambar elemen untuk menjaga karakter/gaya tetap konsisten.",
+          "3": "Jelaskan apa yang harus diubah (dan apa yang harus dipertahankan) di prompt, lalu buat."
+        },
+        "flf": {
+          "1": "Unggah bingkai awal dan bingkai akhir.",
+          "2": "Jelaskan transisi yang Anda inginkan.",
+          "3": "Hasilkan untuk menciptakan transformasi yang mulus."
+        },
+        "i2v": {
+          "1": "Unggah gambar referensi.",
+          "2": "Jelaskan gerakan, kamera, dan gaya.",
+          "3": "Pilih rasio/durasi dan hasilkan."
+        },
+        "t2v": {
+          "1": "Jelaskan pemandangan Anda (subjek, kamera, pencahayaan, gaya).",
+          "2": "Pilih rasio/durasi dan secara opsional tambahkan perintah negatif.",
+          "3": "Hasilkan dan ulangi dengan perubahan kecil."
+        }
+      },
+      "tip": "Tip: Jadilah spesifik. Beritahu model apa yang harus tetap sama (identitas, logo, komposisi).",
+      "templates": {
+        "title": "Preset",
+        "subtitle": "Pilih preset klasik dan hasilkan lebih cepat.",
+        "use": "Gunakan",
+        "clear": "Jelas",
+        "prev": "Prasetel sebelumnya",
+        "next": "Prasetel berikutnya",
+        "edit": {
+          "relight": {
+            "title": "Menyalakan kembali & suasana",
+            "description": "Ubah waktu dan pencahayaan sinematik."
+          },
+          "grade": {
+            "title": "Kelas sinematik",
+            "description": "Kelas oranye teal + butiran film, pertahankan gerakan & identitas."
+          },
+          "weather": {
+            "title": "Perubahan cuaca",
+            "description": "Tambahkan hujan/kabut dengan tetap menjaga identitas."
+          },
+          "anime": {
+            "title": "Gaya ulang anime",
+            "description": "Tampilan anime dengan tetap menjaga identitas dan gerak."
+          },
+          "background": {
+            "title": "Penggantian latar belakang",
+            "description": "Tukar latar belakang sambil mempertahankan subjek."
+          },
+          "lux": {
+            "title": "Polesan premium",
+            "description": "Nuansa komersial yang lebih bersih, halus, dan lebih premium."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "Siang → Malam",
+            "description": "Pencahayaan halus/transisi waktu dengan pembingkaian yang konsisten."
+          },
+          "sketchToRender": {
+            "title": "Sketsa → Render",
+            "description": "Ungkapkan detail secara bertahap mulai dari sketsa hingga render akhir."
+          },
+          "beforeAfter": {
+            "title": "Sebelum/Sesudah terungkap",
+            "description": "Transformasi penuh cita rasa dengan gerakan halus."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "Kehidupan potret",
+            "description": "Berkedip + gerakan halus dengan dorongan perlahan."
+          },
+          "pan": {
+            "title": "Panci paralaks",
+            "description": "Panci sinematik dengan kedalaman dan gerakan kabur."
+          },
+          "product": {
+            "title": "Putaran produk",
+            "description": "Tampilan produk studio dengan highlight glossy."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "iklan premium 8s",
+            "description": "Gambar komersial yang bersih dan canggih."
+          },
+          "establish": {
+            "title": "Membangun tembakan",
+            "description": "Intro sinematik yang luas untuk dunia/adegan."
+          },
+          "anime": {
+            "title": "Pembukaan anime",
+            "description": "Bidikan gaya pembukaan anime bergaya."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Gambar-ke-video memerlukan gambar referensi.",
+        "i2vDescription": "Silakan unggah gambar referensi, atau beralih ke model Teks-ke-video.",
+        "v2vTitle": "Video-ke-video memerlukan video referensi.",
+        "v2vDescription": "Silakan unggah video referensi, atau beralih ke model Teks-ke-video."
+      },
+      "costLabel": "Biaya:",
+      "balanceLabel": "Saldo:",
+      "freeUnlimited": "Gratis (Tidak terbatas)",
+      "credits": "Kredit",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast adalah model Luxury dan tidak termasuk dalam penggunaan gratis Unlimited. Diperlukan pembayaran tambahan.",
+        "veo31": "VEO 3.1 adalah model Luxury dan tidak termasuk dalam penggunaan gratis Unlimited. Diperlukan pembayaran tambahan.",
+        "veo3": "VEO3 adalah model Luxury dan tidak termasuk dalam penggunaan gratis Unlimited. Diperlukan pembayaran tambahan.",
+        "sora2Pro": "Sora-2 Pro adalah model Luxury dan tidak termasuk dalam penggunaan gratis Unlimited. Diperlukan pembayaran tambahan."
+      },
+      "gettingCredits": "Mengambil kredit...",
+      "getBonusCredits": "Dapatkan {amount} kredit",
+      "submitting": "Mengirim...",
+      "loadingModels": "Memuat model...",
+      "uploadingAsset": "Mengunggah aset...",
+      "uploadingImages": "Mengunggah gambar...",
+      "claimingCredits": "Mengklaim kredit...",
+      "getMoreCredits": "Dapatkan lebih banyak kredit",
+      "generateVideo": "Buat video"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Publikasi gagal",
+        "missingTitleDescription": "Silakan masukkan judul untuk video Anda",
+        "processingTitle": "Memproses",
+        "processingDescription": "Menyiapkan untuk memublikasikan video Anda...",
+        "successTitle": "Berhasil dipublikasikan",
+        "successDescription": "Video Anda telah dibagikan ke komunitas",
+        "failedTitle": "Publikasi gagal",
+        "failedDescription": "Silakan periksa koneksi jaringan Anda atau coba lagi nanti"
+      },
+      "successTitle": "Berhasil dipublikasikan!",
+      "successDescription": "Karya luar biasa Anda kini tayang di komunitas",
+      "publishingTitle": "Memublikasikan...",
+      "publishingDescriptionDesktop": "Kami sedang menyiapkan video Anda agar komunitas dapat menikmatinya...",
+      "publishingDescriptionMobile": "Menyiapkan video Anda...",
+      "progressComplete": "{progress}% selesai",
+      "title": "Bagikan ke komunitas",
+      "description": "Bagikan karya luar biasa Anda dengan dunia",
+      "benefits": {
+        "getLikes": "Dapatkan Like",
+        "buildCommunityLong": "Bangun komunitas",
+        "buildCommunityShort": "Komunitas",
+        "inspireLong": "Menginspirasi orang lain",
+        "inspireShort": "Inspirasi",
+        "earnLong": "Dapatkan +{amount} kredit",
+        "earnShort": "+{amount} kredit"
+      },
+      "videoTitle": "Judul video",
+      "videoTitlePlaceholder": "Beri judul yang menarik untuk karya Anda...",
+      "videoTitleHelperDesktop": "Judul yang menarik mengundang lebih banyak penonton",
+      "videoTitleHelperMobile": "Judul yang bagus menarik penonton",
+      "descriptionLabel": "Deskripsi",
+      "optional": "Opsional",
+      "descriptionPlaceholder": "Ceritakan kepada komunitas tentang karya Anda...",
+      "descriptionHelper": "Bagikan proses kreatif Anda",
+      "cancel": "Batal",
+      "publish": "Publikasikan"
+    },
+    "history": {
+      "title": "Sejarah",
+      "refresh": "Segarkan",
+      "view": {
+        "one": "1 per baris",
+        "three": "3 per baris",
+        "nine": "9 per baris"
+      },
+      "filterPlaceholder": "Menyaring",
+      "empty": "Tidak ada tugas {status} ditemukan",
+      "status": {
+        "all": "Semua",
+        "pending": "Tertunda",
+        "queued": "Dalam antrean",
+        "processing": "Memproses",
+        "completed": "Selesai",
+        "failed": "Gagal",
+        "canceled": "Dibatalkan"
+      }
+    },
+    "effectSelector": {
+      "loading": "Memuat efek...",
+      "defaultDescription": "Terapkan efek khusus pada video Anda",
+      "ctaTitle": "Pilih efek",
+      "ctaDescription": "Klik untuk memilih efek video",
+      "modalTitle": "Pilih efek",
+      "close": "Tutup pemilih efek"
+    },
+    "modelSelectorModal": {
+      "title": "Pilih model",
+      "description": "Pilih model untuk proyek Anda",
+      "close": "Tutup pemilih model",
+      "loadingMore": "Memuat lebih banyak model...",
+      "allLoaded": "Semua model telah dimuat",
+      "noModelsFound": "Tidak ada model ditemukan"
+    },
+    "modelSearch": {
+      "placeholder": "Cari model berdasarkan nama, jenis, atau fitur...",
+      "clear": "Hapus pencarian",
+      "searching": "Mencari...",
+      "foundModels": "Ditemukan {count} model",
+      "modelsAvailable": "{count} model tersedia"
+    },
+    "modelTypeFilter": {
+      "title": "Jenis model",
+      "clear": "Hapus"
+    },
+    "remixLoader": {
+      "successTitle": "Tugas remix dimuat",
+      "successDescription": "Parameter video dimuat dari tugas asli; Anda dapat langsung membuat atau memodifikasi parameter.",
+      "errorTitle": "Gagal memuat parameter",
+      "errorDescription": "Tidak dapat memuat parameter dari tugas asli; silakan atur parameter secara manual."
+    },
+    "modelCard": {
+      "select": "Pilih",
+      "credits": "Kredit",
+      "premium": "PREMIUM",
+      "luxury": "MEWAH"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "Dipilih ReelMind",
+      "hot": "Populer",
+      "new": "BARU",
+      "select": "Pilih"
+    },
+    "previewPanel": {
+      "generating": "Membuat...",
+      "download": "Unduh",
+      "downloading": "Mengunduh...",
+      "shareToCommunity": "Publikasikan",
+      "tips": "Tip: Publikasikan untuk mendapatkan kredit",
+      "quality": "Kualitas",
+      "qualityHd": "HD",
+      "qualityStandard": "Standar",
+      "ratio": "Rasio",
+      "fullscreen": {
+        "enter": "Layar penuh",
+        "exit": "Keluar layar penuh"
+      },
+      "empty": {
+        "title": "Belum ada pratinjau",
+        "description": "Buat video untuk melihat pratinjau di sini."
+      },
+      "queue": {
+        "loading": "Memuat info antrean...",
+        "headerProcessing": "Memproses",
+        "headerQueueStatus": "Status antrean",
+        "badgePosition": "Posisi: {position} dari {total}",
+        "badgeProcessing": "Memproses",
+        "tasksInQueue": "Tugas dalam antrean",
+        "estimatedWait": "Perkiraan tunggu",
+        "elapsedTime": "Waktu berlalu",
+        "remainingTime": "Sisa waktu",
+        "startTime": "Perkiraan mulai",
+        "completionTime": "Perkiraan selesai"
+      },
+      "time": {
+        "calculating": "Menghitung...",
+        "justNow": "Baru saja",
+        "lessThanMinute": "Dalam kurang dari satu menit",
+        "inMinutes": "Dalam {minutes, plural, one {# menit} other {# menit}}",
+        "inHours": "Dalam {hours, plural, one {# jam} other {# jam}}",
+        "inDays": "Dalam {days, plural, one {# hari} other {# hari}}",
+        "seconds": "{seconds, plural, one {# detik} other {# detik}}",
+        "minutesSeconds": "{minutes, plural, one {# menit} other {# menit}} {seconds, plural, one {# detik} other {# detik}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Memuat video...",
+      "notFound": "Video tidak ditemukan",
+      "notFoundDescription": "Video yang diminta tidak dapat ditemukan atau saat ini tidak tersedia.",
+      "detailsTitle": "Detail",
+      "videoInfoTitle": "Info video",
+      "advancedTitle": "Lanjutan",
+      "referenceImagesTitle": "Gambar referensi",
+      "startFrameAlt": "Frame awal",
+      "endFrameAlt": "Frame akhir",
+      "endFrameLabel": "Frame akhir",
+      "creationDate": "Tanggal pembuatan",
+      "fields": {
+        "model": "Model",
+        "generationType": "Jenis pembuatan",
+        "resolution": "Resolusi",
+        "aspectRatio": "Rasio aspek",
+        "duration": "Durasi",
+        "creativityLevel": "Kreativitas",
+        "effect": "Efek",
+        "samplingSteps": "Langkah sampling",
+        "randomSeed": "Seed acak",
+        "movementAmplitude": "Amplitudo gerakan",
+        "backgroundMusic": "Musik latar",
+        "negativePrompt": "Prompt negatif"
+      },
+      "actions": {
+        "close": "Tutup",
+        "closeModalTitle": "Tutup modal",
+        "remix": "campuran",
+        "remixTitle": "Remix dengan parameter ini",
+        "download": "Unduh",
+        "downloadTitle": "Unduh video ini",
+        "downloading": "Mengunduh...",
+        "shareTitle": "Bagikan video ini"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Hapus tugas",
+      "description": "Tindakan ini tidak dapat dibatalkan",
+      "cancel": "Batal",
+      "confirm": "Hapus",
+      "deleting": "Menghapus..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Gambar referensi"
+      },
+      "pending": {
+        "pending": "Tertunda...",
+        "queued": "Dalam antrean...",
+        "waitingInQueue": "Menunggu dalam antrean..."
+      },
+      "processing": {
+        "phase1": "Fase 1",
+        "phase2": "Fase 2",
+        "phase3": "Fase 3",
+        "final": "Terakhir",
+        "initializing": "Menginisialisasi proses",
+        "processing": "Memproses konten",
+        "rendering": "Merender output",
+        "finalizing": "Menyelesaikan",
+        "stuckMessage": "Tugas ini tampaknya macet. Anda dapat menghapusnya.",
+        "deleteTitle": "Hapus tugas ini",
+        "deleteAria": "Hapus"
+      },
+      "failed": {
+        "title": "Pembuatan gagal",
+        "tryAgain": "Coba lagi",
+        "tryAgainTitle": "Coba lagi dengan prompt ini",
+        "deleteTitle": "Hapus tugas ini"
+      },
+      "completed": {
+        "recreateDesktop": "Buat ulang",
+        "remixMobile": "campuran",
+        "remixTitle": "Buat video baru menggunakan prompt ini",
+        "publish": "Publikasikan",
+        "publishTitle": "Publikasikan ke komunitas dan dapatkan {amount} kredit",
+        "creditsBonusDesktop": "Bonus {amount} kredit",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Bagikan",
+        "shareTitle": "Bagikan video ini",
+        "downloadTitle": "Unduh video ini",
+        "downloading": "Mengunduh...",
+        "deleteTitle": "Hapus tugas ini"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego - ReelMind",
+      "description": "Buat dan remix video dengan alur kerja Lego di ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "Kembali ke Builder",
+      "history": "Riwayat"
+    },
+    "badges": {
+      "new": "Baru"
+    },
+    "actions": {
+      "delete": "Hapus",
+      "select": "Pilih",
+      "selected": "Terpilih",
+      "download": "Unduh",
+      "downloading": "Mengunduh...",
+      "deleting": "Menghapus...",
+      "share": "Bagikan",
+      "close": "Tutup"
+    },
+    "status": {
+      "pending": "Tertunda",
+      "processing": "Memproses",
+      "failed": "Gagal",
+      "completed": "Selesai",
+      "generating": "Membuat",
+      "cancelled": "Dibatalkan"
+    },
+    "deleteConfirmDialog": {
+      "title": "Hapus tugas",
+      "description": "Tindakan ini tidak dapat dibatalkan",
+      "cancel": "Batal",
+      "confirm": "Hapus",
+      "deleting": "Menghapus..."
+    },
+    "imageViewer": {
+      "close": "Tutup",
+      "previous": "Sebelumnya",
+      "next": "Berikutnya",
+      "view": "Lihat {index}"
+    },
+    "historyList": {
+      "title": "Generator Gambar Lego AI",
+      "generatingFirstImage": "Membuat gambar pertama Anda...",
+      "loadFailed": "Gagal memuat riwayat. Silakan coba lagi.",
+      "emptyDescription": "Buat gambar menakjubkan dengan mendeskripsikan ide Anda dan menambahkan sumber daya untuk memandu AI",
+      "loadingMore": "Memuat gambar riwayat...",
+      "scrollForMore": "Gulir untuk lebih banyak...",
+      "allLoaded": "Semua {count} gambar telah dimuat"
+    },
+    "sidebar": {
+      "addCard": "Tambahkan kartu baru",
+      "expand": "Perluas sidebar",
+      "sections": {
+        "theme": "Tema",
+        "scene": "Adegan",
+        "style": "Gaya"
+      }
+    },
+    "card": {
+      "placeholder": "Deskripsikan {section}...",
+      "imageAlt": "Referensi {section}",
+      "options": {
+        "image": "Gambar",
+        "text": "Teks"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Referensi {index}",
+      "errors": {
+        "invalidType": "Silakan pilih file gambar",
+        "tooLarge": "Ukuran gambar tidak boleh melebihi {maxSizeMb}MB",
+        "uploadFailed": "Gagal mengunggah gambar. Silakan coba lagi."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "Gulir ke bawah",
+      "collapsedPlaceholder": "Deskripsikan gambar Anda...",
+      "close": "Tutup"
+    },
+    "resultPreview": {
+      "previewTitle": "Pratinjau",
+      "previewDescription": "Gambar yang Anda buat akan muncul di sini",
+      "generatedImageAlt": "Gambar yang dihasilkan",
+      "emptyPlaceholder": "Karya Anda akan muncul di sini",
+      "dialogTitle": "Gambar yang Anda buat",
+      "dialogDescription": "Ini adalah gambar yang kami buat berdasarkan deskripsi dan sumber daya Anda"
+    },
+    "resourceUploader": {
+      "uploadImage": "Unggah gambar",
+      "imageFallbackAlt": "Gambar",
+      "imageFallbackLabel": "gambar",
+      "removeImage": "Hapus {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "Tampilkan sidebar",
+      "hideSidebar": "Sembunyikan sidebar",
+      "hideSidebarShort": "Sembunyikan Sidebar",
+      "addImage": "Tambah gambar",
+      "addImageWithLimit": "Tambah gambar ({current}/{max})",
+      "promptPlaceholder": "Buat atau edit gambar Anda...",
+      "model": "Model",
+      "selectModel": "Pilih model",
+      "loading": "Memuat...",
+      "loadingModels": "Memuat model...",
+      "noModelsAvailable": "Tidak ada model tersedia",
+      "noModelsMatchFilters": "Tidak ada model yang cocok dengan filter Anda",
+      "modelLabel": "Model: {name}",
+      "aspectRatio": "Rasio aspek",
+      "ratioLabel": "Rasio: {value}",
+      "imagesLabel": "Gambar: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 menghasilkan satu gambar",
+        "hint": "Jumlah gambar yang akan dibuat",
+        "numberOfImages": "Jumlah gambar"
+      },
+      "advanced": {
+        "aria": "Pengaturan lanjutan",
+        "label": "Lanjutan",
+        "title": "Pengaturan lanjutan",
+        "negativePrompt": {
+          "label": "Prompt negatif",
+          "placeholder": "Elemen yang ingin Anda kecualikan...",
+          "aria": "Prompt negatif",
+          "title": "Tentukan elemen yang akan dikecualikan"
+        },
+        "seed": {
+          "label": "Benih",
+          "random": "Acak",
+          "randomTitle": "Buat seed acak",
+          "placeholder": "Seed acak (opsional)",
+          "aria": "Nilai seed",
+          "title": "Atur seed untuk hasil yang dapat direproduksi"
+        }
+      },
+      "resolution": "Resolusi",
+      "resolutionLabel": "Resolusi: {value}",
+      "resolutionPopoverTitle": "Resolusi (Nano Banana 2)",
+      "generating": "Membuat...",
+      "generate": "Buat",
+      "limitReached": "Batas tercapai",
+      "fluxLimitTooltip": "Model FLUX dibatasi hingga {limit} penggunaan untuk non-anggota",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 adalah model premium dan tidak termasuk dalam penggunaan gratis Unlimited. Kredit akan dikenakan untuk setiap gambar yang dihasilkan.",
+      "unlimited": {
+        "fast": "Cepat",
+        "slow": "Lambat",
+        "fastMode": "Mode cepat",
+        "slowMode": "Mode lambat",
+        "monthlyUsage": "Penggunaan bulanan: {used}/{limit}",
+        "rateLimit": "Batas laju: {limit} gambar per 5 menit",
+        "switchedToSlow": "Anda telah mencapai batas bulanan. Beralih ke mode lambat."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Gambar yang dihasilkan",
+      "failedTitle": "Pembuatan gagal",
+      "errors": {
+        "unableToComplete": "Tidak dapat menyelesaikan pembuatan"
+      },
+      "actions": {
+        "deleteTitle": "Hapus tugas",
+        "viewFullSize": "Klik untuk melihat ukuran penuh",
+        "preview": "Pratinjau {index}",
+        "retryTitle": "Coba lagi - Ulangi dengan parameter yang sama",
+        "retry": "Coba lagi",
+        "remixTitle": "Remix - Gunakan kembali parameter",
+        "remix": "campuran",
+        "makeVideoTitle": "Buat video",
+        "makeVideo": "Buat video"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "Unduhan dimulai",
+      "downloadStartedMessage": "Unduhan video telah dimulai",
+      "downloadFailedTitle": "Unduhan gagal",
+      "downloadFailedMessage": "Gagal mengunduh video",
+      "shareCopied": "Tautan dibagikan disalin ke papan klip",
+      "shareCopyFailed": "Gagal menyalin tautan berbagi"
+    },
+    "empty": {
+      "title": "Video tidak tersedia",
+      "description": "Video ini tidak tersedia untuk dibagikan atau file video hilang.",
+      "ctaCreate": "Buat video Anda sendiri"
+    },
+    "notFound": {
+      "title": "Video tidak ditemukan",
+      "description": "Video yang Anda cari tidak ada atau tidak lagi tersedia untuk dibagikan.",
+      "ctaCreate": "Buat video Anda sendiri",
+      "ctaHome": "Kembali ke Beranda"
+    },
+    "details": {
+      "creationDate": "Tanggal pembuatan"
+    },
+    "actions": {
+      "remix": "campuran",
+      "remixTitle": "Buat video baru menggunakan prompt ini",
+      "download": "Unduh",
+      "downloadTitle": "Unduh video ini",
+      "downloading": "Mengunduh...",
+      "downloadingTitle": "Mengunduh...",
+      "shareTitle": "Bagikan video ini"
+    },
+    "meta": {
+      "promptFallback": "Video yang dihasilkan AI",
+      "watchDescription": "Tonton video yang dihasilkan AI ini: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Musik",
+      "description": "Buat musik, efek suara, dan ucapan dengan AI."
+    },
+    "page": {
+      "loadingSoundStudio": "Memuat Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "Musik",
+      "soundEffect": "Efek suara",
+      "textToSpeech": "Teks ke suara"
+    },
+    "controlPanel": {
+      "title": "Kontrol",
+      "reset": "Setel ulang",
+      "modelLabel": {
+        "tts": "Model TTS",
+        "sound": "Model suara"
+      },
+      "modelPlaceholder": "Pilih model",
+      "noModelsAvailableTitle": "Tidak ada model tersedia",
+      "noModelsFound": {
+        "tts": "Tidak ada model TTS ditemukan",
+        "soundEffect": "Tidak ada model efek suara ditemukan"
+      },
+      "tts": {
+        "stability": "Stabilitas",
+        "similarityBoost": "Peningkatan kemiripan",
+        "styleExaggeration": "Eksagerasi gaya",
+        "speed": "Kecepatan"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Unggah audio referensi",
+      "dropHere": "Letakkan di sini",
+      "supportedFormats": "Format didukung: MP3, WAV, M4A, AAC, OGG",
+      "tip": "Tip: Gunakan setidaknya 15 detik audio yang jelas untuk hasil lebih baik.",
+      "uploadingProgress": "Mengunggah... {progress}%",
+      "toast": {
+        "uploadSuccess": "Unggahan selesai",
+        "uploadFailed": "Unggahan gagal"
+      },
+      "errors": {
+        "selectAudioFile": "Silakan pilih file audio.",
+        "invalidAudioFile": "File audio tidak valid.",
+        "fileTooLarge": "File terlalu besar (maks 50MB).",
+        "durationTooShort": "Audio harus setidaknya 15 detik."
+      }
+    },
+    "audioPlayer": {
+      "play": "Putar",
+      "pause": "Jeda"
+    },
+    "voiceSelector": {
+      "label": "Suara",
+      "selectVoiceTitle": "Pilih suara",
+      "gender": {
+        "all": "Semua",
+        "male": "Pria",
+        "female": "Wanita"
+      },
+      "noVoicesAvailable": "Tidak ada suara tersedia",
+      "noVoicesFound": "Tidak ada suara ditemukan",
+      "bestFor": "Terbaik untuk {useCase}",
+      "clickToSelectVoice": "Klik untuk memilih suara"
+    },
+    "historyPanel": {
+      "title": "Riwayat",
+      "empty": {
+        "title": "Belum ada pembuatan",
+        "description": "Riwayat pembuatan Anda akan muncul di sini"
+      },
+      "loading": "Memuat...",
+      "loadMore": "Muat lebih banyak"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "Memproses",
+        "failed": "Gagal",
+        "completed": "Selesai"
+      },
+      "actions": {
+        "copy": "Salin",
+        "download": "Unduh"
+      },
+      "time": {
+        "now": "Sekarang",
+        "minutesAgo": "{minutes} menit lalu",
+        "hoursAgo": "{hours} jam lalu"
+      },
+      "unknownModel": "Model tidak dikenal",
+      "errors": {
+        "unknown": "Kesalahan tidak dikenal"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Studio Suara"
+      },
+      "menu": {
+        "open": "Buka menu",
+        "title": "Tidak bisa",
+        "voiceGeneration": "Buat",
+        "settings": "Pengaturan",
+        "history": "Riwayat"
+      },
+      "tabs": {
+        "generate": "Buat",
+        "settings": "Pengaturan",
+        "history": "Riwayat"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Ketik teks Anda untuk pembuatan ucapan...",
+        "soundEffect": "Deskripsikan efek suara yang ingin Anda buat..."
+      },
+      "generateSpeech": "Buat ucapan",
+      "generateSound": "Buat suara",
+      "generating": "Membuat...",
+      "loadingExamples": "Memuat contoh...",
+      "loadingMusicStyles": "Memuat gaya musik...",
+      "rightTabs": {
+        "examples": "Contoh",
+        "history": "Riwayat"
+      },
+      "history": {
+        "generationCount": "{count} pembuatan"
+      },
+      "price": {
+        "placeholder": "Perkiraan biaya",
+        "calculating": "Menghitung...",
+        "credits": "{credits} kredit"
+      },
+      "musicHistory": {
+        "title": "Riwayat musik",
+        "empty": {
+          "title": "Belum ada musik yang dibuat",
+          "description": "Riwayat musik Anda akan muncul di sini"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "Riwayat efek suara",
+        "empty": {
+          "title": "Belum ada efek suara yang dibuat",
+          "description": "Riwayat efek suara Anda akan muncul di sini"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Lirik",
+      "lyricsPlaceholder": "Lirik dengan format opsional. Anda dapat menggunakan baris baru untuk memisahkan setiap baris lirik. Anda dapat menggunakan dua baris baru untuk menambahkan jeda antarbaris. Anda dapat menggunakan tanda pagar ganda (##) di awal dan akhir lirik untuk menambahkan iringan. Maksimum 600 karakter.",
+      "useReferenceAudio": {
+        "label": "Gunakan audio referensi",
+        "description": "Gunakan audio referensi untuk memandu gaya AI."
+      },
+      "referenceAudio": {
+        "title": "Audio referensi",
+        "description": "Unggah lagu referensi yang berisi musik dan vokal."
+      },
+      "musicStyle": {
+        "title": "Gaya musik",
+        "description": "Jelaskan gaya dan suasana musik yang ingin Anda buat.",
+        "placeholder": "mis., R&B, energik, pop upbeat, folk akustik, dance elektronik...",
+        "tooShort": "Deskripsi gaya musik harus setidaknya 10 karakter."
+      },
+      "generating": "Membuat...",
+      "generateMusicWithCredits": "Buat musik ({credits} kredit)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Durasi",
+        "description": "Atur lama efek suara."
+      },
+      "promptInfluence": {
+        "title": "Pengaruh prompt",
+        "description": "Nilai yang lebih tinggi mengikuti prompt Anda lebih dekat."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Kontak",
+      "description": "Kirim masukan ke tim ReelMind."
+    },
+    "header": {
+      "title": "Masukan cepat",
+      "description": "Menemukan bug atau punya saran? Beri tahu kami dalam 30 detik."
+    },
+    "card": {
+      "title": "Masukan cepat",
+      "subtitle": "Hanya 3 kolom, butuh 30 detik"
+    },
+    "submitted": {
+      "title": "Masukan terkirim",
+      "description": "Terima kasih atas masukan Anda. Kami akan meninjaunya dan menghubungi Anda bila perlu."
+    },
+    "auth": {
+      "required": "Silakan login untuk mengirim masukan."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Terjadi kesalahan. Silakan coba lagi."
+      },
+      "type": {
+        "label": "Jenis",
+        "placeholder": "Pilih jenis masukan",
+        "options": {
+          "bug": "Laporan bug",
+          "suggestion": "Saran",
+          "other": "Lainnya"
+        },
+        "errors": {
+          "required": "Jenis masukan wajib diisi.",
+          "invalid": "Jenis masukan tidak valid."
+        }
+      },
+      "subject": {
+        "label": "Subjek *",
+        "placeholder": "Apa masalah atau saran Anda?",
+        "errors": {
+          "required": "Subjek wajib diisi.",
+          "min": "Subjek harus setidaknya {min} karakter.",
+          "max": "Subjek harus kurang dari {max} karakter.",
+          "invalid": "Subjek berisi konten tidak valid."
+        }
+      },
+      "message": {
+        "label": "Detail *",
+        "placeholder": "Ceritakan lebih lanjut...",
+        "errors": {
+          "required": "Detail wajib diisi.",
+          "min": "Detail harus setidaknya {min} karakter.",
+          "max": "Detail harus kurang dari {max} karakter.",
+          "invalid": "Detail berisi konten tidak valid."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Mengirim...",
+      "submit": "Kirim masukan"
+    },
+    "toast": {
+      "submitSuccess": "Masukan berhasil dikirim!",
+      "submitFailed": "Gagal mengirim masukan. Silakan coba lagi.",
+      "authRequired": "Silakan login untuk mengirim masukan.",
+      "rateLimited": "Terlalu banyak pengiriman. Silakan coba lagi nanti.",
+      "rateLimitedWithRetryAfter": "Silakan tunggu {seconds} dtk sebelum mengirim lagi.",
+      "fixErrors": "Silakan perbaiki kesalahan pada formulir.",
+      "checkInput": "Silakan periksa input Anda dan coba lagi."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Postingan",
+      "following": "Mengikuti",
+      "followingShort": "Ikuti",
+      "followers": "Pengikut",
+      "followersShort": "Penggemar",
+      "favorites": "Favorit",
+      "favoritesShort": "Favorit"
+    },
+    "actions": {
+      "save": "Simpan",
+      "saving": "Menyimpan...",
+      "cancel": "Batal",
+      "delete": "Hapus",
+      "retry": "Coba lagi",
+      "editProfile": "Edit profil",
+      "signOut": "Keluar",
+      "follow": "Ikuti",
+      "unfollow": "Berhenti mengikuti",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "Kreator",
+      "avatarAltFallback": "Pengguna",
+      "initialFallback": "kamu",
+      "edit": {
+        "displayNamePlaceholder": "Nama tampilan",
+        "bioPlaceholder": "Biografi"
+      },
+      "stats": {
+        "following": "Mengikuti",
+        "followers": "Pengikut"
+      },
+      "joined": "Bergabung {date}",
+      "joinedFallback": "Maret 2025"
+    },
+    "time": {
+      "now": "Baru saja",
+      "minutesAgo": "{minutes} menit lalu",
+      "hoursAgo": "{hours} jam lalu",
+      "daysAgo": "{days} hari lalu"
+    },
+    "toast": {
+      "loginFirst": "Silakan login dulu",
+      "cannotFollowYourself": "Tidak dapat mengikuti diri sendiri",
+      "followed": "Berhasil mengikuti",
+      "unfollowed": "Berhasil berhenti mengikuti",
+      "operationFailed": "Operasi gagal"
+    },
+    "posts": {
+      "loadingMore": "Memuat lebih banyak postingan...",
+      "error": {
+        "failedToLoad": "Gagal memuat postingan"
+      },
+      "empty": {
+        "title": "Belum ada postingan",
+        "description": "Pengguna ini belum membagikan postingan apa pun. Coba lagi nanti!"
+      },
+      "deleteDialog": {
+        "title": "Hapus postingan",
+        "description": "Ini akan menyembunyikan postingan dari profil dan feed Anda. Anda tidak dapat membatalkan tindakan ini."
+      },
+      "toast": {
+        "deleted": "Postingan dihapus",
+        "deleteFailed": "Gagal menghapus postingan"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Memuat lebih banyak favorit...",
+      "error": {
+        "failedToLoad": "Gagal memuat favorit"
+      },
+      "empty": {
+        "title": "Belum ada favorit",
+        "description": "Postingan yang Anda sukai akan muncul di sini. Mulai jelajahi dan simpan favorit Anda!"
+      }
+    },
+    "followers": {
+      "empty": "Belum ada pengikut",
+      "error": {
+        "failedToLoad": "Gagal memuat pengikut"
+      },
+      "followerSince": "Pengikut sejak {time}"
+    },
+    "following": {
+      "empty": "Belum mengikuti siapa pun",
+      "error": {
+        "failedToLoad": "Gagal memuat yang diikuti"
+      },
+      "followingSince": "Mengikuti sejak {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Paket keanggotaan - ReelMind",
+      "description": "Bergabunglah dengan paket keanggotaan ReelMind untuk mendapatkan lebih banyak kredit dan fitur premium untuk pembuatan video AI."
+    },
+    "plans": {
+      "hero": {
+        "title": "Paket keanggotaan",
+        "subtitle": "Buka potensi penuh pembuatan video AI dengan paket langganan ReelMind yang fleksibel"
+      },
+      "error": {
+        "loadFailed": "Gagal mendapatkan paket keanggotaan, silakan coba lagi nanti."
+      },
+      "names": {
+        "free": "Gratis",
+        "pro": "Pro",
+        "max": "Maks",
+        "unlimited": "Tidak terbatas"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Tahunan"
+      },
+      "monthly": {
+        "label": "Bulanan"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "DISKON 70% bulan pertama",
+        "short": "DISKON 70%",
+        "description": "Pelanggan keanggotaan pertama kali mendapat DISKON 70%, kupon berlaku 24 jam"
+      },
+      "yearly": {
+        "full": "6 bulan pertama GRATIS",
+        "short": "6 bulan GRATIS",
+        "description": "Pelanggan tahunan mendapat 6 bulan pertama sepenuhnya gratis - setara DISKON 50% untuk tahun pertama!"
+      },
+      "percentOff": "DISKON {percent}%",
+      "badge": {
+        "preview": "🎁 {offer} tersedia",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(setelah diklaim)"
+    },
+    "pricing": {
+      "perYear": "per tahun",
+      "perMonth": "per bulan",
+      "breakdown": {
+        "originalPrice": "Harga asli:",
+        "discount": "Diskon Anda:",
+        "payFirstYear": "Anda bayar (tahun pertama):",
+        "firstMonth": "Bulan pertama:"
+      }
+    },
+    "status": {
+      "title": "Status keanggotaan",
+      "loading": "Memuat info keanggotaan...",
+      "currentPlan": "Paket saat ini:",
+      "expiresOn": "Berakhir pada:",
+      "unlimitedDescription": "Anda memiliki akses tak terbatas ke semua fitur pembuatan tanpa konsumsi kredit.",
+      "planDescription": "Anda memiliki akses ke semua fitur dan manfaat {plan}.",
+      "noActive": {
+        "title": "Anda tidak memiliki keanggotaan aktif.",
+        "subtitle": "Berlangganan paket di bawah untuk membuka fitur premium."
+      }
+    },
+    "creditsBalance": {
+      "title": "Saldo kredit",
+      "loading": "Memuat info kredit...",
+      "availableCredits": "Kredit tersedia:",
+      "unlimited": {
+        "video": "Pembuatan video tak terbatas",
+        "image": "Pembuatan gambar tak terbatas",
+        "audio": "Pembuatan suara tak terbatas"
+      },
+      "estimate": {
+        "videos": "Hingga {count} video",
+        "images": "Hingga {count} gambar",
+        "audios": "Hingga {count} suara"
+      },
+      "cost": {
+        "videos": "Video: mulai {credits} kredit",
+        "images": "Gambar: mulai {credits} kredit",
+        "audios": "Suara: mulai {credits} kredit"
+      }
+    },
+    "credits": {
+      "title": "Beli kredit",
+      "history": {
+        "toggle": {
+          "show": "Tampilkan riwayat transaksi",
+          "hide": "Sembunyikan riwayat transaksi"
+        }
+      },
+      "card": {
+        "description": "Pilih paket kredit untuk meningkatkan kemampuan pembuatan AI Anda"
+      },
+      "packages": {
+        "basic": {
+          "label": "Paket dasar"
+        },
+        "standard": {
+          "label": "Paket standar"
+        },
+        "premium": {
+          "label": "Paket premium"
+        },
+        "pro": {
+          "label": "Paket ultra"
+        },
+        "bonus": "Bonusnya: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Tarif dasar: 1 USD = 100 kredit",
+        "buyMoreBonus": "Beli lebih banyak, dapatkan bonus lebih banyak!",
+        "neverExpire": "Kredit tidak pernah kedaluwarsa",
+        "instantDelivery": "Pengiriman instan setelah pembayaran"
+      },
+      "actions": {
+        "processing": "Memproses...",
+        "buyCredits": "Beli {credits} kredit"
+      }
+    },
+    "creditsHistory": {
+      "title": "Riwayat transaksi",
+      "subtitle": "Transaksi kredit terbaru Anda",
+      "actions": {
+        "retry": "Coba lagi",
+        "loading": "Memuat...",
+        "loadMore": "Muat lebih banyak"
+      },
+      "table": {
+        "date": "Tanggal",
+        "type": "Jenis",
+        "amount": "Jumlah",
+        "status": "Status"
+      },
+      "empty": "Tidak ada riwayat transaksi",
+      "types": {
+        "membershipMonthly": "Kredit bulanan keanggotaan",
+        "membershipInitial": "Kredit awal keanggotaan",
+        "freeMonthly": "Kredit bulanan gratis",
+        "purchase": "Pembelian kredit",
+        "platformReward": "Hadiah platform",
+        "newUserBonus": "Bonus pengguna baru",
+        "postReward": "Hadiah postingan",
+        "videoPostReward": "Hadiah postingan video",
+        "refund": "Pengembalian dana",
+        "balanceAdjustment": "Penyesuaian saldo",
+        "videoGeneration": "Pembuatan video",
+        "imageGeneration": "Pembuatan gambar",
+        "modelTraining": "Pelatihan model",
+        "audioGeneration": "Pembuatan audio",
+        "systemAdjustment": "Penyesuaian sistem"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}j {m}m {s}d",
+        "ms": "{m}m {s}d",
+        "s": "{s}d",
+        "expired": "Kedaluwarsa"
+      },
+      "toast": {
+        "claimedTitle": "Kupon berhasil diklaim",
+        "claimedDescription": "Kupon ditambahkan ke akun Anda, berlaku {hours} jam",
+        "claimFailedTitle": "Gagal klaim",
+        "tryAgainLater": "Silakan coba lagi nanti",
+        "networkError": "Kesalahan jaringan, silakan coba lagi nanti"
+      }
+    },
+    "couponStatus": {
+      "title": "Status kupon",
+      "active": {
+        "annualTitle": "Penawaran tahunan aktif",
+        "couponTitle": "Kupon diaktifkan"
+      },
+      "fields": {
+        "claimed": "Diklaim:",
+        "expires": "Berakhir:",
+        "timeLeft": "Sisa waktu:",
+        "usedAt": "Digunakan pada:",
+        "discount": "Diskon:"
+      },
+      "expired": "Kupon kedaluwarsa",
+      "used": {
+        "title": "Kupon digunakan"
+      },
+      "available": "{offer} tersedia",
+      "offer": {
+        "annualSpecial": "🎁 Spesial tahunan",
+        "newUserExclusive": "🎉 Eksklusif pengguna baru",
+        "bestValue": "Nilai terbaik",
+        "limitedTime": "Waktu terbatas",
+        "claimYearly": "Klaim penawaran gratis 6 bulan",
+        "claimMonthly": "Klaim kupon sekarang"
+      },
+      "none": {
+        "title": "Tidak ada kupon tersedia",
+        "description": "{offer} hanya tersedia untuk pengguna baru yang belum pernah membeli keanggotaan."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Populer",
+        "advanced": "Lanjutan",
+        "unlimited": "Tidak terbatas"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Dapatkan akses tak terbatas",
+        "getUnlimitedMobile": "Dapatkan Unlimited",
+        "subscribeDesktop": "Mulai berlangganan",
+        "subscribeMobile": "Berlangganan",
+        "claimAndSubscribeMobile": "Klaim & berlangganan",
+        "getDiscountMobile": "Dapatkan {discount}",
+        "claimDiscountAndSubscribeDesktop": "Klaim {discount} & Berlangganan"
+      },
+      "toast": {
+        "loginSuccess": "Login berhasil! Klik tombol lagi untuk klaim diskon dan berlangganan.",
+        "claimCouponFailed": "Gagal klaim kupon",
+        "tryAgainLater": "Silakan coba lagi nanti",
+        "couponClaimed": "Kupon berhasil diklaim!",
+        "failedToProcess": "Gagal memproses"
+      },
+      "usageEstimate": {
+        "title": "Perkiraan penggunaan bulanan",
+        "videos": "Hingga {count} video per bulan",
+        "images": "Hingga {count} gambar per bulan",
+        "audios": "Hingga {count} suara per bulan"
+      },
+      "unlimitedNotes": {
+        "title": "Catatan penggunaan",
+        "videoTasks": {
+          "title": "Tugas video:",
+          "body": "Anda dapat menjalankan hingga 5 tugas sekaligus. Batas bulanan: 300. Setelah mencapai batas bulanan, mode lambat berlaku: batas harian 30 video per 24 jam, dan 10 tugas per jam."
+        },
+        "imageTasks": {
+          "title": "Tugas gambar:",
+          "body": "Hingga 300 tugas per bulan. Mode cepat berlaku hingga tugas ke-300 (5 per menit). Setelah itu, mode lambat membatasi 1 tugas per menit."
+        },
+        "premiumModels": {
+          "title": "Model premium:",
+          "body": "Beberapa model berbiaya tinggi tidak termasuk dalam paket UNLIMITED. Varian VEO 3.* non-fast dan varian Sora-2 /pro tetap mengonsumsi kredit."
+        }
+      },
+      "currentPlan": "Rencana saat ini",
+      "yearlyEquivalent": "Setara dengan <harga>{value}</price>",
+      "yearlySavings": "Hemat <amount>{value}</amount> dibandingkan dengan tagihan bulanan"
+    },
+    "features": {
+      "monthlyCredits": "{credits} kredit bulanan",
+      "monthlyVideoCredits": "{credits} kredit video bulanan",
+      "fullAccessTopModels": "Akses penuh ke {count} model video AI teratas",
+      "accessAllModels": "Akses ke semua model",
+      "purchaseMoreRolloverVideoCredits": "Beli lebih banyak kredit video yang dapat diakumulasikan",
+      "downloadNoWatermark": "Unduh video tanpa watermark",
+      "commercialUse": "Penggunaan komersial",
+      "fastGenerations": "Generasi cepat",
+      "prioritySupport": "Dukungan prioritas",
+      "unlimitedVideoAndImageGeneration": "Generasi video dan gambar tanpa batas"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Buka opsi penagihan"
+      },
+      "actions": {
+        "opening": "Membuka...",
+        "billingOptions": "Opsi penagihan"
+      },
+      "confirm": {
+        "title": "Kelola langganan Anda",
+        "description": "Apakah Anda ingin membatalkan langganan? Kami ingin mendengar masukan Anda sebelum Anda pergi.",
+        "keep": "Pertahankan langganan saya",
+        "continueCancel": "Lanjutkan untuk membatalkan"
+      },
+      "toast": {
+        "openFailed": "Gagal membuka pengelolaan langganan",
+        "feedbackThanks": "Terima kasih atas masukan Anda!",
+        "feedbackSaveFailed": "Gagal menyimpan masukan, tetapi Anda tetap dapat mengelola langganan"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "Kami ingin masukan Anda",
+        "subtitle": "Bantu kami meningkatkan dengan menjawab beberapa pertanyaan singkat"
+      },
+      "common": {
+        "close": "Tutup",
+        "other": "Lainnya",
+        "stepIndicator": "Langkah {current} dari {total}"
+      },
+      "actions": {
+        "back": "Kembali",
+        "next": "Berikutnya",
+        "submitting": "Mengirim...",
+        "complete": "Selesai & lanjutkan"
+      },
+      "satisfaction": {
+        "1": "Sangat tidak puas",
+        "2": "Tidak puas",
+        "3": "Netral",
+        "4": "Puas",
+        "5": "Sangat puas"
+      },
+      "steps": {
+        "1": {
+          "title": "Bagaimana Anda mengetahui ReelMind?",
+          "options": {
+            "social": "Media sosial (Twitter, Instagram, dll.)",
+            "search": "Mesin pencari (Google, Bing, dll.)",
+            "friend": "Rekomendasi teman atau kolega",
+            "ads": "Iklan online",
+            "blog": "Blog teknologi atau situs ulasan"
+          }
+        },
+        "2": {
+          "title": "Untuk apa Anda terutama menggunakan ReelMind?",
+          "description": "Pilih semua yang sesuai dengan tujuan kreatif Anda.",
+          "options": {
+            "video": "Pembuatan video",
+            "image": "Pembuatan gambar",
+            "music": "Komposisi musik",
+            "marketing": "Konten iklan & pemasaran",
+            "socialPosts": "Postingan media sosial",
+            "education": "Materi edukasi",
+            "personal": "Proyek pribadi",
+            "exploring": "Mengeksplor ide baru"
+          }
+        },
+        "3": {
+          "title": "Mana yang paling menggambarkan Anda?",
+          "options": {
+            "creator": "Kreator konten",
+            "developer": "Developer lepas",
+            "marketingPro": "Profesional pemasaran",
+            "businessOwner": "Pemilik bisnis",
+            "designer": "Desainer",
+            "hobbyist": "Hobi",
+            "student": "Pelajar",
+            "artist": "Seniman"
+          }
+        },
+        "4": {
+          "title": "Bagaimana Anda menilai pengalaman Anda?",
+          "description": "Silakan nilai kepuasan Anda secara keseluruhan dengan ReelMind"
+        },
+        "5": {
+          "title": "Apa alasan utama Anda memutuskan untuk membatalkan?",
+          "options": {
+            "price": "Terlalu mahal",
+            "usage": "Tidak cukup digunakan",
+            "features": "Fitur penting tidak ada",
+            "quality": "Kualitas hasil yang dibuat",
+            "bugs": "Masalah teknis atau bug",
+            "alternative": "Menemukan alternatif yang lebih baik"
+          }
+        },
+        "6": {
+          "title": "Kami ingin mendengar masukan Anda",
+          "description": "Pendapat Anda membantu kami membuat ReelMind lebih baik untuk semua orang.",
+          "placeholder": "Apa yang bisa kami tingkatkan? Fitur apa yang ingin Anda lihat? (opsional)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Permintaan terkirim. Kami akan segera menghubungi Anda.",
+        "submitFailed": "Gagal mengirim permintaan"
+      },
+      "card": {
+        "title": "Enterprise & paket khusus",
+        "subtitle": "Harga khusus, penagihan, dan dukungan",
+        "description": "Butuh invoice, dukungan kepatuhan, atau alur kerja khusus? Bagikan kebutuhan Anda dan kami akan mengusulkan yang paling sesuai.",
+        "toggle": {
+          "hide": "Sembunyikan formulir",
+          "show": "Hubungi sales"
+        },
+        "highlights": {
+          "sso": "SSO & kepatuhan",
+          "invoices": "Invoice & purchase order",
+          "support": "Dukungan prioritas",
+          "workflows": "Alur kerja khusus"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "Jenis kontak",
+          "placeholder": "Pilih jenis kontak",
+          "options": {
+            "business": "Bisnis",
+            "individual": "Individu"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Perkiraan penggunaan bulanan (USD)",
+          "placeholder": "Pilih perkiraan",
+          "options": {
+            "0to1000": "$0 – $1.000",
+            "1000to5000": "$1.000 – $5.000",
+            "5000to10000": "$5.000 – $10.000",
+            "10000plus": "$10.000+",
+            "custom": "Jumlah khusus (USD)"
+          },
+          "custom": {
+            "label": "Penggunaan bulanan khusus (USD)",
+            "placeholder": "Masukkan jumlah dalam USD"
+          }
+        },
+        "firstName": {
+          "label": "Nama depan",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "Nama belakang",
+          "placeholder": "lakukan"
+        },
+        "email": {
+          "label": "Surel",
+          "placeholder": "email.anda@perusahaan.com"
+        },
+        "website": {
+          "label": "Situs web",
+          "placeholder": "https://perusahaan.com"
+        },
+        "requirements": {
+          "label": "Ceritakan tentang proyek dan kebutuhan Anda",
+          "placeholder": "Apa yang Anda bangun? Alur kerja apa, kebutuhan kepatuhan, dan perkiraan volume yang Anda miliki?"
+        },
+        "actions": {
+          "cancel": "Batal",
+          "submitting": "Mengirim...",
+          "submit": "Kirim"
+        },
+        "validation": {
+          "firstNameRequired": "Nama depan wajib diisi",
+          "lastNameRequired": "Nama belakang wajib diisi",
+          "emailInvalid": "Email harus valid",
+          "websiteInvalid": "Situs web harus berupa URL yang valid",
+          "monthlyEstimateRequired": "Perkiraan bulanan wajib diisi",
+          "monthlyEstimateEnter": "Silakan masukkan perkiraan bulanan",
+          "monthlyEstimateMin": "Perkiraan bulanan harus >= 0",
+          "requirementsMin": "Silakan berikan detail lebih lanjut (min {count} karakter)",
+          "maxChars": "Maks {count} karakter"
+        }
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang sering diajukan",
+      "items": {
+        "proBenefits": {
+          "question": "Apa manfaat keanggotaan PRO?",
+          "answer": "Keanggotaan PRO memberi Anda 1000 kredit setiap bulan (senilai $10), akses prioritas ke fitur baru, pembuatan video lebih cepat, opsi pengeditan lanjutan, dan dukungan pelanggan prioritas."
+        },
+        "cancelAnytime": {
+          "question": "Bisakah saya membatalkan langganan kapan saja?",
+          "answer": "Ya, Anda dapat membatalkan langganan kapan saja. Manfaat Anda akan tetap berlaku hingga akhir periode penagihan saat ini.",
+          "discountNote": {
+            "title": "Catatan khusus untuk langganan diskon:",
+            "body": "Jika Anda berlangganan menggunakan kupon diskon dan telah menggunakan kredit melebihi jumlah diskon selama bulan pertama, Anda hanya dapat membatalkan langganan setelah pembayaran bulan kedua diproses. Kebijakan ini memastikan penggunaan yang adil atas penawaran promosi."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Apakah ada perbedaan antara langganan bulanan dan tahunan?",
+          "answer": "Ya, langganan tahunan menawarkan diskon signifikan dibandingkan langganan bulanan. Anda akan menghemat sekitar 20% saat memilih penagihan tahunan."
+        },
+        "whatAreCredits": {
+          "question": "Apa itu Kredit ReelMind?",
+          "answer": "Kredit ReelMind adalah mata uang virtual yang digunakan di platform kami untuk membuat video dan gambar AI. Fitur yang berbeda membutuhkan jumlah kredit yang berbeda. Misalnya, membuat video standar (480p) memerlukan 50 kredit, sedangkan video HD (720p) memerlukan 80 kredit."
+        },
+        "earnCredits": {
+          "question": "Bagaimana cara mendapatkan kredit?",
+          "intro": "Anda dapat mendapatkan kredit dengan beberapa cara:",
+          "items": {
+            "membership": "Melalui paket keanggotaan (anggota PRO mendapatkan 1000 kredit per bulan, anggota MAX mendapatkan 2000)",
+            "purchase": "Dengan membeli paket kredit",
+            "newUser": "Pengguna baru menerima 100 kredit gratis saat pendaftaran",
+            "posting": "Memposting konten di ReelMind (50 kredit per hari)",
+            "promotions": "Promosi dan hadiah khusus"
+          }
+        },
+        "expire": {
+          "question": "Apakah kredit kedaluwarsa?",
+          "answer": "Kredit yang Anda beli langsung tidak akan kedaluwarsa dan akan tetap di akun Anda hingga digunakan. Kredit bulanan yang diberikan akan direset pada awal setiap bulan. Kredit yang tidak digunakan dari bulan sebelumnya tidak akan dibawa ke bulan berikutnya."
+        },
+        "refund": {
+          "question": "Bisakah saya mendapatkan refund untuk kredit yang tidak digunakan?",
+          "answer": "Kami tidak menawarkan refund untuk kredit yang dibeli. Namun, jika Anda mengalami masalah teknis yang mencegah penggunaan kredit secara benar, silakan hubungi tim dukungan kami dan kami akan menangani masalah Anda."
+        },
+        "membershipVsCredits": {
+          "question": "Apa perbedaan antara keanggotaan dan kredit?",
+          "answer": "Keanggotaan menyediakan alokasi kredit bulanan beserta manfaat tambahan seperti pemrosesan prioritas dan akses ke fitur eksklusif. Kredit dapat dibeli terpisah tanpa keanggotaan dan akan digunakan saat membuat konten. Pilih keanggotaan untuk penggunaan rutin atau beli kredit untuk penggunaan sesekali."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Semua hak dilindungi."
+    }
+  },
+  "Search": {
+    "placeholder": "Cari...",
+    "noResultsFound": "Tidak ada hasil ditemukan",
+    "viewAllResults": "Lihat semua hasil",
+    "sections": {
+      "posts": "Postingan",
+      "users": "Pengguna"
+    },
+    "tabs": {
+      "posts": "Postingan",
+      "users": "Pengguna"
+    },
+    "unknownUser": "Tidak dikenal",
+    "loading": "Memuat...",
+    "searching": "Mencari...",
+    "loadingMore": "Memuat lebih banyak...",
+    "tryAgain": "Coba lagi",
+    "noPostsFound": "Tidak ada postingan ditemukan",
+    "noUsersFound": "Tidak ada pengguna ditemukan",
+    "empty": {
+      "title": "Cari",
+      "hint": "Masukkan kata kunci untuk menemukan konten"
+    },
+    "errors": {
+      "searchFailed": "Pencarian gagal"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "KOMISI SEUMUR HIDUP - 20% Selamanya"
+    },
+    "hero": {
+      "lifetime": "SEUMUR HIDUP",
+      "passiveIncome": "PENGHASILAN PASIF",
+      "subtitle": {
+        "prefix": "Dapatkan",
+        "suffix": "komisi selamanya"
+      }
+    },
+    "actions": {
+      "getStarted": "Mulai",
+      "viewDashboard": "Lihat dashboard",
+      "signInFirst": "Silakan masuk terlebih dahulu"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "Platform API ReelMind",
+      "actions": {
+        "modelsPricing": "Model & harga",
+        "viewDocumentation": "Lihat dokumentasi"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "Kunci API berhasil dibuat",
+      "apiKeyCreateFailed": "Gagal membuat kunci API",
+      "apiKeyDeleted": "Kunci API berhasil dihapus",
+      "apiKeyDeletedDescription": "Kunci API telah dihapus",
+      "apiKeyDeleteFailed": "Gagal menghapus kunci API",
+      "apiKeyCopied": "Kunci API disalin ke papan klip",
+      "modelIdCopied": "ID model disalin ke papan klip"
+    },
+    "accountCard": {
+      "notLoggedIn": "Belum login",
+      "loadingKeys": "Memuat kunci API...",
+      "keysAvailable": "{count} {count, plural, one {kunci API tersedia} other {kunci API tersedia}}",
+      "createKey": "Buat kunci API",
+      "helpPrefix": "Jika Anda butuh bantuan, silakan lihat ",
+      "apiDocumentation": "Dokumentasi API"
+    },
+    "stats": {
+      "plan": "Paket",
+      "resetDate": "Tanggal reset",
+      "credits": "Kredit",
+      "tasks": "Tugas",
+      "loading": "Memuat...",
+      "freePlan": "Paket gratis",
+      "na": "T/A",
+      "buyCredits": "Beli kredit"
+    },
+    "apiKeys": {
+      "title": "Manajemen kunci API",
+      "description": "Kelola kunci API Anda untuk mengakses API pembuatan video ReelMind",
+      "createNew": "Buat kunci API baru",
+      "loading": "Memuat kunci API...",
+      "label": "Kunci API",
+      "created": "Dibuat {date}",
+      "active": "Aktif",
+      "inactive": "Tidak aktif",
+      "show": "Tampilkan kunci API",
+      "hide": "Sembunyikan kunci API",
+      "copy": "Salin kunci API",
+      "totalCalls": "Total panggilan",
+      "creditsUsed": "Kredit digunakan",
+      "empty": {
+        "title": "Tidak ada kunci API",
+        "description": "Anda belum membuat kunci API. Buat kunci API pertama Anda untuk mulai menggunakan API ReelMind.",
+        "createFirst": "Buat kunci API pertama Anda"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Model & harga",
+      "apiDocumentation": "Dokumentasi API"
+    },
+    "documentation": {
+      "title": "Dokumentasi API",
+      "authentication": "Autentikasi",
+      "authenticationIntro": "Semua permintaan API memerlukan autentikasi menggunakan kunci API. Kunci API Anda adalah UUID yang dapat Anda buat di bawah pada bagian Manajemen Kunci API.",
+      "authenticationMethods": "Metode autentikasi",
+      "exampleRequest": "Contoh permintaan",
+      "important": "Penting",
+      "apiEndpoints": "Endpoint API",
+      "responseFormat": "Format respons",
+      "responseFormatIntro": "Format respons tugas pembuatan video:",
+      "parameters": "Parameter",
+      "table": {
+        "name": "Nama",
+        "type": "Tipe",
+        "required": "Wajib",
+        "description": "Deskripsi"
+      },
+      "yes": "Ya",
+      "no": "Tidak"
+    },
+    "pricing": {
+      "title": "Harga & model API",
+      "intro": "Jelajahi model AI yang tersedia dan harganya untuk API pembuatan video dan gambar",
+      "loading": "Memuat model yang tersedia...",
+      "available": "Tersedia",
+      "unavailable": "Tidak tersedia",
+      "credits": "{credits} kredit",
+      "basePricePerImage": "Harga dasar (per gambar)",
+      "basePrice5sVideo": "Harga dasar (video 5 dtk)",
+      "creditsPerSecond": "+{credits} kredit/detik",
+      "modelId": "ID model",
+      "copyModelId": "Salin ID model",
+      "noModels": {
+        "title": "Tidak ada model tersedia",
+        "description": "Saat ini tidak ada model AI yang tersedia untuk akses API. Silakan cek lagi nanti."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Teks ke video",
+      "imageToVideo": "Gambar ke video",
+      "videoToVideo": "Video ke video",
+      "textToImage": "Teks ke gambar",
+      "imageToImage": "Gambar ke gambar"
+    },
+    "deleteModal": {
+      "title": "Konfirmasi penghapusan",
+      "description": "Apakah Anda yakin ingin menghapus kunci API ini? Tindakan ini tidak dapat dibatalkan.",
+      "keyName": "Nama kunci: {name}",
+      "createdOn": "Dibuat pada {date}",
+      "cancel": "Batal",
+      "deleting": "Menghapus...",
+      "deleteKey": "Hapus kunci API"
+    },
+    "modelParameters": {
+      "title": "Parameter model",
+      "required": "Wajib",
+      "default": "Bawaan: {value}",
+      "labels": {
+        "prompt": "Cepat",
+        "guidance_scale": "Skala panduan",
+        "aspect_ratio": "Rasio aspek",
+        "seed": "Benih",
+        "image_url": "URL gambar",
+        "duration": "Durasi",
+        "resolution": "Resolusi",
+        "num_inference_steps": "Langkah inferensi",
+        "cfg_scale": "Skala CFG"
+      },
+      "flux": {
+        "promptDescription": "Prompt teks yang mendeskripsikan gambar yang akan dibuat",
+        "guidanceScaleDescription": "Mengontrol seberapa dekat gambar mengikuti prompt",
+        "aspectRatioDescription": "Rasio aspek gambar yang dihasilkan",
+        "seedDescription": "Seed acak untuk pembuatan yang dapat direproduksi",
+        "imageUrlDescription": "URL gambar input untuk pembuatan gambar-ke-gambar"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Teks ke gambar · Edit gambar",
+      "title": "FLUX / Nano Pisang / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - Direktur agen AI No.1 di dunia",
+      "description": "Direktur agen AI No.1 di dunia"
+    },
+    "page": {
+      "loading": "Memuat Direktur AI Nolan..."
+    },
+    "heroBanner": {
+      "label": "Teknologi AI revolusioner",
+      "name": "Nolan",
+      "worldFirst": "Yang pertama di dunia",
+      "aiAgentDirector": "Direktur agen AI"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Tertunda",
+        "queued": "Mengantri",
+        "processing": "Pemrosesan",
+        "completed": "Selesai",
+        "failed": "Gagal",
+        "canceled": "Dibatalkan"
+      },
+      "model": {
+        "unknown": "Model tidak dikenal",
+        "unnamed": "Tanpa nama"
+      },
+      "errors": {
+        "fetchListTitle": "Gagal memuat tugas",
+        "unknown": "Kesalahan tidak diketahui",
+        "fetchDetails": "Gagal mengambil detail tugas",
+        "downloadFailed": "Pengunduhan gagal",
+        "retryFailed": "Coba lagi gagal"
+      },
+      "details": {
+        "videoTitle": "Detail Tugas Video",
+        "imageTitle": "Detail Tugas Gambar",
+        "videoPreview": "Pratinjau Video",
+        "hideVideo": "Sembunyikan Video",
+        "showVideo": "Tampilkan Video",
+        "downloadVideo": "Unduh Video",
+        "browserNoVideoSupport": "Browser Anda tidak mendukung pemutaran video.",
+        "labels": {
+          "duration": "Durasi",
+          "fileSize": "Ukuran Berkas",
+          "format": "Format",
+          "prompt": "Cepat",
+          "model": "Model",
+          "ratio": "Rasio Aspek",
+          "resolution": "Resolusi",
+          "taskId": "ID Tugas",
+          "user": "Pengguna",
+          "status": "Status",
+          "createdTime": "Waktu yang Diciptakan",
+          "startedTime": "Waktu Mulai",
+          "completedTime": "Waktu Selesai",
+          "generationModel": "Model Generasi",
+          "priority": "Prioritas",
+          "requestId": "Minta ID",
+          "lastActivity": "Aktivitas Terakhir"
+        },
+        "videoPreviewUnavailable": "Pratinjau video tidak tersedia",
+        "videoNoOutput": "Tugas selesai tetapi tidak ada keluaran video",
+        "videoNotCompleted": "Tugas belum selesai",
+        "generationParams": "Parameter Generasi",
+        "basicInfo": "Informasi Dasar",
+        "timeInfo": "Informasi Waktu",
+        "detailData": "Data Terperinci",
+        "inputParams": "Parameter Masukan",
+        "outputResult": "Hasil Keluaran",
+        "errorLog": "Catatan Kesalahan",
+        "retrying": "Mencoba lagi...",
+        "retryTask": "Coba Lagi Tugas",
+        "generatedImage": "Gambar yang Dihasilkan",
+        "close": "Tutup"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Manajemen Umpan Balik Pengguna",
+        "subtitle": "Kelola umpan balik dan keluhan yang dikirimkan pengguna"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Pengambilan gagal",
+          "fetchFailedDescription": "Tidak dapat mengambil data masukan: {error}",
+          "unknown": "Kesalahan tidak diketahui"
+        },
+        "type": {
+          "bug": "Laporan Bug",
+          "suggestion": "Saran",
+          "other": "Lainnya"
+        },
+        "loading": "Memuat...",
+        "filter": {
+          "label": "Jenis Umpan Balik",
+          "all": "Semua Jenis"
+        },
+        "total": "Total: {total} item umpan balik",
+        "empty": "Tidak ada data umpan balik",
+        "headers": {
+          "userInfo": "Info Pengguna",
+          "type": "Ketik",
+          "subject": "Subyek",
+          "submittedAt": "Dikirim",
+          "actions": "Tindakan"
+        },
+        "user": {
+          "unknown": "Pengguna tidak dikenal",
+          "noEmail": "Tidak ada email"
+        },
+        "actions": {
+          "collapse": "Runtuh",
+          "viewDetails": "Lihat Detail"
+        },
+        "contentLabel": "Umpan balik:",
+        "pagination": {
+          "previous": "Sebelumnya",
+          "next": "Selanjutnya"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Silakan masukkan kata kunci pencarian.",
+        "noUsersFound": "Tidak ditemukan pengguna yang cocok.",
+        "searchFailed": "Gagal mencari pengguna.",
+        "userRequired": "Silakan pilih pengguna atau masukkan ID pengguna.",
+        "amountInvalid": "Silakan masukkan jumlah kredit yang valid.",
+        "descriptionRequired": "Silakan masukkan deskripsi hibah.",
+        "grantFailed": "Gagal memberikan kredit."
+      },
+      "success": {
+        "granted": "Kredit berhasil diberikan."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Gagal mengambil survei.",
+        "fetchStats": "Gagal mengambil statistik survei."
+      }
+    },
+    "memberships": {
+      "title": "Manajemen Langganan Pengguna",
+      "search": {
+        "placeholder": "Cari ID pengguna, email, atau nama panggilan...",
+        "button": "Cari"
+      },
+      "stats": {
+        "total": "Jumlah Langganan",
+        "yearly": "Anggota Tahunan"
+      },
+      "list": {
+        "title": "Daftar Langganan"
+      },
+      "loading": "Memuat...",
+      "actions": {
+        "retry": "Coba lagi"
+      },
+      "empty": "Tidak ada data berlangganan",
+      "table": {
+        "headers": {
+          "userInfo": "Info Pengguna",
+          "plan": "Rencana",
+          "billingCycle": "Siklus Penagihan",
+          "status": "Status",
+          "credits": "Saldo Kredit",
+          "videoTasks": "Tugas Video",
+          "imageTasks": "Tugas Gambar",
+          "createdAt": "Waktu yang Diciptakan",
+          "expiresAt": "Waktu Kedaluwarsa"
+        },
+        "user": {
+          "unknown": "Tidak diketahui"
+        },
+        "status": {
+          "active": "Aktif",
+          "inactive": "Tidak aktif",
+          "cancelAtPeriodEnd": "Batalkan pada akhir periode"
+        },
+        "creditsUnit": "kredit",
+        "flagged": "Ditandai",
+        "tasksUnit": "tugas",
+        "never": "Tidak pernah"
+      },
+      "pagination": {
+        "summary": "Menampilkan {start} hingga {end} dari {total} catatan",
+        "previous": "Sebelumnya",
+        "next": "Selanjutnya",
+        "page": "Halaman {currentPage} dari {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Gagal menghapus postingan. Silakan coba lagi."
+      }
+    }
+  },
+  "Common": {
+    "language": "Bahasa",
+    "onlyEnglish": "Saat ini hanya tersedia dalam bahasa Inggris.",
+    "onlySupportedPages": "Bahasa tambahan saat ini hanya tersedia di halaman Beranda, Jelajahi, Pencarian, Buat, Lego, Musik, Keanggotaan, Kontak, Pengguna, Bagikan, Model, Efek, dan Blog.",
+    "languages": {
+      "en": "Bahasa inggris",
+      "zh-CN": "Cina (Sederhana)"
+    },
+    "actions": {
+      "viewAll": "Lihat semuanya",
+      "cancel": "Membatalkan",
+      "recreate": "Buat ulang",
+      "download": "Unduh",
+      "downloading": "Mengunduh...",
+      "showMore": "Tampilkan lebih banyak",
+      "showLess": "Tampilkan lebih sedikit"
+    },
+    "aria": {
+      "scrollRight": "Gulir ke kanan",
+      "search": "Mencari"
+    },
+    "search": {
+      "placeholder": "Cari posting dan pengguna ..."
+    },
+    "share": {
+      "button": "Membagikan",
+      "toast": {
+        "copiedTitle": "Disalin",
+        "copiedMessage": "Tautan disalin ke papan klip",
+        "failedTitle": "Gagal menyalin",
+        "failedMessage": "Tidak dapat menyalin tautan ke papan klip"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Direktur AI Nolan",
+      "earlyAccess": "Akses Awal",
+      "justOneCredit": "Hanya 1 kredit"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Modus Cahaya",
+        "darkMode": "Mode Gelap",
+        "switchToLightMode": "Beralih ke Mode Cahaya",
+        "switchToDarkMode": "Beralih ke Mode Gelap"
+      },
+      "profile": {
+        "myProfile": "Profil Saya",
+        "goToMyProfile": "Buka profil saya"
+      },
+      "menu": {
+        "openMenu": "Buka menunya",
+        "close": "Menutup"
+      },
+      "membership": {
+        "title": "Keanggotaan",
+        "tapToViewPlans": "Ketuk untuk melihat rencana",
+        "upgrade": "Meningkatkan",
+        "plans": {
+          "free": "Bebas",
+          "pro": "Pro",
+          "max": "Maks",
+          "unlimited": "Tak terbatas"
+        }
+      },
+      "actions": {
+        "pricing": "Harga",
+        "signIn": "Masuk"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Semua hak dilindungi undang-undang."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Mengingatkan",
+        "model": "Model",
+        "ratio": "Perbandingan",
+        "guidance": "Panduan",
+        "steps": "Tangga",
+        "seed": "Benih",
+        "definition": "Definisi"
+      },
+      "values": {
+        "unknownModel": "Model Tidak Dikenal",
+        "random": "Acak"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Paginasi",
+        "previous": "Buka halaman sebelumnya",
+        "next": "Buka halaman berikutnya"
+      },
+      "previous": "Sebelumnya",
+      "next": "Berikutnya",
+      "more": "Lebih banyak halaman"
+    },
+    "concurrentLimit": {
+      "title": "Batas tugas tercapai",
+      "defaultMessage": "Pengguna gratis hanya dapat menjalankan satu tugas pembuatan video dalam satu waktu.",
+      "currentStatus": "Status saat ini",
+      "currentPlan": "Rencana saat ini",
+      "premiumBenefits": "Manfaat premi",
+      "plans": {
+        "unlimited": "Paket tidak terbatas",
+        "free": "Bebas",
+        "unlimitedTasks": "Tugas tidak terbatas"
+      },
+      "unlimited": {
+        "maxTasks": "Maksimal 3 tugas bersamaan",
+        "priority": "Pemrosesan prioritas tinggi",
+        "features": "Semua fitur premium",
+        "waitNote": "Harap tunggu hingga beberapa tugas Anda saat ini selesai sebelum mengirimkan tugas baru."
+      },
+      "free": {
+        "maxTasks": "1 tugas bersamaan",
+        "priority": "Prioritas standar",
+        "features": "Fitur dasar"
+      },
+      "upgrade": {
+        "maxTasks": "Hingga 5 tugas bersamaan",
+        "priority": "Pemrosesan dengan prioritas lebih tinggi",
+        "features": "Akses ke semua model"
+      },
+      "actions": {
+        "acknowledge": "Mengerti",
+        "upgrade": "Meningkatkan",
+        "loading": "Memuat..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Unggah Lokal",
+      "reelmind": "ReelMind Dihasilkan"
+    },
+    "reelmind": {
+      "description": "Pilih video yang dihasilkan di ReelMind.",
+      "browse": "Telusuri Video ReelMind"
+    },
+    "title": {
+      "placeholder": "Tambahkan judul..."
+    },
+    "tags": {
+      "title": "Tag",
+      "empty": "Tambahkan tag untuk mengkategorikan video Anda dengan lebih baik.",
+      "placeholder": "Tambahkan tag (tekan Enter untuk konfirmasi)",
+      "count": "{count}/{limit}",
+      "helper": "Hingga {limit} tag, masing-masing {max} karakter."
+    },
+    "description": {
+      "placeholder": "Tambahkan deskripsi..."
+    },
+    "generationType": {
+      "title": "Tipe Generasi",
+      "txt2video": "Teks ke Video",
+      "txt2videoDescription": "Hasilkan dari prompt teks.",
+      "img2video": "Gambar ke Video",
+      "img2videoDescription": "Hasilkan dari gambar referensi."
+    },
+    "prompts": {
+      "promptTitle": "Mengingatkan",
+      "promptPlaceholder": "Masukkan perintah yang digunakan untuk menghasilkan video ini...",
+      "negativeTitle": "Perintah Negatif",
+      "negativePlaceholder": "Masukkan perintah negatif..."
+    },
+    "modelResources": {
+      "title": "Sumber Daya Model",
+      "placeholder": "Buat daftar sumber daya model yang digunakan, mis. Model, LoRA, penyematan..."
+    },
+    "aigc": {
+      "guidanceScale": "Skala Panduan",
+      "guidanceScalePlaceholder": "misalnya 7.5",
+      "steps": "Tangga",
+      "stepsPlaceholder": "misalnya 30",
+      "seed": "Benih",
+      "seedPlaceholder": "misalnya 1234567890"
+    },
+    "tools": {
+      "title": "Alat Generasi"
+    },
+    "videoPreview": {
+      "uploadComplete": "Unggahan selesai",
+      "uploading": "Mengunggah...",
+      "clickToUpload": "Klik untuk mengunggah video",
+      "remove": "Hapus video"
+    },
+    "actions": {
+      "publish": "Menerbitkan",
+      "publishing": "Penerbitan...",
+      "back": "Kembali"
+    },
+    "errors": {
+      "tagEmpty": "Tag tidak boleh kosong.",
+      "tagTooLong": "Tag tidak boleh melebihi {max} karakter.",
+      "tagExists": "Tag ini sudah ada.",
+      "tagLimit": "Anda dapat menambahkan hingga {limit} tag.",
+      "authRequired": "Silakan masuk untuk mengunggah.",
+      "uploadFailed": "Gagal mengunggah. Silakan coba lagi.",
+      "uploadParamsFailed": "Gagal mengambil parameter unggahan.",
+      "fileAddFailed": "Gagal menambahkan file. Silakan coba lagi."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog - ReelMind",
+      "description": "Temukan tips, tutorial, dan wawasan tentang pembuatan konten AI, pembuatan video, dan fitur ReelMind terbaru."
+    },
+    "page": {
+      "title": "blog",
+      "empty": "Tidak ada postingan blog yang ditemukan"
+    },
+    "error": {
+      "title": "Terjadi kesalahan saat memuat postingan",
+      "description": "Terjadi masalah saat memuat postingan blog.",
+      "retry": "Coba lagi"
+    },
+    "notFound": {
+      "title": "Halaman tidak ditemukan",
+      "description": "Halaman blog yang Anda minta tidak ada."
+    },
+    "feed": {
+      "end": "Anda telah mencapai akhir",
+      "retry": "Mencoba kembali",
+      "loadFailed": "Gagal memuat postingan blog"
+    },
+    "topFeed": {
+      "refresh": "Menyegarkan",
+      "exploreMore": "Jelajahi lebih menyenangkan",
+      "loadFailed": "Gagal memuat postingan acak"
+    },
+    "floatingChat": {
+      "title": "Tanya Nolan AI",
+      "subtitle": "Direktur Agen AI No.1!",
+      "placeholder": "Tanyakan tentang artikel ini atau bagikan ide film Anda...",
+      "cta": "Kirim ke Nolan"
+    },
+    "featureCard": {
+      "label": "Model Video",
+      "title": "Reelmind menawarkan alat canggih untuk mewujudkan ide Anda.",
+      "subtitle": "Ubah ide Anda menjadi visual yang menakjubkan dengan 101 model AI",
+      "cta": "Coba Sekarang"
+    },
+    "breadcrumbs": {
+      "home": "Rumah"
+    },
+    "article": {
+      "notFoundTitle": "Artikel tidak ditemukan",
+      "notFoundDescription": "Artikel yang diminta tidak dapat ditemukan."
+    }
+  },
+  "Favorites": {
+    "title": "Favoritku",
+    "subtitle": "Di sini Anda dapat mengelola video dan model favorit Anda",
+    "tabs": {
+      "video": "Video",
+      "model": "Model"
+    },
+    "empty": {
+      "title": "Anda belum memiliki favorit"
+    },
+    "alert": {
+      "title": "Kesalahan",
+      "retry": "Mencoba kembali",
+      "loadFailed": "Tidak dapat memuat favorit. Silakan coba lagi.",
+      "removeFailed": "Tidak dapat menghapus favorit. Silakan coba lagi."
+    },
+    "card": {
+      "video": "Video",
+      "model": "Model"
+    },
+    "button": {
+      "favorite": "Favorit",
+      "favorited": "Favorit"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Selamat datang di ReelMind",
+      "subtitle": "Masuk atau buat akun kreator Anda",
+      "continueWithGoogle": "Lanjutkan dengan Google",
+      "orContinueWithEmail": "atau lanjutkan dengan email",
+      "emailLabel": "Surel",
+      "emailPlaceholder": "anda@email.com",
+      "emailAddressPlaceholder": "Alamat email",
+      "passwordLabel": "Kata sandi",
+      "passwordPlaceholder": "••••••••",
+      "show": "tampilkan",
+      "hide": "sembunyikan",
+      "inviteCodeLabelOptional": "Kode undangan (opsional)",
+      "inviteCodePlaceholder": "Masukkan kode",
+      "invitedBy": "Diundang oleh <name>{value}</name>",
+      "continue": "Lanjutkan",
+      "signIn": "Masuk",
+      "createAccount": "Buat akun",
+      "switchToSignIn": "Sudah punya akun? Masuk",
+      "switchToSignUp": "Belum punya akun? Daftar",
+      "pageSubtitleCreate": "Buat akun Anda",
+      "pageSubtitleSignIn": "Masuk ke akun Anda",
+      "termsLine": "Dengan melanjutkan, Anda menyetujui <terms>Syarat</terms> dan <privacy>Kebijakan Privasi</privacy> kami"
+    },
+    "verifyEmail": {
+      "title": "Verifikasi Email Anda",
+      "sentLinkTo": "Kami telah mengirim tautan verifikasi ke",
+      "checkInbox": "Silakan periksa kotak masuk Anda dan klik tautannya untuk melanjutkan.",
+      "understand": "Saya mengerti",
+      "useDifferentEmail": "Gunakan email lain"
+    },
+    "errors": {
+      "invalidEmail": "Alamat email tidak valid",
+      "suspiciousEmail": "Email ini tampaknya mencurigakan",
+      "verifyBeforeLogin": "Harap verifikasi email Anda sebelum masuk",
+      "operationFailed": "Operasi gagal, silakan coba lagi",
+      "googleFailed": "Masuk dengan Google gagal, silakan coba lagi",
+      "checkEmailConfirmation": "Periksa email Anda untuk tautan konfirmasi!"
+    },
+    "brand": {
+      "headlineLine1": "Pembuat Reel",
+      "headlineLine2": "Selamat datang",
+      "taglineLine1": "Bebaskan imajinasimu.",
+      "taglineLine2": "Biarkan AI mengubahnya jadi reel.",
+      "cta": "Bergabunglah dengan komunitas kreator kami dan mulai berkreasi."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Tambahkan gambar",
+      "addMoreReferences": "Tambahkan lebih banyak referensi",
+      "auto": "Otomatis",
+      "back": "Kembali",
+      "character": "Karakter",
+      "clear": "Jelas",
+      "clearAll": "Hapus semuanya",
+      "close": "Tutup",
+      "createPack": "Buat paket",
+      "downloadCount": "Unduh {current}/{total}",
+      "dropOrUploadPhoto": "Jatuhkan atau unggah foto",
+      "goToLibrary": "Pergi ke perpustakaan",
+      "high": "Tinggi",
+      "history": "Sejarah",
+      "inQueue": "Dalam antrian",
+      "info": "Informasi",
+      "instadump": "Instagram",
+      "manual": "petunjuk",
+      "new": "Baru",
+      "next": "Selanjutnya",
+      "open": "Buka",
+      "previous": "Sebelumnya",
+      "ready": "Siap",
+      "recent": "Baru-baru ini",
+      "remove": "Hapus",
+      "replace": "Ganti",
+      "reset": "Setel ulang",
+      "restart": "Mulai ulang",
+      "selectPack": "Pilih paket",
+      "storyboard": "Papan cerita",
+      "upload": "Unggah",
+      "uploading": "Mengunggah..."
+    },
+    "prompts": {
+      "defaultImage": "Gambar sinematik dengan detail tinggi dengan pencahayaan alami",
+      "relightDefault": "Nyalakan kembali subjek dengan pencahayaan studio yang lembut",
+      "faceSwapDefault": "Tukar wajah sambil menjaga pemandangan tetap utuh",
+      "characterSwapDefault": "Tukar karakter sambil mempertahankan gaya",
+      "drawToEditDefault": "Sempurnakan gambar menjadi gambar yang bersih dan detail"
+    },
+    "swap": {
+      "sourceTitle": "Sumber",
+      "targetTitle": "Sasaran",
+      "faceSourceDescription": "Sumber gambar untuk wajah",
+      "faceTargetDescription": "Targetkan gambar yang akan diganti",
+      "characterSourceDescription": "Sumber gambar untuk karakter tersebut",
+      "characterTargetDescription": "Targetkan gambar yang akan diganti"
+    },
+    "inpaint": {
+      "sourceAlt": "Sumber gambar",
+      "paintHint": "Warnai area yang ingin Anda edit",
+      "maskUploading": "Mengunggah topeng",
+      "maskReady": "Masker sudah siap",
+      "maskPaint": "Masker cat",
+      "paint": "Cat",
+      "erase": "Hapus"
+    },
+    "relight": {
+      "title": "Menyalakan kembali",
+      "quickSelect": "Pilih cepat",
+      "directions": {
+        "top": "Atas",
+        "front": "Depan",
+        "right": "Benar",
+        "left": "Kiri",
+        "back": "Kembali",
+        "bottom": "Bawah"
+      },
+      "brightness": "Kecerahan",
+      "color": "Warna"
+    },
+    "upscale": {
+      "title": "Kelas atas"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Sketsa ke Video",
+      "drawToVideo": "Menggambar ke Video",
+      "drawToEdit": "Gambar untuk Mengedit",
+      "pen": "Pena",
+      "eraser": "Penghapus",
+      "color": "Warna",
+      "size": "Ukuran",
+      "undo": "Membatalkan",
+      "redo": "Ulangi",
+      "clear": "Jelas",
+      "generateVideo": "Hasilkan video",
+      "uploadTitle": "Unggah media",
+      "uploadDescription": "Tambahkan foto untuk memandu gambar"
+    },
+    "soulId": {
+      "heroTitle": "Karakter ID Jiwa",
+      "heroDescription": "Bangun karakter yang konsisten dari foto Anda.",
+      "createButton": "Ciptakan karakter",
+      "photoCount": "{count} foto",
+      "characterLabel": "Karakter {index}",
+      "emptyGallery": "Belum ada karakter.",
+      "dialogTitle": "Buat ID Jiwa",
+      "dialogSubtitle": "Unggah foto untuk membangun karakter Anda.",
+      "addPhotosTitle": "Tambahkan foto",
+      "addPhotosDescription": "Unggah 6-12 foto yang jelas.",
+      "tip": "Tip: gunakan sudut dan ekspresi yang bervariasi."
+    },
+    "storyboard": {
+      "relightScene": "Adegan Menyalakan Kembali",
+      "headline": "Pabrik Mode",
+      "headlineAccent": "Hasilkan estetika Anda",
+      "description": "Papan cerita, edit, buat.",
+      "resultsLabel": "{count} hasil",
+      "uploadHint": "Unggah gambar referensi untuk memandu pemandangan",
+      "referenceImagesTitle": "Gambar referensi",
+      "referenceImagesDescription": "Tambahkan hingga 4 gambar untuk disesuaikan dengan gayanya"
+    },
+    "instadump": {
+      "sidebarTitle": "Studio Instagram",
+      "stepChoosePack": "Pilih satu paket",
+      "stepAddPhoto": "Tambahkan foto",
+      "stepGetInstadump": "Dapatkan Instagramdump",
+      "headerTitle": "Instagram",
+      "headerDescription": "Ubah selfie menjadi perpustakaan konten lengkap.",
+      "addPhotoTitle": "Tambahkan foto Anda",
+      "addPhotoDescription": "Unggah selfie yang jelas untuk memulai.",
+      "getInstadumpTitle": "Dapatkan Instagram Anda",
+      "newPhotosReady": "Foto baru sudah siap",
+      "tryFree": "Coba gratis",
+      "premiumTitle": "Premi",
+      "premiumBulletOne": "Lebih banyak gaya per paket",
+      "premiumBulletTwo": "Pemrosesan prioritas",
+      "premiumBulletThree": "Unduhan resolusi penuh",
+      "upgradeNow": "Tingkatkan sekarang"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Sunting",
+      "subtitle": "Akses fitur dan model pengeditan",
+      "back": "Kembali ke Sunting",
+      "workspace": {
+        "title": "Ruang kerja",
+        "status": "Pengganti bagian depan",
+        "uploadTitle": "Unggah media",
+        "uploadDescription": "Jatuhkan atau klik untuk mengunggah gambar/video untuk memulai"
+      },
+      "settings": {
+        "title": "Pengaturan",
+        "modelTitle": "Model",
+        "modelDescription": "Pilih model (backend segera hadir)",
+        "promptTitle": "Cepat",
+        "promptDescription": "Jelaskan apa yang Anda inginkan (backend segera hadir)",
+        "generate": "Hasilkan"
+      },
+      "model": {
+        "title": "Detail model",
+        "descriptionTitle": "Deskripsi",
+        "descriptionBody": "Ini adalah pengganti. Detailnya akan diisi setelah backend terhubung."
+      }
+    },
+    "menu": {
+      "title": "Sunting",
+      "sections": {
+        "features": "Fitur",
+        "models": "Model"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Sunting Video",
+        "description": "Pengeditan video tingkat lanjut"
+      },
+      "inpaint": {
+        "title": "mengecat",
+        "description": "Pilih area, jelaskan perubahannya"
+      },
+      "relight": {
+        "title": "Menyalakan kembali",
+        "description": "Sesuaikan posisi pencahayaan, warna, dan kecerahan"
+      },
+      "aiStylist": {
+        "title": "Penata AI",
+        "description": "Temukan penampilan sempurna Anda"
+      },
+      "upscale": {
+        "title": "Kelas atas",
+        "description": "Meningkatkan resolusi dan kualitas"
+      },
+      "skinEnhancer": {
+        "title": "Penambah Kulit",
+        "description": "Tekstur kulit alami dan realistis"
+      },
+      "angles": {
+        "title": "Sudut",
+        "description": "Hasilkan dari sudut yang berbeda"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Detil dan akurasi maksimal"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Pengeditan cepat dan ringan"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Integrasi produk yang mulus"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Peningkatan resolusi tinggi"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Kontrol gerakan dengan referensi video"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Pengeditan video tingkat lanjut"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Rencana utama",
+      "completed": "{completed}/{total} selesai",
+      "steps": {
+        "script": "Desain naskah & storyboard",
+        "world": "Desain aset dunia",
+        "video": "Pembuatan video",
+        "worldVideo": "Aset dunia & pembuatan video",
+        "audio": "Desain suara & audio",
+        "final": "Perakitan akhir"
+      }
+    }
+  }
+}

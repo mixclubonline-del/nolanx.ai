@@ -1,0 +1,113 @@
+{
+  "newChat": "Новый чат",
+  "placeholder": "Введите сообщение...",
+  "textarea": {
+    "placeholder": "Есть история, над которой вы хотите работать вместе с Nolan?",
+    "selectModel": "Выберите текстовую модель! Перейдите в Настройки, чтобы указать ключи API, если вы ещё этого не сделали.",
+    "enterPrompt": "Введите промпт",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "К изображению",
+    "audioPositioning": "К аудио",
+    "videoPositioning": "К видео",
+    "showMore": "Показать больше",
+    "showLess": "Показать меньше"
+  },
+  "jsonCard": {
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "showCode": "Показать код",
+    "hideCode": "Скрыть код"
+  },
+  "welcome": {
+    "greeting": "Привет, ReelMaker!",
+    "help": "Чем могу помочь сегодня?"
+  },
+  "replay": {
+    "replaying": "Повтор разговора... ({{current}}/{{total}})",
+    "completed": "Повтор разговора завершён",
+    "ready": "Готово к повтору разговора",
+    "skipToEnd": "Перейти к концу",
+    "replayAgain": "Повторить ещё раз",
+    "startReplay": "Начать повтор",
+    "continueConversation": "Продолжить разговор",
+    "forking": "Создание форка...",
+    "forkingToast": "Форкаем холст...",
+    "forkSuccessToast": "Холст форкнут! Перенаправляем...",
+    "forkFailedToast": "Не удалось форкнуть холст"
+  },
+  "errors": {
+    "createSessionError": "Не удалось создать сессию чата"
+  },
+  "toolCallNames": {
+    "generate_image": "Генератор изображений",
+    "edit_image": "Редактор изображений",
+    "generate_audio": "Создать аудио",
+    "generate_video": "Видео",
+    "generate_video_first_last_frame": "FLF видео",
+    "generate_tts_audio": "Создать TTS-аудио",
+    "generate_music": "Создать музыку",
+    "generate_structured_output": "Создать структурированный вывод",
+    "execute_storyboard": "Выполнить раскадровку",
+    "analyze_timeline_state": "Анализ таймлайна",
+    "recommend_generation_strategy": "Рекомендовать стратегию",
+    "execute_code": "Выполнить код",
+    "analyze_documents": "Анализ документов",
+    "analyze_media": "Анализ медиа",
+    "execute_function_call": "Выполнить вызов функции",
+    "analyze_web_context": "Анализ веб-контекста",
+    "search_and_generate": "Поиск и генерация",
+    "prompt_user_multi_choice": "Множественный выбор",
+    "prompt_user_single_choice": "Одиночный выбор",
+    "write_plan": "Написать план",
+    "finish": "Завершить"
+  },
+  "publish": {
+    "title": "Опубликовать в сообществе",
+    "titleLabel": "Заголовок *",
+    "titlePlaceholder": "Введите яркий заголовок для вашей беседы",
+    "descriptionLabel": "Описание",
+    "descriptionPlaceholder": "Опишите, чем интересен этот разговор...",
+    "tagsLabel": "Теги (макс. 5)",
+    "tagPlaceholder": "Добавить тег...",
+    "visibilityLabel": "Видимость",
+    "visibilityPublic": "Публично",
+    "visibilityUnlisted": "По ссылке",
+    "visibilityPublicHint": "Любой сможет найти и посмотреть этот разговор",
+    "visibilityUnlistedHint": "Только люди со ссылкой могут посмотреть этот разговор",
+    "cancel": "Отмена",
+    "publish": "Опубликовать",
+    "publishing": "Публикация...",
+    "enterTitleError": "Введите заголовок",
+    "success": "Сессия успешно опубликована!",
+    "failed": "Не удалось опубликовать сессию",
+    "publishButton": "Опубликовать"
+  },
+  "sessionSelector": {
+    "placeholder": "Тема"
+  },
+  "thinking": {
+    "title": "Размышления"
+  },
+  "plan": {
+    "title": "План",
+    "steps": {
+      "singular": "шаг",
+      "plural": "шагов"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

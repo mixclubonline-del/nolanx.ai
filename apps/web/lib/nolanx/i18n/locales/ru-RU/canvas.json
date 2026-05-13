@@ -1,0 +1,166 @@
+{
+  "title": "Раскадровка",
+  "rename": "Переименовать раскадровку",
+  "delete": "Удалить раскадровку",
+  "share": "Поделиться раскадровкой",
+  "export": "Экспортировать раскадровку",
+  "exportImages": "Экспортировать кадры",
+  "import": "Импортировать раскадровку",
+  "untitled": "Сцена без названия",
+  "back": "Назад к столу режиссёра",
+  "saveSnapshot": "Сохранить снимок сцены",
+  "loadSnapshot": "Загрузить снимок сцены",
+  "saved": "Сцена сохранена ✅",
+  "messages": {
+    "canvasRenamed": "Раскадровка успешно переименована",
+    "canvasDeleted": "Раскадровка успешно удалена",
+    "canvasExported": "Раскадровка успешно экспортирована",
+    "canvasImported": "Раскадровка успешно импортирована",
+    "failedToRename": "Не удалось переименовать раскадровку",
+    "failedToDelete": "Не удалось удалить раскадровку",
+    "failedToCreateFile": "Не удалось создать файл сцены",
+    "noImagesSelected": "Кадры не выбраны",
+    "exportingImages": "Экспорт кадров...",
+    "failedToExportImages": "Не удалось экспортировать кадры"
+  },
+  "deleteDialog": {
+    "title": "Удалить раскадровку",
+    "description": "Вы уверены, что хотите удалить эту раскадровку? Эта сцена будет потеряна навсегда.",
+    "cancel": "Отмена",
+    "delete": "Удалить"
+  },
+  "tool": {
+    "hand": "Панорама камеры",
+    "selection": "Выбор сцены",
+    "rectangle": "Рамка кадра",
+    "ellipse": "Прожектор",
+    "text": "Титр",
+    "image": "Визуальный ресурс",
+    "shape": "Форма реквизита",
+    "freedraw": "Свободный рисунок",
+    "arrow": "Стрелка действия",
+    "line": "Линия движения",
+    "zoomFit": "Показать все кадры"
+  },
+  "popbar": {
+    "addToChat": "Обсудить с Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Подготовка холста…",
+    "loadingSharedCanvas": "Загрузка общего холста…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Название сцены",
+    "published": "Опубликовано",
+    "checking": "Проверка...",
+    "publish": "Опубликовать",
+    "copied": "Скопировано!",
+    "share": "Поделиться",
+    "sharedCanvas": "Общий холст",
+    "shareCopiedToast": "Ссылка для доступа скопирована в буфер обмена!",
+    "shareCopyFailedToast": "Не удалось скопировать ссылку"
+  },
+  "preview": {
+    "mute": "Выключить звук",
+    "unmute": "Включить звук",
+    "volume": "Громкость: {{percent}}%",
+    "export": "Экспорт",
+    "exporting": "Экспорт...",
+    "exportVideo": "Экспортировать видео",
+    "playing": "Воспроизведение",
+    "placeholder": {
+      "title": "Окно предпросмотра",
+      "hint": "Добавьте ресурсы на таймлайн, чтобы увидеть предпросмотр"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Дорожки",
+    "trackLabels": {
+      "script": "Скрипт",
+      "keyframe": "Ключевой кадр",
+      "video": "Видео",
+      "audio": "Аудио",
+      "world": "Мир"
+    },
+    "indexedTitles": {
+      "script": "Скрипт {{index}}",
+      "keyframe": "Ключевой кадр {{index}}",
+      "video": "Видео {{index}}",
+      "audio": "Аудио {{index}}",
+      "world": "Мир {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Уменьшить",
+      "zoomIn": "Увеличить",
+      "rearrangeAllLanes": "Перестроить все дорожки (магнитная привязка — 0 разрывов)",
+      "play": "Воспроизвести",
+      "pause": "Пауза"
+    },
+    "actions": {
+      "clickToDrop": "Нажмите, чтобы поместить",
+      "clickToSelect": "Нажмите, чтобы выбрать"
+    },
+    "assetTypes": {
+      "script": "Скрипт",
+      "keyframe": "Keyframe",
+      "video": "Видео",
+      "audio": "Аудио",
+      "asset": "Ресурс",
+      "world": "Мир"
+    },
+    "fallbackTitles": {
+      "script": "Скрипт",
+      "keyframe": "Ключевой кадр",
+      "video": "Видео",
+      "audio": "Аудио",
+      "asset": "Ресурс",
+      "untitled": "Без названия",
+      "world": "Мир"
+    },
+    "alts": {
+      "keyframe": "Ключевой кадр",
+      "videoThumbnail": "Миниатюра видео"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Не удалось сохранить",
+      "saving": "Сохранение...",
+      "savedAt": "Сохранено {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Опубликовать в сообществе",
+    "enterTitleError": "Введите заголовок",
+    "success": "Холст успешно опубликован в сообществе!",
+    "failed": "Не удалось опубликовать холст",
+    "warning": "Это опубликует все беседы и творческие результаты этого холста в сообществе.",
+    "oncePublished": "После публикации любой сможет просмотреть и найти вашу работу.",
+    "canvasTitleLabel": "НАЗВАНИЕ ХОЛСТА",
+    "canvasTitlePlaceholder": "Введите название холста",
+    "cancel": "Отмена",
+    "publish": "Опубликовать",
+    "publishing": "Публикация..."
+  }
+}

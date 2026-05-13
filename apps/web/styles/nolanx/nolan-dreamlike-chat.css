@@ -1,0 +1,739 @@
+/* Nolan Dreamlike Chat Styles - Ultra Simplified & Cinematic */
+
+/* === Core Variables === */
+:root {
+  /* Light mode colors */
+  --nolan-chat-bg-light: rgba(255, 255, 255, 0.9);
+  --nolan-chat-border-light: rgba(255, 255, 255, 0.4);
+  --nolan-chat-text-light: #1a1a1a;
+  --nolan-chat-placeholder-light: #6b7280;
+  --nolan-chat-accent-light: #f97316;
+
+  /* Dark mode colors */
+  --nolan-chat-bg-dark: rgba(0, 0, 0, 0.95);
+  --nolan-chat-border-dark: rgba(255, 255, 255, 0.3);
+  --nolan-chat-text-dark: #ffffff;
+  --nolan-chat-placeholder-dark: #a1a1aa;
+  --nolan-chat-accent-dark: #fb923c;
+
+  /* Animation timings - slower for less anxiety */
+  --nolan-transition-slow: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --nolan-transition-medium: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --nolan-transition-fast: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Glass morphism effects */
+  --nolan-blur: blur(20px);
+  --nolan-backdrop-blur: blur(16px);
+}
+
+/* === Dreamlike Animations === */
+@keyframes nolan-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.005);
+  }
+}
+
+@keyframes nolan-random-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  33% {
+    transform: translateY(-1px) scale(1.002);
+  }
+  66% {
+    transform: translateY(-2px) scale(1.005);
+  }
+}
+
+@keyframes nolan-breathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-0.5px) scale(1.002);
+  }
+}
+
+@keyframes nolan-gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes nolan-glow-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 15px rgba(249, 115, 22, 0.15),
+      0 0 30px rgba(249, 115, 22, 0.08);
+  }
+  50% {
+    box-shadow:
+      0 0 25px rgba(249, 115, 22, 0.25),
+      0 0 50px rgba(249, 115, 22, 0.12);
+  }
+}
+
+@keyframes nolan-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes nolan-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* === Chat Container === */
+.nolan-chat-container {
+  position: relative;
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  animation: nolan-fade-in 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nolan-chat-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 20% 30%,
+    rgba(249, 115, 22, 0.03) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 80% 70%,
+    rgba(251, 146, 60, 0.02) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 40% 80%,
+    rgba(249, 115, 22, 0.01) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+  animation: nolan-float 12s ease-in-out infinite reverse;
+  z-index: -1;
+}
+
+/* === Main Chat Box === */
+.nolan-chat-box {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    var(--nolan-chat-bg-light) 0%,
+    rgba(255, 255, 255, 0.95) 50%,
+    var(--nolan-chat-bg-light) 100%
+  );
+  background-size: 200% 200%;
+  backdrop-filter: var(--nolan-backdrop-blur);
+  border: 1px solid var(--nolan-chat-border-light);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  min-height: 120px;
+  transition: var(--nolan-transition-medium);
+  animation: nolan-breathe 4s ease-in-out infinite, nolan-gradient-shift 12s ease-in-out infinite;
+  overflow: hidden;
+  cursor: text;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(249, 115, 22, 0.1);
+}
+
+.dark .nolan-chat-box {
+  background: linear-gradient(
+    135deg,
+    var(--nolan-chat-bg-dark) 0%,
+    rgba(0, 0, 0, 0.98) 50%,
+    var(--nolan-chat-bg-dark) 100%
+  );
+  background-size: 200% 200%;
+  border-color: var(--nolan-chat-border-dark);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(251, 146, 60, 0.15);
+}
+
+.nolanx-video-home .nolan-chat-box,
+.dark .nolanx-video-home .nolan-chat-box {
+  background: rgba(0, 0, 0, 0.42);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.nolanx-video-home .nolan-chat-box::before,
+.dark .nolanx-video-home .nolan-chat-box::before {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 42%,
+    rgba(249, 115, 22, 0.08) 100%
+  );
+  opacity: 0.42;
+}
+
+.nolanx-video-home .nolan-chat-box::after,
+.dark .nolanx-video-home .nolan-chat-box::after {
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 0.28;
+}
+
+.nolanx-video-home .nolan-textarea,
+.dark .nolanx-video-home .nolan-textarea {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.nolanx-video-home .nolan-textarea::placeholder,
+.dark .nolanx-video-home .nolan-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) {
+  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.018);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.22);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]:hover) {
+  background: rgba(255, 255, 255, 0.028);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) h3 {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) h3:hover,
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]:hover) h3 {
+  color: #fff;
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) p,
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) span,
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) .text-neutral-500,
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) .text-neutral-600 {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) :is(.border-white\/24, .border-white\/28, .border-white\/30, .border-white\/34) {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) :is(.bg-white\/20, .bg-white\/24, .bg-white\/26, .bg-white\/30, .bg-white\/72) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) :is(.text-neutral-400, .text-neutral-500, .text-neutral-600, .text-neutral-900) {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.nolanx-video-home :is(.group.relative.cursor-pointer.overflow-hidden.rounded-\[1\.6rem\]) button:hover :is(.text-neutral-900, .text-neutral-600) {
+  color: #fff;
+}
+
+.nolanx-video-home :is(.rounded-\[1\.6rem\].border.border-white\/34.bg-white\/26) {
+  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.nolanx-video-home :is(.text-neutral-400, .text-neutral-500, .text-neutral-600, .text-neutral-700) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nolanx-video-home :is(.bg-white\/18, .bg-white\/20, .bg-white\/24, .bg-white\/26, .bg-white\/34, .bg-white\/46) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.nolanx-video-home :is(.border-white\/18, .border-white\/24, .border-white\/34) {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.nolan-chat-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 115, 22, 0.08) 0%,
+    rgba(251, 146, 60, 0.04) 25%,
+    transparent 50%,
+    rgba(251, 146, 60, 0.04) 75%,
+    rgba(249, 115, 22, 0.08) 100%
+  );
+  background-size: 200% 200%;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: var(--nolan-transition-slow);
+  animation: nolan-gradient-shift 10s ease-in-out infinite;
+}
+
+.nolan-chat-box:hover::before {
+  opacity: 1;
+}
+
+/* 添加边框渐变效果 */
+.nolan-chat-box::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(
+    45deg,
+    rgba(249, 115, 22, 0.3) 0%,
+    rgba(251, 146, 60, 0.2) 25%,
+    transparent 50%,
+    rgba(251, 146, 60, 0.2) 75%,
+    rgba(249, 115, 22, 0.3) 100%
+  );
+  background-size: 300% 300%;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--nolan-transition-slow);
+  animation: nolan-gradient-shift 12s ease-in-out infinite reverse;
+  z-index: -1;
+}
+
+.dark .nolan-chat-box::after {
+  background: linear-gradient(
+    45deg,
+    rgba(251, 146, 60, 0.4) 0%,
+    rgba(249, 115, 22, 0.3) 25%,
+    transparent 50%,
+    rgba(249, 115, 22, 0.3) 75%,
+    rgba(251, 146, 60, 0.4) 100%
+  );
+  background-size: 300% 300%;
+}
+
+/* === Focus State === */
+.nolan-chat-box.focused {
+  border-color: var(--nolan-chat-accent-light);
+  animation: nolan-glow-pulse 4s ease-in-out infinite;
+  transform: translateY(-1px) scale(1.005);
+}
+
+.nolan-chat-box.focused::after {
+  opacity: 0.8;
+}
+
+.dark .nolan-chat-box.focused {
+  border-color: var(--nolan-chat-accent-dark);
+}
+
+.dark .nolan-chat-box.focused::after {
+  opacity: 0.6;
+}
+
+/* === Textarea Styling === */
+.nolan-textarea {
+  width: 100%;
+  min-height: 80px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--nolan-chat-text-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0;
+  transition: var(--nolan-transition-fast);
+}
+
+.dark .nolan-textarea {
+  color: var(--nolan-chat-text-dark);
+}
+
+.nolan-textarea::placeholder {
+  color: var(--nolan-chat-placeholder-light);
+  transition: var(--nolan-transition-fast);
+}
+
+.dark .nolan-textarea::placeholder {
+  color: var(--nolan-chat-placeholder-dark);
+}
+
+.nolan-textarea:focus::placeholder {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+
+/* === Button Styling === */
+.nolan-button {
+  position: relative;
+  background: linear-gradient(135deg, var(--nolan-chat-accent-light), #ea580c);
+  border: none;
+  border-radius: 0.75rem;
+  color: white;
+  padding: 0.75rem;
+  transition: var(--nolan-transition-medium);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dark .nolan-button {
+  background: linear-gradient(135deg, var(--nolan-chat-accent-dark), #f97316);
+}
+
+.nolan-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 1s ease;
+}
+
+.nolan-button:hover::before {
+  left: 100%;
+}
+
+.nolan-button:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 
+    0 10px 25px rgba(249, 115, 22, 0.3),
+    0 0 20px rgba(249, 115, 22, 0.2);
+}
+
+.nolan-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nolan-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* === Image Upload Area === */
+.nolan-image-area {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  transition: var(--nolan-transition-fast);
+  padding: 0.25rem; /* 为X按钮留出空间 */
+}
+
+.nolan-image-preview {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  overflow: visible; /* 改为visible让X按钮显示完全 */
+  transition: var(--nolan-transition-medium);
+  animation: nolan-fade-in 0.6s ease, nolan-random-float 8s ease-in-out infinite;
+  animation-delay: calc(var(--random-delay, 0) * 1s);
+}
+
+.nolan-image-preview:nth-child(1) { --random-delay: 0; }
+.nolan-image-preview:nth-child(2) { --random-delay: 1.2; }
+.nolan-image-preview:nth-child(3) { --random-delay: 2.4; }
+.nolan-image-preview:nth-child(4) { --random-delay: 3.6; }
+.nolan-image-preview:nth-child(5) { --random-delay: 4.8; }
+
+.nolan-image-preview:hover {
+  transform: scale(1.15) rotate(3deg);
+  animation-play-state: paused;
+  z-index: 10; /* 悬停时提升层级 */
+}
+
+.nolan-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem; /* 给图片本身添加圆角 */
+}
+
+/* === X按钮样式 === */
+.nolan-image-remove-btn {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background: #ef4444;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--nolan-transition-fast);
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nolan-image-remove-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .nolan-image-remove-btn {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* === Upload Progress === */
+.nolan-upload-progress {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(107, 114, 128, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: nolan-fade-in 0.6s ease;
+}
+
+.nolan-progress-ring {
+  transform: rotate(-90deg);
+  transition: var(--nolan-transition-fast);
+}
+
+/* === Controls Row === */
+.nolan-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.nolan-upload-button {
+  background: rgba(107, 114, 128, 0.15);
+  border: 1px solid rgba(107, 114, 128, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  color: var(--nolan-chat-text-light);
+  transition: var(--nolan-transition-medium);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .nolan-upload-button {
+  color: var(--nolan-chat-text-dark);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.nolan-upload-button:hover {
+  background: rgba(107, 114, 128, 0.25);
+  transform: translateY(-1px) scale(1.05);
+}
+
+.dark .nolan-upload-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nolan-upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nolan-upload-button:disabled:hover {
+  transform: none;
+}
+
+/* === Drag & Drop === */
+.nolan-drag-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(249, 115, 22, 0.1);
+  backdrop-filter: var(--nolan-backdrop-blur);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nolan-chat-accent-light);
+  font-weight: 500;
+  animation: nolan-fade-in 0.4s ease;
+}
+
+.dark .nolan-drag-overlay {
+  color: var(--nolan-chat-accent-dark);
+}
+
+/* === Loading States === */
+.nolan-loading-spinner {
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* === Message Styling === */
+.nolan-message {
+  margin-bottom: 1rem;
+  animation: nolan-fade-in 0.8s ease;
+}
+
+.nolan-message-user {
+  text-align: right;
+}
+
+.nolan-message-assistant {
+  text-align: left;
+}
+
+.nolan-message-content {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  max-width: 80%;
+  transition: var(--nolan-transition-fast);
+}
+
+.nolan-message-user .nolan-message-content {
+  background: linear-gradient(135deg, var(--nolan-chat-accent-light), #ea580c);
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.dark .nolan-message-user .nolan-message-content {
+  background: linear-gradient(135deg, var(--nolan-chat-accent-dark), #f97316);
+}
+
+.nolan-message-assistant .nolan-message-content {
+  background: rgba(107, 114, 128, 0.1);
+  color: var(--nolan-chat-text-light);
+  border-bottom-left-radius: 0.25rem;
+}
+
+.dark .nolan-message-assistant .nolan-message-content {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--nolan-chat-text-dark);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .nolan-chat-container {
+    max-width: calc(100vw - 2rem);
+    margin: 0 1rem;
+  }
+
+  .nolan-chat-box {
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .nolan-textarea {
+    font-size: 0.95rem;
+  }
+
+  .nolan-message-content {
+    max-width: 90%;
+  }
+}
+
+/* === Accessibility === */
+@media (prefers-reduced-motion: reduce) {
+  .nolan-chat-box {
+    animation: none;
+  }
+
+  .nolan-image-preview:hover {
+    transform: scale(1.05);
+  }
+
+  * {
+    transition-duration: 0.1s !important;
+    animation-duration: 0.1s !important;
+  }
+}
+
+/* === Custom Scrollbar === */
+.nolan-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nolan-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nolan-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.3);
+  border-radius: 3px;
+  transition: var(--nolan-transition-fast);
+}
+
+.nolan-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.5);
+}
+
+.dark .nolan-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark .nolan-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* === Enhanced Glass Effect === */
+.nolan-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.dark .nolan-glass {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}

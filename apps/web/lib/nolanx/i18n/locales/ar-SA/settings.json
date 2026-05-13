@@ -1,0 +1,98 @@
+{
+  "title": "الإعدادات",
+  "messages": {
+    "settingsSaved": "تم حفظ الإعدادات بنجاح",
+    "settingsReset": "تمت إعادة ضبط الإعدادات إلى الافتراضي",
+    "failedToSave": "فشل حفظ الإعدادات",
+    "failedToLoad": "فشل تحميل الإعدادات",
+    "restartRequired": "يرجى إعادة تشغيل التطبيق لتطبيق إعدادات البروكسي"
+  },
+  "models": {
+    "title": "النماذج",
+    "placeholder": "أدخل اسم النموذج",
+    "addModel": "إضافة نموذج",
+    "types": {
+      "text": "نص",
+      "image": "صورة",
+      "video": "فيديو"
+    }
+  },
+  "provider": {
+    "title": "المزوّدون",
+    "addProvider": "إضافة مزوّد",
+    "providerName": "اسم المزوّد",
+    "providerNamePlaceholder": "أدخل اسم المزوّد",
+    "apiUrl": "عنوان API",
+    "apiUrlPlaceholder": "أدخل عنوان API",
+    "apiKey": "مفتاح API",
+    "apiKeyPlaceholder": "أدخل مفتاح API",
+    "apiKeyDescription": "سيتم تخزين مفتاح API الخاص بك بأمان",
+    "maxTokens": "الحد الأقصى للرموز",
+    "maxTokensPlaceholder": "أدخل الحد الأقصى للرموز",
+    "maxTokensDescription": "العدد الأقصى للرموز في الاستجابة",
+    "customProvider": "✨ مزوّد مخصص",
+    "imageGeneration": "🎨 توليد الصور",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "noModelsSelected": "يرجى إضافة نموذج واحد على الأقل"
+  },
+  "proxy": {
+    "title": "إعدادات البروكسي",
+    "mode": "وضع البروكسي",
+    "selectMode": "اختر وضع البروكسي",
+    "modes": {
+      "none": "بدون بروكسي",
+      "system": "بروكسي النظام",
+      "custom": "بروكسي مخصص"
+    },
+    "enable": "تفعيل البروكسي",
+    "url": "عنوان البروكسي",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "اختبار الاتصال",
+    "testing": "جارٍ الاختبار...",
+    "testSuccess": "نجح اختبار اتصال البروكسي",
+    "testFailed": "فشل اختبار اتصال البروكسي: {{message}}",
+    "testError": "خطأ في اختبار اتصال البروكسي",
+    "status": {
+      "enabled": "مفعّل",
+      "disabled": "معطّل",
+      "misconfigured": "إعداد غير صحيح"
+    }
+  },
+  "comfyui.workflows": "سير العمل",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 توليد صور محلي",
+    "enable": "تفعيل",
+    "debugStatus": "🔍 حالة التصحيح",
+    "status": {
+      "disabled": "معطّل",
+      "running": "قيد التشغيل",
+      "installed": "مثبت (غير قيد التشغيل)",
+      "notInstalled": "غير مثبت",
+      "notRunning": "غير قيد التشغيل",
+      "checking": "جارٍ الفحص..."
+    },
+    "urlDescription": "عنوان خدمة ComfyUI، أدخل العنوان إذا كان مثبتًا بالفعل",
+    "invalidUrl": "يرجى إدخال عنوان URL صالح (مثال: http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI غير مثبت",
+    "notInstalledDescription": "قم بتثبيت ComfyUI لتمكين توليد الصور محليًا باستخدام نماذج Flux",
+    "installButton": "تثبيت ComfyUI",
+    "startButton": "تشغيل ComfyUI",
+    "uninstallButton": "إلغاء تثبيت ComfyUI",
+    "confirmUninstall": "هل أنت متأكد أنك تريد إلغاء تثبيت ComfyUI؟ سيؤدي هذا إلى إزالة ComfyUI بالكامل من نظامك، بما في ذلك جميع النماذج التي تم تنزيلها والإعدادات.",
+    "confirmUninstallButton": "تأكيد إلغاء التثبيت",
+    "uninstallProgress": {
+      "title": "جارٍ إلغاء تثبيت ComfyUI",
+      "preparing": "جارٍ التحضير لإلغاء التثبيت...",
+      "inProgress": "إلغاء التثبيت جارٍ... يرجى الانتظار.",
+      "logTitle": "سجل إلغاء التثبيت:",
+      "completed": "اكتمل إلغاء التثبيت"
+    },
+    "notInstalled": "ComfyUI غير مثبت"
+  },
+  "saveSettings": "حفظ الإعدادات",
+  "close": "إغلاق",
+  "cancel": "إلغاء"
+}

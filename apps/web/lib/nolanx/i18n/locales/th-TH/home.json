@@ -1,0 +1,21 @@
+{
+  "title": "ผู้กำกับเอเจนต์ AI คนแรกของโลก: Nolan",
+  "subtitle": "โปรแกรมเข้าถึงก่อนใคร",
+  "description": "ผู้กำกับเอเจนต์ AI คนแรกของโลก: Nolan",
+  "tabs": {
+    "myCanvases": "แคนวาสของฉัน",
+    "community": "ชุมชน"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan กำลังเตรียมแคนวาสของคุณ…",
+    "communitySessions": "กำลังโหลดเซสชันชุมชน..."
+  },
+  "community": {
+    "loadFailed": "โหลดเซสชันชุมชนไม่สำเร็จ",
+    "canvasNotAvailable": "แคนวาสไม่พร้อมใช้งานสำหรับเซสชันนี้",
+    "likeFailed": "อัปเดตถูกใจไม่สำเร็จ"
+  },
+  "allProjects": "โปรเจกต์ทั้งหมด",
+  "noCanvases": "ยังไม่มีสตอรี่บอร์ด",
+  "newCanvas": "ฉากไม่มีชื่อ"
+}

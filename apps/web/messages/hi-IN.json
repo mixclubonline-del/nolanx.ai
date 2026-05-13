@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "लाइक",
+      "liked": "लाइक किया",
+      "share": "शेयर",
+      "download": "डाउनलोड",
+      "downloading": "डाउनलोड हो रहा है...",
+      "copying": "कॉपी हो रहा है...",
+      "recreate": "पुनः बनाएं"
+    },
+    "aria": {
+      "closeVideo": "वीडियो बंद करें",
+      "goBack": "वापस",
+      "likeVideo": "वीडियो लाइक करें",
+      "unlikeVideo": "लाइक हटाएँ",
+      "shareVideo": "वीडियो शेयर करें",
+      "downloadVideo": "वीडियो डाउनलोड करें",
+      "copyingLink": "लिंक कॉपी हो रहा है...",
+      "downloading": "डाउनलोड हो रहा है..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "लिंक कॉपी हुआ",
+      "videoLinkCopiedMessage": "वीडियो लिंक क्लिपबोर्ड पर कॉपी हो गया",
+      "copyFailedTitle": "कॉपी विफल",
+      "copyFailedMessage": "लिंक कॉपी नहीं हो सका",
+      "shareFailedTitle": "शेयर विफल",
+      "shareFailedMessage": "वीडियो लिंक कॉपी नहीं हो सका",
+      "loginFirst": "कृपया पहले लॉगिन करें",
+      "cannotFollowYourself": "आप खुद को फॉलो नहीं कर सकते",
+      "followed": "फॉलो किया गया",
+      "unfollowed": "अनफॉलो किया गया",
+      "operationFailed": "ऑपरेशन विफल"
+    },
+    "generation": {
+      "generationModel": "जनरेशन मॉडल",
+      "withEffect": "{effect} के साथ",
+      "effectBadge": "इफेक्ट",
+      "prompt": "प्रॉम्प्ट",
+      "referenceImage": "रेफरेंस इमेज",
+      "referenceImageAlt": "वीडियो जनरेशन के लिए रेफरेंस इमेज",
+      "negativePrompt": "नेगेटिव प्रॉम्प्ट",
+      "parameters": "पैरामीटर्स",
+      "guidance": "गाइडेंस",
+      "steps": "स्टेप्स",
+      "seed": "सीड",
+      "ratio": "अनुपात"
+    },
+    "author": {
+      "uploaded": "अपलोड {time}",
+      "profile": "प्रोफ़ाइल",
+      "follow": "फॉलो",
+      "unfollow": "अनफॉलो",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "टिप्पणियाँ",
+      "placeholder": "इस वीडियो के बारे में अपने विचार साझा करें...",
+      "send": "भेजें",
+      "sending": "भेजा जा रहा है...",
+      "empty": "इस क्रिएशन पर सबसे पहले अपनी राय साझा करें!"
+    },
+    "time": {
+      "now": "अभी",
+      "minutesAgo": "{minutes} मिनट पहले",
+      "hoursAgo": "{hours} घंटे पहले",
+      "daysAgo": "{days} दिन पहले"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "क्रेडिट्स"
+    },
+    "earnCreditsCapsule": {
+      "label": "क्रेडिट्स कमाएँ",
+      "aria": {
+        "openRewardCenter": "क्रेडिट्स कमाएँ"
+      },
+      "badge": {
+        "claimed": "क्लेम किया"
+      },
+      "title": {
+        "base": "क्रेडिट्स कमाएँ",
+        "canClaim": "क्रेडिट्स कमाएँ (+{amount})",
+        "claimedToday": "क्रेडिट्स कमाएँ (आज क्लेम किया)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "रिवॉर्ड सेंटर",
+      "subtitle": {
+        "main": "रेफ़र करें और कमाएँ + दैनिक रिवॉर्ड्स",
+        "joined": "देखें कौन जुड़ा है"
+      },
+      "common": {
+        "loading": "लोड हो रहा है..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} क्रेडिट्स"
+      },
+      "actions": {
+        "back": "वापस",
+        "close": "बंद करें",
+        "copy": "कॉपी",
+        "share": "साझा करें",
+        "inviteFriends": "दोस्तों को आमंत्रित करें",
+        "claim": "क्लेम करें",
+        "claiming": "क्लेम हो रहा है...",
+        "claimed": "क्लेम किया"
+      },
+      "aria": {
+        "copyInviteCode": "इनवाइट कोड कॉपी करें",
+        "shareInviteLink": "इनवाइट लिंक शेयर करें"
+      },
+      "labels": {
+        "inviteLink": "इनवाइट लिंक",
+        "inviteCode": "इनवाइट कोड",
+        "invited": "आमंत्रित",
+        "rewarded": "रिवॉर्ड मिला",
+        "pending": "लंबित",
+        "recentInvites": "हाल के आमंत्रण",
+        "recentRewards": "हाल के रिवॉर्ड",
+        "referEarn": "रेफ़र करें और कमाएँ",
+        "dailyRewards": "दैनिक रिवॉर्ड्स",
+        "dailyLogin": "दैनिक लॉगिन",
+        "rewardedProgress": "रिवॉर्ड मिला: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "अभी तक कोई आमंत्रण नहीं।",
+        "noRewards": "अभी तक कोई रिवॉर्ड नहीं।"
+      },
+      "status": {
+        "rewarded": "रिवॉर्ड मिला",
+        "pending": "लंबित",
+        "verified": "सत्यापित"
+      },
+      "share": {
+        "title": "ReelMind इनवाइट",
+        "text": "ReelMind पर मेरे साथ जुड़ें और मुफ्त क्रेडिट्स पाएँ।"
+      },
+      "toast": {
+        "copiedTitle": "कॉपी हुआ",
+        "copiedDescription": "{label} क्लिपबोर्ड पर कॉपी हुआ।",
+        "copyFailedTitle": "कॉपी विफल",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "कृपया मैन्युअली कॉपी करें।",
+        "claimFailedTitle": "क्लेम विफल",
+        "claimedTitle": "क्लेम किया",
+        "claimedDescription": "आपको {amount} क्रेडिट्स मिले।"
+      },
+      "referEarn": {
+        "tipLabel": "आमंत्रित करें और कमाएँ नियम",
+        "tipTitle": "यह कैसे काम करता है",
+        "tipBody1": "अपना इनवाइट लिंक साझा करें। जब कोई नया उपयोगकर्ता आपके कोड से साइन अप करता है और योग्य कार्रवाई पूरी करता है, तो सिस्टम सत्यापन के बाद क्रेडिट्स जारी किए जाते हैं।",
+        "tipBody2": "टियर रिवॉर्ड्स: 1-5 = 50, 6-15 = 100, 16-20 = 200 क्रेडिट्स।",
+        "cardTitle": "दोस्तों को आमंत्रित करके क्रेडिट्स पाएँ",
+        "upTo": "अधिकतम {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "दैनिक लॉगिन नियम",
+        "tipTitle": "दैनिक रिवॉर्ड",
+        "tipBodyPrefix": "रिवॉर्ड शुरू होते हैं",
+        "tipBodyDay2": "दूसरे दिन",
+        "tipBodySuffix": "से और हर UTC दिन रीसेट होते हैं।",
+        "status": {
+          "loading": "स्थिति लोड हो रही है...",
+          "claimed": "क्लेम किया",
+          "readyToClaim": "क्लेम के लिए तैयार",
+          "locked": "लॉक्ड"
+        },
+        "errors": {
+          "alreadyClaimed": "आज पहले ही क्लेम किया जा चुका है।",
+          "notEligible": "अभी क्लेम करने के योग्य नहीं हैं।",
+          "riskBlocked": "रिस्क कंट्रोल के कारण क्लेम ब्लॉक किया गया।",
+          "generic": "कुछ गलत हो गया। कृपया बाद में फिर कोशिश करें।"
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "एक्सप्लोर",
+      "video": "वीडियो",
+      "image": "छवि",
+      "music": "संगीत",
+      "edit": "संपादित करें",
+      "experiment": "प्रयोग"
+    },
+    "special": {
+      "nolan": "नोलन"
+    },
+    "bottom": {
+      "affiliate": "एफ़िलिएट",
+      "contactUs": "संपर्क करें",
+      "blog": "ब्लॉग",
+      "apiPlatform": "API प्लेटफ़ॉर्म"
+    },
+    "badges": {
+      "help": "सहायता",
+      "new": "नया",
+      "free": "मुफ़्त"
+    },
+    "sidebar": {
+      "more": "अधिक",
+      "closeMenu": "मेनू बंद करें",
+      "moreTools": "और टूल्स",
+      "followOnX": "X (Twitter) पर फ़ॉलो करें",
+      "followOnTikTok": "TikTok पर फ़ॉलो करें",
+      "subscribeOnYouTube": "YouTube चैनल सब्सक्राइब करें",
+      "termsOfService": "सेवा की शर्तें",
+      "privacyPolicy": "गोपनीयता नीति"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "विशेषताएं",
+        "models": "मॉडल"
+      },
+      "features": {
+        "createVideo": {
+          "title": "वीडियो बनाएं",
+          "description": "एआई वीडियो बनाएं"
+        },
+        "cinemaStudioVideo": {
+          "title": "सिनेमा स्टूडियो वीडियो",
+          "description": "कैमरा मूवमेंट के साथ प्रो वीडियो"
+        },
+        "mixedMedia": {
+          "title": "मिश्रित मीडिया",
+          "description": "टेक्स्ट, चित्र और वीडियो को मिश्रित करें"
+        },
+        "editVideo": {
+          "title": "वीडियो संपादित करें",
+          "description": "दृश्यों, शॉट्स, तत्वों को संपादित करें"
+        },
+        "clickToAd": {
+          "title": "विज्ञापन के लिए क्लिक करें",
+          "description": "क्लिप को विज्ञापनों में बदलें"
+        },
+        "sora2Trends": {
+          "title": "सोरा 2 रुझान",
+          "description": "रुझान-संचालित वीडियो विचार"
+        },
+        "lipsyncStudio": {
+          "title": "लिपसिंक स्टूडियो",
+          "description": "ऑडियो को चेहरों के साथ सिंक करें"
+        },
+        "drawToVideo": {
+          "title": "वीडियो पर ड्रा करें",
+          "description": "स्केच सिनेमा में बदल जाता है"
+        },
+        "sketchToVideo": {
+          "title": "वीडियो के लिए स्केच",
+          "description": "सोरा 2 के साथ स्केच से लेकर वीडियो तक"
+        },
+        "ugcFactory": {
+          "title": "यूजीसी फैक्टरी",
+          "description": "निर्माता-तैयार सामग्री तेजी से"
+        },
+        "videoUpscale": {
+          "title": "वीडियो अपस्केल",
+          "description": "स्पष्टता के साथ संकल्प बढ़ाएँ"
+        },
+        "higgsfieldAnimate": {
+          "title": "हिग्सफ़ील्ड चेतन",
+          "description": "शैली के साथ चित्रों को चेतन करें"
+        },
+        "recastStudio": {
+          "title": "रीकास्ट स्टूडियो",
+          "description": "अभिनेताओं और शैलियों को पुनः बनाएँ"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "सिनेमाई कैमरा नियंत्रण"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "गतिशील गति नियंत्रण"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "उच्च गुणवत्ता वाले टेक्स्ट-टू-वीडियो"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "सटीक वीडियो संपादन"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "अगली पीढ़ी की वीडियो पीढ़ी"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "यथार्थवादी छायांकन"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "शैलीबद्ध गति और लय"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "तेज़ सिनेमाई वीडियो"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "साफ़ विवरण और टोन"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "अवतार-चालित प्रदर्शन"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "विशेषताएं",
+        "models": "मॉडल"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "छवि बनाएं",
+          "description": "एआई छवियाँ उत्पन्न करें"
+        },
+        "cinemaStudioImage": {
+          "title": "सिनेमा स्टूडियो छवि",
+          "description": "वास्तविक कैमरा और लेंस सिमुलेशन"
+        },
+        "createStoryboard": {
+          "title": "स्टोरीबोर्ड बनाएं",
+          "description": "अपनी कहानी के दृश्य डिज़ाइन करें"
+        },
+        "soulIdCharacter": {
+          "title": "आत्मा आईडी चरित्र",
+          "description": "अद्वितीय चरित्र बनाएँ"
+        },
+        "relight": {
+          "title": "पुनःप्रकाशित करें",
+          "description": "प्रकाश की स्थिति, रंग और चमक को समायोजित करें"
+        },
+        "inpaint": {
+          "title": "इनपेंट",
+          "description": "एक क्षेत्र चुनें, परिवर्तन का वर्णन करें"
+        },
+        "imageUpscale": {
+          "title": "इमेज अपस्केल",
+          "description": "छवि गुणवत्ता बढ़ाएँ"
+        },
+        "faceSwap": {
+          "title": "चेहरे की अदला-बदली",
+          "description": "यथार्थवादी चेहरा स्वैप बनाएं"
+        },
+        "characterSwap": {
+          "title": "चरित्र परिवर्तन",
+          "description": "यथार्थवादी चरित्र स्वैप बनाएं"
+        },
+        "drawToEdit": {
+          "title": "संपादित करने के लिए ड्रा करें",
+          "description": "स्केच से चित्र तक"
+        },
+        "instadump": {
+          "title": "इंस्टाडम्प",
+          "description": "एक सेल्फी को पूर्ण सामग्री लाइब्रेरी में बदलें"
+        },
+        "photodumpStudio": {
+          "title": "फोटोडम्प स्टूडियो",
+          "description": "अपना सौंदर्यबोध उत्पन्न करें"
+        },
+        "fashionFactory": {
+          "title": "फैशन फ़ैक्टरी",
+          "description": "फैशन सेट बनाएं"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "अति-यथार्थवादी फैशन दृश्य"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "स्टोरीबोर्ड, संपादित करें, बनाएं"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "अब तक का सर्वश्रेष्ठ 4K छवि मॉडल"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "अगली पीढ़ी का 4K छवि मॉडल"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "वास्तविक रंग परिशुद्धता प्रतिपादन"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "गति-अनुकूलित विवरण"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "तत्काल जीवंत चित्र"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "फ़ोटोयथार्थवादी, त्वरित-सटीक छवियां"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "यथार्थवादी छवियां"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "उन्नत छवि संपादन मॉडल"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "उच्च-रिज़ॉल्यूशन अपस्केलर"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "सभी",
+        "recommended": "अनुशंसित",
+        "saved": "सहेजे गए"
+      },
+      "labels": {
+        "camera": "कैमरा",
+        "lens": "लेंस",
+        "focalLength": "फोकल लंबाई",
+        "aperture": "अपर्चर"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "सेटअप सहेजें",
+        "removeSetup": "सेटअप हटाएँ",
+        "close": "बंद करें"
+      },
+      "empty": "अभी कोई सेटअप नहीं"
+    },
+    "page": {
+      "title": "प्रयोग",
+      "subtitle": "पहले नए वर्कफ़्लो आज़माएँ",
+      "back": "प्रयोग पर वापस जाएँ"
+    },
+    "menu": {
+      "title": "प्रयोग",
+      "open": "खुला"
+    },
+    "tabs": {
+      "character": "चरित्र",
+      "inpaint": "इनपेंट",
+      "cinemaStudio": "सिनेमा स्टूडियो",
+      "motionControl": "गति नियंत्रण",
+      "assist": "सहायता करें"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "इनपेंट",
+        "description": "किसी क्षेत्र पर पेंट करें और परिवर्तन का वर्णन करें"
+      },
+      "cinemaStudio": {
+        "title": "सिनेमा स्टूडियो",
+        "description": "व्यावसायिक सिनेमाई वर्कफ़्लो"
+      },
+      "motionControl": {
+        "title": "गति नियंत्रण",
+        "description": "संदर्भ वीडियो से मोशन कॉपी करें"
+      },
+      "assist": {
+        "title": "सहायता करें",
+        "description": "प्रेरक और रचनात्मक सहायक उपकरण"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "चरित्र",
+        "subtitle": "चरित्र संगति उपकरण (प्लेसहोल्डर)"
+      },
+      "inpaint": {
+        "title": "इनपेंट",
+        "subtitle": "मीडिया अपलोड करें, एक क्षेत्र चुनें और संपादन का वर्णन करें"
+      },
+      "cinemaStudio": {
+        "title": "सिनेमा स्टूडियो",
+        "subtitle": "कैमरा-अवगत संकेतों के साथ सिनेमाई शॉट्स उत्पन्न करें"
+      },
+      "motionControl": {
+        "title": "गति नियंत्रण",
+        "subtitle": "अपनी छवि के साथ गति पुनः बनाएँ"
+      },
+      "assist": {
+        "title": "सहायता करें",
+        "subtitle": "चैट, युक्तियाँ और शीघ्र उपयोगिताएँ"
+      }
+    },
+    "actions": {
+      "upload": "मीडिया अपलोड करें",
+      "generate": "उत्पन्न करें",
+      "history": "इतिहास",
+      "howItWorks": "यह कैसे काम करता है",
+      "sendMessage": "एक संदेश भेजें...",
+      "tryExample": "एक उदाहरण आज़माएँ",
+      "send": "भेजें"
+    },
+    "placeholders": {
+      "exploreFeatures": "सुविधाओं का अन्वेषण करें",
+      "settings": "सेटिंग्स",
+      "camera": "कैमरा",
+      "cameraHint": "कैमरा व्यवहार चुनें (प्लेसहोल्डर)",
+      "lens": "लेंस",
+      "lensHint": "लेंस विकल्प चुनें (प्लेसहोल्डर)",
+      "image": "छवि",
+      "video": "वीडियो",
+      "scenePrompt": "उस दृश्य का वर्णन करें जिसकी आप कल्पना करते हैं..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "कॉपी करने के लिए गति जोड़ें",
+          "description": "वीडियो अवधि: 3-30 सेकंड"
+        },
+        "addCharacter": {
+          "title": "अपना चरित्र जोड़ें",
+          "description": "दृश्यमान चेहरे और शरीर वाली छवि"
+        }
+      },
+      "quality": {
+        "title": "गुणवत्ता",
+        "value": "720पी"
+      },
+      "advanced": {
+        "title": "उन्नत सेटिंग्स"
+      },
+      "hero": {
+        "title": {
+          "prefix": "कोई भी पुनः बनाएँ",
+          "highlight": "गति",
+          "suffix": "आपकी छवि के साथ"
+        },
+        "subtitle": "किसी भी वीडियो से मोशन कॉपी करें और अपने चरित्र को उसी मूवमेंट में रखें"
+      },
+      "library": {
+        "title": "लाइब्रेरी से गति की प्रतिलिपि बनाकर प्रारंभ करें"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "__ब्रांड_रीलमाइंड__ सहायता",
+        "subtitle": "आपकी जेब में पीएचडी की एक टीम, रचनाकारों के लिए बनाई गई है।"
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "आप क्या कर सकते हैं?",
+          "description": "ReelMind AI सुविधाओं का अन्वेषण करें"
+        },
+        "howToCreate": {
+          "title": "मैं आश्चर्यजनक सामग्री कैसे बना सकता हूँ?",
+          "description": "बेहतर एआई प्रॉम्प्ट लिखने के लिए युक्तियाँ"
+        },
+        "generateSoulImagePrompt": {
+          "title": "सोल इमेज प्रॉम्प्ट उत्पन्न करें",
+          "description": "उच्च सौन्दर्यात्मक छवियों के लिए एक संकेत लिखें"
+        },
+        "generateVideoPrompt": {
+          "title": "वीडियो प्रॉम्प्ट जनरेट करें",
+          "description": "सिनेमाई वीडियो के लिए एक संकेत लिखें"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "चरित्र की एकरूपता",
+          "description": "अपने चरित्र को फ़्रेम में सुसंगत रखें (प्लेसहोल्डर)"
+        },
+        "library": {
+          "title": "चरित्र पुस्तकालय",
+          "description": "कोई सहेजा गया वर्ण चुनें या टेम्प्लेट (प्लेसहोल्डर) से प्रारंभ करें"
+        }
+      },
+      "placeholders": {
+        "preview": "पूर्वावलोकन (प्लेसहोल्डर)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - AI वीडियो बनाने और साझा करने के लिए मुफ़्त क्रिएटर कम्युनिटी",
+      "description": "दुनिया भर के क्रिएटर्स के ट्रेंडिंग क्रिएटिव वीडियो देखें। प्रेरणा, मनोरंजन पाएँ और अपने पसंदीदा को रिमिक्स करें।"
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 अब लाइव है!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "सभी",
+        "latest": "नवीनतम",
+        "hot": "लोकप्रिय"
+      },
+      "tooltip": {
+        "filterByModel": "{model} मॉडल से फ़िल्टर करें"
+      },
+      "aria": {
+        "previous": "पिछली श्रेणियाँ",
+        "next": "अगली श्रेणियाँ"
+      },
+      "error": {
+        "loadFailed": "श्रेणियाँ लोड नहीं हो सकीं"
+      },
+      "actions": {
+        "retry": "फिर प्रयास करें"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "AI वीडियो बनाएँ"
+      },
+      "nolan": {
+        "title": "नोलन",
+        "description": "दुनिया का नंबर 1 AI एजेंट निर्देशक"
+      },
+      "badges": {
+        "models": "मॉडल",
+        "free": "मुफ़्त"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "एक्सप्लोर - ReelMind",
+      "description": "ReelMind पर दुनिया भर के क्रिएटर्स के ट्रेंडिंग क्रिएटिव वीडियो एक्सप्लोर करें।"
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI मॉडल और इफेक्ट्स - ReelMind",
+      "description": "ReelMind प्लेटफ़ॉर्म पर बेहतरीन AI-जनरेटेड वीडियो बनाने के लिए AI वीडियो मॉडल और इफेक्ट्स ब्राउज़ करें और उपयोग करें। हमारे अत्याधुनिक AI मॉडलों का संग्रह एक्सप्लोर करें।"
+    },
+    "page": {
+      "title": "AI मॉडल और इफेक्ट्स",
+      "description": "वीडियो जनरेशन के लिए अत्याधुनिक AI मॉडल और इफेक्ट्स का हमारा संग्रह ब्राउज़ करें",
+      "footerIntro": "वीडियो जनरेशन के लिए हमारे {count} AI मॉडलों का संग्रह देखें।"
+    },
+    "sections": {
+      "models": "मॉडल",
+      "effects": "इफेक्ट्स"
+    },
+    "actions": {
+      "viewAll": "सभी देखें",
+      "viewAllModels": "सभी मॉडल देखें",
+      "backToModels": "मॉडलों पर वापस"
+    },
+    "types": {
+      "allModels": "सभी मॉडल",
+      "textToVideo": "टेक्स्ट से वीडियो",
+      "imageToVideo": "छवि से वीडियो",
+      "videoToVideo": "वीडियो से वीडियो"
+    },
+    "all": {
+      "titleAll": "सभी वीडियो मॉडल",
+      "titleByType": "{type} मॉडल",
+      "description": "वीडियो जनरेशन के लिए AI मॉडलों का हमारा संग्रह ब्राउज़ करें",
+      "countAll": "({count} मॉडल)",
+      "countByType": "({count} {type} मॉडल)",
+      "loadingMore": "और मॉडल लोड हो रहे हैं...",
+      "loadMore": "और मॉडल लोड करें",
+      "end": "आप अंत तक पहुँच गए! सभी मॉडल लोड हो गए।",
+      "empty": "आपके मानदंडों से मेल खाने वाले मॉडल नहीं मिले।"
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "चेकपॉइंट",
+        "lora": "लोरा"
+      },
+      "supportedFeatures": "समर्थित फीचर्स",
+      "metaTitle": "{name} - AI मॉडल | ReelMind",
+      "metaDescriptionFallback": "ReelMind पर वीडियो जनरेशन के लिए {name} मॉडल एक्सप्लोर करें।",
+      "metaErrorTitle": "मॉडल विवरण | ReelMind",
+      "metaErrorDescription": "ReelMind पर वीडियो जनरेशन के लिए AI मॉडल एक्सप्लोर करें।"
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI इफेक्ट्स - ReelMind",
+      "description": "ReelMind प्लेटफ़ॉर्म पर अपने AI-जनरेटेड वीडियो को बेहतर बनाने के लिए AI वीडियो इफेक्ट्स ब्राउज़ करें और उपयोग करें।"
+    },
+    "page": {
+      "title": "AI इफेक्ट्स",
+      "description": "अपने वीडियो को बेहतर बनाने के लिए AI इफेक्ट्स का हमारा संग्रह ब्राउज़ करें"
+    },
+    "all": {
+      "title": "सभी AI इफेक्ट्स",
+      "description": "अपने वीडियो को बेहतर बनाने के लिए AI इफेक्ट्स का पूरा संग्रह ब्राउज़ करें"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "इफेक्ट्स पर वापस",
+        "goBack": "वापस जाएँ",
+        "applyThisEffect": "यह इफेक्ट लागू करें"
+      },
+      "badge": "इफेक्ट",
+      "addedOn": "{date} को जोड़ा गया",
+      "errors": {
+        "notFound": "इफेक्ट नहीं मिला",
+        "loadFailed": "इफेक्ट विवरण लोड नहीं हो सका"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "AI वीडियो बनाएँ - ReelMind",
+      "description": "ReelMind प्लेटफ़ॉर्म पर हमारे शक्तिशाली AI मॉडल और टूल्स का उपयोग करके शानदार AI-जनरेटेड वीडियो बनाएँ।"
+    },
+    "loading": "लोड हो रहा है...",
+    "loadingMobile": "मोबाइल व्यू लोड हो रहा है...",
+    "loadingControlPanel": "कंट्रोल पैनल लोड हो रहा है...",
+    "controlPanel": {
+      "modelAndSettings": "मॉडल और सेटिंग्स",
+      "history": "इतिहास",
+      "model": "मॉडल",
+      "selectModel": "मॉडल चुनें"
+    },
+    "mobile": {
+      "backToCreate": "क्रिएट पर वापस"
+    },
+    "modelSelector": {
+      "loadingModels": "मॉडल लोड हो रहे हैं...",
+      "moreModels": "{count} और मॉडल",
+      "exploreMoreModels": "{count} और मॉडल एक्सप्लोर करें"
+    },
+    "promptInput": {
+      "title": "प्रॉम्प्ट",
+      "placeholder": "बताएँ आप क्या बनाना चाहते हैं...",
+      "enhance": "बेहतर करें",
+      "undo": "पूर्ववत करें",
+      "restoreOriginalPromptTitle": "मूल प्रॉम्प्ट बहाल करें",
+      "toastEnhanced": "प्रॉम्प्ट बेहतर किया गया",
+      "toastRestored": "मूल प्रॉम्प्ट बहाल किया गया",
+      "enhanceFailed": "प्रॉम्प्ट बेहतर नहीं हो सका",
+      "sensitiveError": "संवेदनशील कीवर्ड मिला: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "छवि",
+      "mentionVideoTokenPrefix": "वीडियो",
+      "mentionAudioTokenPrefix": "ऑडियो"
+    },
+    "referenceUploader": {
+      "addOptional": "वैकल्पिक संदर्भ जोड़ें",
+      "referenceImage": "संदर्भ छवि",
+      "referenceImages": "संदर्भ छवियाँ ({current}/{max})",
+      "referenceVideo": "संदर्भ वीडियो",
+      "dropImage": "यहाँ छवि छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "dropImageMax": "यहाँ अधिकतम {max} छवियाँ छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "dropVideo": "यहाँ वीडियो छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "pasteHint": "पेस्ट",
+      "videoUploaded": "वीडियो अपलोड हो गया",
+      "uploading": "अपलोड हो रहा है...",
+      "addMore": "और जोड़ें",
+      "removeReference": "हटाएँ",
+      "referenceImageAlt": "संदर्भ छवि {index}",
+      "supportedFormats": "समर्थित: PNG, JPG",
+      "minimumSize": "न्यूनतम {minWidth}×{minHeight}, आस्पेक्ट रेशियो {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} अपलोड हो रहा है...",
+      "processingFile": "फ़ाइल प्रोसेस हो रही है...",
+      "uploadReference": "संदर्भ {type} अपलोड करें",
+      "image": "छवि",
+      "video": "वीडियो",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "आस्पेक्ट रेशियो",
+      "duration": "अवधि",
+      "seconds": "{seconds}से",
+      "resolution": "रेज़ोल्यूशन",
+      "audio": "ऑडियो",
+      "on": "चालू",
+      "off": "बंद",
+      "advanced": "एडवांस्ड",
+      "advancedShort": "एडवांस्ड",
+      "creativityLevel": "रचनात्मकता",
+      "moreAccurate": "अधिक सटीक",
+      "moreCreative": "अधिक रचनात्मक",
+      "samplingSteps": "सैम्पलिंग स्टेप्स",
+      "faster": "तेज़ ({steps} स्टेप्स)",
+      "higherQuality": "उच्च गुणवत्ता ({steps} स्टेप्स)",
+      "randomSeed": "रैंडम सीड",
+      "seedPlaceholder": "सीड दर्ज करें",
+      "generateRandomSeed": "रैंडम सीड जनरेट करें",
+      "seedHint": "दोहराए जा सकने वाले परिणामों के लिए स्थिर सीड का उपयोग करें।",
+      "movementAmplitude": "मूवमेंट",
+      "movementAmplitudeHint": "मूवमेंट की तीव्रता नियंत्रित करता है।",
+      "backgroundMusic": "बैकग्राउंड म्यूज़िक",
+      "backgroundMusicHint": "समर्थित होने पर बैकग्राउंड म्यूज़िक जोड़ता है।",
+      "enabled": "सक्षम",
+      "disabled": "अक्षम",
+      "negativePrompt": "नेगेटिव प्रॉम्प्ट",
+      "negativePromptPlaceholder": "क्या न हो..."
+    },
+    "startToEndUploader": {
+      "title": "स्टार्ट-टू-एंड फ्रेम्स",
+      "startFrame": "स्टार्ट फ्रेम",
+      "endFrame": "एंड फ्रेम",
+      "dropStartImage": "स्टार्ट छवि छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "dropEndImage": "एंड छवि छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "startFrameImageAlt": "स्टार्ट फ्रेम",
+      "endFrameImageAlt": "एंड फ्रेम",
+      "uploading": "अपलोड हो रहा है...",
+      "instructions": "ट्रांज़िशन गाइड करने के लिए स्टार्ट और एंड छवियाँ अपलोड करें।",
+      "supportedFormats": "समर्थित: PNG, JPG",
+      "minimumSize": "न्यूनतम {minWidth}×{minHeight}, आस्पेक्ट रेशियो {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "ज़रूरत पड़ने पर छवियाँ अपने आप कंप्रेस होंगी।"
+    },
+    "modelTabs": {
+      "imageToVideo": "छवि से वीडियो",
+      "textToVideo": "टेक्स्ट से वीडियो",
+      "firstLastFrame": "फर्स्ट-लास्ट फ्रेम",
+      "edit": "संपादित करें",
+      "effect": "इफेक्ट"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "संदर्भ वीडियो",
+      "required": "आवश्यक",
+      "removeVideo": "वीडियो हटाएँ",
+      "uploading": "अपलोड हो रहा है...",
+      "dropVideo": "यहां एक वीडियो छोड़ें या अपलोड करने के लिए क्लिक करें",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "तत्व",
+      "optional": "वैकल्पिक ({current}/{max})",
+      "addElements": "जोड़ें",
+      "elementAlt": "तत्व {index}",
+      "removeElement": "तत्व {index} हटाएं",
+      "dropElements": "तत्व छवियाँ जोड़ने के लिए क्लिक करें",
+      "elementsHint": "पात्रों/शैली को संरक्षित करने के लिए वैकल्पिक छवियां।",
+      "errors": {
+        "invalidVideoTitle": "अमान्य वीडियो",
+        "invalidVideoDescription": "कृपया एक वीडियो फ़ाइल चुनें.",
+        "videoTooLargeTitle": "वीडियो बहुत बड़ा है",
+        "videoTooLargeDescription": "अधिकतम {maxMb}MB. कृपया एक छोटी/छोटी क्लिप अपलोड करें।",
+        "uploadFailedTitle": "अपलोड विफल रहा",
+        "elementsLimitTitle": "तत्वों की सीमा पूरी हो गई",
+        "elementsLimitDescription": "आप अधिकतम {max} छवियाँ जोड़ सकते हैं।",
+        "imageTooSmall": "छवि कम से कम {minWidth}×{minHeight} (वर्तमान: {width}×{height}) होनी चाहिए।",
+        "imageBadRatio": "छवि पहलू अनुपात {minAspectRatio} और {maxAspectRatio} (वर्तमान: {current}) के बीच होना चाहिए।"
+      },
+      "warnings": {
+        "someSkippedTitle": "कुछ फ़ाइलें छोड़ दी गईं",
+        "someSkippedDescription": "{count} फ़ाइलें सीमाओं के कारण छोड़ दी गईं।",
+        "skippedTitle": "छोड़ दिया गया",
+        "skippedNonImage": "तत्वों के लिए केवल छवियों की अनुमति है।",
+        "imageCompressedTitle": "छवि संपीड़ित",
+        "imageCompressedDescription": "{original} से {final} तक संपीड़ित।",
+        "skippedInvalidImage": "अमान्य छवि."
+      }
+    },
+    "howItWorks": {
+      "title": "यह कैसे काम करता है",
+      "hero": {
+        "title": "एक क्लिक में वीडियो बनाएं",
+        "subtitle": "कैमरा नियंत्रण, फ़्रेमिंग और वीएफएक्स के लिए प्रीसेट का उपयोग करें - या संकेतों के साथ पूरी तरह से मैन्युअल हो जाएं।"
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "छवि जोड़ें",
+          "2": "प्रीसेट चुनें",
+          "3": "वीडियो प्राप्त करें"
+        },
+        "t2v": {
+          "1": "शीघ्र लिखें",
+          "2": "मॉडल चुनें",
+          "3": "वीडियो प्राप्त करें"
+        },
+        "flf": {
+          "1": "फ़्रेम जोड़ें",
+          "2": "संक्रमण का वर्णन करें",
+          "3": "वीडियो प्राप्त करें"
+        },
+        "edit": {
+          "1": "वीडियो जोड़ें",
+          "2": "तत्व जोड़ें",
+          "3": "वीडियो प्राप्त करें"
+        }
+      },
+      "modes": {
+        "edit": "संपादित करें (वीडियो-से-वीडियो)",
+        "flf": "पहला-आखिरी फ़्रेम",
+        "i2v": "छवि-से-वीडियो",
+        "t2v": "टेक्स्ट-टू-वीडियो"
+      },
+      "steps": {
+        "edit": {
+          "1": "एक संक्षिप्त संदर्भ वीडियो अपलोड करें.",
+          "2": "वर्णों/शैली को सुसंगत बनाए रखने के लिए वैकल्पिक रूप से अधिकतम 4 तत्व छवियां जोड़ें।",
+          "3": "बताएं कि प्रॉम्प्ट में क्या बदलना है (और क्या रखना है), फिर जनरेट करें।"
+        },
+        "flf": {
+          "1": "एक प्रारंभ फ़्रेम और एक अंतिम फ़्रेम अपलोड करें.",
+          "2": "आप जो परिवर्तन चाहते हैं उसका वर्णन करें.",
+          "3": "एक सहज परिवर्तन बनाने के लिए उत्पन्न करें।"
+        },
+        "i2v": {
+          "1": "एक संदर्भ छवि अपलोड करें.",
+          "2": "गति, कैमरा और शैली का वर्णन करें।",
+          "3": "अनुपात/अवधि चुनें और उत्पन्न करें।"
+        },
+        "t2v": {
+          "1": "अपने दृश्य (विषय, कैमरा, प्रकाश व्यवस्था, शैली) का वर्णन करें।",
+          "2": "अनुपात/अवधि चुनें और वैकल्पिक रूप से एक नकारात्मक संकेत जोड़ें।",
+          "3": "छोटे बदलावों के साथ उत्पन्न करें और पुनरावृत्त करें।"
+        }
+      },
+      "tip": "युक्ति: विशिष्ट बनें. मॉडल को बताएं कि क्या समान रहना चाहिए (पहचान, लोगो, संरचना)।",
+      "templates": {
+        "title": "प्रीसेट",
+        "subtitle": "एक क्लासिक प्रीसेट चुनें और तेजी से जेनरेट करें।",
+        "use": "उपयोग करें",
+        "clear": "स्पष्ट",
+        "prev": "पिछला प्रीसेट",
+        "next": "अगला प्रीसेट",
+        "edit": {
+          "relight": {
+            "title": "आनंद और वातावरण",
+            "description": "दिन का समय और सिनेमाई प्रकाश व्यवस्था बदलें।"
+          },
+          "grade": {
+            "title": "सिनेमाई ग्रेड",
+            "description": "चैती-नारंगी ग्रेड + फिल्म अनाज, गति और पहचान बनाए रखें।"
+          },
+          "weather": {
+            "title": "मौसम परिवर्तन",
+            "description": "पहचान रखते हुए बारिश/कोहरा जोड़ें।"
+          },
+          "anime": {
+            "title": "एनीमे रीस्टाइल",
+            "description": "पहचान और गति को संरक्षित करते हुए एनीमे लुक।"
+          },
+          "background": {
+            "title": "पृष्ठभूमि बदलें",
+            "description": "विषय रखते समय पृष्ठभूमि बदलें।"
+          },
+          "lux": {
+            "title": "प्रीमियम पॉलिश",
+            "description": "अधिक स्वच्छ, सहज, अधिक प्रीमियम व्यावसायिक अनुभव।"
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "दिन → रात",
+            "description": "सुसंगत फ़्रेमिंग के साथ चिकनी रोशनी/समय परिवर्तन।"
+          },
+          "sketchToRender": {
+            "title": "स्केच → प्रस्तुत करना",
+            "description": "स्केच से अंतिम रेंडर तक विवरण धीरे-धीरे प्रकट करें।"
+          },
+          "beforeAfter": {
+            "title": "प्रकटीकरण से पहले/बाद में",
+            "description": "सूक्ष्म गति के साथ सुस्वादु परिवर्तन."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "पोर्ट्रेट जीवन",
+            "description": "धीमी गति से पुश-इन के साथ पलक + सूक्ष्म गति।"
+          },
+          "pan": {
+            "title": "लंबन पैन",
+            "description": "गहराई और मोशन ब्लर के साथ सिनेमैटिक पैन।"
+          },
+          "product": {
+            "title": "उत्पाद स्पिन",
+            "description": "चमकदार हाइलाइट्स के साथ स्टूडियो उत्पाद लुक।"
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8s प्रीमियम विज्ञापन",
+            "description": "एक साफ-सुथरा, उच्च स्तरीय व्यावसायिक शॉट।"
+          },
+          "establish": {
+            "title": "शॉट स्थापित करना",
+            "description": "किसी विश्व/दृश्य के लिए विस्तृत सिनेमाई परिचय।"
+          },
+          "anime": {
+            "title": "एनीमे ओपनिंग",
+            "description": "शैलीबद्ध एनीमे ओपनिंग-स्टाइल शॉट।"
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "छवि-से-वीडियो के लिए संदर्भ छवि आवश्यक है।",
+        "i2vDescription": "कृपया एक संदर्भ छवि अपलोड करें, या टेक्स्ट-से-वीडियो मॉडल पर स्विच करें।",
+        "v2vTitle": "वीडियो-से-वीडियो के लिए संदर्भ वीडियो आवश्यक है।",
+        "v2vDescription": "कृपया एक संदर्भ वीडियो अपलोड करें, या टेक्स्ट-से-वीडियो मॉडल पर स्विच करें।"
+      },
+      "costLabel": "लागत:",
+      "balanceLabel": "बैलेंस:",
+      "freeUnlimited": "मुफ़्त (Unlimited)",
+      "credits": "क्रेडिट्स",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast एक Luxury मॉडल है और Unlimited मुफ़्त उपयोग में शामिल नहीं है। अतिरिक्त भुगतान आवश्यक है।",
+        "veo31": "VEO 3.1 एक Luxury मॉडल है और Unlimited मुफ़्त उपयोग में शामिल नहीं है। अतिरिक्त भुगतान आवश्यक है।",
+        "veo3": "VEO3 एक Luxury मॉडल है और Unlimited मुफ़्त उपयोग में शामिल नहीं है। अतिरिक्त भुगतान आवश्यक है।",
+        "sora2Pro": "Sora-2 Pro एक Luxury मॉडल है और Unlimited मुफ़्त उपयोग में शामिल नहीं है। अतिरिक्त भुगतान आवश्यक है।"
+      },
+      "gettingCredits": "क्रेडिट्स प्राप्त किए जा रहे हैं...",
+      "getBonusCredits": "{amount} क्रेडिट्स पाएँ",
+      "submitting": "सबमिट हो रहा है...",
+      "loadingModels": "मॉडल लोड हो रहे हैं...",
+      "uploadingAsset": "एसेट अपलोड हो रहा है...",
+      "uploadingImages": "छवियाँ अपलोड हो रही हैं...",
+      "claimingCredits": "क्रेडिट्स क्लेम हो रहे हैं...",
+      "getMoreCredits": "और क्रेडिट्स लें",
+      "generateVideo": "वीडियो जनरेट करें"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "पब्लिश नहीं हो सका",
+        "missingTitleDescription": "कृपया अपने वीडियो के लिए शीर्षक दर्ज करें",
+        "processingTitle": "प्रोसेस हो रहा है",
+        "processingDescription": "आपके वीडियो को पब्लिश करने की तैयारी हो रही है...",
+        "successTitle": "सफलतापूर्वक पब्लिश हुआ",
+        "successDescription": "आपका वीडियो कम्युनिटी में साझा किया गया",
+        "failedTitle": "पब्लिश नहीं हो सका",
+        "failedDescription": "कृपया नेटवर्क कनेक्शन जाँचें या बाद में फिर कोशिश करें"
+      },
+      "successTitle": "सफलतापूर्वक पब्लिश हुआ!",
+      "successDescription": "आपकी शानदार क्रिएशन अब कम्युनिटी में लाइव है",
+      "publishingTitle": "पब्लिश हो रहा है...",
+      "publishingDescriptionDesktop": "हम आपके वीडियो को कम्युनिटी के लिए तैयार कर रहे हैं...",
+      "publishingDescriptionMobile": "आपका वीडियो तैयार हो रहा है...",
+      "progressComplete": "{progress}% पूरा",
+      "title": "कम्युनिटी में साझा करें",
+      "description": "अपनी शानदार क्रिएशन दुनिया के साथ साझा करें",
+      "benefits": {
+        "getLikes": "लाइक्स पाएँ",
+        "buildCommunityLong": "कम्युनिटी बनाएँ",
+        "buildCommunityShort": "कम्युनिटी",
+        "inspireLong": "दूसरों को प्रेरित करें",
+        "inspireShort": "प्रेरित करें",
+        "earnLong": "+{amount} क्रेडिट्स कमाएँ",
+        "earnShort": "+{amount} क्रेडिट्स"
+      },
+      "videoTitle": "वीडियो शीर्षक",
+      "videoTitlePlaceholder": "अपनी क्रिएशन को एक आकर्षक शीर्षक दें...",
+      "videoTitleHelperDesktop": "एक बेहतरीन शीर्षक अधिक दर्शकों को आकर्षित करता है",
+      "videoTitleHelperMobile": "अच्छे शीर्षक दर्शकों को आकर्षित करते हैं",
+      "descriptionLabel": "विवरण",
+      "optional": "वैकल्पिक",
+      "descriptionPlaceholder": "कम्युनिटी को अपनी क्रिएशन के बारे में बताएँ...",
+      "descriptionHelper": "अपनी क्रिएटिव प्रक्रिया साझा करें",
+      "cancel": "रद्द करें",
+      "publish": "पब्लिश करें"
+    },
+    "history": {
+      "title": "इतिहास",
+      "refresh": "ताज़ा करें",
+      "view": {
+        "one": "1 प्रति पंक्ति",
+        "three": "प्रति पंक्ति 3",
+        "nine": "9 प्रति पंक्ति"
+      },
+      "filterPlaceholder": "फ़िल्टर",
+      "empty": "{status} टास्क नहीं मिले",
+      "status": {
+        "all": "सभी",
+        "pending": "लंबित",
+        "queued": "क्यू में",
+        "processing": "प्रोसेसिंग",
+        "completed": "पूर्ण",
+        "failed": "विफल",
+        "canceled": "रद्द"
+      }
+    },
+    "effectSelector": {
+      "loading": "इफेक्ट्स लोड हो रहे हैं...",
+      "defaultDescription": "अपने वीडियो पर विशेष इफेक्ट्स लागू करें",
+      "ctaTitle": "एक इफेक्ट चुनें",
+      "ctaDescription": "वीडियो इफेक्ट चुनने के लिए क्लिक करें",
+      "modalTitle": "इफेक्ट चुनें",
+      "close": "इफेक्ट सेलेक्टर बंद करें"
+    },
+    "modelSelectorModal": {
+      "title": "मॉडल चुनें",
+      "description": "अपने प्रोजेक्ट के लिए एक मॉडल चुनें",
+      "close": "मॉडल सेलेक्टर बंद करें",
+      "loadingMore": "और मॉडल लोड हो रहे हैं...",
+      "allLoaded": "सभी मॉडल लोड हो गए",
+      "noModelsFound": "कोई मॉडल नहीं मिला"
+    },
+    "modelSearch": {
+      "placeholder": "नाम, प्रकार या फीचर्स के आधार पर मॉडल खोजें...",
+      "clear": "खोज साफ़ करें",
+      "searching": "खोज हो रही है...",
+      "foundModels": "{count} मॉडल मिले",
+      "modelsAvailable": "{count} मॉडल उपलब्ध"
+    },
+    "modelTypeFilter": {
+      "title": "मॉडल प्रकार",
+      "clear": "साफ़ करें"
+    },
+    "remixLoader": {
+      "successTitle": "रिमिक्स टास्क लोड हुआ",
+      "successDescription": "मूल टास्क से वीडियो पैरामीटर लोड हो गए हैं, आप सीधे जनरेट कर सकते हैं या पैरामीटर बदल सकते हैं।",
+      "errorTitle": "पैरामीटर लोड नहीं हो सके",
+      "errorDescription": "मूल टास्क से पैरामीटर लोड नहीं हो सके, कृपया मैन्युअली सेट करें।"
+    },
+    "modelCard": {
+      "select": "चुनें",
+      "credits": "क्रेडिट्स",
+      "premium": "प्रीमियम",
+      "luxury": "लक्ज़री"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind चयनित",
+      "hot": "लोकप्रिय",
+      "new": "नया",
+      "select": "चुनें"
+    },
+    "previewPanel": {
+      "generating": "जनरेट हो रहा है...",
+      "download": "डाउनलोड",
+      "downloading": "डाउनलोड हो रहा है...",
+      "shareToCommunity": "पब्लिश",
+      "tips": "टिप: पब्लिश करके क्रेडिट्स कमाएँ",
+      "quality": "गुणवत्ता",
+      "qualityHd": "एच.डी",
+      "qualityStandard": "स्टैंडर्ड",
+      "ratio": "अनुपात",
+      "fullscreen": {
+        "enter": "फुलस्क्रीन",
+        "exit": "फुलस्क्रीन से बाहर"
+      },
+      "empty": {
+        "title": "अभी कोई प्रीव्यू नहीं",
+        "description": "यहाँ प्रीव्यू देखने के लिए एक वीडियो जनरेट करें।"
+      },
+      "queue": {
+        "loading": "क्यू जानकारी लोड हो रही है...",
+        "headerProcessing": "प्रोसेसिंग",
+        "headerQueueStatus": "क्यू स्थिति",
+        "badgePosition": "स्थिति: {position} / {total}",
+        "badgeProcessing": "प्रोसेसिंग",
+        "tasksInQueue": "क्यू में टास्क",
+        "estimatedWait": "अनुमानित प्रतीक्षा",
+        "elapsedTime": "बीता समय",
+        "remainingTime": "शेष समय",
+        "startTime": "अनुमानित शुरुआत",
+        "completionTime": "अनुमानित पूर्णता"
+      },
+      "time": {
+        "calculating": "गणना हो रही है...",
+        "justNow": "अभी-अभी",
+        "lessThanMinute": "एक मिनट से कम में",
+        "inMinutes": "{minutes, plural, one {# मिनट} other {# मिनट}} में",
+        "inHours": "{hours, plural, one {# घंटा} other {# घंटे}} में",
+        "inDays": "{days, plural, one {# दिन} other {# दिन}} में",
+        "seconds": "{seconds, plural, one {# सेकंड} other {# सेकंड}}",
+        "minutesSeconds": "{minutes, plural, one {# मिनट} other {# मिनट}} {seconds, plural, one {# सेकंड} other {# सेकंड}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "वीडियो लोड हो रहा है...",
+      "notFound": "वीडियो नहीं मिला",
+      "notFoundDescription": "मांगा गया वीडियो नहीं मिला या फिलहाल उपलब्ध नहीं है।",
+      "detailsTitle": "विवरण",
+      "videoInfoTitle": "वीडियो जानकारी",
+      "advancedTitle": "एडवांस्ड",
+      "referenceImagesTitle": "संदर्भ छवियाँ",
+      "startFrameAlt": "स्टार्ट फ्रेम",
+      "endFrameAlt": "एंड फ्रेम",
+      "endFrameLabel": "एंड फ्रेम",
+      "creationDate": "निर्माण तिथि",
+      "fields": {
+        "model": "मॉडल",
+        "generationType": "जनरेशन प्रकार",
+        "resolution": "रेज़ोल्यूशन",
+        "aspectRatio": "आस्पेक्ट रेशियो",
+        "duration": "अवधि",
+        "creativityLevel": "रचनात्मकता",
+        "effect": "इफेक्ट",
+        "samplingSteps": "सैम्पलिंग स्टेप्स",
+        "randomSeed": "रैंडम सीड",
+        "movementAmplitude": "मूवमेंट एम्प्लिट्यूड",
+        "backgroundMusic": "बैकग्राउंड म्यूज़िक",
+        "negativePrompt": "नेगेटिव प्रॉम्प्ट"
+      },
+      "actions": {
+        "close": "बंद करें",
+        "closeModalTitle": "मॉडल बंद करें",
+        "remix": "रिमिक्स",
+        "remixTitle": "इन पैरामीटर के साथ रिमिक्स करें",
+        "download": "डाउनलोड",
+        "downloadTitle": "यह वीडियो डाउनलोड करें",
+        "downloading": "डाउनलोड हो रहा है...",
+        "shareTitle": "यह वीडियो साझा करें"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "टास्क हटाएँ",
+      "description": "यह कार्रवाई वापस नहीं ली जा सकती",
+      "cancel": "रद्द करें",
+      "confirm": "हटाएँ",
+      "deleting": "हटाया जा रहा है..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "संदर्भ छवि"
+      },
+      "pending": {
+        "pending": "लंबित...",
+        "queued": "क्यू में...",
+        "waitingInQueue": "क्यू में प्रतीक्षा..."
+      },
+      "processing": {
+        "phase1": "चरण 1",
+        "phase2": "चरण 2",
+        "phase3": "चरण 3",
+        "final": "अंतिम",
+        "initializing": "प्रक्रिया प्रारंभ हो रही है",
+        "processing": "कंटेंट प्रोसेस हो रहा है",
+        "rendering": "आउटपुट रेंडर हो रहा है",
+        "finalizing": "अंतिम रूप दिया जा रहा है",
+        "stuckMessage": "यह टास्क अटक गया लगता है। आप इसे हटा सकते हैं।",
+        "deleteTitle": "यह टास्क हटाएँ",
+        "deleteAria": "हटाएँ"
+      },
+      "failed": {
+        "title": "जनरेशन विफल",
+        "tryAgain": "फिर प्रयास करें",
+        "tryAgainTitle": "इसी प्रॉम्प्ट के साथ फिर प्रयास करें",
+        "deleteTitle": "यह टास्क हटाएँ"
+      },
+      "completed": {
+        "recreateDesktop": "फिर बनाएँ",
+        "remixMobile": "रिमिक्स",
+        "remixTitle": "इसी प्रॉम्प्ट से नया वीडियो बनाएँ",
+        "publish": "पब्लिश",
+        "publishTitle": "कम्युनिटी में पब्लिश करें और {amount} क्रेडिट्स कमाएँ",
+        "creditsBonusDesktop": "{amount} क्रेडिट्स बोनस",
+        "creditsBonusMobile": "+{amount}",
+        "share": "साझा करें",
+        "shareTitle": "यह वीडियो साझा करें",
+        "downloadTitle": "यह वीडियो डाउनलोड करें",
+        "downloading": "डाउनलोड हो रहा है...",
+        "deleteTitle": "यह टास्क हटाएँ"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "लेगो - __ब्रांड_रीलमाइंड__",
+      "description": "ReelMind पर Lego वर्कफ़्लो के साथ वीडियो बनाएँ और रिमिक्स करें।"
+    },
+    "mobile": {
+      "backToBuilder": "बिल्डर पर वापस",
+      "history": "इतिहास"
+    },
+    "badges": {
+      "new": "नया"
+    },
+    "actions": {
+      "delete": "हटाएँ",
+      "select": "चुनें",
+      "selected": "चुना गया",
+      "download": "डाउनलोड",
+      "downloading": "डाउनलोड हो रहा है...",
+      "deleting": "हटाया जा रहा है...",
+      "share": "साझा करें",
+      "close": "बंद करें"
+    },
+    "status": {
+      "pending": "लंबित",
+      "processing": "प्रोसेसिंग",
+      "failed": "विफल",
+      "completed": "पूर्ण",
+      "generating": "जनरेट हो रहा है",
+      "cancelled": "रद्द"
+    },
+    "deleteConfirmDialog": {
+      "title": "टास्क हटाएँ",
+      "description": "यह कार्रवाई वापस नहीं ली जा सकती",
+      "cancel": "रद्द करें",
+      "confirm": "हटाएँ",
+      "deleting": "हटाया जा रहा है..."
+    },
+    "imageViewer": {
+      "close": "बंद करें",
+      "previous": "पिछला",
+      "next": "अगला",
+      "view": "{index} देखें"
+    },
+    "historyList": {
+      "title": "Lego AI इमेज जनरेटर",
+      "generatingFirstImage": "आपकी पहली छवि जनरेट हो रही है...",
+      "loadFailed": "इतिहास लोड नहीं हो सका। कृपया फिर प्रयास करें।",
+      "emptyDescription": "अपना आइडिया बताकर और AI को गाइड करने के लिए संसाधन जोड़कर शानदार छवियाँ बनाएँ",
+      "loadingMore": "इतिहास छवियाँ लोड हो रही हैं...",
+      "scrollForMore": "और देखने के लिए स्क्रॉल करें...",
+      "allLoaded": "सभी {count} छवियाँ लोड हो गईं"
+    },
+    "sidebar": {
+      "addCard": "नया कार्ड जोड़ें",
+      "expand": "साइडबार फैलाएँ",
+      "sections": {
+        "theme": "थीम",
+        "scene": "सीन",
+        "style": "स्टाइल"
+      }
+    },
+    "card": {
+      "placeholder": "{section} का वर्णन करें...",
+      "imageAlt": "{section} संदर्भ",
+      "options": {
+        "image": "छवि",
+        "text": "टेक्स्ट"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "संदर्भ {index}",
+      "errors": {
+        "invalidType": "कृपया एक छवि फ़ाइल चुनें",
+        "tooLarge": "छवि का आकार {maxSizeMb}MB से अधिक नहीं हो सकता",
+        "uploadFailed": "छवि अपलोड नहीं हो सकी। कृपया फिर प्रयास करें।"
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "नीचे तक स्क्रॉल करें",
+      "collapsedPlaceholder": "अपनी छवि का वर्णन करें...",
+      "close": "बंद करें"
+    },
+    "resultPreview": {
+      "previewTitle": "प्रीव्यू",
+      "previewDescription": "आपकी जनरेट की गई छवि यहाँ दिखाई देगी",
+      "generatedImageAlt": "जनरेट की गई छवि",
+      "emptyPlaceholder": "आपकी क्रिएशन यहाँ दिखाई देगी",
+      "dialogTitle": "आपकी बनाई हुई छवि",
+      "dialogDescription": "यहाँ वह छवि है जो हमने आपके वर्णन और संसाधनों के आधार पर बनाई"
+    },
+    "resourceUploader": {
+      "uploadImage": "छवि अपलोड करें",
+      "imageFallbackAlt": "छवि",
+      "imageFallbackLabel": "छवि",
+      "removeImage": "{title} हटाएँ"
+    },
+    "controlPanel": {
+      "showSidebar": "साइडबार दिखाएँ",
+      "hideSidebar": "साइडबार छिपाएँ",
+      "hideSidebarShort": "साइडबार छिपाएँ",
+      "addImage": "छवि जोड़ें",
+      "addImageWithLimit": "छवि जोड़ें ({current}/{max})",
+      "promptPlaceholder": "अपनी छवि बनाएँ या संपादित करें...",
+      "model": "मॉडल",
+      "selectModel": "मॉडल चुनें",
+      "loading": "लोड हो रहा है...",
+      "loadingModels": "मॉडल लोड हो रहे हैं...",
+      "noModelsAvailable": "कोई मॉडल उपलब्ध नहीं",
+      "noModelsMatchFilters": "आपके फ़िल्टर से कोई मॉडल मेल नहीं खाता",
+      "modelLabel": "मॉडल: {name}",
+      "aspectRatio": "आस्पेक्ट रेशियो",
+      "ratioLabel": "अनुपात: {value}",
+      "imagesLabel": "छवियाँ: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 एक ही छवि आउटपुट करता है",
+        "hint": "जनरेट करने वाली छवियों की संख्या",
+        "numberOfImages": "छवियों की संख्या"
+      },
+      "advanced": {
+        "aria": "एडवांस्ड सेटिंग्स",
+        "label": "एडवांस्ड",
+        "title": "एडवांस्ड सेटिंग्स",
+        "negativePrompt": {
+          "label": "नेगेटिव प्रॉम्प्ट",
+          "placeholder": "ऐसे तत्व जिन्हें आप बाहर रखना चाहते हैं...",
+          "aria": "नेगेटिव प्रॉम्प्ट",
+          "title": "बाहर रखने वाले तत्व निर्दिष्ट करें"
+        },
+        "seed": {
+          "label": "सीड",
+          "random": "रैंडम",
+          "randomTitle": "रैंडम सीड जनरेट करें",
+          "placeholder": "रैंडम सीड (वैकल्पिक)",
+          "aria": "सीड मान",
+          "title": "दोहराए जा सकने वाले परिणामों के लिए सीड सेट करें"
+        }
+      },
+      "resolution": "रेज़ोल्यूशन",
+      "resolutionLabel": "रेज़ोल्यूशन: {value}",
+      "resolutionPopoverTitle": "रेज़ोल्यूशन (Nano Banana 2)",
+      "generating": "जनरेट हो रहा है...",
+      "generate": "जनरेट",
+      "limitReached": "सीमा पूरी हुई",
+      "fluxLimitTooltip": "FLUX मॉडल गैर-सदस्यों के लिए {limit} उपयोग तक सीमित हैं",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 एक प्रीमियम मॉडल है और Unlimited मुफ़्त उपयोग में शामिल नहीं है। हर जनरेट की गई छवि के लिए क्रेडिट्स चार्ज होंगे।",
+      "unlimited": {
+        "fast": "तेज़",
+        "slow": "धीमा",
+        "fastMode": "फास्ट मोड",
+        "slowMode": "स्लो मोड",
+        "monthlyUsage": "मासिक उपयोग: {used}/{limit}",
+        "rateLimit": "रेट लिमिट: 5 मिनट में {limit} छवि",
+        "switchedToSlow": "आप मासिक सीमा तक पहुँच गए। स्लो मोड पर स्विच किया गया।"
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "जनरेट की गई छवि",
+      "failedTitle": "जनरेशन विफल",
+      "errors": {
+        "unableToComplete": "जनरेशन पूरा नहीं हो सका"
+      },
+      "actions": {
+        "deleteTitle": "टास्क हटाएँ",
+        "viewFullSize": "पूरा आकार देखने के लिए क्लिक करें",
+        "preview": "प्रीव्यू {index}",
+        "retryTitle": "फिर प्रयास करें - वही पैरामीटर के साथ",
+        "retry": "फिर प्रयास करें",
+        "remixTitle": "रिमिक्स - पैरामीटर पुन: उपयोग करें",
+        "remix": "रिमिक्स",
+        "makeVideoTitle": "वीडियो बनाएँ",
+        "makeVideo": "वीडियो बनाएँ"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "डाउनलोड शुरू हुआ",
+      "downloadStartedMessage": "वीडियो डाउनलोड शुरू हो गया है",
+      "downloadFailedTitle": "डाउनलोड विफल",
+      "downloadFailedMessage": "वीडियो डाउनलोड नहीं हो सका",
+      "shareCopied": "शेयर लिंक क्लिपबोर्ड पर कॉपी हुआ",
+      "shareCopyFailed": "शेयर लिंक कॉपी नहीं हो सका"
+    },
+    "empty": {
+      "title": "वीडियो उपलब्ध नहीं",
+      "description": "यह वीडियो शेयर करने के लिए उपलब्ध नहीं है या वीडियो फ़ाइल गायब है।",
+      "ctaCreate": "अपना वीडियो बनाएँ"
+    },
+    "notFound": {
+      "title": "वीडियो नहीं मिला",
+      "description": "जिस वीडियो को आप ढूँढ रहे हैं वह मौजूद नहीं है या अब शेयर करने के लिए उपलब्ध नहीं है।",
+      "ctaCreate": "अपना वीडियो बनाएँ",
+      "ctaHome": "होम पर वापस"
+    },
+    "details": {
+      "creationDate": "निर्माण तिथि"
+    },
+    "actions": {
+      "remix": "रिमिक्स",
+      "remixTitle": "इसी प्रॉम्प्ट से नया वीडियो बनाएँ",
+      "download": "डाउनलोड",
+      "downloadTitle": "यह वीडियो डाउनलोड करें",
+      "downloading": "डाउनलोड हो रहा है...",
+      "downloadingTitle": "डाउनलोड हो रहा है...",
+      "shareTitle": "यह वीडियो साझा करें"
+    },
+    "meta": {
+      "promptFallback": "AI जनरेटेड वीडियो",
+      "watchDescription": "यह AI जनरेटेड वीडियो देखें: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "संगीत",
+      "description": "AI से संगीत, साउंड इफेक्ट्स और स्पीच जनरेट करें।"
+    },
+    "page": {
+      "loadingSoundStudio": "साउंड स्टूडियो लोड हो रहा है..."
+    },
+    "functionToggle": {
+      "music": "संगीत",
+      "soundEffect": "साउंड इफेक्ट",
+      "textToSpeech": "टेक्स्ट टू स्पीच"
+    },
+    "controlPanel": {
+      "title": "कंट्रोल",
+      "reset": "रीसेट",
+      "modelLabel": {
+        "tts": "TTS मॉडल",
+        "sound": "साउंड मॉडल"
+      },
+      "modelPlaceholder": "मॉडल चुनें",
+      "noModelsAvailableTitle": "कोई मॉडल उपलब्ध नहीं",
+      "noModelsFound": {
+        "tts": "कोई TTS मॉडल नहीं मिला",
+        "soundEffect": "कोई साउंड इफेक्ट मॉडल नहीं मिला"
+      },
+      "tts": {
+        "stability": "स्थिरता",
+        "similarityBoost": "समानता बूस्ट",
+        "styleExaggeration": "स्टाइल अतिशयोक्ति",
+        "speed": "गति"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "संदर्भ ऑडियो अपलोड करें",
+      "dropHere": "यहाँ छोड़ें",
+      "supportedFormats": "समर्थित फ़ॉर्मेट: MP3, WAV, M4A, AAC, OGG",
+      "tip": "टिप: बेहतर परिणामों के लिए कम से कम 15 सेकंड का साफ़ ऑडियो उपयोग करें।",
+      "uploadingProgress": "अपलोड हो रहा है... {progress}%",
+      "toast": {
+        "uploadSuccess": "अपलोड पूरा हुआ",
+        "uploadFailed": "अपलोड विफल"
+      },
+      "errors": {
+        "selectAudioFile": "कृपया एक ऑडियो फ़ाइल चुनें।",
+        "invalidAudioFile": "अमान्य ऑडियो फ़ाइल।",
+        "fileTooLarge": "फ़ाइल बहुत बड़ी है (अधिकतम 50MB)।",
+        "durationTooShort": "ऑडियो कम से कम 15 सेकंड का होना चाहिए।"
+      }
+    },
+    "audioPlayer": {
+      "play": "चलाएँ",
+      "pause": "रोकें"
+    },
+    "voiceSelector": {
+      "label": "आवाज़",
+      "selectVoiceTitle": "आवाज़ चुनें",
+      "gender": {
+        "all": "सभी",
+        "male": "पुरुष",
+        "female": "महिला"
+      },
+      "noVoicesAvailable": "कोई आवाज़ उपलब्ध नहीं",
+      "noVoicesFound": "कोई आवाज़ नहीं मिली",
+      "bestFor": "{useCase} के लिए सर्वोत्तम",
+      "clickToSelectVoice": "आवाज़ चुनने के लिए क्लिक करें"
+    },
+    "historyPanel": {
+      "title": "इतिहास",
+      "empty": {
+        "title": "अभी तक कोई जनरेशन नहीं",
+        "description": "आपका जनरेशन इतिहास यहाँ दिखाई देगा"
+      },
+      "loading": "लोड हो रहा है...",
+      "loadMore": "और लोड करें"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "प्रोसेसिंग",
+        "failed": "विफल",
+        "completed": "पूर्ण"
+      },
+      "actions": {
+        "copy": "कॉपी",
+        "download": "डाउनलोड"
+      },
+      "time": {
+        "now": "अभी",
+        "minutesAgo": "{minutes}मि पहले",
+        "hoursAgo": "{hours}घं पहले"
+      },
+      "unknownModel": "अज्ञात मॉडल",
+      "errors": {
+        "unknown": "अज्ञात त्रुटि"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "साउंड स्टूडियो"
+      },
+      "menu": {
+        "open": "मेनू खोलें",
+        "title": "मेनू",
+        "voiceGeneration": "बनाएँ",
+        "settings": "सेटिंग्स",
+        "history": "इतिहास"
+      },
+      "tabs": {
+        "generate": "जनरेट",
+        "settings": "सेटिंग्स",
+        "history": "इतिहास"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "स्पीच जनरेशन के लिए अपना टेक्स्ट लिखें...",
+        "soundEffect": "आप जो साउंड इफेक्ट बनाना चाहते हैं उसका वर्णन करें..."
+      },
+      "generateSpeech": "स्पीच जनरेट करें",
+      "generateSound": "साउंड जनरेट करें",
+      "generating": "जनरेट हो रहा है...",
+      "loadingExamples": "उदाहरण लोड हो रहे हैं...",
+      "loadingMusicStyles": "म्यूज़िक स्टाइल्स लोड हो रहे हैं...",
+      "rightTabs": {
+        "examples": "उदाहरण",
+        "history": "इतिहास"
+      },
+      "history": {
+        "generationCount": "{count} जनरेशन"
+      },
+      "price": {
+        "placeholder": "अनुमानित लागत",
+        "calculating": "गणना हो रही है...",
+        "credits": "{credits} क्रेडिट्स"
+      },
+      "musicHistory": {
+        "title": "संगीत इतिहास",
+        "empty": {
+          "title": "अभी तक कोई संगीत जनरेट नहीं हुआ",
+          "description": "आपका संगीत इतिहास यहाँ दिखाई देगा"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "साउंड इफेक्ट इतिहास",
+        "empty": {
+          "title": "अभी तक कोई साउंड इफेक्ट जनरेट नहीं हुआ",
+          "description": "आपका साउंड इफेक्ट इतिहास यहाँ दिखाई देगा"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "गीत",
+      "lyricsPlaceholder": "वैकल्पिक फ़ॉर्मेटिंग के साथ गीत। आप प्रत्येक लाइन अलग करने के लिए नया लाइन उपयोग कर सकते हैं। दो नए लाइन का उपयोग करके लाइनों के बीच विराम जोड़ सकते हैं। गीत की शुरुआत और अंत में डबल हैश मार्क (##) जोड़कर संगत जोड़ सकते हैं। अधिकतम 600 अक्षर।",
+      "useReferenceAudio": {
+        "label": "संदर्भ ऑडियो उपयोग करें",
+        "description": "AI की शैली को गाइड करने के लिए ऑडियो संदर्भ उपयोग करें।"
+      },
+      "referenceAudio": {
+        "title": "संदर्भ ऑडियो",
+        "description": "एक संदर्भ गीत अपलोड करें जिसमें संगीत और वोकल दोनों हों।"
+      },
+      "musicStyle": {
+        "title": "संगीत शैली",
+        "description": "आप जो संगीत बनाना चाहते हैं उसकी शैली और मूड बताएं।",
+        "placeholder": "उदा., R&B, energetic, upbeat pop, acoustic folk, electronic dance...",
+        "tooShort": "संगीत शैली का वर्णन कम से कम 10 अक्षरों का होना चाहिए।"
+      },
+      "generating": "जनरेट हो रहा है...",
+      "generateMusicWithCredits": "संगीत जनरेट करें ({credits} क्रेडिट्स)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "अवधि",
+        "description": "साउंड इफेक्ट की लंबाई सेट करें।"
+      },
+      "promptInfluence": {
+        "title": "प्रॉम्प्ट प्रभाव",
+        "description": "उच्च मान आपके प्रॉम्प्ट का अधिक पालन करते हैं।"
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "संपर्क",
+      "description": "ReelMind टीम को फ़ीडबैक भेजें।"
+    },
+    "header": {
+      "title": "क्विक फ़ीडबैक",
+      "description": "कोई बग मिला या सुझाव है? 30 सेकंड में हमें बताएं।"
+    },
+    "card": {
+      "title": "क्विक फ़ीडबैक",
+      "subtitle": "केवल 3 फ़ील्ड, 30 सेकंड लगेंगे"
+    },
+    "submitted": {
+      "title": "फ़ीडबैक सबमिट हुआ",
+      "description": "आपके फ़ीडबैक के लिए धन्यवाद। हम इसकी समीक्षा करेंगे और ज़रूरत पड़ने पर संपर्क करेंगे।"
+    },
+    "auth": {
+      "required": "फ़ीडबैक सबमिट करने के लिए कृपया लॉगिन करें।"
+    },
+    "form": {
+      "errors": {
+        "unknown": "कुछ गलत हो गया। कृपया फिर प्रयास करें।"
+      },
+      "type": {
+        "label": "प्रकार",
+        "placeholder": "फ़ीडबैक प्रकार चुनें",
+        "options": {
+          "bug": "बग रिपोर्ट",
+          "suggestion": "सुझाव",
+          "other": "अन्य"
+        },
+        "errors": {
+          "required": "फ़ीडबैक प्रकार आवश्यक है।",
+          "invalid": "अमान्य फ़ीडबैक प्रकार।"
+        }
+      },
+      "subject": {
+        "label": "विषय *",
+        "placeholder": "समस्या या सुझाव क्या है?",
+        "errors": {
+          "required": "विषय आवश्यक है।",
+          "min": "विषय कम से कम {min} अक्षरों का होना चाहिए।",
+          "max": "विषय {max} अक्षरों से कम होना चाहिए।",
+          "invalid": "विषय में अमान्य सामग्री है।"
+        }
+      },
+      "message": {
+        "label": "विवरण *",
+        "placeholder": "और बताएं...",
+        "errors": {
+          "required": "विवरण आवश्यक हैं।",
+          "min": "विवरण कम से कम {min} अक्षरों के होने चाहिए।",
+          "max": "विवरण {max} अक्षरों से कम होने चाहिए।",
+          "invalid": "विवरण में अमान्य सामग्री है।"
+        }
+      }
+    },
+    "actions": {
+      "submitting": "सबमिट हो रहा है...",
+      "submit": "फ़ीडबैक सबमिट करें"
+    },
+    "toast": {
+      "submitSuccess": "फ़ीडबैक सफलतापूर्वक सबमिट हुआ!",
+      "submitFailed": "फ़ीडबैक सबमिट नहीं हो सका। कृपया फिर प्रयास करें।",
+      "authRequired": "फ़ीडबैक सबमिट करने के लिए कृपया लॉगिन करें।",
+      "rateLimited": "बहुत अधिक सबमिशन। कृपया बाद में फिर प्रयास करें।",
+      "rateLimitedWithRetryAfter": "कृपया {seconds}सेकंड बाद फिर सबमिट करें।",
+      "fixErrors": "कृपया फ़ॉर्म में त्रुटियाँ ठीक करें।",
+      "checkInput": "कृपया अपना इनपुट जाँचें और फिर प्रयास करें।"
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "पोस्ट",
+      "following": "फॉलोइंग",
+      "followingShort": "फॉलो",
+      "followers": "फॉलोअर्स",
+      "followersShort": "फैंस",
+      "favorites": "पसंदीदा",
+      "favoritesShort": "फेव"
+    },
+    "actions": {
+      "save": "सेव",
+      "saving": "सेव हो रहा है...",
+      "cancel": "रद्द करें",
+      "delete": "हटाएँ",
+      "retry": "फिर प्रयास करें",
+      "editProfile": "प्रोफ़ाइल संपादित करें",
+      "signOut": "साइन आउट",
+      "follow": "फॉलो",
+      "unfollow": "अनफॉलो",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "क्रिएटर",
+      "avatarAltFallback": "उपयोगकर्ता",
+      "initialFallback": "यू",
+      "edit": {
+        "displayNamePlaceholder": "डिस्प्ले नाम",
+        "bioPlaceholder": "बायो"
+      },
+      "stats": {
+        "following": "फॉलोइंग",
+        "followers": "फॉलोअर्स"
+      },
+      "joined": "{date} को जुड़े",
+      "joinedFallback": "मार्च 2025"
+    },
+    "time": {
+      "now": "अभी-अभी",
+      "minutesAgo": "{minutes}मि पहले",
+      "hoursAgo": "{hours}घं पहले",
+      "daysAgo": "{days}दि पहले"
+    },
+    "toast": {
+      "loginFirst": "कृपया पहले लॉगिन करें",
+      "cannotFollowYourself": "आप खुद को फॉलो नहीं कर सकते",
+      "followed": "सफलतापूर्वक फॉलो किया",
+      "unfollowed": "सफलतापूर्वक अनफॉलो किया",
+      "operationFailed": "ऑपरेशन विफल"
+    },
+    "posts": {
+      "loadingMore": "और पोस्ट लोड हो रही हैं...",
+      "error": {
+        "failedToLoad": "पोस्ट लोड नहीं हो सके"
+      },
+      "empty": {
+        "title": "अभी तक कोई पोस्ट नहीं",
+        "description": "इस उपयोगकर्ता ने अभी तक कोई पोस्ट साझा नहीं की है। बाद में फिर देखें!"
+      },
+      "deleteDialog": {
+        "title": "पोस्ट हटाएँ",
+        "description": "यह पोस्ट आपके प्रोफ़ाइल और फ़ीड से छिप जाएगी। आप इस कार्रवाई को वापस नहीं ले सकते।"
+      },
+      "toast": {
+        "deleted": "पोस्ट हटाई गई",
+        "deleteFailed": "पोस्ट हटाई नहीं जा सकी"
+      }
+    },
+    "favorites": {
+      "loadingMore": "और पसंदीदा लोड हो रहे हैं...",
+      "error": {
+        "failedToLoad": "पसंदीदा लोड नहीं हो सके"
+      },
+      "empty": {
+        "title": "अभी तक कोई पसंदीदा नहीं",
+        "description": "जो पोस्ट आपको पसंद हैं वे यहाँ दिखाई देंगी। एक्सप्लोर करें और अपने पसंदीदा सेव करें!"
+      }
+    },
+    "followers": {
+      "empty": "अभी तक कोई फॉलोअर नहीं",
+      "error": {
+        "failedToLoad": "फॉलोअर्स लोड नहीं हो सके"
+      },
+      "followerSince": "{time} से फॉलोअर"
+    },
+    "following": {
+      "empty": "अभी तक किसी को फॉलो नहीं कर रहे",
+      "error": {
+        "failedToLoad": "फॉलोइंग लोड नहीं हो सकी"
+      },
+      "followingSince": "{time} से फॉलो कर रहे"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "मेंबरशिप प्लान - ReelMind",
+      "description": "AI वीडियो जनरेशन के लिए अधिक क्रेडिट्स और प्रीमियम फीचर्स पाने हेतु ReelMind मेंबरशिप प्लान जॉइन करें।"
+    },
+    "plans": {
+      "hero": {
+        "title": "मेंबरशिप प्लान",
+        "subtitle": "ReelMind के लचीले सब्सक्रिप्शन प्लान के साथ AI वीडियो जनरेशन की पूरी क्षमता अनलॉक करें"
+      },
+      "error": {
+        "loadFailed": "मेंबरशिप प्लान प्राप्त नहीं हो सके, कृपया बाद में फिर प्रयास करें।"
+      },
+      "names": {
+        "free": "मुफ़्त",
+        "pro": "प्रो",
+        "max": "मैक्स",
+        "unlimited": "अनलिमिटेड"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "वार्षिक"
+      },
+      "monthly": {
+        "label": "मासिक"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "पहले महीने 70% छूट",
+        "short": "70% छूट",
+        "description": "पहली बार मेंबरशिप लेने वालों को 70% छूट, कूपन 24 घंटे वैध"
+      },
+      "yearly": {
+        "full": "पहले 6 महीने मुफ़्त",
+        "short": "6 महीने मुफ़्त",
+        "description": "वार्षिक सब्सक्राइबर को पहले 6 महीने पूरी तरह मुफ़्त - पहले वर्ष पर लगभग 50% छूट!"
+      },
+      "percentOff": "{percent}% छूट",
+      "badge": {
+        "preview": "🎁 {offer} उपलब्ध",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(क्लेम करने के बाद)"
+    },
+    "pricing": {
+      "perYear": "प्रति वर्ष",
+      "perMonth": "प्रति माह",
+      "breakdown": {
+        "originalPrice": "मूल कीमत:",
+        "discount": "आपकी छूट:",
+        "payFirstYear": "आप भुगतान करते हैं (पहला वर्ष):",
+        "firstMonth": "पहला महीना:"
+      }
+    },
+    "status": {
+      "title": "मेंबरशिप स्थिति",
+      "loading": "मेंबरशिप जानकारी लोड हो रही है...",
+      "currentPlan": "वर्तमान प्लान:",
+      "expiresOn": "समाप्ति तिथि:",
+      "unlimitedDescription": "आपको बिना क्रेडिट खर्च के सभी जनरेशन फीचर्स तक असीमित एक्सेस है।",
+      "planDescription": "आपको {plan} की सभी सुविधाएँ और लाभ उपलब्ध हैं।",
+      "noActive": {
+        "title": "आपकी कोई सक्रिय मेंबरशिप नहीं है।",
+        "subtitle": "प्रीमियम फीचर्स अनलॉक करने के लिए नीचे कोई प्लान सब्सक्राइब करें।"
+      }
+    },
+    "creditsBalance": {
+      "title": "क्रेडिट्स बैलेंस",
+      "loading": "क्रेडिट्स जानकारी लोड हो रही है...",
+      "availableCredits": "उपलब्ध क्रेडिट्स:",
+      "unlimited": {
+        "video": "असीमित वीडियो जनरेशन",
+        "image": "असीमित छवि जनरेशन",
+        "audio": "असीमित साउंड जनरेशन"
+      },
+      "estimate": {
+        "videos": "अधिकतम {count} वीडियो",
+        "images": "अधिकतम {count} छवियाँ",
+        "audios": "अधिकतम {count} साउंड"
+      },
+      "cost": {
+        "videos": "वीडियो: {credits} क्रेडिट्स से",
+        "images": "छवियाँ: {credits} क्रेडिट्स से",
+        "audios": "साउंड: {credits} क्रेडिट्स से"
+      }
+    },
+    "credits": {
+      "title": "क्रेडिट्स खरीदें",
+      "history": {
+        "toggle": {
+          "show": "लेन-देन इतिहास दिखाएँ",
+          "hide": "लेन-देन इतिहास छिपाएँ"
+        }
+      },
+      "card": {
+        "description": "अपने AI जनरेशन को बेहतर बनाने के लिए क्रेडिट पैकेज चुनें"
+      },
+      "packages": {
+        "basic": {
+          "label": "बेसिक पैक"
+        },
+        "standard": {
+          "label": "स्टैंडर्ड पैक"
+        },
+        "premium": {
+          "label": "प्रीमियम पैक"
+        },
+        "pro": {
+          "label": "अल्ट्रा पैक"
+        },
+        "bonus": "बोनस: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "बेस रेट: 1 USD = 100 क्रेडिट्स",
+        "buyMoreBonus": "जितना अधिक खरीदें, उतना अधिक बोनस!",
+        "neverExpire": "क्रेडिट्स कभी एक्सपायर नहीं होते",
+        "instantDelivery": "पेमेंट के बाद तुरंत डिलीवरी"
+      },
+      "actions": {
+        "processing": "प्रोसेसिंग...",
+        "buyCredits": "{credits} क्रेडिट्स खरीदें"
+      }
+    },
+    "creditsHistory": {
+      "title": "लेन-देन इतिहास",
+      "subtitle": "आपके हाल के क्रेडिट लेन-देन",
+      "actions": {
+        "retry": "फिर प्रयास करें",
+        "loading": "लोड हो रहा है...",
+        "loadMore": "और लोड करें"
+      },
+      "table": {
+        "date": "तिथि",
+        "type": "प्रकार",
+        "amount": "राशि",
+        "status": "स्थिति"
+      },
+      "empty": "कोई लेन-देन इतिहास उपलब्ध नहीं",
+      "types": {
+        "membershipMonthly": "मेंबरशिप मासिक क्रेडिट्स",
+        "membershipInitial": "मेंबरशिप प्रारंभिक क्रेडिट्स",
+        "freeMonthly": "मुफ़्त मासिक क्रेडिट्स",
+        "purchase": "क्रेडिट्स खरीद",
+        "platformReward": "प्लेटफ़ॉर्म रिवॉर्ड",
+        "newUserBonus": "नए उपयोगकर्ता बोनस",
+        "postReward": "पोस्ट रिवॉर्ड",
+        "videoPostReward": "वीडियो पोस्ट रिवॉर्ड",
+        "refund": "रिफंड",
+        "balanceAdjustment": "बैलेंस समायोजन",
+        "videoGeneration": "वीडियो जनरेशन",
+        "imageGeneration": "छवि जनरेशन",
+        "modelTraining": "मॉडल ट्रेनिंग",
+        "audioGeneration": "ऑडियो जनरेशन",
+        "systemAdjustment": "सिस्टम समायोजन"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}घं {m}मि {s}से",
+        "ms": "{m}मि {s}से",
+        "s": "{s}से",
+        "expired": "एक्सपायर्ड"
+      },
+      "toast": {
+        "claimedTitle": "कूपन सफलतापूर्वक क्लेम हुआ",
+        "claimedDescription": "कूपन आपके अकाउंट में जोड़ दिया गया, {hours} घंटे वैध",
+        "claimFailedTitle": "क्लेम विफल",
+        "tryAgainLater": "कृपया बाद में फिर प्रयास करें",
+        "networkError": "नेटवर्क त्रुटि, कृपया बाद में फिर प्रयास करें"
+      }
+    },
+    "couponStatus": {
+      "title": "कूपन स्थिति",
+      "active": {
+        "annualTitle": "वार्षिक ऑफ़र सक्रिय",
+        "couponTitle": "कूपन सक्रिय"
+      },
+      "fields": {
+        "claimed": "क्लेम किया:",
+        "expires": "समाप्ति:",
+        "timeLeft": "शेष समय:",
+        "usedAt": "उपयोग:",
+        "discount": "छूट:"
+      },
+      "expired": "कूपन एक्सपायर हो गया",
+      "used": {
+        "title": "कूपन उपयोग किया गया"
+      },
+      "available": "{offer} उपलब्ध",
+      "offer": {
+        "annualSpecial": "🎁 वार्षिक विशेष",
+        "newUserExclusive": "🎉 नए उपयोगकर्ता विशेष",
+        "bestValue": "सर्वोत्तम मूल्य",
+        "limitedTime": "सीमित समय",
+        "claimYearly": "6-महीने मुफ़्त ऑफ़र क्लेम करें",
+        "claimMonthly": "कूपन अभी क्लेम करें"
+      },
+      "none": {
+        "title": "कोई कूपन उपलब्ध नहीं",
+        "description": "{offer} केवल उन नए उपयोगकर्ताओं के लिए उपलब्ध है जिन्होंने पहले कभी मेंबरशिप नहीं खरीदी।"
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "लोकप्रिय",
+        "advanced": "एडवांस्ड",
+        "unlimited": "अनलिमिटेड"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "अनलिमिटेड एक्सेस लें",
+        "getUnlimitedMobile": "अनलिमिटेड लें",
+        "subscribeDesktop": "सब्सक्रिप्शन शुरू करें",
+        "subscribeMobile": "सब्सक्राइब",
+        "claimAndSubscribeMobile": "क्लेम और सब्सक्राइब",
+        "getDiscountMobile": "{discount} पाएँ",
+        "claimDiscountAndSubscribeDesktop": "{discount} क्लेम करें और सब्सक्राइब करें"
+      },
+      "toast": {
+        "loginSuccess": "लॉगिन सफल! छूट क्लेम करने और सब्सक्राइब करने के लिए बटन फिर से क्लिक करें।",
+        "claimCouponFailed": "कूपन क्लेम नहीं हो सका",
+        "tryAgainLater": "कृपया बाद में फिर प्रयास करें",
+        "couponClaimed": "कूपन सफलतापूर्वक क्लेम हुआ!",
+        "failedToProcess": "प्रोसेस नहीं हो सका"
+      },
+      "usageEstimate": {
+        "title": "मासिक उपयोग अनुमान",
+        "videos": "प्रति माह अधिकतम {count} वीडियो",
+        "images": "प्रति माह अधिकतम {count} छवियाँ",
+        "audios": "प्रति माह अधिकतम {count} साउंड"
+      },
+      "unlimitedNotes": {
+        "title": "उपयोग नोट्स",
+        "videoTasks": {
+          "title": "वीडियो टास्क:",
+          "body": "आप एक साथ अधिकतम 5 टास्क चला सकते हैं। मासिक सीमा: 300। सीमा के बाद स्लो मोड: 24 घंटे में 30 वीडियो/दिन, और प्रति घंटे 10 टास्क।"
+        },
+        "imageTasks": {
+          "title": "छवि टास्क:",
+          "body": "प्रति माह अधिकतम 300 टास्क। 300वें टास्क तक फास्ट मोड (प्रति मिनट 5)। उसके बाद स्लो मोड 1 टास्क/मिनट।"
+        },
+        "premiumModels": {
+          "title": "प्रीमियम मॉडल:",
+          "body": "कुछ उच्च-लागत मॉडल UNLIMITED प्लान में शामिल नहीं हैं। VEO 3.* के non-fast और Sora-2 /pro वैरिएंट्स अभी भी क्रेडिट्स खर्च करते हैं।"
+        }
+      },
+      "currentPlan": "वर्तमान योजना",
+      "yearlyEquivalent": "<price>{value}</price> के बराबर",
+      "yearlySavings": "मासिक बिलिंग की तुलना में <राशि>{value}</राशि> बचाएं"
+    },
+    "features": {
+      "monthlyCredits": "मासिक {credits} क्रेडिट",
+      "monthlyVideoCredits": "मासिक {credits} वीडियो क्रेडिट",
+      "fullAccessTopModels": "शीर्ष {count} AI वीडियो मॉडल का पूर्ण एक्सेस",
+      "accessAllModels": "सभी मॉडलों तक पहुँच",
+      "purchaseMoreRolloverVideoCredits": "अतिरिक्त रोल-ओवर वीडियो क्रेडिट खरीदें",
+      "downloadNoWatermark": "बिना वॉटरमार्क के वीडियो डाउनलोड करें",
+      "commercialUse": "व्यावसायिक उपयोग",
+      "fastGenerations": "तेज़ जनरेशन",
+      "prioritySupport": "प्राथमिकता सपोर्ट",
+      "unlimitedVideoAndImageGeneration": "अनलिमिटेड वीडियो और इमेज जनरेशन"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "बिलिंग विकल्प खोलें"
+      },
+      "actions": {
+        "opening": "खोला जा रहा है...",
+        "billingOptions": "बिलिंग विकल्प"
+      },
+      "confirm": {
+        "title": "अपना सब्सक्रिप्शन प्रबंधित करें",
+        "description": "क्या आप सब्सक्रिप्शन कैंसल करना चाहते हैं? जाने से पहले हम आपका फ़ीडबैक सुनना चाहेंगे।",
+        "keep": "मेरा सब्सक्रिप्शन रखें",
+        "continueCancel": "कैंसल जारी रखें"
+      },
+      "toast": {
+        "openFailed": "सब्सक्रिप्शन प्रबंधन नहीं खुल सका",
+        "feedbackThanks": "आपके फ़ीडबैक के लिए धन्यवाद!",
+        "feedbackSaveFailed": "फ़ीडबैक सेव नहीं हो सका, लेकिन आप फिर भी सब्सक्रिप्शन प्रबंधित कर सकते हैं"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "हम आपका फ़ीडबैक चाहेंगे",
+        "subtitle": "कुछ त्वरित प्रश्नों के उत्तर देकर हमें बेहतर बनाने में मदद करें"
+      },
+      "common": {
+        "close": "बंद करें",
+        "other": "अन्य",
+        "stepIndicator": "चरण {current} / {total}"
+      },
+      "actions": {
+        "back": "वापस",
+        "next": "अगला",
+        "submitting": "सबमिट हो रहा है...",
+        "complete": "पूरा करें और जारी रखें"
+      },
+      "satisfaction": {
+        "1": "बहुत असंतुष्ट",
+        "2": "असंतुष्ट",
+        "3": "तटस्थ",
+        "4": "संतुष्ट",
+        "5": "बहुत संतुष्ट"
+      },
+      "steps": {
+        "1": {
+          "title": "आपने ReelMind के बारे में कहाँ सुना?",
+          "options": {
+            "social": "सोशल मीडिया (Twitter, Instagram, आदि)",
+            "search": "सर्च इंजन (Google, Bing, आदि)",
+            "friend": "मित्र/सहकर्मी की सिफ़ारिश",
+            "ads": "ऑनलाइन विज्ञापन",
+            "blog": "टेक ब्लॉग या रिव्यू साइट"
+          }
+        },
+        "2": {
+          "title": "आप मुख्य रूप से ReelMind किस लिए उपयोग करते हैं?",
+          "description": "जो भी आपके रचनात्मक लक्ष्यों से मेल खाए, सब चुनें।",
+          "options": {
+            "video": "वीडियो क्रिएशन",
+            "image": "छवि जनरेशन",
+            "music": "संगीत रचना",
+            "marketing": "विज्ञापन और मार्केटिंग कंटेंट",
+            "socialPosts": "सोशल मीडिया पोस्ट",
+            "education": "शैक्षणिक सामग्री",
+            "personal": "व्यक्तिगत प्रोजेक्ट",
+            "exploring": "नई आइडिया एक्सप्लोर करना"
+          }
+        },
+        "3": {
+          "title": "आपका सबसे अच्छा वर्णन क्या है?",
+          "options": {
+            "creator": "कंटेंट क्रिएटर",
+            "developer": "फ़्रीलांस डेवलपर",
+            "marketingPro": "मार्केटिंग प्रोफेशनल",
+            "businessOwner": "व्यवसाय मालिक",
+            "designer": "डिज़ाइनर",
+            "hobbyist": "हॉबीस्ट",
+            "student": "छात्र",
+            "artist": "कलाकार"
+          }
+        },
+        "4": {
+          "title": "आप अपने अनुभव को कैसे रेट करेंगे?",
+          "description": "कृपया ReelMind के साथ अपनी कुल संतुष्टि रेट करें"
+        },
+        "5": {
+          "title": "कैंसल करने का मुख्य कारण क्या था?",
+          "options": {
+            "price": "बहुत महँगा",
+            "usage": "पर्याप्त उपयोग नहीं किया",
+            "features": "मुख्य फीचर्स की कमी",
+            "quality": "जनरेटेड परिणामों की गुणवत्ता",
+            "bugs": "तकनीकी समस्याएँ या बग्स",
+            "alternative": "बेहतर विकल्प मिला"
+          }
+        },
+        "6": {
+          "title": "हम आपका फ़ीडबैक सुनना चाहेंगे",
+          "description": "आपके विचार ReelMind को सभी के लिए बेहतर बनाते हैं।",
+          "placeholder": "हम क्या सुधार सकते हैं? कौन से फीचर आप देखना चाहेंगे? (वैकल्पिक)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "अनुरोध सबमिट हुआ। हम जल्द ही संपर्क करेंगे।",
+        "submitFailed": "अनुरोध सबमिट नहीं हो सका"
+      },
+      "card": {
+        "title": "एंटरप्राइज़ और कस्टम प्लान",
+        "subtitle": "कस्टम प्राइसिंग, इनवॉइसिंग और सपोर्ट",
+        "description": "इनवॉइस, कॉम्प्लायंस सपोर्ट या कस्टम वर्कफ़्लो चाहिए? अपनी आवश्यकताएँ साझा करें और हम सर्वोत्तम विकल्प सुझाएँगे।",
+        "toggle": {
+          "hide": "फ़ॉर्म छिपाएँ",
+          "show": "सेल्स से संपर्क करें"
+        },
+        "highlights": {
+          "sso": "SSO और कॉम्प्लायंस",
+          "invoices": "इनवॉइस और परचेज ऑर्डर",
+          "support": "प्राथमिकता सपोर्ट",
+          "workflows": "कस्टम वर्कफ़्लो"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "संपर्क प्रकार",
+          "placeholder": "संपर्क प्रकार चुनें",
+          "options": {
+            "business": "व्यवसाय",
+            "individual": "व्यक्ति"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "अनुमानित मासिक उपयोग (USD)",
+          "placeholder": "एक अनुमान चुनें",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "$1,000 - $5,000",
+            "5000to10000": "$5,000 - $10,000",
+            "10000plus": "$10,000+",
+            "custom": "कस्टम राशि (USD)"
+          },
+          "custom": {
+            "label": "कस्टम मासिक उपयोग (USD)",
+            "placeholder": "USD में राशि दर्ज करें"
+          }
+        },
+        "firstName": {
+          "label": "पहला नाम",
+          "placeholder": "जेन"
+        },
+        "lastName": {
+          "label": "अंतिम नाम",
+          "placeholder": "डो"
+        },
+        "email": {
+          "label": "ईमेल",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "वेबसाइट",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "अपने प्रोजेक्ट और आवश्यकताओं के बारे में बताएं",
+          "placeholder": "आप क्या बना रहे हैं? कौन से वर्कफ़्लो, कॉम्प्लायंस जरूरतें और अपेक्षित वॉल्यूम है?"
+        },
+        "actions": {
+          "cancel": "रद्द करें",
+          "submitting": "सबमिट हो रहा है...",
+          "submit": "सबमिट"
+        },
+        "validation": {
+          "firstNameRequired": "पहला नाम आवश्यक है",
+          "lastNameRequired": "अंतिम नाम आवश्यक है",
+          "emailInvalid": "ईमेल वैध होना चाहिए",
+          "websiteInvalid": "वेबसाइट वैध URL होनी चाहिए",
+          "monthlyEstimateRequired": "मासिक अनुमान आवश्यक है",
+          "monthlyEstimateEnter": "कृपया मासिक अनुमान दर्ज करें",
+          "monthlyEstimateMin": "मासिक अनुमान >= 0 होना चाहिए",
+          "requirementsMin": "कृपया अधिक विवरण दें (न्यूनतम {count} अक्षर)",
+          "maxChars": "अधिकतम {count} अक्षर"
+        }
+      }
+    },
+    "faq": {
+      "title": "अक्सर पूछे जाने वाले प्रश्न",
+      "items": {
+        "proBenefits": {
+          "question": "PRO मेंबरशिप के लाभ क्या हैं?",
+          "answer": "PRO मेंबरशिप आपको हर महीने 1000 क्रेडिट्स ($10 मूल्य), नए फीचर्स तक प्राथमिकता पहुंच, तेज़ वीडियो जनरेशन, एडवांस्ड एडिटिंग विकल्प और प्राथमिकता कस्टमर सपोर्ट देती है।"
+        },
+        "cancelAnytime": {
+          "question": "क्या मैं कभी भी सब्सक्रिप्शन कैंसल कर सकता हूँ?",
+          "answer": "हाँ, आप कभी भी सब्सक्रिप्शन कैंसल कर सकते हैं। आपके लाभ वर्तमान बिलिंग अवधि के अंत तक जारी रहेंगे।",
+          "discountNote": {
+            "title": "डिस्काउंटेड सब्सक्रिप्शन के लिए विशेष नोट:",
+            "body": "यदि आपने कूपन डिस्काउंट से सब्सक्राइब किया है और पहले महीने में डिस्काउंट राशि से अधिक क्रेडिट्स उपयोग किए हैं, तो आप दूसरे महीने का भुगतान प्रोसेस होने के बाद ही कैंसल कर सकते हैं। यह नीति प्रमोशनल ऑफ़र के निष्पक्ष उपयोग को सुनिश्चित करती है।"
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "मासिक और वार्षिक सब्सक्रिप्शन में कोई अंतर है?",
+          "answer": "हाँ, वार्षिक सब्सक्रिप्शन मासिक की तुलना में काफी छूट देता है। वार्षिक बिलिंग चुनने पर लगभग 20% की बचत होती है।"
+        },
+        "whatAreCredits": {
+          "question": "ReelMind क्रेडिट्स क्या हैं?",
+          "answer": "ReelMind क्रेडिट्स हमारी प्लेटफ़ॉर्म पर AI वीडियो और छवियाँ जनरेट करने के लिए उपयोग की जाने वाली वर्चुअल मुद्रा है। अलग-अलग फीचर्स के लिए अलग मात्रा में क्रेडिट्स लगते हैं। उदाहरण के लिए, स्टैंडर्ड वीडियो (480p) 50 क्रेडिट्स, जबकि HD वीडियो (720p) 80 क्रेडिट्स लगता है।"
+        },
+        "earnCredits": {
+          "question": "मैं क्रेडिट्स कैसे कमा सकता हूँ?",
+          "intro": "आप कई तरीकों से क्रेडिट्स कमा सकते हैं:",
+          "items": {
+            "membership": "मेंबरशिप प्लान के जरिए (PRO सदस्यों को 1000, MAX सदस्यों को 2000 मासिक)",
+            "purchase": "क्रेडिट पैक खरीदकर",
+            "newUser": "नए उपयोगकर्ताओं को रजिस्ट्रेशन पर 100 मुफ्त क्रेडिट्स",
+            "posting": "ReelMind पर कंटेंट पोस्ट करके (प्रति दिन 50 क्रेडिट्स)",
+            "promotions": "विशेष प्रमोशन और रिवॉर्ड्स"
+          }
+        },
+        "expire": {
+          "question": "क्या क्रेडिट्स एक्सपायर होते हैं?",
+          "answer": "जो क्रेडिट्स आप सीधे खरीदते हैं वे एक्सपायर नहीं होते और उपयोग होने तक आपके अकाउंट में रहते हैं। मासिक दिए गए क्रेडिट्स हर महीने की शुरुआत में रीसेट होते हैं। पिछले महीने के बचे क्रेडिट्स आगे नहीं बढ़ते।"
+        },
+        "refund": {
+          "question": "क्या मैं बचे हुए क्रेडिट्स के लिए रिफंड पा सकता हूँ?",
+          "answer": "हम खरीदे गए क्रेडिट्स के लिए रिफंड नहीं देते। हालांकि, यदि तकनीकी समस्या के कारण आप क्रेडिट्स का सही उपयोग नहीं कर पाए, तो सपोर्ट से संपर्क करें और हम आपकी समस्या हल करेंगे।"
+        },
+        "membershipVsCredits": {
+          "question": "मेंबरशिप और क्रेडिट्स में क्या अंतर है?",
+          "answer": "मेंबरशिप आपको मासिक क्रेडिट्स के साथ प्राथमिकता प्रोसेसिंग और एक्सक्लूसिव फीचर्स जैसी अतिरिक्त सुविधाएँ देती है। क्रेडिट्स मेंबरशिप के बिना भी खरीदे जा सकते हैं और कंटेंट जनरेट करते समय खर्च होते हैं। नियमित उपयोग के लिए मेंबरशिप चुनें या कभी-कभार के लिए क्रेडिट्स खरीदें।"
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. सर्वाधिकार सुरक्षित।"
+    }
+  },
+  "Search": {
+    "placeholder": "खोज...",
+    "noResultsFound": "कोई परिणाम नहीं मिला",
+    "viewAllResults": "सभी परिणाम देखें",
+    "sections": {
+      "posts": "पोस्ट",
+      "users": "उपयोगकर्ता"
+    },
+    "tabs": {
+      "posts": "पोस्ट",
+      "users": "उपयोगकर्ता"
+    },
+    "unknownUser": "अज्ञात",
+    "loading": "लोड हो रहा है...",
+    "searching": "खोज हो रही है...",
+    "loadingMore": "और लोड हो रहा है...",
+    "tryAgain": "फिर प्रयास करें",
+    "noPostsFound": "कोई पोस्ट नहीं मिली",
+    "noUsersFound": "कोई उपयोगकर्ता नहीं मिला",
+    "empty": {
+      "title": "खोज",
+      "hint": "कंटेंट खोजने के लिए कीवर्ड दर्ज करें"
+    },
+    "errors": {
+      "searchFailed": "खोज विफल"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "लाइफटाइम कमिशन - हमेशा के लिए 20%"
+    },
+    "hero": {
+      "lifetime": "आजीवन",
+      "passiveIncome": "निष्क्रिय आय",
+      "subtitle": {
+        "prefix": "कमाएँ",
+        "suffix": "कमिशन हमेशा के लिए"
+      }
+    },
+    "actions": {
+      "getStarted": "शुरू करें",
+      "viewDashboard": "डैशबोर्ड देखें",
+      "signInFirst": "कृपया पहले साइन इन करें"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API प्लेटफ़ॉर्म",
+      "actions": {
+        "modelsPricing": "मॉडल और मूल्य",
+        "viewDocumentation": "डॉक्यूमेंटेशन देखें"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API कुंजी सफलतापूर्वक बनाई गई",
+      "apiKeyCreateFailed": "API कुंजी नहीं बन सकी",
+      "apiKeyDeleted": "API कुंजी सफलतापूर्वक हटाई गई",
+      "apiKeyDeletedDescription": "API कुंजी हटाई गई है",
+      "apiKeyDeleteFailed": "API कुंजी नहीं हट सकी",
+      "apiKeyCopied": "API कुंजी क्लिपबोर्ड पर कॉपी हुई",
+      "modelIdCopied": "मॉडल ID क्लिपबोर्ड पर कॉपी हुई"
+    },
+    "accountCard": {
+      "notLoggedIn": "लॉगिन नहीं है",
+      "loadingKeys": "API कुंजियाँ लोड हो रही हैं...",
+      "keysAvailable": "{count} API कुंजियाँ उपलब्ध",
+      "createKey": "API कुंजी बनाएँ",
+      "helpPrefix": "अगर आपको मदद चाहिए, तो देखें ",
+      "apiDocumentation": "API डॉक्यूमेंटेशन"
+    },
+    "stats": {
+      "plan": "प्लान",
+      "resetDate": "रीसेट तिथि",
+      "credits": "क्रेडिट्स",
+      "tasks": "टास्क",
+      "loading": "लोड हो रहा है...",
+      "freePlan": "मुफ़्त प्लान",
+      "na": "लागू नहीं",
+      "buyCredits": "क्रेडिट्स खरीदें"
+    },
+    "apiKeys": {
+      "title": "API कुंजी प्रबंधन",
+      "description": "ReelMind वीडियो जनरेशन API तक पहुँचने के लिए अपनी API कुंजियों का प्रबंधन करें",
+      "createNew": "नई API कुंजी बनाएँ",
+      "loading": "API कुंजियाँ लोड हो रही हैं...",
+      "label": "API कुंजी",
+      "created": "{date} को बनाई गई",
+      "active": "सक्रिय",
+      "inactive": "निष्क्रिय",
+      "show": "API कुंजी दिखाएँ",
+      "hide": "API कुंजी छिपाएँ",
+      "copy": "API कुंजी कॉपी करें",
+      "totalCalls": "कुल कॉल्स",
+      "creditsUsed": "उपयोग किए गए क्रेडिट्स",
+      "empty": {
+        "title": "कोई API कुंजी नहीं",
+        "description": "आपने अभी तक कोई API कुंजी नहीं बनाई। ReelMind API उपयोग शुरू करने के लिए अपनी पहली API कुंजी बनाएँ।",
+        "createFirst": "अपनी पहली API कुंजी बनाएँ"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "मॉडल और मूल्य",
+      "apiDocumentation": "API डॉक्यूमेंटेशन"
+    },
+    "documentation": {
+      "title": "API डॉक्यूमेंटेशन",
+      "authentication": "ऑथेंटिकेशन",
+      "authenticationIntro": "सभी API रिक्वेस्ट के लिए API कुंजी के साथ ऑथेंटिकेशन आवश्यक है। आपकी API कुंजी एक UUID है जिसे आप नीचे API कुंजी प्रबंधन सेक्शन में जनरेट कर सकते हैं।",
+      "authenticationMethods": "ऑथेंटिकेशन तरीके",
+      "exampleRequest": "उदाहरण रिक्वेस्ट",
+      "important": "महत्वपूर्ण",
+      "apiEndpoints": "API एंडपॉइंट्स",
+      "responseFormat": "रेस्पॉन्स फ़ॉर्मेट",
+      "responseFormatIntro": "वीडियो जनरेशन टास्क रेस्पॉन्स फ़ॉर्मेट:",
+      "parameters": "पैरामीटर्स",
+      "table": {
+        "name": "नाम",
+        "type": "प्रकार",
+        "required": "आवश्यक",
+        "description": "विवरण"
+      },
+      "yes": "हाँ",
+      "no": "नहीं"
+    },
+    "pricing": {
+      "title": "API मूल्य और मॉडल",
+      "intro": "वीडियो और इमेज जनरेशन API के लिए उपलब्ध AI मॉडल और उनके मूल्य देखें",
+      "loading": "उपलब्ध मॉडल लोड हो रहे हैं...",
+      "available": "उपलब्ध",
+      "unavailable": "अनुपलब्ध",
+      "credits": "{credits} क्रेडिट्स",
+      "basePricePerImage": "बेस प्राइस (प्रति छवि)",
+      "basePrice5sVideo": "बेस प्राइस (5s वीडियो)",
+      "creditsPerSecond": "+{credits} क्रेडिट्स/सेकंड",
+      "modelId": "मॉडल ID",
+      "copyModelId": "मॉडल ID कॉपी करें",
+      "noModels": {
+        "title": "कोई मॉडल उपलब्ध नहीं",
+        "description": "फिलहाल API एक्सेस के लिए कोई AI मॉडल उपलब्ध नहीं है। कृपया बाद में फिर देखें।"
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "टेक्स्ट से वीडियो",
+      "imageToVideo": "छवि से वीडियो",
+      "videoToVideo": "वीडियो से वीडियो",
+      "textToImage": "टेक्स्ट से छवि",
+      "imageToImage": "छवि से छवि"
+    },
+    "deleteModal": {
+      "title": "हटाने की पुष्टि",
+      "description": "क्या आप वाकई इस API कुंजी को हटाना चाहते हैं? यह कार्रवाई वापस नहीं ली जा सकती।",
+      "keyName": "कुंजी नाम: {name}",
+      "createdOn": "{date} को बनाई गई",
+      "cancel": "रद्द करें",
+      "deleting": "हटाया जा रहा है...",
+      "deleteKey": "API कुंजी हटाएँ"
+    },
+    "modelParameters": {
+      "title": "मॉडल पैरामीटर्स",
+      "required": "आवश्यक",
+      "default": "डिफ़ॉल्ट: {value}",
+      "labels": {
+        "prompt": "प्रॉम्प्ट",
+        "guidance_scale": "गाइडेंस स्केल",
+        "aspect_ratio": "आस्पेक्ट रेशियो",
+        "seed": "सीड",
+        "image_url": "छवि URL",
+        "duration": "अवधि",
+        "resolution": "रेज़ोल्यूशन",
+        "num_inference_steps": "इन्फेरेंस स्टेप्स",
+        "cfg_scale": "CFG स्केल"
+      },
+      "flux": {
+        "promptDescription": "जनरेट की जाने वाली छवि का वर्णन करने वाला टेक्स्ट प्रॉम्प्ट",
+        "guidanceScaleDescription": "नियंत्रित करता है कि छवि प्रॉम्प्ट का कितना पालन करती है",
+        "aspectRatioDescription": "जनरेट की गई छवि का आस्पेक्ट रेशियो",
+        "seedDescription": "दोहराए जा सकने वाली जनरेशन के लिए रैंडम सीड",
+        "imageUrlDescription": "छवि-से-छवि जनरेशन के लिए इनपुट छवि URL"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "टेक्स्ट टू इमेज · इमेज एडिटिंग",
+      "title": "फ्लक्स/नैनो बनाना/सीड्रीम"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "नोलन - दुनिया का नंबर 1 AI एजेंट निर्देशक",
+      "description": "दुनिया का नंबर 1 AI एजेंट निर्देशक"
+    },
+    "page": {
+      "loading": "नोलन AI निर्देशक लोड हो रहा है..."
+    },
+    "heroBanner": {
+      "label": "क्रांतिकारी AI तकनीक",
+      "name": "नोलन",
+      "worldFirst": "दुनिया का पहला",
+      "aiAgentDirector": "AI एजेंट निर्देशक"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "लंबित",
+        "queued": "कतारबद्ध",
+        "processing": "प्रसंस्करण",
+        "completed": "पूरा हुआ",
+        "failed": "असफल",
+        "canceled": "रद्द कर दिया गया"
+      },
+      "model": {
+        "unknown": "अज्ञात मॉडल",
+        "unnamed": "अनाम"
+      },
+      "errors": {
+        "fetchListTitle": "कार्य लोड करने में विफल",
+        "unknown": "अज्ञात त्रुटि",
+        "fetchDetails": "कार्य विवरण लाने में विफल",
+        "downloadFailed": "डाउनलोड विफल रहा",
+        "retryFailed": "पुनः प्रयास विफल रहा"
+      },
+      "details": {
+        "videoTitle": "वीडियो कार्य विवरण",
+        "imageTitle": "छवि कार्य विवरण",
+        "videoPreview": "वीडियो पूर्वावलोकन",
+        "hideVideo": "वीडियो छिपाएँ",
+        "showVideo": "वीडियो दिखाएँ",
+        "downloadVideo": "वीडियो डाउनलोड करें",
+        "browserNoVideoSupport": "आपका ब्राउज़र वीडियो प्लेबैक का समर्थन नहीं करता.",
+        "labels": {
+          "duration": "अवधि",
+          "fileSize": "फ़ाइल का आकार",
+          "format": "प्रारूप",
+          "prompt": "शीघ्र",
+          "model": "मॉडल",
+          "ratio": "पहलू अनुपात",
+          "resolution": "संकल्प",
+          "taskId": "कार्य आईडी",
+          "user": "उपयोगकर्ता",
+          "status": "स्थिति",
+          "createdTime": "निर्मित समय",
+          "startedTime": "प्रारंभ समय",
+          "completedTime": "पूर्ण समय",
+          "generationModel": "जनरेशन मॉडल",
+          "priority": "प्राथमिकता",
+          "requestId": "आईडी का अनुरोध करें",
+          "lastActivity": "अंतिम गतिविधि"
+        },
+        "videoPreviewUnavailable": "वीडियो पूर्वावलोकन अनुपलब्ध",
+        "videoNoOutput": "कार्य पूरा हुआ लेकिन कोई वीडियो आउटपुट नहीं",
+        "videoNotCompleted": "कार्य अभी पूरा नहीं हुआ है",
+        "generationParams": "जनरेशन पैरामीटर्स",
+        "basicInfo": "बुनियादी जानकारी",
+        "timeInfo": "समय की जानकारी",
+        "detailData": "विस्तृत डेटा",
+        "inputParams": "इनपुट पैरामीटर्स",
+        "outputResult": "आउटपुट परिणाम",
+        "errorLog": "त्रुटि लॉग",
+        "retrying": "पुनः प्रयास कर रहा हूँ...",
+        "retryTask": "कार्य पुनः प्रयास करें",
+        "generatedImage": "उत्पन्न छवि",
+        "close": "बंद करें"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "उपयोगकर्ता प्रतिक्रिया प्रबंधन",
+        "subtitle": "उपयोगकर्ता द्वारा प्रस्तुत फीडबैक और शिकायतें प्रबंधित करें"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "फ़ेच विफल रहा",
+          "fetchFailedDescription": "फीडबैक डेटा लाने में असमर्थ: {error}",
+          "unknown": "अज्ञात त्रुटि"
+        },
+        "type": {
+          "bug": "बग रिपोर्ट",
+          "suggestion": "सुझाव",
+          "other": "अन्य"
+        },
+        "loading": "लोड हो रहा है...",
+        "filter": {
+          "label": "फीडबैक प्रकार",
+          "all": "सभी प्रकार"
+        },
+        "total": "कुल: {total} फीडबैक आइटम",
+        "empty": "कोई फीडबैक डेटा नहीं",
+        "headers": {
+          "userInfo": "उपयोगकर्ता जानकारी",
+          "type": "प्रकार",
+          "subject": "विषय",
+          "submittedAt": "प्रस्तुत किया गया",
+          "actions": "क्रियाएँ"
+        },
+        "user": {
+          "unknown": "अज्ञात उपयोगकर्ता",
+          "noEmail": "कोई ईमेल नहीं"
+        },
+        "actions": {
+          "collapse": "पतन",
+          "viewDetails": "विवरण देखें"
+        },
+        "contentLabel": "प्रतिक्रिया:",
+        "pagination": {
+          "previous": "पिछला",
+          "next": "अगला"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "कृपया एक खोज कीवर्ड दर्ज करें.",
+        "noUsersFound": "कोई मेल खाता उपयोगकर्ता नहीं मिला.",
+        "searchFailed": "उपयोगकर्ताओं को खोजने में विफल.",
+        "userRequired": "कृपया एक उपयोगकर्ता चुनें या एक उपयोगकर्ता आईडी दर्ज करें।",
+        "amountInvalid": "कृपया वैध क्रेडिट राशि दर्ज करें।",
+        "descriptionRequired": "कृपया अनुदान विवरण दर्ज करें.",
+        "grantFailed": "क्रेडिट देने में विफल."
+      },
+      "success": {
+        "granted": "क्रेडिट सफलतापूर्वक प्रदान किया गया."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "सर्वेक्षण लाने में विफल.",
+        "fetchStats": "सर्वेक्षण आँकड़े लाने में विफल."
+      }
+    },
+    "memberships": {
+      "title": "उपयोगकर्ता सदस्यता प्रबंधन",
+      "search": {
+        "placeholder": "उपयोगकर्ता आईडी, ईमेल, या उपनाम खोजें...",
+        "button": "खोजें"
+      },
+      "stats": {
+        "total": "कुल सदस्यताएँ",
+        "yearly": "वार्षिक सदस्य"
+      },
+      "list": {
+        "title": "सदस्यता सूची"
+      },
+      "loading": "लोड हो रहा है...",
+      "actions": {
+        "retry": "पुनः प्रयास करें"
+      },
+      "empty": "कोई सदस्यता डेटा नहीं",
+      "table": {
+        "headers": {
+          "userInfo": "उपयोगकर्ता जानकारी",
+          "plan": "योजना",
+          "billingCycle": "बिलिंग चक्र",
+          "status": "स्थिति",
+          "credits": "क्रेडिट शेष",
+          "videoTasks": "वीडियो कार्य",
+          "imageTasks": "छवि कार्य",
+          "createdAt": "निर्मित समय",
+          "expiresAt": "समाप्ति समय"
+        },
+        "user": {
+          "unknown": "अज्ञात"
+        },
+        "status": {
+          "active": "सक्रिय",
+          "inactive": "निष्क्रिय",
+          "cancelAtPeriodEnd": "अवधि समाप्ति पर रद्द करें"
+        },
+        "creditsUnit": "श्रेय",
+        "flagged": "ध्वजांकित",
+        "tasksUnit": "कार्य",
+        "never": "कभी नहीं"
+      },
+      "pagination": {
+        "summary": "{total} रिकॉर्ड में से {start} से {end} दिखाया जा रहा है",
+        "previous": "पिछला",
+        "next": "अगला",
+        "page": "{totalPages} का पृष्ठ {currentPage}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "पोस्ट हटाने में विफल. कृपया पुन: प्रयास करें।"
+      }
+    }
+  },
+  "Common": {
+    "language": "भाषा",
+    "onlyEnglish": "वर्तमान में केवल अंग्रेजी उपलब्ध है।",
+    "onlySupportedPages": "अतिरिक्त भाषाएँ वर्तमान में केवल होम, एक्सप्लोर, सर्च, क्रिएट, लेगो, संगीत, सदस्यता, संपर्क, उपयोगकर्ता, शेयर, मॉडल, प्रभाव और ब्लॉग पेज पर उपलब्ध हैं।",
+    "languages": {
+      "en": "अंग्रेज़ी",
+      "zh-CN": "सरलीकृत चीनी)"
+    },
+    "actions": {
+      "viewAll": "सभी को देखें",
+      "cancel": "रद्द करना",
+      "recreate": "बहलाना",
+      "download": "डाउनलोड करना",
+      "downloading": "डाउनलोड हो रहा है...",
+      "showMore": "और दिखाएँ",
+      "showLess": "कम दिखाओ"
+    },
+    "aria": {
+      "scrollRight": "दाईं ओर स्क्रॉल करें",
+      "search": "खोज"
+    },
+    "search": {
+      "placeholder": "पोस्ट और उपयोगकर्ता खोजें..."
+    },
+    "share": {
+      "button": "शेयर करना",
+      "toast": {
+        "copiedTitle": "कॉपी किया गया",
+        "copiedMessage": "लिंक को क्लिपबोर्ड पर कॉपी किया गया",
+        "failedTitle": "प्रतिलिपि बनाने में विफल",
+        "failedMessage": "क्लिपबोर्ड पर लिंक कॉपी करने में असमर्थ"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "नोलन एआई निदेशक",
+      "earlyAccess": "जल्दी पहुँच",
+      "justOneCredit": "सिर्फ़ 1 क्रेडिट"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "लाइट मोड",
+        "darkMode": "डार्क मोड",
+        "switchToLightMode": "लाइट मोड पर स्विच करें",
+        "switchToDarkMode": "डार्क मोड पर स्विच करें"
+      },
+      "profile": {
+        "myProfile": "मेरी प्रोफाइल",
+        "goToMyProfile": "मेरी प्रोफ़ाइल पर जाएँ"
+      },
+      "menu": {
+        "openMenu": "मेनू खोलें",
+        "close": "बंद करना"
+      },
+      "membership": {
+        "title": "सदस्यता",
+        "tapToViewPlans": "योजनाएं देखने के लिए टैप करें",
+        "upgrade": "उन्नत करना",
+        "plans": {
+          "free": "मुक्त",
+          "pro": "प्रो",
+          "max": "अधिकतम",
+          "unlimited": "असीमित"
+        }
+      },
+      "actions": {
+        "pricing": "मूल्य निर्धारण",
+        "signIn": "दाखिल करना"
+      }
+    },
+    "footer": {
+      "rights": "© {year} रीलमाइंड। सर्वाधिकार सुरक्षित।"
+    },
+    "video": {
+      "labels": {
+        "prompt": "तत्पर",
+        "model": "नमूना",
+        "ratio": "अनुपात",
+        "guidance": "मार्गदर्शन",
+        "steps": "कदम",
+        "seed": "बीज",
+        "definition": "परिभाषा"
+      },
+      "values": {
+        "unknownModel": "अज्ञात मॉडल",
+        "random": "यादृच्छिक"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "पृष्ठ पर अंक लगाना",
+        "previous": "पिछले पृष्ठ पर जाएं",
+        "next": "अगले पृष्ठ पर जाएँ"
+      },
+      "previous": "पहले का",
+      "next": "अगला",
+      "more": "अधिक पृष्ठ"
+    },
+    "concurrentLimit": {
+      "title": "कार्य की सीमा पूरी हो गई",
+      "defaultMessage": "निःशुल्क उपयोगकर्ता एक समय में केवल एक ही वीडियो निर्माण कार्य चला सकते हैं।",
+      "currentStatus": "वर्तमान स्थिति",
+      "currentPlan": "वर्तमान योजना",
+      "premiumBenefits": "प्रीमियम लाभ",
+      "plans": {
+        "unlimited": "असीमित योजना",
+        "free": "मुक्त",
+        "unlimitedTasks": "असीमित कार्य"
+      },
+      "unlimited": {
+        "maxTasks": "अधिकतम 3 समवर्ती कार्य",
+        "priority": "उच्च प्राथमिकता प्रसंस्करण",
+        "features": "सभी प्रीमियम सुविधाएँ",
+        "waitNote": "नए कार्य सबमिट करने से पहले कृपया अपने कुछ मौजूदा कार्यों के पूरा होने तक प्रतीक्षा करें।"
+      },
+      "free": {
+        "maxTasks": "1 समवर्ती कार्य",
+        "priority": "मानक प्राथमिकता",
+        "features": "बुनियादी विशेषताएं"
+      },
+      "upgrade": {
+        "maxTasks": "अधिकतम 5 समवर्ती कार्य",
+        "priority": "उच्च प्राथमिकता प्रसंस्करण",
+        "features": "सभी मॉडलों तक पहुंच"
+      },
+      "actions": {
+        "acknowledge": "समझ गया",
+        "upgrade": "उन्नत करना",
+        "loading": "लोड हो रहा है..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "स्थानीय अपलोड",
+      "reelmind": "रीलमाइंड जनरेट किया गया"
+    },
+    "reelmind": {
+      "description": "रीलमाइंड पर जेनरेट किया गया वीडियो चुनें।",
+      "browse": "रीलमाइंड वीडियो ब्राउज़ करें"
+    },
+    "title": {
+      "placeholder": "एक शीर्षक जोड़ें..."
+    },
+    "tags": {
+      "title": "टैग",
+      "empty": "अपने वीडियो को बेहतर ढंग से वर्गीकृत करने के लिए टैग जोड़ें।",
+      "placeholder": "एक टैग जोड़ें (पुष्टि करने के लिए Enter दबाएँ)",
+      "count": "{count}/{limit}",
+      "helper": "{limit} टैग तक, प्रत्येक {max} वर्ण।"
+    },
+    "description": {
+      "placeholder": "एक विवरण जोड़ दो..."
+    },
+    "generationType": {
+      "title": "पीढ़ी प्रकार",
+      "txt2video": "वीडियो पर टेक्स्ट करें",
+      "txt2videoDescription": "टेक्स्ट प्रॉम्प्ट से उत्पन्न करें.",
+      "img2video": "छवि से वीडियो",
+      "img2videoDescription": "एक संदर्भ छवि से उत्पन्न करें."
+    },
+    "prompts": {
+      "promptTitle": "तत्पर",
+      "promptPlaceholder": "इस वीडियो को बनाने के लिए उपयोग किया गया संकेत दर्ज करें...",
+      "negativeTitle": "नकारात्मक संकेत",
+      "negativePlaceholder": "नकारात्मक संकेत दर्ज करें..."
+    },
+    "modelResources": {
+      "title": "मॉडल संसाधन",
+      "placeholder": "उपयोग किए गए मॉडल संसाधनों की सूची बनाएं, उदा. मॉडल, LoRAs, एम्बेडिंग..."
+    },
+    "aigc": {
+      "guidanceScale": "मार्गदर्शन पैमाना",
+      "guidanceScalePlaceholder": "जैसे 7.5",
+      "steps": "कदम",
+      "stepsPlaceholder": "जैसे 30",
+      "seed": "बीज",
+      "seedPlaceholder": "जैसे 1234567890"
+    },
+    "tools": {
+      "title": "पीढ़ी के उपकरण"
+    },
+    "videoPreview": {
+      "uploadComplete": "पूरा अपलोड करें",
+      "uploading": "अपलोड हो रहा है...",
+      "clickToUpload": "वीडियो अपलोड करने के लिए क्लिक करें",
+      "remove": "वीडियो हटाएँ"
+    },
+    "actions": {
+      "publish": "प्रकाशित करना",
+      "publishing": "प्रकाशन...",
+      "back": "पीछे"
+    },
+    "errors": {
+      "tagEmpty": "टैग खाली नहीं हो सकता.",
+      "tagTooLong": "टैग {max} वर्ण से अधिक नहीं हो सकता.",
+      "tagExists": "यह टैग पहले से मौजूद है.",
+      "tagLimit": "आप अधिकतम {limit} टैग जोड़ सकते हैं।",
+      "authRequired": "कृपया अपलोड करने के लिए साइन इन करें.",
+      "uploadFailed": "अपलोड विफल रहा. कृपया पुन: प्रयास करें।",
+      "uploadParamsFailed": "अपलोड पैरामीटर लाने में विफल.",
+      "fileAddFailed": "फ़ाइल जोड़ने में विफल. कृपया पुन: प्रयास करें।"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "ब्लॉग - रीलमाइंड",
+      "description": "एआई सामग्री निर्माण, वीडियो निर्माण और नवीनतम रीलमाइंड सुविधाओं के बारे में युक्तियाँ, ट्यूटोरियल और अंतर्दृष्टि खोजें।"
+    },
+    "page": {
+      "title": "ब्लॉग",
+      "empty": "कोई ब्लॉग पोस्ट नहीं मिला"
+    },
+    "error": {
+      "title": "पोस्ट लोड करने में त्रुटि",
+      "description": "ब्लॉग पोस्ट लोड करते समय कुछ गलत हो गया.",
+      "retry": "पुनः प्रयास करें"
+    },
+    "notFound": {
+      "title": "पृष्ठ नहीं मिला",
+      "description": "आपके द्वारा अनुरोधित ब्लॉग पृष्ठ मौजूद नहीं है."
+    },
+    "feed": {
+      "end": "आप अंत तक पहुंच गए हैं",
+      "retry": "पुन: प्रयास करें",
+      "loadFailed": "ब्लॉग पोस्ट लोड करने में विफल"
+    },
+    "topFeed": {
+      "refresh": "ताज़ा करना",
+      "exploreMore": "और अधिक मज़ेदार अन्वेषण करें",
+      "loadFailed": "यादृच्छिक पोस्ट लोड करने में विफल"
+    },
+    "floatingChat": {
+      "title": "नोलन एआई से पूछें",
+      "subtitle": "नंबर 1 एआई एजेंट निदेशक!",
+      "placeholder": "इस लेख के बारे में पूछें या अपने फ़िल्मी विचार साझा करें...",
+      "cta": "नोलन को भेजें"
+    },
+    "featureCard": {
+      "label": "वीडियो मॉडल",
+      "title": "रीलमाइंड आपके विचारों को जीवन में लाने के लिए शक्तिशाली उपकरण प्रदान करता है।",
+      "subtitle": "101 एआई मॉडल के साथ अपने विचारों को आश्चर्यजनक दृश्यों में बदलें",
+      "cta": "अब कोशिश करो"
+    },
+    "breadcrumbs": {
+      "home": "घर"
+    },
+    "article": {
+      "notFoundTitle": "आलेख नहीं मिला",
+      "notFoundDescription": "अनुरोधित लेख नहीं मिल सका."
+    }
+  },
+  "Favorites": {
+    "title": "मेरे प्रिय",
+    "subtitle": "यहां आप अपने पसंदीदा वीडियो और मॉडल प्रबंधित कर सकते हैं",
+    "tabs": {
+      "video": "वीडियो",
+      "model": "नमूना"
+    },
+    "empty": {
+      "title": "आपका अभी तक कोई पसंदीदा नहीं है"
+    },
+    "alert": {
+      "title": "गलती",
+      "retry": "पुन: प्रयास करें",
+      "loadFailed": "पसंदीदा लोड करने में असमर्थ. कृपया पुन: प्रयास करें।",
+      "removeFailed": "पसंदीदा को हटाने में असमर्थ. कृपया पुन: प्रयास करें।"
+    },
+    "card": {
+      "video": "वीडियो",
+      "model": "नमूना"
+    },
+    "button": {
+      "favorite": "पसंदीदा",
+      "favorited": "पसंदीदा"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ReelMind में आपका स्वागत है",
+      "subtitle": "साइन इन करें या अपना क्रिएटर अकाउंट बनाएं",
+      "continueWithGoogle": "Google के साथ जारी रखें",
+      "orContinueWithEmail": "या ईमेल से जारी रखें",
+      "emailLabel": "ईमेल",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "ईमेल पता",
+      "passwordLabel": "पासवर्ड",
+      "passwordPlaceholder": "••••••••",
+      "show": "दिखाएं",
+      "hide": "छिपाएं",
+      "inviteCodeLabelOptional": "निमंत्रण कोड (वैकल्पिक)",
+      "inviteCodePlaceholder": "कोड दर्ज करें",
+      "invitedBy": "द्वारा आमंत्रित: <name>{value}</name>",
+      "continue": "जारी रखें",
+      "signIn": "साइन इन",
+      "createAccount": "अकाउंट बनाएं",
+      "switchToSignIn": "पहले से अकाउंट है? साइन इन करें",
+      "switchToSignUp": "अकाउंट नहीं है? साइन अप करें",
+      "pageSubtitleCreate": "अपना अकाउंट बनाएं",
+      "pageSubtitleSignIn": "अपने अकाउंट में साइन इन करें",
+      "termsLine": "जारी रखते हुए, आप <terms>शर्तों</terms> और <privacy>गोपनीयता नीति</privacy> से सहमत हैं"
+    },
+    "verifyEmail": {
+      "title": "अपने ईमेल की पुष्टि करें",
+      "sentLinkTo": "हमने सत्यापन लिंक भेजा है",
+      "checkInbox": "कृपया अपने इनबॉक्स की जाँच करें और जारी रखने के लिए लिंक पर क्लिक करें।",
+      "understand": "समझ गया/गई",
+      "useDifferentEmail": "अलग ईमेल उपयोग करें"
+    },
+    "errors": {
+      "invalidEmail": "अमान्य ईमेल पता",
+      "suspiciousEmail": "यह ईमेल संदिग्ध लगता है",
+      "verifyBeforeLogin": "लॉगिन से पहले कृपया अपना ईमेल सत्यापित करें",
+      "operationFailed": "ऑपरेशन विफल रहा, कृपया फिर से प्रयास करें",
+      "googleFailed": "Google साइन‑इन विफल हुआ, कृपया फिर से प्रयास करें",
+      "checkEmailConfirmation": "पुष्टिकरण लिंक के लिए अपना ईमेल जाँचें!"
+    },
+    "brand": {
+      "headlineLine1": "रील-निर्माता",
+      "headlineLine2": "यहाँ स्वागत है",
+      "taglineLine1": "अपने विचार खोलें।",
+      "taglineLine2": "AI को इसे समेटने दें।",
+      "cta": "हमारे क्रिएटर समुदाय से जुड़ें और बनाना शुरू करें।"
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "छवि जोड़ें",
+      "addMoreReferences": "अधिक संदर्भ जोड़ें",
+      "auto": "ऑटो",
+      "back": "वापस",
+      "character": "चरित्र",
+      "clear": "स्पष्ट",
+      "clearAll": "सब साफ़ करें",
+      "close": "बंद करें",
+      "createPack": "पैक बनाएं",
+      "downloadCount": "डाउनलोड करें {current}/{total}",
+      "dropOrUploadPhoto": "फ़ोटो छोड़ें या अपलोड करें",
+      "goToLibrary": "लाइब्रेरी जाओ",
+      "high": "ऊँचा",
+      "history": "इतिहास",
+      "inQueue": "कतार में",
+      "info": "जानकारी",
+      "instadump": "इंस्टाडम्प",
+      "manual": "मैनुअल",
+      "new": "नया",
+      "next": "अगला",
+      "open": "खुला",
+      "previous": "पिछला",
+      "ready": "तैयार",
+      "recent": "हाल का",
+      "remove": "हटाओ",
+      "replace": "बदलें",
+      "reset": "रीसेट करें",
+      "restart": "पुनः प्रारंभ करें",
+      "selectPack": "पैक चुनें",
+      "storyboard": "स्टोरीबोर्ड",
+      "upload": "अपलोड करें",
+      "uploading": "अपलोड हो रहा है..."
+    },
+    "prompts": {
+      "defaultImage": "प्राकृतिक प्रकाश व्यवस्था के साथ एक सिनेमाई, उच्च-विस्तार वाली छवि",
+      "relightDefault": "नरम स्टूडियो प्रकाश व्यवस्था के साथ विषय पर प्रकाश डालें",
+      "faceSwapDefault": "दृश्य को बरकरार रखते हुए चेहरे की अदला-बदली करें",
+      "characterSwapDefault": "शैली को संरक्षित करते हुए चरित्र की अदला-बदली करें",
+      "drawToEditDefault": "ड्राइंग को एक साफ़, विस्तृत छवि में परिशोधित करें"
+    },
+    "swap": {
+      "sourceTitle": "स्रोत",
+      "targetTitle": "लक्ष्य",
+      "faceSourceDescription": "चेहरे के लिए स्रोत छवि",
+      "faceTargetDescription": "प्रतिस्थापित करने के लिए लक्ष्य छवि",
+      "characterSourceDescription": "चरित्र के लिए स्रोत छवि",
+      "characterTargetDescription": "प्रतिस्थापित करने के लिए लक्ष्य छवि"
+    },
+    "inpaint": {
+      "sourceAlt": "स्रोत छवि",
+      "paintHint": "उस क्षेत्र को पेंट करें जिसे आप संपादित करना चाहते हैं",
+      "maskUploading": "मास्क अपलोड हो रहा है",
+      "maskReady": "मास्क तैयार",
+      "maskPaint": "पेंट मास्क",
+      "paint": "पेंट",
+      "erase": "मिटाओ"
+    },
+    "relight": {
+      "title": "पुनःप्रकाशित करें",
+      "quickSelect": "शीघ्र चयन करें",
+      "directions": {
+        "top": "शीर्ष",
+        "front": "सामने",
+        "right": "ठीक है",
+        "left": "वाम",
+        "back": "वापस",
+        "bottom": "तल"
+      },
+      "brightness": "चमक",
+      "color": "रंग"
+    },
+    "upscale": {
+      "title": "उच्च स्तरीय"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "वीडियो के लिए स्केच",
+      "drawToVideo": "वीडियो पर ड्रा करें",
+      "drawToEdit": "संपादित करने के लिए ड्रा करें",
+      "pen": "कलम",
+      "eraser": "मिटाने वाला",
+      "color": "रंग",
+      "size": "आकार",
+      "undo": "पूर्ववत करें",
+      "redo": "पुनः करें",
+      "clear": "स्पष्ट",
+      "generateVideo": "वीडियो बनाएं",
+      "uploadTitle": "मीडिया अपलोड करें",
+      "uploadDescription": "ड्राइंग का मार्गदर्शन करने के लिए एक फोटो जोड़ें"
+    },
+    "soulId": {
+      "heroTitle": "आत्मा आईडी चरित्र",
+      "heroDescription": "अपनी तस्वीरों से एक सुसंगत चरित्र बनाएं।",
+      "createButton": "चरित्र निर्माण करें",
+      "photoCount": "{count} तस्वीरें",
+      "characterLabel": "चरित्र {index}",
+      "emptyGallery": "अभी तक कोई पात्र नहीं.",
+      "dialogTitle": "सोल आईडी बनाएं",
+      "dialogSubtitle": "अपना चरित्र निर्माण करने के लिए फ़ोटो अपलोड करें।",
+      "addPhotosTitle": "फ़ोटो जोड़ें",
+      "addPhotosDescription": "6-12 स्पष्ट फ़ोटो अपलोड करें.",
+      "tip": "युक्ति: विभिन्न कोणों और अभिव्यक्तियों का उपयोग करें।"
+    },
+    "storyboard": {
+      "relightScene": "पुनः प्रकाश दृश्य",
+      "headline": "फैशन फ़ैक्टरी",
+      "headlineAccent": "अपना सौंदर्यबोध उत्पन्न करें",
+      "description": "स्टोरीबोर्ड, संपादित करें, बनाएं।",
+      "resultsLabel": "{count} परिणाम",
+      "uploadHint": "दृश्य का मार्गदर्शन करने के लिए संदर्भ चित्र अपलोड करें",
+      "referenceImagesTitle": "संदर्भ छवियाँ",
+      "referenceImagesDescription": "शैली से मेल खाने के लिए अधिकतम 4 छवियाँ जोड़ें"
+    },
+    "instadump": {
+      "sidebarTitle": "इंस्टाडम्प स्टूडियो",
+      "stepChoosePack": "एक पैक चुनें",
+      "stepAddPhoto": "एक फोटो जोड़ें",
+      "stepGetInstadump": "इंस्टाडम्प प्राप्त करें",
+      "headerTitle": "इंस्टाडम्प",
+      "headerDescription": "एक सेल्फी को पूर्ण सामग्री लाइब्रेरी में बदलें।",
+      "addPhotoTitle": "अपना फ़ोटो जोड़ें",
+      "addPhotoDescription": "आरंभ करने के लिए एक स्पष्ट सेल्फी अपलोड करें।",
+      "getInstadumpTitle": "अपना इंस्टाडम्प प्राप्त करें",
+      "newPhotosReady": "नई तस्वीरें तैयार",
+      "tryFree": "निःशुल्क प्रयास करें",
+      "premiumTitle": "प्रीमियम",
+      "premiumBulletOne": "प्रति पैक अधिक शैलियाँ",
+      "premiumBulletTwo": "प्राथमिकता प्रसंस्करण",
+      "premiumBulletThree": "पूर्ण-रिज़ॉल्यूशन डाउनलोड",
+      "upgradeNow": "अभी अपग्रेड करें"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "संपादित करें",
+      "subtitle": "संपादन सुविधाओं और मॉडलों तक पहुंचें",
+      "back": "संपादन पर वापस जाएँ",
+      "workspace": {
+        "title": "कार्यक्षेत्र",
+        "status": "फ्रंटएंड प्लेसहोल्डर",
+        "uploadTitle": "मीडिया अपलोड करें",
+        "uploadDescription": "आरंभ करने के लिए छवि/वीडियो अपलोड करने के लिए ड्रॉप या क्लिक करें"
+      },
+      "settings": {
+        "title": "सेटिंग्स",
+        "modelTitle": "मॉडल",
+        "modelDescription": "एक मॉडल चुनें (बैकएंड जल्द ही आ रहा है)",
+        "promptTitle": "शीघ्र",
+        "promptDescription": "वर्णन करें कि आप क्या चाहते हैं (बैकएंड जल्द ही आ रहा है)",
+        "generate": "उत्पन्न करें"
+      },
+      "model": {
+        "title": "मॉडल विवरण",
+        "descriptionTitle": "विवरण",
+        "descriptionBody": "यह एक प्लेसहोल्डर है. बैकएंड वायर हो जाने पर विवरण भर दिया जाएगा।"
+      }
+    },
+    "menu": {
+      "title": "संपादित करें",
+      "sections": {
+        "features": "विशेषताएं",
+        "models": "मॉडल"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "वीडियो संपादित करें",
+        "description": "उन्नत वीडियो संपादन"
+      },
+      "inpaint": {
+        "title": "इनपेंट",
+        "description": "एक क्षेत्र चुनें, परिवर्तन का वर्णन करें"
+      },
+      "relight": {
+        "title": "पुनःप्रकाशित करें",
+        "description": "प्रकाश की स्थिति, रंग और चमक को समायोजित करें"
+      },
+      "aiStylist": {
+        "title": "एआई स्टाइलिस्ट",
+        "description": "अपना परफेक्ट लुक ढूंढें"
+      },
+      "upscale": {
+        "title": "उच्च स्तरीय",
+        "description": "संकल्प और गुणवत्ता बढ़ाएँ"
+      },
+      "skinEnhancer": {
+        "title": "त्वचा को निखारने वाला",
+        "description": "प्राकृतिक, यथार्थवादी त्वचा बनावट"
+      },
+      "angles": {
+        "title": "कोण",
+        "description": "विभिन्न कोणों से उत्पन्न करें"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "अधिकतम विवरण और सटीकता"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "तेज़, हल्का संपादन"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "निर्बाध उत्पाद एकीकरण"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "उच्च-रिज़ॉल्यूशन अपस्केलर"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "वीडियो संदर्भों के साथ गति को नियंत्रित करें"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "उन्नत वीडियो संपादन"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "मुख्य योजना",
+      "completed": "{completed}/{total} पूर्ण",
+      "steps": {
+        "script": "स्क्रिप्ट और स्टोरीबोर्ड डिज़ाइन",
+        "world": "वर्ल्ड एसेट डिज़ाइन",
+        "video": "वीडियो जनरेशन",
+        "worldVideo": "वर्ल्ड एसेट और वीडियो जनरेशन",
+        "audio": "वॉइस और ऑडियो डिज़ाइन",
+        "final": "अंतिम संयोजन"
+      }
+    }
+  }
+}

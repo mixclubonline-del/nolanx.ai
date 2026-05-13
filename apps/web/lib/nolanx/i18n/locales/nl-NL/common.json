@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Engels",
+    "zh-CN": "Chinees (vereenvoudigd)"
+  },
+  "buttons": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "create": "Maken",
+    "submit": "Verzenden",
+    "loading": "Laden...",
+    "retry": "Opnieuw proberen"
+  },
+  "common": {
+    "yes": "Ja",
+    "no": "Nee",
+    "ok": "OK",
+    "error": "Fout",
+    "success": "Succes",
+    "warning": "Waarschuwing",
+    "info": "Informatie"
+  },
+  "messages": {
+    "success": "Actie succesvol voltooid",
+    "error": "Er is een fout opgetreden",
+    "loading": "Laden, even geduld...",
+    "noData": "Geen gegevens beschikbaar",
+    "confirmDelete": "Weet je zeker dat je dit item wilt verwijderen?",
+    "saved": "Succesvol opgeslagen",
+    "deleted": "Succesvol verwijderd"
+  },
+  "notifications": {
+    "title": "Meldingen",
+    "clear": "Wissen",
+    "markAllAsRead": "Alles markeren als gelezen",
+    "allRead": "Alles gelezen",
+    "newImageGenerated": "Nieuwe afbeelding gegenereerd"
+  },
+  "navigation": {
+    "home": "Home",
+    "canvas": "Storyboard",
+    "settings": "Instellingen",
+    "back": "Terug"
+  },
+  "dialog": {
+    "confirmTitle": "Actie bevestigen",
+    "confirmDescription": "Deze actie kan niet ongedaan worden gemaakt",
+    "cancel": "Annuleren",
+    "confirm": "Bevestigen"
+  },
+  "update": {
+    "title": "🎉 Nieuwe versie beschikbaar",
+    "description": "Er is een nieuwe versie v{{version}} beschikbaar. Wil je nu installeren?",
+    "installNote": "Klik op \"Update installeren\" om de app opnieuw te starten en de update te installeren.",
+    "laterButton": "Later herinneren",
+    "installButton": "Update installeren",
+    "installing": "Installeren..."
+  },
+  "auth": {
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "loginToJaaz": "Inloggen bij Jaaz",
+    "myAccount": "Mijn account",
+    "loginDescription": "Log in om cloud‑AI‑modellen te gebruiken",
+    "startLogin": "Inloggen starten",
+    "preparingLogin": "Inloggen voorbereiden...",
+    "cancel": "Annuleren",
+    "loginSuccessMessage": "Succesvol ingelogd!",
+    "authExpiredMessage": "Autorisatie verlopen, log opnieuw in",
+    "authErrorMessage": "Er is een fout opgetreden bij het controleren van de autorisatie",
+    "waitingForBrowser": "Wachten op voltooiing van de login in de browser...",
+    "pollErrorMessage": "Kon de loginstatus niet controleren, probeer het opnieuw",
+    "preparingLoginMessage": "Inloggen voorbereiden...",
+    "browserLoginMessage": "Rond de login af in de browser",
+    "loginRequestFailed": "Loginverzoek mislukt, probeer het opnieuw",
+    "logoutSuccessMessage": "Succesvol uitgelogd",
+    "notLoggedIn": "Niet ingelogd",
+    "balance": "Saldo",
+    "recharge": "Opwaarderen"
+  },
+  "socket": {
+    "connectionError": "Verbindingsfout ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Verbinding mislukt, vernieuw de pagina"
+  }
+}

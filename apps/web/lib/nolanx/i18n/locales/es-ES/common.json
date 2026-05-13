@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Inglés",
+    "zh-CN": "Chino (simplificado)"
+  },
+  "buttons": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "submit": "Enviar",
+    "loading": "Cargando...",
+    "retry": "Reintentar"
+  },
+  "common": {
+    "yes": "Sí",
+    "no": "No",
+    "ok": "OK",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información"
+  },
+  "messages": {
+    "success": "Operación completada correctamente",
+    "error": "Se produjo un error",
+    "loading": "Cargando, por favor espera...",
+    "noData": "No hay datos disponibles",
+    "confirmDelete": "¿Seguro que quieres eliminar este elemento?",
+    "saved": "Guardado correctamente",
+    "deleted": "Eliminado correctamente"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "clear": "Limpiar",
+    "markAllAsRead": "Marcar todo como leído",
+    "allRead": "Todo leído",
+    "newImageGenerated": "Nueva imagen generada"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "canvas": "Guion gráfico",
+    "settings": "Ajustes",
+    "back": "Atrás"
+  },
+  "dialog": {
+    "confirmTitle": "Confirmar acción",
+    "confirmDescription": "Esta acción no se puede deshacer",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "update": {
+    "title": "🎉 Nueva versión disponible",
+    "description": "Hay una nueva versión v{{version}} disponible. ¿Quieres instalarla ahora?",
+    "installNote": "Haz clic en «Instalar actualización» para reiniciar la app e instalar la nueva versión.",
+    "laterButton": "Recordar más tarde",
+    "installButton": "Instalar actualización",
+    "installing": "Instalando..."
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "loginToJaaz": "Iniciar sesión en Jaaz",
+    "myAccount": "Mi cuenta",
+    "loginDescription": "Inicia sesión para usar modelos de IA en la nube",
+    "startLogin": "Iniciar sesión",
+    "preparingLogin": "Preparando inicio de sesión...",
+    "cancel": "Cancelar",
+    "loginSuccessMessage": "¡Inicio de sesión correcto!",
+    "authExpiredMessage": "La autorización ha caducado, vuelve a iniciar sesión",
+    "authErrorMessage": "Se produjo un error al comprobar el estado de autorización",
+    "waitingForBrowser": "Esperando a que completes el inicio de sesión en el navegador...",
+    "pollErrorMessage": "No se pudo comprobar el estado de inicio de sesión, inténtalo de nuevo",
+    "preparingLoginMessage": "Preparando inicio de sesión...",
+    "browserLoginMessage": "Completa el inicio de sesión en el navegador",
+    "loginRequestFailed": "La solicitud de inicio de sesión falló, inténtalo de nuevo",
+    "logoutSuccessMessage": "Sesión cerrada correctamente",
+    "notLoggedIn": "No has iniciado sesión",
+    "balance": "Saldo",
+    "recharge": "Recargar"
+  },
+  "socket": {
+    "connectionError": "Error de conexión ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "La conexión falló, actualiza la página"
+  }
+}

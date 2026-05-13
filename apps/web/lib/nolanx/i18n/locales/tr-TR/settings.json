@@ -1,0 +1,98 @@
+{
+  "title": "Ayarlar",
+  "messages": {
+    "settingsSaved": "Ayarlar başarıyla kaydedildi",
+    "settingsReset": "Ayarlar varsayılana sıfırlandı",
+    "failedToSave": "Ayarlar kaydedilemedi",
+    "failedToLoad": "Yapılandırma yüklenemedi",
+    "restartRequired": "Proxy ayarlarının geçerli olması için lütfen uygulamayı yeniden başlatın"
+  },
+  "models": {
+    "title": "Modeller",
+    "placeholder": "Model adını girin",
+    "addModel": "Model ekle",
+    "types": {
+      "text": "metin",
+      "image": "görüntü",
+      "video": "video"
+    }
+  },
+  "provider": {
+    "title": "Sağlayıcılar",
+    "addProvider": "Sağlayıcı ekle",
+    "providerName": "Sağlayıcı adı",
+    "providerNamePlaceholder": "Sağlayıcı adı girin",
+    "apiUrl": "API URL",
+    "apiUrlPlaceholder": "API URL girin",
+    "apiKey": "API anahtarı",
+    "apiKeyPlaceholder": "API anahtarını girin",
+    "apiKeyDescription": "API anahtarınız güvenli şekilde saklanacaktır",
+    "maxTokens": "Maks. token",
+    "maxTokensPlaceholder": "Maks token girin",
+    "maxTokensDescription": "Yanıttaki maksimum token sayısı",
+    "customProvider": "✨ Özel sağlayıcı",
+    "imageGeneration": "🎨 Görüntü oluşturma",
+    "delete": "Sil",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "noModelsSelected": "Lütfen en az bir model ekleyin"
+  },
+  "proxy": {
+    "title": "Proxy ayarları",
+    "mode": "Proxy modu",
+    "selectMode": "Proxy modu seçin",
+    "modes": {
+      "none": "Proxy yok",
+      "system": "Sistem proxy",
+      "custom": "Özel proxy"
+    },
+    "enable": "Proxy'yi etkinleştir",
+    "url": "Proxy URL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Bağlantıyı test et",
+    "testing": "Test ediliyor...",
+    "testSuccess": "Proxy bağlantı testi başarılı",
+    "testFailed": "Proxy bağlantı testi başarısız: {{message}}",
+    "testError": "Proxy bağlantı testi hatası",
+    "status": {
+      "enabled": "Etkin",
+      "disabled": "Devre dışı",
+      "misconfigured": "Yanlış yapılandırılmış"
+    }
+  },
+  "comfyui.workflows": "İş akışları",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Yerel görüntü oluşturma",
+    "enable": "Etkinleştir",
+    "debugStatus": "🔍 Hata ayıklama durumu",
+    "status": {
+      "disabled": "Devre dışı",
+      "running": "Çalışıyor",
+      "installed": "Yüklü (Çalışmıyor)",
+      "notInstalled": "Yüklü değil",
+      "notRunning": "Çalışmıyor",
+      "checking": "Kontrol ediliyor..."
+    },
+    "urlDescription": "ComfyUI servis URL'si; zaten yüklüyse adresi girin",
+    "invalidUrl": "Lütfen geçerli bir URL girin (ör. http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI yüklü değil",
+    "notInstalledDescription": "Flux modelleriyle yerel görüntü oluşturmayı etkinleştirmek için ComfyUI'yi yükleyin",
+    "installButton": "ComfyUI'yi yükle",
+    "startButton": "ComfyUI'yi başlat",
+    "uninstallButton": "ComfyUI'yi kaldır",
+    "confirmUninstall": "ComfyUI'yi kaldırmak istediğinizden emin misiniz? Bu işlem ComfyUI'yi, indirilen tüm modelleri ve yapılandırmaları dahil olmak üzere sisteminizden tamamen kaldırır.",
+    "confirmUninstallButton": "Kaldırmayı onayla",
+    "uninstallProgress": {
+      "title": "ComfyUI kaldırılıyor",
+      "preparing": "Kaldırma hazırlanıyor...",
+      "inProgress": "Kaldırma devam ediyor... Lütfen bekleyin.",
+      "logTitle": "Kaldırma günlüğü:",
+      "completed": "Kaldırma tamamlandı"
+    },
+    "notInstalled": "ComfyUI yüklü değil"
+  },
+  "saveSettings": "Ayarları kaydet",
+  "close": "Kapat",
+  "cancel": "İptal"
+}

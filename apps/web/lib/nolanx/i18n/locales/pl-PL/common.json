@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Angielski",
+    "zh-CN": "Chiński (uproszczony)"
+  },
+  "buttons": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "create": "Utwórz",
+    "submit": "Wyślij",
+    "loading": "Ładowanie...",
+    "retry": "Spróbuj ponownie"
+  },
+  "common": {
+    "yes": "Tak",
+    "no": "Nie",
+    "ok": "OK",
+    "error": "Błąd",
+    "success": "Sukces",
+    "warning": "Ostrzeżenie",
+    "info": "Informacja"
+  },
+  "messages": {
+    "success": "Operacja zakończona pomyślnie",
+    "error": "Wystąpił błąd",
+    "loading": "Ładowanie, proszę czekać...",
+    "noData": "Brak danych",
+    "confirmDelete": "Czy na pewno chcesz usunąć ten element?",
+    "saved": "Zapisano pomyślnie",
+    "deleted": "Usunięto pomyślnie"
+  },
+  "notifications": {
+    "title": "Powiadomienia",
+    "clear": "Wyczyść",
+    "markAllAsRead": "Oznacz wszystko jako przeczytane",
+    "allRead": "Wszystko przeczytane",
+    "newImageGenerated": "Wygenerowano nowy obraz"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "canvas": "Storyboard",
+    "settings": "Ustawienia",
+    "back": "Wstecz"
+  },
+  "dialog": {
+    "confirmTitle": "Potwierdź działanie",
+    "confirmDescription": "Tej akcji nie można cofnąć",
+    "cancel": "Anuluj",
+    "confirm": "Potwierdź"
+  },
+  "update": {
+    "title": "🎉 Dostępna nowa wersja",
+    "description": "Dostępna jest nowa wersja v{{version}}. Zainstalować teraz?",
+    "installNote": "Kliknij „Zainstaluj aktualizację”, aby ponownie uruchomić aplikację i zainstalować aktualizację.",
+    "laterButton": "Przypomnij później",
+    "installButton": "Zainstaluj aktualizację",
+    "installing": "Instalowanie..."
+  },
+  "auth": {
+    "login": "Zaloguj się",
+    "logout": "Wyloguj się",
+    "loginToJaaz": "Zaloguj się do Jaaz",
+    "myAccount": "Moje konto",
+    "loginDescription": "Zaloguj się, aby używać chmurowych modeli AI",
+    "startLogin": "Rozpocznij logowanie",
+    "preparingLogin": "Przygotowywanie logowania...",
+    "cancel": "Anuluj",
+    "loginSuccessMessage": "Zalogowano pomyślnie!",
+    "authExpiredMessage": "Autoryzacja wygasła, zaloguj się ponownie",
+    "authErrorMessage": "Wystąpił błąd podczas sprawdzania statusu autoryzacji",
+    "waitingForBrowser": "Czekanie na zakończenie logowania w przeglądarce...",
+    "pollErrorMessage": "Nie udało się sprawdzić statusu logowania, spróbuj ponownie",
+    "preparingLoginMessage": "Przygotowywanie logowania...",
+    "browserLoginMessage": "Dokończ logowanie w przeglądarce",
+    "loginRequestFailed": "Żądanie logowania nie powiodło się, spróbuj ponownie",
+    "logoutSuccessMessage": "Wylogowano pomyślnie",
+    "notLoggedIn": "Nie zalogowano",
+    "balance": "Saldo",
+    "recharge": "Doładuj"
+  },
+  "socket": {
+    "connectionError": "Błąd połączenia ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Połączenie nieudane, odśwież stronę"
+  }
+}

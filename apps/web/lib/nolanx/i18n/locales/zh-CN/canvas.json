@@ -1,0 +1,190 @@
+{
+  "title": "故事板",
+  "rename": "重命名故事板",
+  "delete": "删除故事板",
+  "share": "分享故事板",
+  "export": "导出故事板",
+  "exportImages": "导出镜头",
+  "import": "导入故事板",
+  "untitled": "无标题场景",
+  "back": "返回导演台",
+  "saveSnapshot": "保存场景快照",
+  "loadSnapshot": "加载场景快照",
+  "saved": "场景已保存 ✅",
+  "messages": {
+    "canvasRenamed": "故事板重命名成功",
+    "canvasDeleted": "故事板删除成功",
+    "canvasExported": "故事板导出成功",
+    "canvasImported": "故事板导入成功",
+    "failedToRename": "重命名故事板失败",
+    "failedToDelete": "删除故事板失败",
+    "failedToCreateFile": "创建场景文件失败",
+    "noImagesSelected": "未选中镜头",
+    "exportingImages": "导出镜头中...",
+    "failedToExportImages": "导出镜头失败"
+  },
+  "deleteDialog": {
+    "title": "删除故事板",
+    "description": "确定要删除此故事板吗？此场景将永久丢失。",
+    "cancel": "取消",
+    "delete": "删除"
+  },
+  "tool": {
+    "hand": "镜头推拉",
+    "selection": "场景选择",
+    "rectangle": "取景框",
+    "ellipse": "聚光灯",
+    "text": "字幕卡",
+    "image": "视觉素材",
+    "shape": "道具形状",
+    "freedraw": "自由创作",
+    "arrow": "动作箭头",
+    "line": "运动轨迹",
+    "zoomFit": "全景取景"
+  },
+  "popbar": {
+    "addToChat": "与诺兰讨论"
+  },
+  "loading": {
+    "preparingCanvas": "正在准备画布…",
+    "loadingSharedCanvas": "正在加载分享的画布…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "场景标题",
+    "published": "已发布",
+    "checking": "检查中...",
+    "publish": "发布",
+    "copied": "已复制！",
+    "share": "分享",
+    "sharedCanvas": "分享画布",
+    "shareCopiedToast": "分享链接已复制到剪贴板！",
+    "shareCopyFailedToast": "复制分享链接失败"
+  },
+  "preview": {
+    "mute": "静音",
+    "unmute": "取消静音",
+    "volume": "音量：{{percent}}%",
+    "export": "导出",
+    "exporting": "导出中...",
+    "exportVideo": "导出视频",
+    "playing": "播放中",
+    "placeholder": {
+      "title": "预览窗口",
+      "hint": "向时间轴添加素材以查看预览"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "轨道",
+    "trackLabels": {
+      "script": "脚本",
+      "keyframe": "关键帧",
+      "video": "视频",
+      "audio": "音频",
+      "world": "世界"
+    },
+    "indexedTitles": {
+      "script": "脚本 {{index}}",
+      "keyframe": "关键帧 {{index}}",
+      "video": "视频 {{index}}",
+      "audio": "音频 {{index}}",
+      "world": "世界 {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "缩小",
+      "zoomIn": "放大",
+      "rearrangeAllLanes": "重新排列所有轨道（磁吸对齐，0 间隔）",
+      "play": "播放",
+      "pause": "暂停"
+    },
+    "actions": {
+      "clickToDrop": "点击放置",
+      "clickToSelect": "点击选择",
+      "regenerate": "重新生成",
+      "howToModify": "如何修改？",
+      "regenerateNow": "立即重生成",
+      "modifyThenRegenerate": "修改后重生成"
+    },
+    "assetActions": {
+      "unsupported": "该资产类型暂不支持点对点重生成。",
+      "title": "修改这个资产",
+      "description": "写清楚你想改的这个片段或图片。系统会保留原镜头意图，只重生成当前资产。",
+      "quickDescription": "可以直接重生成当前资产，或者先写清楚想做的定向修改。",
+      "placeholder": "例如：保持同样机位，但让对白更紧张，灯光更冷。",
+      "cancel": "取消",
+      "success": "资产已重新生成。",
+      "failed": "资产重生成失败。"
+    },
+    "assetTypes": {
+      "script": "脚本",
+      "keyframe": "关键帧",
+      "video": "视频",
+      "audio": "音频",
+      "asset": "素材",
+      "world": "世界"
+    },
+    "fallbackTitles": {
+      "script": "脚本",
+      "keyframe": "关键帧",
+      "video": "视频",
+      "audio": "音频",
+      "asset": "素材",
+      "untitled": "未命名",
+      "world": "世界"
+    },
+    "alts": {
+      "keyframe": "关键帧",
+      "videoThumbnail": "视频缩略图"
+    },
+    "scriptDrawer": {
+      "open": "打开剧本",
+      "title": "剧本",
+      "searchPlaceholder": "搜索剧本/镜头/元素…",
+      "tabs": {
+        "script": "剧本",
+        "elements": "元素",
+        "shots": "镜头"
+      },
+      "scriptMeta": "{{assetCount}} 个资产 · {{shotCount}} 个镜头 · {{elementCount}} 个元素",
+      "copy": "复制",
+      "copyPrompt": "复制提示词",
+      "goToTime": "跳到时间",
+      "go": "跳转",
+      "timecode": "时间 {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "未知",
+      "emptyScript": "暂无剧本内容。",
+      "noScript": "暂无剧本。先生成故事板来填充剧本与元素库。",
+      "noElements": "暂无关键元素。",
+      "noShots": "暂无镜头卡片。"
+    },
+    "saveIndicator": {
+      "saveFailed": "保存失败",
+      "saving": "保存中...",
+      "savedAt": "已保存 {{time}}"
+    },
+    "videoGate": {
+      "title": "视频生成检查点",
+      "description": "下一批视频已经准备好。现在可以先确认积分再继续，或者在片段生成开始前暂停整个 agent 流程。",
+      "batchLabel": "第 {{current}} / {{total}} 批",
+      "clipLabel": "本批待生成 {{count}} 个片段",
+      "countdownLabel": "{{seconds}} 秒后自动开始生成",
+      "generateNow": "立即生成",
+      "pauseNow": "立即暂停",
+      "starting": "正在启动这一批..."
+    }
+  },
+  "publish": {
+    "title": "发布到社区",
+    "enterTitleError": "请输入标题",
+    "success": "已成功发布到社区！",
+    "failed": "发布失败",
+    "warning": "这将把当前画布的所有对话与创作结果发布到社区。",
+    "oncePublished": "发布后，任何人都可以查看并发现你的作品。",
+    "canvasTitleLabel": "画布标题",
+    "canvasTitlePlaceholder": "请输入画布标题",
+    "cancel": "取消",
+    "publish": "发布",
+    "publishing": "发布中..."
+  }
+}

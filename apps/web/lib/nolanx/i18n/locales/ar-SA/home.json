@@ -1,0 +1,21 @@
+{
+  "title": "أول مخرج وكيل ذكاء اصطناعي في العالم: Nolan",
+  "subtitle": "برنامج الوصول المبكر",
+  "description": "أول مخرج وكيل ذكاء اصطناعي في العالم: Nolan",
+  "tabs": {
+    "myCanvases": "لوحاتي",
+    "community": "المجتمع"
+  },
+  "loading": {
+    "preparingCanvas": "يقوم Nolan بتحضير لوحتك…",
+    "communitySessions": "جارٍ تحميل جلسات المجتمع..."
+  },
+  "community": {
+    "loadFailed": "فشل تحميل جلسات المجتمع",
+    "canvasNotAvailable": "اللوحة غير متاحة لهذه الجلسة",
+    "likeFailed": "فشل تحديث الإعجاب"
+  },
+  "allProjects": "كل المشاريع",
+  "noCanvases": "لا توجد لوحات قصة بعد",
+  "newCanvas": "مشهد بدون عنوان"
+}

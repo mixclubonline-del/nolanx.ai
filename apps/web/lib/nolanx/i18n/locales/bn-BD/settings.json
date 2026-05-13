@@ -1,0 +1,98 @@
+{
+  "title": "সেটিংস",
+  "messages": {
+    "settingsSaved": "সেটিংস সফলভাবে সংরক্ষিত হয়েছে",
+    "settingsReset": "সেটিংস ডিফল্টে রিসেট হয়েছে",
+    "failedToSave": "সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে",
+    "failedToLoad": "কনফিগারেশন লোড করতে ব্যর্থ হয়েছে",
+    "restartRequired": "প্রক্সি সেটিংস কার্যকর করতে অ্যাপটি রিস্টার্ট করুন"
+  },
+  "models": {
+    "title": "মডেল",
+    "placeholder": "মডেলের নাম লিখুন",
+    "addModel": "মডেল যোগ করুন",
+    "types": {
+      "text": "টেক্সট",
+      "image": "ইমেজ",
+      "video": "ভিডিও"
+    }
+  },
+  "provider": {
+    "title": "প্রোভাইডার",
+    "addProvider": "প্রোভাইডার যোগ করুন",
+    "providerName": "প্রোভাইডারের নাম",
+    "providerNamePlaceholder": "প্রোভাইডারের নাম লিখুন",
+    "apiUrl": "API URL",
+    "apiUrlPlaceholder": "API URL লিখুন",
+    "apiKey": "API কী",
+    "apiKeyPlaceholder": "API কী লিখুন",
+    "apiKeyDescription": "আপনার API কী নিরাপদভাবে সংরক্ষিত থাকবে",
+    "maxTokens": "সর্বোচ্চ টোকেন",
+    "maxTokensPlaceholder": "সর্বোচ্চ টোকেন লিখুন",
+    "maxTokensDescription": "রেসপন্সে সর্বোচ্চ টোকেন সংখ্যা",
+    "customProvider": "✨ কাস্টম প্রোভাইডার",
+    "imageGeneration": "🎨 ইমেজ জেনারেশন",
+    "delete": "মুছুন",
+    "save": "সংরক্ষণ",
+    "cancel": "বাতিল",
+    "noModelsSelected": "অনুগ্রহ করে অন্তত একটি মডেল যোগ করুন"
+  },
+  "proxy": {
+    "title": "প্রক্সি সেটিংস",
+    "mode": "প্রক্সি মোড",
+    "selectMode": "প্রক্সি মোড নির্বাচন করুন",
+    "modes": {
+      "none": "কোনো প্রক্সি নয়",
+      "system": "সিস্টেম প্রক্সি",
+      "custom": "কাস্টম প্রক্সি"
+    },
+    "enable": "প্রক্সি চালু করুন",
+    "url": "প্রক্সি URL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "সংযোগ পরীক্ষা",
+    "testing": "পরীক্ষা হচ্ছে...",
+    "testSuccess": "প্রক্সি সংযোগ পরীক্ষা সফল",
+    "testFailed": "প্রক্সি সংযোগ পরীক্ষা ব্যর্থ: {{message}}",
+    "testError": "প্রক্সি সংযোগ পরীক্ষায় ত্রুটি",
+    "status": {
+      "enabled": "চালু",
+      "disabled": "বন্ধ",
+      "misconfigured": "ভুল কনফিগারড"
+    }
+  },
+  "comfyui.workflows": "ওয়ার্কফ্লো",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 লোকাল ইমেজ জেনারেশন",
+    "enable": "চালু করুন",
+    "debugStatus": "🔍 ডিবাগ স্ট্যাটাস",
+    "status": {
+      "disabled": "বন্ধ",
+      "running": "চলছে",
+      "installed": "ইনস্টলড (চলছে না)",
+      "notInstalled": "ইনস্টলড নয়",
+      "notRunning": "চলছে না",
+      "checking": "পরীক্ষা করা হচ্ছে..."
+    },
+    "urlDescription": "ComfyUI সার্ভিস URL; আগে থেকেই ইনস্টল থাকলে ঠিকানা দিন",
+    "invalidUrl": "অনুগ্রহ করে একটি বৈধ URL দিন (যেমন: http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI ইনস্টল করা নেই",
+    "notInstalledDescription": "Flux মডেলের সাথে লোকাল ইমেজ জেনারেশন চালু করতে ComfyUI ইনস্টল করুন",
+    "installButton": "ComfyUI ইনস্টল করুন",
+    "startButton": "ComfyUI শুরু করুন",
+    "uninstallButton": "ComfyUI আনইনস্টল করুন",
+    "confirmUninstall": "আপনি কি নিশ্চিত যে ComfyUI আনইনস্টল করতে চান? এতে আপনার সিস্টেম থেকে ComfyUI সম্পূর্ণভাবে মুছে যাবে, ডাউনলোড করা সব মডেল ও কনফিগারেশনসহ।",
+    "confirmUninstallButton": "আনইনস্টল নিশ্চিত করুন",
+    "uninstallProgress": {
+      "title": "ComfyUI আনইনস্টল হচ্ছে",
+      "preparing": "আনইনস্টল প্রস্তুত হচ্ছে...",
+      "inProgress": "আনইনস্টল চলছে... অনুগ্রহ করে অপেক্ষা করুন।",
+      "logTitle": "আনইনস্টল লগ:",
+      "completed": "আনইনস্টল সম্পন্ন"
+    },
+    "notInstalled": "ComfyUI ইনস্টল করা নেই"
+  },
+  "saveSettings": "সেটিংস সংরক্ষণ",
+  "close": "বন্ধ",
+  "cancel": "বাতিল"
+}

@@ -1,0 +1,98 @@
+{
+  "title": "Instellingen",
+  "messages": {
+    "settingsSaved": "Instellingen succesvol opgeslagen",
+    "settingsReset": "Instellingen teruggezet naar standaard",
+    "failedToSave": "Instellingen opslaan mislukt",
+    "failedToLoad": "Configuratie laden mislukt",
+    "restartRequired": "Herstart de applicatie zodat proxy-instellingen van kracht worden"
+  },
+  "models": {
+    "title": "Modellen",
+    "placeholder": "Voer modelnaam in",
+    "addModel": "Model toevoegen",
+    "types": {
+      "text": "tekst",
+      "image": "afbeelding",
+      "video": "video"
+    }
+  },
+  "provider": {
+    "title": "Providers",
+    "addProvider": "Provider toevoegen",
+    "providerName": "Providernaam",
+    "providerNamePlaceholder": "Voer providernaam in",
+    "apiUrl": "API-URL",
+    "apiUrlPlaceholder": "Voer API-URL in",
+    "apiKey": "API-sleutel",
+    "apiKeyPlaceholder": "Voer API-sleutel in",
+    "apiKeyDescription": "Je API-sleutel wordt veilig opgeslagen",
+    "maxTokens": "Max. tokens",
+    "maxTokensPlaceholder": "Voer je max. tokens in",
+    "maxTokensDescription": "Het maximum aantal tokens in het antwoord",
+    "customProvider": "✨ Aangepaste provider",
+    "imageGeneration": "🎨 Afbeeldingsgeneratie",
+    "delete": "Verwijderen",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "noModelsSelected": "Voeg minstens één model toe"
+  },
+  "proxy": {
+    "title": "Proxy-instellingen",
+    "mode": "Proxy-modus",
+    "selectMode": "Selecteer proxy-modus",
+    "modes": {
+      "none": "Geen proxy",
+      "system": "Systeemproxy",
+      "custom": "Aangepaste proxy"
+    },
+    "enable": "Proxy inschakelen",
+    "url": "Proxy-URL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Verbinding testen",
+    "testing": "Testen...",
+    "testSuccess": "Proxyverbindingstest geslaagd",
+    "testFailed": "Proxyverbindingstest mislukt: {{message}}",
+    "testError": "Fout bij proxyverbindingstest",
+    "status": {
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld",
+      "misconfigured": "Verkeerd geconfigureerd"
+    }
+  },
+  "comfyui.workflows": "Workflows",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Lokale afbeeldingsgeneratie",
+    "enable": "Inschakelen",
+    "debugStatus": "🔍 Debugstatus",
+    "status": {
+      "disabled": "Uitgeschakeld",
+      "running": "Actief",
+      "installed": "Geïnstalleerd (niet actief)",
+      "notInstalled": "Niet geïnstalleerd",
+      "notRunning": "Niet actief",
+      "checking": "Controleren..."
+    },
+    "urlDescription": "ComfyUI-service‑URL; voer het adres in als het al is geïnstalleerd",
+    "invalidUrl": "Voer een geldige URL in (bijv. http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI niet geïnstalleerd",
+    "notInstalledDescription": "Installeer ComfyUI om lokale afbeeldingsgeneratie met Flux-modellen te gebruiken",
+    "installButton": "ComfyUI installeren",
+    "startButton": "ComfyUI starten",
+    "uninstallButton": "ComfyUI verwijderen",
+    "confirmUninstall": "Weet je zeker dat je ComfyUI wilt verwijderen? Dit verwijdert ComfyUI volledig van je systeem, inclusief alle gedownloade modellen en configuraties.",
+    "confirmUninstallButton": "Verwijderen bevestigen",
+    "uninstallProgress": {
+      "title": "ComfyUI verwijderen",
+      "preparing": "Verwijderen voorbereiden...",
+      "inProgress": "Verwijderen bezig... Even geduld.",
+      "logTitle": "Verwijderlog:",
+      "completed": "Verwijderen voltooid"
+    },
+    "notInstalled": "ComfyUI is niet geïnstalleerd"
+  },
+  "saveSettings": "Instellingen opslaan",
+  "close": "Sluiten",
+  "cancel": "Annuleren"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "O primeiro diretor agente de IA do mundo: Nolan",
+  "subtitle": "Programa de acesso antecipado",
+  "description": "O primeiro diretor agente de IA do mundo: Nolan",
+  "tabs": {
+    "myCanvases": "Meus Canvas",
+    "community": "Comunidade"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan está preparando seu canvas…",
+    "communitySessions": "Carregando sessões da comunidade..."
+  },
+  "community": {
+    "loadFailed": "Falha ao carregar as sessões da comunidade",
+    "canvasNotAvailable": "O canvas não está disponível para esta sessão",
+    "likeFailed": "Falha ao atualizar o curtir"
+  },
+  "allProjects": "Todos os projetos",
+  "noCanvases": "Ainda não há storyboards",
+  "newCanvas": "Cena sem título"
+}

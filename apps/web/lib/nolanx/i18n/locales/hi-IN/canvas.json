@@ -1,0 +1,166 @@
+{
+  "title": "स्टोरीबोर्ड",
+  "rename": "स्टोरीबोर्ड का नाम बदलें",
+  "delete": "स्टोरीबोर्ड हटाएँ",
+  "share": "स्टोरीबोर्ड साझा करें",
+  "export": "स्टोरीबोर्ड एक्सपोर्ट करें",
+  "exportImages": "फ्रेम एक्सपोर्ट करें",
+  "import": "स्टोरीबोर्ड इम्पोर्ट करें",
+  "untitled": "अनटाइटल्ड सीन",
+  "back": "डायरेक्टर डेस्क पर वापस",
+  "saveSnapshot": "सीन स्नैपशॉट सहेजें",
+  "loadSnapshot": "सीन स्नैपशॉट लोड करें",
+  "saved": "सीन सेव हुआ ✅",
+  "messages": {
+    "canvasRenamed": "स्टोरीबोर्ड का नाम सफलतापूर्वक बदला गया",
+    "canvasDeleted": "स्टोरीबोर्ड सफलतापूर्वक हटाया गया",
+    "canvasExported": "स्टोरीबोर्ड सफलतापूर्वक एक्सपोर्ट हुआ",
+    "canvasImported": "स्टोरीबोर्ड सफलतापूर्वक इम्पोर्ट हुआ",
+    "failedToRename": "स्टोरीबोर्ड का नाम नहीं बदला जा सका",
+    "failedToDelete": "स्टोरीबोर्ड हटाया नहीं जा सका",
+    "failedToCreateFile": "सीन फ़ाइल नहीं बन सकी",
+    "noImagesSelected": "कोई फ्रेम चयनित नहीं",
+    "exportingImages": "फ्रेम एक्सपोर्ट हो रहे हैं...",
+    "failedToExportImages": "फ्रेम एक्सपोर्ट नहीं हो सके"
+  },
+  "deleteDialog": {
+    "title": "स्टोरीबोर्ड हटाएँ",
+    "description": "क्या आप वाकई इस स्टोरीबोर्ड को हटाना चाहते हैं? यह सीन हमेशा के लिए खो जाएगा।",
+    "cancel": "रद्द करें",
+    "delete": "हटाएँ"
+  },
+  "tool": {
+    "hand": "कैमरा पैन",
+    "selection": "सीन चयन",
+    "rectangle": "फ्रेम बॉक्स",
+    "ellipse": "स्पॉटलाइट",
+    "text": "टाइटल कार्ड",
+    "image": "विज़ुअल एसेट",
+    "shape": "प्रॉप शेप",
+    "freedraw": "फ्री ड्रॉ",
+    "arrow": "एक्शन एरो",
+    "line": "मोशन लाइन",
+    "zoomFit": "सब दिखाएँ"
+  },
+  "popbar": {
+    "addToChat": "Nolan से चर्चा करें"
+  },
+  "loading": {
+    "preparingCanvas": "कैनवस तैयार हो रहा है…",
+    "loadingSharedCanvas": "शेयर किया गया कैनवस लोड हो रहा है…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "सीन शीर्षक",
+    "published": "पब्लिश्ड",
+    "checking": "जाँच हो रही है...",
+    "publish": "पब्लिश",
+    "copied": "कॉपी हुआ!",
+    "share": "साझा करें",
+    "sharedCanvas": "शेयर किया गया कैनवस",
+    "shareCopiedToast": "शेयर लिंक क्लिपबोर्ड पर कॉपी हुआ!",
+    "shareCopyFailedToast": "शेयर लिंक कॉपी नहीं हो सका"
+  },
+  "preview": {
+    "mute": "म्यूट",
+    "unmute": "अनम्यूट",
+    "volume": "वॉल्यूम: {{percent}}%",
+    "export": "एक्सपोर्ट",
+    "exporting": "एक्सपोर्ट हो रहा है...",
+    "exportVideo": "वीडियो एक्सपोर्ट करें",
+    "playing": "चल रहा है",
+    "placeholder": {
+      "title": "प्रीव्यू विंडो",
+      "hint": "प्रीव्यू देखने के लिए टाइमलाइन में एसेट जोड़ें"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "ट्रैक्स",
+    "trackLabels": {
+      "script": "स्क्रिप्ट",
+      "keyframe": "की फ्रेम",
+      "video": "वीडियो",
+      "audio": "ऑडियो",
+      "world": "दुनिया"
+    },
+    "indexedTitles": {
+      "script": "स्क्रिप्ट {{index}}",
+      "keyframe": "की फ्रेम {{index}}",
+      "video": "वीडियो {{index}}",
+      "audio": "ऑडियो {{index}}",
+      "world": "दुनिया {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "ज़ूम आउट",
+      "zoomIn": "ज़ूम इन",
+      "rearrangeAllLanes": "सभी लेन पुनर्व्यवस्थित करें (मैग्नेटिक स्नैप - 0 टाइम गैप)",
+      "play": "चलाएँ",
+      "pause": "रोकें"
+    },
+    "actions": {
+      "clickToDrop": "ड्रॉप करने के लिए क्लिक करें",
+      "clickToSelect": "चुनने के लिए क्लिक करें"
+    },
+    "assetTypes": {
+      "script": "स्क्रिप्ट",
+      "keyframe": "कीफ्रेम",
+      "video": "वीडियो",
+      "audio": "ऑडियो",
+      "asset": "एसेट",
+      "world": "दुनिया"
+    },
+    "fallbackTitles": {
+      "script": "स्क्रिप्ट",
+      "keyframe": "की फ्रेम",
+      "video": "वीडियो",
+      "audio": "ऑडियो",
+      "asset": "एसेट",
+      "untitled": "अनटाइटल्ड",
+      "world": "दुनिया"
+    },
+    "alts": {
+      "keyframe": "कीफ्रेम",
+      "videoThumbnail": "वीडियो थंबनेल"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "सेव विफल",
+      "saving": "सेव हो रहा है...",
+      "savedAt": "{{time}} पर सेव हुआ"
+    }
+  },
+  "publish": {
+    "title": "कम्युनिटी में पब्लिश करें",
+    "enterTitleError": "कृपया शीर्षक दर्ज करें",
+    "success": "कैनवस सफलतापूर्वक कम्युनिटी में पब्लिश हुआ!",
+    "failed": "कैनवस पब्लिश नहीं हो सका",
+    "warning": "यह इस कैनवस की सभी बातचीत और रचनात्मक परिणाम कम्युनिटी में पब्लिश करेगा।",
+    "oncePublished": "एक बार पब्लिश होने पर, कोई भी आपका काम देख और खोज सकता है।",
+    "canvasTitleLabel": "कैनवस शीर्षक",
+    "canvasTitlePlaceholder": "कैनवस शीर्षक दर्ज करें",
+    "cancel": "रद्द करें",
+    "publish": "पब्लिश",
+    "publishing": "पब्लिश हो रहा है..."
+  }
+}

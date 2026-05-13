@@ -1,0 +1,113 @@
+{
+  "newChat": "新建聊天",
+  "placeholder": "在这里输入你的消息...",
+  "textarea": {
+    "placeholder": "有什么故事想和诺兰一起创作吗？",
+    "selectModel": "请选择一个文本模型！如果您还没有设置 API 密钥，请前往设置页面进行配置。",
+    "enterPrompt": "请输入提示内容",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "定位到图片",
+    "audioPositioning": "定位到音频",
+    "videoPositioning": "定位到视频",
+    "showMore": "显示更多",
+    "showLess": "收起"
+  },
+  "jsonCard": {
+    "copy": "复制",
+    "copied": "已复制",
+    "showCode": "显示代码",
+    "hideCode": "隐藏代码"
+  },
+  "welcome": {
+    "greeting": "你好，ReelMaker！",
+    "help": "今天我能帮你做些什么？"
+  },
+  "replay": {
+    "replaying": "正在重放对话...（{{current}}/{{total}}）",
+    "completed": "对话重放完成",
+    "ready": "准备重放对话",
+    "skipToEnd": "跳到结尾",
+    "replayAgain": "再次重放",
+    "startReplay": "开始重放",
+    "continueConversation": "继续对话",
+    "forking": "分叉中...",
+    "forkingToast": "正在分叉画布...",
+    "forkSuccessToast": "画布已分叉！正在跳转...",
+    "forkFailedToast": "分叉画布失败"
+  },
+  "errors": {
+    "createSessionError": "创建会话失败"
+  },
+  "toolCallNames": {
+    "generate_image": "图片生成",
+    "edit_image": "图片编辑",
+    "generate_audio": "生成音频",
+    "generate_video": "视频",
+    "generate_video_first_last_frame": "首尾帧视频",
+    "generate_tts_audio": "生成配音",
+    "generate_music": "生成音乐",
+    "generate_structured_output": "生成结构化输出",
+    "execute_storyboard": "执行故事板",
+    "analyze_timeline_state": "分析时间线",
+    "recommend_generation_strategy": "推荐策略",
+    "execute_code": "执行代码",
+    "analyze_documents": "分析文档",
+    "analyze_media": "分析媒体",
+    "execute_function_call": "执行函数调用",
+    "analyze_web_context": "分析网页内容",
+    "search_and_generate": "搜索并生成",
+    "prompt_user_multi_choice": "多选提问",
+    "prompt_user_single_choice": "单选提问",
+    "write_plan": "计划",
+    "finish": "完成"
+  },
+  "publish": {
+    "title": "发布到社区",
+    "titleLabel": "标题 *",
+    "titlePlaceholder": "为你的对话输入一个吸引人的标题",
+    "descriptionLabel": "描述",
+    "descriptionPlaceholder": "简单描述这段对话的亮点...",
+    "tagsLabel": "标签（最多 5 个）",
+    "tagPlaceholder": "添加标签...",
+    "visibilityLabel": "可见性",
+    "visibilityPublic": "公开",
+    "visibilityUnlisted": "不公开列出",
+    "visibilityPublicHint": "任何人都可以发现并查看这段对话",
+    "visibilityUnlistedHint": "仅通过链接可查看这段对话",
+    "cancel": "取消",
+    "publish": "发布",
+    "publishing": "发布中...",
+    "enterTitleError": "请输入标题",
+    "success": "发布成功！",
+    "failed": "发布失败",
+    "publishButton": "发布"
+  },
+  "sessionSelector": {
+    "placeholder": "主题"
+  },
+  "thinking": {
+    "title": "思考过程"
+  },
+  "plan": {
+    "title": "计划",
+    "steps": {
+      "singular": "步骤",
+      "plural": "步骤"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

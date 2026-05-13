@@ -1,0 +1,8 @@
+# Allow all search engines to crawl
+# 允许所有搜索引擎爬取
+User-agent: *
+Allow: /
+
+# Site map
+# 站点地图
+Sitemap: https://reelmind.ai/sitemap.xml 

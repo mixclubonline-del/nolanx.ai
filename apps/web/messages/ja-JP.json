@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "いいね",
+      "liked": "いいね済み",
+      "share": "共有",
+      "download": "ダウンロード",
+      "downloading": "ダウンロード中...",
+      "copying": "コピー中...",
+      "recreate": "再作成"
+    },
+    "aria": {
+      "closeVideo": "動画を閉じる",
+      "goBack": "戻る",
+      "likeVideo": "動画にいいね",
+      "unlikeVideo": "いいねを解除",
+      "shareVideo": "動画を共有",
+      "downloadVideo": "動画をダウンロード",
+      "copyingLink": "リンクをコピー中...",
+      "downloading": "ダウンロード中..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "リンクをコピーしました",
+      "videoLinkCopiedMessage": "動画リンクをクリップボードにコピーしました",
+      "copyFailedTitle": "コピーに失敗しました",
+      "copyFailedMessage": "リンクをクリップボードにコピーできませんでした",
+      "shareFailedTitle": "共有に失敗しました",
+      "shareFailedMessage": "動画リンクをコピーできませんでした",
+      "loginFirst": "先にログインしてください",
+      "cannotFollowYourself": "自分自身をフォローできません",
+      "followed": "フォローしました",
+      "unfollowed": "フォローを解除しました",
+      "operationFailed": "操作に失敗しました"
+    },
+    "generation": {
+      "generationModel": "生成モデル",
+      "withEffect": "{effect} を適用",
+      "effectBadge": "エフェクト",
+      "prompt": "プロンプト",
+      "referenceImage": "参照画像",
+      "referenceImageAlt": "動画生成用の参照画像",
+      "negativePrompt": "ネガティブプロンプト",
+      "parameters": "パラメータ",
+      "guidance": "ガイダンス",
+      "steps": "ステップ",
+      "seed": "シード",
+      "ratio": "比率"
+    },
+    "author": {
+      "uploaded": "投稿: {time}",
+      "profile": "プロフィール",
+      "follow": "フォロー",
+      "unfollow": "フォロー解除",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "コメント",
+      "placeholder": "この動画についての感想を共有...",
+      "send": "送信",
+      "sending": "送信中...",
+      "empty": "最初のコメントを投稿してみましょう！"
+    },
+    "time": {
+      "now": "たった今",
+      "minutesAgo": "{minutes}分前",
+      "hoursAgo": "{hours}時間前",
+      "daysAgo": "{days}日前"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "クレジット"
+    },
+    "earnCreditsCapsule": {
+      "label": "クレジットを獲得",
+      "aria": {
+        "openRewardCenter": "クレジットを獲得"
+      },
+      "badge": {
+        "claimed": "受け取り済み"
+      },
+      "title": {
+        "base": "クレジットを獲得",
+        "canClaim": "クレジットを獲得（+{amount}）",
+        "claimedToday": "クレジットを獲得（本日受け取り済み）"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "リワードセンター",
+      "subtitle": {
+        "main": "紹介で獲得 + デイリー報酬",
+        "joined": "参加した人を見る"
+      },
+      "common": {
+        "loading": "読み込み中..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} クレジット"
+      },
+      "actions": {
+        "back": "戻る",
+        "close": "閉じる",
+        "copy": "コピー",
+        "share": "共有",
+        "inviteFriends": "友達を招待",
+        "claim": "受け取る",
+        "claiming": "受け取り中...",
+        "claimed": "受け取り済み"
+      },
+      "aria": {
+        "copyInviteCode": "招待コードをコピー",
+        "shareInviteLink": "招待リンクを共有"
+      },
+      "labels": {
+        "inviteLink": "招待リンク",
+        "inviteCode": "招待コード",
+        "invited": "招待済み",
+        "rewarded": "付与済み",
+        "pending": "保留中",
+        "recentInvites": "最近の招待",
+        "recentRewards": "最近の報酬",
+        "referEarn": "紹介で獲得",
+        "dailyRewards": "デイリー報酬",
+        "dailyLogin": "デイリーログイン",
+        "rewardedProgress": "付与済み: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "まだ招待はありません。",
+        "noRewards": "まだ報酬はありません。"
+      },
+      "status": {
+        "rewarded": "付与済み",
+        "pending": "保留中",
+        "verified": "確認済み"
+      },
+      "share": {
+        "title": "ReelMind 招待",
+        "text": "ReelMind に参加して無料クレジットを受け取ろう。"
+      },
+      "toast": {
+        "copiedTitle": "コピーしました",
+        "copiedDescription": "{label} をクリップボードにコピーしました。",
+        "copyFailedTitle": "コピーに失敗しました",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "手動でコピーしてください。",
+        "claimFailedTitle": "受け取りに失敗しました",
+        "claimedTitle": "受け取りました",
+        "claimedDescription": "{amount} クレジットを受け取りました。"
+      },
+      "referEarn": {
+        "tipLabel": "招待＆獲得ルール",
+        "tipTitle": "仕組み",
+        "tipBody1": "招待リンクを共有します。新規ユーザーがあなたのコードで登録し、対象のアクションを完了すると、システム確認後にクレジットが付与されます。",
+        "tipBody2": "段階報酬: 1〜5 = 50、6〜15 = 100、16〜20 = 200 クレジット。",
+        "cardTitle": "友達を招待してクレジットを獲得",
+        "upTo": "最大 {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "デイリーログインルール",
+        "tipTitle": "デイリー報酬",
+        "tipBodyPrefix": "報酬は",
+        "tipBodyDay2": "連続ログイン2日目",
+        "tipBodySuffix": "から始まり、UTC基準で毎日リセットされます。",
+        "status": {
+          "loading": "ステータスを読み込み中...",
+          "claimed": "受け取り済み",
+          "readyToClaim": "受け取り可能",
+          "locked": "ロック中"
+        },
+        "errors": {
+          "alreadyClaimed": "本日はすでに受け取っています。",
+          "notEligible": "現在受け取り対象ではありません。",
+          "riskBlocked": "リスク制御により受け取りがブロックされました。",
+          "generic": "問題が発生しました。後でもう一度お試しください。"
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "探索",
+      "video": "動画",
+      "image": "画像",
+      "music": "音楽",
+      "edit": "編集",
+      "experiment": "実験"
+    },
+    "special": {
+      "nolan": "ノーラン"
+    },
+    "bottom": {
+      "affiliate": "アフィリエイト",
+      "contactUs": "お問い合わせ",
+      "blog": "ブログ",
+      "apiPlatform": "APIプラットフォーム"
+    },
+    "badges": {
+      "help": "ヘルプ",
+      "new": "新着",
+      "free": "無料"
+    },
+    "sidebar": {
+      "more": "もっと見る",
+      "closeMenu": "メニューを閉じる",
+      "moreTools": "その他のツール",
+      "followOnX": "X（Twitter）でフォロー",
+      "followOnTikTok": "TikTokでフォロー",
+      "subscribeOnYouTube": "YouTubeチャンネルを登録",
+      "termsOfService": "利用規約",
+      "privacyPolicy": "プライバシーポリシー"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "特徴",
+        "models": "モデル"
+      },
+      "features": {
+        "createVideo": {
+          "title": "ビデオの作成",
+          "description": "AIビデオを生成する"
+        },
+        "cinemaStudioVideo": {
+          "title": "シネマスタジオビデオ",
+          "description": "カメラの動きを含むプロのビデオ"
+        },
+        "mixedMedia": {
+          "title": "ミクストメディア",
+          "description": "テキスト、画像、ビデオをブレンドする"
+        },
+        "editVideo": {
+          "title": "ビデオを編集する",
+          "description": "シーン、ショット、要素を編集する"
+        },
+        "clickToAd": {
+          "title": "クリックして広告を表示",
+          "description": "クリップを広告に変える"
+        },
+        "sora2Trends": {
+          "title": "ソラ2のトレンド",
+          "description": "トレンドを取り入れた動画のアイデア"
+        },
+        "lipsyncStudio": {
+          "title": "リップシンクスタジオ",
+          "description": "音声を顔に同期する"
+        },
+        "drawToVideo": {
+          "title": "ビデオへの描画",
+          "description": "スケッチが映画館に変わる"
+        },
+        "sketchToVideo": {
+          "title": "スケッチからビデオへ",
+          "description": "Sora 2 でスケッチからビデオまで"
+        },
+        "ugcFactory": {
+          "title": "UGCファクトリー",
+          "description": "クリエイターがすぐに使えるコンテンツを迅速に作成"
+        },
+        "videoUpscale": {
+          "title": "ビデオのアップスケール",
+          "description": "解像度を上げて鮮明に"
+        },
+        "higgsfieldAnimate": {
+          "title": "ヒッグスフィールド アニメイト",
+          "description": "静止画をスタイリッシュにアニメーション化する"
+        },
+        "recastStudio": {
+          "title": "リキャストスタジオ",
+          "description": "俳優とスタイルを再キャストする"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "映画のようなカメラ制御"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "ダイナミックモーションコントロール"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "高品質のテキストからビデオへの変換"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "精密なビデオ編集"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "次世代ビデオ世代"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "リアルな映画撮影"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "様式化された動きとリズム"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "高速映画ビデオ"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "クリーンなディテールとトーン"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "アバターによるパフォーマンス"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "特長",
+        "models": "モデル"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "画像の作成",
+          "description": "AI画像の生成"
+        },
+        "cinemaStudioImage": {
+          "title": "シネマスタジオのイメージ",
+          "description": "実際のカメラとレンズのシミュレーション"
+        },
+        "createStoryboard": {
+          "title": "ストーリーボードの作成",
+          "description": "ストーリーシーンをデザインする"
+        },
+        "soulIdCharacter": {
+          "title": "ソウルIDキャラクター",
+          "description": "ユニークなキャラクターを作成する"
+        },
+        "relight": {
+          "title": "リライト",
+          "description": "照明の位置、色、明るさを調整する"
+        },
+        "inpaint": {
+          "title": "インペイント",
+          "description": "エリアを選択し、変更内容を説明してください"
+        },
+        "imageUpscale": {
+          "title": "画像のアップスケール",
+          "description": "画質を向上させる"
+        },
+        "faceSwap": {
+          "title": "フェイススワップ",
+          "description": "リアルな顔のスワップを作成する"
+        },
+        "characterSwap": {
+          "title": "キャラクターの交換",
+          "description": "リアルなキャラクター交換を作成する"
+        },
+        "drawToEdit": {
+          "title": "描画して編集",
+          "description": "スケッチから絵へ"
+        },
+        "instadump": {
+          "title": "インスタダンプ",
+          "description": "自撮り写真を完全なコンテンツ ライブラリに変える"
+        },
+        "photodumpStudio": {
+          "title": "フォトダンプスタジオ",
+          "description": "あなたの美学を生み出す"
+        },
+        "fashionFactory": {
+          "title": "ファッションファクトリー",
+          "description": "ファッションセットを作成する"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "超リアルなファッションビジュアル"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "絵コンテ、編集、作成"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "史上最高の 4K 画像モデル"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "次世代4K映像モデル"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "トゥルーカラーの高精度レンダリング"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "スピードを最適化した詳細"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "インスタントでリアルなポートレート"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "写実的で正確な画像"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "リアルな画像"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "高度な画像編集モデル"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "高解像度アップスケーラー"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "すべて",
+        "recommended": "おすすめ",
+        "saved": "保存済み"
+      },
+      "labels": {
+        "camera": "カメラ",
+        "lens": "レンズ",
+        "focalLength": "焦点距離",
+        "aperture": "絞り"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "設定を保存",
+        "removeSetup": "設定を削除",
+        "close": "閉じる"
+      },
+      "empty": "設定がありません"
+    },
+    "page": {
+      "title": "実験",
+      "subtitle": "まずは新しいワークフローを試してみる",
+      "back": "実験に戻る"
+    },
+    "menu": {
+      "title": "実験",
+      "open": "開く"
+    },
+    "tabs": {
+      "character": "キャラクター",
+      "inpaint": "インペイント",
+      "cinemaStudio": "シネマスタジオ",
+      "motionControl": "モーションコントロール",
+      "assist": "アシスト"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "インペイント",
+        "description": "領域をペイントして変更を説明します"
+      },
+      "cinemaStudio": {
+        "title": "シネマスタジオ",
+        "description": "プロフェッショナルな映画のようなワークフロー"
+      },
+      "motionControl": {
+        "title": "モーションコントロール",
+        "description": "リファレンスビデオからモーションをコピーする"
+      },
+      "assist": {
+        "title": "アシスト",
+        "description": "プロンプトとクリエイティブなアシスタント ツール"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "キャラクター",
+        "subtitle": "文字一貫性ツール (プレースホルダー)"
+      },
+      "inpaint": {
+        "title": "インペイント",
+        "subtitle": "メディアをアップロードし、領域を選択し、編集内容を説明します"
+      },
+      "cinemaStudio": {
+        "title": "シネマスタジオ",
+        "subtitle": "カメラ認識プロンプトで映画のようなショットを生成"
+      },
+      "motionControl": {
+        "title": "モーションコントロール",
+        "subtitle": "画像を使ってモーションを再現する"
+      },
+      "assist": {
+        "title": "アシスト",
+        "subtitle": "チャット、ヒント、プロンプト ユーティリティ"
+      }
+    },
+    "actions": {
+      "upload": "メディアをアップロードする",
+      "generate": "生成する",
+      "history": "歴史",
+      "howItWorks": "仕組み",
+      "sendMessage": "メッセージを送信してください...",
+      "tryExample": "例を試してみる",
+      "send": "送信"
+    },
+    "placeholders": {
+      "exploreFeatures": "機能を詳しく見る",
+      "settings": "設定",
+      "camera": "カメラ",
+      "cameraHint": "カメラの動作を選択します (プレースホルダー)",
+      "lens": "レンズ",
+      "lensHint": "レンズ オプションを選択します (プレースホルダー)",
+      "image": "画像",
+      "video": "ビデオ",
+      "scenePrompt": "想像した情景を説明してください..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "モーションを追加してコピーする",
+          "description": "動画の長さ: 3 ～ 30 秒"
+        },
+        "addCharacter": {
+          "title": "キャラクターを追加",
+          "description": "顔と体が見える画像"
+        }
+      },
+      "quality": {
+        "title": "品質",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "詳細設定"
+      },
+      "hero": {
+        "title": {
+          "prefix": "何でも再作成",
+          "highlight": "モーション",
+          "suffix": "あなたのイメージとともに"
+        },
+        "subtitle": "ビデオからモーションをコピーし、キャラクターを同じ動きに配置します"
+      },
+      "library": {
+        "title": "ライブラリからモーションをコピーして開始します"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind アシスト",
+        "subtitle": "クリエイター向けに構築された、ポケットの中にある博士号取得者のチーム。"
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "何ができるでしょうか？",
+          "description": "ReelMind AI 機能を探索する"
+        },
+        "howToCreate": {
+          "title": "魅力的なコンテンツを作成するにはどうすればよいですか?",
+          "description": "より良い AI プロンプトを作成するためのヒント"
+        },
+        "generateSoulImagePrompt": {
+          "title": "ソウルイメージ生成プロンプト",
+          "description": "審美性の高い画像のプロンプトを作成する"
+        },
+        "generateVideoPrompt": {
+          "title": "ビデオプロンプトの生成",
+          "description": "映画のようなビデオのプロンプトを作成する"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "キャラクターの一貫性",
+          "description": "フレーム間でキャラクターの一貫性を保つ (プレースホルダー)"
+        },
+        "library": {
+          "title": "キャラクターライブラリ",
+          "description": "保存されているキャラクターを選択するか、テンプレート (プレースホルダー) から開始します"
+        }
+      },
+      "placeholders": {
+        "preview": "プレビュー (プレースホルダー)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - AI動画の作成と共有のための無料クリエイターコミュニティ",
+      "description": "世界中のクリエイターによる話題のクリエイティブ動画を探索。インスピレーションやエンタメを見つけ、お気に入りをリミックス。"
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 が公開されました！"
+    },
+    "categories": {
+      "tabs": {
+        "all": "すべて",
+        "latest": "最新",
+        "hot": "人気"
+      },
+      "tooltip": {
+        "filterByModel": "{model} モデルで絞り込み"
+      },
+      "aria": {
+        "previous": "前のカテゴリ",
+        "next": "次のカテゴリ"
+      },
+      "error": {
+        "loadFailed": "カテゴリの読み込みに失敗しました"
+      },
+      "actions": {
+        "retry": "再試行"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "AI動画を作成"
+      },
+      "nolan": {
+        "title": "ノーラン",
+        "description": "世界No.1 AIエージェント監督"
+      },
+      "badges": {
+        "models": "モデル",
+        "free": "無料"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "探索 - ReelMind",
+      "description": "ReelMindで世界中のクリエイターによる話題のクリエイティブ動画を探索しましょう。"
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AIモデル＆エフェクト - ReelMind",
+      "description": "ReelMindで驚くようなAI生成動画を作るためのAI動画モデルとエフェクトを閲覧・利用できます。最先端AIモデルのコレクションを探索しましょう。"
+    },
+    "page": {
+      "title": "AIモデル＆エフェクト",
+      "description": "動画生成向けの最先端AIモデルとエフェクトのコレクションを閲覧",
+      "footerIntro": "動画生成向けのAIモデル{count}件のコレクションをご覧ください。"
+    },
+    "sections": {
+      "models": "モデル",
+      "effects": "エフェクト"
+    },
+    "actions": {
+      "viewAll": "すべて表示",
+      "viewAllModels": "モデルをすべて表示",
+      "backToModels": "モデル一覧に戻る"
+    },
+    "types": {
+      "allModels": "すべてのモデル",
+      "textToVideo": "テキスト→動画",
+      "imageToVideo": "画像→動画",
+      "videoToVideo": "動画→動画"
+    },
+    "all": {
+      "titleAll": "すべての動画モデル",
+      "titleByType": "{type} モデル",
+      "description": "動画生成向けAIモデルのコレクションを閲覧",
+      "countAll": "（{count}モデル）",
+      "countByType": "（{count}件の{type}モデル）",
+      "loadingMore": "モデルをさらに読み込み中...",
+      "loadMore": "さらにモデルを読み込む",
+      "end": "最後まで到達しました。すべてのモデルを読み込みました。",
+      "empty": "条件に一致するモデルが見つかりません。"
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "チェックポイント",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "対応機能",
+      "metaTitle": "{name} - AIモデル | ReelMind",
+      "metaDescriptionFallback": "ReelMindで動画生成用モデル{name}を探索。",
+      "metaErrorTitle": "モデル詳細 | ReelMind",
+      "metaErrorDescription": "ReelMindで動画生成向けAIモデルを探索。"
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AIエフェクト - ReelMind",
+      "description": "ReelMindでAI生成動画を強化するAI動画エフェクトを閲覧・利用できます。"
+    },
+    "page": {
+      "title": "AIエフェクト",
+      "description": "動画を強化するAIエフェクトのコレクションを閲覧"
+    },
+    "all": {
+      "title": "すべてのAIエフェクト",
+      "description": "動画を強化するAIエフェクトの全コレクションを閲覧"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "エフェクト一覧に戻る",
+        "goBack": "戻る",
+        "applyThisEffect": "このエフェクトを適用"
+      },
+      "badge": "エフェクト",
+      "addedOn": "{date} に追加",
+      "errors": {
+        "notFound": "エフェクトが見つかりません",
+        "loadFailed": "エフェクト詳細の読み込みに失敗しました"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "AI動画を作成 - ReelMind",
+      "description": "ReelMindの強力なAIモデルとツールで驚くようなAI生成動画を作成しましょう。"
+    },
+    "loading": "読み込み中...",
+    "loadingMobile": "モバイル表示を読み込み中...",
+    "loadingControlPanel": "コントロールパネルを読み込み中...",
+    "controlPanel": {
+      "modelAndSettings": "モデルと設定",
+      "history": "履歴",
+      "model": "モデル",
+      "selectModel": "モデルを選択"
+    },
+    "mobile": {
+      "backToCreate": "作成へ戻る"
+    },
+    "modelSelector": {
+      "loadingModels": "モデルを読み込み中...",
+      "moreModels": "さらに{count}件のモデル",
+      "exploreMoreModels": "さらに{count}件のモデルを探索"
+    },
+    "promptInput": {
+      "title": "プロンプト",
+      "placeholder": "作成したい内容を説明...",
+      "enhance": "強化",
+      "undo": "元に戻す",
+      "restoreOriginalPromptTitle": "元のプロンプトに戻す",
+      "toastEnhanced": "プロンプトを強化しました",
+      "toastRestored": "元のプロンプトに戻しました",
+      "enhanceFailed": "プロンプトの強化に失敗しました",
+      "sensitiveError": "センシティブなキーワードを検出: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "画像",
+      "mentionVideoTokenPrefix": "動画",
+      "mentionAudioTokenPrefix": "音声"
+    },
+    "referenceUploader": {
+      "addOptional": "任意の参照を追加",
+      "referenceImage": "参照画像",
+      "referenceImages": "参照画像 ({current}/{max})",
+      "referenceVideo": "参照動画",
+      "dropImage": "ここに画像をドロップするか、クリックしてアップロード",
+      "dropImageMax": "最大{max}枚の画像をここにドロップするか、クリックしてアップロード",
+      "dropVideo": "ここに動画をドロップするか、クリックしてアップロード",
+      "pasteHint": "貼り付け",
+      "videoUploaded": "動画をアップロードしました",
+      "uploading": "アップロード中...",
+      "addMore": "追加",
+      "removeReference": "削除",
+      "referenceImageAlt": "参照画像 {index}",
+      "supportedFormats": "対応: PNG, JPG",
+      "minimumSize": "最小 {minWidth}×{minHeight}、アスペクト比 {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} をアップロード中...",
+      "processingFile": "ファイルを処理中...",
+      "uploadReference": "参照{type}をアップロード",
+      "image": "画像",
+      "video": "動画",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "アスペクト比",
+      "duration": "長さ",
+      "seconds": "{seconds}秒",
+      "resolution": "解像度",
+      "audio": "音声",
+      "on": "オン",
+      "off": "オフ",
+      "advanced": "詳細",
+      "advancedShort": "詳細",
+      "creativityLevel": "創造性",
+      "moreAccurate": "より正確",
+      "moreCreative": "より創造的",
+      "samplingSteps": "サンプリングステップ",
+      "faster": "高速（{steps}ステップ）",
+      "higherQuality": "高品質（{steps}ステップ）",
+      "randomSeed": "ランダムシード",
+      "seedPlaceholder": "シードを入力",
+      "generateRandomSeed": "ランダムシードを生成",
+      "seedHint": "固定シードで結果を再現できます。",
+      "movementAmplitude": "動き",
+      "movementAmplitudeHint": "動きの強さを調整します。",
+      "backgroundMusic": "BGM",
+      "backgroundMusicHint": "対応時にBGMを追加します。",
+      "enabled": "有効",
+      "disabled": "無効",
+      "negativePrompt": "ネガティブプロンプト",
+      "negativePromptPlaceholder": "避けたい内容..."
+    },
+    "startToEndUploader": {
+      "title": "開始〜終了フレーム",
+      "startFrame": "開始フレーム",
+      "endFrame": "終了フレーム",
+      "dropStartImage": "開始画像をドロップするか、クリックしてアップロード",
+      "dropEndImage": "終了画像をドロップするか、クリックしてアップロード",
+      "startFrameImageAlt": "開始フレーム",
+      "endFrameImageAlt": "終了フレーム",
+      "uploading": "アップロード中...",
+      "instructions": "開始と終了画像をアップロードして遷移をガイドします。",
+      "supportedFormats": "対応: PNG, JPG",
+      "minimumSize": "最小 {minWidth}×{minHeight}、アスペクト比 {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "必要に応じて画像は自動圧縮されます。"
+    },
+    "modelTabs": {
+      "imageToVideo": "画像→動画",
+      "textToVideo": "テキスト→動画",
+      "firstLastFrame": "開始-終了フレーム",
+      "edit": "編集",
+      "effect": "エフェクト"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "参考ビデオ",
+      "required": "必須",
+      "removeVideo": "ビデオを削除する",
+      "uploading": "アップロード中...",
+      "dropVideo": "ここにビデオをドロップするか、クリックしてアップロードしてください",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "要素",
+      "optional": "オプション ({current}/{max})",
+      "addElements": "追加",
+      "elementAlt": "要素 {index}",
+      "removeElement": "要素 {index} を削除します",
+      "dropElements": "クリックして要素画像を追加します",
+      "elementsHint": "文字/スタイルを保持するためのオプションの画像。",
+      "errors": {
+        "invalidVideoTitle": "無効なビデオ",
+        "invalidVideoDescription": "ビデオファイルを選択してください。",
+        "videoTooLargeTitle": "ビデオが大きすぎます",
+        "videoTooLargeDescription": "最大{maxMb}MB。より短い/小さいクリップをアップロードしてください。",
+        "uploadFailedTitle": "アップロードに失敗しました",
+        "elementsLimitTitle": "要素制限に達しました",
+        "elementsLimitDescription": "最大 {max} 枚の画像を追加できます。",
+        "imageTooSmall": "画像は少なくとも {minWidth}×{minHeight} (現在: {width}×{height}) である必要があります。",
+        "imageBadRatio": "画像のアスペクト比は {minAspectRatio} から {maxAspectRatio} (現在: {current}) の間である必要があります。"
+      },
+      "warnings": {
+        "someSkippedTitle": "一部のファイルがスキップされました",
+        "someSkippedDescription": "{count} ファイルは制限によりスキップされました。",
+        "skippedTitle": "スキップされました",
+        "skippedNonImage": "要素には画像のみが許可されます。",
+        "imageCompressedTitle": "画像圧縮",
+        "imageCompressedDescription": "{original} から {final} まで圧縮されます。",
+        "skippedInvalidImage": "無効な画像です。"
+      }
+    },
+    "howItWorks": {
+      "title": "仕組み",
+      "hero": {
+        "title": "ワンクリックでビデオを作成",
+        "subtitle": "カメラ制御、フレーミング、VFX にプリセットを使用するか、プロンプトを使用して完全に手動で操作します。"
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "画像を追加",
+          "2": "プリセットを選択",
+          "3": "ビデオを入手"
+        },
+        "t2v": {
+          "1": "プロンプトの書き込み",
+          "2": "モデルを選択してください",
+          "3": "ビデオを入手"
+        },
+        "flf": {
+          "1": "フレームを追加する",
+          "2": "移行の説明",
+          "3": "ビデオを入手"
+        },
+        "edit": {
+          "1": "ビデオを追加",
+          "2": "要素を追加する",
+          "3": "ビデオを入手"
+        }
+      },
+      "modes": {
+        "edit": "編集 (ビデオからビデオ)",
+        "flf": "最初から最後のフレーム",
+        "i2v": "画像からビデオへ",
+        "t2v": "テキストからビデオへ"
+      },
+      "steps": {
+        "edit": {
+          "1": "短い参考ビデオをアップロードします。",
+          "2": "必要に応じて、文字やスタイルの一貫性を保つために、最大 4 つの要素画像を追加します。",
+          "3": "プロンプトで変更する内容 (および保持する内容) を説明し、生成します。"
+        },
+        "flf": {
+          "1": "開始フレームと終了フレームをアップロードします。",
+          "2": "希望する移行について説明します。",
+          "3": "スムーズな変換を作成するために生成します。"
+        },
+        "i2v": {
+          "1": "参考画像をアップロードします。",
+          "2": "モーション、カメラ、スタイルについて説明します。",
+          "3": "比率/期間を選択して生成します。"
+        },
+        "t2v": {
+          "1": "シーン (被写体、カメラ、照明、スタイル) を説明します。",
+          "2": "比率/期間を選択し、必要に応じて否定的なプロンプトを追加します。",
+          "3": "小さな変更を生成して繰り返します。"
+        }
+      },
+      "tip": "ヒント: 具体的にしてください。モデルに、何が変わらなければならないかを伝えます (アイデンティティ、ロゴ、構成)。",
+      "templates": {
+        "title": "プリセット",
+        "subtitle": "クラシックなプリセットを選択して、より速く生成します。",
+        "use": "使用する",
+        "clear": "クリア",
+        "prev": "前のプリセット",
+        "next": "次のプリセット",
+        "edit": {
+          "relight": {
+            "title": "リライトと雰囲気",
+            "description": "時間帯と映画のような照明を変更します。"
+          },
+          "grade": {
+            "title": "映画グレード",
+            "description": "ティールオレンジグレード + フィルムグレイン、動きとアイデンティティを維持。"
+          },
+          "weather": {
+            "title": "天気の変化",
+            "description": "アイデンティティを保ちながら、雨/霧を追加します。"
+          },
+          "anime": {
+            "title": "アニメのリスタイル",
+            "description": "アイデンティティとモーションを維持しながらアニメ風に仕上げます。"
+          },
+          "background": {
+            "title": "背景の置換",
+            "description": "被写体を維持したまま背景を交換します。"
+          },
+          "lux": {
+            "title": "プレミアムポリッシュ",
+            "description": "よりクリーンでスムーズ、よりプレミアムな商業的感触。"
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "昼→夜",
+            "description": "一貫したフレーミングによるスムーズな照明/時間遷移。"
+          },
+          "sketchToRender": {
+            "title": "スケッチ → レンダリング",
+            "description": "スケッチから最終レンダリングまで徐々に詳細を明らかにします。"
+          },
+          "beforeAfter": {
+            "title": "公開前/公開後",
+            "description": "微妙な動きで味わい深く変化。"
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "ポートレートライフ",
+            "description": "まばたきとゆっくりとした押し込みによる微妙な動き。"
+          },
+          "pan": {
+            "title": "視差パン",
+            "description": "深さとモーションブラーを備えた映画のようなパン。"
+          },
+          "product": {
+            "title": "プロダクトスピン",
+            "description": "光沢のあるハイライトを備えたスタジオ製品の外観。"
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8s プレミアム広告",
+            "description": "クリーンでハイエンドなコマーシャルショット。"
+          },
+          "establish": {
+            "title": "ショットを確立する",
+            "description": "世界/シーンの幅広い映画のようなイントロ。"
+          },
+          "anime": {
+            "title": "アニメオープニング",
+            "description": "定型化されたアニメのオープニング風のショット。"
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "画像→動画には参照画像が必要です。",
+        "i2vDescription": "参照画像をアップロードするか、テキスト→動画モデルに切り替えてください。",
+        "v2vTitle": "動画→動画には参照動画が必要です。",
+        "v2vDescription": "参照動画をアップロードするか、テキスト→動画モデルに切り替えてください。"
+      },
+      "costLabel": "コスト:",
+      "balanceLabel": "残高:",
+      "freeUnlimited": "無料（無制限）",
+      "credits": "クレジット",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast はラグジュアリーモデルで、Unlimited の無料利用には含まれません。追加のお支払いが必要です。",
+        "veo31": "VEO 3.1 はラグジュアリーモデルで、Unlimited の無料利用には含まれません。追加のお支払いが必要です。",
+        "veo3": "VEO3 はラグジュアリーモデルで、Unlimited の無料利用には含まれません。追加のお支払いが必要です。",
+        "sora2Pro": "Sora-2 Pro はラグジュアリーモデルで、Unlimited の無料利用には含まれません。追加のお支払いが必要です。"
+      },
+      "gettingCredits": "クレジットを取得中...",
+      "getBonusCredits": "{amount} クレジットを獲得",
+      "submitting": "送信中...",
+      "loadingModels": "モデルを読み込み中...",
+      "uploadingAsset": "アセットをアップロード中...",
+      "uploadingImages": "画像をアップロード中...",
+      "claimingCredits": "クレジットを受け取り中...",
+      "getMoreCredits": "クレジットを追加",
+      "generateVideo": "動画を生成"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "公開に失敗しました",
+        "missingTitleDescription": "動画のタイトルを入力してください",
+        "processingTitle": "処理中",
+        "processingDescription": "動画の公開準備をしています...",
+        "successTitle": "公開しました",
+        "successDescription": "動画をコミュニティに共有しました",
+        "failedTitle": "公開に失敗しました",
+        "failedDescription": "ネットワーク接続を確認するか、後でもう一度お試しください"
+      },
+      "successTitle": "公開しました！",
+      "successDescription": "あなたの素敵な作品がコミュニティで公開されました",
+      "publishingTitle": "公開中...",
+      "publishingDescriptionDesktop": "コミュニティで楽しめるように動画を準備しています...",
+      "publishingDescriptionMobile": "動画を準備中...",
+      "progressComplete": "{progress}% 完了",
+      "title": "コミュニティに共有",
+      "description": "あなたの素晴らしい作品を世界に共有しましょう",
+      "benefits": {
+        "getLikes": "いいねを獲得",
+        "buildCommunityLong": "コミュニティを築く",
+        "buildCommunityShort": "コミュニティ",
+        "inspireLong": "他の人にインスピレーションを与える",
+        "inspireShort": "インスパイア",
+        "earnLong": "+{amount} クレジットを獲得",
+        "earnShort": "+{amount} クレジット"
+      },
+      "videoTitle": "動画タイトル",
+      "videoTitlePlaceholder": "作品に魅力的なタイトルを付けましょう...",
+      "videoTitleHelperDesktop": "魅力的なタイトルはより多くの視聴者を引き付けます",
+      "videoTitleHelperMobile": "良いタイトルは視聴者を引き付けます",
+      "descriptionLabel": "説明",
+      "optional": "任意",
+      "descriptionPlaceholder": "コミュニティに作品について紹介しましょう...",
+      "descriptionHelper": "制作プロセスを共有しましょう",
+      "cancel": "キャンセル",
+      "publish": "公開"
+    },
+    "history": {
+      "title": "歴史",
+      "refresh": "リフレッシュ",
+      "view": {
+        "one": "行ごとに 1 つ",
+        "three": "1 行あたり 3 個",
+        "nine": "1 行あたり 9 個"
+      },
+      "filterPlaceholder": "フィルター",
+      "empty": "{status} のタスクが見つかりません",
+      "status": {
+        "all": "すべて",
+        "pending": "保留中",
+        "queued": "キュー待ち",
+        "processing": "処理中",
+        "completed": "完了",
+        "failed": "失敗",
+        "canceled": "キャンセル済み"
+      }
+    },
+    "effectSelector": {
+      "loading": "エフェクトを読み込み中...",
+      "defaultDescription": "動画に特殊効果を適用",
+      "ctaTitle": "エフェクトを選択",
+      "ctaDescription": "クリックして動画エフェクトを選択",
+      "modalTitle": "エフェクトを選択",
+      "close": "エフェクトセレクターを閉じる"
+    },
+    "modelSelectorModal": {
+      "title": "モデルを選択",
+      "description": "プロジェクトに使用するモデルを選択",
+      "close": "モデルセレクターを閉じる",
+      "loadingMore": "モデルをさらに読み込み中...",
+      "allLoaded": "すべてのモデルを読み込みました",
+      "noModelsFound": "モデルが見つかりません"
+    },
+    "modelSearch": {
+      "placeholder": "名前、タイプ、機能でモデルを検索...",
+      "clear": "検索をクリア",
+      "searching": "検索中...",
+      "foundModels": "{count}件のモデルが見つかりました",
+      "modelsAvailable": "{count}件のモデルが利用可能"
+    },
+    "modelTypeFilter": {
+      "title": "モデルタイプ",
+      "clear": "クリア"
+    },
+    "remixLoader": {
+      "successTitle": "リミックスタスクを読み込みました",
+      "successDescription": "元のタスクから動画パラメータを読み込みました。すぐに生成するか、パラメータを変更できます。",
+      "errorTitle": "パラメータの読み込みに失敗しました",
+      "errorDescription": "元のタスクからパラメータを読み込めませんでした。手動で設定してください。"
+    },
+    "modelCard": {
+      "select": "選択",
+      "credits": "クレジット",
+      "premium": "プレミアム",
+      "luxury": "贅沢"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind セレクト",
+      "hot": "人気",
+      "new": "NEW",
+      "select": "選択"
+    },
+    "previewPanel": {
+      "generating": "生成中...",
+      "download": "ダウンロード",
+      "downloading": "ダウンロード中...",
+      "shareToCommunity": "公開",
+      "tips": "ヒント: 公開するとクレジットを獲得",
+      "quality": "品質",
+      "qualityHd": "HD",
+      "qualityStandard": "標準",
+      "ratio": "比率",
+      "fullscreen": {
+        "enter": "全画面",
+        "exit": "全画面を終了"
+      },
+      "empty": {
+        "title": "まだプレビューはありません",
+        "description": "動画を生成するとここにプレビューが表示されます。"
+      },
+      "queue": {
+        "loading": "キュー情報を読み込み中...",
+        "headerProcessing": "処理中",
+        "headerQueueStatus": "キュー状況",
+        "badgePosition": "位置: {position} / {total}",
+        "badgeProcessing": "処理中",
+        "tasksInQueue": "キュー内のタスク",
+        "estimatedWait": "推定待ち時間",
+        "elapsedTime": "経過時間",
+        "remainingTime": "残り時間",
+        "startTime": "推定開始",
+        "completionTime": "推定完了"
+      },
+      "time": {
+        "calculating": "計算中...",
+        "justNow": "たった今",
+        "lessThanMinute": "1分以内",
+        "inMinutes": "{minutes, plural, one {# 分} other {# 分}}後",
+        "inHours": "{hours, plural, one {# 時間} other {# 時間}}後",
+        "inDays": "{days, plural, one {# 日} other {# 日}}後",
+        "seconds": "{seconds, plural, one {# 秒} other {# 秒}}",
+        "minutesSeconds": "{minutes, plural, one {# 分} other {# 分}} {seconds, plural, one {# 秒} other {# 秒}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "動画を読み込み中...",
+      "notFound": "動画が見つかりません",
+      "notFoundDescription": "指定した動画が見つからないか、現在利用できません。",
+      "detailsTitle": "詳細",
+      "videoInfoTitle": "動画情報",
+      "advancedTitle": "詳細",
+      "referenceImagesTitle": "参照画像",
+      "startFrameAlt": "開始フレーム",
+      "endFrameAlt": "終了フレーム",
+      "endFrameLabel": "終了フレーム",
+      "creationDate": "作成日",
+      "fields": {
+        "model": "モデル",
+        "generationType": "生成タイプ",
+        "resolution": "解像度",
+        "aspectRatio": "アスペクト比",
+        "duration": "長さ",
+        "creativityLevel": "創造性",
+        "effect": "エフェクト",
+        "samplingSteps": "サンプリングステップ",
+        "randomSeed": "ランダムシード",
+        "movementAmplitude": "動きの強さ",
+        "backgroundMusic": "BGM",
+        "negativePrompt": "ネガティブプロンプト"
+      },
+      "actions": {
+        "close": "閉じる",
+        "closeModalTitle": "モーダルを閉じる",
+        "remix": "リミックス",
+        "remixTitle": "このパラメータでリミックス",
+        "download": "ダウンロード",
+        "downloadTitle": "この動画をダウンロード",
+        "downloading": "ダウンロード中...",
+        "shareTitle": "この動画を共有"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "タスクを削除",
+      "description": "この操作は取り消せません",
+      "cancel": "キャンセル",
+      "confirm": "削除",
+      "deleting": "削除中..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "参照画像"
+      },
+      "pending": {
+        "pending": "保留中...",
+        "queued": "キュー待ち...",
+        "waitingInQueue": "キューで待機中..."
+      },
+      "processing": {
+        "phase1": "フェーズ1",
+        "phase2": "フェーズ2",
+        "phase3": "フェーズ3",
+        "final": "最終",
+        "initializing": "初期化中",
+        "processing": "処理中",
+        "rendering": "レンダリング中",
+        "finalizing": "最終処理中",
+        "stuckMessage": "このタスクは停止しているようです。削除できます。",
+        "deleteTitle": "このタスクを削除",
+        "deleteAria": "削除"
+      },
+      "failed": {
+        "title": "生成に失敗しました",
+        "tryAgain": "再試行",
+        "tryAgainTitle": "このプロンプトで再試行",
+        "deleteTitle": "このタスクを削除"
+      },
+      "completed": {
+        "recreateDesktop": "再作成",
+        "remixMobile": "リミックス",
+        "remixTitle": "このプロンプトで新しい動画を作成",
+        "publish": "公開",
+        "publishTitle": "コミュニティに公開して{amount}クレジットを獲得",
+        "creditsBonusDesktop": "{amount} クレジットボーナス",
+        "creditsBonusMobile": "+{amount}",
+        "share": "共有",
+        "shareTitle": "この動画を共有",
+        "downloadTitle": "この動画をダウンロード",
+        "downloading": "ダウンロード中...",
+        "deleteTitle": "このタスクを削除"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "レゴ - ReelMind",
+      "description": "ReelMindでLegoワークフローを使って動画を作成・リミックス。"
+    },
+    "mobile": {
+      "backToBuilder": "ビルダーに戻る",
+      "history": "履歴"
+    },
+    "badges": {
+      "new": "新着"
+    },
+    "actions": {
+      "delete": "削除",
+      "select": "選択",
+      "selected": "選択済み",
+      "download": "ダウンロード",
+      "downloading": "ダウンロード中...",
+      "deleting": "削除中...",
+      "share": "共有",
+      "close": "閉じる"
+    },
+    "status": {
+      "pending": "保留中",
+      "processing": "処理中",
+      "failed": "失敗",
+      "completed": "完了",
+      "generating": "生成中",
+      "cancelled": "キャンセル済み"
+    },
+    "deleteConfirmDialog": {
+      "title": "タスクを削除",
+      "description": "この操作は取り消せません",
+      "cancel": "キャンセル",
+      "confirm": "削除",
+      "deleting": "削除中..."
+    },
+    "imageViewer": {
+      "close": "閉じる",
+      "previous": "前へ",
+      "next": "次へ",
+      "view": "表示 {index}"
+    },
+    "historyList": {
+      "title": "Lego AI 画像ジェネレーター",
+      "generatingFirstImage": "最初の画像を生成中...",
+      "loadFailed": "履歴の読み込みに失敗しました。もう一度お試しください。",
+      "emptyDescription": "アイデアを説明し、AIをガイドするリソースを追加して、素晴らしい画像を作成しましょう",
+      "loadingMore": "履歴画像を読み込み中...",
+      "scrollForMore": "さらに表示するにはスクロール...",
+      "allLoaded": "{count}枚の画像をすべて読み込みました"
+    },
+    "sidebar": {
+      "addCard": "新しいカードを追加",
+      "expand": "サイドバーを展開",
+      "sections": {
+        "theme": "テーマ",
+        "scene": "シーン",
+        "style": "スタイル"
+      }
+    },
+    "card": {
+      "placeholder": "{section} を説明...",
+      "imageAlt": "{section} 参照",
+      "options": {
+        "image": "画像",
+        "text": "テキスト"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "参照 {index}",
+      "errors": {
+        "invalidType": "画像ファイルを選択してください",
+        "tooLarge": "画像サイズは{maxSizeMb}MBを超えられません",
+        "uploadFailed": "画像のアップロードに失敗しました。もう一度お試しください。"
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "下までスクロール",
+      "collapsedPlaceholder": "画像を説明...",
+      "close": "閉じる"
+    },
+    "resultPreview": {
+      "previewTitle": "プレビュー",
+      "previewDescription": "生成された画像がここに表示されます",
+      "generatedImageAlt": "生成された画像",
+      "emptyPlaceholder": "ここに作品が表示されます",
+      "dialogTitle": "作成した画像",
+      "dialogDescription": "説明とリソースに基づいて作成した画像です"
+    },
+    "resourceUploader": {
+      "uploadImage": "画像をアップロード",
+      "imageFallbackAlt": "画像",
+      "imageFallbackLabel": "画像",
+      "removeImage": "{title} を削除"
+    },
+    "controlPanel": {
+      "showSidebar": "サイドバーを表示",
+      "hideSidebar": "サイドバーを非表示",
+      "hideSidebarShort": "非表示",
+      "addImage": "画像を追加",
+      "addImageWithLimit": "画像を追加 ({current}/{max})",
+      "promptPlaceholder": "画像を作成または編集...",
+      "model": "モデル",
+      "selectModel": "モデルを選択",
+      "loading": "読み込み中...",
+      "loadingModels": "モデルを読み込み中...",
+      "noModelsAvailable": "利用できるモデルがありません",
+      "noModelsMatchFilters": "フィルターに一致するモデルがありません",
+      "modelLabel": "モデル: {name}",
+      "aspectRatio": "アスペクト比",
+      "ratioLabel": "比率: {value}",
+      "imagesLabel": "画像: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 は画像を1枚のみ出力します",
+        "hint": "生成する画像の枚数",
+        "numberOfImages": "画像数"
+      },
+      "advanced": {
+        "aria": "詳細設定",
+        "label": "詳細",
+        "title": "詳細設定",
+        "negativePrompt": {
+          "label": "ネガティブプロンプト",
+          "placeholder": "除外したい要素...",
+          "aria": "ネガティブプロンプト",
+          "title": "除外する要素を指定"
+        },
+        "seed": {
+          "label": "シード",
+          "random": "ランダム",
+          "randomTitle": "ランダムシードを生成",
+          "placeholder": "ランダムシード（任意）",
+          "aria": "シード値",
+          "title": "再現可能な結果のためにシードを設定"
+        }
+      },
+      "resolution": "解像度",
+      "resolutionLabel": "解像度: {value}",
+      "resolutionPopoverTitle": "解像度（Nano Banana 2）",
+      "generating": "生成中...",
+      "generate": "生成",
+      "limitReached": "上限に達しました",
+      "fluxLimitTooltip": "FLUXモデルは非会員の場合、{limit}回まで利用可能",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 はプレミアムモデルで、Unlimited の無料利用には含まれません。生成した画像ごとにクレジットが課金されます。",
+      "unlimited": {
+        "fast": "高速",
+        "slow": "低速",
+        "fastMode": "高速モード",
+        "slowMode": "低速モード",
+        "monthlyUsage": "月間使用量: {used}/{limit}",
+        "rateLimit": "レート制限: 5分あたり{limit}枚",
+        "switchedToSlow": "月間上限に達しました。低速モードに切り替えました。"
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "生成された画像",
+      "failedTitle": "生成に失敗しました",
+      "errors": {
+        "unableToComplete": "生成を完了できませんでした"
+      },
+      "actions": {
+        "deleteTitle": "タスクを削除",
+        "viewFullSize": "クリックして原寸大で表示",
+        "preview": "プレビュー {index}",
+        "retryTitle": "再試行 - 同じパラメータで再生成",
+        "retry": "再試行",
+        "remixTitle": "リミックス - パラメータを再利用",
+        "remix": "リミックス",
+        "makeVideoTitle": "動画を作成",
+        "makeVideo": "動画を作成"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "ダウンロードを開始しました",
+      "downloadStartedMessage": "動画のダウンロードが開始されました",
+      "downloadFailedTitle": "ダウンロードに失敗しました",
+      "downloadFailedMessage": "動画のダウンロードに失敗しました",
+      "shareCopied": "共有リンクをクリップボードにコピーしました",
+      "shareCopyFailed": "共有リンクのコピーに失敗しました"
+    },
+    "empty": {
+      "title": "動画を利用できません",
+      "description": "この動画は共有できないか、動画ファイルが見つかりません。",
+      "ctaCreate": "自分の動画を作成"
+    },
+    "notFound": {
+      "title": "動画が見つかりません",
+      "description": "お探しの動画は存在しないか、共有できなくなりました。",
+      "ctaCreate": "自分の動画を作成",
+      "ctaHome": "ホームに戻る"
+    },
+    "details": {
+      "creationDate": "作成日"
+    },
+    "actions": {
+      "remix": "リミックス",
+      "remixTitle": "このプロンプトで新しい動画を作成",
+      "download": "ダウンロード",
+      "downloadTitle": "この動画をダウンロード",
+      "downloading": "ダウンロード中...",
+      "downloadingTitle": "ダウンロード中...",
+      "shareTitle": "この動画を共有"
+    },
+    "meta": {
+      "promptFallback": "AI生成動画",
+      "watchDescription": "AI生成動画を視聴: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "音楽",
+      "description": "AIで音楽、効果音、音声を生成。"
+    },
+    "page": {
+      "loadingSoundStudio": "Sound Studio を読み込み中..."
+    },
+    "functionToggle": {
+      "music": "音楽",
+      "soundEffect": "効果音",
+      "textToSpeech": "テキスト読み上げ"
+    },
+    "controlPanel": {
+      "title": "コントロール",
+      "reset": "リセット",
+      "modelLabel": {
+        "tts": "TTSモデル",
+        "sound": "サウンドモデル"
+      },
+      "modelPlaceholder": "モデルを選択",
+      "noModelsAvailableTitle": "利用できるモデルがありません",
+      "noModelsFound": {
+        "tts": "TTSモデルが見つかりません",
+        "soundEffect": "効果音モデルが見つかりません"
+      },
+      "tts": {
+        "stability": "安定性",
+        "similarityBoost": "類似度ブースト",
+        "styleExaggeration": "スタイル誇張",
+        "speed": "速度"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "参照音声をアップロード",
+      "dropHere": "ここにドロップ",
+      "supportedFormats": "対応形式: MP3, WAV, M4A, AAC, OGG",
+      "tip": "ヒント: より良い結果のため、15秒以上のクリアな音声を使用してください。",
+      "uploadingProgress": "アップロード中... {progress}%",
+      "toast": {
+        "uploadSuccess": "アップロード完了",
+        "uploadFailed": "アップロードに失敗しました"
+      },
+      "errors": {
+        "selectAudioFile": "音声ファイルを選択してください。",
+        "invalidAudioFile": "無効な音声ファイルです。",
+        "fileTooLarge": "ファイルが大きすぎます（最大50MB）。",
+        "durationTooShort": "音声は15秒以上である必要があります。"
+      }
+    },
+    "audioPlayer": {
+      "play": "再生",
+      "pause": "一時停止"
+    },
+    "voiceSelector": {
+      "label": "ボイス",
+      "selectVoiceTitle": "ボイスを選択",
+      "gender": {
+        "all": "すべて",
+        "male": "男性",
+        "female": "女性"
+      },
+      "noVoicesAvailable": "利用できるボイスがありません",
+      "noVoicesFound": "ボイスが見つかりません",
+      "bestFor": "{useCase} に最適",
+      "clickToSelectVoice": "クリックしてボイスを選択"
+    },
+    "historyPanel": {
+      "title": "履歴",
+      "empty": {
+        "title": "まだ生成はありません",
+        "description": "生成履歴がここに表示されます"
+      },
+      "loading": "読み込み中...",
+      "loadMore": "さらに読み込む"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "処理中",
+        "failed": "失敗",
+        "completed": "完了"
+      },
+      "actions": {
+        "copy": "コピー",
+        "download": "ダウンロード"
+      },
+      "time": {
+        "now": "今",
+        "minutesAgo": "{minutes}分前",
+        "hoursAgo": "{hours}時間前"
+      },
+      "unknownModel": "不明なモデル",
+      "errors": {
+        "unknown": "不明なエラー"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "サウンドスタジオ"
+      },
+      "menu": {
+        "open": "メニューを開く",
+        "title": "メニュー",
+        "voiceGeneration": "作成",
+        "settings": "設定",
+        "history": "履歴"
+      },
+      "tabs": {
+        "generate": "生成",
+        "settings": "設定",
+        "history": "履歴"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "音声生成するテキストを入力...",
+        "soundEffect": "作成したい効果音を説明..."
+      },
+      "generateSpeech": "音声を生成",
+      "generateSound": "サウンドを生成",
+      "generating": "生成中...",
+      "loadingExamples": "例を読み込み中...",
+      "loadingMusicStyles": "音楽スタイルを読み込み中...",
+      "rightTabs": {
+        "examples": "例",
+        "history": "履歴"
+      },
+      "history": {
+        "generationCount": "{count}件の生成"
+      },
+      "price": {
+        "placeholder": "推定コスト",
+        "calculating": "計算中...",
+        "credits": "{credits} クレジット"
+      },
+      "musicHistory": {
+        "title": "音楽履歴",
+        "empty": {
+          "title": "まだ音楽は生成されていません",
+          "description": "音楽履歴がここに表示されます"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "効果音履歴",
+        "empty": {
+          "title": "まだ効果音は生成されていません",
+          "description": "効果音履歴がここに表示されます"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "歌詞",
+      "lyricsPlaceholder": "書式は任意の歌詞です。改行で各行を区切れます。2つの改行で行間にポーズを入れられます。歌詞の先頭と末尾にダブルハッシュ（##）を付けると伴奏を追加できます。最大600文字。",
+      "useReferenceAudio": {
+        "label": "参照音声を使用",
+        "description": "AIのスタイルをガイドするために音声参照を使用します。"
+      },
+      "referenceAudio": {
+        "title": "参照音声",
+        "description": "音楽とボーカルの両方を含む参照曲をアップロードします。"
+      },
+      "musicStyle": {
+        "title": "音楽スタイル",
+        "description": "作成したい音楽のスタイルや雰囲気を説明してください。",
+        "placeholder": "例: R&B、エネルギッシュ、アップテンポのポップ、アコースティックフォーク、エレクトロニックダンス...",
+        "tooShort": "音楽スタイルの説明は10文字以上である必要があります。"
+      },
+      "generating": "生成中...",
+      "generateMusicWithCredits": "音楽を生成（{credits}クレジット）"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "長さ",
+        "description": "効果音の長さを設定します。"
+      },
+      "promptInfluence": {
+        "title": "プロンプト影響度",
+        "description": "値が高いほどプロンプトに忠実になります。"
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "お問い合わせ",
+      "description": "ReelMindチームにフィードバックを送信します。"
+    },
+    "header": {
+      "title": "クイックフィードバック",
+      "description": "バグを見つけた、または提案がありますか？30秒でお知らせください。"
+    },
+    "card": {
+      "title": "クイックフィードバック",
+      "subtitle": "3項目だけ、30秒で完了"
+    },
+    "submitted": {
+      "title": "フィードバックを送信しました",
+      "description": "フィードバックありがとうございます。内容を確認し、必要に応じてご連絡します。"
+    },
+    "auth": {
+      "required": "フィードバックを送信するにはログインしてください。"
+    },
+    "form": {
+      "errors": {
+        "unknown": "問題が発生しました。もう一度お試しください。"
+      },
+      "type": {
+        "label": "種類",
+        "placeholder": "フィードバックの種類を選択",
+        "options": {
+          "bug": "バグ報告",
+          "suggestion": "提案",
+          "other": "その他"
+        },
+        "errors": {
+          "required": "フィードバックの種類は必須です。",
+          "invalid": "無効なフィードバックの種類です。"
+        }
+      },
+      "subject": {
+        "label": "件名 *",
+        "placeholder": "問題または提案は何ですか？",
+        "errors": {
+          "required": "件名は必須です。",
+          "min": "件名は{min}文字以上である必要があります。",
+          "max": "件名は{max}文字未満である必要があります。",
+          "invalid": "件名に無効な内容が含まれています。"
+        }
+      },
+      "message": {
+        "label": "詳細 *",
+        "placeholder": "詳しく教えてください...",
+        "errors": {
+          "required": "詳細は必須です。",
+          "min": "詳細は{min}文字以上である必要があります。",
+          "max": "詳細は{max}文字未満である必要があります。",
+          "invalid": "詳細に無効な内容が含まれています。"
+        }
+      }
+    },
+    "actions": {
+      "submitting": "送信中...",
+      "submit": "フィードバックを送信"
+    },
+    "toast": {
+      "submitSuccess": "フィードバックを送信しました！",
+      "submitFailed": "フィードバックの送信に失敗しました。もう一度お試しください。",
+      "authRequired": "フィードバックを送信するにはログインしてください。",
+      "rateLimited": "送信回数が多すぎます。後でもう一度お試しください。",
+      "rateLimitedWithRetryAfter": "{seconds}秒待ってから再送信してください。",
+      "fixErrors": "フォームのエラーを修正してください。",
+      "checkInput": "入力内容を確認してもう一度お試しください。"
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "投稿",
+      "following": "フォロー中",
+      "followingShort": "フォロー",
+      "followers": "フォロワー",
+      "followersShort": "ファン",
+      "favorites": "お気に入り",
+      "favoritesShort": "お気に入り"
+    },
+    "actions": {
+      "save": "保存",
+      "saving": "保存中...",
+      "cancel": "キャンセル",
+      "delete": "削除",
+      "retry": "再試行",
+      "editProfile": "プロフィールを編集",
+      "signOut": "サインアウト",
+      "follow": "フォロー",
+      "unfollow": "フォロー解除",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "クリエイター",
+      "avatarAltFallback": "ユーザー",
+      "initialFallback": "U",
+      "edit": {
+        "displayNamePlaceholder": "表示名",
+        "bioPlaceholder": "自己紹介"
+      },
+      "stats": {
+        "following": "フォロー中",
+        "followers": "フォロワー"
+      },
+      "joined": "参加日 {date}",
+      "joinedFallback": "2025年3月"
+    },
+    "time": {
+      "now": "たった今",
+      "minutesAgo": "{minutes}分前",
+      "hoursAgo": "{hours}時間前",
+      "daysAgo": "{days}日前"
+    },
+    "toast": {
+      "loginFirst": "まずログインしてください",
+      "cannotFollowYourself": "自分をフォローできません",
+      "followed": "フォローしました",
+      "unfollowed": "フォローを解除しました",
+      "operationFailed": "操作に失敗しました"
+    },
+    "posts": {
+      "loadingMore": "投稿をさらに読み込み中...",
+      "error": {
+        "failedToLoad": "投稿の読み込みに失敗しました"
+      },
+      "empty": {
+        "title": "まだ投稿はありません",
+        "description": "このユーザーはまだ投稿を共有していません。後でもう一度確認してください。"
+      },
+      "deleteDialog": {
+        "title": "投稿を削除",
+        "description": "プロフィールとフィードから投稿が非表示になります。この操作は取り消せません。"
+      },
+      "toast": {
+        "deleted": "投稿を削除しました",
+        "deleteFailed": "投稿の削除に失敗しました"
+      }
+    },
+    "favorites": {
+      "loadingMore": "お気に入りをさらに読み込み中...",
+      "error": {
+        "failedToLoad": "お気に入りの読み込みに失敗しました"
+      },
+      "empty": {
+        "title": "まだお気に入りはありません",
+        "description": "いいねした投稿がここに表示されます。探索してお気に入りを保存しましょう！"
+      }
+    },
+    "followers": {
+      "empty": "まだフォロワーはいません",
+      "error": {
+        "failedToLoad": "フォロワーの読み込みに失敗しました"
+      },
+      "followerSince": "フォロー開始: {time}"
+    },
+    "following": {
+      "empty": "まだ誰もフォローしていません",
+      "error": {
+        "failedToLoad": "フォロー中のユーザーの読み込みに失敗しました"
+      },
+      "followingSince": "フォロー開始: {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "メンバーシッププラン - ReelMind",
+      "description": "ReelMindのメンバーシッププランに参加して、AI動画生成のためのより多くのクレジットとプレミアム機能を利用しましょう。"
+    },
+    "plans": {
+      "hero": {
+        "title": "メンバーシッププラン",
+        "subtitle": "ReelMindの柔軟なサブスクリプションプランでAI動画生成の可能性を最大限に引き出そう"
+      },
+      "error": {
+        "loadFailed": "メンバーシッププランの取得に失敗しました。しばらくしてからもう一度お試しください。"
+      },
+      "names": {
+        "free": "無料",
+        "pro": "プロ",
+        "max": "マックス",
+        "unlimited": "無制限"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "年額"
+      },
+      "monthly": {
+        "label": "月額"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "初月70%OFF",
+        "short": "70%OFF",
+        "description": "初めてメンバーシップを購読する方は70%OFF。クーポンは24時間有効です"
+      },
+      "yearly": {
+        "full": "最初の6か月無料",
+        "short": "6か月無料",
+        "description": "年額プランは最初の6か月が完全無料（初年度が実質50%OFF）！"
+      },
+      "percentOff": "{percent}%OFF",
+      "badge": {
+        "preview": "🎁 {offer} 利用可能",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "（取得後）"
+    },
+    "pricing": {
+      "perYear": "年あたり",
+      "perMonth": "月あたり",
+      "breakdown": {
+        "originalPrice": "通常価格:",
+        "discount": "割引:",
+        "payFirstYear": "お支払い（初年度）:",
+        "firstMonth": "初月:"
+      }
+    },
+    "status": {
+      "title": "メンバーシップ状況",
+      "loading": "メンバーシップ情報を読み込み中...",
+      "currentPlan": "現在のプラン:",
+      "expiresOn": "有効期限:",
+      "unlimitedDescription": "クレジット消費なしで全ての生成機能を無制限に利用できます。",
+      "planDescription": "{plan}の機能と特典をすべて利用できます。",
+      "noActive": {
+        "title": "有効なメンバーシップがありません。",
+        "subtitle": "下のプランを購読してプレミアム機能を解放しましょう。"
+      }
+    },
+    "creditsBalance": {
+      "title": "クレジット残高",
+      "loading": "クレジット情報を読み込み中...",
+      "availableCredits": "利用可能クレジット:",
+      "unlimited": {
+        "video": "動画生成無制限",
+        "image": "画像生成無制限",
+        "audio": "サウンド生成無制限"
+      },
+      "estimate": {
+        "videos": "最大{count}本の動画",
+        "images": "最大{count}枚の画像",
+        "audios": "最大{count}件のサウンド"
+      },
+      "cost": {
+        "videos": "動画: {credits}クレジットから",
+        "images": "画像: {credits}クレジットから",
+        "audios": "サウンド: {credits}クレジットから"
+      }
+    },
+    "credits": {
+      "title": "クレジットを購入",
+      "history": {
+        "toggle": {
+          "show": "取引履歴を表示",
+          "hide": "取引履歴を非表示"
+        }
+      },
+      "card": {
+        "description": "AI生成能力を高めるクレジットパッケージを選択"
+      },
+      "packages": {
+        "basic": {
+          "label": "ベーシック"
+        },
+        "standard": {
+          "label": "スタンダード"
+        },
+        "premium": {
+          "label": "プレミアム"
+        },
+        "pro": {
+          "label": "ウルトラ"
+        },
+        "bonus": "ボーナス: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "基本レート: 1 USD = 100 クレジット",
+        "buyMoreBonus": "たくさん買うほどボーナス増加！",
+        "neverExpire": "クレジットは期限なし",
+        "instantDelivery": "支払い後すぐに反映"
+      },
+      "actions": {
+        "processing": "処理中...",
+        "buyCredits": "{credits}クレジットを購入"
+      }
+    },
+    "creditsHistory": {
+      "title": "取引履歴",
+      "subtitle": "最近のクレジット取引",
+      "actions": {
+        "retry": "再試行",
+        "loading": "読み込み中...",
+        "loadMore": "さらに読み込む"
+      },
+      "table": {
+        "date": "日付",
+        "type": "種類",
+        "amount": "数量",
+        "status": "ステータス"
+      },
+      "empty": "取引履歴はありません",
+      "types": {
+        "membershipMonthly": "メンバーシップ（月次）クレジット",
+        "membershipInitial": "メンバーシップ（初回）クレジット",
+        "freeMonthly": "無料（月次）クレジット",
+        "purchase": "クレジット購入",
+        "platformReward": "プラットフォーム報酬",
+        "newUserBonus": "新規ユーザーボーナス",
+        "postReward": "投稿報酬",
+        "videoPostReward": "動画投稿報酬",
+        "refund": "返金",
+        "balanceAdjustment": "残高調整",
+        "videoGeneration": "動画生成",
+        "imageGeneration": "画像生成",
+        "modelTraining": "モデル学習",
+        "audioGeneration": "音声生成",
+        "systemAdjustment": "システム調整"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}時間 {m}分 {s}秒",
+        "ms": "{m}分 {s}秒",
+        "s": "{s}秒",
+        "expired": "期限切れ"
+      },
+      "toast": {
+        "claimedTitle": "クーポンを取得しました",
+        "claimedDescription": "クーポンをアカウントに追加しました。有効期限: {hours}時間",
+        "claimFailedTitle": "取得に失敗しました",
+        "tryAgainLater": "後でもう一度お試しください",
+        "networkError": "ネットワークエラー。後でもう一度お試しください"
+      }
+    },
+    "couponStatus": {
+      "title": "クーポン状況",
+      "active": {
+        "annualTitle": "年額オファーが有効です",
+        "couponTitle": "クーポンが有効化されました"
+      },
+      "fields": {
+        "claimed": "取得:",
+        "expires": "期限:",
+        "timeLeft": "残り時間:",
+        "usedAt": "使用:",
+        "discount": "割引:"
+      },
+      "expired": "クーポンの期限が切れました",
+      "used": {
+        "title": "クーポンを使用しました"
+      },
+      "available": "{offer} 利用可能",
+      "offer": {
+        "annualSpecial": "🎁 年額スペシャル",
+        "newUserExclusive": "🎉 新規ユーザー限定",
+        "bestValue": "お得",
+        "limitedTime": "期間限定",
+        "claimYearly": "6か月無料オファーを取得",
+        "claimMonthly": "クーポンを取得"
+      },
+      "none": {
+        "title": "利用可能なクーポンはありません",
+        "description": "{offer}は、これまでメンバーシップを購入したことがない新規ユーザーのみ利用できます。"
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "人気",
+        "advanced": "上級",
+        "unlimited": "無制限"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "無制限アクセスを取得",
+        "getUnlimitedMobile": "無制限にする",
+        "subscribeDesktop": "サブスクを開始",
+        "subscribeMobile": "購読",
+        "claimAndSubscribeMobile": "取得して購読",
+        "getDiscountMobile": "{discount}を取得",
+        "claimDiscountAndSubscribeDesktop": "{discount}を取得して購読"
+      },
+      "toast": {
+        "loginSuccess": "ログインに成功しました！もう一度ボタンをクリックして割引を取得し、購読してください。",
+        "claimCouponFailed": "クーポンの取得に失敗しました",
+        "tryAgainLater": "後でもう一度お試しください",
+        "couponClaimed": "クーポンを取得しました！",
+        "failedToProcess": "処理に失敗しました"
+      },
+      "usageEstimate": {
+        "title": "月間利用目安",
+        "videos": "月最大{count}本の動画",
+        "images": "月最大{count}枚の画像",
+        "audios": "月最大{count}件のサウンド"
+      },
+      "unlimitedNotes": {
+        "title": "利用に関する注意",
+        "videoTasks": {
+          "title": "動画タスク:",
+          "body": "同時に最大5タスク実行できます。月間上限: 300。上限到達後は低速モードになります: 24時間あたり動画上限30本、1時間あたりタスク10件。"
+        },
+        "imageTasks": {
+          "title": "画像タスク:",
+          "body": "月間最大300タスク。300件目までは高速モード（1分あたり5件）。以降は低速モードで1分あたり1件に制限。"
+        },
+        "premiumModels": {
+          "title": "プレミアムモデル:",
+          "body": "一部の高コストモデルはUNLIMITEDプランに含まれません。VEO 3.*の非FastバリアントとSora-2 /proバリアントはクレジットを消費します。"
+        }
+      },
+      "currentPlan": "現在の計画",
+      "yearlyEquivalent": "<price>{value}</price> と同等",
+      "yearlySavings": "毎月の請求と比較して <amount>{value}</amount> を節約"
+    },
+    "features": {
+      "monthlyCredits": "月間 {credits} クレジット",
+      "monthlyVideoCredits": "月間 {credits} 動画クレジット",
+      "fullAccessTopModels": "トップ {count} のAI動画モデルにフルアクセス",
+      "accessAllModels": "すべてのモデルにアクセス",
+      "purchaseMoreRolloverVideoCredits": "追加の繰り越し動画クレジットを購入可能",
+      "downloadNoWatermark": "透かしなしで動画をダウンロード",
+      "commercialUse": "商用利用可",
+      "fastGenerations": "高速生成",
+      "prioritySupport": "優先サポート",
+      "unlimitedVideoAndImageGeneration": "動画・画像生成が無制限"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "請求オプションを開く"
+      },
+      "actions": {
+        "opening": "開いています...",
+        "billingOptions": "請求オプション"
+      },
+      "confirm": {
+        "title": "サブスクリプション管理",
+        "description": "購読をキャンセルしますか？離れる前にぜひご意見をお聞かせください。",
+        "keep": "購読を継続する",
+        "continueCancel": "キャンセルを続行"
+      },
+      "toast": {
+        "openFailed": "サブスクリプション管理を開けませんでした",
+        "feedbackThanks": "フィードバックありがとうございます！",
+        "feedbackSaveFailed": "フィードバックの保存に失敗しましたが、サブスクリプションは管理できます"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "ぜひご意見をお聞かせください",
+        "subtitle": "いくつかの簡単な質問に答えて改善にご協力ください"
+      },
+      "common": {
+        "close": "閉じる",
+        "other": "その他",
+        "stepIndicator": "ステップ {current} / {total}"
+      },
+      "actions": {
+        "back": "戻る",
+        "next": "次へ",
+        "submitting": "送信中...",
+        "complete": "完了して続行"
+      },
+      "satisfaction": {
+        "1": "非常に不満",
+        "2": "不満",
+        "3": "普通",
+        "4": "満足",
+        "5": "非常に満足"
+      },
+      "steps": {
+        "1": {
+          "title": "ReelMindをどこで知りましたか？",
+          "options": {
+            "social": "ソーシャルメディア（Twitter、Instagramなど）",
+            "search": "検索エンジン（Google、Bingなど）",
+            "friend": "友人・同僚からの紹介",
+            "ads": "オンライン広告",
+            "blog": "テックブログ／レビューサイト"
+          }
+        },
+        "2": {
+          "title": "主に何にReelMindを使っていますか？",
+          "description": "該当するものをすべて選択してください。",
+          "options": {
+            "video": "動画制作",
+            "image": "画像生成",
+            "music": "音楽制作",
+            "marketing": "広告・マーケティングコンテンツ",
+            "socialPosts": "SNS投稿",
+            "education": "教材",
+            "personal": "個人プロジェクト",
+            "exploring": "新しいアイデアの探索"
+          }
+        },
+        "3": {
+          "title": "あなたに最も当てはまるのは？",
+          "options": {
+            "creator": "コンテンツクリエイター",
+            "developer": "フリーランス開発者",
+            "marketingPro": "マーケティング担当",
+            "businessOwner": "事業主",
+            "designer": "デザイナー",
+            "hobbyist": "趣味",
+            "student": "学生",
+            "artist": "アーティスト"
+          }
+        },
+        "4": {
+          "title": "体験をどのように評価しますか？",
+          "description": "ReelMind全体の満足度を評価してください"
+        },
+        "5": {
+          "title": "キャンセルを決めた主な理由は何ですか？",
+          "options": {
+            "price": "高すぎる",
+            "usage": "あまり使わなかった",
+            "features": "必要な機能が不足",
+            "quality": "生成結果の品質",
+            "bugs": "技術的な問題やバグ",
+            "alternative": "より良い代替手段を見つけた"
+          }
+        },
+        "6": {
+          "title": "ぜひご意見をお聞かせください",
+          "description": "あなたのご意見がReelMindをより良くします。",
+          "placeholder": "改善点はありますか？欲しい機能は？（任意）"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "リクエストを送信しました。近日中にご連絡します。",
+        "submitFailed": "リクエストの送信に失敗しました"
+      },
+      "card": {
+        "title": "エンタープライズ＆カスタムプラン",
+        "subtitle": "カスタム価格、請求書、サポート",
+        "description": "請求書、コンプライアンス支援、カスタムワークフローが必要ですか？要件を共有いただければ最適な提案をします。",
+        "toggle": {
+          "hide": "フォームを隠す",
+          "show": "営業に問い合わせ"
+        },
+        "highlights": {
+          "sso": "SSO・コンプライアンス",
+          "invoices": "請求書・発注書",
+          "support": "優先サポート",
+          "workflows": "カスタムワークフロー"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "お問い合わせ種別",
+          "placeholder": "種別を選択",
+          "options": {
+            "business": "法人",
+            "individual": "個人"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "月間利用見積（USD）",
+          "placeholder": "見積を選択",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "1,000ドル – 5,000ドル",
+            "5000to10000": "5,000ドル – 10,000ドル",
+            "10000plus": "10,000ドル以上",
+            "custom": "カスタム金額（USD）"
+          },
+          "custom": {
+            "label": "カスタム月間利用（USD）",
+            "placeholder": "USD金額を入力"
+          }
+        },
+        "firstName": {
+          "label": "名",
+          "placeholder": "ジェーン"
+        },
+        "lastName": {
+          "label": "姓",
+          "placeholder": "ドウ"
+        },
+        "email": {
+          "label": "メールアドレス",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "ウェブサイト",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "プロジェクトと要件を教えてください",
+          "placeholder": "何を作っていますか？ワークフロー、コンプライアンス要件、想定ボリュームなどは？"
+        },
+        "actions": {
+          "cancel": "キャンセル",
+          "submitting": "送信中...",
+          "submit": "送信"
+        },
+        "validation": {
+          "firstNameRequired": "名は必須です",
+          "lastNameRequired": "姓は必須です",
+          "emailInvalid": "有効なメールアドレスを入力してください",
+          "websiteInvalid": "ウェブサイトは有効なURLである必要があります",
+          "monthlyEstimateRequired": "月間見積は必須です",
+          "monthlyEstimateEnter": "月間見積を入力してください",
+          "monthlyEstimateMin": "月間見積は0以上である必要があります",
+          "requirementsMin": "詳細を入力してください（最低{count}文字）",
+          "maxChars": "最大{count}文字"
+        }
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "items": {
+        "proBenefits": {
+          "question": "PROメンバーシップの特典は？",
+          "answer": "PROメンバーシップでは毎月1000クレジット（$10相当）に加え、新機能への優先アクセス、より高速な動画生成、上級編集オプション、優先カスタマーサポートを利用できます。"
+        },
+        "cancelAnytime": {
+          "question": "いつでも購読をキャンセルできますか？",
+          "answer": "はい、いつでも購読をキャンセルできます。特典は現在の請求期間の終了まで継続します。",
+          "discountNote": {
+            "title": "割引購読に関する注意:",
+            "body": "クーポン割引で購読し、初月に割引分を超えるクレジットを使用した場合、2か月目の支払い処理が完了するまで購読をキャンセルできません。このポリシーはプロモーションオファーの公平な利用を確保するためのものです。"
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "月額と年額で違いはありますか？",
+          "answer": "はい、年額プランは月額より大幅に割引されます。年額請求を選ぶと約20%節約できます。"
+        },
+        "whatAreCredits": {
+          "question": "ReelMindクレジットとは？",
+          "answer": "ReelMindクレジットは、AI動画や画像を生成するためにプラットフォームで使用する仮想通貨です。機能によって必要なクレジット数は異なります。例えば、標準動画（480p）の生成は50クレジット、HD動画（720p）は80クレジットです。"
+        },
+        "earnCredits": {
+          "question": "クレジットはどうやって獲得できますか？",
+          "intro": "いくつかの方法で獲得できます:",
+          "items": {
+            "membership": "メンバーシッププラン（PROは月1000クレジット、MAXは2000）",
+            "purchase": "クレジットパックの購入",
+            "newUser": "新規登録で100クレジットを付与",
+            "posting": "ReelMindでコンテンツを投稿（1日50クレジット）",
+            "promotions": "特別プロモーション・報酬"
+          }
+        },
+        "expire": {
+          "question": "クレジットに期限はありますか？",
+          "answer": "購入したクレジットは期限がなく、使用するまでアカウントに残ります。毎月付与されるクレジットは月初にリセットされ、前月の未使用分は繰り越されません。"
+        },
+        "refund": {
+          "question": "未使用クレジットの返金はできますか？",
+          "answer": "購入クレジットの返金は行っていません。ただし、技術的な問題でクレジットを適切に利用できなかった場合は、サポートまでご連絡ください。"
+        },
+        "membershipVsCredits": {
+          "question": "メンバーシップとクレジットの違いは？",
+          "answer": "メンバーシップは毎月のクレジット付与に加え、優先処理や限定機能へのアクセスなどの特典を提供します。クレジットはメンバーシップなしでも購入でき、コンテンツ生成時に消費されます。定期的に使うならメンバーシップ、たまに使うならクレジット購入がおすすめです。"
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. 無断転載を禁じます。"
+    }
+  },
+  "Search": {
+    "placeholder": "検索...",
+    "noResultsFound": "結果が見つかりません",
+    "viewAllResults": "すべての結果を表示",
+    "sections": {
+      "posts": "投稿",
+      "users": "ユーザー"
+    },
+    "tabs": {
+      "posts": "投稿",
+      "users": "ユーザー"
+    },
+    "unknownUser": "不明",
+    "loading": "読み込み中...",
+    "searching": "検索中...",
+    "loadingMore": "さらに読み込み中...",
+    "tryAgain": "再試行",
+    "noPostsFound": "投稿が見つかりません",
+    "noUsersFound": "ユーザーが見つかりません",
+    "empty": {
+      "title": "検索",
+      "hint": "キーワードを入力してコンテンツを探す"
+    },
+    "errors": {
+      "searchFailed": "検索に失敗しました"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "生涯コミッション - 永久20%"
+    },
+    "hero": {
+      "lifetime": "生涯",
+      "passiveIncome": "不労所得",
+      "subtitle": {
+        "prefix": "獲得",
+        "suffix": "コミッションを永久に"
+      }
+    },
+    "actions": {
+      "getStarted": "始める",
+      "viewDashboard": "ダッシュボードを見る",
+      "signInFirst": "まずサインインしてください"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API プラットフォーム",
+      "actions": {
+        "modelsPricing": "モデルと料金",
+        "viewDocumentation": "ドキュメントを見る"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "APIキーを作成しました",
+      "apiKeyCreateFailed": "APIキーの作成に失敗しました",
+      "apiKeyDeleted": "APIキーを削除しました",
+      "apiKeyDeletedDescription": "APIキーを削除しました",
+      "apiKeyDeleteFailed": "APIキーの削除に失敗しました",
+      "apiKeyCopied": "APIキーをクリップボードにコピーしました",
+      "modelIdCopied": "モデルIDをクリップボードにコピーしました"
+    },
+    "accountCard": {
+      "notLoggedIn": "未ログイン",
+      "loadingKeys": "APIキーを読み込み中...",
+      "keysAvailable": "{count} 個のAPIキーが利用可能",
+      "createKey": "APIキーを作成",
+      "helpPrefix": "ヘルプが必要ですか？こちらをご覧ください: ",
+      "apiDocumentation": "APIドキュメント"
+    },
+    "stats": {
+      "plan": "プラン",
+      "resetDate": "リセット日",
+      "credits": "クレジット",
+      "tasks": "タスク",
+      "loading": "読み込み中...",
+      "freePlan": "無料プラン",
+      "na": "なし",
+      "buyCredits": "クレジットを購入"
+    },
+    "apiKeys": {
+      "title": "APIキー管理",
+      "description": "ReelMindの動画生成APIにアクセスするためのAPIキーを管理します",
+      "createNew": "新しいAPIキーを作成",
+      "loading": "APIキーを読み込み中...",
+      "label": "APIキー",
+      "created": "{date} に作成",
+      "active": "有効",
+      "inactive": "無効",
+      "show": "APIキーを表示",
+      "hide": "APIキーを非表示",
+      "copy": "APIキーをコピー",
+      "totalCalls": "総呼び出し回数",
+      "creditsUsed": "消費クレジット",
+      "empty": {
+        "title": "APIキーはありません",
+        "description": "まだAPIキーを作成していません。最初のAPIキーを作成してReelMind APIを使い始めましょう。",
+        "createFirst": "最初のAPIキーを作成"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "モデルと料金",
+      "apiDocumentation": "APIドキュメント"
+    },
+    "documentation": {
+      "title": "APIドキュメント",
+      "authentication": "認証",
+      "authenticationIntro": "すべてのAPIリクエストはAPIキーによる認証が必要です。APIキーはUUIDで、下の「APIキー管理」で生成できます。",
+      "authenticationMethods": "認証方法",
+      "exampleRequest": "リクエスト例",
+      "important": "重要",
+      "apiEndpoints": "APIエンドポイント",
+      "responseFormat": "レスポンス形式",
+      "responseFormatIntro": "動画生成タスクのレスポンス形式:",
+      "parameters": "パラメータ",
+      "table": {
+        "name": "名称",
+        "type": "タイプ",
+        "required": "必須",
+        "description": "説明"
+      },
+      "yes": "はい",
+      "no": "いいえ"
+    },
+    "pricing": {
+      "title": "API料金とモデル",
+      "intro": "動画・画像生成APIで利用できるAIモデルとその料金を確認しましょう",
+      "loading": "利用可能なモデルを読み込み中...",
+      "available": "利用可能",
+      "unavailable": "利用不可",
+      "credits": "{credits} クレジット",
+      "basePricePerImage": "基本価格（1枚あたり）",
+      "basePrice5sVideo": "基本価格（5秒動画）",
+      "creditsPerSecond": "+{credits} クレジット/秒",
+      "modelId": "モデルID",
+      "copyModelId": "モデルIDをコピー",
+      "noModels": {
+        "title": "利用可能なモデルがありません",
+        "description": "現在APIアクセスに利用できるAIモデルはありません。しばらくしてから確認してください。"
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "テキスト→動画",
+      "imageToVideo": "画像→動画",
+      "videoToVideo": "動画→動画",
+      "textToImage": "テキスト→画像",
+      "imageToImage": "画像→画像"
+    },
+    "deleteModal": {
+      "title": "削除の確認",
+      "description": "このAPIキーを削除しますか？この操作は取り消せません。",
+      "keyName": "キー名: {name}",
+      "createdOn": "{date} に作成",
+      "cancel": "キャンセル",
+      "deleting": "削除中...",
+      "deleteKey": "APIキーを削除"
+    },
+    "modelParameters": {
+      "title": "モデルパラメータ",
+      "required": "必須",
+      "default": "デフォルト: {value}",
+      "labels": {
+        "prompt": "プロンプト",
+        "guidance_scale": "ガイダンススケール",
+        "aspect_ratio": "アスペクト比",
+        "seed": "シード",
+        "image_url": "画像URL",
+        "duration": "長さ",
+        "resolution": "解像度",
+        "num_inference_steps": "推論ステップ",
+        "cfg_scale": "CFGスケール"
+      },
+      "flux": {
+        "promptDescription": "生成する画像内容を説明するテキストプロンプト",
+        "guidanceScaleDescription": "画像がプロンプトにどれだけ忠実かを制御",
+        "aspectRatioDescription": "生成画像のアスペクト比",
+        "seedDescription": "再現性のためのランダムシード",
+        "imageUrlDescription": "画像→画像生成の入力画像URL"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "テキスト→画像 · 画像編集",
+      "title": "FLUX / ナノバナナ / シードドリーム"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - 世界No.1 AIエージェント監督",
+      "description": "世界No.1 AIエージェント監督"
+    },
+    "page": {
+      "loading": "Nolan AI 監督を読み込み中..."
+    },
+    "heroBanner": {
+      "label": "革新的AIテクノロジー",
+      "name": "ノーラン",
+      "worldFirst": "世界初",
+      "aiAgentDirector": "AIエージェント監督"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "保留中",
+        "queued": "キューに入れられました",
+        "processing": "処理中",
+        "completed": "完了",
+        "failed": "失敗しました",
+        "canceled": "キャンセルされました"
+      },
+      "model": {
+        "unknown": "不明なモデル",
+        "unnamed": "無名"
+      },
+      "errors": {
+        "fetchListTitle": "タスクのロードに失敗しました",
+        "unknown": "不明なエラー",
+        "fetchDetails": "タスクの詳細を取得できませんでした",
+        "downloadFailed": "ダウンロードに失敗しました",
+        "retryFailed": "再試行に失敗しました"
+      },
+      "details": {
+        "videoTitle": "ビデオタスクの詳細",
+        "imageTitle": "画像タスクの詳細",
+        "videoPreview": "ビデオプレビュー",
+        "hideVideo": "ビデオを隠す",
+        "showVideo": "ビデオを表示する",
+        "downloadVideo": "ビデオをダウンロードする",
+        "browserNoVideoSupport": "お使いのブラウザはビデオ再生をサポートしていません。",
+        "labels": {
+          "duration": "期間",
+          "fileSize": "ファイルサイズ",
+          "format": "フォーマット",
+          "prompt": "プロンプト",
+          "model": "モデル",
+          "ratio": "アスペクト比",
+          "resolution": "解像度",
+          "taskId": "タスクID",
+          "user": "ユーザー",
+          "status": "ステータス",
+          "createdTime": "作成時間",
+          "startedTime": "開始時間",
+          "completedTime": "完了時間",
+          "generationModel": "世代モデル",
+          "priority": "優先順位",
+          "requestId": "リクエストID",
+          "lastActivity": "最後のアクティビティ"
+        },
+        "videoPreviewUnavailable": "ビデオプレビューは利用できません",
+        "videoNoOutput": "タスクは完了しましたが、ビデオ出力がありません",
+        "videoNotCompleted": "タスクはまだ完了していません",
+        "generationParams": "生成パラメータ",
+        "basicInfo": "基本情報",
+        "timeInfo": "時刻情報",
+        "detailData": "詳細データ",
+        "inputParams": "入力パラメータ",
+        "outputResult": "出力結果",
+        "errorLog": "エラーログ",
+        "retrying": "再試行中...",
+        "retryTask": "タスクの再試行",
+        "generatedImage": "生成された画像",
+        "close": "閉じる"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "ユーザーフィードバック管理",
+        "subtitle": "ユーザーが送信したフィードバックと苦情を管理する"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "フェッチに失敗しました",
+          "fetchFailedDescription": "フィードバック データを取得できません: {error}",
+          "unknown": "不明なエラー"
+        },
+        "type": {
+          "bug": "バグレポート",
+          "suggestion": "提案",
+          "other": "その他"
+        },
+        "loading": "読み込み中...",
+        "filter": {
+          "label": "フィードバックの種類",
+          "all": "全種類"
+        },
+        "total": "合計: {total} 個のフィードバック アイテム",
+        "empty": "フィードバックデータがありません",
+        "headers": {
+          "userInfo": "ユーザー情報",
+          "type": "タイプ",
+          "subject": "件名",
+          "submittedAt": "提出済み",
+          "actions": "アクション"
+        },
+        "user": {
+          "unknown": "不明なユーザー",
+          "noEmail": "電子メールなし"
+        },
+        "actions": {
+          "collapse": "崩壊する",
+          "viewDetails": "詳細を見る"
+        },
+        "contentLabel": "フィードバック:",
+        "pagination": {
+          "previous": "前へ",
+          "next": "次へ"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "検索キーワードを入力してください。",
+        "noUsersFound": "一致するユーザーが見つかりませんでした。",
+        "searchFailed": "ユーザーの検索に失敗しました。",
+        "userRequired": "ユーザーを選択するか、ユーザー ID を入力してください。",
+        "amountInvalid": "有効なクレジット金額を入力してください。",
+        "descriptionRequired": "助成金の説明を入力してください。",
+        "grantFailed": "クレジットの付与に失敗しました。"
+      },
+      "success": {
+        "granted": "クレジットが正常に付与されました。"
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "アンケートの取得に失敗しました。",
+        "fetchStats": "調査統計の取得に失敗しました。"
+      }
+    },
+    "memberships": {
+      "title": "ユーザーサブスクリプション管理",
+      "search": {
+        "placeholder": "ユーザーID、メールアドレス、ニックネームを検索...",
+        "button": "検索"
+      },
+      "stats": {
+        "total": "総購読数",
+        "yearly": "年間会員"
+      },
+      "list": {
+        "title": "購読リスト"
+      },
+      "loading": "読み込み中...",
+      "actions": {
+        "retry": "再試行"
+      },
+      "empty": "サブスクリプション データがありません",
+      "table": {
+        "headers": {
+          "userInfo": "ユーザー情報",
+          "plan": "計画",
+          "billingCycle": "請求サイクル",
+          "status": "ステータス",
+          "credits": "クレジット残高",
+          "videoTasks": "ビデオタスク",
+          "imageTasks": "画像タスク",
+          "createdAt": "作成時間",
+          "expiresAt": "有効期限"
+        },
+        "user": {
+          "unknown": "不明"
+        },
+        "status": {
+          "active": "アクティブ",
+          "inactive": "非アクティブ",
+          "cancelAtPeriodEnd": "期間終了時にキャンセルする"
+        },
+        "creditsUnit": "クレジット",
+        "flagged": "フラグ付き",
+        "tasksUnit": "タスク",
+        "never": "決してしない"
+      },
+      "pagination": {
+        "summary": "{total} レコードの {start} から {end} を表示しています",
+        "previous": "前へ",
+        "next": "次へ",
+        "page": "ページ {currentPage} / {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "投稿の削除に失敗しました。もう一度試してください。"
+      }
+    }
+  },
+  "Common": {
+    "language": "言語",
+    "onlyEnglish": "現在は英語のみが利用可能です。",
+    "onlySupportedPages": "追加言語は現在、ホーム、探索、検索、作成、レゴ、音楽、メンバーシップ、連絡先、ユーザー、共有、モデル、エフェクト、ブログ ページでのみ利用可能です。",
+    "languages": {
+      "en": "英語",
+      "zh-CN": "中国語（簡体字）"
+    },
+    "actions": {
+      "viewAll": "すべて見る",
+      "cancel": "キャンセル",
+      "recreate": "再作成",
+      "download": "ダウンロード",
+      "downloading": "ダウンロード中...",
+      "showMore": "もっと見る",
+      "showLess": "表示を少なくする"
+    },
+    "aria": {
+      "scrollRight": "右にスクロール",
+      "search": "検索"
+    },
+    "search": {
+      "placeholder": "投稿とユーザーを検索..."
+    },
+    "share": {
+      "button": "共有",
+      "toast": {
+        "copiedTitle": "コピーされました",
+        "copiedMessage": "リンクがクリップボードにコピーされました",
+        "failedTitle": "コピーに失敗しました",
+        "failedMessage": "リンクをクリップボードにコピーできません"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "ノーラン AI ディレクター",
+      "earlyAccess": "早期アクセス",
+      "justOneCredit": "たった1クレジット"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "ライトモード",
+        "darkMode": "ダークモード",
+        "switchToLightMode": "ライトモードに切り替える",
+        "switchToDarkMode": "ダークモードに切り替える"
+      },
+      "profile": {
+        "myProfile": "私のプロフィール",
+        "goToMyProfile": "私のプロフィールに行く"
+      },
+      "menu": {
+        "openMenu": "メニューを開く",
+        "close": "近い"
+      },
+      "membership": {
+        "title": "メンバーシップ",
+        "tapToViewPlans": "タップしてプランを表示",
+        "upgrade": "アップグレード",
+        "plans": {
+          "free": "無料",
+          "pro": "プロ",
+          "max": "マックス",
+          "unlimited": "無制限"
+        }
+      },
+      "actions": {
+        "pricing": "価格設定",
+        "signIn": "サインイン"
+      }
+    },
+    "footer": {
+      "rights": "© {year} リールマインド。無断転載を禁じます。"
+    },
+    "video": {
+      "labels": {
+        "prompt": "プロンプト",
+        "model": "モデル",
+        "ratio": "比率",
+        "guidance": "ガイダンス",
+        "steps": "ステップ",
+        "seed": "シード",
+        "definition": "意味"
+      },
+      "values": {
+        "unknownModel": "不明なモデル",
+        "random": "ランダム"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "ページネーション",
+        "previous": "前のページに戻る",
+        "next": "次のページへ"
+      },
+      "previous": "前の",
+      "next": "次",
+      "more": "さらにページを開く"
+    },
+    "concurrentLimit": {
+      "title": "タスク制限に達しました",
+      "defaultMessage": "無料ユーザーは、一度に 1 つのビデオ生成タスクのみを実行できます。",
+      "currentStatus": "現在の状況",
+      "currentPlan": "現在の計画",
+      "premiumBenefits": "プレミアム特典",
+      "plans": {
+        "unlimited": "無制限プラン",
+        "free": "無料",
+        "unlimitedTasks": "無制限のタスク"
+      },
+      "unlimited": {
+        "maxTasks": "最大 3 つの同時タスク",
+        "priority": "高優先処理",
+        "features": "すべてのプレミアム機能",
+        "waitNote": "新しいタスクを送信する前に、現在のタスクの一部が完了するまで待ってください。"
+      },
+      "free": {
+        "maxTasks": "1つの同時タスク",
+        "priority": "標準優先度",
+        "features": "基本機能"
+      },
+      "upgrade": {
+        "maxTasks": "最大 5 つの同時タスク",
+        "priority": "優先度の高い処理",
+        "features": "すべてのモデルへのアクセス"
+      },
+      "actions": {
+        "acknowledge": "わかった",
+        "upgrade": "アップグレード",
+        "loading": "読み込み中..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "ローカルアップロード",
+      "reelmind": "リールマインド生成"
+    },
+    "reelmind": {
+      "description": "ReelMind で生成されたビデオを選択します。",
+      "browse": "ReelMind のビデオを閲覧する"
+    },
+    "title": {
+      "placeholder": "タイトルを追加..."
+    },
+    "tags": {
+      "title": "タグ",
+      "empty": "タグを追加してビデオをより適切に分類します。",
+      "placeholder": "タグを追加します (Enter キーを押して確認します)",
+      "count": "{count}/{limit}",
+      "helper": "それぞれ最大 {limit} タグ、{max} 文字まで。"
+    },
+    "description": {
+      "placeholder": "説明を追加..."
+    },
+    "generationType": {
+      "title": "生成タイプ",
+      "txt2video": "テキストからビデオへ",
+      "txt2videoDescription": "テキスト プロンプトから生成します。",
+      "img2video": "画像からビデオへ",
+      "img2videoDescription": "参照画像から生成します。"
+    },
+    "prompts": {
+      "promptTitle": "プロンプト",
+      "promptPlaceholder": "このビデオの生成に使用したプロンプトを入力してください...",
+      "negativeTitle": "否定的なプロンプト",
+      "negativePlaceholder": "否定的なプロンプトを入力してください..."
+    },
+    "modelResources": {
+      "title": "モデルリソース",
+      "placeholder": "使用されたモデルリソースをリストします。例:モデル、LoRA、エンベディング..."
+    },
+    "aigc": {
+      "guidanceScale": "誘導スケール",
+      "guidanceScalePlaceholder": "例えば7.5",
+      "steps": "ステップ",
+      "stepsPlaceholder": "例えば30",
+      "seed": "シード",
+      "seedPlaceholder": "例えば1234567890"
+    },
+    "tools": {
+      "title": "生成ツール"
+    },
+    "videoPreview": {
+      "uploadComplete": "アップロード完了",
+      "uploading": "アップロード中...",
+      "clickToUpload": "クリックしてビデオをアップロードします",
+      "remove": "ビデオを削除する"
+    },
+    "actions": {
+      "publish": "公開",
+      "publishing": "公開中...",
+      "back": "戻る"
+    },
+    "errors": {
+      "tagEmpty": "タグを空にすることはできません。",
+      "tagTooLong": "タグは {max} 文字を超えることはできません。",
+      "tagExists": "このタグはすでに存在します。",
+      "tagLimit": "最大 {limit} タグを追加できます。",
+      "authRequired": "アップロードするにはサインインしてください。",
+      "uploadFailed": "アップロードに失敗しました。もう一度試してください。",
+      "uploadParamsFailed": "アップロードパラメータの取得に失敗しました。",
+      "fileAddFailed": "ファイルの追加に失敗しました。もう一度試してください。"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "ブログ - リールマインド",
+      "description": "AI コンテンツ作成、ビデオ生成、最新の ReelMind 機能に関するヒント、チュートリアル、洞察をご覧ください。"
+    },
+    "page": {
+      "title": "ブログ",
+      "empty": "ブログ投稿が見つかりませんでした"
+    },
+    "error": {
+      "title": "投稿の読み込みエラー",
+      "description": "ブログ投稿の読み込み中に問題が発生しました。",
+      "retry": "もう一度やり直してください"
+    },
+    "notFound": {
+      "title": "ページが見つかりません",
+      "description": "リクエストされたブログ ページは存在しません。"
+    },
+    "feed": {
+      "end": "最後に到達しました",
+      "retry": "リトライ",
+      "loadFailed": "ブログ投稿の読み込みに失敗しました"
+    },
+    "topFeed": {
+      "refresh": "リフレッシュ",
+      "exploreMore": "もっと楽しく探ろう",
+      "loadFailed": "ランダムな投稿を読み込めませんでした"
+    },
+    "floatingChat": {
+      "title": "ノーランAIに聞く",
+      "subtitle": "No.1AIエージェントディレクター！",
+      "placeholder": "この記事について質問するか、映画のアイデアを共有してください...",
+      "cta": "ノーランに送る"
+    },
+    "featureCard": {
+      "label": "ビデオモデル",
+      "title": "Reelmind は、アイデアを実現するための強力なツールを提供します。",
+      "subtitle": "101 個の AI モデルを使用してアイデアを素晴らしいビジュアルに変換します",
+      "cta": "今すぐ試してみる"
+    },
+    "breadcrumbs": {
+      "home": "家"
+    },
+    "article": {
+      "notFoundTitle": "記事が見つかりません",
+      "notFoundDescription": "要求された記事は見つかりませんでした。"
+    }
+  },
+  "Favorites": {
+    "title": "私のお気に入り",
+    "subtitle": "ここでお気に入りのビデオやモデルを管理できます",
+    "tabs": {
+      "video": "ビデオ",
+      "model": "モデル"
+    },
+    "empty": {
+      "title": "まだお気に入りがありません"
+    },
+    "alert": {
+      "title": "エラー",
+      "retry": "リトライ",
+      "loadFailed": "お気に入りを読み込めません。もう一度試してください。",
+      "removeFailed": "お気に入りを削除できません。もう一度試してください。"
+    },
+    "card": {
+      "video": "ビデオ",
+      "model": "モデル"
+    },
+    "button": {
+      "favorite": "お気に入り",
+      "favorited": "お気に入りに登録しました"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ReelMindへようこそ",
+      "subtitle": "ログインまたはクリエイターアカウントを作成",
+      "continueWithGoogle": "Googleで続行",
+      "orContinueWithEmail": "またはメールで続行",
+      "emailLabel": "メール",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "メールアドレス",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "••••••••",
+      "show": "表示",
+      "hide": "非表示",
+      "inviteCodeLabelOptional": "招待コード（任意）",
+      "inviteCodePlaceholder": "コードを入力",
+      "invitedBy": "<name>{value}</name>から招待されました",
+      "continue": "続行",
+      "signIn": "ログイン",
+      "createAccount": "アカウント作成",
+      "switchToSignIn": "既にアカウントをお持ちですか？ログイン",
+      "switchToSignUp": "アカウントをお持ちでないですか？新規登録",
+      "pageSubtitleCreate": "アカウントを作成",
+      "pageSubtitleSignIn": "アカウントにログイン",
+      "termsLine": "続行すると、<terms>利用規約</terms> と <privacy>プライバシーポリシー</privacy> に同意したものとみなされます"
+    },
+    "verifyEmail": {
+      "title": "メールを確認してください",
+      "sentLinkTo": "確認リンクを次のメールアドレスに送信しました",
+      "checkInbox": "受信トレイを確認し、リンクをクリックして続行してください。",
+      "understand": "OK",
+      "useDifferentEmail": "別のメールを使用"
+    },
+    "errors": {
+      "invalidEmail": "無効なメールアドレス",
+      "suspiciousEmail": "このメールアドレスは不審です",
+      "verifyBeforeLogin": "ログイン前にメールを確認してください",
+      "operationFailed": "操作に失敗しました。もう一度お試しください",
+      "googleFailed": "Googleでのログインに失敗しました。もう一度お試しください",
+      "checkEmailConfirmation": "確認リンクをメールで確認してください！"
+    },
+    "brand": {
+      "headlineLine1": "リールメーカー",
+      "headlineLine2": "ようこそ",
+      "taglineLine1": "想像力をほどこう。",
+      "taglineLine2": "AIが映像に巻き取る。",
+      "cta": "クリエイターコミュニティに参加して制作を始めましょう。"
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "画像を追加",
+      "addMoreReferences": "参照をさらに追加する",
+      "auto": "自動",
+      "back": "戻る",
+      "character": "キャラクター",
+      "clear": "クリア",
+      "clearAll": "すべてクリア",
+      "close": "閉じる",
+      "createPack": "パックの作成",
+      "downloadCount": "{current}/{total} をダウンロード",
+      "dropOrUploadPhoto": "写真をドロップまたはアップロードする",
+      "goToLibrary": "図書館に行く",
+      "high": "高",
+      "history": "歴史",
+      "inQueue": "キュー中",
+      "info": "情報",
+      "instadump": "インスタダンプ",
+      "manual": "マニュアル",
+      "new": "新しい",
+      "next": "次へ",
+      "open": "開く",
+      "previous": "前へ",
+      "ready": "準備完了",
+      "recent": "最近の",
+      "remove": "削除",
+      "replace": "交換する",
+      "reset": "リセット",
+      "restart": "再起動",
+      "selectPack": "パックを選択",
+      "storyboard": "絵コンテ",
+      "upload": "アップロード",
+      "uploading": "アップロード中..."
+    },
+    "prompts": {
+      "defaultImage": "自然光を使用した映画のような高精細な画像",
+      "relightDefault": "柔らかいスタジオ照明で被写体を再照明する",
+      "faceSwapDefault": "シーンをそのままにしながら顔を交換します",
+      "characterSwapDefault": "スタイルを維持しながらキャラクターを交換する",
+      "drawToEditDefault": "図面をきれいで詳細なイメージに修正します"
+    },
+    "swap": {
+      "sourceTitle": "ソース",
+      "targetTitle": "ターゲット",
+      "faceSourceDescription": "顔のソース画像",
+      "faceTargetDescription": "置換対象の画像",
+      "characterSourceDescription": "キャラクターのソース画像",
+      "characterTargetDescription": "置換対象の画像"
+    },
+    "inpaint": {
+      "sourceAlt": "ソース画像",
+      "paintHint": "編集したい部分をペイントします",
+      "maskUploading": "マスクをアップロードしています",
+      "maskReady": "マスクの準備ができました",
+      "maskPaint": "ペイントマスク",
+      "paint": "ペイント",
+      "erase": "消去"
+    },
+    "relight": {
+      "title": "リライト",
+      "quickSelect": "クイック選択",
+      "directions": {
+        "top": "トップへ",
+        "front": "フロント",
+        "right": "右",
+        "left": "左",
+        "back": "戻る",
+        "bottom": "下"
+      },
+      "brightness": "明るさ",
+      "color": "色"
+    },
+    "upscale": {
+      "title": "高級感のある"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "スケッチからビデオへ",
+      "drawToVideo": "ビデオへの描画",
+      "drawToEdit": "描画して編集",
+      "pen": "ペン",
+      "eraser": "消しゴム",
+      "color": "色",
+      "size": "サイズ",
+      "undo": "元に戻す",
+      "redo": "やり直し",
+      "clear": "クリア",
+      "generateVideo": "ビデオの生成",
+      "uploadTitle": "メディアをアップロードする",
+      "uploadDescription": "描画のガイドとなる写真を追加する"
+    },
+    "soulId": {
+      "heroTitle": "ソウルIDキャラクター",
+      "heroDescription": "写真から一貫したキャラクターを構築します。",
+      "createButton": "キャラクターの作成",
+      "photoCount": "{count}写真",
+      "characterLabel": "キャラクター{index}",
+      "emptyGallery": "まだ文字がありません。",
+      "dialogTitle": "ソウルIDの作成",
+      "dialogSubtitle": "写真をアップロードしてキャラクターを構築します。",
+      "addPhotosTitle": "写真を追加する",
+      "addPhotosDescription": "鮮明な写真を 6 ～ 12 枚アップロードします。",
+      "tip": "ヒント: さまざまな角度や表現を使用します。"
+    },
+    "storyboard": {
+      "relightScene": "リライトシーン",
+      "headline": "ファッションファクトリー",
+      "headlineAccent": "あなたの美学を生み出す",
+      "description": "絵コンテ、編集、作成。",
+      "resultsLabel": "{count} の結果",
+      "uploadHint": "シーンをガイドする参照画像をアップロードします",
+      "referenceImagesTitle": "参考画像",
+      "referenceImagesDescription": "スタイルに合わせて最大 4 つの画像を追加します"
+    },
+    "instadump": {
+      "sidebarTitle": "インスタダンプスタジオ",
+      "stepChoosePack": "パックを選ぶ",
+      "stepAddPhoto": "写真を追加する",
+      "stepGetInstadump": "インスタダンプを入手",
+      "headerTitle": "インスタダンプ",
+      "headerDescription": "自撮り写真を完全なコンテンツ ライブラリに変えます。",
+      "addPhotoTitle": "写真を追加してください",
+      "addPhotoDescription": "まず、鮮明な自撮り写真をアップロードしてください。",
+      "getInstadumpTitle": "インスタダンプを入手",
+      "newPhotosReady": "新しい写真が準備できました",
+      "tryFree": "無料でお試しください",
+      "premiumTitle": "プレミアム",
+      "premiumBulletOne": "パックごとにさらに多くのスタイル",
+      "premiumBulletTwo": "優先処理",
+      "premiumBulletThree": "フル解像度のダウンロード",
+      "upgradeNow": "今すぐアップグレードしてください"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "編集",
+      "subtitle": "編集機能とモデルにアクセスする",
+      "back": "編集に戻る",
+      "workspace": {
+        "title": "ワークスペース",
+        "status": "フロントエンドのプレースホルダー",
+        "uploadTitle": "メディアをアップロードする",
+        "uploadDescription": "ドロップまたはクリックして画像/ビデオをアップロードして開始します"
+      },
+      "settings": {
+        "title": "設定",
+        "modelTitle": "モデル",
+        "modelDescription": "モデルを選択してください (バックエンドは近日公開予定)",
+        "promptTitle": "プロンプト",
+        "promptDescription": "必要なものを説明してください (バックエンドは近日公開予定)",
+        "generate": "生成する"
+      },
+      "model": {
+        "title": "モデル詳細",
+        "descriptionTitle": "説明",
+        "descriptionBody": "これはプレースホルダーです。バックエンドが接続されると、詳細が入力されます。"
+      }
+    },
+    "menu": {
+      "title": "編集",
+      "sections": {
+        "features": "特長",
+        "models": "モデル"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "ビデオを編集する",
+        "description": "高度なビデオ編集"
+      },
+      "inpaint": {
+        "title": "インペイント",
+        "description": "エリアを選択し、変更内容を説明してください"
+      },
+      "relight": {
+        "title": "リライト",
+        "description": "照明の位置、色、明るさを調整する"
+      },
+      "aiStylist": {
+        "title": "AIスタイリスト",
+        "description": "完璧な見た目を見つけてください"
+      },
+      "upscale": {
+        "title": "高級感のある",
+        "description": "解像度と品質を向上させる"
+      },
+      "skinEnhancer": {
+        "title": "スキンエンハンサー",
+        "description": "自然でリアルな肌の質感"
+      },
+      "angles": {
+        "title": "角度",
+        "description": "さまざまな角度から生成する"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "最大限の詳細と精度"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "高速で軽量な編集"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "シームレスな製品統合"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "高解像度アップスケーラー"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "ビデオ参照によるモーションの制御"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "高度なビデオ編集"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "トッププラン",
+      "completed": "{completed}/{total} 完了",
+      "steps": {
+        "script": "脚本と絵コンテ設計",
+        "world": "ワールドアセット設計",
+        "video": "動画生成",
+        "worldVideo": "ワールドアセットと動画生成",
+        "audio": "音声・オーディオ設計",
+        "final": "最終編集"
+      }
+    }
+  }
+}

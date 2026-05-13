@@ -1,0 +1,166 @@
+{
+  "title": "لوحة القصة",
+  "rename": "إعادة تسمية لوحة القصة",
+  "delete": "حذف لوحة القصة",
+  "share": "مشاركة لوحة القصة",
+  "export": "تصدير لوحة القصة",
+  "exportImages": "تصدير الإطارات",
+  "import": "استيراد لوحة القصة",
+  "untitled": "مشهد بدون عنوان",
+  "back": "العودة إلى مكتب المخرج",
+  "saveSnapshot": "حفظ لقطة للمشهد",
+  "loadSnapshot": "تحميل لقطة للمشهد",
+  "saved": "تم حفظ المشهد ✅",
+  "messages": {
+    "canvasRenamed": "تمت إعادة تسمية لوحة القصة بنجاح",
+    "canvasDeleted": "تم حذف لوحة القصة بنجاح",
+    "canvasExported": "تم تصدير لوحة القصة بنجاح",
+    "canvasImported": "تم استيراد لوحة القصة بنجاح",
+    "failedToRename": "فشل إعادة تسمية لوحة القصة",
+    "failedToDelete": "فشل حذف لوحة القصة",
+    "failedToCreateFile": "فشل إنشاء ملف المشهد",
+    "noImagesSelected": "لم يتم تحديد أي إطارات",
+    "exportingImages": "جارٍ تصدير الإطارات...",
+    "failedToExportImages": "فشل تصدير الإطارات"
+  },
+  "deleteDialog": {
+    "title": "حذف لوحة القصة",
+    "description": "هل أنت متأكد أنك تريد حذف لوحة القصة هذه؟ سيتم فقد هذا المشهد إلى الأبد.",
+    "cancel": "إلغاء",
+    "delete": "حذف"
+  },
+  "tool": {
+    "hand": "تحريك الكاميرا",
+    "selection": "تحديد المشهد",
+    "rectangle": "مربع إطار",
+    "ellipse": "بقعة ضوء",
+    "text": "بطاقة عنوان",
+    "image": "أصل بصري",
+    "shape": "شكل دعامة",
+    "freedraw": "رسم حر",
+    "arrow": "سهم حركة",
+    "line": "خط حركة",
+    "zoomFit": "إظهار كل الإطارات"
+  },
+  "popbar": {
+    "addToChat": "ناقش مع Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "جارٍ تحضير اللوحة…",
+    "loadingSharedCanvas": "جارٍ تحميل اللوحة المشتركة…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "عنوان المشهد",
+    "published": "تم النشر",
+    "checking": "جارٍ التحقق...",
+    "publish": "نشر",
+    "copied": "تم النسخ!",
+    "share": "مشاركة",
+    "sharedCanvas": "لوحة مشتركة",
+    "shareCopiedToast": "تم نسخ رابط المشاركة إلى الحافظة!",
+    "shareCopyFailedToast": "فشل نسخ رابط المشاركة"
+  },
+  "preview": {
+    "mute": "كتم",
+    "unmute": "إلغاء الكتم",
+    "volume": "مستوى الصوت: {{percent}}%",
+    "export": "تصدير",
+    "exporting": "جارٍ التصدير...",
+    "exportVideo": "تصدير فيديو",
+    "playing": "جارٍ التشغيل",
+    "placeholder": {
+      "title": "نافذة المعاينة",
+      "hint": "أضف الأصول إلى الخط الزمني لرؤية المعاينة"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "المسارات",
+    "trackLabels": {
+      "script": "النص",
+      "keyframe": "إطار رئيسي",
+      "video": "فيديو",
+      "audio": "صوت",
+      "world": "العالم"
+    },
+    "indexedTitles": {
+      "script": "النص {{index}}",
+      "keyframe": "إطار رئيسي {{index}}",
+      "video": "فيديو {{index}}",
+      "audio": "صوت {{index}}",
+      "world": "العالم {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "تصغير",
+      "zoomIn": "تكبير",
+      "rearrangeAllLanes": "إعادة ترتيب جميع المسارات (التقاط مغناطيسي — فجوة زمنية 0)",
+      "play": "تشغيل",
+      "pause": "إيقاف مؤقت"
+    },
+    "actions": {
+      "clickToDrop": "انقر للإفلات",
+      "clickToSelect": "انقر للتحديد"
+    },
+    "assetTypes": {
+      "script": "نص",
+      "keyframe": "Keyframe",
+      "video": "فيديو",
+      "audio": "صوت",
+      "asset": "أصل",
+      "world": "العالم"
+    },
+    "fallbackTitles": {
+      "script": "نص",
+      "keyframe": "إطار رئيسي",
+      "video": "فيديو",
+      "audio": "صوت",
+      "asset": "أصل",
+      "untitled": "بدون عنوان",
+      "world": "العالم"
+    },
+    "alts": {
+      "keyframe": "إطار رئيسي",
+      "videoThumbnail": "صورة مصغرة للفيديو"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "فشل الحفظ",
+      "saving": "جارٍ الحفظ...",
+      "savedAt": "تم الحفظ {{time}}"
+    }
+  },
+  "publish": {
+    "title": "نشر في المجتمع",
+    "enterTitleError": "يرجى إدخال عنوان",
+    "success": "تم نشر اللوحة في المجتمع بنجاح!",
+    "failed": "فشل نشر اللوحة",
+    "warning": "سيؤدي هذا إلى نشر جميع المحادثات والنتائج الإبداعية من هذه اللوحة في المجتمع.",
+    "oncePublished": "بمجرد النشر، يمكن لأي شخص عرض عملك واكتشافه.",
+    "canvasTitleLabel": "عنوان اللوحة",
+    "canvasTitlePlaceholder": "أدخل عنوان اللوحة",
+    "cancel": "إلغاء",
+    "publish": "نشر",
+    "publishing": "جارٍ النشر..."
+  }
+}

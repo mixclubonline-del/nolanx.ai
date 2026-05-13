@@ -1,0 +1,169 @@
+/* ZEN Nolan Page Styles - Simplified & Elegant */
+
+/* Minimal animations */
+@keyframes zen-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zen-hover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
+
+/* Clean transitions */
+.zen-transition {
+  transition: all 0.2s ease;
+}
+
+.zen-transition-slow {
+  transition: all 0.3s ease;
+}
+
+/* Simplified hover effects */
+.zen-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Clean focus states */
+.zen-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(var(--cinematic-accent) / 0.4);
+}
+
+/* Typography */
+.zen-text-primary {
+  color: rgb(17, 24, 39);
+}
+
+.zen-text-primary-dark {
+  color: rgb(255, 255, 255);
+}
+
+.zen-text-secondary {
+  color: rgb(107, 114, 128);
+}
+
+.zen-text-secondary-dark {
+  color: rgb(156, 163, 175);
+}
+
+.zen-text-light {
+  font-weight: 300;
+}
+
+/* Layout */
+.zen-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.zen-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .zen-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .zen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .zen-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .zen-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Clean surfaces */
+.zen-surface-light {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.zen-surface-dark {
+  background: rgba(17, 24, 39, 0.3);
+}
+
+.zen-surface-hover-light:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.zen-surface-hover-dark:hover {
+  background: rgba(17, 24, 39, 0.5);
+}
+
+/* Minimal buttons */
+.zen-button {
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.zen-button-primary {
+  background: hsl(var(--cinematic-accent));
+  color: white;
+}
+
+.zen-button-primary:hover {
+  background: hsl(var(--cinematic-accent) / 0.9);
+}
+
+.zen-button-secondary {
+  background: rgb(243, 244, 246);
+  color: rgb(75, 85, 99);
+}
+
+.zen-button-secondary:hover {
+  background: rgb(229, 231, 235);
+}
+
+.zen-button-secondary-dark {
+  background: rgb(75, 85, 99);
+  color: rgb(209, 213, 219);
+}
+
+.zen-button-secondary-dark:hover {
+  background: rgb(107, 114, 128);
+}
+
+/* Clean inputs */
+.zen-input {
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.zen-input:focus {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 2px hsl(var(--cinematic-accent) / 0.3);
+}
+
+.zen-input-dark {
+  background: rgba(17, 24, 39, 0.5);
+}
+
+.zen-input-dark:focus {
+  background: rgba(17, 24, 39, 0.7);
+}

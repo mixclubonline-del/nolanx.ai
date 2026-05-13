@@ -1,0 +1,21 @@
+{
+  "title": "Le premier réalisateur agent IA au monde : Nolan",
+  "subtitle": "Programme d’accès anticipé",
+  "description": "Le premier réalisateur agent IA au monde : Nolan",
+  "tabs": {
+    "myCanvases": "Mes toiles",
+    "community": "Communauté"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan prépare votre toile…",
+    "communitySessions": "Chargement des sessions de la communauté..."
+  },
+  "community": {
+    "loadFailed": "Échec du chargement des sessions de la communauté",
+    "canvasNotAvailable": "La toile n’est pas disponible pour cette session",
+    "likeFailed": "Impossible de mettre à jour le like"
+  },
+  "allProjects": "Tous les projets",
+  "noCanvases": "Aucun storyboard pour le moment",
+  "newCanvas": "Scène sans titre"
+}

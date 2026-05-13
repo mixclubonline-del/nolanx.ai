@@ -1,0 +1,166 @@
+{
+  "title": "Guion gráfico",
+  "rename": "Renombrar guion gráfico",
+  "delete": "Eliminar guion gráfico",
+  "share": "Compartir guion gráfico",
+  "export": "Exportar guion gráfico",
+  "exportImages": "Exportar fotogramas",
+  "import": "Importar guion gráfico",
+  "untitled": "Escena sin título",
+  "back": "Volver al escritorio del director",
+  "saveSnapshot": "Guardar instantánea de la escena",
+  "loadSnapshot": "Cargar instantánea de la escena",
+  "saved": "Escena guardada ✅",
+  "messages": {
+    "canvasRenamed": "Guion gráfico renombrado correctamente",
+    "canvasDeleted": "Guion gráfico eliminado correctamente",
+    "canvasExported": "Guion gráfico exportado correctamente",
+    "canvasImported": "Guion gráfico importado correctamente",
+    "failedToRename": "No se pudo renombrar el guion gráfico",
+    "failedToDelete": "No se pudo eliminar el guion gráfico",
+    "failedToCreateFile": "No se pudo crear el archivo de la escena",
+    "noImagesSelected": "No se seleccionaron fotogramas",
+    "exportingImages": "Exportando fotogramas...",
+    "failedToExportImages": "No se pudieron exportar los fotogramas"
+  },
+  "deleteDialog": {
+    "title": "Eliminar guion gráfico",
+    "description": "¿Seguro que quieres eliminar este guion gráfico? Esta escena se perderá para siempre.",
+    "cancel": "Cancelar",
+    "delete": "Eliminar"
+  },
+  "tool": {
+    "hand": "Desplazar cámara",
+    "selection": "Seleccionar escena",
+    "rectangle": "Caja de fotograma",
+    "ellipse": "Foco",
+    "text": "Cartela",
+    "image": "Recurso visual",
+    "shape": "Forma de atrezzo",
+    "freedraw": "Dibujo libre",
+    "arrow": "Flecha de acción",
+    "line": "Línea de movimiento",
+    "zoomFit": "Enmarcar todo"
+  },
+  "popbar": {
+    "addToChat": "Hablar con Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Preparando lienzo…",
+    "loadingSharedCanvas": "Cargando lienzo compartido…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Título de la escena",
+    "published": "Publicado",
+    "checking": "Comprobando...",
+    "publish": "Publicar",
+    "copied": "¡Copiado!",
+    "share": "Compartir",
+    "sharedCanvas": "Lienzo compartido",
+    "shareCopiedToast": "¡Enlace para compartir copiado al portapapeles!",
+    "shareCopyFailedToast": "No se pudo copiar el enlace para compartir"
+  },
+  "preview": {
+    "mute": "Silenciar",
+    "unmute": "Activar sonido",
+    "volume": "Volumen: {{percent}}%",
+    "export": "Exportar",
+    "exporting": "Exportando...",
+    "exportVideo": "Exportar vídeo",
+    "playing": "Reproduciendo",
+    "placeholder": {
+      "title": "Ventana de vista previa",
+      "hint": "Añade recursos a la línea de tiempo para ver la vista previa"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Pistas",
+    "trackLabels": {
+      "script": "Guion",
+      "keyframe": "Fotograma clave",
+      "video": "Vídeo",
+      "audio": "Audio",
+      "world": "Mundo"
+    },
+    "indexedTitles": {
+      "script": "Guion {{index}}",
+      "keyframe": "Fotograma clave {{index}}",
+      "video": "Vídeo {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "Mundo {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Alejar",
+      "zoomIn": "Acercar",
+      "rearrangeAllLanes": "Reordenar todas las pistas (Ajuste magnético: 0 separación)",
+      "play": "Reproducir",
+      "pause": "Pausar"
+    },
+    "actions": {
+      "clickToDrop": "Haz clic para soltar",
+      "clickToSelect": "Haz clic para seleccionar"
+    },
+    "assetTypes": {
+      "script": "Guion",
+      "keyframe": "Keyframe",
+      "video": "Vídeo",
+      "audio": "Audio",
+      "asset": "Recurso",
+      "world": "Mundo"
+    },
+    "fallbackTitles": {
+      "script": "Guion",
+      "keyframe": "Fotograma clave",
+      "video": "Vídeo",
+      "audio": "Audio",
+      "asset": "Recurso",
+      "untitled": "Sin título",
+      "world": "Mundo"
+    },
+    "alts": {
+      "keyframe": "Fotograma clave",
+      "videoThumbnail": "Miniatura del vídeo"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Error al guardar",
+      "saving": "Guardando...",
+      "savedAt": "Guardado {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Publicar en la comunidad",
+    "enterTitleError": "Introduce un título",
+    "success": "¡Lienzo publicado en la comunidad correctamente!",
+    "failed": "No se pudo publicar el lienzo",
+    "warning": "Esto publicará todas las conversaciones y resultados creativos de este lienzo en la comunidad.",
+    "oncePublished": "Una vez publicado, cualquiera podrá ver y descubrir tu trabajo.",
+    "canvasTitleLabel": "TÍTULO DEL LIENZO",
+    "canvasTitlePlaceholder": "Introduce el título del lienzo",
+    "cancel": "Cancelar",
+    "publish": "Publicar",
+    "publishing": "Publicando..."
+  }
+}

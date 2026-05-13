@@ -1,0 +1,98 @@
+{
+  "title": "تنظیمات",
+  "messages": {
+    "settingsSaved": "تنظیمات با موفقیت ذخیره شد",
+    "settingsReset": "تنظیمات به پیش‌فرض بازنشانی شد",
+    "failedToSave": "ذخیره تنظیمات ناموفق بود",
+    "failedToLoad": "بارگذاری پیکربندی ناموفق بود",
+    "restartRequired": "برای اعمال تنظیمات پروکسی، لطفاً برنامه را دوباره راه‌اندازی کنید"
+  },
+  "models": {
+    "title": "مدل‌ها",
+    "placeholder": "نام مدل را وارد کنید",
+    "addModel": "افزودن مدل",
+    "types": {
+      "text": "متن",
+      "image": "تصویر",
+      "video": "ویدئو"
+    }
+  },
+  "provider": {
+    "title": "ارائه‌دهندگان",
+    "addProvider": "افزودن ارائه‌دهنده",
+    "providerName": "نام ارائه‌دهنده",
+    "providerNamePlaceholder": "نام ارائه‌دهنده را وارد کنید",
+    "apiUrl": "URL API",
+    "apiUrlPlaceholder": "URL API را وارد کنید",
+    "apiKey": "کلید API",
+    "apiKeyPlaceholder": "کلید API را وارد کنید",
+    "apiKeyDescription": "کلید API شما به‌صورت امن ذخیره می‌شود",
+    "maxTokens": "حداکثر توکن",
+    "maxTokensPlaceholder": "حداکثر توکن را وارد کنید",
+    "maxTokensDescription": "حداکثر تعداد توکن در پاسخ",
+    "customProvider": "✨ ارائه‌دهنده سفارشی",
+    "imageGeneration": "🎨 تولید تصویر",
+    "delete": "حذف",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "noModelsSelected": "لطفاً حداقل یک مدل اضافه کنید"
+  },
+  "proxy": {
+    "title": "تنظیمات پروکسی",
+    "mode": "حالت پروکسی",
+    "selectMode": "حالت پروکسی را انتخاب کنید",
+    "modes": {
+      "none": "بدون پروکسی",
+      "system": "پروکسی سیستم",
+      "custom": "پروکسی سفارشی"
+    },
+    "enable": "فعال‌سازی پروکسی",
+    "url": "URL پروکسی",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "تست اتصال",
+    "testing": "در حال تست...",
+    "testSuccess": "تست اتصال پروکسی موفق بود",
+    "testFailed": "تست اتصال پروکسی ناموفق بود: {{message}}",
+    "testError": "خطای تست اتصال پروکسی",
+    "status": {
+      "enabled": "فعال",
+      "disabled": "غیرفعال",
+      "misconfigured": "پیکربندی نادرست"
+    }
+  },
+  "comfyui.workflows": "گردش‌کارها",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 تولید تصویر محلی",
+    "enable": "فعال‌سازی",
+    "debugStatus": "🔍 وضعیت دیباگ",
+    "status": {
+      "disabled": "غیرفعال",
+      "running": "در حال اجرا",
+      "installed": "نصب شده (در حال اجرا نیست)",
+      "notInstalled": "نصب نشده",
+      "notRunning": "در حال اجرا نیست",
+      "checking": "در حال بررسی..."
+    },
+    "urlDescription": "URL سرویس ComfyUI؛ اگر نصب شده است، آدرس را وارد کنید",
+    "invalidUrl": "لطفاً یک URL معتبر وارد کنید (مثلاً http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI نصب نشده است",
+    "notInstalledDescription": "برای فعال‌سازی تولید تصویر محلی با مدل‌های Flux، ComfyUI را نصب کنید",
+    "installButton": "نصب ComfyUI",
+    "startButton": "اجرای ComfyUI",
+    "uninstallButton": "حذف ComfyUI",
+    "confirmUninstall": "آیا مطمئن هستید که می‌خواهید ComfyUI را حذف کنید؟ این کار ComfyUI را به‌طور کامل از سیستم شما حذف می‌کند، از جمله همه مدل‌های دانلودشده و پیکربندی‌ها.",
+    "confirmUninstallButton": "تأیید حذف",
+    "uninstallProgress": {
+      "title": "حذف ComfyUI",
+      "preparing": "در حال آماده‌سازی برای حذف...",
+      "inProgress": "حذف در حال انجام است... لطفاً صبر کنید.",
+      "logTitle": "گزارش حذف:",
+      "completed": "حذف کامل شد"
+    },
+    "notInstalled": "ComfyUI نصب نشده است"
+  },
+  "saveSettings": "ذخیره تنظیمات",
+  "close": "بستن",
+  "cancel": "لغو"
+}

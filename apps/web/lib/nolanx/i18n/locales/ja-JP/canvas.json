@@ -1,0 +1,166 @@
+{
+  "title": "ストーリーボード",
+  "rename": "ストーリーボード名を変更",
+  "delete": "ストーリーボードを削除",
+  "share": "ストーリーボードを共有",
+  "export": "ストーリーボードをエクスポート",
+  "exportImages": "フレームを書き出し",
+  "import": "ストーリーボードをインポート",
+  "untitled": "無題のシーン",
+  "back": "監督デスクに戻る",
+  "saveSnapshot": "シーンのスナップショットを保存",
+  "loadSnapshot": "シーンのスナップショットを読み込む",
+  "saved": "シーンを保存しました ✅",
+  "messages": {
+    "canvasRenamed": "ストーリーボード名を変更しました",
+    "canvasDeleted": "ストーリーボードを削除しました",
+    "canvasExported": "ストーリーボードを書き出しました",
+    "canvasImported": "ストーリーボードを読み込みました",
+    "failedToRename": "ストーリーボード名の変更に失敗しました",
+    "failedToDelete": "ストーリーボードの削除に失敗しました",
+    "failedToCreateFile": "シーンファイルの作成に失敗しました",
+    "noImagesSelected": "フレームが選択されていません",
+    "exportingImages": "フレームを書き出し中...",
+    "failedToExportImages": "フレームの書き出しに失敗しました"
+  },
+  "deleteDialog": {
+    "title": "ストーリーボードを削除",
+    "description": "このストーリーボードを削除しますか？このシーンは元に戻せません。",
+    "cancel": "キャンセル",
+    "delete": "削除"
+  },
+  "tool": {
+    "hand": "カメラ移動",
+    "selection": "シーン選択",
+    "rectangle": "フレーム枠",
+    "ellipse": "スポットライト",
+    "text": "タイトルカード",
+    "image": "ビジュアル素材",
+    "shape": "プロップ形状",
+    "freedraw": "フリードロー",
+    "arrow": "アクション矢印",
+    "line": "モーションライン",
+    "zoomFit": "全体表示"
+  },
+  "popbar": {
+    "addToChat": "Nolan と相談"
+  },
+  "loading": {
+    "preparingCanvas": "キャンバスを準備中…",
+    "loadingSharedCanvas": "共有キャンバスを読み込み中…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "シーンタイトル",
+    "published": "公開済み",
+    "checking": "確認中...",
+    "publish": "公開",
+    "copied": "コピーしました！",
+    "share": "共有",
+    "sharedCanvas": "共有キャンバス",
+    "shareCopiedToast": "共有リンクをクリップボードにコピーしました！",
+    "shareCopyFailedToast": "共有リンクのコピーに失敗しました"
+  },
+  "preview": {
+    "mute": "ミュート",
+    "unmute": "ミュート解除",
+    "volume": "音量: {{percent}}%",
+    "export": "エクスポート",
+    "exporting": "エクスポート中...",
+    "exportVideo": "動画を書き出し",
+    "playing": "再生中",
+    "placeholder": {
+      "title": "プレビューウィンドウ",
+      "hint": "タイムラインに素材を追加するとプレビューが表示されます"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "トラック",
+    "trackLabels": {
+      "script": "スクリプト",
+      "keyframe": "キーフレーム",
+      "video": "動画",
+      "audio": "音声",
+      "world": "世界観"
+    },
+    "indexedTitles": {
+      "script": "スクリプト {{index}}",
+      "keyframe": "キーフレーム {{index}}",
+      "video": "動画 {{index}}",
+      "audio": "音声 {{index}}",
+      "world": "世界観 {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "ズームアウト",
+      "zoomIn": "ズームイン",
+      "rearrangeAllLanes": "全レーンを再配置（マグネットスナップ - 時間ギャップ0）",
+      "play": "再生",
+      "pause": "一時停止"
+    },
+    "actions": {
+      "clickToDrop": "クリックして配置",
+      "clickToSelect": "クリックして選択"
+    },
+    "assetTypes": {
+      "script": "スクリプト",
+      "keyframe": "キーフレーム",
+      "video": "動画",
+      "audio": "音声",
+      "asset": "素材",
+      "world": "世界観"
+    },
+    "fallbackTitles": {
+      "script": "スクリプト",
+      "keyframe": "キーフレーム",
+      "video": "動画",
+      "audio": "音声",
+      "asset": "素材",
+      "untitled": "無題",
+      "world": "世界観"
+    },
+    "alts": {
+      "keyframe": "キーフレーム",
+      "videoThumbnail": "動画サムネイル"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "保存に失敗しました",
+      "saving": "保存中...",
+      "savedAt": "{{time}} に保存"
+    }
+  },
+  "publish": {
+    "title": "コミュニティに公開",
+    "enterTitleError": "タイトルを入力してください",
+    "success": "キャンバスをコミュニティに公開しました！",
+    "failed": "キャンバスの公開に失敗しました",
+    "warning": "このキャンバスのすべての会話と創作結果がコミュニティに公開されます。",
+    "oncePublished": "公開後は、誰でもあなたの作品を閲覧・発見できます。",
+    "canvasTitleLabel": "キャンバスタイトル",
+    "canvasTitlePlaceholder": "キャンバスタイトルを入力",
+    "cancel": "キャンセル",
+    "publish": "公開",
+    "publishing": "公開中..."
+  }
+}

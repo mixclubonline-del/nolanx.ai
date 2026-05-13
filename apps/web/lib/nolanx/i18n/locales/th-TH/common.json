@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "อังกฤษ",
+    "zh-CN": "จีน (ตัวย่อ)"
+  },
+  "buttons": {
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "create": "สร้าง",
+    "submit": "ส่ง",
+    "loading": "กำลังโหลด...",
+    "retry": "ลองอีกครั้ง"
+  },
+  "common": {
+    "yes": "ใช่",
+    "no": "ไม่",
+    "ok": "ตกลง",
+    "error": "ข้อผิดพลาด",
+    "success": "สำเร็จ",
+    "warning": "คำเตือน",
+    "info": "ข้อมูล"
+  },
+  "messages": {
+    "success": "ดำเนินการเสร็จสมบูรณ์",
+    "error": "เกิดข้อผิดพลาด",
+    "loading": "กำลังโหลด โปรดรอสักครู่...",
+    "noData": "ไม่มีข้อมูล",
+    "confirmDelete": "คุณแน่ใจหรือไม่ว่าต้องการลบรายการนี้?",
+    "saved": "บันทึกสำเร็จ",
+    "deleted": "ลบสำเร็จ"
+  },
+  "notifications": {
+    "title": "การแจ้งเตือน",
+    "clear": "ล้าง",
+    "markAllAsRead": "ทำเครื่องหมายว่าอ่านทั้งหมด",
+    "allRead": "อ่านทั้งหมดแล้ว",
+    "newImageGenerated": "สร้างภาพใหม่แล้ว"
+  },
+  "navigation": {
+    "home": "หน้าแรก",
+    "canvas": "สตอรี่บอร์ด",
+    "settings": "การตั้งค่า",
+    "back": "กลับ"
+  },
+  "dialog": {
+    "confirmTitle": "ยืนยันการทำรายการ",
+    "confirmDescription": "การทำรายการนี้ไม่สามารถยกเลิกได้",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน"
+  },
+  "update": {
+    "title": "🎉 มีเวอร์ชันใหม่",
+    "description": "มีเวอร์ชันใหม่ v{{version}} พร้อมใช้งาน ต้องการติดตั้งตอนนี้หรือไม่?",
+    "installNote": "คลิก \"ติดตั้งอัปเดต\" เพื่อรีสตาร์ตแอปและติดตั้งอัปเดต",
+    "laterButton": "เตือนภายหลัง",
+    "installButton": "ติดตั้งอัปเดต",
+    "installing": "กำลังติดตั้ง..."
+  },
+  "auth": {
+    "login": "เข้าสู่ระบบ",
+    "logout": "ออกจากระบบ",
+    "loginToJaaz": "เข้าสู่ระบบ Jaaz",
+    "myAccount": "บัญชีของฉัน",
+    "loginDescription": "เข้าสู่ระบบเพื่อใช้โมเดล AI บนคลาวด์",
+    "startLogin": "เริ่มเข้าสู่ระบบ",
+    "preparingLogin": "กำลังเตรียมเข้าสู่ระบบ...",
+    "cancel": "ยกเลิก",
+    "loginSuccessMessage": "เข้าสู่ระบบสำเร็จ!",
+    "authExpiredMessage": "การยืนยันหมดอายุ โปรดเข้าสู่ระบบอีกครั้ง",
+    "authErrorMessage": "เกิดข้อผิดพลาดขณะตรวจสอบสถานะการยืนยัน",
+    "waitingForBrowser": "กำลังรอให้เข้าสู่ระบบให้เสร็จในเบราว์เซอร์...",
+    "pollErrorMessage": "ตรวจสอบสถานะการเข้าสู่ระบบไม่สำเร็จ โปรดลองอีกครั้ง",
+    "preparingLoginMessage": "กำลังเตรียมเข้าสู่ระบบ...",
+    "browserLoginMessage": "โปรดเข้าสู่ระบบให้เสร็จในเบราว์เซอร์",
+    "loginRequestFailed": "คำขอเข้าสู่ระบบล้มเหลว โปรดลองอีกครั้ง",
+    "logoutSuccessMessage": "ออกจากระบบสำเร็จ",
+    "notLoggedIn": "ยังไม่ได้เข้าสู่ระบบ",
+    "balance": "ยอดคงเหลือ",
+    "recharge": "เติมเงิน"
+  },
+  "socket": {
+    "connectionError": "ข้อผิดพลาดการเชื่อมต่อ ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "เชื่อมต่อไม่สำเร็จ โปรดรีเฟรชหน้า"
+  }
+}

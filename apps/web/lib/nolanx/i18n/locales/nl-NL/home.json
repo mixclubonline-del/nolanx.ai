@@ -1,0 +1,21 @@
+{
+  "title": "De eerste AI‑agent‑regisseur ter wereld: Nolan",
+  "subtitle": "Early‑accessprogramma",
+  "description": "De eerste AI‑agent‑regisseur ter wereld: Nolan",
+  "tabs": {
+    "myCanvases": "Mijn canvassen",
+    "community": "Community"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan bereidt je canvas voor…",
+    "communitySessions": "Communitysessies laden..."
+  },
+  "community": {
+    "loadFailed": "Communitysessies laden mislukt",
+    "canvasNotAvailable": "Canvas is niet beschikbaar voor deze sessie",
+    "likeFailed": "Like bijwerken mislukt"
+  },
+  "allProjects": "Alle projecten",
+  "noCanvases": "Nog geen storyboards",
+  "newCanvas": "Ongetitelde scène"
+}

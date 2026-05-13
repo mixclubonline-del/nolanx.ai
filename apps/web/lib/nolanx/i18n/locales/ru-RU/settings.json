@@ -1,0 +1,98 @@
+{
+  "title": "Настройки",
+  "messages": {
+    "settingsSaved": "Настройки успешно сохранены",
+    "settingsReset": "Настройки сброшены по умолчанию",
+    "failedToSave": "Не удалось сохранить настройки",
+    "failedToLoad": "Не удалось загрузить конфигурацию",
+    "restartRequired": "Перезапустите приложение, чтобы применились настройки прокси"
+  },
+  "models": {
+    "title": "Модели",
+    "placeholder": "Введите название модели",
+    "addModel": "Добавить модель",
+    "types": {
+      "text": "текст",
+      "image": "изображение",
+      "video": "видео"
+    }
+  },
+  "provider": {
+    "title": "Провайдеры",
+    "addProvider": "Добавить провайдера",
+    "providerName": "Название провайдера",
+    "providerNamePlaceholder": "Введите название провайдера",
+    "apiUrl": "URL API",
+    "apiUrlPlaceholder": "Введите URL API",
+    "apiKey": "API-ключ",
+    "apiKeyPlaceholder": "Введите API-ключ",
+    "apiKeyDescription": "Ваш API-ключ будет безопасно сохранён",
+    "maxTokens": "Макс. токенов",
+    "maxTokensPlaceholder": "Введите максимум токенов",
+    "maxTokensDescription": "Максимальное число токенов в ответе",
+    "customProvider": "✨ Пользовательский провайдер",
+    "imageGeneration": "🎨 Генерация изображений",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "noModelsSelected": "Добавьте хотя бы одну модель"
+  },
+  "proxy": {
+    "title": "Настройки прокси",
+    "mode": "Режим прокси",
+    "selectMode": "Выберите режим прокси",
+    "modes": {
+      "none": "Без прокси",
+      "system": "Системный прокси",
+      "custom": "Пользовательский прокси"
+    },
+    "enable": "Включить прокси",
+    "url": "URL прокси",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Проверить соединение",
+    "testing": "Проверка...",
+    "testSuccess": "Проверка соединения прокси прошла успешно",
+    "testFailed": "Проверка соединения прокси не удалась: {{message}}",
+    "testError": "Ошибка проверки соединения прокси",
+    "status": {
+      "enabled": "Включено",
+      "disabled": "Отключено",
+      "misconfigured": "Неверная конфигурация"
+    }
+  },
+  "comfyui.workflows": "Рабочие процессы",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Локальная генерация изображений",
+    "enable": "Включить",
+    "debugStatus": "🔍 Статус отладки",
+    "status": {
+      "disabled": "Отключено",
+      "running": "Работает",
+      "installed": "Установлено (не запущено)",
+      "notInstalled": "Не установлено",
+      "notRunning": "Не запущено",
+      "checking": "Проверка..."
+    },
+    "urlDescription": "URL сервиса ComfyUI, введите адрес, если уже установлен",
+    "invalidUrl": "Введите корректный URL (например, http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI не установлен",
+    "notInstalledDescription": "Установите ComfyUI, чтобы включить локальную генерацию изображений с моделями Flux",
+    "installButton": "Установить ComfyUI",
+    "startButton": "Запустить ComfyUI",
+    "uninstallButton": "Удалить ComfyUI",
+    "confirmUninstall": "Вы уверены, что хотите удалить ComfyUI? Это полностью удалит ComfyUI из системы, включая все загруженные модели и конфигурации.",
+    "confirmUninstallButton": "Подтвердить удаление",
+    "uninstallProgress": {
+      "title": "Удаление ComfyUI",
+      "preparing": "Подготовка к удалению...",
+      "inProgress": "Удаление выполняется... Пожалуйста, подождите.",
+      "logTitle": "Журнал удаления:",
+      "completed": "Удаление завершено"
+    },
+    "notInstalled": "ComfyUI не установлен"
+  },
+  "saveSettings": "Сохранить настройки",
+  "close": "Закрыть",
+  "cancel": "Отмена"
+}

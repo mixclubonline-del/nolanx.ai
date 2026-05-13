@@ -1,0 +1,3308 @@
+{
+  "CanvasChat": {
+    "planner": {
+      "title": "顶层规划",
+      "completed": "已完成 {completed}/{total}",
+      "steps": {
+        "script": "剧本与分镜设计",
+        "world": "世界观资产设计",
+        "video": "视频生成",
+        "worldVideo": "视觉资产与视频生成",
+        "audio": "人声与音频设计",
+        "final": "最终合成"
+      }
+    }
+  },
+  "Posts": {
+    "actions": {
+      "like": "点赞",
+      "liked": "已赞",
+      "share": "分享",
+      "download": "下载",
+      "downloading": "下载中...",
+      "copying": "复制中...",
+      "recreate": "重新生成"
+    },
+    "aria": {
+      "closeVideo": "关闭视频",
+      "goBack": "返回",
+      "likeVideo": "点赞视频",
+      "unlikeVideo": "取消点赞",
+      "shareVideo": "分享视频",
+      "downloadVideo": "下载视频",
+      "copyingLink": "正在复制链接...",
+      "downloading": "下载中..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "链接已复制",
+      "videoLinkCopiedMessage": "已将视频链接复制到剪贴板",
+      "copyFailedTitle": "复制失败",
+      "copyFailedMessage": "无法复制链接到剪贴板",
+      "shareFailedTitle": "分享失败",
+      "shareFailedMessage": "无法复制视频链接",
+      "loginFirst": "请先登录",
+      "cannotFollowYourself": "不能关注自己",
+      "followed": "已关注",
+      "unfollowed": "已取消关注",
+      "operationFailed": "操作失败"
+    },
+    "generation": {
+      "generationModel": "生成模型",
+      "withEffect": "使用 {effect}",
+      "effectBadge": "特效",
+      "prompt": "提示词",
+      "referenceImage": "参考图",
+      "referenceImageAlt": "用于视频生成的参考图",
+      "negativePrompt": "负面提示词",
+      "parameters": "参数",
+      "guidance": "引导",
+      "steps": "步数",
+      "seed": "种子",
+      "ratio": "比例"
+    },
+    "author": {
+      "uploaded": "发布于 {time}",
+      "profile": "主页",
+      "follow": "关注",
+      "unfollow": "取消关注",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "评论",
+      "placeholder": "说说你对这个视频的看法...",
+      "send": "发送",
+      "sending": "发送中...",
+      "empty": "成为第一个分享想法的人！"
+    },
+    "time": {
+      "now": "刚刚",
+      "minutesAgo": "{minutes} 分钟前",
+      "hoursAgo": "{hours} 小时前",
+      "daysAgo": "{days} 天前"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "积分"
+    },
+    "earnCreditsCapsule": {
+      "label": "赚取积分",
+      "aria": {
+        "openRewardCenter": "赚取积分"
+      },
+      "badge": {
+        "claimed": "已领取"
+      },
+      "title": {
+        "base": "赚取积分",
+        "canClaim": "赚取积分（+{amount}）",
+        "claimedToday": "赚取积分（今日已领取）"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "奖励中心",
+      "subtitle": {
+        "main": "邀请奖励 + 每日奖励",
+        "joined": "查看加入的人"
+      },
+      "common": {
+        "loading": "加载中..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} 积分"
+      },
+      "actions": {
+        "back": "返回",
+        "close": "关闭",
+        "copy": "复制",
+        "share": "分享",
+        "inviteFriends": "邀请好友",
+        "claim": "领取",
+        "claiming": "领取中...",
+        "claimed": "已领取"
+      },
+      "aria": {
+        "copyInviteCode": "复制邀请码",
+        "shareInviteLink": "分享邀请链接"
+      },
+      "labels": {
+        "inviteLink": "邀请链接",
+        "inviteCode": "邀请码",
+        "invited": "已邀请",
+        "rewarded": "已奖励",
+        "pending": "待确认",
+        "recentInvites": "最近邀请",
+        "recentRewards": "最近奖励",
+        "referEarn": "邀请奖励",
+        "dailyRewards": "每日奖励",
+        "dailyLogin": "每日登录",
+        "rewardedProgress": "已奖励：{rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "暂无邀请记录。",
+        "noRewards": "暂无奖励记录。"
+      },
+      "status": {
+        "rewarded": "已奖励",
+        "pending": "待确认",
+        "verified": "已验证"
+      },
+      "share": {
+        "title": "ReelMind 邀请",
+        "text": "加入 ReelMind，领取免费积分。"
+      },
+      "toast": {
+        "copiedTitle": "已复制",
+        "copiedDescription": "已将{label}复制到剪贴板。",
+        "copyFailedTitle": "复制失败",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "请手动复制。",
+        "claimFailedTitle": "领取失败",
+        "claimedTitle": "领取成功",
+        "claimedDescription": "已获得 {amount} 积分。"
+      },
+      "referEarn": {
+        "tipLabel": "邀请奖励规则",
+        "tipTitle": "如何获得奖励",
+        "tipBody1": "分享你的邀请链接。新用户使用你的邀请码注册并完成符合条件的操作后，系统审核通过将发放积分。",
+        "tipBody2": "阶梯奖励：1-5=50，6-15=100，16-20=200 积分。",
+        "cardTitle": "邀请好友获得积分",
+        "upTo": "最高可得 {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "每日登录规则",
+        "tipTitle": "每日奖励",
+        "tipBodyPrefix": "连续登录奖励从",
+        "tipBodyDay2": "第 2 天",
+        "tipBodySuffix": "开始，每天 UTC 0 点重置。",
+        "status": {
+          "loading": "状态加载中...",
+          "claimed": "已领取",
+          "readyToClaim": "可领取",
+          "locked": "未解锁"
+        },
+        "errors": {
+          "alreadyClaimed": "今天已领取过。",
+          "notEligible": "暂不满足领取条件。",
+          "riskBlocked": "由于风控限制，暂无法领取。",
+          "generic": "出现错误，请稍后再试。"
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "探索",
+      "video": "视频",
+      "image": "图片",
+      "edit": "编辑",
+      "experiment": "实验室",
+      "music": "音乐"
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "功能",
+        "models": "模型"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "生成图片",
+          "description": "生成 AI 图片"
+        },
+        "cinemaStudioImage": {
+          "title": "Cinema Studio Image",
+          "description": "真实相机与镜头模拟"
+        },
+        "createStoryboard": {
+          "title": "创建分镜",
+          "description": "设计你的故事场景"
+        },
+        "soulIdCharacter": {
+          "title": "Soul ID 角色",
+          "description": "创建独特角色"
+        },
+        "relight": {
+          "title": "Relight",
+          "description": "调整光线方向、颜色与亮度"
+        },
+        "inpaint": {
+          "title": "Inpaint",
+          "description": "选择区域，描述修改内容"
+        },
+        "imageUpscale": {
+          "title": "图片超分",
+          "description": "提升画质与清晰度"
+        },
+        "faceSwap": {
+          "title": "换脸",
+          "description": "生成更真实的换脸效果"
+        },
+        "characterSwap": {
+          "title": "换角色",
+          "description": "生成更真实的换角效果"
+        },
+        "drawToEdit": {
+          "title": "画图编辑",
+          "description": "从草图到成图"
+        },
+        "instadump": {
+          "title": "Instadump",
+          "description": "把自拍变成内容素材库"
+        },
+        "photodumpStudio": {
+          "title": "Photodump Studio",
+          "description": "生成你的审美风格"
+        },
+        "fashionFactory": {
+          "title": "Fashion Factory",
+          "description": "创建时尚套图"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "超写实时尚视觉"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "分镜、编辑与创作"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "最佳 4K 图片模型"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "下一代 4K 图片模型"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "真实色彩与精确渲染"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "速度优化细节"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "快速生成逼真肖像"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "更写实、更贴合提示词"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "写实图片"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "高级图片编辑模型"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "高分辨率超分模型"
+        }
+      }
+    },
+    "special": {
+      "nolan": "Nolanx"
+    },
+    "bottom": {
+      "affiliate": "联盟计划",
+      "contactUs": "联系我们",
+      "blog": "博客",
+      "apiPlatform": "API 平台"
+    },
+    "badges": {
+      "help": "帮助",
+      "new": "新",
+      "free": "免费"
+    },
+    "sidebar": {
+      "more": "更多",
+      "closeMenu": "关闭菜单",
+      "moreTools": "更多工具",
+      "followOnX": "在 X（Twitter）关注我们",
+      "followOnTikTok": "在 TikTok 关注我们",
+      "subscribeOnYouTube": "订阅我们的 YouTube 频道",
+      "termsOfService": "服务条款",
+      "privacyPolicy": "隐私政策"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "FEATURES",
+        "models": "MODELS"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Create Video",
+          "description": "Generate AI videos"
+        },
+        "cinemaStudioVideo": {
+          "title": "Cinema Studio Video",
+          "description": "Pro video with camera movements"
+        },
+        "mixedMedia": {
+          "title": "Mixed Media",
+          "description": "Blend text, images, and video"
+        },
+        "editVideo": {
+          "title": "Edit Video",
+          "description": "Edit scenes, shots, elements"
+        },
+        "clickToAd": {
+          "title": "Click to Ad",
+          "description": "Turn clips into ads"
+        },
+        "sora2Trends": {
+          "title": "Sora 2 Trends",
+          "description": "Trend-driven video ideas"
+        },
+        "lipsyncStudio": {
+          "title": "Lipsync Studio",
+          "description": "Sync audio to faces"
+        },
+        "drawToVideo": {
+          "title": "Draw to Video",
+          "description": "Sketch turns into a cinema"
+        },
+        "sketchToVideo": {
+          "title": "Sketch to Video",
+          "description": "From sketch to video with Sora 2"
+        },
+        "ugcFactory": {
+          "title": "UGC Factory",
+          "description": "Creator-ready content fast"
+        },
+        "videoUpscale": {
+          "title": "Video Upscale",
+          "description": "Increase resolution with clarity"
+        },
+        "higgsfieldAnimate": {
+          "title": "Higgsfield Animate",
+          "description": "Animate stills with style"
+        },
+        "recastStudio": {
+          "title": "Recast Studio",
+          "description": "Recast actors and styles"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Cinematic camera control"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Dynamic motion control"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "High-quality text-to-video"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Precision video edits"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Next-gen video generation"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Realistic cinematography"
+        },
+        "seedance20": {
+          "title": "Seedance 2.0",
+          "description": "BytePlus 旗舰电影感视频生成"
+        },
+        "seedance20Fast": {
+          "title": "Seedance 2.0 Fast",
+          "description": "更低延迟的 Seedance 出片"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Stylized motion and rhythm"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Fast cinematic video"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Clean detail and tone"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Avatar-driven performances"
+        }
+      }
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "编辑",
+      "subtitle": "快速进入编辑功能与模型",
+      "back": "返回编辑",
+      "workspace": {
+        "title": "工作区",
+        "status": "前端占位（后端待接入）",
+        "uploadTitle": "上传素材",
+        "uploadDescription": "拖拽或点击上传图片/视频以开始编辑"
+      },
+      "settings": {
+        "title": "设置",
+        "modelTitle": "模型",
+        "modelDescription": "选择用于处理的模型（后续接入后端）",
+        "promptTitle": "提示词",
+        "promptDescription": "描述你想要的效果（后续接入后端）",
+        "generate": "生成"
+      },
+      "model": {
+        "title": "模型信息",
+        "descriptionTitle": "说明",
+        "descriptionBody": "这里是模型介绍占位内容，后续会对齐后端接口展示更多细节。"
+      }
+    },
+    "menu": {
+      "title": "编辑",
+      "sections": {
+        "features": "功能",
+        "models": "模型"
+      },
+      "badges": {
+        "new": "新"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "编辑视频",
+        "description": "高级视频编辑"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "选择区域，描述修改内容"
+      },
+      "relight": {
+        "title": "Relight",
+        "description": "调整光线位置、颜色与亮度"
+      },
+      "aiStylist": {
+        "title": "AI Stylist",
+        "description": "找到最适合你的造型"
+      },
+      "upscale": {
+        "title": "Upscale",
+        "description": "增强分辨率与画质"
+      },
+      "skinEnhancer": {
+        "title": "Skin Enhancer",
+        "description": "自然、真实的皮肤纹理"
+      },
+      "angles": {
+        "title": "Angles",
+        "description": "从不同角度生成"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "更高细节与准确度"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "快速、轻量编辑"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "无缝植入产品"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "高分辨率增强"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "用视频参考控制运动"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "高级视频编辑"
+      }
+    }
+  },
+  "Experiment": {
+    "page": {
+      "title": "实验室",
+      "subtitle": "抢先体验新功能与工作流",
+      "back": "返回实验室"
+    },
+    "menu": {
+      "title": "实验室",
+      "open": "打开"
+    },
+    "tabs": {
+      "character": "Character",
+      "inpaint": "Inpaint",
+      "cinemaStudio": "Cinema Studio",
+      "motionControl": "Motion Control",
+      "assist": "Assist"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "对选区进行重绘或局部编辑"
+      },
+      "cinemaStudio": {
+        "title": "Cinema Studio",
+        "description": "电影级画面与镜头语言生成"
+      },
+      "motionControl": {
+        "title": "Motion Control",
+        "description": "用参考视频复刻运动轨迹"
+      },
+      "assist": {
+        "title": "Assist",
+        "description": "创作助手与提示词工具"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Character",
+        "subtitle": "角色一致性与角色生成（占位）"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "subtitle": "上传素材，选择区域，描述修改"
+      },
+      "cinemaStudio": {
+        "title": "Cinema Studio",
+        "subtitle": "输入画面描述并生成电影级镜头"
+      },
+      "motionControl": {
+        "title": "Motion Control",
+        "subtitle": "上传角色图与参考运动视频"
+      },
+      "assist": {
+        "title": "Assist",
+        "subtitle": "问答、提示词与灵感卡片"
+      }
+    },
+    "actions": {
+      "upload": "上传素材",
+      "generate": "生成",
+      "history": "历史",
+      "howItWorks": "如何使用",
+      "sendMessage": "发送消息…",
+      "tryExample": "试试示例",
+      "send": "发送"
+    },
+    "placeholders": {
+      "exploreFeatures": "探索功能",
+      "settings": "设置",
+      "camera": "相机",
+      "cameraHint": "选择相机行为（占位）",
+      "lens": "镜头",
+      "lensHint": "选择镜头选项（占位）",
+      "image": "图片",
+      "video": "视频",
+      "scenePrompt": "描述你想象的场景…"
+    },
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "全部",
+        "recommended": "推荐",
+        "saved": "已保存"
+      },
+      "labels": {
+        "camera": "相机",
+        "lens": "镜头",
+        "focalLength": "焦段",
+        "aperture": "光圈"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "保存组合",
+        "removeSetup": "移除组合",
+        "close": "关闭"
+      },
+      "empty": "暂无组合"
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "添加参考运动",
+          "description": "视频时长：3–30 秒"
+        },
+        "addCharacter": {
+          "title": "添加角色",
+          "description": "需要包含清晰面部与身体的图片"
+        }
+      },
+      "quality": {
+        "title": "画质",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "高级设置"
+      },
+      "hero": {
+        "title": {
+          "prefix": "复刻任意",
+          "highlight": "运动",
+          "suffix": "到你的图片"
+        },
+        "subtitle": "从任意视频复制运动，让你的角色复现相同动作"
+      },
+      "library": {
+        "title": "从素材库开始复制运动"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind 助手",
+        "subtitle": "装进口袋的创作助手，专为创作者打造。"
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "我能做什么？",
+          "description": "探索 ReelMind AI 功能"
+        },
+        "howToCreate": {
+          "title": "如何创作更惊艳的内容？",
+          "description": "更好的提示词写作技巧"
+        },
+        "generateSoulImagePrompt": {
+          "title": "生成高审美图片提示词",
+          "description": "为高审美图片撰写提示词"
+        },
+        "generateVideoPrompt": {
+          "title": "生成电影感视频提示词",
+          "description": "为电影感视频撰写提示词"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "角色一致性",
+          "description": "保持角色在多帧/多次生成中一致（占位）"
+        },
+        "library": {
+          "title": "角色库",
+          "description": "从已保存角色或模板开始（占位）"
+        }
+      },
+      "placeholders": {
+        "preview": "预览（占位）"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - 免费 AI 视频创作社区，创作并分享 AI 视频",
+      "description": "探索来自全球创作者的热门创意视频，发现灵感、娱乐内容，并重新混剪你喜欢的作品。"
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 现已上线！"
+    },
+    "categories": {
+      "tabs": {
+        "all": "全部",
+        "latest": "最新",
+        "hot": "最热"
+      },
+      "tooltip": {
+        "filterByModel": "按 {model} 模型筛选"
+      },
+      "aria": {
+        "previous": "上一组分类",
+        "next": "下一组分类"
+      },
+      "error": {
+        "loadFailed": "分类加载失败"
+      },
+      "actions": {
+        "retry": "重试"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "创作 AI 视频"
+      },
+      "nolan": {
+        "title": "诺兰",
+        "description": "世界第一 AI 智能体导演"
+      },
+      "badges": {
+        "models": "模型",
+        "free": "免费"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "探索 - ReelMind",
+      "description": "在 ReelMind 探索来自全球创作者的热门创意视频。"
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI 模型与特效 - ReelMind",
+      "description": "在 ReelMind 浏览并使用 AI 视频模型与特效，创作惊艳的 AI 生成视频。探索我们精选的前沿 AI 模型合集。"
+    },
+    "page": {
+      "title": "AI 模型与特效",
+      "description": "浏览用于视频生成的前沿 AI 模型与特效。",
+      "footerIntro": "探索我们用于视频生成的 {count} 个 AI 模型。"
+    },
+    "sections": {
+      "models": "模型",
+      "effects": "特效"
+    },
+    "actions": {
+      "viewAll": "查看全部",
+      "viewAllModels": "查看全部模型",
+      "backToModels": "返回模型"
+    },
+    "types": {
+      "allModels": "全部模型",
+      "textToVideo": "文生视频",
+      "imageToVideo": "图生视频",
+      "videoToVideo": "视频转视频"
+    },
+    "all": {
+      "titleAll": "全部视频模型",
+      "titleByType": "{type} 模型",
+      "description": "浏览用于视频生成的 AI 模型合集",
+      "countAll": "（{count} 个模型）",
+      "countByType": "（{count} 个 {type} 模型）",
+      "loadingMore": "正在加载更多模型...",
+      "loadMore": "加载更多模型",
+      "end": "已经到底了，所有模型已加载完成。",
+      "empty": "没有找到符合条件的模型。"
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Checkpoint",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "支持的功能",
+      "metaTitle": "{name} - AI 模型 | ReelMind",
+      "metaDescriptionFallback": "在 ReelMind 探索用于视频生成的 {name} 模型。",
+      "metaErrorTitle": "模型详情 | ReelMind",
+      "metaErrorDescription": "在 ReelMind 探索用于视频生成的 AI 模型。"
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI 特效 - ReelMind",
+      "description": "在 ReelMind 浏览并使用 AI 视频特效，增强你的 AI 生成视频。"
+    },
+    "page": {
+      "title": "AI 特效",
+      "description": "浏览用于增强你的视频的 AI 特效合集"
+    },
+    "all": {
+      "title": "全部 AI 特效",
+      "description": "浏览用于增强你的视频的完整 AI 特效合集"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "返回特效",
+        "goBack": "返回",
+        "applyThisEffect": "应用此特效"
+      },
+      "badge": "特效",
+      "addedOn": "添加于 {date}",
+      "errors": {
+        "notFound": "未找到特效",
+        "loadFailed": "加载特效详情失败"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "创作 AI 视频 - ReelMind",
+      "description": "在 ReelMind 使用强大的 AI 模型与工具，创作惊艳的 AI 生成视频。"
+    },
+    "loading": "加载中...",
+    "loadingMobile": "正在加载移动端视图...",
+    "loadingControlPanel": "正在加载控制面板...",
+    "controlPanel": {
+      "modelAndSettings": "模型与设置",
+      "history": "历史记录",
+      "model": "模型",
+      "selectModel": "选择模型"
+    },
+    "mobile": {
+      "backToCreate": "返回创作"
+    },
+    "modelSelector": {
+      "loadingModels": "正在加载模型...",
+      "moreModels": "还有 {count} 个模型",
+      "exploreMoreModels": "探索更多 {count} 个模型"
+    },
+    "promptInput": {
+      "title": "提示词",
+      "placeholder": "描述你想生成的内容...",
+      "enhance": "优化",
+      "undo": "撤销",
+      "restoreOriginalPromptTitle": "恢复原始提示词",
+      "toastEnhanced": "提示词已优化",
+      "toastRestored": "已恢复原始提示词",
+      "enhanceFailed": "提示词优化失败",
+      "sensitiveError": "检测到敏感词：{keyword}",
+      "insertReference": "插入引用",
+      "noMatchingReference": "没有匹配的引用",
+      "mentionImageTokenPrefix": "图",
+      "mentionVideoTokenPrefix": "视频",
+      "mentionAudioTokenPrefix": "音频"
+    },
+    "referenceUploader": {
+      "addOptional": "添加可选参考素材",
+      "referenceImage": "参考图片",
+      "referenceImages": "参考图片（{current}/{max}）",
+      "referenceVideo": "参考视频",
+      "dropImage": "拖拽图片到此处或点击上传",
+      "dropImageMax": "拖拽最多 {max} 张图片到此处或点击上传",
+      "dropVideo": "拖拽视频到此处或点击上传",
+      "pasteHint": "粘贴",
+      "videoUploaded": "视频已上传",
+      "uploading": "上传中...",
+      "addMore": "添加更多",
+      "removeReference": "移除",
+      "referenceImageAlt": "参考图片 {index}",
+      "supportedFormats": "支持格式：PNG、JPG",
+      "minimumSize": "最小尺寸 {minWidth}×{minHeight}，宽高比 {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "正在上传{type}...",
+      "processingFile": "正在处理文件...",
+      "uploadReference": "上传参考{type}",
+      "image": "图片",
+      "video": "视频",
+      "audio": "音频",
+      "library": "素材库",
+      "videoLimitReachedTitle": "视频数量已达上限",
+      "videoLimitReachedDescription": "最多可添加 {max} 个参考视频",
+      "audioLimitReachedTitle": "音频数量已达上限",
+      "audioLimitReachedDescription": "最多可添加 {max} 个参考音频",
+      "someVideoFilesSkippedTitle": "部分视频已跳过",
+      "someAudioFilesSkippedTitle": "部分音频已跳过",
+      "onlyFilesAdded": "仅添加了 {count} 个文件",
+      "skippedUnsupportedFilesTitle": "已跳过不支持的文件",
+      "skippedUnsupportedFilesDescription": "已忽略 {count} 个文件",
+      "onlyVideoFilesAllowed": "仅支持将视频文件作为参考视频",
+      "onlyAudioFilesAllowed": "仅支持将音频文件作为参考音频",
+      "removeReferenceVideo": "移除参考视频 {index}",
+      "removeReferenceAudio": "移除参考音频 {index}",
+      "referenceVideoRemovedTitle": "参考视频已移除",
+      "referenceVideoRemovedDescription": "当前模型不支持参考视频。",
+      "referenceAudioRemovedTitle": "参考音频已移除",
+      "referenceAudioRemovedDescription": "当前模型不支持参考音频。"
+    },
+    "settingsPills": {
+      "aspectRatio": "画幅比例",
+      "duration": "时长",
+      "seconds": "{seconds} 秒",
+      "resolution": "分辨率",
+      "audio": "音频",
+      "on": "开",
+      "off": "关",
+      "advanced": "高级",
+      "advancedShort": "高级",
+      "creativityLevel": "创造力",
+      "moreAccurate": "更准确",
+      "moreCreative": "更有创意",
+      "samplingSteps": "采样步数",
+      "faster": "更快（{steps} 步）",
+      "higherQuality": "更高质量（{steps} 步）",
+      "randomSeed": "随机种子",
+      "seedPlaceholder": "输入种子",
+      "generateRandomSeed": "生成随机种子",
+      "seedHint": "固定种子可复现实验结果。",
+      "movementAmplitude": "运动幅度",
+      "movementAmplitudeHint": "控制运动强度。",
+      "backgroundMusic": "背景音乐",
+      "backgroundMusicHint": "在支持的模型中添加背景音乐。",
+      "enabled": "已开启",
+      "disabled": "已关闭",
+      "negativePrompt": "反向提示词",
+      "negativePromptPlaceholder": "描述你想避免的内容..."
+    },
+    "startToEndUploader": {
+      "title": "首尾帧",
+      "startFrame": "起始帧",
+      "endFrame": "结束帧",
+      "dropStartImage": "拖拽起始帧图片或点击上传",
+      "dropEndImage": "拖拽结束帧图片或点击上传",
+      "startFrameImageAlt": "起始帧",
+      "endFrameImageAlt": "结束帧",
+      "uploading": "上传中...",
+      "instructions": "上传起始与结束图片，引导过渡效果。",
+      "supportedFormats": "支持格式：PNG、JPG",
+      "minimumSize": "最小尺寸 {minWidth}×{minHeight}，宽高比 {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "必要时将自动压缩图片。"
+    },
+    "modelTabs": {
+      "imageToVideo": "图生视频",
+      "textToVideo": "文生视频",
+      "firstLastFrame": "首尾帧",
+      "edit": "编辑",
+      "effect": "特效"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "参考视频",
+      "required": "必填",
+      "removeVideo": "移除视频",
+      "uploading": "上传中...",
+      "dropVideo": "拖拽视频到这里或点击上传",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "关键元素",
+      "optional": "可选（{current}/{max}）",
+      "addElements": "添加",
+      "elementAlt": "元素 {index}",
+      "removeElement": "移除元素 {index}",
+      "dropElements": "点击添加关键元素图",
+      "elementsHint": "可选：用于保持人物/风格一致。",
+      "errors": {
+        "invalidVideoTitle": "视频格式错误",
+        "invalidVideoDescription": "请选择一个视频文件。",
+        "videoTooLargeTitle": "视频过大",
+        "videoTooLargeDescription": "最大 {maxMb}MB，请上传更短/更小的视频。",
+        "uploadFailedTitle": "上传失败",
+        "elementsLimitTitle": "元素数量已达上限",
+        "elementsLimitDescription": "最多可添加 {max} 张图片。",
+        "imageTooSmall": "图片最小尺寸 {minWidth}×{minHeight}（当前：{width}×{height}）。",
+        "imageBadRatio": "宽高比需在 {minAspectRatio}-{maxAspectRatio} 之间（当前：{current}）。"
+      },
+      "warnings": {
+        "someSkippedTitle": "部分文件已跳过",
+        "someSkippedDescription": "由于数量限制，已跳过 {count} 个文件。",
+        "skippedTitle": "已跳过",
+        "skippedNonImage": "关键元素仅支持图片文件。",
+        "imageCompressedTitle": "图片已压缩",
+        "imageCompressedDescription": "已从 {original} 压缩到 {final}。",
+        "skippedInvalidImage": "图片无效。"
+      }
+    },
+    "howItWorks": {
+      "title": "使用说明",
+      "hero": {
+        "title": "一键生成视频",
+        "subtitle": "使用预设控制镜头、构图与特效，也可用提示词手动控制。"
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "添加图片",
+          "2": "选择预设",
+          "3": "生成视频"
+        },
+        "t2v": {
+          "1": "编写提示词",
+          "2": "选择模型",
+          "3": "生成视频"
+        },
+        "flf": {
+          "1": "添加首尾帧",
+          "2": "描述过渡",
+          "3": "生成视频"
+        },
+        "edit": {
+          "1": "添加视频",
+          "2": "添加关键元素",
+          "3": "生成视频"
+        }
+      },
+      "modes": {
+        "edit": "编辑（视频转视频）",
+        "flf": "首尾帧",
+        "i2v": "图生视频",
+        "t2v": "文生视频"
+      },
+      "steps": {
+        "edit": {
+          "1": "上传一段参考视频。",
+          "2": "可选：添加最多 4 张关键元素图，用于保持人物/风格一致。",
+          "3": "在提示词里说明要改什么、要保持什么，然后生成。"
+        },
+        "flf": {
+          "1": "上传起始帧与结束帧。",
+          "2": "描述你想要的过渡方式。",
+          "3": "生成一个平滑的变化过程。"
+        },
+        "i2v": {
+          "1": "上传参考图片。",
+          "2": "描述运动、镜头和风格。",
+          "3": "选择比例/时长并生成。"
+        },
+        "t2v": {
+          "1": "描述场景（主体、镜头、光线、风格）。",
+          "2": "选择比例/时长，并可添加反向提示词。",
+          "3": "生成后用小幅改动继续迭代。"
+        }
+      },
+      "tip": "小贴士：越具体越好，明确哪些必须保持不变（身份、logo、构图）。",
+      "templates": {
+        "title": "预设",
+        "subtitle": "选择一个经典预设，更快生成。",
+        "use": "使用",
+        "clear": "清空",
+        "prev": "上一个预设",
+        "next": "下一个预设",
+        "edit": {
+          "relight": {
+            "title": "打光与氛围",
+            "description": "改变时间/光线，做出电影感氛围。"
+          },
+          "grade": {
+            "title": "电影级调色",
+            "description": "青橙调色 + 胶片颗粒，保持动作与身份一致。"
+          },
+          "weather": {
+            "title": "天气变化",
+            "description": "添加雨雾等效果，同时保持人物一致。"
+          },
+          "anime": {
+            "title": "动漫化重绘",
+            "description": "动漫风格，同时保留身份与动作。"
+          },
+          "background": {
+            "title": "背景替换",
+            "description": "替换背景，同时保持主体不变。"
+          },
+          "lux": {
+            "title": "高级质感",
+            "description": "更干净、更顺滑、更像高级广告。"
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "白天 → 夜晚",
+            "description": "时间/光线平滑变化，构图保持一致。"
+          },
+          "sketchToRender": {
+            "title": "线稿 → 成图",
+            "description": "逐步补全细节，从线稿到成图。"
+          },
+          "beforeAfter": {
+            "title": "前后对比",
+            "description": "精致的变化展示，带轻微镜头运动。"
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "人像微动",
+            "description": "眨眼+轻微动作+慢推镜。"
+          },
+          "pan": {
+            "title": "视差摇移",
+            "description": "有景深的电影感移动与运动模糊。"
+          },
+          "product": {
+            "title": "产品质感",
+            "description": "棚拍质感与高光反射。"
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8 秒高级广告",
+            "description": "干净的高端商业镜头。"
+          },
+          "establish": {
+            "title": "开场全景",
+            "description": "宏观建立世界/场景氛围。"
+          },
+          "anime": {
+            "title": "动漫开场",
+            "description": "动漫 OP 风格镜头。"
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "图生视频需要参考图片。",
+        "i2vDescription": "请上传参考图片，或切换到文生视频模型。",
+        "v2vTitle": "视频转视频需要参考视频。",
+        "v2vDescription": "请上传参考视频，或切换到文生视频模型。"
+      },
+      "costLabel": "消耗积分：",
+      "balanceLabel": "余额：",
+      "freeUnlimited": "免费（Unlimited）",
+      "credits": "积分",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast 为豪华模型，不包含在 Unlimited 免费额度内，需要额外付费。",
+        "veo31": "VEO 3.1 为豪华模型，不包含在 Unlimited 免费额度内，需要额外付费。",
+        "veo3": "VEO3 为豪华模型，不包含在 Unlimited 免费额度内，需要额外付费。",
+        "sora2Pro": "Sora-2 Pro 为豪华模型，不包含在 Unlimited 免费额度内，需要额外付费。"
+      },
+      "gettingCredits": "正在领取积分...",
+      "getBonusCredits": "领取 {amount} 积分",
+      "submitting": "提交中...",
+      "loadingModels": "正在加载模型...",
+      "uploadingAsset": "正在上传素材...",
+      "uploadingImages": "正在上传图片...",
+      "claimingCredits": "正在领取积分...",
+      "getMoreCredits": "获取更多积分",
+      "generateVideo": "生成视频"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "发布失败",
+        "missingTitleDescription": "请为你的视频填写标题",
+        "processingTitle": "处理中",
+        "processingDescription": "正在准备发布你的视频...",
+        "successTitle": "发布成功",
+        "successDescription": "你的视频已分享到社区",
+        "failedTitle": "发布失败",
+        "failedDescription": "请检查网络连接或稍后重试"
+      },
+      "successTitle": "发布成功！",
+      "successDescription": "你的作品已在社区上线",
+      "publishingTitle": "发布中...",
+      "publishingDescriptionDesktop": "正在准备将你的视频发布到社区...",
+      "publishingDescriptionMobile": "正在准备发布...",
+      "progressComplete": "{progress}% 完成",
+      "title": "分享到社区",
+      "description": "将你的精彩作品分享给全世界",
+      "benefits": {
+        "getLikes": "收获点赞",
+        "buildCommunityLong": "建设社区",
+        "buildCommunityShort": "社区",
+        "inspireLong": "启发他人",
+        "inspireShort": "启发",
+        "earnLong": "赚取 +{amount} 积分",
+        "earnShort": "+{amount} 积分"
+      },
+      "videoTitle": "视频标题",
+      "videoTitlePlaceholder": "为你的作品起一个吸引人的标题...",
+      "videoTitleHelperDesktop": "好的标题能吸引更多观看",
+      "videoTitleHelperMobile": "好标题更吸引人",
+      "descriptionLabel": "描述",
+      "optional": "可选",
+      "descriptionPlaceholder": "向社区介绍你的作品...",
+      "descriptionHelper": "分享你的创作过程",
+      "cancel": "取消",
+      "publish": "发布"
+    },
+    "history": {
+      "title": "历史",
+      "refresh": "刷新",
+      "view": {
+        "one": "每行 1 个",
+        "three": "每行 3 个",
+        "nine": "每行 9 个"
+      },
+      "filterPlaceholder": "筛选",
+      "empty": "未找到{status}任务",
+      "status": {
+        "all": "全部",
+        "pending": "待处理",
+        "queued": "排队中",
+        "processing": "处理中",
+        "completed": "已完成",
+        "failed": "失败",
+        "canceled": "已取消"
+      }
+    },
+    "effectSelector": {
+      "loading": "正在加载特效...",
+      "defaultDescription": "为你的视频添加特效",
+      "ctaTitle": "选择特效",
+      "ctaDescription": "点击选择一个视频特效",
+      "modalTitle": "选择特效",
+      "close": "关闭特效选择器"
+    },
+    "modelSelectorModal": {
+      "title": "选择模型",
+      "description": "为你的项目选择一个模型",
+      "close": "关闭模型选择器",
+      "loadingMore": "正在加载更多模型...",
+      "allLoaded": "已加载全部模型",
+      "noModelsFound": "未找到模型"
+    },
+    "modelSearch": {
+      "placeholder": "按名称、类型或特性搜索模型...",
+      "clear": "清除搜索",
+      "searching": "正在搜索...",
+      "foundModels": "找到 {count} 个模型",
+      "modelsAvailable": "可用模型 {count} 个"
+    },
+    "modelTypeFilter": {
+      "title": "模型类型",
+      "clear": "清除"
+    },
+    "remixLoader": {
+      "successTitle": "参数已加载",
+      "successDescription": "已从原任务加载参数，你可以直接生成或修改参数。",
+      "errorTitle": "加载参数失败",
+      "errorDescription": "无法从原任务加载参数，请手动设置参数。"
+    },
+    "modelCard": {
+      "select": "选择",
+      "credits": "积分",
+      "premium": "高级",
+      "luxury": "豪华"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind 推荐",
+      "hot": "热门",
+      "new": "新",
+      "select": "选择"
+    },
+    "previewPanel": {
+      "generating": "生成中...",
+      "download": "下载",
+      "downloading": "正在下载...",
+      "shareToCommunity": "发布到社区",
+      "tips": "提示：发布可获得积分奖励",
+      "quality": "画质",
+      "qualityHd": "高清",
+      "qualityStandard": "标准",
+      "ratio": "比例",
+      "fullscreen": {
+        "enter": "全屏",
+        "exit": "退出全屏"
+      },
+      "empty": {
+        "title": "暂无预览",
+        "description": "先生成一个视频，就会在这里显示预览。"
+      },
+      "queue": {
+        "loading": "正在加载队列信息...",
+        "headerProcessing": "处理中",
+        "headerQueueStatus": "队列状态",
+        "badgePosition": "排队位置：{position}/{total}",
+        "badgeProcessing": "处理中",
+        "tasksInQueue": "队列任务数",
+        "estimatedWait": "预计等待",
+        "elapsedTime": "已用时间",
+        "remainingTime": "剩余时间",
+        "startTime": "预计开始",
+        "completionTime": "预计完成"
+      },
+      "time": {
+        "calculating": "计算中...",
+        "justNow": "刚刚",
+        "lessThanMinute": "不到 1 分钟后",
+        "inMinutes": "{minutes} 分钟后",
+        "inHours": "{hours} 小时后",
+        "inDays": "{days} 天后",
+        "seconds": "{seconds} 秒",
+        "minutesSeconds": "{minutes} 分钟 {seconds} 秒"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "正在加载视频...",
+      "notFound": "未找到视频",
+      "notFoundDescription": "请求的视频不存在或暂时不可用。",
+      "detailsTitle": "详情",
+      "videoInfoTitle": "视频信息",
+      "advancedTitle": "高级",
+      "referenceImagesTitle": "参考图",
+      "startFrameAlt": "起始帧",
+      "endFrameAlt": "结束帧",
+      "endFrameLabel": "结束帧",
+      "creationDate": "创建日期",
+      "fields": {
+        "model": "模型",
+        "generationType": "生成类型",
+        "resolution": "分辨率",
+        "aspectRatio": "画面比例",
+        "duration": "时长",
+        "creativityLevel": "创意度",
+        "effect": "特效",
+        "samplingSteps": "采样步数",
+        "randomSeed": "随机种子",
+        "movementAmplitude": "运动幅度",
+        "backgroundMusic": "背景音乐",
+        "negativePrompt": "反向提示词"
+      },
+      "actions": {
+        "close": "关闭",
+        "closeModalTitle": "关闭弹窗",
+        "remix": "二次创作",
+        "remixTitle": "使用这些参数二次创作",
+        "download": "下载",
+        "downloadTitle": "下载此视频",
+        "downloading": "正在下载...",
+        "shareTitle": "分享此视频"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "删除任务",
+      "description": "该操作无法撤销",
+      "cancel": "取消",
+      "confirm": "删除",
+      "deleting": "正在删除..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "参考图"
+      },
+      "pending": {
+        "pending": "待处理...",
+        "queued": "排队中...",
+        "waitingInQueue": "正在排队..."
+      },
+      "processing": {
+        "phase1": "阶段 1",
+        "phase2": "阶段 2",
+        "phase3": "阶段 3",
+        "final": "收尾",
+        "initializing": "初始化中",
+        "processing": "处理中",
+        "rendering": "渲染中",
+        "finalizing": "收尾中",
+        "stuckMessage": "任务可能卡住了，你可以删除它。",
+        "deleteTitle": "删除该任务",
+        "deleteAria": "删除"
+      },
+      "failed": {
+        "title": "生成失败",
+        "tryAgain": "重试",
+        "tryAgainTitle": "使用这个提示词再试一次",
+        "deleteTitle": "删除该任务"
+      },
+      "completed": {
+        "recreateDesktop": "重新生成",
+        "remixMobile": "二次创作",
+        "remixTitle": "使用该提示词创建新视频",
+        "publish": "发布",
+        "publishTitle": "发布到社区并获得 {amount} 积分",
+        "creditsBonusDesktop": "+{amount} 积分奖励",
+        "creditsBonusMobile": "+{amount}",
+        "share": "分享",
+        "shareTitle": "分享此视频",
+        "downloadTitle": "下载此视频",
+        "downloading": "正在下载...",
+        "deleteTitle": "删除该任务"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego - ReelMind",
+      "description": "在 ReelMind 使用 Lego 工作流创作并混剪视频。"
+    },
+    "mobile": {
+      "backToBuilder": "返回搭建器",
+      "history": "历史"
+    },
+    "badges": {
+      "new": "新"
+    },
+    "actions": {
+      "delete": "删除",
+      "select": "选择",
+      "selected": "已选",
+      "download": "下载",
+      "downloading": "正在下载...",
+      "deleting": "正在删除...",
+      "share": "分享",
+      "close": "关闭"
+    },
+    "status": {
+      "pending": "待处理",
+      "processing": "处理中",
+      "failed": "失败",
+      "completed": "已完成",
+      "generating": "生成中",
+      "cancelled": "已取消"
+    },
+    "deleteConfirmDialog": {
+      "title": "删除任务",
+      "description": "该操作无法撤销",
+      "cancel": "取消",
+      "confirm": "删除",
+      "deleting": "正在删除..."
+    },
+    "imageViewer": {
+      "close": "关闭",
+      "previous": "上一张",
+      "next": "下一张",
+      "view": "查看 {index}"
+    },
+    "historyList": {
+      "title": "Lego AI 图片生成器",
+      "generatingFirstImage": "正在生成你的第一张图片...",
+      "loadFailed": "加载历史记录失败，请重试。",
+      "emptyDescription": "通过描述你的想法，并添加资源来引导 AI，创作惊艳图片",
+      "loadingMore": "正在加载历史图片...",
+      "scrollForMore": "继续滚动查看更多...",
+      "allLoaded": "已加载全部 {count} 张图片"
+    },
+    "sidebar": {
+      "addCard": "添加卡片",
+      "expand": "展开侧边栏",
+      "sections": {
+        "theme": "主题",
+        "scene": "场景",
+        "style": "风格"
+      }
+    },
+    "card": {
+      "placeholder": "描述{section}...",
+      "imageAlt": "{section}参考图",
+      "options": {
+        "image": "图片",
+        "text": "文本"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "参考图 {index}",
+      "errors": {
+        "invalidType": "请选择图片文件",
+        "tooLarge": "图片大小不能超过 {maxSizeMb}MB",
+        "uploadFailed": "图片上传失败，请重试。"
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "滚动到底部",
+      "collapsedPlaceholder": "描述你的图片...",
+      "close": "关闭"
+    },
+    "resultPreview": {
+      "previewTitle": "预览",
+      "previewDescription": "生成的图片会显示在这里",
+      "generatedImageAlt": "生成的图片",
+      "emptyPlaceholder": "你的作品会显示在这里",
+      "dialogTitle": "你创建的图片",
+      "dialogDescription": "这是我们根据你的描述和资源生成的图片"
+    },
+    "resourceUploader": {
+      "uploadImage": "上传图片",
+      "imageFallbackAlt": "图片",
+      "imageFallbackLabel": "图片",
+      "removeImage": "移除{title}"
+    },
+    "controlPanel": {
+      "showSidebar": "显示侧边栏",
+      "hideSidebar": "隐藏侧边栏",
+      "hideSidebarShort": "隐藏侧边栏",
+      "addImage": "添加图片",
+      "addImageWithLimit": "添加图片（{current}/{max}）",
+      "promptPlaceholder": "创建或编辑你的图片...",
+      "model": "模型",
+      "selectModel": "选择模型",
+      "loading": "加载中...",
+      "loadingModels": "正在加载模型...",
+      "noModelsAvailable": "暂无可用模型",
+      "noModelsMatchFilters": "没有匹配筛选条件的模型",
+      "modelLabel": "模型：{name}",
+      "aspectRatio": "画面比例",
+      "ratioLabel": "比例：{value}",
+      "imagesLabel": "图片数：{count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 仅输出 1 张图片",
+        "hint": "要生成的图片数量",
+        "numberOfImages": "图片数量"
+      },
+      "advanced": {
+        "aria": "高级设置",
+        "label": "高级",
+        "title": "高级设置",
+        "negativePrompt": {
+          "label": "反向提示词",
+          "placeholder": "需要排除的元素...",
+          "aria": "反向提示词",
+          "title": "设置需要排除的元素"
+        },
+        "seed": {
+          "label": "种子",
+          "random": "随机",
+          "randomTitle": "生成随机种子",
+          "placeholder": "随机种子（可选）",
+          "aria": "种子值",
+          "title": "设置种子以复现结果"
+        }
+      },
+      "resolution": "分辨率",
+      "resolutionLabel": "分辨率：{value}",
+      "resolutionPopoverTitle": "分辨率（Nano Banana 2）",
+      "generating": "生成中...",
+      "generate": "生成",
+      "limitReached": "达到上限",
+      "fluxLimitTooltip": "FLUX 模型非会员限用 {limit} 次",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 为高级模型，不包含在 Unlimited 免费额度中；每次生成图片都会扣除积分。",
+      "unlimited": {
+        "fast": "快",
+        "slow": "慢",
+        "fastMode": "快速模式",
+        "slowMode": "慢速模式",
+        "monthlyUsage": "本月用量：{used}/{limit}",
+        "rateLimit": "速率限制：每 5 分钟 {limit} 张图片",
+        "switchedToSlow": "已达到本月上限，已切换至慢速模式。"
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "生成的图片",
+      "failedTitle": "生成失败",
+      "errors": {
+        "unableToComplete": "无法完成生成"
+      },
+      "actions": {
+        "deleteTitle": "删除任务",
+        "viewFullSize": "点击查看大图",
+        "preview": "预览 {index}",
+        "retryTitle": "重试 - 使用相同参数再试一次",
+        "retry": "重试",
+        "remixTitle": "复用参数",
+        "remix": "复用",
+        "makeVideoTitle": "生成视频",
+        "makeVideo": "生成视频"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "开始下载",
+      "downloadStartedMessage": "视频下载已开始",
+      "downloadFailedTitle": "下载失败",
+      "downloadFailedMessage": "视频下载失败",
+      "shareCopied": "分享链接已复制到剪贴板",
+      "shareCopyFailed": "分享链接复制失败"
+    },
+    "empty": {
+      "title": "视频不可用",
+      "description": "该视频无法分享，或视频文件缺失。",
+      "ctaCreate": "创作你自己的视频"
+    },
+    "notFound": {
+      "title": "未找到视频",
+      "description": "你正在查找的视频不存在，或已无法继续分享。",
+      "ctaCreate": "创作你自己的视频",
+      "ctaHome": "返回首页"
+    },
+    "details": {
+      "creationDate": "创建日期"
+    },
+    "actions": {
+      "remix": "二次创作",
+      "remixTitle": "使用该提示词创建新视频",
+      "download": "下载",
+      "downloadTitle": "下载此视频",
+      "downloading": "正在下载...",
+      "downloadingTitle": "正在下载...",
+      "shareTitle": "分享此视频"
+    },
+    "meta": {
+      "promptFallback": "AI 生成视频",
+      "watchDescription": "观看这段 AI 生成的视频：{prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "音乐",
+      "description": "用 AI 生成音乐、音效和语音。"
+    },
+    "page": {
+      "loadingSoundStudio": "正在加载音频工作室..."
+    },
+    "functionToggle": {
+      "music": "音乐",
+      "soundEffect": "音效",
+      "textToSpeech": "文字转语音"
+    },
+    "controlPanel": {
+      "title": "控制",
+      "reset": "重置",
+      "modelLabel": {
+        "tts": "TTS 模型",
+        "sound": "音效模型"
+      },
+      "modelPlaceholder": "选择模型",
+      "noModelsAvailableTitle": "暂无可用模型",
+      "noModelsFound": {
+        "tts": "未找到 TTS 模型",
+        "soundEffect": "未找到音效模型"
+      },
+      "tts": {
+        "stability": "稳定性",
+        "similarityBoost": "相似度增强",
+        "styleExaggeration": "风格夸张",
+        "speed": "语速"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "上传参考音频",
+      "dropHere": "拖拽到这里",
+      "supportedFormats": "支持格式：MP3、WAV、M4A、AAC、OGG",
+      "tip": "提示：建议使用不少于 15 秒的清晰音频，效果更佳。",
+      "uploadingProgress": "上传中... {progress}%",
+      "toast": {
+        "uploadSuccess": "上传完成",
+        "uploadFailed": "上传失败"
+      },
+      "errors": {
+        "selectAudioFile": "请选择音频文件。",
+        "invalidAudioFile": "无效的音频文件。",
+        "fileTooLarge": "文件过大（最大 50MB）。",
+        "durationTooShort": "音频时长至少需要 15 秒。"
+      }
+    },
+    "audioPlayer": {
+      "play": "播放",
+      "pause": "暂停"
+    },
+    "voiceSelector": {
+      "label": "音色",
+      "selectVoiceTitle": "选择音色",
+      "gender": {
+        "all": "全部",
+        "male": "男声",
+        "female": "女声"
+      },
+      "noVoicesAvailable": "暂无可用音色",
+      "noVoicesFound": "未找到音色",
+      "bestFor": "适合：{useCase}",
+      "clickToSelectVoice": "点击选择音色"
+    },
+    "historyPanel": {
+      "title": "历史记录",
+      "empty": {
+        "title": "暂无生成记录",
+        "description": "你的生成历史会显示在这里"
+      },
+      "loading": "加载中...",
+      "loadMore": "加载更多"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "处理中",
+        "failed": "失败",
+        "completed": "已完成"
+      },
+      "actions": {
+        "copy": "复制",
+        "download": "下载"
+      },
+      "time": {
+        "now": "刚刚",
+        "minutesAgo": "{minutes} 分钟前",
+        "hoursAgo": "{hours} 小时前"
+      },
+      "unknownModel": "未知模型",
+      "errors": {
+        "unknown": "未知错误"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "音频工作室"
+      },
+      "menu": {
+        "open": "打开菜单",
+        "title": "菜单",
+        "voiceGeneration": "创作",
+        "settings": "设置",
+        "history": "历史记录"
+      },
+      "tabs": {
+        "generate": "生成",
+        "settings": "设置",
+        "history": "历史"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "输入要生成语音的文本...",
+        "soundEffect": "描述你想生成的音效..."
+      },
+      "generateSpeech": "生成语音",
+      "generateSound": "生成音效",
+      "generating": "生成中...",
+      "loadingExamples": "正在加载示例...",
+      "loadingMusicStyles": "正在加载音乐风格...",
+      "rightTabs": {
+        "examples": "示例",
+        "history": "历史"
+      },
+      "history": {
+        "generationCount": "{count} 次生成"
+      },
+      "price": {
+        "placeholder": "预估消耗",
+        "calculating": "计算中...",
+        "credits": "{credits} 积分"
+      },
+      "musicHistory": {
+        "title": "音乐历史",
+        "empty": {
+          "title": "暂无音乐生成记录",
+          "description": "你的音乐历史会显示在这里"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "音效历史",
+        "empty": {
+          "title": "暂无音效生成记录",
+          "description": "你的音效历史会显示在这里"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "歌词",
+      "lyricsPlaceholder": "支持可选格式的歌词输入。你可以使用换行分隔每一句歌词；使用两个换行在句子之间添加停顿；在歌词开头和结尾使用双井号（##）来添加伴奏。最多 600 个字符。",
+      "useReferenceAudio": {
+        "label": "使用参考音频",
+        "description": "使用参考音频来引导 AI 的风格。"
+      },
+      "referenceAudio": {
+        "title": "参考音频",
+        "description": "上传包含音乐与人声的参考歌曲。"
+      },
+      "musicStyle": {
+        "title": "音乐风格",
+        "description": "描述你想生成的音乐风格与情绪。",
+        "placeholder": "例如：R&B、有活力、轻快流行、原声民谣、电子舞曲...",
+        "tooShort": "音乐风格描述至少需要 10 个字符。"
+      },
+      "generating": "生成中...",
+      "generateMusicWithCredits": "生成音乐（{credits} 积分）"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "时长",
+        "description": "设置音效的长度。"
+      },
+      "promptInfluence": {
+        "title": "提示词影响",
+        "description": "数值越高，越严格遵循你的提示词。"
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "联系",
+      "description": "向 ReelMind 团队提交反馈。"
+    },
+    "header": {
+      "title": "快速反馈",
+      "description": "发现 Bug 或有建议？30 秒告诉我们。"
+    },
+    "card": {
+      "title": "快速反馈",
+      "subtitle": "只需 3 项内容，大约 30 秒"
+    },
+    "submitted": {
+      "title": "反馈已提交",
+      "description": "感谢你的反馈。我们会尽快查看，如有需要会联系你。"
+    },
+    "auth": {
+      "required": "请先登录后再提交反馈。"
+    },
+    "form": {
+      "errors": {
+        "unknown": "发生错误，请稍后再试。"
+      },
+      "type": {
+        "label": "类型",
+        "placeholder": "选择反馈类型",
+        "options": {
+          "bug": "Bug 报告",
+          "suggestion": "建议",
+          "other": "其他"
+        },
+        "errors": {
+          "required": "请选择反馈类型。",
+          "invalid": "反馈类型无效。"
+        }
+      },
+      "subject": {
+        "label": "主题 *",
+        "placeholder": "问题或建议是什么？",
+        "errors": {
+          "required": "请填写主题。",
+          "min": "主题至少需要 {min} 个字符。",
+          "max": "主题不能超过 {max} 个字符。",
+          "invalid": "主题包含无效内容。"
+        }
+      },
+      "message": {
+        "label": "详情 *",
+        "placeholder": "请补充更多细节...",
+        "errors": {
+          "required": "请填写详情。",
+          "min": "详情至少需要 {min} 个字符。",
+          "max": "详情不能超过 {max} 个字符。",
+          "invalid": "详情包含无效内容。"
+        }
+      }
+    },
+    "actions": {
+      "submitting": "提交中...",
+      "submit": "提交反馈"
+    },
+    "toast": {
+      "submitSuccess": "反馈提交成功！",
+      "submitFailed": "提交失败，请重试。",
+      "authRequired": "请先登录后再提交反馈。",
+      "rateLimited": "提交过于频繁，请稍后再试。",
+      "rateLimitedWithRetryAfter": "请等待 {seconds} 秒后再提交。",
+      "fixErrors": "请先修正表单中的错误。",
+      "checkInput": "请检查输入内容后重试。"
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "作品",
+      "following": "关注",
+      "followingShort": "关注",
+      "followers": "粉丝",
+      "followersShort": "粉丝",
+      "favorites": "收藏",
+      "favoritesShort": "收藏"
+    },
+    "actions": {
+      "save": "保存",
+      "saving": "保存中...",
+      "cancel": "取消",
+      "delete": "删除",
+      "retry": "重试",
+      "editProfile": "编辑资料",
+      "signOut": "退出登录",
+      "follow": "关注",
+      "unfollow": "取消关注",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "创作者",
+      "avatarAltFallback": "用户",
+      "initialFallback": "U",
+      "edit": {
+        "displayNamePlaceholder": "显示名称",
+        "bioPlaceholder": "简介"
+      },
+      "stats": {
+        "following": "关注",
+        "followers": "粉丝"
+      },
+      "joined": "加入于 {date}",
+      "joinedFallback": "2025年3月"
+    },
+    "time": {
+      "now": "刚刚",
+      "minutesAgo": "{minutes} 分钟前",
+      "hoursAgo": "{hours} 小时前",
+      "daysAgo": "{days} 天前"
+    },
+    "toast": {
+      "loginFirst": "请先登录",
+      "cannotFollowYourself": "不能关注自己",
+      "followed": "已关注",
+      "unfollowed": "已取消关注",
+      "operationFailed": "操作失败"
+    },
+    "posts": {
+      "loadingMore": "正在加载更多作品...",
+      "error": {
+        "failedToLoad": "加载作品失败"
+      },
+      "empty": {
+        "title": "暂无作品",
+        "description": "该用户还没有发布任何作品，稍后再来看看吧。"
+      },
+      "deleteDialog": {
+        "title": "删除作品",
+        "description": "这会将作品从你的主页与信息流中移除，且无法撤销。"
+      },
+      "toast": {
+        "deleted": "作品已删除",
+        "deleteFailed": "删除作品失败"
+      }
+    },
+    "favorites": {
+      "loadingMore": "正在加载更多收藏...",
+      "error": {
+        "failedToLoad": "加载收藏失败"
+      },
+      "empty": {
+        "title": "暂无收藏",
+        "description": "你点赞或收藏的作品会显示在这里。去探索并收藏你喜欢的内容吧！"
+      }
+    },
+    "followers": {
+      "empty": "暂无粉丝",
+      "error": {
+        "failedToLoad": "加载粉丝失败"
+      },
+      "followerSince": "成为粉丝：{time}"
+    },
+    "following": {
+      "empty": "暂无关注",
+      "error": {
+        "failedToLoad": "加载关注失败"
+      },
+      "followingSince": "关注于 {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "会员方案 - ReelMind",
+      "description": "加入 ReelMind 会员计划，获得更多积分与高级功能，用于 AI 视频生成。"
+    },
+    "plans": {
+      "hero": {
+        "title": "会员方案",
+        "subtitle": "通过灵活的订阅方案，解锁更强大的 AI 视频生成能力"
+      },
+      "error": {
+        "loadFailed": "获取会员方案失败，请稍后重试。"
+      },
+      "names": {
+        "free": "免费版",
+        "pro": "专业版",
+        "max": "高级版",
+        "unlimited": "无限版"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "年付"
+      },
+      "monthly": {
+        "label": "月付"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "首月立减 70%",
+        "short": "立减 70%",
+        "description": "首次订阅会员可享首月立减 70%，优惠券有效期 24 小时"
+      },
+      "yearly": {
+        "full": "前 6 个月免费",
+        "short": "6 个月免费",
+        "description": "年付订阅前 6 个月完全免费，相当于首年立减 50%！"
+      },
+      "percentOff": "立减 {percent}%",
+      "badge": {
+        "preview": "🎁 {offer} 可用",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "（领取后生效）"
+    },
+    "pricing": {
+      "perYear": "每年",
+      "perMonth": "每月",
+      "breakdown": {
+        "originalPrice": "原价：",
+        "discount": "优惠：",
+        "payFirstYear": "首年实付：",
+        "firstMonth": "首月实付："
+      }
+    },
+    "status": {
+      "title": "会员状态",
+      "loading": "正在加载会员信息...",
+      "currentPlan": "当前方案：",
+      "expiresOn": "到期日期：",
+      "unlimitedDescription": "所有生成功能不限量使用，不消耗积分。",
+      "planDescription": "你将获得 {plan} 的全部权益与功能。",
+      "noActive": {
+        "title": "你还没有开通会员。",
+        "subtitle": "选择下方方案订阅以解锁高级功能。"
+      }
+    },
+    "creditsBalance": {
+      "title": "积分余额",
+      "loading": "正在加载积分信息...",
+      "availableCredits": "可用积分：",
+      "unlimited": {
+        "video": "视频生成不限量",
+        "image": "图片生成不限量",
+        "audio": "音频生成不限量"
+      },
+      "estimate": {
+        "videos": "最多 {count} 个视频",
+        "images": "最多 {count} 张图片",
+        "audios": "最多 {count} 条音频"
+      },
+      "cost": {
+        "videos": "视频：{credits} 积分起",
+        "images": "图片：{credits} 积分起",
+        "audios": "音频：{credits} 积分起"
+      }
+    },
+    "credits": {
+      "title": "购买积分",
+      "history": {
+        "toggle": {
+          "show": "显示交易记录",
+          "hide": "隐藏交易记录"
+        }
+      },
+      "card": {
+        "description": "选择积分套餐，提升你的 AI 生成能力"
+      },
+      "packages": {
+        "basic": {
+          "label": "基础包"
+        },
+        "standard": {
+          "label": "标准包"
+        },
+        "premium": {
+          "label": "高级包"
+        },
+        "pro": {
+          "label": "旗舰包"
+        },
+        "bonus": "赠送：+{bonus}"
+      },
+      "usage": {
+        "baseRate": "汇率：1 美元 = 100 积分",
+        "buyMoreBonus": "买得越多，赠送越多！",
+        "neverExpire": "积分永不过期",
+        "instantDelivery": "支付后即时到账"
+      },
+      "actions": {
+        "processing": "处理中...",
+        "buyCredits": "购买 {credits} 积分"
+      }
+    },
+    "creditsHistory": {
+      "title": "交易记录",
+      "subtitle": "你的近期积分变动",
+      "actions": {
+        "retry": "重试",
+        "loading": "加载中...",
+        "loadMore": "加载更多"
+      },
+      "table": {
+        "date": "日期",
+        "type": "类型",
+        "amount": "数量",
+        "status": "状态"
+      },
+      "empty": "暂无交易记录",
+      "types": {
+        "membershipMonthly": "会员月度赠送",
+        "membershipInitial": "会员首次赠送",
+        "freeMonthly": "免费月度赠送",
+        "purchase": "购买积分",
+        "platformReward": "平台奖励",
+        "newUserBonus": "新用户奖励",
+        "postReward": "发布奖励",
+        "videoPostReward": "视频发布奖励",
+        "refund": "退款",
+        "balanceAdjustment": "余额调整",
+        "videoGeneration": "视频生成",
+        "imageGeneration": "图片生成",
+        "modelTraining": "模型训练",
+        "audioGeneration": "音频生成",
+        "systemAdjustment": "系统调整"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}小时 {m}分 {s}秒",
+        "ms": "{m}分 {s}秒",
+        "s": "{s}秒",
+        "expired": "已过期"
+      },
+      "toast": {
+        "claimedTitle": "优惠券领取成功",
+        "claimedDescription": "优惠券已加入你的账户，有效期 {hours} 小时",
+        "claimFailedTitle": "领取失败",
+        "tryAgainLater": "请稍后重试",
+        "networkError": "网络错误，请稍后重试"
+      }
+    },
+    "couponStatus": {
+      "title": "优惠券状态",
+      "active": {
+        "annualTitle": "年付优惠已激活",
+        "couponTitle": "优惠券已激活"
+      },
+      "fields": {
+        "claimed": "领取日期：",
+        "expires": "到期日期：",
+        "timeLeft": "剩余时间：",
+        "usedAt": "使用日期：",
+        "discount": "优惠："
+      },
+      "expired": "优惠券已过期",
+      "used": {
+        "title": "优惠券已使用"
+      },
+      "available": "{offer} 可用",
+      "offer": {
+        "annualSpecial": "🎁 年付特惠",
+        "newUserExclusive": "🎉 新用户专享",
+        "bestValue": "最划算",
+        "limitedTime": "限时",
+        "claimYearly": "领取前 6 个月免费",
+        "claimMonthly": "立即领取优惠券"
+      },
+      "none": {
+        "title": "暂无可用优惠券",
+        "description": "{offer} 仅对从未购买过会员的新用户可用。"
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "热门",
+        "advanced": "高级",
+        "unlimited": "无限"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "开通无限权益",
+        "getUnlimitedMobile": "开通无限",
+        "subscribeDesktop": "开始订阅",
+        "subscribeMobile": "订阅",
+        "claimAndSubscribeMobile": "领取并订阅",
+        "getDiscountMobile": "领取{discount}",
+        "claimDiscountAndSubscribeDesktop": "领取{discount}并订阅"
+      },
+      "toast": {
+        "loginSuccess": "登录成功！请再次点击按钮领取优惠并订阅。",
+        "claimCouponFailed": "领取优惠券失败",
+        "tryAgainLater": "请稍后重试",
+        "couponClaimed": "优惠券领取成功！",
+        "failedToProcess": "处理失败"
+      },
+      "usageEstimate": {
+        "title": "每月使用预估",
+        "videos": "每月最多 {count} 个视频",
+        "images": "每月最多 {count} 张图片",
+        "audios": "每月最多 {count} 条音频"
+      },
+      "unlimitedNotes": {
+        "title": "使用说明",
+        "videoTasks": {
+          "title": "视频任务：",
+          "body": "可同时运行最多 5 个任务。月度上限：300。达到月度上限后启用慢速模式：24 小时内每日最多 30 个视频，每小时最多 10 个任务。"
+        },
+        "imageTasks": {
+          "title": "图片任务：",
+          "body": "月度最多 300 个任务。前 300 个任务使用快速模式（每分钟 5 个），之后进入慢速模式（每分钟 1 个）。"
+        },
+        "premiumModels": {
+          "title": "高成本模型：",
+          "body": "某些高成本模型不包含在无限方案中。VEO 3.* 非 fast 变体和 Sora-2 /pro 变体仍需消耗积分。"
+        }
+      },
+      "currentPlan": "当前方案",
+      "yearlyEquivalent": "折合 <price>{value}</price>",
+      "yearlySavings": "相比月付节省 <amount>{value}</amount>"
+    },
+    "features": {
+      "monthlyCredits": "每月 {credits} 积分",
+      "monthlyVideoCredits": "每月 {credits} 视频积分",
+      "fullAccessTopModels": "畅享 {count} 个顶级 AI 视频模型",
+      "accessAllModels": "解锁全部模型",
+      "purchaseMoreRolloverVideoCredits": "可购买更多可结转的视频积分",
+      "downloadNoWatermark": "无水印下载视频",
+      "commercialUse": "可商用",
+      "fastGenerations": "快速生成",
+      "prioritySupport": "优先支持",
+      "unlimitedVideoAndImageGeneration": "视频与图片生成无限制",
+      "titanFreeVideoWindow": "Kling O3 与 Seedance 2.0 视频在 5 秒内免费",
+      "titanAllImagesFree": "Titan 下所有图片模型均可免费生成"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "打开账单选项"
+      },
+      "actions": {
+        "opening": "正在打开...",
+        "billingOptions": "账单选项",
+        "submitting": "提交中...",
+        "requestCancellation": "申请取消订阅",
+        "pendingReview": "取消申请审核中"
+      },
+      "confirm": {
+        "title": "管理订阅",
+        "description": "取消订阅申请需要管理员审核通过后才会生效。请先完成简短问卷，我们会根据问卷提交审核。",
+        "keep": "保留订阅",
+        "continueCancel": "继续申请取消"
+      },
+      "toast": {
+        "openFailed": "打开订阅管理失败",
+        "feedbackThanks": "感谢你的反馈！",
+        "feedbackSaveFailed": "取消申请提交失败",
+        "requestSubmitted": "取消申请已提交",
+        "requestSubmittedDescription": "管理员审核通过前，你的订阅仍保持有效。",
+        "pendingReview": "取消申请已提交",
+        "pendingReviewDescription": "申请正在等待管理员审核，审核通过后才会取消订阅。"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "我们希望听到你的反馈",
+        "subtitle": "回答几个简短问题，帮助我们改进"
+      },
+      "common": {
+        "close": "关闭",
+        "other": "其他",
+        "stepIndicator": "第 {current} / {total} 步"
+      },
+      "actions": {
+        "back": "上一步",
+        "next": "下一步",
+        "submitting": "提交中...",
+        "complete": "提交取消申请"
+      },
+      "satisfaction": {
+        "1": "非常不满意",
+        "2": "不满意",
+        "3": "一般",
+        "4": "满意",
+        "5": "非常满意"
+      },
+      "steps": {
+        "1": {
+          "title": "你是如何了解 ReelMind 的？",
+          "options": {
+            "social": "社交媒体（Twitter、Instagram 等）",
+            "search": "搜索引擎（Google、Bing 等）",
+            "friend": "朋友或同事推荐",
+            "ads": "在线广告",
+            "blog": "科技博客或评测网站"
+          }
+        },
+        "2": {
+          "title": "你主要用 ReelMind 做什么？",
+          "description": "可多选，选择符合你创作目标的选项。",
+          "options": {
+            "video": "视频创作",
+            "image": "图片生成",
+            "music": "音乐创作",
+            "marketing": "广告与营销内容",
+            "socialPosts": "社交媒体内容",
+            "education": "教育材料",
+            "personal": "个人项目",
+            "exploring": "探索新点子"
+          }
+        },
+        "3": {
+          "title": "以下哪项最符合你？",
+          "options": {
+            "creator": "内容创作者",
+            "developer": "自由开发者",
+            "marketingPro": "营销从业者",
+            "businessOwner": "企业主",
+            "designer": "设计师",
+            "hobbyist": "爱好者",
+            "student": "学生",
+            "artist": "艺术家"
+          }
+        },
+        "4": {
+          "title": "你如何评价你的体验？",
+          "description": "请为你在 ReelMind 的整体满意度打分"
+        },
+        "5": {
+          "title": "你决定取消的主要原因是什么？",
+          "options": {
+            "price": "价格太高",
+            "usage": "使用频率不高",
+            "features": "缺少关键功能",
+            "quality": "生成结果质量",
+            "bugs": "技术问题或 Bug",
+            "alternative": "找到了更好的替代品"
+          }
+        },
+        "6": {
+          "title": "我们很想听到你的建议",
+          "description": "你的想法能帮助我们把 ReelMind 做得更好。",
+          "placeholder": "你希望我们改进什么？有哪些功能你最希望看到？（可选）"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "已提交请求，我们将尽快联系你。",
+        "submitFailed": "提交请求失败"
+      },
+      "card": {
+        "title": "企业与定制方案",
+        "subtitle": "定制价格、发票与支持",
+        "description": "需要发票、合规支持或定制工作流？填写你的需求，我们会推荐最适合的方案。",
+        "toggle": {
+          "hide": "隐藏表单",
+          "show": "联系销售"
+        },
+        "highlights": {
+          "sso": "SSO 与合规",
+          "invoices": "发票与采购单",
+          "support": "优先支持",
+          "workflows": "定制工作流"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "联系人类型",
+          "placeholder": "选择联系人类型",
+          "options": {
+            "business": "企业",
+            "individual": "个人"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "预计每月消费（美元）",
+          "placeholder": "选择区间",
+          "options": {
+            "0to1000": "US$0 – 1,000",
+            "1000to5000": "US$1,000 – 5,000",
+            "5000to10000": "US$5,000 – 10,000",
+            "10000plus": "US$10,000+",
+            "custom": "自定义金额（美元）"
+          },
+          "custom": {
+            "label": "自定义每月消费（美元）",
+            "placeholder": "输入美元金额"
+          }
+        },
+        "firstName": {
+          "label": "名",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "姓",
+          "placeholder": "Doe"
+        },
+        "email": {
+          "label": "邮箱",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "网站",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "介绍你的项目与需求",
+          "placeholder": "你正在搭建什么？需要哪些工作流、合规支持以及预期用量？"
+        },
+        "actions": {
+          "cancel": "取消",
+          "submitting": "提交中...",
+          "submit": "提交"
+        },
+        "validation": {
+          "firstNameRequired": "请输入名",
+          "lastNameRequired": "请输入姓",
+          "emailInvalid": "邮箱格式不正确",
+          "websiteInvalid": "网站必须是有效的 URL",
+          "monthlyEstimateRequired": "请选择每月消费预估",
+          "monthlyEstimateEnter": "请输入每月消费预估",
+          "monthlyEstimateMin": "每月消费必须大于等于 0",
+          "requirementsMin": "请提供更多细节（至少 {count} 个字符）",
+          "maxChars": "最多 {count} 个字符"
+        }
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": {
+        "proBenefits": {
+          "question": "专业版（PRO）会员有什么好处？",
+          "answer": "专业版会员每月获得 1000 积分（约 10 美元），可享新功能优先体验、更快的视频生成、高级编辑选项和优先客服支持。"
+        },
+        "cancelAnytime": {
+          "question": "我可以随时取消订阅吗？",
+          "answer": "可以。你可以随时取消订阅，会员权益会持续到当前计费周期结束。",
+          "discountNote": {
+            "title": "优惠订阅特别说明：",
+            "body": "如果你使用优惠券订阅，并在首月使用了超出优惠金额的积分，则只能在第二个月支付完成后取消订阅。该政策用于确保促销优惠的公平使用。"
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "月付和年付有什么区别？",
+          "answer": "有。年付相比月付通常有明显优惠，选择年付大约可节省 20%。"
+        },
+        "whatAreCredits": {
+          "question": "ReelMind 积分是什么？",
+          "answer": "ReelMind 积分是平台内用于生成 AI 视频与图片的虚拟货币。不同功能消耗不同积分，例如：生成标准视频（480p）需 50 积分，HD 视频（720p）需 80 积分。"
+        },
+        "earnCredits": {
+          "question": "我如何获得积分？",
+          "intro": "你可以通过以下方式获得积分：",
+          "items": {
+            "membership": "通过会员方案（PRO 每月 1000，MAX 每月 2000）",
+            "purchase": "购买积分套餐",
+            "newUser": "新用户注册可得 100 免费积分",
+            "posting": "发布内容获得奖励（每日 50 积分）",
+            "promotions": "参与促销活动与奖励"
+          }
+        },
+        "expire": {
+          "question": "积分会过期吗？",
+          "answer": "直接购买的积分不会过期，会一直保留在账户中直到使用。每月赠送的积分会在每月月初重置，上月未使用部分不会结转。"
+        },
+        "refund": {
+          "question": "未使用的积分可以退款吗？",
+          "answer": "我们不提供已购买积分的退款。但如果你遇到技术问题导致积分无法正常使用，请联系我们的支持团队，我们会协助解决。"
+        },
+        "membershipVsCredits": {
+          "question": "会员和积分有什么区别？",
+          "answer": "会员提供每月一定量积分，并附带优先处理、专享功能等福利。积分也可以单独购买，生成内容时会消耗积分。频繁使用建议选择会员，偶尔使用可单独购买积分。"
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. 保留所有权利。"
+    }
+  },
+  "Search": {
+    "placeholder": "搜索...",
+    "noResultsFound": "未找到结果",
+    "viewAllResults": "查看全部结果",
+    "sections": {
+      "posts": "帖子",
+      "users": "用户"
+    },
+    "tabs": {
+      "posts": "帖子",
+      "users": "用户"
+    },
+    "unknownUser": "未知",
+    "loading": "加载中...",
+    "searching": "正在搜索...",
+    "loadingMore": "正在加载更多...",
+    "tryAgain": "重试",
+    "noPostsFound": "未找到帖子",
+    "noUsersFound": "未找到用户",
+    "empty": {
+      "title": "搜索",
+      "hint": "输入关键词以查找内容"
+    },
+    "errors": {
+      "searchFailed": "搜索失败"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "终身佣金 - 永久 20%"
+    },
+    "hero": {
+      "lifetime": "终身",
+      "passiveIncome": "被动收入",
+      "subtitle": {
+        "prefix": "终身获得",
+        "suffix": "佣金"
+      }
+    },
+    "actions": {
+      "getStarted": "立即开始",
+      "viewDashboard": "查看控制台",
+      "signInFirst": "请先登录"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API 平台",
+      "actions": {
+        "modelsPricing": "模型与定价",
+        "viewDocumentation": "查看文档"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API 密钥创建成功",
+      "apiKeyCreateFailed": "创建 API 密钥失败",
+      "apiKeyDeleted": "API 密钥删除成功",
+      "apiKeyDeletedDescription": "API 密钥已删除",
+      "apiKeyDeleteFailed": "删除 API 密钥失败",
+      "apiKeyCopied": "API 密钥已复制到剪贴板",
+      "modelIdCopied": "模型 ID 已复制到剪贴板"
+    },
+    "accountCard": {
+      "notLoggedIn": "未登录",
+      "loadingKeys": "正在加载 API 密钥...",
+      "keysAvailable": "{count} 个 API 密钥可用",
+      "createKey": "创建 API 密钥",
+      "helpPrefix": "需要帮助？请查看我们的 ",
+      "apiDocumentation": "API 文档"
+    },
+    "stats": {
+      "plan": "方案",
+      "resetDate": "重置日期",
+      "credits": "积分",
+      "tasks": "任务",
+      "loading": "加载中...",
+      "freePlan": "免费方案",
+      "na": "暂无",
+      "buyCredits": "购买积分"
+    },
+    "apiKeys": {
+      "title": "API 密钥管理",
+      "description": "管理你的 API 密钥，用于访问 ReelMind 视频生成 API",
+      "createNew": "创建新的 API 密钥",
+      "loading": "正在加载 API 密钥...",
+      "label": "API 密钥",
+      "created": "创建于 {date}",
+      "active": "启用",
+      "inactive": "停用",
+      "show": "显示 API 密钥",
+      "hide": "隐藏 API 密钥",
+      "copy": "复制 API 密钥",
+      "totalCalls": "总调用次数",
+      "creditsUsed": "消耗积分",
+      "empty": {
+        "title": "暂无 API 密钥",
+        "description": "你还没有创建任何 API 密钥。创建你的第一个 API 密钥以开始使用 ReelMind API。",
+        "createFirst": "创建你的第一个 API 密钥"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "模型与定价",
+      "apiDocumentation": "API 文档"
+    },
+    "documentation": {
+      "title": "API 文档",
+      "authentication": "身份验证",
+      "authenticationIntro": "所有 API 请求都需要使用 API 密钥进行身份验证。你的 API 密钥是一个 UUID，可在下方的“API 密钥管理”中生成。",
+      "authenticationMethods": "验证方式",
+      "exampleRequest": "请求示例",
+      "important": "重要提示",
+      "apiEndpoints": "API 端点",
+      "responseFormat": "响应格式",
+      "responseFormatIntro": "视频生成任务响应格式：",
+      "parameters": "参数",
+      "table": {
+        "name": "名称",
+        "type": "类型",
+        "required": "必填",
+        "description": "说明"
+      },
+      "yes": "是",
+      "no": "否"
+    },
+    "pricing": {
+      "title": "API 定价与模型",
+      "intro": "探索可用于视频与图片生成 API 的 AI 模型及其定价",
+      "loading": "正在加载可用模型...",
+      "available": "可用",
+      "unavailable": "不可用",
+      "credits": "{credits} 积分",
+      "basePricePerImage": "基础价格（每张图片）",
+      "basePrice5sVideo": "基础价格（5 秒视频）",
+      "creditsPerSecond": "+{credits} 积分/秒",
+      "modelId": "模型 ID",
+      "copyModelId": "复制模型 ID",
+      "noModels": {
+        "title": "暂无可用模型",
+        "description": "当前没有可用于 API 的 AI 模型。请稍后再试。"
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "文生视频",
+      "imageToVideo": "图生视频",
+      "videoToVideo": "视频转视频",
+      "textToImage": "文生图",
+      "imageToImage": "图生图"
+    },
+    "deleteModal": {
+      "title": "确认删除",
+      "description": "确定要删除这个 API 密钥吗？此操作无法撤销。",
+      "keyName": "密钥名称：{name}",
+      "createdOn": "创建于 {date}",
+      "cancel": "取消",
+      "deleting": "删除中...",
+      "deleteKey": "删除 API 密钥"
+    },
+    "modelParameters": {
+      "title": "模型参数",
+      "required": "必填",
+      "default": "默认值：{value}",
+      "labels": {
+        "prompt": "提示词",
+        "guidance_scale": "引导强度",
+        "aspect_ratio": "画面比例",
+        "seed": "随机种子",
+        "image_url": "图片 URL",
+        "duration": "时长",
+        "resolution": "分辨率",
+        "num_inference_steps": "推理步数",
+        "cfg_scale": "CFG 强度"
+      },
+      "flux": {
+        "promptDescription": "用于描述要生成图片内容的文本提示词",
+        "guidanceScaleDescription": "控制图片与提示词的匹配程度",
+        "aspectRatioDescription": "生成图片的画面比例",
+        "seedDescription": "用于可复现生成的随机种子",
+        "imageUrlDescription": "用于图生图的输入图片 URL"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "文生图 · 图像编辑",
+      "title": "FLUX / Nano Banana / Seedream（图像模型）"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolanx - AI Netflix",
+      "description": "AI Netflix"
+    },
+    "page": {
+      "loading": "正在加载诺兰 AI 导演..."
+    },
+    "heroBanner": {
+      "label": "Revolutionary AI Multi-Modal Agents",
+      "name": "Nolanx",
+      "worldFirst": "AI",
+      "aiAgentDirector": "Netflix"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Pending",
+        "queued": "Queued",
+        "processing": "Processing",
+        "completed": "Completed",
+        "failed": "Failed",
+        "canceled": "Canceled"
+      },
+      "model": {
+        "unknown": "Unknown model",
+        "unnamed": "Unnamed"
+      },
+      "errors": {
+        "fetchListTitle": "Failed to load tasks",
+        "unknown": "Unknown error",
+        "fetchDetails": "Failed to fetch task details",
+        "downloadFailed": "Download failed",
+        "retryFailed": "Retry failed"
+      },
+      "details": {
+        "videoTitle": "Video Task Details",
+        "imageTitle": "Image Task Details",
+        "videoPreview": "Video Preview",
+        "hideVideo": "Hide Video",
+        "showVideo": "Show Video",
+        "downloadVideo": "Download Video",
+        "browserNoVideoSupport": "Your browser does not support video playback.",
+        "labels": {
+          "duration": "Duration",
+          "fileSize": "File Size",
+          "format": "Format",
+          "prompt": "Prompt",
+          "model": "Model",
+          "ratio": "Aspect Ratio",
+          "resolution": "Resolution",
+          "taskId": "Task ID",
+          "user": "User",
+          "status": "Status",
+          "createdTime": "Created Time",
+          "startedTime": "Start Time",
+          "completedTime": "Completed Time",
+          "generationModel": "Generation Model",
+          "priority": "Priority",
+          "requestId": "Request ID",
+          "lastActivity": "Last Activity"
+        },
+        "videoPreviewUnavailable": "Video preview unavailable",
+        "videoNoOutput": "Task completed but no video output",
+        "videoNotCompleted": "Task is not completed yet",
+        "generationParams": "Generation Parameters",
+        "basicInfo": "Basic Information",
+        "timeInfo": "Time Information",
+        "detailData": "Detailed Data",
+        "inputParams": "Input Parameters",
+        "outputResult": "Output Result",
+        "errorLog": "Error Log",
+        "retrying": "Retrying...",
+        "retryTask": "Retry Task",
+        "generatedImage": "Generated Image",
+        "close": "Close"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "User Feedback Management",
+        "subtitle": "Manage user-submitted feedback and complaints"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Fetch failed",
+          "fetchFailedDescription": "Unable to fetch feedback data: {error}",
+          "unknown": "Unknown error"
+        },
+        "type": {
+          "bug": "Bug Report",
+          "suggestion": "Suggestion",
+          "other": "Other"
+        },
+        "loading": "Loading...",
+        "filter": {
+          "label": "Feedback Type",
+          "all": "All Types"
+        },
+        "total": "Total: {total} feedback items",
+        "empty": "No feedback data",
+        "headers": {
+          "userInfo": "User Info",
+          "type": "Type",
+          "subject": "Subject",
+          "submittedAt": "Submitted",
+          "actions": "Actions"
+        },
+        "user": {
+          "unknown": "Unknown user",
+          "noEmail": "No email"
+        },
+        "actions": {
+          "collapse": "Collapse",
+          "viewDetails": "View Details"
+        },
+        "contentLabel": "Feedback:",
+        "pagination": {
+          "previous": "Previous",
+          "next": "Next"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Please enter a search keyword.",
+        "noUsersFound": "No matching users found.",
+        "searchFailed": "Failed to search users.",
+        "userRequired": "Please select a user or enter a user ID.",
+        "amountInvalid": "Please enter a valid credits amount.",
+        "descriptionRequired": "Please enter a grant description.",
+        "grantFailed": "Failed to grant credits."
+      },
+      "success": {
+        "granted": "Credits granted successfully."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Failed to fetch surveys.",
+        "fetchStats": "Failed to fetch survey stats."
+      }
+    },
+    "memberships": {
+      "title": "User Subscription Management",
+      "search": {
+        "placeholder": "Search user ID, email, or nickname...",
+        "button": "Search"
+      },
+      "stats": {
+        "total": "Total Subscriptions",
+        "yearly": "Yearly Members"
+      },
+      "list": {
+        "title": "Subscription List"
+      },
+      "loading": "Loading...",
+      "actions": {
+        "retry": "Retry"
+      },
+      "empty": "No subscription data",
+      "table": {
+        "headers": {
+          "userInfo": "User Info",
+          "plan": "Plan",
+          "billingCycle": "Billing Cycle",
+          "status": "Status",
+          "credits": "Credits Balance",
+          "videoTasks": "Video Tasks",
+          "imageTasks": "Image Tasks",
+          "createdAt": "Created Time",
+          "expiresAt": "Expiry Time"
+        },
+        "user": {
+          "unknown": "Unknown"
+        },
+        "status": {
+          "active": "Active",
+          "inactive": "Inactive",
+          "cancelAtPeriodEnd": "Cancel at period end"
+        },
+        "creditsUnit": "credits",
+        "flagged": "Flagged",
+        "tasksUnit": "tasks",
+        "never": "Never"
+      },
+      "pagination": {
+        "summary": "Showing {start} to {end} of {total} records",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page {currentPage} of {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Failed to delete the post. Please try again."
+      }
+    }
+  },
+  "Common": {
+    "language": "语言",
+    "onlyEnglish": "目前仅提供英语。",
+    "onlySupportedPages": "目前，其他语言仅在主页、探索、搜索、创建、乐高、音乐、会员、联系人、用户、共享、模型、效果和博客页面上可用。",
+    "languages": {
+      "en": "英语",
+      "zh-CN": "中文（简体）"
+    },
+    "actions": {
+      "viewAll": "查看全部",
+      "cancel": "取消",
+      "recreate": "重新创造",
+      "download": "下载",
+      "downloading": "正在下载...",
+      "showMore": "显示更多",
+      "showLess": "显示较少"
+    },
+    "aria": {
+      "scrollRight": "向右滚动",
+      "search": "搜索"
+    },
+    "search": {
+      "placeholder": "搜索帖子和用户..."
+    },
+    "share": {
+      "button": "分享",
+      "toast": {
+        "copiedTitle": "已复制",
+        "copiedMessage": "链接已复制到剪贴板",
+        "failedTitle": "复制失败",
+        "failedMessage": "无法将链接复制到剪贴板"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Nolanx AI 导演",
+      "earlyAccess": "抢先体验",
+      "justOneCredit": "仅需1积分"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "灯光模式",
+        "darkMode": "深色模式",
+        "switchToLightMode": "切换到灯光模式",
+        "switchToDarkMode": "切换到深色模式"
+      },
+      "profile": {
+        "myProfile": "我的个人资料",
+        "goToMyProfile": "转到我的个人资料"
+      },
+      "menu": {
+        "openMenu": "打开菜单",
+        "close": "关闭"
+      },
+      "membership": {
+        "title": "会员资格",
+        "tapToViewPlans": "点击查看计划",
+        "upgrade": "升级",
+        "plans": {
+          "free": "自由的",
+          "pro": "专业版",
+          "max": "最大限度",
+          "unlimited": "无限"
+        }
+      },
+      "actions": {
+        "pricing": "定价",
+        "signIn": "登入"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind。版权所有。"
+    },
+    "video": {
+      "labels": {
+        "prompt": "迅速的",
+        "model": "模型",
+        "ratio": "比率",
+        "guidance": "指导",
+        "steps": "步骤",
+        "seed": "种子",
+        "definition": "定义"
+      },
+      "values": {
+        "unknownModel": "未知型号",
+        "random": "随机的"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "分页",
+        "previous": "转到上一页",
+        "next": "转到下一页"
+      },
+      "previous": "以前的",
+      "next": "下一个",
+      "more": "更多页面"
+    },
+    "concurrentLimit": {
+      "title": "已达到任务限制",
+      "defaultMessage": "免费用户一次只能运行一个视频生成任务。",
+      "currentStatus": "目前状态",
+      "currentPlan": "目前计划",
+      "premiumBenefits": "高级福利",
+      "plans": {
+        "unlimited": "无限计划",
+        "free": "自由的",
+        "unlimitedTasks": "无限任务"
+      },
+      "unlimited": {
+        "maxTasks": "最多 3 个并发任务",
+        "priority": "高优先级处理",
+        "features": "所有高级功能",
+        "waitNote": "请等待当前的一些任务完成，然后再提交新任务。"
+      },
+      "free": {
+        "maxTasks": "1 个并发任务",
+        "priority": "标准优先级",
+        "features": "基本特点"
+      },
+      "upgrade": {
+        "maxTasks": "最多 5 个并发任务",
+        "priority": "更高优先级处理",
+        "features": "访问所有型号"
+      },
+      "actions": {
+        "acknowledge": "知道了",
+        "upgrade": "升级",
+        "loading": "加载中..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "本地上传",
+      "reelmind": "ReelMind 生成"
+    },
+    "reelmind": {
+      "description": "选择在 ReelMind 上生成的视频。",
+      "browse": "浏览 ReelMind 视频"
+    },
+    "title": {
+      "placeholder": "添加标题..."
+    },
+    "tags": {
+      "title": "标签",
+      "empty": "添加标签以更好地对视频进行分类。",
+      "placeholder": "添加标签（按 Enter 确认）",
+      "count": "{count}/{limit}",
+      "helper": "最多 {limit} 个标签，每个 {max} 个字符。"
+    },
+    "description": {
+      "placeholder": "添加描述..."
+    },
+    "generationType": {
+      "title": "世代类型",
+      "txt2video": "文字转视频",
+      "txt2videoDescription": "根据文本提示生成。",
+      "img2video": "图像转视频",
+      "img2videoDescription": "从参考图像生成。"
+    },
+    "prompts": {
+      "promptTitle": "迅速的",
+      "promptPlaceholder": "输入用于生成该视频的提示...",
+      "negativeTitle": "否定提示",
+      "negativePlaceholder": "输入否定提示..."
+    },
+    "modelResources": {
+      "title": "模型资源",
+      "placeholder": "列出使用的模型资源，例如模型、LoRA、嵌入..."
+    },
+    "aigc": {
+      "guidanceScale": "指导量表",
+      "guidanceScalePlaceholder": "例如7.5",
+      "steps": "步骤",
+      "stepsPlaceholder": "例如30",
+      "seed": "种子",
+      "seedPlaceholder": "例如1234567890"
+    },
+    "tools": {
+      "title": "生成工具"
+    },
+    "videoPreview": {
+      "uploadComplete": "上传完成",
+      "uploading": "正在上传...",
+      "clickToUpload": "点击上传视频",
+      "remove": "删除视频"
+    },
+    "actions": {
+      "publish": "发布",
+      "publishing": "出版...",
+      "back": "后退"
+    },
+    "errors": {
+      "tagEmpty": "标签不能为空。",
+      "tagTooLong": "标记不能超过 {max} 个字符。",
+      "tagExists": "该标签已经存在。",
+      "tagLimit": "您最多可以添加 {limit} 标签。",
+      "authRequired": "请登录才能上传。",
+      "uploadFailed": "上传失败。请再试一次。",
+      "uploadParamsFailed": "获取上传参数失败。",
+      "fileAddFailed": "添加文件失败。请再试一次。"
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "博客 - ReelMind",
+      "description": "发现有关 AI 内容创建、视频生成和最新 ReelMind 功能的技巧、教程和见解。"
+    },
+    "page": {
+      "title": "博客",
+      "empty": "没有找到博客文章"
+    },
+    "error": {
+      "title": "加载帖子时出错",
+      "description": "加载博客文章时出现问题。",
+      "retry": "再试一次"
+    },
+    "notFound": {
+      "title": "找不到页面",
+      "description": "您请求的博客页面不存在。"
+    },
+    "feed": {
+      "end": "你已经到达终点了",
+      "retry": "重试",
+      "loadFailed": "无法加载博客文章"
+    },
+    "topFeed": {
+      "refresh": "刷新",
+      "exploreMore": "探索更多乐趣",
+      "loadFailed": "无法加载随机帖子"
+    },
+    "floatingChat": {
+      "title": "询问诺兰人工智能",
+      "subtitle": "第一AI特工总监！",
+      "placeholder": "询问这篇文章或分享您的电影想法......",
+      "cta": "发送给诺兰"
+    },
+    "featureCard": {
+      "label": "视频模型",
+      "title": "Reelmind 提供强大的工具来将您的想法变为现实。",
+      "subtitle": "利用 101 个 AI 模型将您的想法转化为令人惊叹的视觉效果",
+      "cta": "立即尝试"
+    },
+    "breadcrumbs": {
+      "home": "家"
+    },
+    "article": {
+      "notFoundTitle": "文章未找到",
+      "notFoundDescription": "找不到所请求的文章。"
+    }
+  },
+  "Favorites": {
+    "title": "我的最爱",
+    "subtitle": "在这里您可以管理您喜爱的视频和模型",
+    "tabs": {
+      "video": "视频",
+      "model": "模型"
+    },
+    "empty": {
+      "title": "您还没有收藏夹"
+    },
+    "alert": {
+      "title": "错误",
+      "retry": "重试",
+      "loadFailed": "无法加载收藏夹。请再试一次。",
+      "removeFailed": "无法删除收藏夹。请再试一次。"
+    },
+    "card": {
+      "video": "视频",
+      "model": "模型"
+    },
+    "button": {
+      "favorite": "最喜欢的",
+      "favorited": "已收藏"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "欢迎来到 ReelMind",
+      "subtitle": "登录或创建你的创作者账号",
+      "continueWithGoogle": "使用 Google 继续",
+      "orContinueWithEmail": "或使用邮箱继续",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "邮箱地址",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "••••••••",
+      "show": "显示",
+      "hide": "隐藏",
+      "inviteCodeLabelOptional": "邀请码（可选）",
+      "inviteCodePlaceholder": "输入邀请码",
+      "invitedBy": "邀请人：<name>{value}</name>",
+      "continue": "继续",
+      "signIn": "登录",
+      "createAccount": "创建账号",
+      "switchToSignIn": "已有账号？登录",
+      "switchToSignUp": "没有账号？注册",
+      "pageSubtitleCreate": "创建你的账号",
+      "pageSubtitleSignIn": "登录你的账号",
+      "termsLine": "继续即表示你同意我们的 <terms>条款</terms> 和 <privacy>隐私政策</privacy>"
+    },
+    "verifyEmail": {
+      "title": "验证你的邮箱",
+      "sentLinkTo": "我们已向以下邮箱发送验证链接",
+      "checkInbox": "请检查收件箱并点击链接继续。",
+      "understand": "我知道了",
+      "useDifferentEmail": "换一个邮箱"
+    },
+    "errors": {
+      "invalidEmail": "邮箱格式不正确",
+      "suspiciousEmail": "这个邮箱看起来不太正常",
+      "verifyBeforeLogin": "请先验证邮箱再登录",
+      "operationFailed": "操作失败，请重试",
+      "googleFailed": "Google 登录失败，请重试",
+      "checkEmailConfirmation": "请检查邮箱中的确认链接！"
+    },
+    "brand": {
+      "headlineLine1": "Reel-Makers",
+      "headlineLine2": "欢迎来到这里",
+      "taglineLine1": "释放你的灵感。",
+      "taglineLine2": "让 AI 帮你“收线”。",
+      "cta": "加入创作者社区，马上开始创作。"
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Add image",
+      "addMoreReferences": "Add more references",
+      "auto": "Auto",
+      "back": "Back",
+      "character": "Character",
+      "clear": "Clear",
+      "clearAll": "Clear all",
+      "close": "Close",
+      "createPack": "Create pack",
+      "downloadCount": "Download {current}/{total}",
+      "dropOrUploadPhoto": "Drop or upload a photo",
+      "goToLibrary": "Go to library",
+      "high": "High",
+      "history": "History",
+      "inQueue": "In queue",
+      "info": "Info",
+      "instadump": "Instadump",
+      "manual": "Manual",
+      "new": "New",
+      "next": "Next",
+      "open": "Open",
+      "previous": "Previous",
+      "ready": "Ready",
+      "recent": "Recent",
+      "remove": "Remove",
+      "replace": "Replace",
+      "reset": "Reset",
+      "restart": "Restart",
+      "selectPack": "Select pack",
+      "storyboard": "Storyboard",
+      "upload": "Upload",
+      "uploading": "Uploading..."
+    },
+    "prompts": {
+      "defaultImage": "A cinematic, high-detail image with natural lighting",
+      "relightDefault": "Relight the subject with soft studio lighting",
+      "faceSwapDefault": "Swap the face while keeping the scene intact",
+      "characterSwapDefault": "Swap the character while preserving style",
+      "drawToEditDefault": "Refine the drawing into a clean, detailed image"
+    },
+    "swap": {
+      "sourceTitle": "Source",
+      "targetTitle": "Target",
+      "faceSourceDescription": "Source image for the face",
+      "faceTargetDescription": "Target image to replace",
+      "characterSourceDescription": "Source image for the character",
+      "characterTargetDescription": "Target image to replace"
+    },
+    "inpaint": {
+      "sourceAlt": "Source image",
+      "paintHint": "Paint the area you want to edit",
+      "maskUploading": "Uploading mask",
+      "maskReady": "Mask ready",
+      "maskPaint": "Paint mask",
+      "paint": "Paint",
+      "erase": "Erase"
+    },
+    "relight": {
+      "title": "Relight",
+      "quickSelect": "Quick select",
+      "directions": {
+        "top": "Top",
+        "front": "Front",
+        "right": "Right",
+        "left": "Left",
+        "back": "Back",
+        "bottom": "Bottom"
+      },
+      "brightness": "Brightness",
+      "color": "Color"
+    },
+    "upscale": {
+      "title": "Upscale"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Sketch to Video",
+      "drawToVideo": "Draw to Video",
+      "drawToEdit": "Draw to Edit",
+      "pen": "Pen",
+      "eraser": "Eraser",
+      "color": "Color",
+      "size": "Size",
+      "undo": "Undo",
+      "redo": "Redo",
+      "clear": "Clear",
+      "generateVideo": "Generate video",
+      "uploadTitle": "Upload media",
+      "uploadDescription": "Add a photo to guide the drawing"
+    },
+    "soulId": {
+      "heroTitle": "Soul ID Character",
+      "heroDescription": "Build a consistent character from your photos.",
+      "createButton": "Create character",
+      "photoCount": "{count} photos",
+      "characterLabel": "Character {index}",
+      "emptyGallery": "No characters yet.",
+      "dialogTitle": "Create Soul ID",
+      "dialogSubtitle": "Upload photos to build your character.",
+      "addPhotosTitle": "Add photos",
+      "addPhotosDescription": "Upload 6-12 clear photos.",
+      "tip": "Tip: use varied angles and expressions."
+    },
+    "storyboard": {
+      "relightScene": "Relight Scene",
+      "headline": "Fashion Factory",
+      "headlineAccent": "Generate your aesthetic",
+      "description": "Storyboard, edit, create.",
+      "resultsLabel": "{count} results",
+      "uploadHint": "Upload reference images to guide the scene",
+      "referenceImagesTitle": "Reference images",
+      "referenceImagesDescription": "Add up to 4 images to match the style"
+    },
+    "instadump": {
+      "sidebarTitle": "Instadump Studio",
+      "stepChoosePack": "Choose a pack",
+      "stepAddPhoto": "Add a photo",
+      "stepGetInstadump": "Get Instadump",
+      "headerTitle": "Instadump",
+      "headerDescription": "Turn a selfie into a full content library.",
+      "addPhotoTitle": "Add your photo",
+      "addPhotoDescription": "Upload a clear selfie to start.",
+      "getInstadumpTitle": "Get your Instadump",
+      "newPhotosReady": "New photos ready",
+      "tryFree": "Try free",
+      "premiumTitle": "Premium",
+      "premiumBulletOne": "More styles per pack",
+      "premiumBulletTwo": "Priority processing",
+      "premiumBulletThree": "Full-resolution downloads",
+      "upgradeNow": "Upgrade now"
+    }
+  }
+}

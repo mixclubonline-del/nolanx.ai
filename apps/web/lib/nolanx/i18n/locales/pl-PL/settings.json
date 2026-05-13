@@ -1,0 +1,98 @@
+{
+  "title": "Ustawienia",
+  "messages": {
+    "settingsSaved": "Ustawienia zapisane",
+    "settingsReset": "Ustawienia przywrócone do domyślnych",
+    "failedToSave": "Nie udało się zapisać ustawień",
+    "failedToLoad": "Nie udało się wczytać konfiguracji",
+    "restartRequired": "Uruchom ponownie aplikację, aby ustawienia proxy zaczęły działać"
+  },
+  "models": {
+    "title": "Modele",
+    "placeholder": "Wpisz nazwę modelu",
+    "addModel": "Dodaj model",
+    "types": {
+      "text": "tekst",
+      "image": "obraz",
+      "video": "wideo"
+    }
+  },
+  "provider": {
+    "title": "Dostawcy",
+    "addProvider": "Dodaj dostawcę",
+    "providerName": "Nazwa dostawcy",
+    "providerNamePlaceholder": "Wpisz nazwę dostawcy",
+    "apiUrl": "URL API",
+    "apiUrlPlaceholder": "Wpisz URL API",
+    "apiKey": "Klucz API",
+    "apiKeyPlaceholder": "Wpisz klucz API",
+    "apiKeyDescription": "Twój klucz API zostanie bezpiecznie zapisany",
+    "maxTokens": "Maks. tokenów",
+    "maxTokensPlaceholder": "Wpisz maks. tokenów",
+    "maxTokensDescription": "Maksymalna liczba tokenów w odpowiedzi",
+    "customProvider": "✨ Własny dostawca",
+    "imageGeneration": "🎨 Generowanie obrazów",
+    "delete": "Usuń",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "noModelsSelected": "Dodaj co najmniej jeden model"
+  },
+  "proxy": {
+    "title": "Ustawienia proxy",
+    "mode": "Tryb proxy",
+    "selectMode": "Wybierz tryb proxy",
+    "modes": {
+      "none": "Brak proxy",
+      "system": "Proxy systemowe",
+      "custom": "Własne proxy"
+    },
+    "enable": "Włącz proxy",
+    "url": "URL proxy",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Testuj połączenie",
+    "testing": "Testowanie...",
+    "testSuccess": "Test połączenia proxy zakończony sukcesem",
+    "testFailed": "Test połączenia proxy nieudany: {{message}}",
+    "testError": "Błąd testu połączenia proxy",
+    "status": {
+      "enabled": "Włączone",
+      "disabled": "Wyłączone",
+      "misconfigured": "Nieprawidłowa konfiguracja"
+    }
+  },
+  "comfyui.workflows": "Workflows",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Lokalna generacja obrazów",
+    "enable": "Włącz",
+    "debugStatus": "🔍 Status debugowania",
+    "status": {
+      "disabled": "Wyłączone",
+      "running": "Uruchomione",
+      "installed": "Zainstalowane (nie uruchomione)",
+      "notInstalled": "Nie zainstalowane",
+      "notRunning": "Nie uruchomione",
+      "checking": "Sprawdzanie..."
+    },
+    "urlDescription": "URL usługi ComfyUI, wpisz adres, jeśli jest już zainstalowane",
+    "invalidUrl": "Wpisz prawidłowy URL (np. http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI nie jest zainstalowane",
+    "notInstalledDescription": "Zainstaluj ComfyUI, aby włączyć lokalną generację obrazów z modelami Flux",
+    "installButton": "Zainstaluj ComfyUI",
+    "startButton": "Uruchom ComfyUI",
+    "uninstallButton": "Odinstaluj ComfyUI",
+    "confirmUninstall": "Czy na pewno chcesz odinstalować ComfyUI? Spowoduje to całkowite usunięcie ComfyUI z systemu, w tym wszystkich pobranych modeli i konfiguracji.",
+    "confirmUninstallButton": "Potwierdź odinstalowanie",
+    "uninstallProgress": {
+      "title": "Odinstalowywanie ComfyUI",
+      "preparing": "Przygotowywanie do odinstalowania...",
+      "inProgress": "Odinstalowywanie w toku... Proszę czekać.",
+      "logTitle": "Dziennik odinstalowania:",
+      "completed": "Odinstalowanie zakończone"
+    },
+    "notInstalled": "ComfyUI nie jest zainstalowane"
+  },
+  "saveSettings": "Zapisz ustawienia",
+  "close": "Zamknij",
+  "cancel": "Anuluj"
+}

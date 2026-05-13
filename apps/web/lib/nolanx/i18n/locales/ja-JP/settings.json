@@ -1,0 +1,99 @@
+{
+  "title": "設定",
+  "messages": {
+    "settingsSaved": "設定を保存しました",
+    "settingsReset": "設定をデフォルトにリセットしました",
+    "failedToSave": "設定の保存に失敗しました",
+    "failedToLoad": "設定の読み込みに失敗しました",
+    "restartRequired": "プロキシ設定を反映するにはアプリを再起動してください"
+  },
+  "models": {
+    "title": "モデル",
+    "placeholder": "モデル名を入力",
+    "addModel": "モデルを追加",
+    "types": {
+      "text": "テキスト",
+      "image": "画像",
+      "video": "動画"
+    }
+  },
+  "provider": {
+    "title": "プロバイダー",
+    "addProvider": "プロバイダーを追加",
+    "providerName": "プロバイダー名",
+    "providerNamePlaceholder": "プロバイダー名を入力",
+    "apiUrl": "API URL",
+    "apiUrlPlaceholder": "API URL を入力",
+    "apiKey": "APIキー",
+    "apiKeyPlaceholder": "APIキーを入力",
+    "apiKeyDescription": "APIキーは安全に保存されます",
+    "maxTokens": "最大トークン数",
+    "maxTokensPlaceholder": "最大トークン数を入力",
+    "maxTokensDescription": "レスポンスに含まれる最大トークン数",
+    "customProvider": "✨ カスタムプロバイダー",
+    "imageGeneration": "🎨 画像生成",
+    "delete": "削除",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "noModelsSelected": "少なくとも1つのモデルを追加してください"
+  },
+  "proxy": {
+    "title": "プロキシ設定",
+    "mode": "プロキシモード",
+    "selectMode": "プロキシモードを選択",
+    "modes": {
+      "none": "プロキシなし",
+      "system": "システムプロキシ",
+      "custom": "カスタムプロキシ"
+    },
+    "enable": "プロキシを有効化",
+    "url": "プロキシURL",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "接続テスト",
+    "testing": "テスト中...",
+    "testSuccess": "プロキシ接続テストに成功しました",
+    "testFailed": "プロキシ接続テストに失敗しました: {{message}}",
+    "testError": "プロキシ接続テストエラー",
+    "status": {
+      "enabled": "有効",
+      "disabled": "無効",
+      "misconfigured": "設定不備"
+    }
+  },
+  "comfyui.workflows": "ワークフロー",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 ローカル画像生成",
+    "enable": "有効化",
+    "debugStatus": "🔍 デバッグステータス",
+    "status": {
+      "disabled": "無効",
+      "running": "実行中",
+      "installed": "インストール済み（未実行）",
+      "notInstalled": "未インストール",
+      "notRunning": "未実行",
+      "checking": "確認中..."
+    },
+    "urlDescription": "ComfyUI サービスURL。既にインストール済みの場合はアドレスを入力してください",
+    "invalidUrl": "有効なURLを入力してください（例: http://127.0.0.1:8188）",
+    "notInstalledTitle": "ComfyUI がインストールされていません",
+    "notInstalledDescription": "Fluxモデルでローカル画像生成を有効にするには ComfyUI をインストールしてください",
+    "installButton": "ComfyUI をインストール",
+    "startButton": "ComfyUI を起動",
+    "uninstallButton": "ComfyUI をアンインストール",
+    "confirmUninstall": "ComfyUI をアンインストールしますか？ダウンロード済みのモデルと設定を含め、システムから完全に削除されます。",
+    "confirmUninstallButton": "アンインストールを確認",
+    "uninstallProgress": {
+      "title": "ComfyUI をアンインストール中",
+      "preparing": "アンインストール準備中...",
+      "inProgress": "アンインストール中... しばらくお待ちください。",
+      "logTitle": "アンインストールログ:",
+      "completed": "アンインストールが完了しました"
+    },
+    "notInstalled": "ComfyUI はインストールされていません"
+  },
+  "saveSettings": "設定を保存",
+  "close": "閉じる",
+  "cancel": "キャンセル"
+}
+

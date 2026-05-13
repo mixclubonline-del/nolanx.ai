@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Tiếng Anh",
+    "zh-CN": "Tiếng Trung (giản thể)"
+  },
+  "buttons": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "create": "Tạo",
+    "submit": "Gửi",
+    "loading": "Đang tải...",
+    "retry": "Thử lại"
+  },
+  "common": {
+    "yes": "Có",
+    "no": "Không",
+    "ok": "OK",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "warning": "Cảnh báo",
+    "info": "Thông tin"
+  },
+  "messages": {
+    "success": "Thao tác hoàn tất thành công",
+    "error": "Đã xảy ra lỗi",
+    "loading": "Đang tải, vui lòng đợi...",
+    "noData": "Không có dữ liệu",
+    "confirmDelete": "Bạn có chắc muốn xóa mục này không?",
+    "saved": "Đã lưu thành công",
+    "deleted": "Đã xóa thành công"
+  },
+  "notifications": {
+    "title": "Thông báo",
+    "clear": "Xóa",
+    "markAllAsRead": "Đánh dấu tất cả đã đọc",
+    "allRead": "Đã đọc hết",
+    "newImageGenerated": "Đã tạo ảnh mới"
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "canvas": "Bảng phân cảnh",
+    "settings": "Cài đặt",
+    "back": "Quay lại"
+  },
+  "dialog": {
+    "confirmTitle": "Xác nhận thao tác",
+    "confirmDescription": "Không thể hoàn tác thao tác này",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận"
+  },
+  "update": {
+    "title": "🎉 Có phiên bản mới",
+    "description": "Có phiên bản mới v{{version}}. Bạn muốn cài đặt ngay không?",
+    "installNote": "Nhấn \"Cài đặt cập nhật\" để khởi động lại ứng dụng và cài đặt bản cập nhật.",
+    "laterButton": "Nhắc tôi sau",
+    "installButton": "Cài đặt cập nhật",
+    "installing": "Đang cài đặt..."
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "loginToJaaz": "Đăng nhập Jaaz",
+    "myAccount": "Tài khoản của tôi",
+    "loginDescription": "Đăng nhập để dùng các mô hình AI trên đám mây",
+    "startLogin": "Bắt đầu đăng nhập",
+    "preparingLogin": "Đang chuẩn bị đăng nhập...",
+    "cancel": "Hủy",
+    "loginSuccessMessage": "Đăng nhập thành công!",
+    "authExpiredMessage": "Phiên xác thực đã hết hạn, vui lòng đăng nhập lại",
+    "authErrorMessage": "Đã xảy ra lỗi khi kiểm tra trạng thái xác thực",
+    "waitingForBrowser": "Đang chờ hoàn tất đăng nhập trong trình duyệt...",
+    "pollErrorMessage": "Không thể kiểm tra trạng thái đăng nhập, vui lòng thử lại",
+    "preparingLoginMessage": "Đang chuẩn bị đăng nhập...",
+    "browserLoginMessage": "Vui lòng hoàn tất đăng nhập trong trình duyệt",
+    "loginRequestFailed": "Yêu cầu đăng nhập thất bại, vui lòng thử lại",
+    "logoutSuccessMessage": "Đã đăng xuất",
+    "notLoggedIn": "Chưa đăng nhập",
+    "balance": "Số dư",
+    "recharge": "Nạp tiền"
+  },
+  "socket": {
+    "connectionError": "Lỗi kết nối ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "Kết nối thất bại, vui lòng tải lại trang"
+  }
+}

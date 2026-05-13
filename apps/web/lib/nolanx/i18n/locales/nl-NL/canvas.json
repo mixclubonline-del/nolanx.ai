@@ -1,0 +1,166 @@
+{
+  "title": "Storyboard",
+  "rename": "Storyboard hernoemen",
+  "delete": "Storyboard verwijderen",
+  "share": "Storyboard delen",
+  "export": "Storyboard exporteren",
+  "exportImages": "Frames exporteren",
+  "import": "Storyboard importeren",
+  "untitled": "Ongetitelde scène",
+  "back": "Terug naar het regisseursbureau",
+  "saveSnapshot": "Scènesnapshot opslaan",
+  "loadSnapshot": "Scènesnapshot laden",
+  "saved": "Scène opgeslagen ✅",
+  "messages": {
+    "canvasRenamed": "Storyboard succesvol hernoemd",
+    "canvasDeleted": "Storyboard succesvol verwijderd",
+    "canvasExported": "Storyboard succesvol geëxporteerd",
+    "canvasImported": "Storyboard succesvol geïmporteerd",
+    "failedToRename": "Storyboard hernoemen mislukt",
+    "failedToDelete": "Storyboard verwijderen mislukt",
+    "failedToCreateFile": "Scènebestand maken mislukt",
+    "noImagesSelected": "Geen frames geselecteerd",
+    "exportingImages": "Frames exporteren...",
+    "failedToExportImages": "Frames exporteren mislukt"
+  },
+  "deleteDialog": {
+    "title": "Storyboard verwijderen",
+    "description": "Weet je zeker dat je dit storyboard wilt verwijderen? Deze scène gaat voorgoed verloren.",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen"
+  },
+  "tool": {
+    "hand": "Camera pannen",
+    "selection": "Scène selecteren",
+    "rectangle": "Framekader",
+    "ellipse": "Spotlight",
+    "text": "Titelkaart",
+    "image": "Visuele asset",
+    "shape": "Prop‑vorm",
+    "freedraw": "Vrij tekenen",
+    "arrow": "Actiepijl",
+    "line": "Bewegingslijn",
+    "zoomFit": "Alles passend"
+  },
+  "popbar": {
+    "addToChat": "Bespreek met Nolan"
+  },
+  "loading": {
+    "preparingCanvas": "Canvas voorbereiden…",
+    "loadingSharedCanvas": "Gedeeld canvas laden…"
+  },
+  "header": {
+    "sceneTitlePlaceholder": "Scènetitel",
+    "published": "Gepubliceerd",
+    "checking": "Controleren...",
+    "publish": "Publiceren",
+    "copied": "Gekopieerd!",
+    "share": "Delen",
+    "sharedCanvas": "Gedeeld canvas",
+    "shareCopiedToast": "Deellink gekopieerd naar het klembord!",
+    "shareCopyFailedToast": "Deellink kopiëren mislukt"
+  },
+  "preview": {
+    "mute": "Dempen",
+    "unmute": "Dempen uit",
+    "volume": "Volume: {{percent}}%",
+    "export": "Exporteren",
+    "exporting": "Exporteren...",
+    "exportVideo": "Video exporteren",
+    "playing": "Afspelen",
+    "placeholder": {
+      "title": "Voorbeeldvenster",
+      "hint": "Voeg assets toe aan de tijdlijn om een preview te zien"
+    }
+  },
+  "timeline": {
+    "tracksTitle": "Tracks",
+    "trackLabels": {
+      "script": "Script",
+      "keyframe": "Sleutelframe",
+      "video": "Video",
+      "audio": "Audio",
+      "world": "Wereld"
+    },
+    "indexedTitles": {
+      "script": "Script {{index}}",
+      "keyframe": "Sleutelframe {{index}}",
+      "video": "Video {{index}}",
+      "audio": "Audio {{index}}",
+      "world": "Wereld {{index}}"
+    },
+    "tooltips": {
+      "zoomOut": "Uitzoomen",
+      "zoomIn": "Inzoomen",
+      "rearrangeAllLanes": "Alle lanes herschikken (magnetisch snappen — 0 tijdsafstand)",
+      "play": "Afspelen",
+      "pause": "Pauze"
+    },
+    "actions": {
+      "clickToDrop": "Klik om te plaatsen",
+      "clickToSelect": "Klik om te selecteren"
+    },
+    "assetTypes": {
+      "script": "Script",
+      "keyframe": "Keyframe",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Asset",
+      "world": "Wereld"
+    },
+    "fallbackTitles": {
+      "script": "Script",
+      "keyframe": "Sleutelframe",
+      "video": "Video",
+      "audio": "Audio",
+      "asset": "Asset",
+      "untitled": "Zonder titel",
+      "world": "Wereld"
+    },
+    "alts": {
+      "keyframe": "Sleutelframe",
+      "videoThumbnail": "Videominiatuur"
+    },
+    "scriptDrawer": {
+      "open": "Open script",
+      "title": "Script",
+      "searchPlaceholder": "Search script, shots, elements…",
+      "tabs": {
+        "script": "Script",
+        "elements": "Elements",
+        "shots": "Shots"
+      },
+      "scriptMeta": "{{assetCount}} assets · {{shotCount}} shots · {{elementCount}} elements",
+      "copy": "Copy",
+      "copyPrompt": "Copy prompt",
+      "goToTime": "Go to time",
+      "go": "Go",
+      "timecode": "Time {{seconds}}s",
+      "duration": "{{seconds}}s",
+      "importance": "P{{value}}",
+      "unknownKind": "Unknown",
+      "emptyScript": "No script content.",
+      "noScript": "No script yet. Generate a storyboard to populate Script + Bible.",
+      "noElements": "No key elements yet.",
+      "noShots": "No shot cards yet."
+    },
+    "saveIndicator": {
+      "saveFailed": "Opslaan mislukt",
+      "saving": "Opslaan...",
+      "savedAt": "Opgeslagen {{time}}"
+    }
+  },
+  "publish": {
+    "title": "Publiceren naar de community",
+    "enterTitleError": "Voer een titel in",
+    "success": "Canvas succesvol gepubliceerd naar de community!",
+    "failed": "Canvas publiceren mislukt",
+    "warning": "Dit publiceert alle gesprekken en creatieve resultaten van dit canvas naar de community.",
+    "oncePublished": "Na publicatie kan iedereen je werk bekijken en ontdekken.",
+    "canvasTitleLabel": "CANVASTITEL",
+    "canvasTitlePlaceholder": "Voer canvastitel in",
+    "cancel": "Annuleren",
+    "publish": "Publiceren",
+    "publishing": "Publiceren..."
+  }
+}

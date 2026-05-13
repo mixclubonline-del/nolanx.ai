@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "লাইক",
+      "liked": "লাইক হয়েছে",
+      "share": "শেয়ার",
+      "download": "ডাউনলোড",
+      "downloading": "ডাউনলোড হচ্ছে...",
+      "copying": "কপি হচ্ছে...",
+      "recreate": "আবার তৈরি করুন"
+    },
+    "aria": {
+      "closeVideo": "ভিডিও বন্ধ করুন",
+      "goBack": "ফিরে যান",
+      "likeVideo": "ভিডিও লাইক করুন",
+      "unlikeVideo": "লাইক সরান",
+      "shareVideo": "ভিডিও শেয়ার করুন",
+      "downloadVideo": "ভিডিও ডাউনলোড করুন",
+      "copyingLink": "লিংক কপি হচ্ছে...",
+      "downloading": "ডাউনলোড হচ্ছে..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "লিংক কপি হয়েছে",
+      "videoLinkCopiedMessage": "ভিডিও লিংক ক্লিপবোর্ডে কপি হয়েছে",
+      "copyFailedTitle": "কপি ব্যর্থ",
+      "copyFailedMessage": "লিংক কপি করা যায়নি",
+      "shareFailedTitle": "শেয়ার ব্যর্থ",
+      "shareFailedMessage": "ভিডিও লিংক কপি করা যায়নি",
+      "loginFirst": "অনুগ্রহ করে আগে লগইন করুন",
+      "cannotFollowYourself": "নিজেকে ফলো করা যায় না",
+      "followed": "ফলো করা হয়েছে",
+      "unfollowed": "আনফলো করা হয়েছে",
+      "operationFailed": "অপারেশন ব্যর্থ"
+    },
+    "generation": {
+      "generationModel": "জেনারেশন মডেল",
+      "withEffect": "{effect} সহ",
+      "effectBadge": "ইফেক্ট",
+      "prompt": "প্রম্পট",
+      "referenceImage": "রেফারেন্স ইমেজ",
+      "referenceImageAlt": "ভিডিও জেনারেশনের জন্য রেফারেন্স ইমেজ",
+      "negativePrompt": "নেগেটিভ প্রম্পট",
+      "parameters": "প্যারামিটার",
+      "guidance": "গাইডেন্স",
+      "steps": "ধাপ",
+      "seed": "সিড",
+      "ratio": "অনুপাত"
+    },
+    "author": {
+      "uploaded": "আপলোড হয়েছে {time}",
+      "profile": "প্রোফাইল",
+      "follow": "ফলো",
+      "unfollow": "আনফলো",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "মন্তব্য",
+      "placeholder": "এই ভিডিও সম্পর্কে আপনার ভাবনা শেয়ার করুন...",
+      "send": "পাঠান",
+      "sending": "পাঠানো হচ্ছে...",
+      "empty": "এই ক্রিয়েশনে প্রথম মন্তব্য করুন!"
+    },
+    "time": {
+      "now": "এইমাত্র",
+      "minutesAgo": "{minutes} মিনিট আগে",
+      "hoursAgo": "{hours} ঘণ্টা আগে",
+      "daysAgo": "{days} দিন আগে"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "ক্রেডিট"
+    },
+    "earnCreditsCapsule": {
+      "label": "ক্রেডিট অর্জন করুন",
+      "aria": {
+        "openRewardCenter": "ক্রেডিট অর্জন করুন"
+      },
+      "badge": {
+        "claimed": "ক্লেইম করা হয়েছে"
+      },
+      "title": {
+        "base": "ক্রেডিট অর্জন করুন",
+        "canClaim": "ক্রেডিট অর্জন করুন (+{amount})",
+        "claimedToday": "ক্রেডিট অর্জন করুন (আজ ক্লেইম করা হয়েছে)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "রিওয়ার্ড সেন্টার",
+      "subtitle": {
+        "main": "রেফার করুন ও অর্জন করুন + দৈনিক রিওয়ার্ড",
+        "joined": "কারা যোগ দিয়েছে দেখুন"
+      },
+      "common": {
+        "loading": "লোড হচ্ছে..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} ক্রেডিট"
+      },
+      "actions": {
+        "back": "ফিরে যান",
+        "close": "বন্ধ",
+        "copy": "কপি",
+        "share": "শেয়ার",
+        "inviteFriends": "বন্ধুদের আমন্ত্রণ",
+        "claim": "ক্লেইম",
+        "claiming": "ক্লেইম হচ্ছে...",
+        "claimed": "ক্লেইম করা হয়েছে"
+      },
+      "aria": {
+        "copyInviteCode": "আমন্ত্রণ কোড কপি করুন",
+        "shareInviteLink": "আমন্ত্রণ লিঙ্ক শেয়ার করুন"
+      },
+      "labels": {
+        "inviteLink": "আমন্ত্রণ লিঙ্ক",
+        "inviteCode": "আমন্ত্রণ কোড",
+        "invited": "আমন্ত্রিত",
+        "rewarded": "রিওয়ার্ড প্রাপ্ত",
+        "pending": "অপেক্ষমাণ",
+        "recentInvites": "সাম্প্রতিক আমন্ত্রণ",
+        "recentRewards": "সাম্প্রতিক রিওয়ার্ড",
+        "referEarn": "রেফার করুন ও অর্জন করুন",
+        "dailyRewards": "দৈনিক রিওয়ার্ড",
+        "dailyLogin": "দৈনিক লগইন",
+        "rewardedProgress": "রিওয়ার্ড: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "এখনও কোনো আমন্ত্রণ নেই।",
+        "noRewards": "এখনও কোনো রিওয়ার্ড নেই।"
+      },
+      "status": {
+        "rewarded": "রিওয়ার্ড প্রাপ্ত",
+        "pending": "অপেক্ষমাণ",
+        "verified": "যাচাইকৃত"
+      },
+      "share": {
+        "title": "ReelMind আমন্ত্রণ",
+        "text": "ReelMind-এ আমার সাথে যোগ দিন এবং ফ্রি ক্রেডিট পান।"
+      },
+      "toast": {
+        "copiedTitle": "কপি হয়েছে",
+        "copiedDescription": "{label} ক্লিপবোর্ডে কপি হয়েছে।",
+        "copyFailedTitle": "কপি ব্যর্থ",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "দয়া করে হাতে কপি করুন।",
+        "claimFailedTitle": "ক্লেইম ব্যর্থ",
+        "claimedTitle": "ক্লেইম করা হয়েছে",
+        "claimedDescription": "আপনি {amount} ক্রেডিট পেয়েছেন।"
+      },
+      "referEarn": {
+        "tipLabel": "আমন্ত্রণ ও অর্জনের নিয়ম",
+        "tipTitle": "কীভাবে কাজ করে",
+        "tipBody1": "আপনার আমন্ত্রণ লিঙ্ক শেয়ার করুন। নতুন ব্যবহারকারী আপনার কোড দিয়ে সাইন আপ করে যোগ্য কোনো কাজ সম্পন্ন করলে, সিস্টেম ভেরিফিকেশনের পরে ক্রেডিট দেওয়া হবে।",
+        "tipBody2": "টিয়ার্ড রিওয়ার্ড: 1-5 = 50, 6-15 = 100, 16-20 = 200 ক্রেডিট।",
+        "cardTitle": "বন্ধুদের আমন্ত্রণ করে ক্রেডিট পান",
+        "upTo": "সর্বোচ্চ {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "দৈনিক লগইন নিয়ম",
+        "tipTitle": "দৈনিক রিওয়ার্ড",
+        "tipBodyPrefix": "রিওয়ার্ড শুরু হয়",
+        "tipBodyDay2": "২য় দিন",
+        "tipBodySuffix": "থেকে এবং প্রতি UTC দিনে রিসেট হয়।",
+        "status": {
+          "loading": "স্ট্যাটাস লোড হচ্ছে...",
+          "claimed": "ক্লেইম করা হয়েছে",
+          "readyToClaim": "ক্লেইম করার জন্য প্রস্তুত",
+          "locked": "লকড"
+        },
+        "errors": {
+          "alreadyClaimed": "আজ ইতিমধ্যে ক্লেইম করা হয়েছে।",
+          "notEligible": "এখনই ক্লেইম করার যোগ্য নন।",
+          "riskBlocked": "রিস্ক কন্ট্রোলের কারণে ক্লেইম ব্লক হয়েছে।",
+          "generic": "কিছু সমস্যা হয়েছে। পরে আবার চেষ্টা করুন।"
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "এক্সপ্লোর",
+      "video": "ভিডিও",
+      "image": "ছবি",
+      "music": "মিউজিক",
+      "edit": "সম্পাদনা",
+      "experiment": "পরীক্ষা"
+    },
+    "special": {
+      "nolan": "নোলান"
+    },
+    "bottom": {
+      "affiliate": "অ্যাফিলিয়েট",
+      "contactUs": "যোগাযোগ করুন",
+      "blog": "ব্লগ",
+      "apiPlatform": "API প্ল্যাটফর্ম"
+    },
+    "badges": {
+      "help": "সাহায্য",
+      "new": "নতুন",
+      "free": "ফ্রি"
+    },
+    "sidebar": {
+      "more": "আরও",
+      "closeMenu": "মেনু বন্ধ করুন",
+      "moreTools": "আরও টুল",
+      "followOnX": "X (Twitter)-এ আমাদের ফলো করুন",
+      "followOnTikTok": "TikTok-এ আমাদের ফলো করুন",
+      "subscribeOnYouTube": "আমাদের YouTube চ্যানেলে সাবস্ক্রাইব করুন",
+      "termsOfService": "পরিষেবার শর্তাবলী",
+      "privacyPolicy": "গোপনীয়তা নীতি"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "বৈশিষ্ট্য",
+        "models": "মডেল"
+      },
+      "features": {
+        "createVideo": {
+          "title": "ভিডিও তৈরি করুন",
+          "description": "এআই ভিডিও তৈরি করুন"
+        },
+        "cinemaStudioVideo": {
+          "title": "সিনেমা স্টুডিও ভিডিও",
+          "description": "ক্যামেরা মুভমেন্ট সহ প্রো ভিডিও"
+        },
+        "mixedMedia": {
+          "title": "মিশ্র মিডিয়া",
+          "description": "টেক্সট, ছবি এবং ভিডিও মিশ্রিত করুন"
+        },
+        "editVideo": {
+          "title": "ভিডিও সম্পাদনা করুন",
+          "description": "দৃশ্য, শট, উপাদান সম্পাদনা করুন"
+        },
+        "clickToAd": {
+          "title": "বিজ্ঞাপনে ক্লিক করুন",
+          "description": "ক্লিপগুলিকে বিজ্ঞাপনে পরিণত করুন"
+        },
+        "sora2Trends": {
+          "title": "সোরা 2 প্রবণতা",
+          "description": "প্রবণতা-চালিত ভিডিও ধারণা"
+        },
+        "lipsyncStudio": {
+          "title": "লিপসিঙ্ক স্টুডিও",
+          "description": "মুখের সাথে অডিও সিঙ্ক করুন"
+        },
+        "drawToVideo": {
+          "title": "ভিডিওতে আঁকুন",
+          "description": "স্কেচ সিনেমায় পরিণত হয়"
+        },
+        "sketchToVideo": {
+          "title": "ভিডিওতে স্কেচ করুন",
+          "description": "সোরা 2 সহ স্কেচ থেকে ভিডিও পর্যন্ত"
+        },
+        "ugcFactory": {
+          "title": "ইউজিসি ফ্যাক্টরি",
+          "description": "ক্রিয়েটর-প্রস্তুত বিষয়বস্তু দ্রুত"
+        },
+        "videoUpscale": {
+          "title": "ভিডিও আপস্কেল",
+          "description": "স্পষ্টতার সাথে রেজোলিউশন বাড়ান"
+        },
+        "higgsfieldAnimate": {
+          "title": "হিগসফিল্ড অ্যানিমেট",
+          "description": "শৈলী সঙ্গে স্থির অ্যানিমেট"
+        },
+        "recastStudio": {
+          "title": "রিকাস্ট স্টুডিও",
+          "description": "অভিনেতা এবং শৈলী পুনর্নির্মাণ"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "সিনেমাটিক ক্যামেরা নিয়ন্ত্রণ"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "গতিশীল গতি নিয়ন্ত্রণ"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "উচ্চ-মানের পাঠ্য থেকে ভিডিও"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "নির্ভুল ভিডিও সম্পাদনা"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "পরবর্তী প্রজন্মের ভিডিও প্রজন্ম"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "বাস্তবসম্মত সিনেমাটোগ্রাফি"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "শৈলীকৃত গতি এবং ছন্দ"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "দ্রুত সিনেমাটিক ভিডিও"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "পরিষ্কার বিবরণ এবং স্বন"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "অবতার-চালিত পারফরম্যান্স"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "বৈশিষ্ট্য",
+        "models": "মডেল"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "ছবি তৈরি করুন",
+          "description": "এআই ইমেজ তৈরি করুন"
+        },
+        "cinemaStudioImage": {
+          "title": "সিনেমা স্টুডিও ইমেজ",
+          "description": "বাস্তব ক্যামেরা এবং লেন্স সিমুলেশন"
+        },
+        "createStoryboard": {
+          "title": "স্টোরিবোর্ড তৈরি করুন",
+          "description": "আপনার গল্পের দৃশ্য ডিজাইন করুন"
+        },
+        "soulIdCharacter": {
+          "title": "সোল আইডি ক্যারেক্টার",
+          "description": "অনন্য চরিত্র তৈরি করুন"
+        },
+        "relight": {
+          "title": "রিলাইট",
+          "description": "আলোর অবস্থান, রঙ এবং উজ্জ্বলতা সামঞ্জস্য করুন"
+        },
+        "inpaint": {
+          "title": "ইনপেইন্ট",
+          "description": "একটি এলাকা নির্বাচন করুন, পরিবর্তন বর্ণনা করুন"
+        },
+        "imageUpscale": {
+          "title": "ইমেজ আপস্কেল",
+          "description": "ছবির গুণমান উন্নত করুন"
+        },
+        "faceSwap": {
+          "title": "মুখ অদলবদল",
+          "description": "বাস্তবসম্মত মুখ অদলবদল তৈরি করুন"
+        },
+        "characterSwap": {
+          "title": "চরিত্রের অদলবদল",
+          "description": "বাস্তবসম্মত চরিত্রের অদলবদল তৈরি করুন"
+        },
+        "drawToEdit": {
+          "title": "সম্পাদনা করতে আঁকুন",
+          "description": "স্কেচ থেকে ছবি"
+        },
+        "instadump": {
+          "title": "ইন্সটাডাম্প",
+          "description": "একটি সেলফিকে সম্পূর্ণ কন্টেন্ট লাইব্রেরিতে পরিণত করুন"
+        },
+        "photodumpStudio": {
+          "title": "ফটোডাম্প স্টুডিও",
+          "description": "আপনার নান্দনিকতা তৈরি করুন"
+        },
+        "fashionFactory": {
+          "title": "ফ্যাশন ফ্যাক্টরি",
+          "description": "ফ্যাশন সেট তৈরি করুন"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "অতি-বাস্তববাদী ফ্যাশন ভিজ্যুয়াল"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "স্টোরিবোর্ড, সম্পাদনা, তৈরি করুন"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "সর্বকালের সেরা 4K ইমেজ মডেল"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "নেক্সট-জেনার 4K ইমেজ মডেল"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "ট্রু-কালার নির্ভুলতা রেন্ডারিং"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "গতি-অপ্টিমাইজ করা বিশদ"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "তাত্ক্ষণিক প্রাণবন্ত প্রতিকৃতি"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "ফটোরিয়ালিস্টিক, প্রম্পট-সঠিক ছবি"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "বাস্তবসম্মত ছবি"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "উন্নত ইমেজ এডিটিং মডেল"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "উচ্চ-রেজোলিউশন আপস্কেলার"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "সব",
+        "recommended": "প্রস্তাবিত",
+        "saved": "সংরক্ষিত"
+      },
+      "labels": {
+        "camera": "ক্যামেরা",
+        "lens": "লেন্স",
+        "focalLength": "ফোকাল লেংথ",
+        "aperture": "অ্যাপারচার"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "সেটআপ সংরক্ষণ করুন",
+        "removeSetup": "সেটআপ সরান",
+        "close": "বন্ধ"
+      },
+      "empty": "এখনও কোনো সেটআপ নেই"
+    },
+    "page": {
+      "title": "পরীক্ষা",
+      "subtitle": "প্রথমে নতুন ওয়ার্কফ্লো চেষ্টা করুন",
+      "back": "পরীক্ষায় ফিরে যান"
+    },
+    "menu": {
+      "title": "পরীক্ষা",
+      "open": "খোলা"
+    },
+    "tabs": {
+      "character": "চরিত্র",
+      "inpaint": "ইনপেইন্ট",
+      "cinemaStudio": "সিনেমা স্টুডিও",
+      "motionControl": "গতি নিয়ন্ত্রণ",
+      "assist": "সহায়তা করুন"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "ইনপেইন্ট",
+        "description": "একটি এলাকার উপর রং করুন এবং পরিবর্তন বর্ণনা করুন"
+      },
+      "cinemaStudio": {
+        "title": "সিনেমা স্টুডিও",
+        "description": "পেশাদার সিনেমাটিক ওয়ার্কফ্লো"
+      },
+      "motionControl": {
+        "title": "গতি নিয়ন্ত্রণ",
+        "description": "একটি রেফারেন্স ভিডিও থেকে গতি অনুলিপি"
+      },
+      "assist": {
+        "title": "সহায়তা করুন",
+        "description": "প্রম্পটিং এবং সৃজনশীল সহকারী সরঞ্জাম"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "চরিত্র",
+        "subtitle": "অক্ষর সামঞ্জস্যের সরঞ্জাম (প্লেসহোল্ডার)"
+      },
+      "inpaint": {
+        "title": "ইনপেইন্ট",
+        "subtitle": "মিডিয়া আপলোড করুন, একটি এলাকা নির্বাচন করুন এবং সম্পাদনা বর্ণনা করুন"
+      },
+      "cinemaStudio": {
+        "title": "সিনেমা স্টুডিও",
+        "subtitle": "ক্যামেরা-সচেতন প্রম্পট সহ সিনেমাটিক শট তৈরি করুন"
+      },
+      "motionControl": {
+        "title": "গতি নিয়ন্ত্রণ",
+        "subtitle": "আপনার ইমেজ সঙ্গে গতি পুনরায় তৈরি করুন"
+      },
+      "assist": {
+        "title": "সহায়তা করুন",
+        "subtitle": "চ্যাট, টিপস এবং প্রম্পট ইউটিলিটি"
+      }
+    },
+    "actions": {
+      "upload": "মিডিয়া আপলোড করুন",
+      "generate": "তৈরি করুন",
+      "history": "ইতিহাস",
+      "howItWorks": "এটা কিভাবে কাজ করে",
+      "sendMessage": "একটি বার্তা পাঠান...",
+      "tryExample": "একটি উদাহরণ চেষ্টা করুন",
+      "send": "পাঠান"
+    },
+    "placeholders": {
+      "exploreFeatures": "অন্বেষণ বৈশিষ্ট্য",
+      "settings": "সেটিংস",
+      "camera": "ক্যামেরা",
+      "cameraHint": "ক্যামেরা আচরণ চয়ন করুন (স্থানধারক)",
+      "lens": "লেন্স",
+      "lensHint": "লেন্স বিকল্পগুলি নির্বাচন করুন (প্লেসহোল্ডার)",
+      "image": "ছবি",
+      "video": "ভিডিও",
+      "scenePrompt": "আপনি যে দৃশ্যটি কল্পনা করেন তা বর্ণনা করুন..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "অনুলিপি করতে গতি যোগ করুন",
+          "description": "ভিডিওর সময়কাল: 3-30 সেকেন্ড"
+        },
+        "addCharacter": {
+          "title": "আপনার চরিত্র যোগ করুন",
+          "description": "দৃশ্যমান মুখ এবং শরীরের সঙ্গে ছবি"
+        }
+      },
+      "quality": {
+        "title": "গুণমান",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "উন্নত সেটিংস"
+      },
+      "hero": {
+        "title": {
+          "prefix": "যে কোনো রিক্রিয়েট করুন",
+          "highlight": "গতি",
+          "suffix": "আপনার ইমেজ সঙ্গে"
+        },
+        "subtitle": "যেকোনো ভিডিও থেকে গতি অনুলিপি করুন এবং আপনার চরিত্রটিকে একই আন্দোলনে রাখুন"
+      },
+      "library": {
+        "title": "লাইব্রেরি থেকে গতি কপি করে শুরু করুন"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind সহায়তা",
+        "subtitle": "আপনার পকেটে পিএইচডিদের একটি দল, নির্মাতাদের জন্য তৈরি।"
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "আপনি কি করতে পারেন?",
+          "description": "এক্সপ্লোর করুন ReelMind AI বৈশিষ্ট্য"
+        },
+        "howToCreate": {
+          "title": "আমি কিভাবে অত্যাশ্চর্য বিষয়বস্তু তৈরি করতে পারি?",
+          "description": "আরও ভাল AI প্রম্পট লেখার জন্য টিপস"
+        },
+        "generateSoulImagePrompt": {
+          "title": "সোল ইমেজ প্রম্পট তৈরি করুন",
+          "description": "উচ্চ-নান্দনিক চিত্রগুলির জন্য একটি প্রম্পট লিখুন"
+        },
+        "generateVideoPrompt": {
+          "title": "ভিডিও প্রম্পট তৈরি করুন",
+          "description": "সিনেমাটিক ভিডিওর জন্য একটি প্রম্পট লিখুন"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "চরিত্রের ধারাবাহিকতা",
+          "description": "ফ্রেম জুড়ে আপনার চরিত্রকে সুসঙ্গত রাখুন (প্লেসহোল্ডার)"
+        },
+        "library": {
+          "title": "অক্ষর গ্রন্থাগার",
+          "description": "একটি সংরক্ষিত অক্ষর বেছে নিন বা টেমপ্লেট থেকে শুরু করুন (প্লেসহোল্ডার)"
+        }
+      },
+      "placeholders": {
+        "preview": "পূর্বরূপ (স্থানধারক)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - ফ্রি AI ভিডিও ক্রিয়েটর কমিউনিটি, AI ভিডিও তৈরি ও শেয়ার করুন",
+      "description": "বিশ্বজুড়ে কনটেন্ট ক্রিয়েটরদের ট্রেন্ডিং ক্রিয়েটিভ ভিডিও এক্সপ্লোর করুন। অনুপ্রেরণা, বিনোদন খুঁজুন এবং আপনার পছন্দেরগুলো রিমিক্স করুন।"
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 এখন লাইভ!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "সব",
+        "latest": "সর্বশেষ",
+        "hot": "জনপ্রিয়"
+      },
+      "tooltip": {
+        "filterByModel": "{model} মডেল দিয়ে ফিল্টার করুন"
+      },
+      "aria": {
+        "previous": "আগের ক্যাটেগরি",
+        "next": "পরের ক্যাটেগরি"
+      },
+      "error": {
+        "loadFailed": "ক্যাটেগরি লোড ব্যর্থ"
+      },
+      "actions": {
+        "retry": "আবার চেষ্টা করুন"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "AI ভিডিও তৈরি করুন"
+      },
+      "nolan": {
+        "title": "নোলান",
+        "description": "বিশ্বের #1 AI এজেন্ট পরিচালক"
+      },
+      "badges": {
+        "models": "মডেল",
+        "free": "ফ্রি"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "এক্সপ্লোর - ReelMind",
+      "description": "ReelMind-এ বিশ্বজুড়ে কনটেন্ট ক্রিয়েটরদের ট্রেন্ডিং ক্রিয়েটিভ ভিডিও এক্সপ্লোর করুন।"
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI মডেল ও ইফেক্টস - ReelMind",
+      "description": "ReelMind প্ল্যাটফর্মে দারুণ AI-জেনারেটেড ভিডিও তৈরি করতে AI ভিডিও মডেল ও ইফেক্টস ব্রাউজ ও ব্যবহার করুন। আমাদের আধুনিক AI মডেল সংগ্রহ এক্সপ্লোর করুন।"
+    },
+    "page": {
+      "title": "AI মডেল ও ইফেক্টস",
+      "description": "ভিডিও জেনারেশনের জন্য আমাদের আধুনিক AI মডেল ও ইফেক্টস সংগ্রহ ব্রাউজ করুন",
+      "footerIntro": "ভিডিও জেনারেশনের জন্য আমাদের {count}টি AI মডেল সংগ্রহ আবিষ্কার করুন।"
+    },
+    "sections": {
+      "models": "মডেল",
+      "effects": "ইফেক্টস"
+    },
+    "actions": {
+      "viewAll": "সব দেখুন",
+      "viewAllModels": "সব মডেল দেখুন",
+      "backToModels": "মডেলে ফিরে যান"
+    },
+    "types": {
+      "allModels": "সব মডেল",
+      "textToVideo": "টেক্সট থেকে ভিডিও",
+      "imageToVideo": "ছবি থেকে ভিডিও",
+      "videoToVideo": "ভিডিও থেকে ভিডিও"
+    },
+    "all": {
+      "titleAll": "সব ভিডিও মডেল",
+      "titleByType": "{type} মডেল",
+      "description": "ভিডিও জেনারেশনের জন্য আমাদের AI মডেল সংগ্রহ ব্রাউজ করুন",
+      "countAll": "({count} মডেল)",
+      "countByType": "({count} {type} মডেল)",
+      "loadingMore": "আরও মডেল লোড হচ্ছে...",
+      "loadMore": "আরও মডেল লোড করুন",
+      "end": "শেষে পৌঁছে গেছেন! সব মডেল লোড হয়েছে।",
+      "empty": "আপনার মানদণ্ড অনুযায়ী কোনো মডেল পাওয়া যায়নি।"
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "চেকপয়েন্ট",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "সমর্থিত ফিচার",
+      "metaTitle": "{name} - AI মডেল | ReelMind",
+      "metaDescriptionFallback": "ReelMind-এ ভিডিও জেনারেশনের জন্য {name} মডেল এক্সপ্লোর করুন।",
+      "metaErrorTitle": "মডেল বিস্তারিত | ReelMind",
+      "metaErrorDescription": "ReelMind-এ ভিডিও জেনারেশনের জন্য AI মডেল এক্সপ্লোর করুন।"
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI ইফেক্টস - ReelMind",
+      "description": "ReelMind প্ল্যাটফর্মে আপনার AI-জেনারেটেড ভিডিও উন্নত করতে AI ভিডিও ইফেক্টস ব্রাউজ ও ব্যবহার করুন।"
+    },
+    "page": {
+      "title": "AI ইফেক্টস",
+      "description": "আপনার ভিডিও উন্নত করতে আমাদের AI ইফেক্টস সংগ্রহ ব্রাউজ করুন"
+    },
+    "all": {
+      "title": "সব AI ইফেক্টস",
+      "description": "আপনার ভিডিও উন্নত করতে আমাদের সম্পূর্ণ AI ইফেক্টস সংগ্রহ ব্রাউজ করুন"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "ইফেক্টসে ফিরে যান",
+        "goBack": "ফিরে যান",
+        "applyThisEffect": "এই ইফেক্ট প্রয়োগ করুন"
+      },
+      "badge": "ইফেক্ট",
+      "addedOn": "{date} তারিখে যোগ করা হয়েছে",
+      "errors": {
+        "notFound": "ইফেক্ট পাওয়া যায়নি",
+        "loadFailed": "ইফেক্টের বিস্তারিত লোড ব্যর্থ"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "AI ভিডিও তৈরি করুন - ReelMind",
+      "description": "ReelMind প্ল্যাটফর্মে আমাদের শক্তিশালী AI মডেল ও টুল ব্যবহার করে দারুণ AI-জেনারেটেড ভিডিও তৈরি করুন।"
+    },
+    "loading": "লোড হচ্ছে...",
+    "loadingMobile": "মোবাইল ভিউ লোড হচ্ছে...",
+    "loadingControlPanel": "কন্ট্রোল প্যানেল লোড হচ্ছে...",
+    "controlPanel": {
+      "modelAndSettings": "মডেল ও সেটিংস",
+      "history": "হিস্ট্রি",
+      "model": "মডেল",
+      "selectModel": "মডেল নির্বাচন করুন"
+    },
+    "mobile": {
+      "backToCreate": "Create-এ ফিরে যান"
+    },
+    "modelSelector": {
+      "loadingModels": "মডেল লোড হচ্ছে...",
+      "moreModels": "{count}টি আরও মডেল",
+      "exploreMoreModels": "{count}টি আরও মডেল এক্সপ্লোর করুন"
+    },
+    "promptInput": {
+      "title": "প্রম্পট",
+      "placeholder": "আপনি কী তৈরি করতে চান তা বর্ণনা করুন...",
+      "enhance": "উন্নত করুন",
+      "undo": "আনডু",
+      "restoreOriginalPromptTitle": "মূল প্রম্পট ফিরিয়ে আনুন",
+      "toastEnhanced": "প্রম্পট উন্নত হয়েছে",
+      "toastRestored": "মূল প্রম্পট ফিরিয়ে আনা হয়েছে",
+      "enhanceFailed": "প্রম্পট উন্নত করতে ব্যর্থ",
+      "sensitiveError": "সেন্সিটিভ কীওয়ার্ড শনাক্ত হয়েছে: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "ছবি",
+      "mentionVideoTokenPrefix": "ভিডিও",
+      "mentionAudioTokenPrefix": "অডিও"
+    },
+    "referenceUploader": {
+      "addOptional": "ঐচ্ছিক রেফারেন্স যোগ করুন",
+      "referenceImage": "রেফারেন্স ছবি",
+      "referenceImages": "রেফারেন্স ছবি ({current}/{max})",
+      "referenceVideo": "রেফারেন্স ভিডিও",
+      "dropImage": "এখানে ছবি ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "dropImageMax": "এখানে সর্বোচ্চ {max}টি ছবি ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "dropVideo": "এখানে ভিডিও ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "pasteHint": "পেস্ট",
+      "videoUploaded": "ভিডিও আপলোড হয়েছে",
+      "uploading": "আপলোড হচ্ছে...",
+      "addMore": "আরও যোগ করুন",
+      "removeReference": "সরান",
+      "referenceImageAlt": "রেফারেন্স ছবি {index}",
+      "supportedFormats": "সমর্থিত: PNG, JPG",
+      "minimumSize": "ন্যূনতম {minWidth}×{minHeight}, অ্যাসপেক্ট রেশিও {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} আপলোড হচ্ছে...",
+      "processingFile": "ফাইল প্রসেস হচ্ছে...",
+      "uploadReference": "রেফারেন্স {type} আপলোড করুন",
+      "image": "ছবি",
+      "video": "ভিডিও",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "অ্যাসপেক্ট রেশিও",
+      "duration": "সময়কাল",
+      "seconds": "{seconds} সে",
+      "resolution": "রেজোলিউশন",
+      "audio": "অডিও",
+      "on": "চালু",
+      "off": "বন্ধ",
+      "advanced": "অ্যাডভান্সড",
+      "advancedShort": "অ্যাডভান্সড",
+      "creativityLevel": "ক্রিয়েটিভিটি",
+      "moreAccurate": "আরও সঠিক",
+      "moreCreative": "আরও সৃজনশীল",
+      "samplingSteps": "স্যাম্পলিং স্টেপস",
+      "faster": "দ্রুত ({steps} স্টেপ)",
+      "higherQuality": "উচ্চ মান ({steps} স্টেপ)",
+      "randomSeed": "র‌্যান্ডম Seed",
+      "seedPlaceholder": "Seed লিখুন",
+      "generateRandomSeed": "র‌্যান্ডম Seed তৈরি করুন",
+      "seedHint": "পুনরুত্পাদনযোগ্য ফলাফলের জন্য নির্দিষ্ট Seed ব্যবহার করুন।",
+      "movementAmplitude": "মুভমেন্ট",
+      "movementAmplitudeHint": "মোশনের তীব্রতা নিয়ন্ত্রণ করে।",
+      "backgroundMusic": "ব্যাকগ্রাউন্ড মিউজিক",
+      "backgroundMusicHint": "সমর্থিত হলে ব্যাকগ্রাউন্ড মিউজিক যোগ করে।",
+      "enabled": "চালু",
+      "disabled": "বন্ধ",
+      "negativePrompt": "নেগেটিভ প্রম্পট",
+      "negativePromptPlaceholder": "কী এড়াতে চান..."
+    },
+    "startToEndUploader": {
+      "title": "স্টার্ট-টু-এন্ড ফ্রেম",
+      "startFrame": "শুরুর ফ্রেম",
+      "endFrame": "শেষ ফ্রেম",
+      "dropStartImage": "শুরুর ছবি ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "dropEndImage": "শেষের ছবি ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "startFrameImageAlt": "শুরুর ফ্রেম",
+      "endFrameImageAlt": "শেষ ফ্রেম",
+      "uploading": "আপলোড হচ্ছে...",
+      "instructions": "ট্রানজিশন গাইড করতে শুরুর ও শেষের ছবি আপলোড করুন।",
+      "supportedFormats": "সমর্থিত: PNG, JPG",
+      "minimumSize": "ন্যূনতম {minWidth}×{minHeight}, অ্যাসপেক্ট রেশিও {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "প্রয়োজনে ছবি স্বয়ংক্রিয়ভাবে কমপ্রেস হবে।"
+    },
+    "modelTabs": {
+      "imageToVideo": "ছবি থেকে ভিডিও",
+      "textToVideo": "টেক্সট থেকে ভিডিও",
+      "firstLastFrame": "প্রথম-শেষ ফ্রেম",
+      "edit": "সম্পাদনা করুন",
+      "effect": "ইফেক্ট"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "রেফারেন্স ভিডিও",
+      "required": "প্রয়োজন",
+      "removeVideo": "ভিডিও সরান",
+      "uploading": "আপলোড হচ্ছে...",
+      "dropVideo": "এখানে একটি ভিডিও ড্রপ করুন বা আপলোড করতে ক্লিক করুন",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "উপাদান",
+      "optional": "ঐচ্ছিক ({current}/{max})",
+      "addElements": "যোগ করুন",
+      "elementAlt": "উপাদান {index}",
+      "removeElement": "উপাদান সরান {index}",
+      "dropElements": "উপাদান ইমেজ যোগ করতে ক্লিক করুন",
+      "elementsHint": "অক্ষর/শৈলী সংরক্ষণের জন্য ঐচ্ছিক ছবি।",
+      "errors": {
+        "invalidVideoTitle": "অবৈধ ভিডিও",
+        "invalidVideoDescription": "একটি ভিডিও ফাইল চয়ন করুন.",
+        "videoTooLargeTitle": "ভিডিও অনেক বড়",
+        "videoTooLargeDescription": "সর্বোচ্চ {maxMb}MB। অনুগ্রহ করে একটি ছোট/ছোট ক্লিপ আপলোড করুন।",
+        "uploadFailedTitle": "আপলোড ব্যর্থ হয়েছে",
+        "elementsLimitTitle": "উপাদানের সীমা পৌঁছেছে",
+        "elementsLimitDescription": "আপনি {max} পর্যন্ত ছবি যোগ করতে পারেন।",
+        "imageTooSmall": "চিত্রটি কমপক্ষে {minWidth}×{minHeight} (বর্তমান: {width}×{height}) হতে হবে।",
+        "imageBadRatio": "ছবির আকৃতির অনুপাত {minAspectRatio} এবং {maxAspectRatio} এর মধ্যে হতে হবে (বর্তমান: {current})।"
+      },
+      "warnings": {
+        "someSkippedTitle": "কিছু ফাইল এড়িয়ে গেছে",
+        "someSkippedDescription": "সীমার কারণে {count} ফাইলগুলি এড়িয়ে গেছে৷",
+        "skippedTitle": "এড়িয়ে গেছে",
+        "skippedNonImage": "উপাদানের জন্য শুধুমাত্র ছবি অনুমোদিত.",
+        "imageCompressedTitle": "ছবি সংকুচিত",
+        "imageCompressedDescription": "{original} থেকে {final} পর্যন্ত সংকুচিত।",
+        "skippedInvalidImage": "অবৈধ ছবি।"
+      }
+    },
+    "howItWorks": {
+      "title": "এটা কিভাবে কাজ করে",
+      "hero": {
+        "title": "এক ক্লিকে ভিডিও তৈরি করুন",
+        "subtitle": "ক্যামেরা নিয়ন্ত্রণ, ফ্রেমিং এবং VFX-এর জন্য প্রিসেট ব্যবহার করুন — অথবা প্রম্পট সহ সম্পূর্ণ ম্যানুয়াল যান।"
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "ছবি যোগ করুন",
+          "2": "প্রিসেট চয়ন করুন",
+          "3": "ভিডিও পান"
+        },
+        "t2v": {
+          "1": "প্রম্পট লিখুন",
+          "2": "মডেল চয়ন করুন",
+          "3": "ভিডিও পান"
+        },
+        "flf": {
+          "1": "ফ্রেম যোগ করুন",
+          "2": "ট্রানজিশন বর্ণনা করুন",
+          "3": "ভিডিও পান"
+        },
+        "edit": {
+          "1": "ভিডিও যোগ করুন",
+          "2": "উপাদান যোগ করুন",
+          "3": "ভিডিও পান"
+        }
+      },
+      "modes": {
+        "edit": "সম্পাদনা করুন (ভিডিও-টু-ভিডিও)",
+        "flf": "প্রথম-শেষ ফ্রেম",
+        "i2v": "ছবি থেকে ভিডিও",
+        "t2v": "টেক্সট-টু-ভিডিও"
+      },
+      "steps": {
+        "edit": {
+          "1": "একটি ছোট রেফারেন্স ভিডিও আপলোড করুন.",
+          "2": "অক্ষর/শৈলী সামঞ্জস্যপূর্ণ রাখতে ঐচ্ছিকভাবে 4টি পর্যন্ত উপাদান চিত্র যোগ করুন।",
+          "3": "প্রম্পটে কী পরিবর্তন করতে হবে (এবং কী রাখতে হবে) তা বর্ণনা করুন, তারপর তৈরি করুন।"
+        },
+        "flf": {
+          "1": "একটি শুরু ফ্রেম এবং একটি শেষ ফ্রেম আপলোড করুন৷",
+          "2": "আপনি যে রূপান্তর চান তা বর্ণনা করুন।",
+          "3": "একটি মসৃণ রূপান্তর তৈরি করতে জেনারেট করুন।"
+        },
+        "i2v": {
+          "1": "একটি রেফারেন্স ইমেজ আপলোড করুন.",
+          "2": "গতি, ক্যামেরা এবং শৈলী বর্ণনা করুন।",
+          "3": "অনুপাত/সময়কাল নির্বাচন করুন এবং তৈরি করুন।"
+        },
+        "t2v": {
+          "1": "আপনার দৃশ্য বর্ণনা করুন (বিষয়, ক্যামেরা, আলো, শৈলী)।",
+          "2": "অনুপাত/সময়কাল চয়ন করুন এবং ঐচ্ছিকভাবে একটি নেতিবাচক প্রম্পট যোগ করুন।",
+          "3": "তৈরি করুন এবং ছোট পরিবর্তনের সাথে পুনরাবৃত্তি করুন।"
+        }
+      },
+      "tip": "টিপ: নির্দিষ্ট হন। মডেলকে বলুন কী একই থাকতে হবে (পরিচয়, লোগো, রচনা)।",
+      "templates": {
+        "title": "প্রিসেট",
+        "subtitle": "একটি ক্লাসিক প্রিসেট বেছে নিন এবং দ্রুত জেনারেট করুন।",
+        "use": "ব্যবহার করুন",
+        "clear": "পরিষ্কার",
+        "prev": "পূর্ববর্তী প্রিসেট",
+        "next": "পরবর্তী প্রিসেট",
+        "edit": {
+          "relight": {
+            "title": "রিলাইট এবং বায়ুমণ্ডল",
+            "description": "দিনের সময় এবং সিনেমাটিক আলো পরিবর্তন করুন।"
+          },
+          "grade": {
+            "title": "সিনেমাটিক গ্রেড",
+            "description": "টিল-কমলা গ্রেড + ফিল্ম শস্য, গতি এবং পরিচয় রাখুন।"
+          },
+          "weather": {
+            "title": "আবহাওয়া পরিবর্তন",
+            "description": "পরিচয় রাখার সময় বৃষ্টি/কুয়াশা যোগ করুন।"
+          },
+          "anime": {
+            "title": "এনিমে রিস্টাইল",
+            "description": "পরিচয় এবং গতি সংরক্ষণ করার সময় অ্যানিমে চেহারা."
+          },
+          "background": {
+            "title": "পটভূমি প্রতিস্থাপন",
+            "description": "বিষয় রাখার সময় ব্যাকগ্রাউন্ড অদলবদল করুন।"
+          },
+          "lux": {
+            "title": "প্রিমিয়াম পলিশ",
+            "description": "ক্লিনার, মসৃণ, আরও প্রিমিয়াম বাণিজ্যিক অনুভূতি।"
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "দিন → রাত",
+            "description": "সামঞ্জস্যপূর্ণ ফ্রেমিং সহ মসৃণ আলো/সময় পরিবর্তন।"
+          },
+          "sketchToRender": {
+            "title": "স্কেচ → রেন্ডার",
+            "description": "স্কেচ থেকে চূড়ান্ত রেন্ডার পর্যন্ত ধীরে ধীরে বিশদ প্রকাশ করুন।"
+          },
+          "beforeAfter": {
+            "title": "প্রকাশের আগে/পরে",
+            "description": "সূক্ষ্ম গতির সাথে স্বাদযুক্ত রূপান্তর।"
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "প্রতিকৃতি জীবন",
+            "description": "একটি ধীর পুশ-ইন সহ ব্লিঙ্ক + সূক্ষ্ম গতি।"
+          },
+          "pan": {
+            "title": "প্যারালাক্স প্যান",
+            "description": "গভীরতা এবং মোশন ব্লার সহ সিনেমাটিক প্যান।"
+          },
+          "product": {
+            "title": "পণ্য স্পিন",
+            "description": "চকচকে হাইলাইট সহ স্টুডিও পণ্য চেহারা."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8s প্রিমিয়াম বিজ্ঞাপন",
+            "description": "একটি পরিষ্কার, উচ্চ-শেষ বাণিজ্যিক শট।"
+          },
+          "establish": {
+            "title": "শট স্থাপন",
+            "description": "একটি বিশ্ব/দৃশ্যের জন্য ব্যাপক সিনেমাটিক ভূমিকা।"
+          },
+          "anime": {
+            "title": "এনিমে উদ্বোধন",
+            "description": "স্টাইলাইজড এনিমে ওপেনিং-স্টাইল শট।"
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Image-to-Video এর জন্য একটি রেফারেন্স ছবি দরকার।",
+        "i2vDescription": "দয়া করে একটি রেফারেন্স ছবি আপলোড করুন, অথবা Text-to-Video মডেলে যান।",
+        "v2vTitle": "Video-to-Video এর জন্য একটি রেফারেন্স ভিডিও দরকার।",
+        "v2vDescription": "দয়া করে একটি রেফারেন্স ভিডিও আপলোড করুন, অথবা Text-to-Video মডেলে যান।"
+      },
+      "costLabel": "খরচ:",
+      "balanceLabel": "ব্যালেন্স:",
+      "freeUnlimited": "ফ্রি (আনলিমিটেড)",
+      "credits": "ক্রেডিট",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast একটি Luxury মডেল এবং Unlimited ফ্রি ব্যবহারে অন্তর্ভুক্ত নয়। অতিরিক্ত পেমেন্ট প্রয়োজন।",
+        "veo31": "VEO 3.1 একটি Luxury মডেল এবং Unlimited ফ্রি ব্যবহারে অন্তর্ভুক্ত নয়। অতিরিক্ত পেমেন্ট প্রয়োজন।",
+        "veo3": "VEO3 একটি Luxury মডেল এবং Unlimited ফ্রি ব্যবহারে অন্তর্ভুক্ত নয়। অতিরিক্ত পেমেন্ট প্রয়োজন।",
+        "sora2Pro": "Sora-2 Pro একটি Luxury মডেল এবং Unlimited ফ্রি ব্যবহারে অন্তর্ভুক্ত নয়। অতিরিক্ত পেমেন্ট প্রয়োজন।"
+      },
+      "gettingCredits": "ক্রেডিট আনা হচ্ছে...",
+      "getBonusCredits": "{amount} ক্রেডিট পান",
+      "submitting": "জমা হচ্ছে...",
+      "loadingModels": "মডেল লোড হচ্ছে...",
+      "uploadingAsset": "অ্যাসেট আপলোড হচ্ছে...",
+      "uploadingImages": "ছবি আপলোড হচ্ছে...",
+      "claimingCredits": "ক্রেডিট ক্লেইম হচ্ছে...",
+      "getMoreCredits": "আরও ক্রেডিট নিন",
+      "generateVideo": "ভিডিও জেনারেট করুন"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "প্রকাশ ব্যর্থ",
+        "missingTitleDescription": "দয়া করে আপনার ভিডিওর জন্য একটি শিরোনাম লিখুন",
+        "processingTitle": "প্রসেস হচ্ছে",
+        "processingDescription": "আপনার ভিডিও প্রকাশের জন্য প্রস্তুত করা হচ্ছে...",
+        "successTitle": "সফলভাবে প্রকাশিত",
+        "successDescription": "আপনার ভিডিও কমিউনিটিতে শেয়ার করা হয়েছে",
+        "failedTitle": "প্রকাশ ব্যর্থ",
+        "failedDescription": "আপনার নেটওয়ার্ক সংযোগ চেক করুন বা পরে আবার চেষ্টা করুন"
+      },
+      "successTitle": "সফলভাবে প্রকাশিত!",
+      "successDescription": "আপনার দারুণ সৃষ্টি এখন কমিউনিটিতে লাইভ",
+      "publishingTitle": "প্রকাশ হচ্ছে...",
+      "publishingDescriptionDesktop": "কমিউনিটির জন্য আপনার ভিডিও প্রস্তুত করা হচ্ছে...",
+      "publishingDescriptionMobile": "আপনার ভিডিও প্রস্তুত করা হচ্ছে...",
+      "progressComplete": "{progress}% সম্পূর্ণ",
+      "title": "কমিউনিটিতে শেয়ার করুন",
+      "description": "আপনার দারুণ সৃষ্টি সবার সাথে শেয়ার করুন",
+      "benefits": {
+        "getLikes": "লাইক পান",
+        "buildCommunityLong": "কমিউনিটি গড়ে তুলুন",
+        "buildCommunityShort": "কমিউনিটি",
+        "inspireLong": "অন্যদের অনুপ্রাণিত করুন",
+        "inspireShort": "অনুপ্রেরণা",
+        "earnLong": "+{amount} ক্রেডিট অর্জন করুন",
+        "earnShort": "+{amount} ক্রেডিট"
+      },
+      "videoTitle": "ভিডিও শিরোনাম",
+      "videoTitlePlaceholder": "আপনার সৃষ্টি জন্য একটি আকর্ষণীয় শিরোনাম দিন...",
+      "videoTitleHelperDesktop": "ভালো শিরোনাম বেশি দর্শক আনে",
+      "videoTitleHelperMobile": "ভালো শিরোনাম দর্শক আনে",
+      "descriptionLabel": "বর্ণনা",
+      "optional": "ঐচ্ছিক",
+      "descriptionPlaceholder": "কমিউনিটিকে আপনার সৃষ্টি সম্পর্কে বলুন...",
+      "descriptionHelper": "আপনার সৃজনশীল প্রক্রিয়া শেয়ার করুন",
+      "cancel": "বাতিল",
+      "publish": "প্রকাশ করুন"
+    },
+    "history": {
+      "title": "ইতিহাস",
+      "refresh": "রিফ্রেশ",
+      "view": {
+        "one": "প্রতি সারি 1",
+        "three": "প্রতি সারি 3",
+        "nine": "প্রতি সারি 9"
+      },
+      "filterPlaceholder": "ফিল্টার",
+      "empty": "{status} কাজ পাওয়া যায়নি",
+      "status": {
+        "all": "সব",
+        "pending": "অপেক্ষমাণ",
+        "queued": "কিউড",
+        "processing": "প্রসেসিং",
+        "completed": "সম্পন্ন",
+        "failed": "ব্যর্থ",
+        "canceled": "বাতিল"
+      }
+    },
+    "effectSelector": {
+      "loading": "ইফেক্ট লোড হচ্ছে...",
+      "defaultDescription": "আপনার ভিডিওতে বিশেষ ইফেক্ট যোগ করুন",
+      "ctaTitle": "একটি ইফেক্ট নির্বাচন করুন",
+      "ctaDescription": "ভিডিও ইফেক্ট বাছাই করতে ক্লিক করুন",
+      "modalTitle": "ইফেক্ট নির্বাচন",
+      "close": "ইফেক্ট সিলেক্টর বন্ধ করুন"
+    },
+    "modelSelectorModal": {
+      "title": "মডেল নির্বাচন করুন",
+      "description": "আপনার প্রজেক্টের জন্য একটি মডেল বেছে নিন",
+      "close": "মডেল সিলেক্টর বন্ধ করুন",
+      "loadingMore": "আরও মডেল লোড হচ্ছে...",
+      "allLoaded": "সব মডেল লোড হয়েছে",
+      "noModelsFound": "কোনো মডেল পাওয়া যায়নি"
+    },
+    "modelSearch": {
+      "placeholder": "নাম, টাইপ বা ফিচার দিয়ে মডেল খুঁজুন...",
+      "clear": "সার্চ ক্লিয়ার",
+      "searching": "খুঁজছে...",
+      "foundModels": "{count}টি মডেল পাওয়া গেছে",
+      "modelsAvailable": "{count}টি মডেল উপলব্ধ"
+    },
+    "modelTypeFilter": {
+      "title": "মডেল টাইপ",
+      "clear": "ক্লিয়ার"
+    },
+    "remixLoader": {
+      "successTitle": "রিমিক্স টাস্ক লোড হয়েছে",
+      "successDescription": "মূল টাস্ক থেকে ভিডিও প্যারামিটার লোড হয়েছে; আপনি সরাসরি জেনারেট বা প্যারামিটার পরিবর্তন করতে পারেন।",
+      "errorTitle": "প্যারামিটার লোড ব্যর্থ",
+      "errorDescription": "মূল টাস্ক থেকে প্যারামিটার লোড করা যায়নি; দয়া করে হাতে সেট করুন।"
+    },
+    "modelCard": {
+      "select": "নির্বাচন",
+      "credits": "ক্রেডিট",
+      "premium": "প্রিমিয়াম",
+      "luxury": "বিলাসবহুল"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind নির্বাচিত",
+      "hot": "হট",
+      "new": "নতুন",
+      "select": "নির্বাচন"
+    },
+    "previewPanel": {
+      "generating": "জেনারেট হচ্ছে...",
+      "download": "ডাউনলোড",
+      "downloading": "ডাউনলোড হচ্ছে...",
+      "shareToCommunity": "প্রকাশ করুন",
+      "tips": "টিপ: প্রকাশ করলে ক্রেডিট পাবেন",
+      "quality": "কোয়ালিটি",
+      "qualityHd": "এইচডি",
+      "qualityStandard": "স্ট্যান্ডার্ড",
+      "ratio": "রেশিও",
+      "fullscreen": {
+        "enter": "ফুলস্ক্রিন",
+        "exit": "ফুলস্ক্রিন থেকে বের হন"
+      },
+      "empty": {
+        "title": "এখনও কোনো প্রিভিউ নেই",
+        "description": "এখানে প্রিভিউ দেখতে একটি ভিডিও জেনারেট করুন।"
+      },
+      "queue": {
+        "loading": "কিউ তথ্য লোড হচ্ছে...",
+        "headerProcessing": "প্রসেসিং",
+        "headerQueueStatus": "কিউ স্ট্যাটাস",
+        "badgePosition": "অবস্থান: {position} / {total}",
+        "badgeProcessing": "প্রসেসিং",
+        "tasksInQueue": "কিউতে টাস্ক",
+        "estimatedWait": "আনুমানিক অপেক্ষা",
+        "elapsedTime": "অতিবাহিত সময়",
+        "remainingTime": "বাকি সময়",
+        "startTime": "আনুমানিক শুরু",
+        "completionTime": "আনুমানিক শেষ"
+      },
+      "time": {
+        "calculating": "হিসাব হচ্ছে...",
+        "justNow": "এইমাত্র",
+        "lessThanMinute": "এক মিনিটের কম সময়ে",
+        "inMinutes": "{minutes, plural, one {# মিনিট} other {# মিনিট}} পরে",
+        "inHours": "{hours, plural, one {# ঘণ্টা} other {# ঘণ্টা}} পরে",
+        "inDays": "{days, plural, one {# দিন} other {# দিন}} পরে",
+        "seconds": "{seconds, plural, one {# সেকেন্ড} other {# সেকেন্ড}}",
+        "minutesSeconds": "{minutes, plural, one {# মিনিট} other {# মিনিট}} {seconds, plural, one {# সেকেন্ড} other {# সেকেন্ড}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "ভিডিও লোড হচ্ছে...",
+      "notFound": "ভিডিও পাওয়া যায়নি",
+      "notFoundDescription": "অনুরোধকৃত ভিডিওটি পাওয়া যায়নি বা বর্তমানে উপলব্ধ নয়।",
+      "detailsTitle": "বিস্তারিত",
+      "videoInfoTitle": "ভিডিও তথ্য",
+      "advancedTitle": "অ্যাডভান্সড",
+      "referenceImagesTitle": "রেফারেন্স ছবি",
+      "startFrameAlt": "শুরুর ফ্রেম",
+      "endFrameAlt": "শেষ ফ্রেম",
+      "endFrameLabel": "শেষ ফ্রেম",
+      "creationDate": "তৈরির তারিখ",
+      "fields": {
+        "model": "মডেল",
+        "generationType": "জেনারেশন টাইপ",
+        "resolution": "রেজোলিউশন",
+        "aspectRatio": "অ্যাসপেক্ট রেশিও",
+        "duration": "সময়কাল",
+        "creativityLevel": "ক্রিয়েটিভিটি",
+        "effect": "ইফেক্ট",
+        "samplingSteps": "স্যাম্পলিং স্টেপস",
+        "randomSeed": "র‌্যান্ডম Seed",
+        "movementAmplitude": "মুভমেন্ট অ্যাম্পলিটিউড",
+        "backgroundMusic": "ব্যাকগ্রাউন্ড মিউজিক",
+        "negativePrompt": "নেগেটিভ প্রম্পট"
+      },
+      "actions": {
+        "close": "বন্ধ",
+        "closeModalTitle": "মোডাল বন্ধ করুন",
+        "remix": "রিমিক্স",
+        "remixTitle": "এই প্যারামিটার দিয়ে রিমিক্স করুন",
+        "download": "ডাউনলোড",
+        "downloadTitle": "এই ভিডিও ডাউনলোড করুন",
+        "downloading": "ডাউনলোড হচ্ছে...",
+        "shareTitle": "এই ভিডিও শেয়ার করুন"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "টাস্ক ডিলিট",
+      "description": "এই কাজটি ফিরিয়ে আনা যাবে না",
+      "cancel": "বাতিল",
+      "confirm": "ডিলিট",
+      "deleting": "ডিলিট হচ্ছে..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "রেফারেন্স ছবি"
+      },
+      "pending": {
+        "pending": "অপেক্ষমাণ...",
+        "queued": "কিউড...",
+        "waitingInQueue": "কিউতে অপেক্ষা করছে..."
+      },
+      "processing": {
+        "phase1": "ফেজ 1",
+        "phase2": "ফেজ 2",
+        "phase3": "ফেজ 3",
+        "final": "ফাইনাল",
+        "initializing": "প্রসেস শুরু হচ্ছে",
+        "processing": "কনটেন্ট প্রসেস হচ্ছে",
+        "rendering": "আউটপুট রেন্ডার হচ্ছে",
+        "finalizing": "চূড়ান্ত করা হচ্ছে",
+        "stuckMessage": "এই টাস্কটি আটকে গেছে মনে হচ্ছে। আপনি এটি ডিলিট করতে পারেন।",
+        "deleteTitle": "এই টাস্ক ডিলিট করুন",
+        "deleteAria": "ডিলিট"
+      },
+      "failed": {
+        "title": "জেনারেশন ব্যর্থ",
+        "tryAgain": "আবার চেষ্টা করুন",
+        "tryAgainTitle": "এই প্রম্পট দিয়ে আবার চেষ্টা করুন",
+        "deleteTitle": "এই টাস্ক ডিলিট করুন"
+      },
+      "completed": {
+        "recreateDesktop": "রিকারিয়েট",
+        "remixMobile": "রিমিক্স",
+        "remixTitle": "এই প্রম্পট দিয়ে নতুন ভিডিও তৈরি করুন",
+        "publish": "প্রকাশ করুন",
+        "publishTitle": "কমিউনিটিতে প্রকাশ করুন এবং {amount} ক্রেডিট অর্জন করুন",
+        "creditsBonusDesktop": "{amount} ক্রেডিট বোনাস",
+        "creditsBonusMobile": "+{amount}",
+        "share": "শেয়ার",
+        "shareTitle": "এই ভিডিও শেয়ার করুন",
+        "downloadTitle": "এই ভিডিও ডাউনলোড করুন",
+        "downloading": "ডাউনলোড হচ্ছে...",
+        "deleteTitle": "এই টাস্ক ডিলিট করুন"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "লেগো - ReelMind",
+      "description": "ReelMind-এ Lego ওয়ার্কফ্লো দিয়ে ভিডিও তৈরি ও রিমিক্স করুন।"
+    },
+    "mobile": {
+      "backToBuilder": "Builder-এ ফিরে যান",
+      "history": "হিস্ট্রি"
+    },
+    "badges": {
+      "new": "নতুন"
+    },
+    "actions": {
+      "delete": "ডিলিট",
+      "select": "নির্বাচন",
+      "selected": "নির্বাচিত",
+      "download": "ডাউনলোড",
+      "downloading": "ডাউনলোড হচ্ছে...",
+      "deleting": "ডিলিট হচ্ছে...",
+      "share": "শেয়ার",
+      "close": "বন্ধ"
+    },
+    "status": {
+      "pending": "অপেক্ষমাণ",
+      "processing": "প্রসেসিং",
+      "failed": "ব্যর্থ",
+      "completed": "সম্পন্ন",
+      "generating": "জেনারেট হচ্ছে",
+      "cancelled": "বাতিল"
+    },
+    "deleteConfirmDialog": {
+      "title": "টাস্ক ডিলিট",
+      "description": "এই কাজটি ফিরিয়ে আনা যাবে না",
+      "cancel": "বাতিল",
+      "confirm": "ডিলিট",
+      "deleting": "ডিলিট হচ্ছে..."
+    },
+    "imageViewer": {
+      "close": "বন্ধ",
+      "previous": "আগেরটি",
+      "next": "পরেরটি",
+      "view": "{index} দেখুন"
+    },
+    "historyList": {
+      "title": "লেগো এআই ইমেজ জেনারেটর",
+      "generatingFirstImage": "আপনার প্রথম ছবি জেনারেট হচ্ছে...",
+      "loadFailed": "হিস্ট্রি লোড ব্যর্থ। আবার চেষ্টা করুন।",
+      "emptyDescription": "আপনার আইডিয়া বর্ণনা করে এবং AI-কে গাইড করতে রিসোর্স যোগ করে অসাধারণ ছবি তৈরি করুন",
+      "loadingMore": "হিস্ট্রি ছবি লোড হচ্ছে...",
+      "scrollForMore": "আরও দেখতে স্ক্রল করুন...",
+      "allLoaded": "সব {count}টি ছবি লোড হয়েছে"
+    },
+    "sidebar": {
+      "addCard": "নতুন কার্ড যোগ করুন",
+      "expand": "সাইডবার খুলুন",
+      "sections": {
+        "theme": "থিম",
+        "scene": "সিন",
+        "style": "স্টাইল"
+      }
+    },
+    "card": {
+      "placeholder": "{section} বর্ণনা করুন...",
+      "imageAlt": "{section} রেফারেন্স",
+      "options": {
+        "image": "ছবি",
+        "text": "টেক্সট"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "রেফারেন্স {index}",
+      "errors": {
+        "invalidType": "দয়া করে একটি ছবি ফাইল নির্বাচন করুন",
+        "tooLarge": "ছবির সাইজ {maxSizeMb}MB-এর বেশি হতে পারবে না",
+        "uploadFailed": "ছবি আপলোড ব্যর্থ। আবার চেষ্টা করুন।"
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "নিচে স্ক্রল করুন",
+      "collapsedPlaceholder": "আপনার ছবি বর্ণনা করুন...",
+      "close": "বন্ধ"
+    },
+    "resultPreview": {
+      "previewTitle": "প্রিভিউ",
+      "previewDescription": "আপনার জেনারেটেড ছবি এখানে দেখা যাবে",
+      "generatedImageAlt": "জেনারেটেড ছবি",
+      "emptyPlaceholder": "আপনার সৃষ্টি এখানে দেখা যাবে",
+      "dialogTitle": "আপনার তৈরি ছবি",
+      "dialogDescription": "আপনার বর্ণনা ও রিসোর্সের ভিত্তিতে আমরা এই ছবিটি তৈরি করেছি"
+    },
+    "resourceUploader": {
+      "uploadImage": "ছবি আপলোড",
+      "imageFallbackAlt": "ছবি",
+      "imageFallbackLabel": "ছবি",
+      "removeImage": "{title} সরান"
+    },
+    "controlPanel": {
+      "showSidebar": "সাইডবার দেখান",
+      "hideSidebar": "সাইডবার লুকান",
+      "hideSidebarShort": "সাইডবার লুকান",
+      "addImage": "ছবি যোগ করুন",
+      "addImageWithLimit": "ছবি যোগ করুন ({current}/{max})",
+      "promptPlaceholder": "আপনার ছবি তৈরি বা এডিট করুন...",
+      "model": "মডেল",
+      "selectModel": "মডেল নির্বাচন",
+      "loading": "লোড হচ্ছে...",
+      "loadingModels": "মডেল লোড হচ্ছে...",
+      "noModelsAvailable": "কোনো মডেল উপলব্ধ নেই",
+      "noModelsMatchFilters": "আপনার ফিল্টারের সাথে কোনো মডেল মেলে না",
+      "modelLabel": "মডেল: {name}",
+      "aspectRatio": "অ্যাসপেক্ট রেশিও",
+      "ratioLabel": "রেশিও: {value}",
+      "imagesLabel": "ছবি: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 একটি মাত্র ছবি আউটপুট দেয়",
+        "hint": "জেনারেট করার ছবির সংখ্যা",
+        "numberOfImages": "ছবির সংখ্যা"
+      },
+      "advanced": {
+        "aria": "অ্যাডভান্সড সেটিংস",
+        "label": "অ্যাডভান্সড",
+        "title": "অ্যাডভান্সড সেটিংস",
+        "negativePrompt": {
+          "label": "নেগেটিভ প্রম্পট",
+          "placeholder": "যেসব এলিমেন্ট বাদ দিতে চান...",
+          "aria": "নেগেটিভ প্রম্পট",
+          "title": "যেসব এলিমেন্ট বাদ দিতে চান তা নির্দিষ্ট করুন"
+        },
+        "seed": {
+          "label": "বীজ",
+          "random": "র‌্যান্ডম",
+          "randomTitle": "র‌্যান্ডম Seed তৈরি করুন",
+          "placeholder": "র‌্যান্ডম Seed (ঐচ্ছিক)",
+          "aria": "Seed মান",
+          "title": "পুনরুত্পাদনযোগ্য ফলাফলের জন্য Seed সেট করুন"
+        }
+      },
+      "resolution": "রেজোলিউশন",
+      "resolutionLabel": "রেজোলিউশন: {value}",
+      "resolutionPopoverTitle": "রেজোলিউশন (Nano Banana 2)",
+      "generating": "জেনারেট হচ্ছে...",
+      "generate": "জেনারেট",
+      "limitReached": "লিমিট পৌঁছে গেছে",
+      "fluxLimitTooltip": "সদস্য নয় এমনদের জন্য FLUX মডেল {limit} বার ব্যবহারে সীমিত",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 একটি প্রিমিয়াম মডেল এবং Unlimited ফ্রি ব্যবহারে অন্তর্ভুক্ত নয়। প্রতিটি জেনারেটেড ছবির জন্য ক্রেডিট চার্জ হবে।",
+      "unlimited": {
+        "fast": "দ্রুত",
+        "slow": "ধীর",
+        "fastMode": "ফাস্ট মোড",
+        "slowMode": "স্লো মোড",
+        "monthlyUsage": "মাসিক ব্যবহার: {used}/{limit}",
+        "rateLimit": "রেট লিমিট: প্রতি ৫ মিনিটে {limit}টি ছবি",
+        "switchedToSlow": "আপনি মাসিক লিমিটে পৌঁছেছেন। স্লো মোডে সুইচ হয়েছে।"
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "জেনারেটেড ছবি",
+      "failedTitle": "জেনারেশন ব্যর্থ",
+      "errors": {
+        "unableToComplete": "জেনারেশন সম্পন্ন করা যায়নি"
+      },
+      "actions": {
+        "deleteTitle": "টাস্ক ডিলিট",
+        "viewFullSize": "পূর্ণ সাইজ দেখতে ক্লিক করুন",
+        "preview": "প্রিভিউ {index}",
+        "retryTitle": "রিট্রাই - একই প্যারামিটারে আবার চেষ্টা করুন",
+        "retry": "রিট্রাই",
+        "remixTitle": "রিমিক্স - প্যারামিটার পুনঃব্যবহার",
+        "remix": "রিমিক্স",
+        "makeVideoTitle": "ভিডিও বানান",
+        "makeVideo": "ভিডিও তৈরি করুন"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "ডাউনলোড শুরু হয়েছে",
+      "downloadStartedMessage": "ভিডিও ডাউনলোড শুরু হয়েছে",
+      "downloadFailedTitle": "ডাউনলোড ব্যর্থ",
+      "downloadFailedMessage": "ভিডিও ডাউনলোড ব্যর্থ",
+      "shareCopied": "শেয়ার লিঙ্ক ক্লিপবোর্ডে কপি হয়েছে",
+      "shareCopyFailed": "শেয়ার লিঙ্ক কপি ব্যর্থ"
+    },
+    "empty": {
+      "title": "ভিডিও উপলব্ধ নয়",
+      "description": "এই ভিডিওটি শেয়ারের জন্য উপলব্ধ নয় অথবা ভিডিও ফাইল নেই।",
+      "ctaCreate": "আপনার নিজস্ব ভিডিও তৈরি করুন"
+    },
+    "notFound": {
+      "title": "ভিডিও পাওয়া যায়নি",
+      "description": "আপনি যে ভিডিওটি খুঁজছেন তা নেই বা আর শেয়ারের জন্য উপলব্ধ নয়।",
+      "ctaCreate": "আপনার নিজস্ব ভিডিও তৈরি করুন",
+      "ctaHome": "Home-এ ফিরে যান"
+    },
+    "details": {
+      "creationDate": "তৈরির তারিখ"
+    },
+    "actions": {
+      "remix": "রিমিক্স",
+      "remixTitle": "এই প্রম্পট দিয়ে নতুন ভিডিও তৈরি করুন",
+      "download": "ডাউনলোড",
+      "downloadTitle": "এই ভিডিও ডাউনলোড করুন",
+      "downloading": "ডাউনলোড হচ্ছে...",
+      "downloadingTitle": "ডাউনলোড হচ্ছে...",
+      "shareTitle": "এই ভিডিও শেয়ার করুন"
+    },
+    "meta": {
+      "promptFallback": "AI জেনারেটেড ভিডিও",
+      "watchDescription": "এই AI জেনারেটেড ভিডিওটি দেখুন: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "মিউজিক",
+      "description": "AI দিয়ে মিউজিক, সাউন্ড ইফেক্ট এবং স্পিচ জেনারেট করুন।"
+    },
+    "page": {
+      "loadingSoundStudio": "Sound Studio লোড হচ্ছে..."
+    },
+    "functionToggle": {
+      "music": "মিউজিক",
+      "soundEffect": "সাউন্ড ইফেক্ট",
+      "textToSpeech": "টেক্সট টু স্পিচ"
+    },
+    "controlPanel": {
+      "title": "কন্ট্রোল",
+      "reset": "রিসেট",
+      "modelLabel": {
+        "tts": "TTS মডেল",
+        "sound": "সাউন্ড মডেল"
+      },
+      "modelPlaceholder": "মডেল নির্বাচন",
+      "noModelsAvailableTitle": "কোনো মডেল উপলব্ধ নেই",
+      "noModelsFound": {
+        "tts": "কোনো TTS মডেল পাওয়া যায়নি",
+        "soundEffect": "কোনো সাউন্ড ইফেক্ট মডেল পাওয়া যায়নি"
+      },
+      "tts": {
+        "stability": "স্ট্যাবিলিটি",
+        "similarityBoost": "সিমিলারিটি বুস্ট",
+        "styleExaggeration": "স্টাইল এক্স্যাজারেশন",
+        "speed": "গতি"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "রেফারেন্স অডিও আপলোড",
+      "dropHere": "এখানে ড্রপ করুন",
+      "supportedFormats": "সমর্থিত ফরম্যাট: MP3, WAV, M4A, AAC, OGG",
+      "tip": "টিপ: ভালো ফলাফলের জন্য অন্তত ১৫ সেকেন্ড পরিষ্কার অডিও ব্যবহার করুন।",
+      "uploadingProgress": "আপলোড হচ্ছে... {progress}%",
+      "toast": {
+        "uploadSuccess": "আপলোড সম্পন্ন",
+        "uploadFailed": "আপলোড ব্যর্থ"
+      },
+      "errors": {
+        "selectAudioFile": "দয়া করে একটি অডিও ফাইল নির্বাচন করুন।",
+        "invalidAudioFile": "অডিও ফাইলটি বৈধ নয়।",
+        "fileTooLarge": "ফাইলটি খুব বড় (সর্বোচ্চ 50MB)।",
+        "durationTooShort": "অডিওটি অন্তত ১৫ সেকেন্ড হওয়া দরকার।"
+      }
+    },
+    "audioPlayer": {
+      "play": "প্লে",
+      "pause": "পজ"
+    },
+    "voiceSelector": {
+      "label": "ভয়েস",
+      "selectVoiceTitle": "ভয়েস নির্বাচন",
+      "gender": {
+        "all": "সব",
+        "male": "পুরুষ",
+        "female": "নারী"
+      },
+      "noVoicesAvailable": "কোনো ভয়েস উপলব্ধ নেই",
+      "noVoicesFound": "কোনো ভয়েস পাওয়া যায়নি",
+      "bestFor": "{useCase}-এর জন্য সেরা",
+      "clickToSelectVoice": "ভয়েস বাছাই করতে ক্লিক করুন"
+    },
+    "historyPanel": {
+      "title": "হিস্ট্রি",
+      "empty": {
+        "title": "এখনও কোনো জেনারেশন নেই",
+        "description": "আপনার জেনারেশন হিস্ট্রি এখানে দেখা যাবে"
+      },
+      "loading": "লোড হচ্ছে...",
+      "loadMore": "আরও লোড করুন"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "প্রসেসিং",
+        "failed": "ব্যর্থ",
+        "completed": "সম্পন্ন"
+      },
+      "actions": {
+        "copy": "কপি",
+        "download": "ডাউনলোড"
+      },
+      "time": {
+        "now": "এখন",
+        "minutesAgo": "{minutes} মিনিট আগে",
+        "hoursAgo": "{hours} ঘণ্টা আগে"
+      },
+      "unknownModel": "অজানা মডেল",
+      "errors": {
+        "unknown": "অজানা ত্রুটি"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "সাউন্ড স্টুডিও"
+      },
+      "menu": {
+        "open": "মেনু খুলুন",
+        "title": "মেনু",
+        "voiceGeneration": "তৈরি",
+        "settings": "সেটিংস",
+        "history": "হিস্ট্রি"
+      },
+      "tabs": {
+        "generate": "জেনারেট",
+        "settings": "সেটিংস",
+        "history": "হিস্ট্রি"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "স্পিচ জেনারেশনের জন্য আপনার টেক্সট লিখুন...",
+        "soundEffect": "আপনি যে সাউন্ড ইফেক্ট তৈরি করতে চান তা বর্ণনা করুন..."
+      },
+      "generateSpeech": "স্পিচ জেনারেট",
+      "generateSound": "সাউন্ড জেনারেট",
+      "generating": "জেনারেট হচ্ছে...",
+      "loadingExamples": "উদাহরণ লোড হচ্ছে...",
+      "loadingMusicStyles": "মিউজিক স্টাইল লোড হচ্ছে...",
+      "rightTabs": {
+        "examples": "উদাহরণ",
+        "history": "হিস্ট্রি"
+      },
+      "history": {
+        "generationCount": "{count} জেনারেশন"
+      },
+      "price": {
+        "placeholder": "আনুমানিক খরচ",
+        "calculating": "হিসাব হচ্ছে...",
+        "credits": "{credits} ক্রেডিট"
+      },
+      "musicHistory": {
+        "title": "মিউজিক হিস্ট্রি",
+        "empty": {
+          "title": "এখনও কোনো মিউজিক জেনারেট হয়নি",
+          "description": "আপনার মিউজিক হিস্ট্রি এখানে দেখা যাবে"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "সাউন্ড ইফেক্ট হিস্ট্রি",
+        "empty": {
+          "title": "এখনও কোনো সাউন্ড ইফেক্ট জেনারেট হয়নি",
+          "description": "আপনার সাউন্ড ইফেক্ট হিস্ট্রি এখানে দেখা যাবে"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "লিরিক্স",
+      "lyricsPlaceholder": "ঐচ্ছিক ফরম্যাটিংসহ লিরিক্স। প্রতিটি লাইন আলাদা করতে নতুন লাইন ব্যবহার করতে পারেন। লাইনের মাঝে বিরতি দিতে দুইটি নতুন লাইন ব্যবহার করতে পারেন। লিরিক্সের শুরু ও শেষে ডাবল হ্যাশ (##) ব্যবহার করে অ্যাকম্পানিমেন্ট যোগ করতে পারেন। সর্বোচ্চ ৬০০ অক্ষর।",
+      "useReferenceAudio": {
+        "label": "রেফারেন্স অডিও ব্যবহার করুন",
+        "description": "AI-এর স্টাইল গাইড করতে অডিও রেফারেন্স ব্যবহার করুন।"
+      },
+      "referenceAudio": {
+        "title": "রেফারেন্স অডিও",
+        "description": "মিউজিক ও ভোকালসহ একটি রেফারেন্স গান আপলোড করুন।"
+      },
+      "musicStyle": {
+        "title": "মিউজিক স্টাইল",
+        "description": "আপনি যে ধরনের ও মুডের মিউজিক চান তা বর্ণনা করুন।",
+        "placeholder": "যেমন: R&B, energetic, upbeat pop, acoustic folk, electronic dance...",
+        "tooShort": "মিউজিক স্টাইলের বর্ণনা অন্তত ১০ অক্ষর হতে হবে।"
+      },
+      "generating": "জেনারেট হচ্ছে...",
+      "generateMusicWithCredits": "মিউজিক জেনারেট ({credits} ক্রেডিট)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "সময়কাল",
+        "description": "সাউন্ড ইফেক্টের দৈর্ঘ্য নির্ধারণ করুন।"
+      },
+      "promptInfluence": {
+        "title": "প্রম্পট প্রভাব",
+        "description": "উচ্চ মান আপনার প্রম্পট আরও ঘনিষ্ঠভাবে অনুসরণ করে।"
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "যোগাযোগ",
+      "description": "ReelMind টিমকে ফিডব্যাক পাঠান।"
+    },
+    "header": {
+      "title": "দ্রুত ফিডব্যাক",
+      "description": "কোনো বাগ পেয়েছেন বা কোনো পরামর্শ আছে? ৩০ সেকেন্ডে জানান।"
+    },
+    "card": {
+      "title": "দ্রুত ফিডব্যাক",
+      "subtitle": "শুধু ৩টি ফিল্ড, ৩০ সেকেন্ড সময় লাগে"
+    },
+    "submitted": {
+      "title": "ফিডব্যাক জমা হয়েছে",
+      "description": "আপনার ফিডব্যাকের জন্য ধন্যবাদ। আমরা এটি রিভিউ করব এবং প্রয়োজনে যোগাযোগ করব।"
+    },
+    "auth": {
+      "required": "ফিডব্যাক জমা দিতে দয়া করে লগইন করুন।"
+    },
+    "form": {
+      "errors": {
+        "unknown": "কিছু সমস্যা হয়েছে। আবার চেষ্টা করুন।"
+      },
+      "type": {
+        "label": "ধরন",
+        "placeholder": "ফিডব্যাকের ধরন নির্বাচন করুন",
+        "options": {
+          "bug": "বাগ রিপোর্ট",
+          "suggestion": "পরামর্শ",
+          "other": "অন্যান্য"
+        },
+        "errors": {
+          "required": "ফিডব্যাকের ধরন আবশ্যক।",
+          "invalid": "ফিডব্যাকের ধরন সঠিক নয়।"
+        }
+      },
+      "subject": {
+        "label": "বিষয় *",
+        "placeholder": "সমস্যা বা পরামর্শ কী?",
+        "errors": {
+          "required": "বিষয় আবশ্যক।",
+          "min": "বিষয় অন্তত {min} অক্ষরের হতে হবে।",
+          "max": "বিষয় {max} অক্ষরের কম হতে হবে।",
+          "invalid": "বিষয়ে অবৈধ কনটেন্ট রয়েছে।"
+        }
+      },
+      "message": {
+        "label": "বিস্তারিত *",
+        "placeholder": "আরও জানান...",
+        "errors": {
+          "required": "বিস্তারিত আবশ্যক।",
+          "min": "বিস্তারিত অন্তত {min} অক্ষরের হতে হবে।",
+          "max": "বিস্তারিত {max} অক্ষরের কম হতে হবে।",
+          "invalid": "বিস্তারে অবৈধ কনটেন্ট রয়েছে।"
+        }
+      }
+    },
+    "actions": {
+      "submitting": "জমা হচ্ছে...",
+      "submit": "ফিডব্যাক জমা দিন"
+    },
+    "toast": {
+      "submitSuccess": "ফিডব্যাক সফলভাবে জমা হয়েছে!",
+      "submitFailed": "ফিডব্যাক জমা ব্যর্থ। আবার চেষ্টা করুন।",
+      "authRequired": "ফিডব্যাক জমা দিতে দয়া করে লগইন করুন।",
+      "rateLimited": "অনেকবার সাবমিট হয়েছে। পরে আবার চেষ্টা করুন।",
+      "rateLimitedWithRetryAfter": "আবার সাবমিট করার আগে {seconds}s অপেক্ষা করুন।",
+      "fixErrors": "ফর্মের ত্রুটিগুলো ঠিক করুন।",
+      "checkInput": "আপনার ইনপুট চেক করে আবার চেষ্টা করুন।"
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "পোস্ট",
+      "following": "ফলোয়িং",
+      "followingShort": "ফলো",
+      "followers": "ফলোয়ার",
+      "followersShort": "ফ্যান",
+      "favorites": "ফেভারিট",
+      "favoritesShort": "ফেভ"
+    },
+    "actions": {
+      "save": "সেভ",
+      "saving": "সেভ হচ্ছে...",
+      "cancel": "বাতিল",
+      "delete": "ডিলিট",
+      "retry": "রিট্রাই",
+      "editProfile": "প্রোফাইল এডিট",
+      "signOut": "সাইন আউট",
+      "follow": "ফলো",
+      "unfollow": "আনফলো",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "ক্রিয়েটর",
+      "avatarAltFallback": "ব্যবহারকারী",
+      "initialFallback": "উ",
+      "edit": {
+        "displayNamePlaceholder": "ডিসপ্লে নাম",
+        "bioPlaceholder": "বায়ো"
+      },
+      "stats": {
+        "following": "ফলোয়িং",
+        "followers": "ফলোয়ার"
+      },
+      "joined": "{date} এ যোগ দিয়েছেন",
+      "joinedFallback": "মার্চ 2025"
+    },
+    "time": {
+      "now": "এইমাত্র",
+      "minutesAgo": "{minutes}মি আগে",
+      "hoursAgo": "{hours}ঘ আগে",
+      "daysAgo": "{days}দিন আগে"
+    },
+    "toast": {
+      "loginFirst": "দয়া করে আগে লগইন করুন",
+      "cannotFollowYourself": "নিজেকে ফলো করা যাবে না",
+      "followed": "সফলভাবে ফলো হয়েছে",
+      "unfollowed": "সফলভাবে আনফলো হয়েছে",
+      "operationFailed": "অপারেশন ব্যর্থ"
+    },
+    "posts": {
+      "loadingMore": "আরও পোস্ট লোড হচ্ছে...",
+      "error": {
+        "failedToLoad": "পোস্ট লোড ব্যর্থ"
+      },
+      "empty": {
+        "title": "এখনও কোনো পোস্ট নেই",
+        "description": "এই ব্যবহারকারী এখনও কোনো পোস্ট শেয়ার করেননি। পরে আবার দেখুন!"
+      },
+      "deleteDialog": {
+        "title": "পোস্ট ডিলিট",
+        "description": "এটি আপনার প্রোফাইল ও ফিড থেকে পোস্টটি লুকাবে। এই কাজটি ফিরিয়ে আনা যাবে না।"
+      },
+      "toast": {
+        "deleted": "পোস্ট ডিলিট হয়েছে",
+        "deleteFailed": "পোস্ট ডিলিট ব্যর্থ"
+      }
+    },
+    "favorites": {
+      "loadingMore": "আরও ফেভারিট লোড হচ্ছে...",
+      "error": {
+        "failedToLoad": "ফেভারিট লোড ব্যর্থ"
+      },
+      "empty": {
+        "title": "এখনও কোনো ফেভারিট নেই",
+        "description": "আপনি যে পোস্টগুলো পছন্দ করেন সেগুলো এখানে থাকবে। এক্সপ্লোর করুন এবং আপনার ফেভারিট সেভ করুন!"
+      }
+    },
+    "followers": {
+      "empty": "এখনও কোনো ফলোয়ার নেই",
+      "error": {
+        "failedToLoad": "ফলোয়ার লোড ব্যর্থ"
+      },
+      "followerSince": "{time} থেকে ফলোয়ার"
+    },
+    "following": {
+      "empty": "এখনও কাউকে ফলো করছেন না",
+      "error": {
+        "failedToLoad": "ফলোয়িং লোড ব্যর্থ"
+      },
+      "followingSince": "{time} থেকে ফলো করছেন"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "সদস্যতা প্ল্যান - ReelMind",
+      "description": "AI ভিডিও জেনারেশনের জন্য আরও ক্রেডিট ও প্রিমিয়াম ফিচার পেতে ReelMind সদস্যতা প্ল্যানে যোগ দিন।"
+    },
+    "plans": {
+      "hero": {
+        "title": "সদস্যতা প্ল্যান",
+        "subtitle": "ReelMind-এর নমনীয় সাবস্ক্রিপশন প্ল্যান দিয়ে AI ভিডিও জেনারেশনের পূর্ণ সম্ভাবনা উন্মুক্ত করুন"
+      },
+      "error": {
+        "loadFailed": "সদস্যতা প্ল্যান আনতে ব্যর্থ, পরে আবার চেষ্টা করুন।"
+      },
+      "names": {
+        "free": "ফ্রি",
+        "pro": "প্রো",
+        "max": "সর্বোচ্চ",
+        "unlimited": "আনলিমিটেড"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "বার্ষিক"
+      },
+      "monthly": {
+        "label": "মাসিক"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "প্রথম মাসে 70% ছাড়",
+        "short": "70% ছাড়",
+        "description": "প্রথমবার সদস্যতা নিলে 70% ছাড়; কুপন ২৪ ঘণ্টা বৈধ"
+      },
+      "yearly": {
+        "full": "প্রথম ৬ মাস ফ্রি",
+        "short": "৬ মাস ফ্রি",
+        "description": "বার্ষিক সাবস্ক্রাইবারদের প্রথম ৬ মাস একদম ফ্রি - অর্থাৎ প্রথম বছরে 50% ছাড়!"
+      },
+      "percentOff": "{percent}% ছাড়",
+      "badge": {
+        "preview": "🎁 {offer} উপলব্ধ",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(ক্লেইম করার পরে)"
+    },
+    "pricing": {
+      "perYear": "প্রতি বছর",
+      "perMonth": "প্রতি মাস",
+      "breakdown": {
+        "originalPrice": "মূল দাম:",
+        "discount": "আপনার ছাড়:",
+        "payFirstYear": "আপনি দেবেন (প্রথম বছর):",
+        "firstMonth": "প্রথম মাস:"
+      }
+    },
+    "status": {
+      "title": "সদস্যতার অবস্থা",
+      "loading": "সদস্যতার তথ্য লোড হচ্ছে...",
+      "currentPlan": "বর্তমান প্ল্যান:",
+      "expiresOn": "মেয়াদ শেষ হবে:",
+      "unlimitedDescription": "ক্রেডিট খরচ ছাড়াই সব জেনারেশন ফিচারে আপনার আনলিমিটেড অ্যাক্সেস আছে।",
+      "planDescription": "আপনার {plan} প্ল্যানের সব ফিচার ও সুবিধা আছে।",
+      "noActive": {
+        "title": "আপনার কোনো সক্রিয় সদস্যতা নেই।",
+        "subtitle": "প্রিমিয়াম ফিচার আনলক করতে নিচের কোনো প্ল্যানে সাবস্ক্রাইব করুন।"
+      }
+    },
+    "creditsBalance": {
+      "title": "ক্রেডিট ব্যালেন্স",
+      "loading": "ক্রেডিট তথ্য লোড হচ্ছে...",
+      "availableCredits": "উপলব্ধ ক্রেডিট:",
+      "unlimited": {
+        "video": "আনলিমিটেড ভিডিও জেনারেশন",
+        "image": "আনলিমিটেড ছবি জেনারেশন",
+        "audio": "আনলিমিটেড সাউন্ড জেনারেশন"
+      },
+      "estimate": {
+        "videos": "সর্বোচ্চ {count} ভিডিও",
+        "images": "সর্বোচ্চ {count} ছবি",
+        "audios": "সর্বোচ্চ {count} সাউন্ড"
+      },
+      "cost": {
+        "videos": "ভিডিও: {credits} ক্রেডিট থেকে",
+        "images": "ছবি: {credits} ক্রেডিট থেকে",
+        "audios": "সাউন্ড: {credits} ক্রেডিট থেকে"
+      }
+    },
+    "credits": {
+      "title": "ক্রেডিট কিনুন",
+      "history": {
+        "toggle": {
+          "show": "লেনদেন হিস্ট্রি দেখুন",
+          "hide": "লেনদেন হিস্ট্রি লুকান"
+        }
+      },
+      "card": {
+        "description": "AI জেনারেশন ক্ষমতা বাড়াতে একটি ক্রেডিট প্যাকেজ নির্বাচন করুন"
+      },
+      "packages": {
+        "basic": {
+          "label": "বেসিক প্যাক"
+        },
+        "standard": {
+          "label": "স্ট্যান্ডার্ড প্যাক"
+        },
+        "premium": {
+          "label": "প্রিমিয়াম প্যাক"
+        },
+        "pro": {
+          "label": "আল্ট্রা প্যাক"
+        },
+        "bonus": "বোনাস: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "বেস রেট: 1 USD = 100 ক্রেডিট",
+        "buyMoreBonus": "বেশি কিনুন, বেশি বোনাস পান!",
+        "neverExpire": "ক্রেডিট কখনও মেয়াদোত্তীর্ণ হয় না",
+        "instantDelivery": "পেমেন্টের পর সঙ্গে সঙ্গে ডেলিভারি"
+      },
+      "actions": {
+        "processing": "প্রসেস হচ্ছে...",
+        "buyCredits": "{credits} ক্রেডিট কিনুন"
+      }
+    },
+    "creditsHistory": {
+      "title": "লেনদেন হিস্ট্রি",
+      "subtitle": "আপনার সাম্প্রতিক ক্রেডিট লেনদেন",
+      "actions": {
+        "retry": "রিট্রাই",
+        "loading": "লোড হচ্ছে...",
+        "loadMore": "আরও লোড"
+      },
+      "table": {
+        "date": "তারিখ",
+        "type": "ধরন",
+        "amount": "পরিমাণ",
+        "status": "স্ট্যাটাস"
+      },
+      "empty": "কোনো লেনদেন হিস্ট্রি নেই",
+      "types": {
+        "membershipMonthly": "সদস্যতা মাসিক ক্রেডিট",
+        "membershipInitial": "সদস্যতা প্রাথমিক ক্রেডিট",
+        "freeMonthly": "ফ্রি মাসিক ক্রেডিট",
+        "purchase": "ক্রেডিট ক্রয়",
+        "platformReward": "প্ল্যাটফর্ম রিওয়ার্ড",
+        "newUserBonus": "নতুন ব্যবহারকারী বোনাস",
+        "postReward": "পোস্ট রিওয়ার্ড",
+        "videoPostReward": "ভিডিও পোস্ট রিওয়ার্ড",
+        "refund": "রিফান্ড",
+        "balanceAdjustment": "ব্যালেন্স অ্যাডজাস্টমেন্ট",
+        "videoGeneration": "ভিডিও জেনারেশন",
+        "imageGeneration": "ছবি জেনারেশন",
+        "modelTraining": "মডেল ট্রেনিং",
+        "audioGeneration": "অডিও জেনারেশন",
+        "systemAdjustment": "সিস্টেম অ্যাডজাস্টমেন্ট"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}ঘ {m}মি {s}সে",
+        "ms": "{m}মি {s}সে",
+        "s": "{s}সে",
+        "expired": "মেয়াদ শেষ"
+      },
+      "toast": {
+        "claimedTitle": "কুপন সফলভাবে ক্লেইম হয়েছে",
+        "claimedDescription": "কুপন আপনার অ্যাকাউন্টে যোগ হয়েছে, {hours} ঘণ্টা বৈধ",
+        "claimFailedTitle": "ক্লেইম ব্যর্থ",
+        "tryAgainLater": "পরে আবার চেষ্টা করুন",
+        "networkError": "নেটওয়ার্ক সমস্যা, পরে আবার চেষ্টা করুন"
+      }
+    },
+    "couponStatus": {
+      "title": "কুপন স্ট্যাটাস",
+      "active": {
+        "annualTitle": "বার্ষিক অফার সক্রিয়",
+        "couponTitle": "কুপন সক্রিয়"
+      },
+      "fields": {
+        "claimed": "ক্লেইম:",
+        "expires": "মেয়াদ শেষ:",
+        "timeLeft": "বাকি সময়:",
+        "usedAt": "ব্যবহৃত:",
+        "discount": "ছাড়:"
+      },
+      "expired": "কুপনের মেয়াদ শেষ",
+      "used": {
+        "title": "কুপন ব্যবহার করা হয়েছে"
+      },
+      "available": "{offer} উপলব্ধ",
+      "offer": {
+        "annualSpecial": "🎁 বার্ষিক স্পেশাল",
+        "newUserExclusive": "🎉 নতুন ব্যবহারকারী এক্সক্লুসিভ",
+        "bestValue": "সেরা ভ্যালু",
+        "limitedTime": "সীমিত সময়",
+        "claimYearly": "৬ মাস ফ্রি অফার ক্লেইম করুন",
+        "claimMonthly": "এখনই কুপন ক্লেইম করুন"
+      },
+      "none": {
+        "title": "কোনো কুপন নেই",
+        "description": "{offer} শুধুমাত্র তাদের জন্য যারা আগে কখনও সদস্যতা কেনেনি।"
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "জনপ্রিয়",
+        "advanced": "অ্যাডভান্সড",
+        "unlimited": "আনলিমিটেড"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "আনলিমিটেড অ্যাক্সেস নিন",
+        "getUnlimitedMobile": "আনলিমিটেড",
+        "subscribeDesktop": "সাবস্ক্রিপশন শুরু করুন",
+        "subscribeMobile": "সাবস্ক্রাইব",
+        "claimAndSubscribeMobile": "ক্লেইম ও সাবস্ক্রাইব",
+        "getDiscountMobile": "{discount} নিন",
+        "claimDiscountAndSubscribeDesktop": "{discount} ক্লেইম করে সাবস্ক্রাইব"
+      },
+      "toast": {
+        "loginSuccess": "লগইন সফল! ছাড় ক্লেইম ও সাবস্ক্রাইব করতে আবার বাটনে ক্লিক করুন।",
+        "claimCouponFailed": "কুপন ক্লেইম ব্যর্থ",
+        "tryAgainLater": "পরে আবার চেষ্টা করুন",
+        "couponClaimed": "কুপন সফলভাবে ক্লেইম হয়েছে!",
+        "failedToProcess": "প্রসেস করতে ব্যর্থ"
+      },
+      "usageEstimate": {
+        "title": "মাসিক ব্যবহার অনুমান",
+        "videos": "প্রতি মাসে সর্বোচ্চ {count} ভিডিও",
+        "images": "প্রতি মাসে সর্বোচ্চ {count} ছবি",
+        "audios": "প্রতি মাসে সর্বোচ্চ {count} সাউন্ড"
+      },
+      "unlimitedNotes": {
+        "title": "ব্যবহারের নোট",
+        "videoTasks": {
+          "title": "ভিডিও টাস্ক:",
+          "body": "একসাথে সর্বোচ্চ ৫টি টাস্ক চালাতে পারবেন। মাসিক সীমা: ৩০০। সীমায় পৌঁছালে স্লো মোড: ২৪ ঘণ্টায় দৈনিক সীমা ৩০ ভিডিও, এবং ঘণ্টায় ১০ টাস্ক।"
+        },
+        "imageTasks": {
+          "title": "ছবি টাস্ক:",
+          "body": "প্রতি মাসে সর্বোচ্চ ৩০০ টাস্ক। ৩০০তম টাস্ক পর্যন্ত ফাস্ট মোড (প্রতি মিনিটে ৫)। এরপর স্লো মোডে প্রতি মিনিটে ১ টাস্ক।"
+        },
+        "premiumModels": {
+          "title": "প্রিমিয়াম মডেল:",
+          "body": "কিছু উচ্চ খরচের মডেল UNLIMITED প্ল্যানে অন্তর্ভুক্ত নয়। VEO 3.* non-fast এবং Sora-2 /pro এখনো ক্রেডিট খরচ করে।"
+        }
+      },
+      "currentPlan": "বর্তমান পরিকল্পনা",
+      "yearlyEquivalent": "<price>{value}</price> এর সমতুল্য",
+      "yearlySavings": "মাসিক বিলিংয়ের তুলনায় <amount>{value}</amount> সংরক্ষণ করুন"
+    },
+    "features": {
+      "monthlyCredits": "মাসে {credits} ক্রেডিট",
+      "monthlyVideoCredits": "মাসে {credits} ভিডিও ক্রেডিট",
+      "fullAccessTopModels": "শীর্ষ {count}টি AI ভিডিও মডেলে পূর্ণ অ্যাক্সেস",
+      "accessAllModels": "সব মডেলে অ্যাক্সেস",
+      "purchaseMoreRolloverVideoCredits": "আরও রোল-ওভার ভিডিও ক্রেডিট কিনতে পারবেন",
+      "downloadNoWatermark": "ওয়াটারমার্ক ছাড়া ভিডিও ডাউনলোড",
+      "commercialUse": "বাণিজ্যিক ব্যবহার",
+      "fastGenerations": "দ্রুত জেনারেশন",
+      "prioritySupport": "প্রায়োরিটি সাপোর্ট",
+      "unlimitedVideoAndImageGeneration": "অসীম ভিডিও ও ইমেজ জেনারেশন"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "বিলিং অপশন খুলুন"
+      },
+      "actions": {
+        "opening": "খোলা হচ্ছে...",
+        "billingOptions": "বিলিং অপশন"
+      },
+      "confirm": {
+        "title": "আপনার সাবস্ক্রিপশন ম্যানেজ করুন",
+        "description": "আপনি কি সাবস্ক্রিপশন বাতিল করতে চান? যাওয়ার আগে আপনার মতামত জানতে চাই।",
+        "keep": "সাবস্ক্রিপশন রাখুন",
+        "continueCancel": "বাতিল করতে এগিয়ে যান"
+      },
+      "toast": {
+        "openFailed": "সাবস্ক্রিপশন ম্যানেজমেন্ট খুলতে ব্যর্থ",
+        "feedbackThanks": "আপনার ফিডব্যাকের জন্য ধন্যবাদ!",
+        "feedbackSaveFailed": "ফিডব্যাক সেভ ব্যর্থ, তবে আপনি এখনও সাবস্ক্রিপশন ম্যানেজ করতে পারবেন"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "আপনার ফিডব্যাক চাই",
+        "subtitle": "কয়েকটি দ্রুত প্রশ্নের উত্তর দিয়ে আমাদের উন্নত করতে সাহায্য করুন"
+      },
+      "common": {
+        "close": "বন্ধ",
+        "other": "অন্যান্য",
+        "stepIndicator": "ধাপ {current} / {total}"
+      },
+      "actions": {
+        "back": "ফিরে যান",
+        "next": "পরবর্তী",
+        "submitting": "জমা হচ্ছে...",
+        "complete": "সম্পন্ন করে এগিয়ে যান"
+      },
+      "satisfaction": {
+        "1": "খুব অসন্তুষ্ট",
+        "2": "অসন্তুষ্ট",
+        "3": "নিরপেক্ষ",
+        "4": "সন্তুষ্ট",
+        "5": "খুব সন্তুষ্ট"
+      },
+      "steps": {
+        "1": {
+          "title": "আপনি ReelMind সম্পর্কে কীভাবে জানলেন?",
+          "options": {
+            "social": "সোশ্যাল মিডিয়া (Twitter, Instagram, ইত্যাদি)",
+            "search": "সার্চ ইঞ্জিন (Google, Bing, ইত্যাদি)",
+            "friend": "বন্ধু/সহকর্মীর পরামর্শ",
+            "ads": "অনলাইন বিজ্ঞাপন",
+            "blog": "টেক ব্লগ বা রিভিউ সাইট"
+          }
+        },
+        "2": {
+          "title": "আপনি মূলত ReelMind কী কাজে ব্যবহার করেন?",
+          "description": "আপনার ক্রিয়েটিভ লক্ষ্য অনুযায়ী সবগুলো নির্বাচন করুন।",
+          "options": {
+            "video": "ভিডিও তৈরি",
+            "image": "ছবি জেনারেশন",
+            "music": "মিউজিক কম্পোজিশন",
+            "marketing": "বিজ্ঞাপন ও মার্কেটিং কনটেন্ট",
+            "socialPosts": "সোশ্যাল মিডিয়া পোস্ট",
+            "education": "শিক্ষামূলক উপকরণ",
+            "personal": "ব্যক্তিগত প্রজেক্ট",
+            "exploring": "নতুন আইডিয়া এক্সপ্লোর"
+          }
+        },
+        "3": {
+          "title": "আপনাকে কোনটি সবচেয়ে ভালো বর্ণনা করে?",
+          "options": {
+            "creator": "কনটেন্ট ক্রিয়েটর",
+            "developer": "ফ্রিল্যান্স ডেভেলপার",
+            "marketingPro": "মার্কেটিং প্রফেশনাল",
+            "businessOwner": "ব্যবসার মালিক",
+            "designer": "ডিজাইনার",
+            "hobbyist": "হবি-চর্চাকারী",
+            "student": "শিক্ষার্থী",
+            "artist": "শিল্পী"
+          }
+        },
+        "4": {
+          "title": "আপনার অভিজ্ঞতাকে কীভাবে মূল্যায়ন করবেন?",
+          "description": "ReelMind নিয়ে আপনার সামগ্রিক সন্তুষ্টি রেট করুন"
+        },
+        "5": {
+          "title": "বাতিল করার প্রধান কারণ কী?",
+          "options": {
+            "price": "খুব দামি",
+            "usage": "পর্যাপ্ত ব্যবহার করিনি",
+            "features": "গুরুত্বপূর্ণ ফিচার নেই",
+            "quality": "জেনারেটেড ফলাফলের মান",
+            "bugs": "প্রযুক্তিগত সমস্যা বা বাগ",
+            "alternative": "ভালো বিকল্প পেয়েছি"
+          }
+        },
+        "6": {
+          "title": "আপনার মতামত জানতে চাই",
+          "description": "আপনার মতামত ReelMind-কে আরও ভালো করতে সাহায্য করে।",
+          "placeholder": "আমরা কী উন্নত করতে পারি? আপনি কী ফিচার চান? (ঐচ্ছিক)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "রিকোয়েস্ট জমা হয়েছে। শীঘ্রই যোগাযোগ করব।",
+        "submitFailed": "রিকোয়েস্ট জমা ব্যর্থ"
+      },
+      "card": {
+        "title": "এন্টারপ্রাইজ ও কাস্টম প্ল্যান",
+        "subtitle": "কাস্টম প্রাইসিং, ইনভয়েসিং ও সাপোর্ট",
+        "description": "ইনভয়েস, কমপ্লায়েন্স সাপোর্ট বা কাস্টম ওয়ার্কফ্লো দরকার? আপনার প্রয়োজন জানান, আমরা উপযুক্ত প্রস্তাব দেব।",
+        "toggle": {
+          "hide": "ফর্ম লুকান",
+          "show": "সেলসের সাথে যোগাযোগ"
+        },
+        "highlights": {
+          "sso": "SSO ও কমপ্লায়েন্স",
+          "invoices": "ইনভয়েস ও পারচেজ অর্ডার",
+          "support": "প্রায়োরিটি সাপোর্ট",
+          "workflows": "কাস্টম ওয়ার্কফ্লো"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "কন্ট্যাক্ট টাইপ",
+          "placeholder": "কন্ট্যাক্ট টাইপ নির্বাচন করুন",
+          "options": {
+            "business": "ব্যবসা",
+            "individual": "ব্যক্তিগত"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "আনুমানিক মাসিক ব্যবহার (USD)",
+          "placeholder": "একটি অনুমান নির্বাচন করুন",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "$1,000 – $5,000",
+            "5000to10000": "$5,000 – $10,000",
+            "10000plus": "$10,000+",
+            "custom": "কাস্টম পরিমাণ (USD)"
+          },
+          "custom": {
+            "label": "কাস্টম মাসিক ব্যবহার (USD)",
+            "placeholder": "USD পরিমাণ লিখুন"
+          }
+        },
+        "firstName": {
+          "label": "নাম",
+          "placeholder": "জেন"
+        },
+        "lastName": {
+          "label": "পদবি",
+          "placeholder": "ডো"
+        },
+        "email": {
+          "label": "ইমেইল",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "ওয়েবসাইট",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "আপনার প্রজেক্ট ও প্রয়োজন সম্পর্কে জানান",
+          "placeholder": "আপনি কী বানাচ্ছেন? কী ধরনের ওয়ার্কফ্লো, কমপ্লায়েন্স এবং প্রত্যাশিত ভলিউম আছে?"
+        },
+        "actions": {
+          "cancel": "বাতিল",
+          "submitting": "জমা হচ্ছে...",
+          "submit": "জমা দিন"
+        },
+        "validation": {
+          "firstNameRequired": "নাম আবশ্যক",
+          "lastNameRequired": "পদবি আবশ্যক",
+          "emailInvalid": "ইমেইল বৈধ হতে হবে",
+          "websiteInvalid": "ওয়েবসাইটটি বৈধ URL হতে হবে",
+          "monthlyEstimateRequired": "মাসিক অনুমান আবশ্যক",
+          "monthlyEstimateEnter": "মাসিক অনুমান দিন",
+          "monthlyEstimateMin": "মাসিক অনুমান >= 0 হতে হবে",
+          "requirementsMin": "আরও বিস্তারিত দিন (ন্যূনতম {count} অক্ষর)",
+          "maxChars": "সর্বোচ্চ {count} অক্ষর"
+        }
+      }
+    },
+    "faq": {
+      "title": "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+      "items": {
+        "proBenefits": {
+          "question": "PRO সদস্যতার সুবিধা কী?",
+          "answer": "PRO সদস্যতা আপনাকে প্রতি মাসে 1000 ক্রেডিট দেয় (মূল্য $10), নতুন ফিচারে প্রায়োরিটি অ্যাক্সেস, দ্রুত ভিডিও জেনারেশন, অ্যাডভান্সড এডিটিং অপশন এবং প্রায়োরিটি কাস্টমার সাপোর্ট।"
+        },
+        "cancelAnytime": {
+          "question": "আমি কি যে কোনো সময় সাবস্ক্রিপশন বাতিল করতে পারি?",
+          "answer": "হ্যাঁ, আপনি যে কোনো সময় বাতিল করতে পারেন। আপনার সুবিধা বর্তমান বিলিং পিরিয়ড শেষ হওয়া পর্যন্ত থাকবে।",
+          "discountNote": {
+            "title": "ডিসকাউন্টেড সাবস্ক্রিপশনের জন্য বিশেষ নোট:",
+            "body": "আপনি যদি কুপন ডিসকাউন্ট দিয়ে সাবস্ক্রাইব করে প্রথম মাসে ডিসকাউন্টেড পরিমাণের চেয়ে বেশি ক্রেডিট ব্যবহার করে থাকেন, তবে দ্বিতীয় মাসের পেমেন্ট প্রসেস হওয়ার পরেই বাতিল করতে পারবেন। এটি প্রমো অফারের ন্যায্য ব্যবহার নিশ্চিত করে।"
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "মাসিক ও বার্ষিক সাবস্ক্রিপশনে কি পার্থক্য আছে?",
+          "answer": "হ্যাঁ, বার্ষিক সাবস্ক্রিপশনে মাসিকের তুলনায় উল্লেখযোগ্য ছাড় থাকে। বার্ষিক বিলিং বেছে নিলে প্রায় 20% সাশ্রয় হবে।"
+        },
+        "whatAreCredits": {
+          "question": "ReelMind ক্রেডিট কী?",
+          "answer": "ReelMind ক্রেডিট হলো আমাদের প্ল্যাটফর্মে AI ভিডিও ও ছবি তৈরি করতে ব্যবহৃত ভার্চুয়াল কারেন্সি। বিভিন্ন ফিচারে বিভিন্ন পরিমাণ ক্রেডিট লাগে। যেমন, স্ট্যান্ডার্ড ভিডিও (480p) তৈরি করতে 50 ক্রেডিট, আর HD ভিডিও (720p) তৈরি করতে 80 ক্রেডিট লাগে।"
+        },
+        "earnCredits": {
+          "question": "আমি কীভাবে ক্রেডিট অর্জন করতে পারি?",
+          "intro": "আপনি বিভিন্নভাবে ক্রেডিট অর্জন করতে পারেন:",
+          "items": {
+            "membership": "সদস্যতা প্ল্যানের মাধ্যমে (PRO সদস্যরা মাসে 1000 ক্রেডিট, MAX 2000)",
+            "purchase": "ক্রেডিট প্যাক কিনে",
+            "newUser": "নতুন ব্যবহারকারীরা রেজিস্ট্রেশনে 100 ফ্রি ক্রেডিট পায়",
+            "posting": "ReelMind-এ পোস্ট করে (দিনে 50 ক্রেডিট)",
+            "promotions": "বিশেষ প্রমোশন ও রিওয়ার্ড"
+          }
+        },
+        "expire": {
+          "question": "ক্রেডিট কি মেয়াদোত্তীর্ণ হয়?",
+          "answer": "আপনি যে ক্রেডিট কিনেন তা মেয়াদোত্তীর্ণ হয় না এবং ব্যবহার না হওয়া পর্যন্ত অ্যাকাউন্টে থাকে। মাসিক দেওয়া ক্রেডিট প্রতি মাসের শুরুতে রিসেট হয়। আগের মাসের অব্যবহৃত ক্রেডিট পরের মাসে থাকে না।"
+        },
+        "refund": {
+          "question": "অব্যবহৃত ক্রেডিটের রিফান্ড পাওয়া যাবে?",
+          "answer": "কেনা ক্রেডিটের জন্য আমরা রিফান্ড দিই না। তবে প্রযুক্তিগত সমস্যার কারণে আপনি ক্রেডিট ব্যবহার করতে না পারলে সাপোর্ট টিমের সাথে যোগাযোগ করুন।"
+        },
+        "membershipVsCredits": {
+          "question": "সদস্যতা ও ক্রেডিটের মধ্যে পার্থক্য কী?",
+          "answer": "সদস্যতায় মাসিক ক্রেডিটের পাশাপাশি প্রায়োরিটি প্রসেসিং ও এক্সক্লুসিভ ফিচারের সুবিধা থাকে। ক্রেডিট আলাদাভাবে কিনে জেনারেশনে খরচ হয়। নিয়মিত ব্যবহারের জন্য সদস্যতা, মাঝে মাঝে ব্যবহারের জন্য ক্রেডিট কিনুন।"
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. সর্বস্বত্ব সংরক্ষিত।"
+    }
+  },
+  "Search": {
+    "placeholder": "অনুসন্ধান...",
+    "noResultsFound": "কোনো ফলাফল পাওয়া যায়নি",
+    "viewAllResults": "সব ফলাফল দেখুন",
+    "sections": {
+      "posts": "পোস্ট",
+      "users": "ব্যবহারকারী"
+    },
+    "tabs": {
+      "posts": "পোস্ট",
+      "users": "ব্যবহারকারী"
+    },
+    "unknownUser": "অজানা",
+    "loading": "লোড হচ্ছে...",
+    "searching": "খুঁজছে...",
+    "loadingMore": "আরও লোড হচ্ছে...",
+    "tryAgain": "আবার চেষ্টা করুন",
+    "noPostsFound": "কোনো পোস্ট পাওয়া যায়নি",
+    "noUsersFound": "কোনো ব্যবহারকারী পাওয়া যায়নি",
+    "empty": {
+      "title": "অনুসন্ধান",
+      "hint": "কনটেন্ট খুঁজতে কীওয়ার্ড লিখুন"
+    },
+    "errors": {
+      "searchFailed": "অনুসন্ধান ব্যর্থ"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "লাইফটাইম কমিশন - চিরকাল 20%"
+    },
+    "hero": {
+      "lifetime": "লাইফটাইম",
+      "passiveIncome": "প্যাসিভ ইনকাম",
+      "subtitle": {
+        "prefix": "চিরকাল",
+        "suffix": "কমিশন অর্জন করুন"
+      }
+    },
+    "actions": {
+      "getStarted": "শুরু করুন",
+      "viewDashboard": "ড্যাশবোর্ড দেখুন",
+      "signInFirst": "দয়া করে আগে সাইন ইন করুন"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API প্ল্যাটফর্ম",
+      "actions": {
+        "modelsPricing": "মডেল ও মূল্য",
+        "viewDocumentation": "ডকুমেন্টেশন দেখুন"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API কী সফলভাবে তৈরি হয়েছে",
+      "apiKeyCreateFailed": "API কী তৈরি ব্যর্থ",
+      "apiKeyDeleted": "API কী সফলভাবে মুছে ফেলা হয়েছে",
+      "apiKeyDeletedDescription": "API কী মুছে ফেলা হয়েছে",
+      "apiKeyDeleteFailed": "API কী মুছে ফেলা ব্যর্থ",
+      "apiKeyCopied": "API কী ক্লিপবোর্ডে কপি হয়েছে",
+      "modelIdCopied": "মডেল ID ক্লিপবোর্ডে কপি হয়েছে"
+    },
+    "accountCard": {
+      "notLoggedIn": "লগইন করা নেই",
+      "loadingKeys": "API কী লোড হচ্ছে...",
+      "keysAvailable": "{count}টি API {count, plural, one {কী} other {কী}} উপলব্ধ",
+      "createKey": "API কী তৈরি করুন",
+      "helpPrefix": "সহায়তা লাগলে দেখুন ",
+      "apiDocumentation": "API ডকুমেন্টেশন"
+    },
+    "stats": {
+      "plan": "প্ল্যান",
+      "resetDate": "রিসেট তারিখ",
+      "credits": "ক্রেডিট",
+      "tasks": "টাস্ক",
+      "loading": "লোড হচ্ছে...",
+      "freePlan": "ফ্রি প্ল্যান",
+      "na": "N/A",
+      "buyCredits": "ক্রেডিট কিনুন"
+    },
+    "apiKeys": {
+      "title": "API কী ম্যানেজমেন্ট",
+      "description": "ReelMind ভিডিও জেনারেশন API ব্যবহারের জন্য আপনার API কী ম্যানেজ করুন",
+      "createNew": "নতুন API কী তৈরি করুন",
+      "loading": "API কী লোড হচ্ছে...",
+      "label": "API কী",
+      "created": "{date} এ তৈরি",
+      "active": "সক্রিয়",
+      "inactive": "নিষ্ক্রিয়",
+      "show": "API কী দেখান",
+      "hide": "API কী লুকান",
+      "copy": "API কী কপি",
+      "totalCalls": "মোট কল",
+      "creditsUsed": "ব্যবহৃত ক্রেডিট",
+      "empty": {
+        "title": "কোনো API কী নেই",
+        "description": "আপনি এখনও কোনো API কী তৈরি করেননি। ReelMind API ব্যবহার শুরু করতে প্রথম API কী তৈরি করুন।",
+        "createFirst": "আপনার প্রথম API কী তৈরি করুন"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "মডেল ও মূল্য",
+      "apiDocumentation": "API ডকুমেন্টেশন"
+    },
+    "documentation": {
+      "title": "API ডকুমেন্টেশন",
+      "authentication": "অথেনটিকেশন",
+      "authenticationIntro": "সব API রিকোয়েস্টে API কী দিয়ে অথেনটিকেশন দরকার। আপনার API কী একটি UUID যা নিচের API কী ম্যানেজমেন্ট সেকশনে তৈরি করতে পারেন।",
+      "authenticationMethods": "অথেনটিকেশন পদ্ধতি",
+      "exampleRequest": "উদাহরণ রিকোয়েস্ট",
+      "important": "গুরুত্বপূর্ণ",
+      "apiEndpoints": "API এন্ডপয়েন্ট",
+      "responseFormat": "রেসপন্স ফরম্যাট",
+      "responseFormatIntro": "ভিডিও জেনারেশন টাস্ক রেসপন্স ফরম্যাট:",
+      "parameters": "প্যারামিটার",
+      "table": {
+        "name": "নাম",
+        "type": "ধরন",
+        "required": "আবশ্যক",
+        "description": "বর্ণনা"
+      },
+      "yes": "হ্যাঁ",
+      "no": "না"
+    },
+    "pricing": {
+      "title": "API মূল্য ও মডেল",
+      "intro": "ভিডিও ও ছবি জেনারেশন API-এর জন্য উপলব্ধ AI মডেল এবং তাদের মূল্য দেখুন",
+      "loading": "উপলব্ধ মডেল লোড হচ্ছে...",
+      "available": "উপলব্ধ",
+      "unavailable": "অনুপলব্ধ",
+      "credits": "{credits} ক্রেডিট",
+      "basePricePerImage": "বেস প্রাইস (প্রতি ছবি)",
+      "basePrice5sVideo": "বেস প্রাইস (5s ভিডিও)",
+      "creditsPerSecond": "+{credits} ক্রেডিট/সেকেন্ড",
+      "modelId": "মডেল ID",
+      "copyModelId": "মডেল ID কপি",
+      "noModels": {
+        "title": "কোনো মডেল উপলব্ধ নেই",
+        "description": "বর্তমানে API অ্যাক্সেসের জন্য কোনো AI মডেল উপলব্ধ নেই। পরে আবার দেখুন।"
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "টেক্সট থেকে ভিডিও",
+      "imageToVideo": "ছবি থেকে ভিডিও",
+      "videoToVideo": "ভিডিও থেকে ভিডিও",
+      "textToImage": "টেক্সট থেকে ছবি",
+      "imageToImage": "ছবি থেকে ছবি"
+    },
+    "deleteModal": {
+      "title": "ডিলিট নিশ্চিত করুন",
+      "description": "আপনি কি নিশ্চিত এই API কী ডিলিট করতে চান? এটি ফিরিয়ে আনা যাবে না।",
+      "keyName": "কী নাম: {name}",
+      "createdOn": "{date} এ তৈরি",
+      "cancel": "বাতিল",
+      "deleting": "ডিলিট হচ্ছে...",
+      "deleteKey": "API কী ডিলিট"
+    },
+    "modelParameters": {
+      "title": "মডেল প্যারামিটার",
+      "required": "আবশ্যক",
+      "default": "ডিফল্ট: {value}",
+      "labels": {
+        "prompt": "প্রম্পট",
+        "guidance_scale": "গাইডেন্স স্কেল",
+        "aspect_ratio": "অ্যাসপেক্ট রেশিও",
+        "seed": "বীজ",
+        "image_url": "ছবি URL",
+        "duration": "সময়কাল",
+        "resolution": "রেজোলিউশন",
+        "num_inference_steps": "অনুমান পদক্ষেপ",
+        "cfg_scale": "CFG স্কেল"
+      },
+      "flux": {
+        "promptDescription": "জেনারেট করতে চাওয়া ছবির বর্ণনা করা টেক্সট প্রম্পট",
+        "guidanceScaleDescription": "ছবি কতটা প্রম্পট অনুসরণ করবে তা নিয়ন্ত্রণ করে",
+        "aspectRatioDescription": "জেনারেটেড ছবির অ্যাসপেক্ট রেশিও",
+        "seedDescription": "পুনরুত্পাদনযোগ্য জেনারেশনের জন্য র‌্যান্ডম Seed",
+        "imageUrlDescription": "Image-to-Image জেনারেশনের জন্য ইনপুট ছবি URL"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "টেক্সট টু ইমেজ · ইমেজ এডিটিং",
+      "title": "FLUX / Nano Banana / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - বিশ্বের #1 AI এজেন্ট পরিচালক",
+      "description": "বিশ্বের #1 AI এজেন্ট পরিচালক"
+    },
+    "page": {
+      "loading": "Nolan AI পরিচালক লোড হচ্ছে..."
+    },
+    "heroBanner": {
+      "label": "বিপ্লবী AI প্রযুক্তি",
+      "name": "নোলান",
+      "worldFirst": "বিশ্বের প্রথম",
+      "aiAgentDirector": "AI এজেন্ট পরিচালক"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "মুলতুবি",
+        "queued": "সারিবদ্ধ",
+        "processing": "প্রক্রিয়াকরণ",
+        "completed": "সম্পন্ন",
+        "failed": "ব্যর্থ হয়েছে",
+        "canceled": "বাতিল"
+      },
+      "model": {
+        "unknown": "অজানা মডেল",
+        "unnamed": "নাম"
+      },
+      "errors": {
+        "fetchListTitle": "কার্যগুলি লোড করতে ব্যর্থ হয়েছে৷",
+        "unknown": "অজানা ত্রুটি",
+        "fetchDetails": "টাস্কের বিবরণ আনতে ব্যর্থ হয়েছে৷",
+        "downloadFailed": "ডাউনলোড ব্যর্থ হয়েছে৷",
+        "retryFailed": "পুনরায় চেষ্টা ব্যর্থ হয়েছে৷"
+      },
+      "details": {
+        "videoTitle": "ভিডিও টাস্কের বিবরণ",
+        "imageTitle": "ইমেজ টাস্ক বিশদ",
+        "videoPreview": "ভিডিও প্রিভিউ",
+        "hideVideo": "ভিডিও লুকান",
+        "showVideo": "ভিডিও দেখান",
+        "downloadVideo": "ভিডিও ডাউনলোড করুন",
+        "browserNoVideoSupport": "আপনার ব্রাউজার ভিডিও প্লেব্যাক সমর্থন করে না.",
+        "labels": {
+          "duration": "সময়কাল",
+          "fileSize": "ফাইলের আকার",
+          "format": "বিন্যাস",
+          "prompt": "প্রম্পট",
+          "model": "মডেল",
+          "ratio": "আকৃতির অনুপাত",
+          "resolution": "রেজোলিউশন",
+          "taskId": "টাস্ক আইডি",
+          "user": "ব্যবহারকারী",
+          "status": "স্ট্যাটাস",
+          "createdTime": "তৈরি সময়",
+          "startedTime": "শুরুর সময়",
+          "completedTime": "সম্পূর্ণ সময়",
+          "generationModel": "প্রজন্মের মডেল",
+          "priority": "অগ্রাধিকার",
+          "requestId": "আইডি অনুরোধ করুন",
+          "lastActivity": "শেষ কার্যকলাপ"
+        },
+        "videoPreviewUnavailable": "ভিডিও পূর্বরূপ অনুপলব্ধ",
+        "videoNoOutput": "টাস্ক সম্পূর্ণ হয়েছে কিন্তু কোনো ভিডিও আউটপুট নেই",
+        "videoNotCompleted": "টাস্ক এখনো শেষ হয়নি",
+        "generationParams": "জেনারেশন প্যারামিটার",
+        "basicInfo": "মৌলিক তথ্য",
+        "timeInfo": "সময়ের তথ্য",
+        "detailData": "বিস্তারিত তথ্য",
+        "inputParams": "ইনপুট পরামিতি",
+        "outputResult": "আউটপুট ফলাফল",
+        "errorLog": "ত্রুটি লগ",
+        "retrying": "আবার চেষ্টা করা হচ্ছে...",
+        "retryTask": "টাস্ক পুনরায় চেষ্টা করুন",
+        "generatedImage": "জেনারেটেড ইমেজ",
+        "close": "বন্ধ"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "ব্যবহারকারীর প্রতিক্রিয়া ব্যবস্থাপনা",
+        "subtitle": "ব্যবহারকারীর জমা দেওয়া প্রতিক্রিয়া এবং অভিযোগগুলি পরিচালনা করুন"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "আনা ব্যর্থ হয়েছে",
+          "fetchFailedDescription": "প্রতিক্রিয়া ডেটা আনতে অক্ষম: {error}",
+          "unknown": "অজানা ত্রুটি"
+        },
+        "type": {
+          "bug": "বাগ রিপোর্ট",
+          "suggestion": "সাজেশন",
+          "other": "অন্যান্য"
+        },
+        "loading": "লোড হচ্ছে...",
+        "filter": {
+          "label": "প্রতিক্রিয়া টাইপ",
+          "all": "সকল প্রকার"
+        },
+        "total": "মোট: {total} প্রতিক্রিয়া আইটেম",
+        "empty": "কোন প্রতিক্রিয়া তথ্য নেই",
+        "headers": {
+          "userInfo": "ব্যবহারকারীর তথ্য",
+          "type": "টাইপ",
+          "subject": "বিষয়",
+          "submittedAt": "জমা দেওয়া হয়েছে",
+          "actions": "কর্ম"
+        },
+        "user": {
+          "unknown": "অজানা ব্যবহারকারী",
+          "noEmail": "কোনো ইমেইল নেই"
+        },
+        "actions": {
+          "collapse": "সঙ্কুচিত",
+          "viewDetails": "বিস্তারিত দেখুন"
+        },
+        "contentLabel": "প্রতিক্রিয়া:",
+        "pagination": {
+          "previous": "আগের",
+          "next": "পরবর্তী"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "একটি অনুসন্ধান কীওয়ার্ড লিখুন দয়া করে.",
+        "noUsersFound": "কোনো মিল ব্যবহারকারী পাওয়া যায়নি.",
+        "searchFailed": "ব্যবহারকারীদের অনুসন্ধান করতে ব্যর্থ.",
+        "userRequired": "অনুগ্রহ করে একজন ব্যবহারকারী নির্বাচন করুন বা একটি ব্যবহারকারী আইডি লিখুন।",
+        "amountInvalid": "একটি বৈধ ক্রেডিট পরিমাণ লিখুন দয়া করে.",
+        "descriptionRequired": "অনুগ্রহ করে একটি অনুদানের বিবরণ লিখুন।",
+        "grantFailed": "ক্রেডিট দিতে ব্যর্থ হয়েছে."
+      },
+      "success": {
+        "granted": "ক্রেডিট সফলভাবে মঞ্জুর করা হয়েছে."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "সমীক্ষা আনতে ব্যর্থ হয়েছে৷",
+        "fetchStats": "সমীক্ষার পরিসংখ্যান আনতে ব্যর্থ হয়েছে৷"
+      }
+    },
+    "memberships": {
+      "title": "ব্যবহারকারী সাবস্ক্রিপশন ব্যবস্থাপনা",
+      "search": {
+        "placeholder": "ব্যবহারকারী আইডি, ইমেল, বা ডাকনাম অনুসন্ধান করুন...",
+        "button": "অনুসন্ধান করুন"
+      },
+      "stats": {
+        "total": "মোট সদস্যতা",
+        "yearly": "বার্ষিক সদস্য"
+      },
+      "list": {
+        "title": "সদস্যতা তালিকা"
+      },
+      "loading": "লোড হচ্ছে...",
+      "actions": {
+        "retry": "আবার চেষ্টা করুন"
+      },
+      "empty": "কোনো সাবস্ক্রিপশন ডেটা নেই",
+      "table": {
+        "headers": {
+          "userInfo": "ব্যবহারকারীর তথ্য",
+          "plan": "পরিকল্পনা",
+          "billingCycle": "বিলিং চক্র",
+          "status": "স্ট্যাটাস",
+          "credits": "ক্রেডিট ব্যালেন্স",
+          "videoTasks": "ভিডিও টাস্ক",
+          "imageTasks": "ইমেজ টাস্ক",
+          "createdAt": "তৈরি সময়",
+          "expiresAt": "মেয়াদ শেষ হওয়ার সময়"
+        },
+        "user": {
+          "unknown": "অজানা"
+        },
+        "status": {
+          "active": "সক্রিয়",
+          "inactive": "নিষ্ক্রিয়",
+          "cancelAtPeriodEnd": "পিরিয়ড শেষে বাতিল করুন"
+        },
+        "creditsUnit": "ক্রেডিট",
+        "flagged": "পতাকা লাগানো",
+        "tasksUnit": "কাজ",
+        "never": "কখনই না"
+      },
+      "pagination": {
+        "summary": "{total} রেকর্ডের মধ্যে {start} থেকে {end} দেখানো হচ্ছে",
+        "previous": "আগের",
+        "next": "পরবর্তী",
+        "page": "পৃষ্ঠা {currentPage} এর {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "পোস্ট মুছে ফেলতে ব্যর্থ হয়েছে. আবার চেষ্টা করুন."
+      }
+    }
+  },
+  "Common": {
+    "language": "ভাষা",
+    "onlyEnglish": "শুধুমাত্র ইংরেজি বর্তমানে উপলব্ধ.",
+    "onlySupportedPages": "অতিরিক্ত ভাষা বর্তমানে হোম, এক্সপ্লোর, সার্চ, ক্রিয়েট, লেগো, মিউজিক, মেম্বারশিপ, কন্টাক্ট, ইউজার, শেয়ার, মডেল, ইফেক্টস এবং ব্লগ পৃষ্ঠাগুলিতে উপলব্ধ।",
+    "languages": {
+      "en": "ইংরেজি",
+      "zh-CN": "চীনা (সরলীকৃত)"
+    },
+    "actions": {
+      "viewAll": "সব দেখুন",
+      "cancel": "বাতিল করুন",
+      "recreate": "পুনরায় তৈরি করুন",
+      "download": "ডাউনলোড করুন",
+      "downloading": "ডাউনলোড হচ্ছে...",
+      "showMore": "আরও দেখান",
+      "showLess": "কম দেখান"
+    },
+    "aria": {
+      "scrollRight": "ডানদিকে স্ক্রোল করুন",
+      "search": "অনুসন্ধান করুন"
+    },
+    "search": {
+      "placeholder": "পোস্ট এবং ব্যবহারকারীদের অনুসন্ধান করুন..."
+    },
+    "share": {
+      "button": "শেয়ার করুন",
+      "toast": {
+        "copiedTitle": "কপি করা হয়েছে",
+        "copiedMessage": "ক্লিপবোর্ডে লিঙ্ক কপি করা হয়েছে",
+        "failedTitle": "অনুলিপি করতে ব্যর্থ হয়েছে",
+        "failedMessage": "ক্লিপবোর্ডে লিঙ্ক কপি করতে অক্ষম"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "নোলান এআই পরিচালক",
+      "earlyAccess": "প্রারম্ভিক অ্যাক্সেস",
+      "justOneCredit": "মাত্র ১ ক্রেডিট"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "হালকা মোড",
+        "darkMode": "ডার্ক মোড",
+        "switchToLightMode": "লাইট মোডে স্যুইচ করুন",
+        "switchToDarkMode": "ডার্ক মোডে স্যুইচ করুন"
+      },
+      "profile": {
+        "myProfile": "আমার প্রোফাইল",
+        "goToMyProfile": "আমার প্রোফাইলে যান"
+      },
+      "menu": {
+        "openMenu": "মেনু খুলুন",
+        "close": "বন্ধ"
+      },
+      "membership": {
+        "title": "সদস্যপদ",
+        "tapToViewPlans": "প্ল্যান দেখতে ট্যাপ করুন",
+        "upgrade": "আপগ্রেড করুন",
+        "plans": {
+          "free": "বিনামূল্যে",
+          "pro": "প্রো",
+          "max": "সর্বোচ্চ",
+          "unlimited": "আনলিমিটেড"
+        }
+      },
+      "actions": {
+        "pricing": "মূল্য নির্ধারণ",
+        "signIn": "সাইন ইন করুন"
+      }
+    },
+    "footer": {
+      "rights": "© {year} রিলমাইন্ড। সর্বস্বত্ব সংরক্ষিত"
+    },
+    "video": {
+      "labels": {
+        "prompt": "প্রম্পট",
+        "model": "মডেল",
+        "ratio": "অনুপাত",
+        "guidance": "নির্দেশনা",
+        "steps": "ধাপ",
+        "seed": "বীজ",
+        "definition": "সংজ্ঞা"
+      },
+      "values": {
+        "unknownModel": "অজানা মডেল",
+        "random": "এলোমেলো"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "পৃষ্ঠা সংখ্যা",
+        "previous": "আগের পৃষ্ঠায় যান",
+        "next": "পরবর্তী পৃষ্ঠায় যান"
+      },
+      "previous": "আগের",
+      "next": "পরবর্তী",
+      "more": "আরো পৃষ্ঠা"
+    },
+    "concurrentLimit": {
+      "title": "টাস্ক লিমিটে পৌঁছেছে",
+      "defaultMessage": "বিনামূল্যে ব্যবহারকারীরা একবারে শুধুমাত্র একটি ভিডিও জেনারেশন টাস্ক চালাতে পারে।",
+      "currentStatus": "বর্তমান অবস্থা",
+      "currentPlan": "বর্তমান পরিকল্পনা",
+      "premiumBenefits": "প্রিমিয়াম সুবিধা",
+      "plans": {
+        "unlimited": "সীমাহীন পরিকল্পনা",
+        "free": "বিনামূল্যে",
+        "unlimitedTasks": "সীমাহীন কাজ"
+      },
+      "unlimited": {
+        "maxTasks": "সর্বাধিক 3টি সমসাময়িক কাজ",
+        "priority": "উচ্চ অগ্রাধিকার প্রক্রিয়াকরণ",
+        "features": "সমস্ত প্রিমিয়াম বৈশিষ্ট্য",
+        "waitNote": "নতুন জমা দেওয়ার আগে অনুগ্রহ করে আপনার বর্তমান কিছু কাজ সম্পূর্ণ হওয়ার জন্য অপেক্ষা করুন।"
+      },
+      "free": {
+        "maxTasks": "1টি সমসাময়িক কাজ",
+        "priority": "স্ট্যান্ডার্ড অগ্রাধিকার",
+        "features": "মৌলিক বৈশিষ্ট্য"
+      },
+      "upgrade": {
+        "maxTasks": "5টি পর্যন্ত একযোগে কাজ",
+        "priority": "উচ্চ অগ্রাধিকার প্রক্রিয়াকরণ",
+        "features": "সমস্ত মডেল অ্যাক্সেস"
+      },
+      "actions": {
+        "acknowledge": "বুঝেছি",
+        "upgrade": "আপগ্রেড করুন",
+        "loading": "লোড হচ্ছে..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "স্থানীয় আপলোড",
+      "reelmind": "রিলমাইন্ড জেনারেটেড"
+    },
+    "reelmind": {
+      "description": "ReelMind এ জেনারেট করা একটি ভিডিও নির্বাচন করুন।",
+      "browse": "ReelMind ভিডিও ব্রাউজ করুন"
+    },
+    "title": {
+      "placeholder": "একটি শিরোনাম যোগ করুন..."
+    },
+    "tags": {
+      "title": "ট্যাগ",
+      "empty": "আপনার ভিডিওকে আরও ভালোভাবে শ্রেণীবদ্ধ করতে ট্যাগ যোগ করুন।",
+      "placeholder": "একটি ট্যাগ যোগ করুন (নিশ্চিত করতে এন্টার টিপুন)",
+      "count": "{count}/{limit}",
+      "helper": "{limit} ট্যাগ পর্যন্ত, {max} অক্ষর প্রতিটি।"
+    },
+    "description": {
+      "placeholder": "একটি বিবরণ যোগ করুন..."
+    },
+    "generationType": {
+      "title": "প্রজন্মের ধরন",
+      "txt2video": "টেক্সট টু ভিডিও",
+      "txt2videoDescription": "একটি টেক্সট প্রম্পট থেকে তৈরি করুন।",
+      "img2video": "ছবি থেকে ভিডিও",
+      "img2videoDescription": "একটি রেফারেন্স ইমেজ থেকে তৈরি করুন."
+    },
+    "prompts": {
+      "promptTitle": "প্রম্পট",
+      "promptPlaceholder": "এই ভিডিওটি তৈরি করতে ব্যবহৃত প্রম্পটটি লিখুন...",
+      "negativeTitle": "নেতিবাচক প্রম্পট",
+      "negativePlaceholder": "নেতিবাচক প্রম্পট লিখুন..."
+    },
+    "modelResources": {
+      "title": "মডেল সম্পদ",
+      "placeholder": "ব্যবহৃত মডেল সম্পদের তালিকা করুন, যেমন মডেল, LoRAs, এম্বেডিং..."
+    },
+    "aigc": {
+      "guidanceScale": "গাইডেন্স স্কেল",
+      "guidanceScalePlaceholder": "যেমন 7.5",
+      "steps": "ধাপ",
+      "stepsPlaceholder": "যেমন 30",
+      "seed": "বীজ",
+      "seedPlaceholder": "যেমন 1234567890"
+    },
+    "tools": {
+      "title": "জেনারেশন টুলস"
+    },
+    "videoPreview": {
+      "uploadComplete": "আপলোড সম্পূর্ণ",
+      "uploading": "আপলোড হচ্ছে...",
+      "clickToUpload": "একটি ভিডিও আপলোড করতে ক্লিক করুন",
+      "remove": "ভিডিও সরান"
+    },
+    "actions": {
+      "publish": "প্রকাশ করুন",
+      "publishing": "প্রকাশ করা হচ্ছে...",
+      "back": "ব্যাক"
+    },
+    "errors": {
+      "tagEmpty": "ট্যাগ খালি হতে পারে না।",
+      "tagTooLong": "ট্যাগ {max} অক্ষরের বেশি হতে পারে না।",
+      "tagExists": "এই ট্যাগটি আগে থেকেই আছে।",
+      "tagLimit": "আপনি {limit} ট্যাগ পর্যন্ত যোগ করতে পারেন।",
+      "authRequired": "আপলোড করতে সাইন ইন করুন.",
+      "uploadFailed": "আপলোড ব্যর্থ হয়েছে. আবার চেষ্টা করুন.",
+      "uploadParamsFailed": "আপলোড পরামিতি আনতে ব্যর্থ হয়েছে.",
+      "fileAddFailed": "ফাইল যোগ করতে ব্যর্থ হয়েছে. আবার চেষ্টা করুন."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "ব্লগ - ReelMind",
+      "description": "AI কন্টেন্ট তৈরি, ভিডিও জেনারেশন এবং সাম্প্রতিক ReelMind বৈশিষ্ট্য সম্পর্কে টিপস, টিউটোরিয়াল এবং অন্তর্দৃষ্টি আবিষ্কার করুন।"
+    },
+    "page": {
+      "title": "ব্লগ",
+      "empty": "কোন ব্লগ পোস্ট পাওয়া যায়নি"
+    },
+    "error": {
+      "title": "পোস্ট লোড করার সময় ত্রুটি",
+      "description": "ব্লগ পোস্টগুলি লোড করার সময় কিছু ভুল হয়েছে৷",
+      "retry": "আবার চেষ্টা করুন"
+    },
+    "notFound": {
+      "title": "পেজ পাওয়া যায়নি",
+      "description": "আপনার অনুরোধ করা ব্লগ পাতা বিদ্যমান নেই."
+    },
+    "feed": {
+      "end": "আপনি শেষ পর্যন্ত পৌঁছেছেন",
+      "retry": "আবার চেষ্টা করুন",
+      "loadFailed": "ব্লগ পোস্ট লোড করতে ব্যর্থ হয়েছে"
+    },
+    "topFeed": {
+      "refresh": "রিফ্রেশ",
+      "exploreMore": "আরো মজা অন্বেষণ",
+      "loadFailed": "এলোমেলো পোস্ট লোড করতে ব্যর্থ হয়েছে"
+    },
+    "floatingChat": {
+      "title": "নোলান এআইকে জিজ্ঞাসা করুন",
+      "subtitle": "১ নম্বর এআই এজেন্ট পরিচালক!",
+      "placeholder": "এই নিবন্ধটি সম্পর্কে জিজ্ঞাসা করুন বা আপনার চলচ্চিত্র ধারনা শেয়ার করুন...",
+      "cta": "নোলানের কাছে পাঠান"
+    },
+    "featureCard": {
+      "label": "ভিডিও মডেল",
+      "title": "রিলমাইন্ড আপনার ধারনাকে জীবন্ত করার জন্য শক্তিশালী টুল অফার করে।",
+      "subtitle": "101টি এআই মডেলের সাথে আপনার ধারণাগুলিকে অত্যাশ্চর্য ভিজ্যুয়ালে রূপান্তর করুন",
+      "cta": "এখন চেষ্টা করুন"
+    },
+    "breadcrumbs": {
+      "home": "বাড়ি"
+    },
+    "article": {
+      "notFoundTitle": "প্রবন্ধ পাওয়া যায়নি",
+      "notFoundDescription": "অনুরোধ করা নিবন্ধটি খুঁজে পাওয়া যায়নি."
+    }
+  },
+  "Favorites": {
+    "title": "আমার প্রিয়",
+    "subtitle": "এখানে আপনি আপনার প্রিয় ভিডিও এবং মডেল পরিচালনা করতে পারেন",
+    "tabs": {
+      "video": "ভিডিও",
+      "model": "মডেল"
+    },
+    "empty": {
+      "title": "আপনার এখনও কোন প্রিয় নেই"
+    },
+    "alert": {
+      "title": "ত্রুটি",
+      "retry": "আবার চেষ্টা করুন",
+      "loadFailed": "প্রিয় লোড করতে অক্ষম. আবার চেষ্টা করুন.",
+      "removeFailed": "প্রিয় সরাতে অক্ষম. আবার চেষ্টা করুন."
+    },
+    "card": {
+      "video": "ভিডিও",
+      "model": "মডেল"
+    },
+    "button": {
+      "favorite": "প্রিয়",
+      "favorited": "পছন্দের"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ReelMind এ স্বাগতম",
+      "subtitle": "সাইন ইন করুন বা আপনার ক্রিয়েটর অ্যাকাউন্ট তৈরি করুন",
+      "continueWithGoogle": "Google দিয়ে চালিয়ে যান",
+      "orContinueWithEmail": "অথবা ইমেইল দিয়ে চালিয়ে যান",
+      "emailLabel": "ইমেইল",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "ইমেইল ঠিকানা",
+      "passwordLabel": "পাসওয়ার্ড",
+      "passwordPlaceholder": "••••••••",
+      "show": "দেখান",
+      "hide": "লুকান",
+      "inviteCodeLabelOptional": "ইনভিটেশন কোড (ঐচ্ছিক)",
+      "inviteCodePlaceholder": "কোড লিখুন",
+      "invitedBy": "আমন্ত্রণ করেছেন <name>{value}</name>",
+      "continue": "চালিয়ে যান",
+      "signIn": "সাইন ইন",
+      "createAccount": "অ্যাকাউন্ট তৈরি করুন",
+      "switchToSignIn": "আগে থেকেই অ্যাকাউন্ট আছে? সাইন ইন করুন",
+      "switchToSignUp": "অ্যাকাউন্ট নেই? সাইন আপ করুন",
+      "pageSubtitleCreate": "আপনার অ্যাকাউন্ট তৈরি করুন",
+      "pageSubtitleSignIn": "আপনার অ্যাকাউন্টে সাইন ইন করুন",
+      "termsLine": "চালিয়ে গেলে আপনি আমাদের <terms>শর্তাবলি</terms> এবং <privacy>গোপনীয়তা নীতি</privacy> মেনে নিচ্ছেন"
+    },
+    "verifyEmail": {
+      "title": "আপনার ইমেইল যাচাই করুন",
+      "sentLinkTo": "আমরা যাচাইকরণ লিঙ্ক পাঠিয়েছি",
+      "checkInbox": "ইনবক্স চেক করুন এবং চালিয়ে যেতে লিঙ্কে ক্লিক করুন।",
+      "understand": "বুঝেছি",
+      "useDifferentEmail": "অন্য ইমেইল ব্যবহার করুন"
+    },
+    "errors": {
+      "invalidEmail": "অবৈধ ইমেইল ঠিকানা",
+      "suspiciousEmail": "এই ইমেইলটি সন্দেহজনক মনে হচ্ছে",
+      "verifyBeforeLogin": "লগইন করার আগে আপনার ইমেইল যাচাই করুন",
+      "operationFailed": "অপারেশন ব্যর্থ হয়েছে, আবার চেষ্টা করুন",
+      "googleFailed": "Google সাইন ইন ব্যর্থ হয়েছে, আবার চেষ্টা করুন",
+      "checkEmailConfirmation": "কনফার্মেশন লিঙ্কের জন্য আপনার ইমেইল চেক করুন!"
+    },
+    "brand": {
+      "headlineLine1": "রিল-মেকারস",
+      "headlineLine2": "স্বাগতম",
+      "taglineLine1": "আপনার মন খুলে দিন।",
+      "taglineLine2": "AI কে রিলে রূপ দিতে দিন।",
+      "cta": "আমাদের ক্রিয়েটর কমিউনিটিতে যোগ দিন এবং তৈরি শুরু করুন।"
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "ইমেজ যোগ করুন",
+      "addMoreReferences": "আরো তথ্যসূত্র যোগ করুন",
+      "auto": "অটো",
+      "back": "ফিরে",
+      "character": "চরিত্র",
+      "clear": "পরিষ্কার",
+      "clearAll": "সব সাফ করুন",
+      "close": "বন্ধ",
+      "createPack": "প্যাক তৈরি করুন",
+      "downloadCount": "ডাউনলোড করুন {current}/{total}",
+      "dropOrUploadPhoto": "ড্রপ বা একটি ফটো আপলোড",
+      "goToLibrary": "লাইব্রেরিতে যান",
+      "high": "উচ্চ",
+      "history": "ইতিহাস",
+      "inQueue": "সারিতে",
+      "info": "তথ্য",
+      "instadump": "ইন্সটাডাম্প",
+      "manual": "ম্যানুয়াল",
+      "new": "নতুন",
+      "next": "পরবর্তী",
+      "open": "খোলা",
+      "previous": "আগের",
+      "ready": "প্রস্তুত",
+      "recent": "সাম্প্রতিক",
+      "remove": "সরান",
+      "replace": "প্রতিস্থাপন করুন",
+      "reset": "রিসেট করুন",
+      "restart": "রিস্টার্ট করুন",
+      "selectPack": "প্যাক নির্বাচন করুন",
+      "storyboard": "স্টোরিবোর্ড",
+      "upload": "আপলোড করুন",
+      "uploading": "আপলোড হচ্ছে..."
+    },
+    "prompts": {
+      "defaultImage": "প্রাকৃতিক আলো সহ একটি সিনেমাটিক, উচ্চ-বিশদ চিত্র",
+      "relightDefault": "নরম স্টুডিও আলো দিয়ে বিষয় রিলাইট",
+      "faceSwapDefault": "দৃশ্যটি অক্ষত রেখে মুখ অদলবদল করুন",
+      "characterSwapDefault": "শৈলী সংরক্ষণ করার সময় চরিত্র অদলবদল করুন",
+      "drawToEditDefault": "একটি পরিষ্কার, বিশদ চিত্রে অঙ্কনটি পরিমার্জন করুন"
+    },
+    "swap": {
+      "sourceTitle": "উৎস",
+      "targetTitle": "টার্গেট",
+      "faceSourceDescription": "মুখের জন্য উৎস ইমেজ",
+      "faceTargetDescription": "প্রতিস্থাপন করার জন্য লক্ষ্য চিত্র",
+      "characterSourceDescription": "চরিত্রের জন্য উৎস চিত্র",
+      "characterTargetDescription": "প্রতিস্থাপন করার জন্য লক্ষ্য চিত্র"
+    },
+    "inpaint": {
+      "sourceAlt": "উৎস চিত্র",
+      "paintHint": "আপনি যে এলাকাটি সম্পাদনা করতে চান সেটি আঁকুন",
+      "maskUploading": "মাস্ক আপলোড করা হচ্ছে",
+      "maskReady": "মাস্ক প্রস্তুত",
+      "maskPaint": "পেইন্ট মাস্ক",
+      "paint": "পেইন্ট",
+      "erase": "মুছে ফেলুন"
+    },
+    "relight": {
+      "title": "রিলাইট",
+      "quickSelect": "দ্রুত নির্বাচন করুন",
+      "directions": {
+        "top": "শীর্ষ",
+        "front": "সামনে",
+        "right": "ঠিক",
+        "left": "বাম",
+        "back": "ফিরে",
+        "bottom": "নীচে"
+      },
+      "brightness": "উজ্জ্বলতা",
+      "color": "রঙ"
+    },
+    "upscale": {
+      "title": "আপস্কেল"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "ভিডিওতে স্কেচ করুন",
+      "drawToVideo": "ভিডিওতে আঁকুন",
+      "drawToEdit": "সম্পাদনা করতে আঁকুন",
+      "pen": "কলম",
+      "eraser": "ইরেজার",
+      "color": "রঙ",
+      "size": "আকার",
+      "undo": "পূর্বাবস্থায় ফেরান",
+      "redo": "আবার করুন",
+      "clear": "পরিষ্কার",
+      "generateVideo": "ভিডিও তৈরি করুন",
+      "uploadTitle": "মিডিয়া আপলোড করুন",
+      "uploadDescription": "অঙ্কন গাইড করতে একটি ফটো যোগ করুন"
+    },
+    "soulId": {
+      "heroTitle": "সোল আইডি ক্যারেক্টার",
+      "heroDescription": "আপনার ফটোগুলি থেকে একটি সামঞ্জস্যপূর্ণ চরিত্র তৈরি করুন।",
+      "createButton": "চরিত্র তৈরি করুন",
+      "photoCount": "{count} ফটো",
+      "characterLabel": "অক্ষর {index}",
+      "emptyGallery": "এখনো কোনো অক্ষর নেই।",
+      "dialogTitle": "সোল আইডি তৈরি করুন",
+      "dialogSubtitle": "আপনার চরিত্র তৈরি করতে ফটো আপলোড করুন।",
+      "addPhotosTitle": "ফটো যোগ করুন",
+      "addPhotosDescription": "6-12টি পরিষ্কার ছবি আপলোড করুন।",
+      "tip": "পরামর্শ: বিভিন্ন কোণ এবং অভিব্যক্তি ব্যবহার করুন।"
+    },
+    "storyboard": {
+      "relightScene": "রিলাইট দৃশ্য",
+      "headline": "ফ্যাশন ফ্যাক্টরি",
+      "headlineAccent": "আপনার নান্দনিকতা তৈরি করুন",
+      "description": "স্টোরিবোর্ড, সম্পাদনা, তৈরি করুন।",
+      "resultsLabel": "{count} ফলাফল",
+      "uploadHint": "দৃশ্য গাইড করার জন্য রেফারেন্স ইমেজ আপলোড করুন",
+      "referenceImagesTitle": "রেফারেন্স ইমেজ",
+      "referenceImagesDescription": "শৈলীর সাথে মেলে 4টি পর্যন্ত ছবি যোগ করুন"
+    },
+    "instadump": {
+      "sidebarTitle": "ইন্সটাডাম্প স্টুডিও",
+      "stepChoosePack": "একটি প্যাক চয়ন করুন",
+      "stepAddPhoto": "একটি ফটো যোগ করুন",
+      "stepGetInstadump": "Instadump পান",
+      "headerTitle": "ইন্সটাডাম্প",
+      "headerDescription": "একটি সেলফিকে সম্পূর্ণ কন্টেন্ট লাইব্রেরিতে পরিণত করুন।",
+      "addPhotoTitle": "আপনার ছবি যোগ করুন",
+      "addPhotoDescription": "শুরু করতে একটি পরিষ্কার সেলফি আপলোড করুন।",
+      "getInstadumpTitle": "আপনার Instadump পান",
+      "newPhotosReady": "নতুন ছবি প্রস্তুত",
+      "tryFree": "বিনামূল্যে চেষ্টা করুন",
+      "premiumTitle": "প্রিমিয়াম",
+      "premiumBulletOne": "প্যাক প্রতি আরো শৈলী",
+      "premiumBulletTwo": "অগ্রাধিকার প্রক্রিয়াকরণ",
+      "premiumBulletThree": "সম্পূর্ণ-রেজোলিউশন ডাউনলোড",
+      "upgradeNow": "এখন আপগ্রেড করুন"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "সম্পাদনা করুন",
+      "subtitle": "সম্পাদনা বৈশিষ্ট্য এবং মডেল অ্যাক্সেস করুন",
+      "back": "সম্পাদনায় ফিরে যান",
+      "workspace": {
+        "title": "কর্মক্ষেত্র",
+        "status": "ফ্রন্টেন্ড স্থানধারক",
+        "uploadTitle": "মিডিয়া আপলোড করুন",
+        "uploadDescription": "শুরু করতে একটি ছবি/ভিডিও আপলোড করতে ড্রপ বা ক্লিক করুন"
+      },
+      "settings": {
+        "title": "সেটিংস",
+        "modelTitle": "মডেল",
+        "modelDescription": "একটি মডেল চয়ন করুন (ব্যাকএন্ড শীঘ্রই আসছে)",
+        "promptTitle": "প্রম্পট",
+        "promptDescription": "আপনি যা চান তা বর্ণনা করুন (ব্যাকএন্ড শীঘ্রই আসছে)",
+        "generate": "তৈরি করুন"
+      },
+      "model": {
+        "title": "মডেলের বিবরণ",
+        "descriptionTitle": "বর্ণনা",
+        "descriptionBody": "এটি একটি স্থানধারক। ব্যাকএন্ড ওয়্যার আপ হয়ে গেলে বিশদ বিবরণ দেওয়া হবে।"
+      }
+    },
+    "menu": {
+      "title": "সম্পাদনা করুন",
+      "sections": {
+        "features": "বৈশিষ্ট্য",
+        "models": "মডেল"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "ভিডিও সম্পাদনা করুন",
+        "description": "উন্নত ভিডিও এডিটিং"
+      },
+      "inpaint": {
+        "title": "ইনপেইন্ট",
+        "description": "একটি এলাকা নির্বাচন করুন, পরিবর্তন বর্ণনা করুন"
+      },
+      "relight": {
+        "title": "রিলাইট",
+        "description": "আলোর অবস্থান, রঙ এবং উজ্জ্বলতা সামঞ্জস্য করুন"
+      },
+      "aiStylist": {
+        "title": "এআই স্টাইলিস্ট",
+        "description": "আপনার নিখুঁত চেহারা খুঁজুন"
+      },
+      "upscale": {
+        "title": "আপস্কেল",
+        "description": "রেজোলিউশন এবং গুণমান উন্নত করুন"
+      },
+      "skinEnhancer": {
+        "title": "ত্বক বর্ধক",
+        "description": "প্রাকৃতিক, বাস্তবসম্মত ত্বকের গঠন"
+      },
+      "angles": {
+        "title": "কোণ",
+        "description": "বিভিন্ন কোণ থেকে উৎপন্ন"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "সর্বাধিক বিশদ এবং নির্ভুলতা"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "দ্রুত, হালকা সম্পাদনা"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "বিজোড় পণ্য ইন্টিগ্রেশন"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "উচ্চ-রেজোলিউশন আপস্কেলার"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "ভিডিও রেফারেন্স সহ গতি নিয়ন্ত্রণ করুন"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "উন্নত ভিডিও এডিটিং"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "মূল পরিকল্পনা",
+      "completed": "{completed}/{total} সম্পন্ন",
+      "steps": {
+        "script": "স্ক্রিপ্ট ও স্টোরিবোর্ড নকশা",
+        "world": "ওয়ার্ল্ড অ্যাসেট ডিজাইন",
+        "video": "ভিডিও জেনারেশন",
+        "worldVideo": "ওয়ার্ল্ড অ্যাসেট ও ভিডিও জেনারেশন",
+        "audio": "ভয়েস ও অডিও ডিজাইন",
+        "final": "চূড়ান্ত সংযোজন"
+      }
+    }
+  }
+}

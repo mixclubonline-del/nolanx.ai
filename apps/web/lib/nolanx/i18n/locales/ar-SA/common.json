@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "الإنجليزية",
+    "zh-CN": "الصينية (المبسطة)"
+  },
+  "buttons": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "submit": "إرسال",
+    "loading": "جارٍ التحميل...",
+    "retry": "إعادة المحاولة"
+  },
+  "common": {
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "موافق",
+    "error": "خطأ",
+    "success": "نجاح",
+    "warning": "تحذير",
+    "info": "معلومات"
+  },
+  "messages": {
+    "success": "تمت العملية بنجاح",
+    "error": "حدث خطأ",
+    "loading": "جارٍ التحميل، يرجى الانتظار...",
+    "noData": "لا توجد بيانات",
+    "confirmDelete": "هل أنت متأكد أنك تريد حذف هذا العنصر؟",
+    "saved": "تم الحفظ بنجاح",
+    "deleted": "تم الحذف بنجاح"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "clear": "مسح",
+    "markAllAsRead": "تحديد الكل كمقروء",
+    "allRead": "الكل مقروء",
+    "newImageGenerated": "تم إنشاء صورة جديدة"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "canvas": "لوحة القصة",
+    "settings": "الإعدادات",
+    "back": "رجوع"
+  },
+  "dialog": {
+    "confirmTitle": "تأكيد الإجراء",
+    "confirmDescription": "لا يمكن التراجع عن هذا الإجراء",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد"
+  },
+  "update": {
+    "title": "🎉 يتوفر إصدار جديد",
+    "description": "يتوفر إصدار جديد v{{version}}. هل ترغب في تثبيته الآن؟",
+    "installNote": "انقر على \"تثبيت التحديث\" لإعادة تشغيل التطبيق وتثبيت الإصدار الجديد.",
+    "laterButton": "ذكّرني لاحقًا",
+    "installButton": "تثبيت التحديث",
+    "installing": "جارٍ التثبيت..."
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "loginToJaaz": "تسجيل الدخول إلى Jaaz",
+    "myAccount": "حسابي",
+    "loginDescription": "سجّل الدخول لاستخدام نماذج الذكاء الاصطناعي السحابية",
+    "startLogin": "بدء تسجيل الدخول",
+    "preparingLogin": "جارٍ التحضير لتسجيل الدخول...",
+    "cancel": "إلغاء",
+    "loginSuccessMessage": "تم تسجيل الدخول بنجاح!",
+    "authExpiredMessage": "انتهت صلاحية التفويض، يرجى تسجيل الدخول مرة أخرى",
+    "authErrorMessage": "حدث خطأ أثناء التحقق من حالة التفويض",
+    "waitingForBrowser": "بانتظار إكمال تسجيل الدخول في المتصفح...",
+    "pollErrorMessage": "تعذر التحقق من حالة تسجيل الدخول، يرجى المحاولة مرة أخرى",
+    "preparingLoginMessage": "جارٍ التحضير لتسجيل الدخول...",
+    "browserLoginMessage": "يرجى إكمال تسجيل الدخول في المتصفح",
+    "loginRequestFailed": "فشل طلب تسجيل الدخول، يرجى المحاولة مرة أخرى",
+    "logoutSuccessMessage": "تم تسجيل الخروج بنجاح",
+    "notLoggedIn": "غير مسجّل الدخول",
+    "balance": "الرصيد",
+    "recharge": "إعادة شحن"
+  },
+  "socket": {
+    "connectionError": "خطأ في الاتصال ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "فشل الاتصال، يرجى تحديث الصفحة"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "newChat": "नया चैट",
+  "placeholder": "यहाँ अपना संदेश टाइप करें...",
+  "textarea": {
+    "placeholder": "क्या कोई कहानी है जिस पर आप Nolan के साथ मिलकर काम करना चाहेंगे?",
+    "selectModel": "कृपया एक टेक्स्ट मॉडल चुनें! अगर आपने अभी तक API keys सेट नहीं की हैं, तो सेटिंग्स में जाकर सेट करें।",
+    "enterPrompt": "कृपया एक प्रॉम्प्ट दर्ज करें",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "छवि पर जाएँ",
+    "audioPositioning": "ऑडियो पर जाएँ",
+    "videoPositioning": "वीडियो पर जाएँ",
+    "showMore": "और दिखाएँ",
+    "showLess": "कम दिखाएँ"
+  },
+  "jsonCard": {
+    "copy": "कॉपी",
+    "copied": "कॉपी हो गया",
+    "showCode": "कोड दिखाएँ",
+    "hideCode": "कोड छिपाएँ"
+  },
+  "welcome": {
+    "greeting": "हे, ReelMaker!",
+    "help": "आज मैं आपकी कैसे मदद कर सकता हूँ?"
+  },
+  "replay": {
+    "replaying": "बातचीत रिप्ले हो रही है... ({{current}}/{{total}})",
+    "completed": "बातचीत रिप्ले पूरा हुआ",
+    "ready": "बातचीत रिप्ले के लिए तैयार",
+    "skipToEnd": "अंत तक जाएँ",
+    "replayAgain": "फिर से रिप्ले",
+    "startReplay": "रिप्ले शुरू करें",
+    "continueConversation": "बातचीत जारी रखें",
+    "forking": "फोर्क हो रहा है...",
+    "forkingToast": "कैनवस फोर्क हो रहा है...",
+    "forkSuccessToast": "कैनवस फोर्क हुआ! रीडायरेक्ट हो रहा है...",
+    "forkFailedToast": "कैनवस फोर्क नहीं हो सका"
+  },
+  "errors": {
+    "createSessionError": "चैट सेशन नहीं बन सका"
+  },
+  "toolCallNames": {
+    "generate_image": "इमेज जनरेटर",
+    "edit_image": "इमेज एडिटर",
+    "generate_audio": "ऑडियो जनरेट करें",
+    "generate_video": "वीडियो",
+    "generate_video_first_last_frame": "FLF वीडियो",
+    "generate_tts_audio": "TTS ऑडियो जनरेट करें",
+    "generate_music": "म्यूज़िक जनरेट करें",
+    "generate_structured_output": "संरचित आउटपुट जनरेट करें",
+    "execute_storyboard": "स्टोरीबोर्ड चलाएँ",
+    "analyze_timeline_state": "टाइमलाइन विश्लेषण",
+    "recommend_generation_strategy": "रणनीति सुझाएँ",
+    "execute_code": "कोड चलाएँ",
+    "analyze_documents": "दस्तावेज़ विश्लेषण",
+    "analyze_media": "मीडिया विश्लेषण",
+    "execute_function_call": "फ़ंक्शन कॉल चलाएँ",
+    "analyze_web_context": "वेब संदर्भ विश्लेषण",
+    "search_and_generate": "खोजें और जनरेट करें",
+    "prompt_user_multi_choice": "मल्टी-चॉइस पूछें",
+    "prompt_user_single_choice": "सिंगल-चॉइस पूछें",
+    "write_plan": "प्लान लिखें",
+    "finish": "समाप्त"
+  },
+  "publish": {
+    "title": "कम्युनिटी में पब्लिश करें",
+    "titleLabel": "शीर्षक *",
+    "titlePlaceholder": "अपनी बातचीत के लिए एक आकर्षक शीर्षक लिखें",
+    "descriptionLabel": "विवरण",
+    "descriptionPlaceholder": "बताएँ यह बातचीत क्यों दिलचस्प है...",
+    "tagsLabel": "टैग (अधिकतम 5)",
+    "tagPlaceholder": "टैग जोड़ें...",
+    "visibilityLabel": "दृश्यता",
+    "visibilityPublic": "पब्लिक",
+    "visibilityUnlisted": "अनलिस्टेड",
+    "visibilityPublicHint": "कोई भी इस बातचीत को खोज और देख सकता है",
+    "visibilityUnlistedHint": "केवल लिंक वाले लोग ही इस बातचीत को देख सकते हैं",
+    "cancel": "रद्द करें",
+    "publish": "पब्लिश",
+    "publishing": "पब्लिश हो रहा है...",
+    "enterTitleError": "कृपया शीर्षक दर्ज करें",
+    "success": "सेशन सफलतापूर्वक पब्लिश हुआ!",
+    "failed": "सेशन पब्लिश नहीं हो सका",
+    "publishButton": "पब्लिश"
+  },
+  "sessionSelector": {
+    "placeholder": "थीम"
+  },
+  "thinking": {
+    "title": "सोच रहा है"
+  },
+  "plan": {
+    "title": "प्लान",
+    "steps": {
+      "singular": "स्टेप",
+      "plural": "स्टेप्स"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

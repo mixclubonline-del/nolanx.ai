@@ -1,0 +1,113 @@
+{
+  "newChat": "Nuova chat",
+  "placeholder": "Scrivi qui il tuo messaggio...",
+  "textarea": {
+    "placeholder": "C’è una storia che vorresti creare insieme a Nolan?",
+    "selectModel": "Seleziona un modello di testo! Vai su Impostazioni per configurare le chiavi API se non l'hai ancora fatto.",
+    "enterPrompt": "Inserisci un prompt",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Vai all'immagine",
+    "audioPositioning": "Vai all'audio",
+    "videoPositioning": "Vai al video",
+    "showMore": "Mostra di più",
+    "showLess": "Mostra di meno"
+  },
+  "jsonCard": {
+    "copy": "Copia",
+    "copied": "Copiato",
+    "showCode": "Mostra codice",
+    "hideCode": "Nascondi codice"
+  },
+  "welcome": {
+    "greeting": "Ciao, ReelMaker!",
+    "help": "Come posso aiutarti oggi?"
+  },
+  "replay": {
+    "replaying": "Riproduzione conversazione... ({{current}}/{{total}})",
+    "completed": "Riproduzione conversazione completata",
+    "ready": "Pronto a riprodurre la conversazione",
+    "skipToEnd": "Vai alla fine",
+    "replayAgain": "Riproduci di nuovo",
+    "startReplay": "Avvia riproduzione",
+    "continueConversation": "Continua conversazione",
+    "forking": "Creazione fork...",
+    "forkingToast": "Creazione fork del canvas...",
+    "forkSuccessToast": "Canvas forkato! Reindirizzamento...",
+    "forkFailedToast": "Impossibile forkare il canvas"
+  },
+  "errors": {
+    "createSessionError": "Impossibile creare la sessione di chat"
+  },
+  "toolCallNames": {
+    "generate_image": "Generatore di immagini",
+    "edit_image": "Editor di immagini",
+    "generate_audio": "Genera audio",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "Video FLF",
+    "generate_tts_audio": "Genera audio TTS",
+    "generate_music": "Genera musica",
+    "generate_structured_output": "Genera output strutturato",
+    "execute_storyboard": "Esegui storyboard",
+    "analyze_timeline_state": "Analizza timeline",
+    "recommend_generation_strategy": "Consiglia strategia",
+    "execute_code": "Esegui codice",
+    "analyze_documents": "Analizza documenti",
+    "analyze_media": "Analizza media",
+    "execute_function_call": "Esegui chiamata funzione",
+    "analyze_web_context": "Analizza contesto web",
+    "search_and_generate": "Cerca e genera",
+    "prompt_user_multi_choice": "Richiesta scelta multipla",
+    "prompt_user_single_choice": "Richiesta scelta singola",
+    "write_plan": "Scrivi piano",
+    "finish": "Fine"
+  },
+  "publish": {
+    "title": "Pubblica nella community",
+    "titleLabel": "Titolo *",
+    "titlePlaceholder": "Inserisci un titolo accattivante per la tua conversazione",
+    "descriptionLabel": "Descrizione",
+    "descriptionPlaceholder": "Descrivi cosa rende interessante questa conversazione...",
+    "tagsLabel": "Tag (max 5)",
+    "tagPlaceholder": "Aggiungi un tag...",
+    "visibilityLabel": "Visibilità",
+    "visibilityPublic": "Pubblico",
+    "visibilityUnlisted": "Non in elenco",
+    "visibilityPublicHint": "Chiunque può scoprire e vedere questa conversazione",
+    "visibilityUnlistedHint": "Solo chi ha il link può vedere questa conversazione",
+    "cancel": "Annulla",
+    "publish": "Pubblica",
+    "publishing": "Pubblicazione...",
+    "enterTitleError": "Inserisci un titolo",
+    "success": "Sessione pubblicata con successo!",
+    "failed": "Impossibile pubblicare la sessione",
+    "publishButton": "Pubblica"
+  },
+  "sessionSelector": {
+    "placeholder": "Tema"
+  },
+  "thinking": {
+    "title": "Pensando"
+  },
+  "plan": {
+    "title": "Piano",
+    "steps": {
+      "singular": "passo",
+      "plural": "passi"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

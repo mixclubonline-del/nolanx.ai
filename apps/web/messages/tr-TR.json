@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Beğen",
+      "liked": "Beğenildi",
+      "share": "Paylaş",
+      "download": "İndir",
+      "downloading": "İndiriliyor...",
+      "copying": "Kopyalanıyor...",
+      "recreate": "Yeniden oluştur"
+    },
+    "aria": {
+      "closeVideo": "Videoyu kapat",
+      "goBack": "Geri dön",
+      "likeVideo": "Videoyu beğen",
+      "unlikeVideo": "Beğeniyi kaldır",
+      "shareVideo": "Videoyu paylaş",
+      "downloadVideo": "Videoyu indir",
+      "copyingLink": "Bağlantı kopyalanıyor...",
+      "downloading": "İndiriliyor..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Bağlantı kopyalandı",
+      "videoLinkCopiedMessage": "Video bağlantısı panoya kopyalandı",
+      "copyFailedTitle": "Kopyalama başarısız",
+      "copyFailedMessage": "Bağlantı panoya kopyalanamadı",
+      "shareFailedTitle": "Paylaşım başarısız",
+      "shareFailedMessage": "Video bağlantısı kopyalanamadı",
+      "loginFirst": "Lütfen önce giriş yapın",
+      "cannotFollowYourself": "Kendinizi takip edemezsiniz",
+      "followed": "Takip edildi",
+      "unfollowed": "Takipten çıkıldı",
+      "operationFailed": "İşlem başarısız"
+    },
+    "generation": {
+      "generationModel": "Oluşturma modeli",
+      "withEffect": "{effect} ile",
+      "effectBadge": "EFEKT",
+      "prompt": "İstemi",
+      "referenceImage": "Referans görseli",
+      "referenceImageAlt": "Video oluşturma için referans görseli",
+      "negativePrompt": "Negatif prompt",
+      "parameters": "Parametreler",
+      "guidance": "Kılavuz",
+      "steps": "Adımlar",
+      "seed": "Tohum",
+      "ratio": "Oran"
+    },
+    "author": {
+      "uploaded": "{time} yüklendi",
+      "profile": "Profil",
+      "follow": "Takip et",
+      "unfollow": "Takibi bırak",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Yorumlar",
+      "placeholder": "Bu video hakkında düşüncelerini paylaş...",
+      "send": "Gönder",
+      "sending": "Gönderiliyor...",
+      "empty": "Bu çalışma hakkında ilk yorumu sen yap!"
+    },
+    "time": {
+      "now": "Az önce",
+      "minutesAgo": "{minutes} dk önce",
+      "hoursAgo": "{hours} saat önce",
+      "daysAgo": "{days} gün önce"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Kredi"
+    },
+    "earnCreditsCapsule": {
+      "label": "Kredi Kazan",
+      "aria": {
+        "openRewardCenter": "Kredi Kazan"
+      },
+      "badge": {
+        "claimed": "Alındı"
+      },
+      "title": {
+        "base": "Kredi Kazan",
+        "canClaim": "Kredi Kazan (+{amount})",
+        "claimedToday": "Kredi Kazan (bugün alındı)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Ödül Merkezi",
+      "subtitle": {
+        "main": "Davet Et & Kazan + Günlük Ödüller",
+        "joined": "Katılanları gör"
+      },
+      "common": {
+        "loading": "Yükleniyor..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} Kredi"
+      },
+      "actions": {
+        "back": "Geri",
+        "close": "Kapat",
+        "copy": "Kopyala",
+        "share": "Paylaş",
+        "inviteFriends": "Arkadaşlarını davet et",
+        "claim": "Al",
+        "claiming": "Alınıyor...",
+        "claimed": "Alındı"
+      },
+      "aria": {
+        "copyInviteCode": "Davet kodunu kopyala",
+        "shareInviteLink": "Davet bağlantısını paylaş"
+      },
+      "labels": {
+        "inviteLink": "Davet bağlantısı",
+        "inviteCode": "Davet kodu",
+        "invited": "Davet edilen",
+        "rewarded": "Ödüllendirildi",
+        "pending": "Beklemede",
+        "recentInvites": "Son davetler",
+        "recentRewards": "Son ödüller",
+        "referEarn": "Davet Et & Kazan",
+        "dailyRewards": "Günlük Ödüller",
+        "dailyLogin": "Günlük giriş",
+        "rewardedProgress": "Ödüllendirildi: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Henüz davet yok.",
+        "noRewards": "Henüz ödül yok."
+      },
+      "status": {
+        "rewarded": "Ödüllendirildi",
+        "pending": "Beklemede",
+        "verified": "Doğrulandı"
+      },
+      "share": {
+        "title": "ReelMind Daveti",
+        "text": "ReelMind'de bana katıl ve ücretsiz kredi kazan."
+      },
+      "toast": {
+        "copiedTitle": "Kopyalandı",
+        "copiedDescription": "{label} panoya kopyalandı.",
+        "copyFailedTitle": "Kopyalama başarısız",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Lütfen manuel olarak kopyalayın.",
+        "claimFailedTitle": "Alma başarısız",
+        "claimedTitle": "Alındı",
+        "claimedDescription": "{amount} Kredi aldınız."
+      },
+      "referEarn": {
+        "tipLabel": "Davet & kazan kuralları",
+        "tipTitle": "Nasıl çalışır",
+        "tipBody1": "Davet bağlantınızı paylaşın. Yeni bir kullanıcı kodunuzla kaydolup uygun bir işlemi tamamladığında, sistem doğrulamasından sonra krediler verilir.",
+        "tipBody2": "Kademeli ödüller: 1-5 = 50, 6-15 = 100, 16-20 = 200 kredi.",
+        "cardTitle": "Arkadaşlarını Davet Ederek Kredi Kazan",
+        "upTo": "En fazla {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Günlük giriş kuralları",
+        "tipTitle": "Günlük ödül",
+        "tipBodyPrefix": "Ödüller serinizin",
+        "tipBodyDay2": "2. gününde",
+        "tipBodySuffix": "başlar ve her UTC gününde sıfırlanır.",
+        "status": {
+          "loading": "Durum yükleniyor...",
+          "claimed": "Alındı",
+          "readyToClaim": "Almaya hazır",
+          "locked": "Kilitli"
+        },
+        "errors": {
+          "alreadyClaimed": "Bugün zaten alındı.",
+          "notEligible": "Şu anda almaya uygun değilsiniz.",
+          "riskBlocked": "Risk kontrolü nedeniyle alım engellendi.",
+          "generic": "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Keşfet",
+      "video": "video",
+      "image": "Görsel",
+      "music": "Müzik",
+      "edit": "Düzenle",
+      "experiment": "Deney"
+    },
+    "special": {
+      "nolan": "Nolan"
+    },
+    "bottom": {
+      "affiliate": "Ortaklık",
+      "contactUs": "Bize Ulaşın",
+      "blog": "Blog",
+      "apiPlatform": "API Platformu"
+    },
+    "badges": {
+      "help": "Yardım",
+      "new": "Yeni",
+      "free": "Ücretsiz"
+    },
+    "sidebar": {
+      "more": "Daha Fazla",
+      "closeMenu": "Menüyü kapat",
+      "moreTools": "Daha Fazla Araç",
+      "followOnX": "X'te (Twitter) bizi takip edin",
+      "followOnTikTok": "TikTok'ta bizi takip edin",
+      "subscribeOnYouTube": "YouTube kanalımıza abone olun",
+      "termsOfService": "Hizmet Şartları",
+      "privacyPolicy": "Gizlilik Politikası"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "ÖZELLİKLER",
+        "models": "MODELLER"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Video Oluştur",
+          "description": "Yapay zeka videoları oluşturun"
+        },
+        "cinemaStudioVideo": {
+          "title": "Sinema Stüdyosu Videosu",
+          "description": "Kamera hareketleriyle profesyonel video"
+        },
+        "mixedMedia": {
+          "title": "Karışık Medya",
+          "description": "Metin, görsel ve videoyu harmanlayın"
+        },
+        "editVideo": {
+          "title": "Videoyu Düzenle",
+          "description": "Sahneleri, çekimleri, öğeleri düzenleyin"
+        },
+        "clickToAd": {
+          "title": "Reklam Vermek İçin Tıklayın",
+          "description": "Klipleri reklamlara dönüştürün"
+        },
+        "sora2Trends": {
+          "title": "Sora 2 Trendleri",
+          "description": "Trend odaklı video fikirleri"
+        },
+        "lipsyncStudio": {
+          "title": "Lipsync Stüdyosu",
+          "description": "Sesi yüzlerle senkronize edin"
+        },
+        "drawToVideo": {
+          "title": "Videoya Çiz",
+          "description": "Kroki sinemaya dönüşüyor"
+        },
+        "sketchToVideo": {
+          "title": "Videoya Çizim",
+          "description": "Sora 2 ile eskizden videoya"
+        },
+        "ugcFactory": {
+          "title": "UGC Fabrikası",
+          "description": "İçerik oluşturucuya hazır içerik hızla"
+        },
+        "videoUpscale": {
+          "title": "Video Lüksü",
+          "description": "Çözünürlüğü netlikle artırın"
+        },
+        "higgsfieldAnimate": {
+          "title": "Higgsfield Animasyonu",
+          "description": "Fotoğrafları stil sahibi bir şekilde canlandırın"
+        },
+        "recastStudio": {
+          "title": "Yeniden Düzenleme Stüdyosu",
+          "description": "Aktörleri ve stilleri yeniden düzenleyin"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Sinematik kamera kontrolü"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Dinamik hareket kontrolü"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Yüksek kaliteli metinden videoya dönüştürme"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Hassas video düzenlemeleri"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Yeni nesil video nesli"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Gerçekçi sinematografi"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Stilize edilmiş hareket ve ritim"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Hızlı sinematik video"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Temiz detay ve ton"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Avatar odaklı performanslar"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Özellikler",
+        "models": "Modeller"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Resim Oluştur",
+          "description": "Yapay zeka görüntüleri oluşturun"
+        },
+        "cinemaStudioImage": {
+          "title": "Sinema Stüdyosu Görüntüsü",
+          "description": "Gerçek kamera ve lens simülasyonu"
+        },
+        "createStoryboard": {
+          "title": "Hikaye Panosu Oluştur",
+          "description": "Hikaye sahnelerinizi tasarlayın"
+        },
+        "soulIdCharacter": {
+          "title": "Ruh Kimliği Karakteri",
+          "description": "Benzersiz karakter yaratın"
+        },
+        "relight": {
+          "title": "Yeniden Aydınlat",
+          "description": "Aydınlatma konumunu, rengini ve parlaklığını ayarlayın"
+        },
+        "inpaint": {
+          "title": "İç boya",
+          "description": "Bir alan seçin, değişikliği açıklayın"
+        },
+        "imageUpscale": {
+          "title": "Görüntü Lüks",
+          "description": "Görüntü kalitesini artırın"
+        },
+        "faceSwap": {
+          "title": "Yüz Değiştirme",
+          "description": "Gerçekçi yüz takasları oluşturun"
+        },
+        "characterSwap": {
+          "title": "Karakter Değişimi",
+          "description": "Gerçekçi karakter takasları oluşturun"
+        },
+        "drawToEdit": {
+          "title": "Düzenlemek için Çiz",
+          "description": "Eskizden resme"
+        },
+        "instadump": {
+          "title": "Stadyum dökümü",
+          "description": "Bir selfie'yi tam içerik kitaplığına dönüştürün"
+        },
+        "photodumpStudio": {
+          "title": "Fotoğraf Dökümü Stüdyosu",
+          "description": "Estetiğinizi yaratın"
+        },
+        "fashionFactory": {
+          "title": "Moda Fabrikası",
+          "description": "Moda setleri oluşturun"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Ultra gerçekçi moda görselleri"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Storyboard, düzenleme, oluşturma"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Şimdiye kadarki en iyi 4K görüntü modeli"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "Yeni nesil 4K görüntü modeli"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Gerçek renk hassas işleme"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Hız açısından optimize edilmiş ayrıntı"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Anında gerçekçi portreler"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Fotogerçekçi, anında doğru görüntüler"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Gerçekçi görüntüler"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Gelişmiş görüntü düzenleme modeli"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Yüksek çözünürlüklü yükseltici"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Tümü",
+        "recommended": "Önerilen",
+        "saved": "Kaydedilen"
+      },
+      "labels": {
+        "camera": "KAMERA",
+        "lens": "OBJEKTİF",
+        "focalLength": "ODAK UZAKLIĞI",
+        "aperture": "DİYAFRAM"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "Kurulumu kaydet",
+        "removeSetup": "Kurulumu kaldır",
+        "close": "Kapat"
+      },
+      "empty": "Henüz kurulum yok"
+    },
+    "page": {
+      "title": "Deney",
+      "subtitle": "Önce yeni iş akışlarını deneyin",
+      "back": "Deneye Geri Dön"
+    },
+    "menu": {
+      "title": "Deney",
+      "open": "Açık"
+    },
+    "tabs": {
+      "character": "Karakter",
+      "inpaint": "İç boya",
+      "cinemaStudio": "Sinema Stüdyosu",
+      "motionControl": "Hareket Kontrolü",
+      "assist": "Yardım"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "İç boya",
+        "description": "Bir alanın üzerini boyayın ve değişikliği tanımlayın"
+      },
+      "cinemaStudio": {
+        "title": "Sinema Stüdyosu",
+        "description": "Profesyonel sinematik iş akışları"
+      },
+      "motionControl": {
+        "title": "Hareket Kontrolü",
+        "description": "Referans videodan hareketi kopyalayın"
+      },
+      "assist": {
+        "title": "Yardım",
+        "description": "İstemde bulunma ve yaratıcı asistan araçları"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "Karakter",
+        "subtitle": "Karakter tutarlılığı araçları (yer tutucu)"
+      },
+      "inpaint": {
+        "title": "İç boya",
+        "subtitle": "Medya yükleyin, bir alan seçin ve düzenlemeyi açıklayın"
+      },
+      "cinemaStudio": {
+        "title": "Sinema Stüdyosu",
+        "subtitle": "Kamerayı tanıyan istemlerle sinematik çekimler oluşturun"
+      },
+      "motionControl": {
+        "title": "Hareket Kontrolü",
+        "subtitle": "Görüntünüzle hareketi yeniden yaratın"
+      },
+      "assist": {
+        "title": "Yardım",
+        "subtitle": "Sohbet, ipuçları ve bilgi istemi yardımcı programları"
+      }
+    },
+    "actions": {
+      "upload": "Medya yükle",
+      "generate": "Oluştur",
+      "history": "Tarih",
+      "howItWorks": "Nasıl çalışır?",
+      "sendMessage": "Mesaj gönder...",
+      "tryExample": "Bir örnek deneyin",
+      "send": "Gönder"
+    },
+    "placeholders": {
+      "exploreFeatures": "ÖZELLİKLERİ KEŞFEDİN",
+      "settings": "Ayarlar",
+      "camera": "Kamera",
+      "cameraHint": "Kamera davranışlarını seçin (yer tutucu)",
+      "lens": "Objektif",
+      "lensHint": "Lens seçeneklerini seçin (yer tutucu)",
+      "image": "Resim",
+      "video": "video",
+      "scenePrompt": "Hayal ettiğiniz sahneyi anlatın..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Kopyaya hareket ekle",
+          "description": "Video süresi: 3–30 saniye"
+        },
+        "addCharacter": {
+          "title": "Karakterinizi ekleyin",
+          "description": "Yüzün ve vücudun görünür olduğu resim"
+        }
+      },
+      "quality": {
+        "title": "Kalite",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Gelişmiş ayarlar"
+      },
+      "hero": {
+        "title": {
+          "prefix": "HERHANGİ BİRİNİ YENİDEN OLUŞTURUN",
+          "highlight": "HAREKET",
+          "suffix": "GÖRÜNTÜNÜZLE"
+        },
+        "subtitle": "Herhangi bir videodaki hareketi kopyalayın ve karakterinizi aynı harekete yerleştirin"
+      },
+      "library": {
+        "title": "Kitaplıktan hareketi kopyalayarak başlayın"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Destek",
+        "subtitle": "İçerik oluşturucular için oluşturulmuş bir doktora ekibi cebinizde."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Ne Yapabilirsin?",
+          "description": "ReelMind AI özelliklerini keşfedin"
+        },
+        "howToCreate": {
+          "title": "Nasıl Çarpıcı İçerik Oluşturabilirim?",
+          "description": "Daha iyi yapay zeka istemleri yazmaya yönelik ipuçları"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Soul Image İstemi Oluştur",
+          "description": "Yüksek estetik görseller için bir istem yazın"
+        },
+        "generateVideoPrompt": {
+          "title": "Video İstemi Oluştur",
+          "description": "Sinematik videolar için bir istem yazın"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Karakter tutarlılığı",
+          "description": "Karakterinizi kareler arasında tutarlı tutun (yer tutucu)"
+        },
+        "library": {
+          "title": "Karakter kütüphanesi",
+          "description": "Kaydedilmiş bir karakteri seçin veya şablonlardan başlayın (yer tutucu)"
+        }
+      },
+      "placeholders": {
+        "preview": "Önizleme (yer tutucu)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - AI videolar oluşturmak ve paylaşmak için ücretsiz yaratıcı topluluğu",
+      "description": "Dünyanın dört bir yanından içerik üreticilerinin trend yaratıcı videolarını keşfedin. İlham alın, eğlenin ve favorilerinizi remixleyin."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 şimdi yayında!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Tümü",
+        "latest": "En yeni",
+        "hot": "Popüler"
+      },
+      "tooltip": {
+        "filterByModel": "{model} modeline göre filtrele"
+      },
+      "aria": {
+        "previous": "Önceki kategoriler",
+        "next": "Sonraki kategoriler"
+      },
+      "error": {
+        "loadFailed": "Kategoriler yüklenemedi"
+      },
+      "actions": {
+        "retry": "Yeniden dene"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "AI Videolar Oluştur"
+      },
+      "nolan": {
+        "title": "Nolan",
+        "description": "Dünyanın 1 Numaralı AI Ajan Yönetmeni"
+      },
+      "badges": {
+        "models": "Modeller",
+        "free": "ÜCRETSİZ"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Keşfet - ReelMind",
+      "description": "ReelMind'de dünyanın dört bir yanından içerik üreticilerinin trend yaratıcı videolarını keşfedin."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI Modelleri & Efektler - ReelMind",
+      "description": "ReelMind platformunda harika AI tarafından üretilmiş videolar oluşturmak için AI video modellerine ve efektlerine göz atın ve kullanın. Son teknoloji AI modelleri koleksiyonumuzu keşfedin."
+    },
+    "page": {
+      "title": "AI Modelleri & Efektler",
+      "description": "Video üretimi için en son AI modelleri ve efekt koleksiyonumuza göz atın",
+      "footerIntro": "Video üretimi için {count} AI modelinden oluşan koleksiyonumuzu keşfedin."
+    },
+    "sections": {
+      "models": "Modeller",
+      "effects": "Efektler"
+    },
+    "actions": {
+      "viewAll": "Tümünü Gör",
+      "viewAllModels": "Tüm modelleri görüntüle",
+      "backToModels": "Modellere dön"
+    },
+    "types": {
+      "allModels": "Tüm Modeller",
+      "textToVideo": "Metinden Videoya",
+      "imageToVideo": "Görüntüden Videoya",
+      "videoToVideo": "Videodan Videoya"
+    },
+    "all": {
+      "titleAll": "Tüm Video Modelleri",
+      "titleByType": "{type} Modelleri",
+      "description": "Video üretimi için AI modelleri koleksiyonumuza göz atın",
+      "countAll": "({count} model)",
+      "countByType": "({count} {type} model)",
+      "loadingMore": "Daha fazla model yükleniyor...",
+      "loadMore": "Daha Fazla Model Yükle",
+      "end": "Sonuna ulaştınız! Tüm modeller yüklendi.",
+      "empty": "Kriterlerinize uyan model bulunamadı."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Kontrol noktası",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "Desteklenen Özellikler",
+      "metaTitle": "{name} - AI Modeli | ReelMind",
+      "metaDescriptionFallback": "ReelMind'de video üretimi için {name} modelini keşfedin.",
+      "metaErrorTitle": "Model Ayrıntıları | ReelMind",
+      "metaErrorDescription": "ReelMind'de video üretimi için AI modellerini keşfedin."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI Efektleri - ReelMind",
+      "description": "ReelMind platformunda AI ile oluşturulan videolarınızı geliştirmek için AI video efektlerine göz atın ve kullanın."
+    },
+    "page": {
+      "title": "AI Efektleri",
+      "description": "Videolarınızı geliştirmek için AI efekt koleksiyonumuza göz atın"
+    },
+    "all": {
+      "title": "Tüm AI Efektleri",
+      "description": "Videolarınızı geliştirmek için tüm AI efekt koleksiyonumuzu keşfedin"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Efektlere dön",
+        "goBack": "Geri dön",
+        "applyThisEffect": "Bu Efekti Uygula"
+      },
+      "badge": "Efekt",
+      "addedOn": "{date} tarihinde eklendi",
+      "errors": {
+        "notFound": "Efekt bulunamadı",
+        "loadFailed": "Efekt ayrıntıları yüklenemedi"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "AI Videolar Oluştur - ReelMind",
+      "description": "ReelMind platformunda güçlü AI modellerimiz ve araçlarımızla harika AI tarafından üretilmiş videolar oluşturun."
+    },
+    "loading": "Yükleniyor...",
+    "loadingMobile": "Mobil görünüm yükleniyor...",
+    "loadingControlPanel": "Kontrol paneli yükleniyor...",
+    "controlPanel": {
+      "modelAndSettings": "Model ve Ayarlar",
+      "history": "Geçmiş",
+      "model": "Model",
+      "selectModel": "Model seç"
+    },
+    "mobile": {
+      "backToCreate": "Oluştur'a dön"
+    },
+    "modelSelector": {
+      "loadingModels": "Modeller yükleniyor...",
+      "moreModels": "{count} model daha",
+      "exploreMoreModels": "{count} model daha keşfet"
+    },
+    "promptInput": {
+      "title": "İstem",
+      "placeholder": "Ne oluşturmak istediğinizi açıklayın...",
+      "enhance": "Geliştir",
+      "undo": "Geri al",
+      "restoreOriginalPromptTitle": "Orijinal istemi geri yükle",
+      "toastEnhanced": "İstem geliştirildi",
+      "toastRestored": "Orijinal istem geri yüklendi",
+      "enhanceFailed": "İstem geliştirilemedi",
+      "sensitiveError": "Hassas anahtar kelime tespit edildi: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "görsel",
+      "mentionVideoTokenPrefix": "video",
+      "mentionAudioTokenPrefix": "ses"
+    },
+    "referenceUploader": {
+      "addOptional": "İsteğe bağlı referans ekle",
+      "referenceImage": "Referans Görsel",
+      "referenceImages": "Referans Görseller ({current}/{max})",
+      "referenceVideo": "Referans Video",
+      "dropImage": "Bir görseli buraya bırakın veya yüklemek için tıklayın",
+      "dropImageMax": "En fazla {max} görseli buraya bırakın veya yüklemek için tıklayın",
+      "dropVideo": "Bir videoyu buraya bırakın veya yüklemek için tıklayın",
+      "pasteHint": "Yapıştır",
+      "videoUploaded": "Video yüklendi",
+      "uploading": "Yükleniyor...",
+      "addMore": "Daha fazla ekle",
+      "removeReference": "Kaldır",
+      "referenceImageAlt": "Referans görsel {index}",
+      "supportedFormats": "Desteklenen: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, en-boy oranı {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} yükleniyor...",
+      "processingFile": "Dosya işleniyor...",
+      "uploadReference": "Referans {type} yükle",
+      "image": "görsel",
+      "video": "video",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "En-boy Oranı",
+      "duration": "Süre",
+      "seconds": "{seconds}s",
+      "resolution": "Çözünürlük",
+      "audio": "Ses",
+      "on": "Açık",
+      "off": "Kapalı",
+      "advanced": "Gelişmiş",
+      "advancedShort": "Gelişmiş",
+      "creativityLevel": "Yaratıcılık",
+      "moreAccurate": "Daha doğru",
+      "moreCreative": "Daha yaratıcı",
+      "samplingSteps": "Örnekleme Adımları",
+      "faster": "Daha hızlı ({steps} adım)",
+      "higherQuality": "Daha yüksek kalite ({steps} adım)",
+      "randomSeed": "Rastgele Tohum",
+      "seedPlaceholder": "Tohum girin",
+      "generateRandomSeed": "Rastgele tohum oluştur",
+      "seedHint": "Tekrarlanabilir sonuçlar için sabit bir tohum kullanın.",
+      "movementAmplitude": "Hareket",
+      "movementAmplitudeHint": "Hareket yoğunluğunu kontrol eder.",
+      "backgroundMusic": "Arka Plan Müziği",
+      "backgroundMusicHint": "Desteklendiğinde arka plan müziği ekler.",
+      "enabled": "Etkin",
+      "disabled": "Devre dışı",
+      "negativePrompt": "Negatif İstem",
+      "negativePromptPlaceholder": "Nelerden kaçınılmalı..."
+    },
+    "startToEndUploader": {
+      "title": "Başlangıç-Bitiş Kareleri",
+      "startFrame": "Başlangıç Karesi",
+      "endFrame": "Bitiş Karesi",
+      "dropStartImage": "Başlangıç görselini bırakın veya yüklemek için tıklayın",
+      "dropEndImage": "Bitiş görselini bırakın veya yüklemek için tıklayın",
+      "startFrameImageAlt": "Başlangıç karesi",
+      "endFrameImageAlt": "Bitiş karesi",
+      "uploading": "Yükleniyor...",
+      "instructions": "Geçişi yönlendirmek için başlangıç ve bitiş görsellerini yükleyin.",
+      "supportedFormats": "Desteklenen: PNG, JPG",
+      "minimumSize": "Min {minWidth}×{minHeight}, en-boy oranı {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Gerektiğinde görseller otomatik olarak sıkıştırılır."
+    },
+    "modelTabs": {
+      "imageToVideo": "Görüntüden Videoya",
+      "textToVideo": "Metinden Videoya",
+      "firstLastFrame": "İlk-Son Kare",
+      "edit": "Düzenle",
+      "effect": "Efekt"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Referans Videosu",
+      "required": "Gerekli",
+      "removeVideo": "Videoyu kaldır",
+      "uploading": "Yükleniyor...",
+      "dropVideo": "Buraya bir video bırakın veya yüklemek için tıklayın",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Elemanlar",
+      "optional": "İsteğe bağlı ({current}/{max})",
+      "addElements": "Ekle",
+      "elementAlt": "Öğe {index}",
+      "removeElement": "{index} öğesini kaldır",
+      "dropElements": "Öğe görselleri eklemek için tıklayın",
+      "elementsHint": "Karakterleri/stili korumak için isteğe bağlı resimler.",
+      "errors": {
+        "invalidVideoTitle": "Geçersiz video",
+        "invalidVideoDescription": "Lütfen bir video dosyası seçin.",
+        "videoTooLargeTitle": "Video çok büyük",
+        "videoTooLargeDescription": "Maksimum {maxMb}MB. Lütfen daha kısa/daha küçük bir klip yükleyin.",
+        "uploadFailedTitle": "Yükleme başarısız oldu",
+        "elementsLimitTitle": "Öğe sınırına ulaşıldı",
+        "elementsLimitDescription": "En fazla {max} resim ekleyebilirsiniz.",
+        "imageTooSmall": "Resim en az {minWidth}×{minHeight} olmalıdır (şu anki: {width}×{height}).",
+        "imageBadRatio": "Resmin en boy oranı {minAspectRatio} ile {maxAspectRatio} (şu anki: {current}) arasında olmalıdır."
+      },
+      "warnings": {
+        "someSkippedTitle": "Bazı dosyalar atlandı",
+        "someSkippedDescription": "Sınırlar nedeniyle {count} dosyaları atlandı.",
+        "skippedTitle": "Atlandı",
+        "skippedNonImage": "Öğeler için yalnızca resimlere izin verilir.",
+        "imageCompressedTitle": "Resim sıkıştırılmış",
+        "imageCompressedDescription": "{original}'dan {final}'ye sıkıştırıldı.",
+        "skippedInvalidImage": "Geçersiz resim."
+      }
+    },
+    "howItWorks": {
+      "title": "Nasıl çalışır?",
+      "hero": {
+        "title": "TEK TIKLAMAYLA VİDEOLAR YAPIN",
+        "subtitle": "Kamera kontrolü, çerçeveleme ve VFX için ön ayarları kullanın veya istemlerle tamamen manuele geçin."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "RESİM EKLE",
+          "2": "ÖN AYARI SEÇİN",
+          "3": "VİDEO AL"
+        },
+        "t2v": {
+          "1": "İSTEĞİNİ YAZIN",
+          "2": "MODELİ SEÇİN",
+          "3": "VİDEO AL"
+        },
+        "flf": {
+          "1": "ÇERÇEVE EKLE",
+          "2": "GEÇİŞİ AÇIKLAYIN",
+          "3": "VİDEO AL"
+        },
+        "edit": {
+          "1": "VİDEO EKLE",
+          "2": "ELEMAN EKLE",
+          "3": "VİDEO AL"
+        }
+      },
+      "modes": {
+        "edit": "Düzenle (Videodan Videoya)",
+        "flf": "İlk-Son Çerçeve",
+        "i2v": "Görüntüden Videoya",
+        "t2v": "Metinden Videoya"
+      },
+      "steps": {
+        "edit": {
+          "1": "Kısa bir referans videosu yükleyin.",
+          "2": "Karakterleri/stili tutarlı tutmak için isteğe bağlı olarak en fazla 4 öğe resmi ekleyin.",
+          "3": "İstemde neyin değiştirileceğini (ve neyin saklanacağını) açıklayın ve ardından oluşturun."
+        },
+        "flf": {
+          "1": "Bir başlangıç çerçevesi ve bir bitiş çerçevesi yükleyin.",
+          "2": "İstediğiniz geçişi açıklayın.",
+          "3": "Sorunsuz bir dönüşüm oluşturmak için oluşturun."
+        },
+        "i2v": {
+          "1": "Bir referans görseli yükleyin.",
+          "2": "Hareketi, kamerayı ve stili tanımlayın.",
+          "3": "Oranı/süreyi seçin ve oluşturun."
+        },
+        "t2v": {
+          "1": "Sahnenizi tanımlayın (konu, kamera, ışık, stil).",
+          "2": "Oranı/süreyi seçin ve isteğe bağlı olarak olumsuz bir istem ekleyin.",
+          "3": "Küçük değişikliklerle oluşturun ve yineleyin."
+        }
+      },
+      "tip": "İpucu: Spesifik olun. Modele neyin aynı kalması gerektiğini söyleyin (kimlik, logo, kompozisyon).",
+      "templates": {
+        "title": "Ön ayarlar",
+        "subtitle": "Klasik bir ön ayar seçin ve daha hızlı oluşturun.",
+        "use": "Kullanım",
+        "clear": "Temizle",
+        "prev": "Önceki ön ayar",
+        "next": "Sonraki ön ayar",
+        "edit": {
+          "relight": {
+            "title": "Eğlence ve atmosfer",
+            "description": "Günün saatini ve sinematik aydınlatmayı değiştirin."
+          },
+          "grade": {
+            "title": "Sinematik derece",
+            "description": "Deniz mavisi rengi + film dokusu, hareketi ve kimliği korur."
+          },
+          "weather": {
+            "title": "Hava değişimi",
+            "description": "Kimliği korurken yağmur/sis ekleyin."
+          },
+          "anime": {
+            "title": "Anime tarzı",
+            "description": "Kimliği ve hareketi korurken anime görünümü."
+          },
+          "background": {
+            "title": "Arka planı değiştir",
+            "description": "Nesneyi korurken arka planı değiştirin."
+          },
+          "lux": {
+            "title": "Birinci sınıf cila",
+            "description": "Daha temiz, daha pürüzsüz, daha kaliteli ticari his."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "Gündüz → Gece",
+            "description": "Tutarlı çerçevelemeyle yumuşak aydınlatma/zaman geçişi."
+          },
+          "sketchToRender": {
+            "title": "Taslak → Oluştur",
+            "description": "Taslaktan son işlemeye kadar ayrıntıları kademeli olarak ortaya çıkarın."
+          },
+          "beforeAfter": {
+            "title": "Açıklamadan önce/sonra",
+            "description": "İnce hareketlerle zevkli dönüşüm."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "Portre hayatı",
+            "description": "Göz kırpma + yavaş itmeyle hafif hareket."
+          },
+          "pan": {
+            "title": "Paralaks tavası",
+            "description": "Derinlik ve hareket bulanıklığı içeren sinematik pan."
+          },
+          "product": {
+            "title": "Ürün döndürme",
+            "description": "Parlak vurgulara sahip stüdyo ürünü görünümü."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8'li premium reklam",
+            "description": "Temiz, üst düzey bir reklam çekimi."
+          },
+          "establish": {
+            "title": "Atışın kurulması",
+            "description": "Bir dünya/sahne için geniş sinematik giriş."
+          },
+          "anime": {
+            "title": "Anime açılışı",
+            "description": "Stilize anime açılış tarzı çekim."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Görüntüden Videoya için bir referans görsel gerekir.",
+        "i2vDescription": "Lütfen bir referans görsel yükleyin veya Metinden Videoya modeline geçin.",
+        "v2vTitle": "Videodan Videoya için bir referans video gerekir.",
+        "v2vDescription": "Lütfen bir referans video yükleyin veya Metinden Videoya modeline geçin."
+      },
+      "costLabel": "Maliyet:",
+      "balanceLabel": "Bakiye:",
+      "freeUnlimited": "Ücretsiz (Sınırsız)",
+      "credits": "Kredi",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast lüks bir modeldir ve Unlimited ücretsiz kullanımına dahil değildir. Ek ödeme gerekir.",
+        "veo31": "VEO 3.1 lüks bir modeldir ve Unlimited ücretsiz kullanımına dahil değildir. Ek ödeme gerekir.",
+        "veo3": "VEO3 lüks bir modeldir ve Unlimited ücretsiz kullanımına dahil değildir. Ek ödeme gerekir.",
+        "sora2Pro": "Sora-2 Pro lüks bir modeldir ve Unlimited ücretsiz kullanımına dahil değildir. Ek ödeme gerekir."
+      },
+      "gettingCredits": "Krediler alınıyor...",
+      "getBonusCredits": "{amount} Kredi Al",
+      "submitting": "Gönderiliyor...",
+      "loadingModels": "Modeller Yükleniyor...",
+      "uploadingAsset": "Varlık yükleniyor...",
+      "uploadingImages": "Görseller yükleniyor...",
+      "claimingCredits": "Krediler alınıyor...",
+      "getMoreCredits": "Daha Fazla Kredi Al",
+      "generateVideo": "Video Oluştur"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Yayınlama Başarısız",
+        "missingTitleDescription": "Lütfen videonuz için bir başlık girin",
+        "processingTitle": "İşleniyor",
+        "processingDescription": "Videonuzu yayınlamaya hazırlanıyor...",
+        "successTitle": "Başarıyla Yayınlandı",
+        "successDescription": "Videonuz topluluğa paylaşıldı",
+        "failedTitle": "Yayınlama Başarısız",
+        "failedDescription": "Lütfen ağ bağlantınızı kontrol edin veya daha sonra tekrar deneyin"
+      },
+      "successTitle": "Başarıyla Yayınlandı!",
+      "successDescription": "Harika oluşturmanız artık toplulukta yayında",
+      "publishingTitle": "Yayınlanıyor...",
+      "publishingDescriptionDesktop": "Videonuzu topluluğun keyifle izlemesi için hazırlıyoruz...",
+      "publishingDescriptionMobile": "Videonuz hazırlanıyor...",
+      "progressComplete": "{progress}% tamamlandı",
+      "title": "Topluluğa Paylaş",
+      "description": "Harika oluşturmanızı dünyayla paylaşın",
+      "benefits": {
+        "getLikes": "Beğeni Kazan",
+        "buildCommunityLong": "Topluluk Oluştur",
+        "buildCommunityShort": "Topluluk",
+        "inspireLong": "Başkalarına İlham Ver",
+        "inspireShort": "İlham",
+        "earnLong": "+{amount} Kredi Kazan",
+        "earnShort": "+{amount} Kredi"
+      },
+      "videoTitle": "Video Başlığı",
+      "videoTitlePlaceholder": "Oluşturmanıza etkileyici bir başlık verin...",
+      "videoTitleHelperDesktop": "Etkileyici bir başlık daha fazla izleyici çeker",
+      "videoTitleHelperMobile": "İyi başlıklar izleyici çeker",
+      "descriptionLabel": "Açıklama",
+      "optional": "İsteğe bağlı",
+      "descriptionPlaceholder": "Topluluğa oluşturmanız hakkında anlatın...",
+      "descriptionHelper": "Yaratıcı sürecinizi paylaşın",
+      "cancel": "İptal",
+      "publish": "Yayınla"
+    },
+    "history": {
+      "title": "Tarih",
+      "refresh": "Yenile",
+      "view": {
+        "one": "Satır başına 1",
+        "three": "satır başına 3",
+        "nine": "satır başına 9"
+      },
+      "filterPlaceholder": "Filtrele",
+      "empty": "{status} görev bulunamadı",
+      "status": {
+        "all": "Tümü",
+        "pending": "Beklemede",
+        "queued": "Kuyrukta",
+        "processing": "İşleniyor",
+        "completed": "Tamamlandı",
+        "failed": "Başarısız",
+        "canceled": "İptal edildi"
+      }
+    },
+    "effectSelector": {
+      "loading": "Efektler yükleniyor...",
+      "defaultDescription": "Videonuza özel efektler uygulayın",
+      "ctaTitle": "Bir efekt seçin",
+      "ctaDescription": "Video efekti seçmek için tıklayın",
+      "modalTitle": "Efekt Seç",
+      "close": "Efekt seçiciyi kapat"
+    },
+    "modelSelectorModal": {
+      "title": "Model Seç",
+      "description": "Projeniz için bir model seçin",
+      "close": "Model seçiciyi kapat",
+      "loadingMore": "Daha fazla model yükleniyor...",
+      "allLoaded": "Tüm modeller yüklendi",
+      "noModelsFound": "Model bulunamadı"
+    },
+    "modelSearch": {
+      "placeholder": "Modelleri ad, tür veya özelliklere göre arayın...",
+      "clear": "Aramayı temizle",
+      "searching": "Aranıyor...",
+      "foundModels": "{count} model bulundu",
+      "modelsAvailable": "{count} model mevcut"
+    },
+    "modelTypeFilter": {
+      "title": "Model Türü",
+      "clear": "Temizle"
+    },
+    "remixLoader": {
+      "successTitle": "Remix Görevi Yüklendi",
+      "successDescription": "Video parametreleri orijinal görevden yüklendi, doğrudan oluşturabilir veya parametreleri değiştirebilirsiniz.",
+      "errorTitle": "Parametreler yüklenemedi",
+      "errorDescription": "Orijinal görevden parametreler yüklenemedi, lütfen parametreleri manuel olarak ayarlayın."
+    },
+    "modelCard": {
+      "select": "Seç",
+      "credits": "Kredi",
+      "premium": "PREMIUM",
+      "luxury": "LÜKS"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind Seçimi",
+      "hot": "Popüler",
+      "new": "YENİ",
+      "select": "Seç"
+    },
+    "previewPanel": {
+      "generating": "Oluşturuluyor...",
+      "download": "İndir",
+      "downloading": "İndiriliyor...",
+      "shareToCommunity": "Yayınla",
+      "tips": "İpucu: Yayınlayarak kredi kazanın",
+      "quality": "Kalite",
+      "qualityHd": "HD",
+      "qualityStandard": "Standart",
+      "ratio": "Oran",
+      "fullscreen": {
+        "enter": "Tam ekran",
+        "exit": "Tam ekrandan çık"
+      },
+      "empty": {
+        "title": "Henüz önizleme yok",
+        "description": "Burada önizlemeyi görmek için bir video oluşturun."
+      },
+      "queue": {
+        "loading": "Kuyruk bilgisi yükleniyor...",
+        "headerProcessing": "İşleniyor",
+        "headerQueueStatus": "Kuyruk Durumu",
+        "badgePosition": "Sıra: {position} / {total}",
+        "badgeProcessing": "İşleniyor",
+        "tasksInQueue": "Kuyruktaki görevler",
+        "estimatedWait": "Tahmini bekleme",
+        "elapsedTime": "Geçen süre",
+        "remainingTime": "Kalan süre",
+        "startTime": "Tahmini başlangıç",
+        "completionTime": "Tahmini tamamlanma"
+      },
+      "time": {
+        "calculating": "Hesaplanıyor...",
+        "justNow": "Az önce",
+        "lessThanMinute": "Bir dakikadan kısa sürede",
+        "inMinutes": "{minutes, plural, one {# dakika} other {# dakika}} içinde",
+        "inHours": "{hours, plural, one {# saat} other {# saat}} içinde",
+        "inDays": "{days, plural, one {# gün} other {# gün}} içinde",
+        "seconds": "{seconds, plural, one {# saniye} other {# saniye}}",
+        "minutesSeconds": "{minutes, plural, one {# dakika} other {# dakika}} {seconds, plural, one {# saniye} other {# saniye}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Video yükleniyor...",
+      "notFound": "Video bulunamadı",
+      "notFoundDescription": "İstenen video bulunamadı veya şu anda kullanılamıyor.",
+      "detailsTitle": "Ayrıntılar",
+      "videoInfoTitle": "Video Bilgisi",
+      "advancedTitle": "Gelişmiş",
+      "referenceImagesTitle": "Referans Görseller",
+      "startFrameAlt": "Başlangıç karesi",
+      "endFrameAlt": "Bitiş karesi",
+      "endFrameLabel": "Bitiş Karesi",
+      "creationDate": "Oluşturulma Tarihi",
+      "fields": {
+        "model": "Modeli",
+        "generationType": "Üretim Türü",
+        "resolution": "Çözünürlük",
+        "aspectRatio": "En-boy Oranı",
+        "duration": "Süre",
+        "creativityLevel": "Yaratıcılık",
+        "effect": "Efekt",
+        "samplingSteps": "Örnekleme Adımları",
+        "randomSeed": "Rastgele Tohum",
+        "movementAmplitude": "Hareket Genliği",
+        "backgroundMusic": "Arka Plan Müziği",
+        "negativePrompt": "Negatif İstem"
+      },
+      "actions": {
+        "close": "Kapat",
+        "closeModalTitle": "Modali kapat",
+        "remix": "Remiks",
+        "remixTitle": "Bu parametrelerle remixle",
+        "download": "İndir",
+        "downloadTitle": "Bu videoyu indir",
+        "downloading": "İndiriliyor...",
+        "shareTitle": "Bu videoyu paylaş"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Görevi Sil",
+      "description": "Bu işlem geri alınamaz",
+      "cancel": "İptal",
+      "confirm": "Sil",
+      "deleting": "Siliniyor..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Referans görsel"
+      },
+      "pending": {
+        "pending": "Beklemede...",
+        "queued": "Kuyrukta...",
+        "waitingInQueue": "Kuyrukta bekleniyor..."
+      },
+      "processing": {
+        "phase1": "Aşama 1",
+        "phase2": "Aşama 2",
+        "phase3": "Aşama 3",
+        "final": "Son",
+        "initializing": "İşlem başlatılıyor",
+        "processing": "İçerik işleniyor",
+        "rendering": "Çıktı oluşturuluyor",
+        "finalizing": "Tamamlanıyor",
+        "stuckMessage": "Bu görev takılmış görünüyor. Silebilirsiniz.",
+        "deleteTitle": "Bu görevi sil",
+        "deleteAria": "Sil"
+      },
+      "failed": {
+        "title": "Oluşturma Başarısız",
+        "tryAgain": "Yeniden dene",
+        "tryAgainTitle": "Bu istemle tekrar dene",
+        "deleteTitle": "Bu görevi sil"
+      },
+      "completed": {
+        "recreateDesktop": "Yeniden oluştur",
+        "remixMobile": "Remiks",
+        "remixTitle": "Bu istemi kullanarak yeni bir video oluştur",
+        "publish": "Yayınla",
+        "publishTitle": "Topluluğa yayınlayın ve {amount} kredi kazanın",
+        "creditsBonusDesktop": "{amount} kredi bonusu",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Paylaş",
+        "shareTitle": "Bu videoyu paylaş",
+        "downloadTitle": "Bu videoyu indir",
+        "downloading": "İndiriliyor...",
+        "deleteTitle": "Bu görevi sil"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego - ReelMind",
+      "description": "ReelMind'de Lego iş akışıyla videolar oluşturun ve remixleyin."
+    },
+    "mobile": {
+      "backToBuilder": "Oluşturucuya dön",
+      "history": "Geçmiş"
+    },
+    "badges": {
+      "new": "Yeni"
+    },
+    "actions": {
+      "delete": "Sil",
+      "select": "Seç",
+      "selected": "Seçildi",
+      "download": "İndir",
+      "downloading": "İndiriliyor...",
+      "deleting": "Siliniyor...",
+      "share": "Paylaş",
+      "close": "Kapat"
+    },
+    "status": {
+      "pending": "Beklemede",
+      "processing": "İşleniyor",
+      "failed": "Başarısız",
+      "completed": "Tamamlandı",
+      "generating": "Oluşturuluyor",
+      "cancelled": "İptal edildi"
+    },
+    "deleteConfirmDialog": {
+      "title": "Görevi Sil",
+      "description": "Bu işlem geri alınamaz",
+      "cancel": "İptal",
+      "confirm": "Sil",
+      "deleting": "Siliniyor..."
+    },
+    "imageViewer": {
+      "close": "Kapat",
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "view": "{index} görüntüle"
+    },
+    "historyList": {
+      "title": "Lego AI Görsel Oluşturucu",
+      "generatingFirstImage": "İlk görseliniz oluşturuluyor...",
+      "loadFailed": "Geçmiş yüklenemedi. Lütfen tekrar deneyin.",
+      "emptyDescription": "Fikrinizi açıklayarak ve AI'yi yönlendirmek için kaynaklar ekleyerek çarpıcı görseller oluşturun",
+      "loadingMore": "Geçmiş görseller yükleniyor...",
+      "scrollForMore": "Daha fazlası için kaydırın...",
+      "allLoaded": "Tüm {count} görsel yüklendi"
+    },
+    "sidebar": {
+      "addCard": "Yeni kart ekle",
+      "expand": "Kenar çubuğunu genişlet",
+      "sections": {
+        "theme": "Tema",
+        "scene": "Sahne",
+        "style": "Stil"
+      }
+    },
+    "card": {
+      "placeholder": "{section} açıklayın...",
+      "imageAlt": "{section} referansı",
+      "options": {
+        "image": "Görsel",
+        "text": "Metin"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Referans {index}",
+      "errors": {
+        "invalidType": "Lütfen bir görsel dosyası seçin",
+        "tooLarge": "Görsel boyutu {maxSizeMb}MB'yi aşamaz",
+        "uploadFailed": "Görsel yüklenemedi. Lütfen tekrar deneyin."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "En alta kaydır",
+      "collapsedPlaceholder": "Görselinizi açıklayın...",
+      "close": "Kapat"
+    },
+    "resultPreview": {
+      "previewTitle": "Önizleme",
+      "previewDescription": "Oluşturulan görseliniz burada görünecek",
+      "generatedImageAlt": "Oluşturulan görsel",
+      "emptyPlaceholder": "Oluşturmanız burada görünecek",
+      "dialogTitle": "Oluşturduğunuz Görsel",
+      "dialogDescription": "Açıklamanıza ve kaynaklarınıza göre oluşturduğumuz görsel burada"
+    },
+    "resourceUploader": {
+      "uploadImage": "Görsel yükle",
+      "imageFallbackAlt": "Görsel",
+      "imageFallbackLabel": "görsel",
+      "removeImage": "{title} kaldır"
+    },
+    "controlPanel": {
+      "showSidebar": "Kenar çubuğunu göster",
+      "hideSidebar": "Kenar çubuğunu gizle",
+      "hideSidebarShort": "Kenar Çubuğunu Gizle",
+      "addImage": "Görsel Ekle",
+      "addImageWithLimit": "Görsel Ekle ({current}/{max})",
+      "promptPlaceholder": "Görselinizi oluşturun veya düzenleyin...",
+      "model": "Modeli",
+      "selectModel": "Model Seç",
+      "loading": "Yükleniyor...",
+      "loadingModels": "Modeller yükleniyor...",
+      "noModelsAvailable": "Kullanılabilir model yok",
+      "noModelsMatchFilters": "Filtrelerinize uyan model yok",
+      "modelLabel": "Modeli: {name}",
+      "aspectRatio": "En-boy Oranı",
+      "ratioLabel": "Oran: {value}",
+      "imagesLabel": "Görseller: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 tek bir görsel üretir",
+        "hint": "Oluşturulacak görsel sayısı",
+        "numberOfImages": "Görsel Sayısı"
+      },
+      "advanced": {
+        "aria": "Gelişmiş ayarlar",
+        "label": "Gelişmiş",
+        "title": "Gelişmiş Ayarlar",
+        "negativePrompt": {
+          "label": "Negatif İstem",
+          "placeholder": "Hariç tutmak istediğiniz öğeler...",
+          "aria": "Negatif istem",
+          "title": "Hariç tutulacak öğeleri belirtin"
+        },
+        "seed": {
+          "label": "Tohum",
+          "random": "Rastgele",
+          "randomTitle": "Rastgele tohum oluştur",
+          "placeholder": "Rastgele tohum (isteğe bağlı)",
+          "aria": "Tohum değeri",
+          "title": "Tekrarlanabilir sonuçlar için tohumu ayarlayın"
+        }
+      },
+      "resolution": "Çözünürlük",
+      "resolutionLabel": "Çözünürlük: {value}",
+      "resolutionPopoverTitle": "Çözünürlük (Nano Banana 2)",
+      "generating": "Oluşturuluyor...",
+      "generate": "Oluştur",
+      "limitReached": "Sınır Aşıldı",
+      "fluxLimitTooltip": "FLUX modelleri, üye olmayanlar için {limit} kullanımla sınırlıdır",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 premium bir modeldir ve Unlimited ücretsiz kullanımına dahil değildir. Oluşturulan her görsel için kredi alınır.",
+      "unlimited": {
+        "fast": "Hızlı",
+        "slow": "Yavaş",
+        "fastMode": "Hızlı Mod",
+        "slowMode": "Yavaş Mod",
+        "monthlyUsage": "Aylık kullanım: {used}/{limit}",
+        "rateLimit": "Hız limiti: 5 dakikada {limit} görsel",
+        "switchedToSlow": "Aylık sınıra ulaştınız. Yavaş moda geçildi."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Oluşturulan görsel",
+      "failedTitle": "Oluşturma Başarısız",
+      "errors": {
+        "unableToComplete": "Oluşturma tamamlanamadı"
+      },
+      "actions": {
+        "deleteTitle": "Görevi sil",
+        "viewFullSize": "Tam boy görmek için tıklayın",
+        "preview": "Önizleme {index}",
+        "retryTitle": "Yeniden dene - Aynı parametrelerle tekrar dene",
+        "retry": "Yeniden dene",
+        "remixTitle": "Remix - Parametreleri yeniden kullan",
+        "remix": "Remiks",
+        "makeVideoTitle": "Video Yap",
+        "makeVideo": "Video oluştur"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "İndirme Başladı",
+      "downloadStartedMessage": "Video indirmesi başladı",
+      "downloadFailedTitle": "İndirme Başarısız",
+      "downloadFailedMessage": "Video indirilemedi",
+      "shareCopied": "Paylaşım bağlantısı panoya kopyalandı",
+      "shareCopyFailed": "Paylaşım bağlantısı kopyalanamadı"
+    },
+    "empty": {
+      "title": "Video Kullanılamıyor",
+      "description": "Bu video paylaşım için uygun değil veya video dosyası eksik.",
+      "ctaCreate": "Kendi Videonu Oluştur"
+    },
+    "notFound": {
+      "title": "Video Bulunamadı",
+      "description": "Aradığınız video mevcut değil veya artık paylaşım için uygun değil.",
+      "ctaCreate": "Kendi Videonu Oluştur",
+      "ctaHome": "Ana Sayfaya dön"
+    },
+    "details": {
+      "creationDate": "Oluşturulma Tarihi"
+    },
+    "actions": {
+      "remix": "Remiks",
+      "remixTitle": "Bu istemi kullanarak yeni bir video oluştur",
+      "download": "İndir",
+      "downloadTitle": "Bu videoyu indir",
+      "downloading": "İndiriliyor...",
+      "downloadingTitle": "İndiriliyor...",
+      "shareTitle": "Bu videoyu paylaş"
+    },
+    "meta": {
+      "promptFallback": "AI Tarafından Oluşturulmuş Video",
+      "watchDescription": "Bu AI tarafından oluşturulmuş videoyu izle: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Müzik",
+      "description": "AI ile müzik, ses efektleri ve konuşma üretin."
+    },
+    "page": {
+      "loadingSoundStudio": "Ses Stüdyosu yükleniyor..."
+    },
+    "functionToggle": {
+      "music": "Müzik",
+      "soundEffect": "Ses Efekti",
+      "textToSpeech": "Metinden Konuşmaya"
+    },
+    "controlPanel": {
+      "title": "Kontrol",
+      "reset": "Sıfırla",
+      "modelLabel": {
+        "tts": "TTS Modeli",
+        "sound": "Ses Modeli"
+      },
+      "modelPlaceholder": "Model seç",
+      "noModelsAvailableTitle": "Kullanılabilir Model Yok",
+      "noModelsFound": {
+        "tts": "TTS modeli bulunamadı",
+        "soundEffect": "Ses efekti modeli bulunamadı"
+      },
+      "tts": {
+        "stability": "Kararlılık",
+        "similarityBoost": "Benzerlik Artışı",
+        "styleExaggeration": "Stil Abartısı",
+        "speed": "Hız"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Referans Ses Yükle",
+      "dropHere": "Buraya bırakın",
+      "supportedFormats": "Desteklenen formatlar: MP3, WAV, M4A, AAC, OGG",
+      "tip": "İpucu: Daha iyi sonuçlar için en az 15 saniye net ses kullanın.",
+      "uploadingProgress": "Yükleniyor... {progress}%",
+      "toast": {
+        "uploadSuccess": "Yükleme tamamlandı",
+        "uploadFailed": "Yükleme başarısız"
+      },
+      "errors": {
+        "selectAudioFile": "Lütfen bir ses dosyası seçin.",
+        "invalidAudioFile": "Geçersiz ses dosyası.",
+        "fileTooLarge": "Dosya çok büyük (maks 50MB).",
+        "durationTooShort": "Ses en az 15 saniye olmalıdır."
+      }
+    },
+    "audioPlayer": {
+      "play": "Oynat",
+      "pause": "Duraklat"
+    },
+    "voiceSelector": {
+      "label": "Ses",
+      "selectVoiceTitle": "Ses Seç",
+      "gender": {
+        "all": "Tümü",
+        "male": "Erkek",
+        "female": "Kadın"
+      },
+      "noVoicesAvailable": "Kullanılabilir ses yok",
+      "noVoicesFound": "Ses bulunamadı",
+      "bestFor": "{useCase} için en iyisi",
+      "clickToSelectVoice": "Ses seçmek için tıklayın"
+    },
+    "historyPanel": {
+      "title": "Geçmiş",
+      "empty": {
+        "title": "Henüz oluşturma yok",
+        "description": "Oluşturma geçmişiniz burada görünecek"
+      },
+      "loading": "Yükleniyor...",
+      "loadMore": "Daha fazla yükle"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "İşleniyor",
+        "failed": "Başarısız",
+        "completed": "Tamamlandı"
+      },
+      "actions": {
+        "copy": "Kopyala",
+        "download": "İndir"
+      },
+      "time": {
+        "now": "Şimdi",
+        "minutesAgo": "{minutes} dk önce",
+        "hoursAgo": "{hours} sa önce"
+      },
+      "unknownModel": "Bilinmeyen Model",
+      "errors": {
+        "unknown": "Bilinmeyen hata"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Ses Stüdyosu"
+      },
+      "menu": {
+        "open": "Menüyü aç",
+        "title": "Menü",
+        "voiceGeneration": "Oluştur",
+        "settings": "Ayarlar",
+        "history": "Geçmiş"
+      },
+      "tabs": {
+        "generate": "Oluştur",
+        "settings": "Ayarlar",
+        "history": "Geçmiş"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Konuşma üretimi için metninizi yazın...",
+        "soundEffect": "Oluşturmak istediğiniz ses efektini açıklayın..."
+      },
+      "generateSpeech": "Konuşma Oluştur",
+      "generateSound": "Ses Oluştur",
+      "generating": "Oluşturuluyor...",
+      "loadingExamples": "Örnekler yükleniyor...",
+      "loadingMusicStyles": "Müzik stilleri yükleniyor...",
+      "rightTabs": {
+        "examples": "Örnekler",
+        "history": "Geçmiş"
+      },
+      "history": {
+        "generationCount": "{count} oluşturma"
+      },
+      "price": {
+        "placeholder": "Tahmini maliyet",
+        "calculating": "Hesaplanıyor...",
+        "credits": "{credits} kredi"
+      },
+      "musicHistory": {
+        "title": "Müzik Geçmişi",
+        "empty": {
+          "title": "Henüz müzik oluşturulmadı",
+          "description": "Müzik geçmişiniz burada görünecek"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "Ses Efekti Geçmişi",
+        "empty": {
+          "title": "Henüz ses efekti oluşturulmadı",
+          "description": "Ses efekti geçmişiniz burada görünecek"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Sözler",
+      "lyricsPlaceholder": "İsteğe bağlı biçimlendirmeyle sözler. Her satırı ayırmak için yeni satır kullanabilirsiniz. Satırlar arasında duraklama eklemek için iki yeni satır kullanabilirsiniz. Eşlik eklemek için sözlerin başına ve sonuna çift diyez (##) ekleyebilirsiniz. Maksimum 600 karakter.",
+      "useReferenceAudio": {
+        "label": "Referans Ses Kullan",
+        "description": "AI'nin stilini yönlendirmek için bir ses referansı kullanın."
+      },
+      "referenceAudio": {
+        "title": "Referans Ses",
+        "description": "Hem müzik hem de vokal içeren bir referans şarkı yükleyin."
+      },
+      "musicStyle": {
+        "title": "Müzik Stili",
+        "description": "Oluşturmak istediğiniz müziğin stilini ve ruh halini açıklayın.",
+        "placeholder": "ör., R&B, enerjik, hareketli pop, akustik folk, elektronik dans...",
+        "tooShort": "Müzik stili açıklaması en az 10 karakter olmalıdır."
+      },
+      "generating": "Oluşturuluyor...",
+      "generateMusicWithCredits": "Müzik Oluştur ({credits} kredi)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Süre",
+        "description": "Ses efektinin uzunluğunu ayarlayın."
+      },
+      "promptInfluence": {
+        "title": "İstem Etkisi",
+        "description": "Daha yüksek değerler isteminizi daha yakından takip eder."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "İletişim",
+      "description": "ReelMind ekibine geri bildirim gönderin."
+    },
+    "header": {
+      "title": "Hızlı Geri Bildirim",
+      "description": "Bir hata mı buldunuz veya öneriniz mi var? 30 saniyede bize bildirin."
+    },
+    "card": {
+      "title": "Hızlı Geri Bildirim",
+      "subtitle": "Sadece 3 alan, 30 saniye sürer"
+    },
+    "submitted": {
+      "title": "Geri Bildirim Gönderildi",
+      "description": "Geri bildiriminiz için teşekkürler. İnceleyeceğiz ve gerekirse size döneceğiz."
+    },
+    "auth": {
+      "required": "Geri bildirim göndermek için lütfen giriş yapın."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+      },
+      "type": {
+        "label": "Tür",
+        "placeholder": "Geri bildirim türünü seçin",
+        "options": {
+          "bug": "Hata Bildirimi",
+          "suggestion": "Öneri",
+          "other": "Diğer"
+        },
+        "errors": {
+          "required": "Geri bildirim türü gerekli.",
+          "invalid": "Geçersiz geri bildirim türü."
+        }
+      },
+      "subject": {
+        "label": "Konu *",
+        "placeholder": "Sorun veya öneri nedir?",
+        "errors": {
+          "required": "Konu gerekli.",
+          "min": "Konu en az {min} karakter olmalıdır.",
+          "max": "Konu {max} karakterden kısa olmalıdır.",
+          "invalid": "Konu geçersiz içerik içeriyor."
+        }
+      },
+      "message": {
+        "label": "Detaylar *",
+        "placeholder": "Daha fazla anlatın...",
+        "errors": {
+          "required": "Detaylar gerekli.",
+          "min": "Detaylar en az {min} karakter olmalıdır.",
+          "max": "Detaylar {max} karakterden kısa olmalıdır.",
+          "invalid": "Detaylar geçersiz içerik içeriyor."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Gönderiliyor...",
+      "submit": "Geri Bildirimi Gönder"
+    },
+    "toast": {
+      "submitSuccess": "Geri bildirim başarıyla gönderildi!",
+      "submitFailed": "Geri bildirim gönderilemedi. Lütfen tekrar deneyin.",
+      "authRequired": "Geri bildirim göndermek için lütfen giriş yapın.",
+      "rateLimited": "Çok fazla gönderim. Lütfen daha sonra tekrar deneyin.",
+      "rateLimitedWithRetryAfter": "Tekrar göndermeden önce lütfen {seconds}s bekleyin.",
+      "fixErrors": "Lütfen formdaki hataları düzeltin.",
+      "checkInput": "Lütfen girdinizi kontrol edin ve tekrar deneyin."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Gönderiler",
+      "following": "Takip Edilenler",
+      "followingShort": "Takip",
+      "followers": "Takipçiler",
+      "followersShort": "Hayranlar",
+      "favorites": "Favoriler",
+      "favoritesShort": "Favori"
+    },
+    "actions": {
+      "save": "Kaydet",
+      "saving": "Kaydediliyor...",
+      "cancel": "İptal",
+      "delete": "Sil",
+      "retry": "Yeniden dene",
+      "editProfile": "Profili Düzenle",
+      "signOut": "Çıkış Yap",
+      "follow": "Takip Et",
+      "unfollow": "Takibi Bırak",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "İçerik Üreticisi",
+      "avatarAltFallback": "Kullanıcı",
+      "initialFallback": "sen",
+      "edit": {
+        "displayNamePlaceholder": "Görünen Ad",
+        "bioPlaceholder": "Biyografi"
+      },
+      "stats": {
+        "following": "Takip edilen",
+        "followers": "Takipçiler"
+      },
+      "joined": "{date} tarihinde katıldı",
+      "joinedFallback": "Mart 2025"
+    },
+    "time": {
+      "now": "Az önce",
+      "minutesAgo": "{minutes} dk önce",
+      "hoursAgo": "{hours} sa önce",
+      "daysAgo": "{days} gün önce"
+    },
+    "toast": {
+      "loginFirst": "Lütfen önce giriş yapın",
+      "cannotFollowYourself": "Kendinizi takip edemezsiniz",
+      "followed": "Başarıyla takip edildi",
+      "unfollowed": "Takip bırakıldı",
+      "operationFailed": "İşlem başarısız"
+    },
+    "posts": {
+      "loadingMore": "Daha fazla gönderi yükleniyor...",
+      "error": {
+        "failedToLoad": "Gönderiler yüklenemedi"
+      },
+      "empty": {
+        "title": "Henüz gönderi yok",
+        "description": "Bu kullanıcı henüz hiçbir gönderi paylaşmadı. Daha sonra tekrar kontrol edin!"
+      },
+      "deleteDialog": {
+        "title": "Gönderiyi sil",
+        "description": "Bu, gönderiyi profilinizden ve akıştan gizler. Bu işlemi geri alamazsınız."
+      },
+      "toast": {
+        "deleted": "Gönderi silindi",
+        "deleteFailed": "Gönderi silinemedi"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Daha fazla favori yükleniyor...",
+      "error": {
+        "failedToLoad": "Favoriler yüklenemedi"
+      },
+      "empty": {
+        "title": "Henüz favori yok",
+        "description": "Beğendiğiniz gönderiler burada görünür. Keşfetmeye başlayın ve favorilerinizi kaydedin!"
+      }
+    },
+    "followers": {
+      "empty": "Henüz takipçi yok",
+      "error": {
+        "failedToLoad": "Takipçiler yüklenemedi"
+      },
+      "followerSince": "{time} tarihinden beri takipçi"
+    },
+    "following": {
+      "empty": "Henüz takip yok",
+      "error": {
+        "failedToLoad": "Takip edilenler yüklenemedi"
+      },
+      "followingSince": "{time} tarihinden beri takip ediliyor"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Üyelik Planları - ReelMind",
+      "description": "AI video üretimi için daha fazla kredi ve premium özellikler almak üzere ReelMind üyelik planlarına katılın."
+    },
+    "plans": {
+      "hero": {
+        "title": "Üyelik Planları",
+        "subtitle": "ReelMind esnek abonelik planlarıyla AI video üretiminin tüm potansiyelini açın"
+      },
+      "error": {
+        "loadFailed": "Üyelik planları alınamadı, lütfen daha sonra tekrar deneyin."
+      },
+      "names": {
+        "free": "Ücretsiz",
+        "pro": "Profesyonel",
+        "max": "Maksimum",
+        "unlimited": "Sınırsız"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Yıllık"
+      },
+      "monthly": {
+        "label": "Aylık"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "İlk Ay %70 İNDİRİM",
+        "short": "%70 İNDİRİM",
+        "description": "İlk kez üyelik aboneleri %70 indirim alır, kupon 24 saat geçerlidir"
+      },
+      "yearly": {
+        "full": "İlk 6 Ay ÜCRETSİZ",
+        "short": "6 Ay ÜCRETSİZ",
+        "description": "Yıllık aboneler ilk 6 ayı tamamen ücretsiz alır - ilk yılınızda %50 indirim eşdeğeri!"
+      },
+      "percentOff": "{percent}% İNDİRİM",
+      "badge": {
+        "preview": "🎁 {offer} mevcut",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(aldıktan sonra)"
+    },
+    "pricing": {
+      "perYear": "yıl başına",
+      "perMonth": "ay başına",
+      "breakdown": {
+        "originalPrice": "Orijinal fiyat:",
+        "discount": "İndiriminiz:",
+        "payFirstYear": "Ödeyeceğiniz (ilk yıl):",
+        "firstMonth": "İlk ay:"
+      }
+    },
+    "status": {
+      "title": "Üyelik Durumu",
+      "loading": "Üyelik bilgisi yükleniyor...",
+      "currentPlan": "Mevcut plan:",
+      "expiresOn": "Bitiş tarihi:",
+      "unlimitedDescription": "Kredi tüketmeden tüm üretim özelliklerine sınırsız erişiminiz var.",
+      "planDescription": "Tüm {plan} özelliklerine ve avantajlarına erişiminiz var.",
+      "noActive": {
+        "title": "Aktif bir üyeliğiniz yok.",
+        "subtitle": "Premium özelliklerin kilidini açmak için aşağıdan bir plana abone olun."
+      }
+    },
+    "creditsBalance": {
+      "title": "Kredi Bakiyesi",
+      "loading": "Kredi bilgisi yükleniyor...",
+      "availableCredits": "Mevcut kredi:",
+      "unlimited": {
+        "video": "Sınırsız video üretimi",
+        "image": "Sınırsız görsel üretimi",
+        "audio": "Sınırsız ses üretimi"
+      },
+      "estimate": {
+        "videos": "En fazla {count} video",
+        "images": "En fazla {count} görsel",
+        "audios": "En fazla {count} ses"
+      },
+      "cost": {
+        "videos": "Videolar: {credits} krediden itibaren",
+        "images": "Görseller: {credits} krediden itibaren",
+        "audios": "Sesler: {credits} krediden itibaren"
+      }
+    },
+    "credits": {
+      "title": "Kredi Satın Al",
+      "history": {
+        "toggle": {
+          "show": "İşlem Geçmişini Göster",
+          "hide": "İşlem Geçmişini Gizle"
+        }
+      },
+      "card": {
+        "description": "AI üretim yeteneklerinizi artırmak için bir kredi paketi seçin"
+      },
+      "packages": {
+        "basic": {
+          "label": "Temel Paket"
+        },
+        "standard": {
+          "label": "Standart Paket"
+        },
+        "premium": {
+          "label": "Premium Paket"
+        },
+        "pro": {
+          "label": "Ultra Paket"
+        },
+        "bonus": "Bonus: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Temel oran: 1 USD = 100 kredi",
+        "buyMoreBonus": "Daha çok al, daha çok bonus kazan!",
+        "neverExpire": "Kredilerin süresi dolmaz",
+        "instantDelivery": "Ödeme sonrası anında teslimat"
+      },
+      "actions": {
+        "processing": "İşleniyor...",
+        "buyCredits": "{credits} Kredi Satın Al"
+      }
+    },
+    "creditsHistory": {
+      "title": "İşlem Geçmişi",
+      "subtitle": "Son kredi işlemleriniz",
+      "actions": {
+        "retry": "Yeniden dene",
+        "loading": "Yükleniyor...",
+        "loadMore": "Daha Fazla Yükle"
+      },
+      "table": {
+        "date": "Tarih",
+        "type": "Tür",
+        "amount": "Tutar",
+        "status": "Durum"
+      },
+      "empty": "İşlem geçmişi yok",
+      "types": {
+        "membershipMonthly": "Üyelik aylık kredileri",
+        "membershipInitial": "Üyelik başlangıç kredileri",
+        "freeMonthly": "Ücretsiz aylık krediler",
+        "purchase": "Kredi satın alma",
+        "platformReward": "Platform ödülü",
+        "newUserBonus": "Yeni kullanıcı bonusu",
+        "postReward": "Gönderi ödülü",
+        "videoPostReward": "Video gönderisi ödülü",
+        "refund": "İade",
+        "balanceAdjustment": "Bakiye ayarlaması",
+        "videoGeneration": "Video üretimi",
+        "imageGeneration": "Görsel üretimi",
+        "modelTraining": "Model eğitimi",
+        "audioGeneration": "Ses üretimi",
+        "systemAdjustment": "Sistem ayarlaması"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}sa {m}dk {s}sn",
+        "ms": "{m}dk {s}sn",
+        "s": "{s}sn",
+        "expired": "Süresi doldu"
+      },
+      "toast": {
+        "claimedTitle": "Kupon başarıyla alındı",
+        "claimedDescription": "Kupon hesabınıza eklendi, {hours} saat geçerli",
+        "claimFailedTitle": "Alma başarısız",
+        "tryAgainLater": "Lütfen daha sonra tekrar deneyin",
+        "networkError": "Ağ hatası, lütfen daha sonra tekrar deneyin"
+      }
+    },
+    "couponStatus": {
+      "title": "Kupon Durumu",
+      "active": {
+        "annualTitle": "Yıllık teklif aktif",
+        "couponTitle": "Kupon etkinleştirildi"
+      },
+      "fields": {
+        "claimed": "Alındı:",
+        "expires": "Bitiş:",
+        "timeLeft": "Kalan süre:",
+        "usedAt": "Kullanım:",
+        "discount": "İndirim:"
+      },
+      "expired": "Kuponun süresi doldu",
+      "used": {
+        "title": "Kupon kullanıldı"
+      },
+      "available": "{offer} mevcut",
+      "offer": {
+        "annualSpecial": "🎁 Yıllık Özel",
+        "newUserExclusive": "🎉 Yeni Kullanıcıya Özel",
+        "bestValue": "En İyi Değer",
+        "limitedTime": "Sınırlı Süre",
+        "claimYearly": "6 aylık ücretsiz teklifi al",
+        "claimMonthly": "Kuponu şimdi al"
+      },
+      "none": {
+        "title": "Kullanılabilir kupon yok",
+        "description": "{offer} yalnızca daha önce hiç üyelik satın almamış yeni kullanıcılar için geçerlidir."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Popüler",
+        "advanced": "Gelişmiş",
+        "unlimited": "Sınırsız"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Sınırsız Erişim Al",
+        "getUnlimitedMobile": "Sınırsız Al",
+        "subscribeDesktop": "Aboneliği Başlat",
+        "subscribeMobile": "Abone Ol",
+        "claimAndSubscribeMobile": "Al & Abone Ol",
+        "getDiscountMobile": "{discount} Al",
+        "claimDiscountAndSubscribeDesktop": "{discount} Al & Abone Ol"
+      },
+      "toast": {
+        "loginSuccess": "Giriş başarılı! İndiriminizi almak ve abone olmak için düğmeye tekrar tıklayın.",
+        "claimCouponFailed": "Kupon alınamadı",
+        "tryAgainLater": "Lütfen daha sonra tekrar deneyin",
+        "couponClaimed": "Kupon başarıyla alındı!",
+        "failedToProcess": "İşlenemedi"
+      },
+      "usageEstimate": {
+        "title": "Aylık Kullanım Tahmini",
+        "videos": "Ayda en fazla {count} video",
+        "images": "Ayda en fazla {count} görsel",
+        "audios": "Ayda en fazla {count} ses"
+      },
+      "unlimitedNotes": {
+        "title": "Kullanım notları",
+        "videoTasks": {
+          "title": "Video görevleri:",
+          "body": "Aynı anda en fazla 5 görev çalıştırabilirsiniz. Aylık limit: 300. Aylık sınıra ulaşıldığında yavaş mod uygulanır: 24 saatte günlük limit 30 video ve saatte 10 görev."
+        },
+        "imageTasks": {
+          "title": "Görsel görevleri:",
+          "body": "Ayda en fazla 300 görev. 300. göreve kadar (dakikada 5) hızlı mod uygulanır. Sonrasında yavaş mod dakikada 1 görevle sınırlar."
+        },
+        "premiumModels": {
+          "title": "Premium modeller:",
+          "body": "Bazı yüksek maliyetli modeller UNLIMITED planlarına dahil değildir. VEO 3.* hızlı olmayan varyantları ve Sora-2 /pro varyantları hâlâ kredi tüketir."
+        }
+      },
+      "currentPlan": "Mevcut plan",
+      "yearlyEquivalent": "<price>{value}</price> ile eşdeğerdir",
+      "yearlySavings": "Aylık faturalandırmayla karşılaştırıldığında <amount>{value}</amount> tasarruf edin"
+    },
+    "features": {
+      "monthlyCredits": "{credits} aylık kredi",
+      "monthlyVideoCredits": "{credits} aylık video kredisi",
+      "fullAccessTopModels": "En iyi {count} AI video modeline tam erişim",
+      "accessAllModels": "Tüm modellere erişim",
+      "purchaseMoreRolloverVideoCredits": "Daha fazla devreden video kredisi satın alın",
+      "downloadNoWatermark": "Videoları filigransız indirin",
+      "commercialUse": "Ticari kullanım",
+      "fastGenerations": "Hızlı üretimler",
+      "prioritySupport": "Öncelikli destek",
+      "unlimitedVideoAndImageGeneration": "Sınırsız video ve görsel üretimi"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Faturalandırma seçeneklerini aç"
+      },
+      "actions": {
+        "opening": "Açılıyor...",
+        "billingOptions": "Faturalandırma seçenekleri"
+      },
+      "confirm": {
+        "title": "Aboneliğinizi Yönetin",
+        "description": "Aboneliğinizi iptal etmek mi istiyorsunuz? Gitmeden önce geri bildiriminizi duymak isteriz.",
+        "keep": "Aboneliğimi koru",
+        "continueCancel": "İptale devam et"
+      },
+      "toast": {
+        "openFailed": "Abonelik yönetimi açılamadı",
+        "feedbackThanks": "Geri bildiriminiz için teşekkürler!",
+        "feedbackSaveFailed": "Geri bildirim kaydedilemedi, ancak yine de aboneliğinizi yönetebilirsiniz"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "Geri bildiriminizi duymak isteriz",
+        "subtitle": "Birkaç kısa soruyu yanıtlayarak gelişmemize yardımcı olun"
+      },
+      "common": {
+        "close": "Kapat",
+        "other": "Diğer",
+        "stepIndicator": "{total} adımın {current}. adımı"
+      },
+      "actions": {
+        "back": "Geri",
+        "next": "İleri",
+        "submitting": "Gönderiliyor...",
+        "complete": "Tamamla & Devam Et"
+      },
+      "satisfaction": {
+        "1": "Çok Memnun Değil",
+        "2": "Memnun Değil",
+        "3": "Nötr",
+        "4": "Memnun",
+        "5": "Çok Memnun"
+      },
+      "steps": {
+        "1": {
+          "title": "ReelMind'i nasıl duydunuz?",
+          "options": {
+            "social": "Sosyal Medya (Twitter, Instagram, vb.)",
+            "search": "Arama Motoru (Google, Bing, vb.)",
+            "friend": "Arkadaş veya iş arkadaşı önerisi",
+            "ads": "Çevrimiçi reklam",
+            "blog": "Teknoloji blogu veya inceleme sitesi"
+          }
+        },
+        "2": {
+          "title": "ReelMind'i çoğunlukla ne için kullanıyorsunuz?",
+          "description": "Yaratıcı hedeflerinize uyanların hepsini seçin.",
+          "options": {
+            "video": "Video Oluşturma",
+            "image": "Görsel Üretimi",
+            "music": "Müzik Besteleme",
+            "marketing": "Reklam & Pazarlama İçeriği",
+            "socialPosts": "Sosyal Medya Gönderileri",
+            "education": "Eğitim Materyalleri",
+            "personal": "Kişisel Projeler",
+            "exploring": "Yeni Fikirler Keşfetme"
+          }
+        },
+        "3": {
+          "title": "Sizi en iyi hangisi tanımlar?",
+          "options": {
+            "creator": "İçerik Üreticisi",
+            "developer": "Serbest Geliştirici",
+            "marketingPro": "Pazarlama Uzmanı",
+            "businessOwner": "İşletme Sahibi",
+            "designer": "Tasarımcı",
+            "hobbyist": "Hobi Amaçlı",
+            "student": "Öğrenci",
+            "artist": "Sanatçı"
+          }
+        },
+        "4": {
+          "title": "Deneyiminizi nasıl değerlendirirsiniz?",
+          "description": "Lütfen ReelMind ile genel memnuniyetinizi puanlayın"
+        },
+        "5": {
+          "title": "İptal etmeye karar vermenizin ana nedeni nedir?",
+          "options": {
+            "price": "Çok pahalı",
+            "usage": "Yeterince kullanmadım",
+            "features": "Önemli özellikler eksik",
+            "quality": "Üretilen sonuçların kalitesi",
+            "bugs": "Teknik sorunlar veya hatalar",
+            "alternative": "Daha iyi bir alternatif buldum"
+          }
+        },
+        "6": {
+          "title": "Geri bildiriminizi duymak isteriz",
+          "description": "Düşünceleriniz ReelMind'i herkes için daha iyi yapmamıza yardımcı olur.",
+          "placeholder": "Neleri geliştirebiliriz? Görmek istediğiniz özellikler var mı? (isteğe bağlı)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Talep gönderildi. Yakında iletişime geçeceğiz.",
+        "submitFailed": "Talep gönderilemedi"
+      },
+      "card": {
+        "title": "Kurumsal & Özel Plan",
+        "subtitle": "Özel fiyatlandırma, faturalama ve destek",
+        "description": "Fatura, uyumluluk desteği veya özel iş akışı mı gerekiyor? Gereksinimlerinizi paylaşın, en uygun çözümü önerelim.",
+        "toggle": {
+          "hide": "Formu gizle",
+          "show": "Satış ekibiyle iletişime geç"
+        },
+        "highlights": {
+          "sso": "SSO ve uyumluluk",
+          "invoices": "Faturalar ve satın alma siparişleri",
+          "support": "Öncelikli destek",
+          "workflows": "Özel iş akışları"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "İletişim Türü",
+          "placeholder": "İletişim türünü seçin",
+          "options": {
+            "business": "İş",
+            "individual": "Bireysel"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Tahmini Aylık Kullanım (USD)",
+          "placeholder": "Bir tahmin seçin",
+          "options": {
+            "0to1000": "$0 – $1.000",
+            "1000to5000": "$1.000 – $5.000",
+            "5000to10000": "$5.000 – $10.000",
+            "10000plus": "$10.000+",
+            "custom": "Özel tutar (USD)"
+          },
+          "custom": {
+            "label": "Özel Aylık Kullanım (USD)",
+            "placeholder": "USD olarak bir tutar girin"
+          }
+        },
+        "firstName": {
+          "label": "Ad",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "Soyad",
+          "placeholder": "Doe"
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "e-postanız@sirketiniz.com"
+        },
+        "website": {
+          "label": "Web sitesi",
+          "placeholder": "https://şirket.com"
+        },
+        "requirements": {
+          "label": "Projeniz ve gereksinimleriniz hakkında anlatın",
+          "placeholder": "Ne inşa ediyorsunuz? Hangi iş akışları, uyumluluk ihtiyaçları ve beklenen hacim var?"
+        },
+        "actions": {
+          "cancel": "İptal",
+          "submitting": "Gönderiliyor...",
+          "submit": "Gönder"
+        },
+        "validation": {
+          "firstNameRequired": "Ad gerekli",
+          "lastNameRequired": "Soyad gerekli",
+          "emailInvalid": "E-posta geçerli olmalı",
+          "websiteInvalid": "Web sitesi geçerli bir URL olmalı",
+          "monthlyEstimateRequired": "Aylık tahmin gerekli",
+          "monthlyEstimateEnter": "Lütfen aylık bir tahmin girin",
+          "monthlyEstimateMin": "Aylık tahmin >= 0 olmalı",
+          "requirementsMin": "Lütfen daha fazla detay sağlayın (min {count} karakter)",
+          "maxChars": "Maks {count} karakter"
+        }
+      }
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": {
+        "proBenefits": {
+          "question": "PRO üyeliğinin avantajları nelerdir?",
+          "answer": "PRO üyelik size her ay 1000 kredi (10$ değerinde), yeni özelliklere öncelikli erişim, daha hızlı video üretimi, gelişmiş düzenleme seçenekleri ve öncelikli müşteri desteği sağlar."
+        },
+        "cancelAnytime": {
+          "question": "Aboneliğimi istediğim zaman iptal edebilir miyim?",
+          "answer": "Evet, aboneliğinizi istediğiniz zaman iptal edebilirsiniz. Avantajlarınız mevcut fatura döneminizin sonuna kadar devam eder.",
+          "discountNote": {
+            "title": "İndirimli Abonelikler İçin Özel Not:",
+            "body": "Kupon indirimiyle abone olduysanız ve ilk ayınızda indirim tutarını aşan krediler kullandıysanız, aboneliğinizi ancak ikinci ayın ödemesi işlendiğinde iptal edebilirsiniz. Bu politika, promosyon tekliflerinin adil kullanımını sağlar."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Aylık ve yıllık abonelikler arasında fark var mı?",
+          "answer": "Evet, yıllık abonelikler aylığa kıyasla önemli bir indirim sunar. Yıllık faturalandırmayı seçtiğinizde yaklaşık %20 tasarruf edersiniz."
+        },
+        "whatAreCredits": {
+          "question": "ReelMind Kredileri nedir?",
+          "answer": "ReelMind Kredileri, platformumuzda AI videoları ve görselleri üretmek için kullanılan sanal para birimidir. Farklı özellikler farklı miktarda kredi gerektirir. Örneğin, standart bir video (480p) üretmek 50 kredi, HD video (720p) üretmek 80 krediye mal olur."
+        },
+        "earnCredits": {
+          "question": "Nasıl kredi kazanabilirim?",
+          "intro": "Kredileri birkaç şekilde kazanabilirsiniz:",
+          "items": {
+            "membership": "Üyelik planlarıyla (PRO üyeler aylık 1000 kredi alır, MAX üyeler 2000)",
+            "purchase": "Kredi paketleri satın alarak",
+            "newUser": "Yeni kullanıcılar kayıt olduğunda 100 ücretsiz kredi alır",
+            "posting": "ReelMind'de içerik paylaşarak (günde 50 kredi)",
+            "promotions": "Özel promosyonlar ve ödüller"
+          }
+        },
+        "expire": {
+          "question": "Kredilerin süresi dolar mı?",
+          "answer": "Doğrudan satın aldığınız kredilerin süresi dolmaz ve kullanılana kadar hesabınızda kalır. Aylık verilen krediler her ayın başında sıfırlanır. Önceki aylardan kullanılmayan krediler devretmez."
+        },
+        "refund": {
+          "question": "Kullanılmayan krediler için iade alabilir miyim?",
+          "answer": "Satın alınan krediler için iade sunmuyoruz. Ancak kredilerinizi düzgün kullanmanızı engelleyen teknik sorunlarla karşılaşırsanız, lütfen destek ekibimizle iletişime geçin; sorunlarınızı ele alacağız."
+        },
+        "membershipVsCredits": {
+          "question": "Üyelik ile krediler arasındaki fark nedir?",
+          "answer": "Üyelikler, aylık kredi tahsisiyle birlikte öncelikli işlem ve özel özelliklere erişim gibi ek avantajlar sağlar. Krediler üyelik olmadan ayrı olarak satın alınabilir ve içerik üretirken tüketilir. Düzenli kullanım için üyelik seçin ya da ara sıra kullanım için kredi satın alın."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Tüm hakları saklıdır."
+    }
+  },
+  "Search": {
+    "placeholder": "Ara...",
+    "noResultsFound": "Sonuç bulunamadı",
+    "viewAllResults": "Tüm sonuçları görüntüle",
+    "sections": {
+      "posts": "Gönderiler",
+      "users": "Kullanıcılar"
+    },
+    "tabs": {
+      "posts": "Gönderiler",
+      "users": "Kullanıcılar"
+    },
+    "unknownUser": "Bilinmeyen",
+    "loading": "Yükleniyor...",
+    "searching": "Aranıyor...",
+    "loadingMore": "Daha fazla yükleniyor...",
+    "tryAgain": "Yeniden dene",
+    "noPostsFound": "Gönderi bulunamadı",
+    "noUsersFound": "Kullanıcı bulunamadı",
+    "empty": {
+      "title": "Ara",
+      "hint": "İçerik bulmak için anahtar kelimeler girin"
+    },
+    "errors": {
+      "searchFailed": "Arama başarısız"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "ÖMÜR BOYU KOMİSYON - Sonsuza dek %20"
+    },
+    "hero": {
+      "lifetime": "ÖMÜR BOYU",
+      "passiveIncome": "PASİF GELİR",
+      "subtitle": {
+        "prefix": "Sonsuza dek",
+        "suffix": "komisyon kazan"
+      }
+    },
+    "actions": {
+      "getStarted": "Başlayın",
+      "viewDashboard": "Kontrol Panelini Görüntüle",
+      "signInFirst": "Lütfen önce giriş yapın"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API Platformu",
+      "actions": {
+        "modelsPricing": "Modeller & Fiyatlandırma",
+        "viewDocumentation": "Dokümanları Görüntüle"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API anahtarı başarıyla oluşturuldu",
+      "apiKeyCreateFailed": "API anahtarı oluşturulamadı",
+      "apiKeyDeleted": "API anahtarı başarıyla silindi",
+      "apiKeyDeletedDescription": "API anahtarı silindi",
+      "apiKeyDeleteFailed": "API anahtarı silinemedi",
+      "apiKeyCopied": "API anahtarı panoya kopyalandı",
+      "modelIdCopied": "Model ID panoya kopyalandı"
+    },
+    "accountCard": {
+      "notLoggedIn": "Giriş yapılmadı",
+      "loadingKeys": "API anahtarları yükleniyor...",
+      "keysAvailable": "Mevcut {count} API anahtarı",
+      "createKey": "API Anahtarı Oluştur",
+      "helpPrefix": "Yardıma ihtiyacınız varsa, lütfen ",
+      "apiDocumentation": "API Dokümantasyonuna göz atın"
+    },
+    "stats": {
+      "plan": "Planı",
+      "resetDate": "Sıfırlama Tarihi",
+      "credits": "Kredi",
+      "tasks": "Görevler",
+      "loading": "Yükleniyor...",
+      "freePlan": "Ücretsiz Plan",
+      "na": "Yok",
+      "buyCredits": "Kredi Satın Al"
+    },
+    "apiKeys": {
+      "title": "API Anahtarı Yönetimi",
+      "description": "ReelMind video oluşturma API'sine erişmek için API anahtarlarınızı yönetin",
+      "createNew": "Yeni API Anahtarı Oluştur",
+      "loading": "API anahtarları yükleniyor...",
+      "label": "API Anahtarı",
+      "created": "{date} tarihinde oluşturuldu",
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "show": "API anahtarını göster",
+      "hide": "API anahtarını gizle",
+      "copy": "API anahtarını kopyala",
+      "totalCalls": "Toplam Çağrı",
+      "creditsUsed": "Kullanılan Kredi",
+      "empty": {
+        "title": "API Anahtarı Yok",
+        "description": "Henüz herhangi bir API anahtarı oluşturmadınız. ReelMind API'sini kullanmaya başlamak için ilk API anahtarınızı oluşturun.",
+        "createFirst": "İlk API Anahtarınızı Oluşturun"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Modeller & Fiyatlandırma",
+      "apiDocumentation": "API Dokümantasyonu"
+    },
+    "documentation": {
+      "title": "API Dokümantasyonu",
+      "authentication": "Kimlik Doğrulama",
+      "authenticationIntro": "Tüm API istekleri API anahtarı kullanılarak kimlik doğrulaması gerektirir. API anahtarınız, aşağıdaki API Anahtarı Yönetimi bölümünden oluşturabileceğiniz bir UUID'dir.",
+      "authenticationMethods": "Kimlik Doğrulama Yöntemleri",
+      "exampleRequest": "Örnek İstek",
+      "important": "Önemli",
+      "apiEndpoints": "API Uç Noktaları",
+      "responseFormat": "Yanıt Formatı",
+      "responseFormatIntro": "Video oluşturma görevi yanıt formatı:",
+      "parameters": "Parametreler",
+      "table": {
+        "name": "Ad",
+        "type": "Tür",
+        "required": "Gerekli",
+        "description": "Açıklama"
+      },
+      "yes": "Evet",
+      "no": "Hayır"
+    },
+    "pricing": {
+      "title": "API Fiyatlandırması & Modeller",
+      "intro": "Video ve görsel üretim API'leri için mevcut AI modellerini ve fiyatlarını keşfedin",
+      "loading": "Mevcut modeller yükleniyor...",
+      "available": "Mevcut",
+      "unavailable": "Mevcut değil",
+      "credits": "{credits} kredi",
+      "basePricePerImage": "Temel fiyat (görsel başına)",
+      "basePrice5sVideo": "Temel fiyat (5 sn video)",
+      "creditsPerSecond": "+{credits} kredi/saniye",
+      "modelId": "Model Kimliği",
+      "copyModelId": "Model ID kopyala",
+      "noModels": {
+        "title": "Kullanılabilir Model Yok",
+        "description": "Şu anda API erişimi için herhangi bir AI modeli mevcut değil. Lütfen daha sonra tekrar kontrol edin."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Metinden Videoya",
+      "imageToVideo": "Görüntüden Videoya",
+      "videoToVideo": "Videodan Videoya",
+      "textToImage": "Metinden Görsele",
+      "imageToImage": "Görüntüden Görsele"
+    },
+    "deleteModal": {
+      "title": "Silme Onayı",
+      "description": "Bu API anahtarını silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+      "keyName": "Anahtar Adı: {name}",
+      "createdOn": "{date} tarihinde oluşturuldu",
+      "cancel": "İptal",
+      "deleting": "Siliniyor...",
+      "deleteKey": "API Anahtarını Sil"
+    },
+    "modelParameters": {
+      "title": "Model Parametreleri",
+      "required": "Gerekli",
+      "default": "Varsayılan: {value}",
+      "labels": {
+        "prompt": "İstem",
+        "guidance_scale": "Yönlendirme ölçeği",
+        "aspect_ratio": "En-boy oranı",
+        "seed": "Tohum",
+        "image_url": "Görsel URL",
+        "duration": "Süre",
+        "resolution": "Çözünürlük",
+        "num_inference_steps": "Çıkarım adımları",
+        "cfg_scale": "CFG ölçeği"
+      },
+      "flux": {
+        "promptDescription": "Oluşturulacak görseli açıklayan metin istemi",
+        "guidanceScaleDescription": "Görselin istemi ne kadar yakından takip edeceğini kontrol eder",
+        "aspectRatioDescription": "Oluşturulan görselin en-boy oranı",
+        "seedDescription": "Tekrarlanabilir üretim için rastgele tohum",
+        "imageUrlDescription": "Görüntüden-görüntüye üretim için giriş görsel URL'si"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Metinden Görsele · Görsel Düzenleme",
+      "title": "FLUX / Nano Muz / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - Dünyanın 1 Numaralı AI Ajan Yönetmeni",
+      "description": "Dünyanın 1 Numaralı AI Ajan Yönetmeni"
+    },
+    "page": {
+      "loading": "Nolan AI Yönetmeni yükleniyor..."
+    },
+    "heroBanner": {
+      "label": "Devrim Niteliğinde AI Teknolojisi",
+      "name": "Nolan",
+      "worldFirst": "Dünyada İlk",
+      "aiAgentDirector": "AI Ajan Yönetmeni"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Beklemede",
+        "queued": "Sıraya alındı",
+        "processing": "İşleme",
+        "completed": "Tamamlandı",
+        "failed": "Başarısız",
+        "canceled": "İptal edildi"
+      },
+      "model": {
+        "unknown": "Bilinmeyen model",
+        "unnamed": "İsimsiz"
+      },
+      "errors": {
+        "fetchListTitle": "Görevler yüklenemedi",
+        "unknown": "Bilinmeyen hata",
+        "fetchDetails": "Görev ayrıntıları getirilemedi",
+        "downloadFailed": "İndirme başarısız oldu",
+        "retryFailed": "Yeniden deneme başarısız oldu"
+      },
+      "details": {
+        "videoTitle": "Video Görevi Ayrıntıları",
+        "imageTitle": "Resim Görevi Ayrıntıları",
+        "videoPreview": "Video Önizlemesi",
+        "hideVideo": "Videoyu Gizle",
+        "showVideo": "Videoyu Göster",
+        "downloadVideo": "Videoyu İndir",
+        "browserNoVideoSupport": "Tarayıcınız video oynatmayı desteklemiyor.",
+        "labels": {
+          "duration": "Süre",
+          "fileSize": "Dosya Boyutu",
+          "format": "Biçim",
+          "prompt": "İstemi",
+          "model": "Modeli",
+          "ratio": "En Boy Oranı",
+          "resolution": "Çözünürlük",
+          "taskId": "Görev Kimliği",
+          "user": "Kullanıcı",
+          "status": "Durum",
+          "createdTime": "Oluşturulma Zamanı",
+          "startedTime": "Başlangıç Zamanı",
+          "completedTime": "Tamamlanma Süresi",
+          "generationModel": "Nesil Modeli",
+          "priority": "Öncelik",
+          "requestId": "Talep Kimliği",
+          "lastActivity": "Son Etkinlik"
+        },
+        "videoPreviewUnavailable": "Video önizlemesi kullanılamıyor",
+        "videoNoOutput": "Görev tamamlandı ancak video çıkışı yok",
+        "videoNotCompleted": "Görev henüz tamamlanmadı",
+        "generationParams": "Üretim Parametreleri",
+        "basicInfo": "Temel Bilgiler",
+        "timeInfo": "Saat Bilgisi",
+        "detailData": "Detaylı Veriler",
+        "inputParams": "Giriş Parametreleri",
+        "outputResult": "Çıkış Sonucu",
+        "errorLog": "Hata Günlüğü",
+        "retrying": "Yeniden deneniyor...",
+        "retryTask": "Görevi Yeniden Dene",
+        "generatedImage": "Oluşturulan Resim",
+        "close": "Kapat"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Kullanıcı Geri Bildirim Yönetimi",
+        "subtitle": "Kullanıcı tarafından gönderilen geri bildirimleri ve şikayetleri yönetin"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Getirme başarısız oldu",
+          "fetchFailedDescription": "Geri bildirim verileri getirilemiyor: {error}",
+          "unknown": "Bilinmeyen hata"
+        },
+        "type": {
+          "bug": "Hata Raporu",
+          "suggestion": "Öneri",
+          "other": "Diğer"
+        },
+        "loading": "Yükleniyor...",
+        "filter": {
+          "label": "Geri Bildirim Türü",
+          "all": "Tüm Türler"
+        },
+        "total": "Toplam: {total} geri bildirim öğesi",
+        "empty": "Geri bildirim verisi yok",
+        "headers": {
+          "userInfo": "Kullanıcı Bilgileri",
+          "type": "Tür",
+          "subject": "Konu",
+          "submittedAt": "Gönderildi",
+          "actions": "Eylemler"
+        },
+        "user": {
+          "unknown": "Bilinmeyen kullanıcı",
+          "noEmail": "E-posta yok"
+        },
+        "actions": {
+          "collapse": "Daralt",
+          "viewDetails": "Ayrıntıları Görüntüle"
+        },
+        "contentLabel": "Geribildirim:",
+        "pagination": {
+          "previous": "Önceki",
+          "next": "Sonraki"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Lütfen bir arama anahtar sözcüğü girin.",
+        "noUsersFound": "Eşleşen kullanıcı bulunamadı.",
+        "searchFailed": "Kullanıcılar aranamadı.",
+        "userRequired": "Lütfen bir kullanıcı seçin veya bir kullanıcı kimliği girin.",
+        "amountInvalid": "Lütfen geçerli bir kredi tutarı girin.",
+        "descriptionRequired": "Lütfen bir hibe açıklaması girin.",
+        "grantFailed": "Kredi verilemedi."
+      },
+      "success": {
+        "granted": "Krediler başarıyla verildi."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Anketler getirilemedi.",
+        "fetchStats": "Anket istatistikleri getirilemedi."
+      }
+    },
+    "memberships": {
+      "title": "Kullanıcı Abonelik Yönetimi",
+      "search": {
+        "placeholder": "Kullanıcı kimliğini, e-postayı veya takma adı arayın...",
+        "button": "Ara"
+      },
+      "stats": {
+        "total": "Toplam Abonelikler",
+        "yearly": "Yıllık Üyeler"
+      },
+      "list": {
+        "title": "Abonelik Listesi"
+      },
+      "loading": "Yükleniyor...",
+      "actions": {
+        "retry": "Yeniden dene"
+      },
+      "empty": "Abonelik verisi yok",
+      "table": {
+        "headers": {
+          "userInfo": "Kullanıcı Bilgileri",
+          "plan": "Planı",
+          "billingCycle": "Faturalandırma Döngüsü",
+          "status": "Durum",
+          "credits": "Kredi Bakiyesi",
+          "videoTasks": "Video Görevleri",
+          "imageTasks": "Görüntü Görevleri",
+          "createdAt": "Oluşturulma Zamanı",
+          "expiresAt": "Sona Erme Süresi"
+        },
+        "user": {
+          "unknown": "Bilinmiyor"
+        },
+        "status": {
+          "active": "Aktif",
+          "inactive": "Etkin değil",
+          "cancelAtPeriodEnd": "Dönem sonunda iptal et"
+        },
+        "creditsUnit": "kredi",
+        "flagged": "İşaretlendi",
+        "tasksUnit": "görevler",
+        "never": "Asla"
+      },
+      "pagination": {
+        "summary": "{start} ile {end} arası {total} kayıtları gösteriliyor",
+        "previous": "Önceki",
+        "next": "Sonraki",
+        "page": "{currentPage} / {totalPages} Sayfası"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Gönderi silinemedi. Lütfen tekrar deneyin."
+      }
+    }
+  },
+  "Common": {
+    "language": "Dil",
+    "onlyEnglish": "Şu anda yalnızca İngilizce mevcuttur.",
+    "onlySupportedPages": "Ek diller şu anda yalnızca Ana Sayfa, Keşfet, Ara, Oluştur, Lego, Müzik, Üyelik, İletişim, Kullanıcı, Paylaş, Modeller, Efektler ve Blog sayfalarında mevcuttur.",
+    "languages": {
+      "en": "İngilizce",
+      "zh-CN": "Çince (Basitleştirilmiş)"
+    },
+    "actions": {
+      "viewAll": "Tümünü görüntüle",
+      "cancel": "İptal etmek",
+      "recreate": "Yeniden oluştur",
+      "download": "İndirmek",
+      "downloading": "İndiriliyor...",
+      "showMore": "Daha fazlasını göster",
+      "showLess": "Daha az göster"
+    },
+    "aria": {
+      "scrollRight": "Sağa kaydır",
+      "search": "Aramak"
+    },
+    "search": {
+      "placeholder": "Gönderileri ve kullanıcıları arayın..."
+    },
+    "share": {
+      "button": "Paylaşmak",
+      "toast": {
+        "copiedTitle": "Kopyalandı",
+        "copiedMessage": "Bağlantı panoya kopyalandı",
+        "failedTitle": "Kopyalanamadı",
+        "failedMessage": "Bağlantı panoya kopyalanamıyor"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Nolan Yapay Zeka Direktörü",
+      "earlyAccess": "Erken Erişim",
+      "justOneCredit": "Sadece 1 kredi"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Işık Modu",
+        "darkMode": "Karanlık Mod",
+        "switchToLightMode": "Işık Moduna Geç",
+        "switchToDarkMode": "Karanlık Moda Geç"
+      },
+      "profile": {
+        "myProfile": "Profilim",
+        "goToMyProfile": "Profilime git"
+      },
+      "menu": {
+        "openMenu": "Menüyü aç",
+        "close": "Kapalı"
+      },
+      "membership": {
+        "title": "Üyelik",
+        "tapToViewPlans": "Planları görüntülemek için dokunun",
+        "upgrade": "Güncelleme",
+        "plans": {
+          "free": "Özgür",
+          "pro": "Profesyonel",
+          "max": "Maksimum",
+          "unlimited": "Sınırsız"
+        }
+      },
+      "actions": {
+        "pricing": "Fiyatlandırma",
+        "signIn": "Oturum aç"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Her hakkı saklıdır."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Çabuk",
+        "model": "Modeli",
+        "ratio": "Oran",
+        "guidance": "Rehberlik",
+        "steps": "Adımlar",
+        "seed": "Tohum",
+        "definition": "Tanım"
+      },
+      "values": {
+        "unknownModel": "Bilinmeyen Model",
+        "random": "Rastgele"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Sayfalandırma",
+        "previous": "Önceki sayfaya git",
+        "next": "Sonraki sayfaya git"
+      },
+      "previous": "Öncesi",
+      "next": "Sonraki",
+      "more": "Daha fazla sayfa"
+    },
+    "concurrentLimit": {
+      "title": "Görev sınırına ulaşıldı",
+      "defaultMessage": "Ücretsiz kullanıcılar aynı anda yalnızca bir video oluşturma görevine sahip olabilir.",
+      "currentStatus": "Mevcut durum",
+      "currentPlan": "Mevcut plan",
+      "premiumBenefits": "Prim avantajları",
+      "plans": {
+        "unlimited": "Sınırsız plan",
+        "free": "Özgür",
+        "unlimitedTasks": "Sınırsız görev"
+      },
+      "unlimited": {
+        "maxTasks": "Maksimum 3 eşzamanlı görev",
+        "priority": "Yüksek öncelikli işleme",
+        "features": "Tüm premium özellikler",
+        "waitNote": "Lütfen yeni görevleri göndermeden önce mevcut görevlerinizden bazılarının tamamlanmasını bekleyin."
+      },
+      "free": {
+        "maxTasks": "1 eşzamanlı görev",
+        "priority": "Standart öncelik",
+        "features": "Temel özellikler"
+      },
+      "upgrade": {
+        "maxTasks": "En fazla 5 eşzamanlı görev",
+        "priority": "Daha yüksek öncelikli işleme",
+        "features": "Tüm modellere erişim"
+      },
+      "actions": {
+        "acknowledge": "Anladım",
+        "upgrade": "Güncelleme",
+        "loading": "Yükleniyor..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Yerel Yükleme",
+      "reelmind": "ReelMind Oluşturuldu"
+    },
+    "reelmind": {
+      "description": "ReelMind'de oluşturulmuş bir videoyu seçin.",
+      "browse": "ReelMind Videolarına Göz Atın"
+    },
+    "title": {
+      "placeholder": "Bir başlık ekleyin..."
+    },
+    "tags": {
+      "title": "Etiketler",
+      "empty": "Videonuzu daha iyi kategorilere ayırmak için etiketler ekleyin.",
+      "placeholder": "Etiket ekleyin (onaylamak için Enter tuşuna basın)",
+      "count": "{count}/{limit}",
+      "helper": "Her biri {max} karakter olmak üzere en fazla {limit} etiket."
+    },
+    "description": {
+      "placeholder": "Bir açıklama ekleyin..."
+    },
+    "generationType": {
+      "title": "Nesil Türü",
+      "txt2video": "Metinden Videoya",
+      "txt2videoDescription": "Bir metin isteminden oluşturun.",
+      "img2video": "Resimden Videoya",
+      "img2videoDescription": "Bir referans görüntüsünden oluşturun."
+    },
+    "prompts": {
+      "promptTitle": "Çabuk",
+      "promptPlaceholder": "Bu videoyu oluşturmak için kullanılan istemi girin...",
+      "negativeTitle": "Olumsuz İstem",
+      "negativePlaceholder": "Olumsuz istemi girin..."
+    },
+    "modelResources": {
+      "title": "Model Kaynakları",
+      "placeholder": "Kullanılan model kaynaklarını listeleyin; ör. Modeller, LoRA'lar, yerleştirmeler..."
+    },
+    "aigc": {
+      "guidanceScale": "Rehberlik Ölçeği",
+      "guidanceScalePlaceholder": "örneğin 7.5",
+      "steps": "Adımlar",
+      "stepsPlaceholder": "örneğin 30",
+      "seed": "Tohum",
+      "seedPlaceholder": "örneğin 1234567890"
+    },
+    "tools": {
+      "title": "Üretim Araçları"
+    },
+    "videoPreview": {
+      "uploadComplete": "Yükleme tamamlandı",
+      "uploading": "Yükleniyor...",
+      "clickToUpload": "Video yüklemek için tıklayın",
+      "remove": "Videoyu kaldır"
+    },
+    "actions": {
+      "publish": "Yayınla",
+      "publishing": "Yayınlanıyor...",
+      "back": "Geri"
+    },
+    "errors": {
+      "tagEmpty": "Etiket boş olamaz.",
+      "tagTooLong": "Etiket {max} karakteri aşamaz.",
+      "tagExists": "Bu etiket zaten mevcut.",
+      "tagLimit": "En fazla {limit} etiketi ekleyebilirsiniz.",
+      "authRequired": "Yüklemek için lütfen oturum açın.",
+      "uploadFailed": "Yükleme başarısız oldu. Lütfen tekrar deneyin.",
+      "uploadParamsFailed": "Yükleme parametreleri getirilemedi.",
+      "fileAddFailed": "Dosya eklenemedi. Lütfen tekrar deneyin."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog - ReelMind",
+      "description": "Yapay zeka içerik oluşturma, video oluşturma ve en yeni ReelMind özelliklerine ilişkin ipuçlarını, eğitimleri ve bilgileri keşfedin."
+    },
+    "page": {
+      "title": "Blog",
+      "empty": "Blog yazısı bulunamadı"
+    },
+    "error": {
+      "title": "Gönderiler yüklenirken hata oluştu",
+      "description": "Blog gönderileri yüklenirken bir şeyler ters gitti.",
+      "retry": "Tekrar deneyin"
+    },
+    "notFound": {
+      "title": "Sayfa bulunamadı",
+      "description": "İstediğiniz blog sayfası mevcut değil."
+    },
+    "feed": {
+      "end": "Sona ulaştın",
+      "retry": "Yeniden dene",
+      "loadFailed": "Blog gönderileri yüklenemedi"
+    },
+    "topFeed": {
+      "refresh": "Yenile",
+      "exploreMore": "Daha fazla eğlenceyi keşfedin",
+      "loadFailed": "Rastgele gönderiler yüklenemedi"
+    },
+    "floatingChat": {
+      "title": "Nolan AI'a sorun",
+      "subtitle": "1 Numaralı Yapay Zeka Ajan Direktörü!",
+      "placeholder": "Bu makale hakkında soru sorun veya film fikirlerinizi paylaşın...",
+      "cta": "Nolan'a gönder"
+    },
+    "featureCard": {
+      "label": "Video Modelleri",
+      "title": "Reelmind fikirlerinizi hayata geçirmek için güçlü araçlar sunar.",
+      "subtitle": "101 yapay zeka modeliyle fikirlerinizi çarpıcı görsellere dönüştürün",
+      "cta": "Şimdi Deneyin"
+    },
+    "breadcrumbs": {
+      "home": "Ev"
+    },
+    "article": {
+      "notFoundTitle": "Makale bulunamadı",
+      "notFoundDescription": "İstenilen makale bulunamadı."
+    }
+  },
+  "Favorites": {
+    "title": "Favorilerim",
+    "subtitle": "Burada favori videolarınızı ve modellerinizi yönetebilirsiniz",
+    "tabs": {
+      "video": "video",
+      "model": "Modeli"
+    },
+    "empty": {
+      "title": "Henüz favoriniz yok"
+    },
+    "alert": {
+      "title": "Hata",
+      "retry": "Yeniden dene",
+      "loadFailed": "Favoriler yüklenemiyor. Lütfen tekrar deneyin.",
+      "removeFailed": "Favori kaldırılamıyor. Lütfen tekrar deneyin."
+    },
+    "card": {
+      "video": "video",
+      "model": "Modeli"
+    },
+    "button": {
+      "favorite": "Favori",
+      "favorited": "Favorilere eklendi"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ReelMind'e hoş geldiniz",
+      "subtitle": "Giriş yapın veya yaratıcı hesabınızı oluşturun",
+      "continueWithGoogle": "Google ile devam et",
+      "orContinueWithEmail": "veya e-posta ile devam et",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "siz@email.com",
+      "emailAddressPlaceholder": "E-posta adresi",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "••••••••",
+      "show": "göster",
+      "hide": "gizle",
+      "inviteCodeLabelOptional": "Davet kodu (isteğe bağlı)",
+      "inviteCodePlaceholder": "Kodu girin",
+      "invitedBy": "<name>{value}</name> tarafından davet edildi",
+      "continue": "Devam",
+      "signIn": "Giriş yap",
+      "createAccount": "Hesap oluştur",
+      "switchToSignIn": "Zaten hesabınız var mı? Giriş yapın",
+      "switchToSignUp": "Hesabınız yok mu? Kaydolun",
+      "pageSubtitleCreate": "Hesabınızı oluşturun",
+      "pageSubtitleSignIn": "Hesabınıza giriş yapın",
+      "termsLine": "Devam ederek <terms>Şartlar</terms> ve <privacy>Gizlilik Politikası</privacy>nı kabul etmiş olursunuz"
+    },
+    "verifyEmail": {
+      "title": "E-postanızı doğrulayın",
+      "sentLinkTo": "Doğrulama bağlantısını şu adrese gönderdik:",
+      "checkInbox": "Lütfen gelen kutunuzu kontrol edin ve devam etmek için bağlantıya tıklayın.",
+      "understand": "Anladım",
+      "useDifferentEmail": "Başka e-posta kullan"
+    },
+    "errors": {
+      "invalidEmail": "Geçersiz e-posta adresi",
+      "suspiciousEmail": "Bu e-posta şüpheli görünüyor",
+      "verifyBeforeLogin": "Giriş yapmadan önce e-postanızı doğrulayın",
+      "operationFailed": "İşlem başarısız, lütfen tekrar deneyin",
+      "googleFailed": "Google ile giriş başarısız, lütfen tekrar deneyin",
+      "checkEmailConfirmation": "Onay bağlantısı için e-postanızı kontrol edin!"
+    },
+    "brand": {
+      "headlineLine1": "Makara Yapımcıları",
+      "headlineLine2": "Hoş geldiniz",
+      "taglineLine1": "Zihnini çöz.",
+      "taglineLine2": "Yapay zekâ reels'e dönüştürsün.",
+      "cta": "Yaratıcı topluluğumuza katılın ve üretmeye başlayın."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Resim ekle",
+      "addMoreReferences": "Daha fazla referans ekleyin",
+      "auto": "Otomatik",
+      "back": "Geri",
+      "character": "Karakter",
+      "clear": "Temizle",
+      "clearAll": "Tümünü temizle",
+      "close": "Kapat",
+      "createPack": "Paket oluştur",
+      "downloadCount": "{current}/{total} dosyasını indirin",
+      "dropOrUploadPhoto": "Fotoğraf bırakın veya yükleyin",
+      "goToLibrary": "Kütüphaneye git",
+      "high": "Yüksek",
+      "history": "Tarih",
+      "inQueue": "Sırada",
+      "info": "Bilgi",
+      "instadump": "Stadyum dökümü",
+      "manual": "Manuel",
+      "new": "Yeni",
+      "next": "Sonraki",
+      "open": "Açık",
+      "previous": "Önceki",
+      "ready": "Hazır",
+      "recent": "Son",
+      "remove": "Kaldır",
+      "replace": "Değiştir",
+      "reset": "Sıfırla",
+      "restart": "Yeniden başlat",
+      "selectPack": "Paket seç",
+      "storyboard": "Hikaye şeridi",
+      "upload": "Yükle",
+      "uploading": "Yükleniyor..."
+    },
+    "prompts": {
+      "defaultImage": "Doğal ışıkla sinematik, yüksek ayrıntıya sahip görüntü",
+      "relightDefault": "Yumuşak stüdyo aydınlatmasıyla nesneyi yeniden aydınlatın",
+      "faceSwapDefault": "Sahneyi sağlam tutarken yüzü değiştirin",
+      "characterSwapDefault": "Stili korurken karakteri değiştirin",
+      "drawToEditDefault": "Çizimi temiz, ayrıntılı bir görüntüye dönüştürün"
+    },
+    "swap": {
+      "sourceTitle": "Kaynak",
+      "targetTitle": "Hedef",
+      "faceSourceDescription": "Yüz için kaynak resim",
+      "faceTargetDescription": "Değiştirilecek hedef resim",
+      "characterSourceDescription": "Karakter için kaynak resim",
+      "characterTargetDescription": "Değiştirilecek hedef resim"
+    },
+    "inpaint": {
+      "sourceAlt": "Kaynak resim",
+      "paintHint": "Düzenlemek istediğiniz alanı boyayın",
+      "maskUploading": "Maske yükleniyor",
+      "maskReady": "Maske hazır",
+      "maskPaint": "Boya maskesi",
+      "paint": "Boya",
+      "erase": "Sil"
+    },
+    "relight": {
+      "title": "Yeniden Aydınlat",
+      "quickSelect": "Hızlı seçim",
+      "directions": {
+        "top": "Üst",
+        "front": "Ön",
+        "right": "Sağ",
+        "left": "Sol",
+        "back": "Geri",
+        "bottom": "Alt"
+      },
+      "brightness": "Parlaklık",
+      "color": "Renk"
+    },
+    "upscale": {
+      "title": "Lüks"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Videoya Çizim",
+      "drawToVideo": "Videoya Çiz",
+      "drawToEdit": "Düzenlemek için Çiz",
+      "pen": "Kalem",
+      "eraser": "Silgi",
+      "color": "Renk",
+      "size": "Boyut",
+      "undo": "Geri al",
+      "redo": "Yinele",
+      "clear": "Temizle",
+      "generateVideo": "Video oluştur",
+      "uploadTitle": "Medya yükle",
+      "uploadDescription": "Çizime rehberlik edecek bir fotoğraf ekleyin"
+    },
+    "soulId": {
+      "heroTitle": "Ruh Kimliği Karakteri",
+      "heroDescription": "Fotoğraflarınızdan tutarlı bir karakter oluşturun.",
+      "createButton": "Karakter oluştur",
+      "photoCount": "{count} fotoğraflar",
+      "characterLabel": "Karakter {index}",
+      "emptyGallery": "Henüz karakter yok.",
+      "dialogTitle": "Ruh Kimliği Oluştur",
+      "dialogSubtitle": "Karakterinizi oluşturmak için fotoğraf yükleyin.",
+      "addPhotosTitle": "Fotoğraf ekle",
+      "addPhotosDescription": "6-12 net fotoğraf yükleyin.",
+      "tip": "İpucu: Çeşitli açılar ve ifadeler kullanın."
+    },
+    "storyboard": {
+      "relightScene": "Yeniden Işıklandırma Sahnesi",
+      "headline": "Moda Fabrikası",
+      "headlineAccent": "Estetiğinizi yaratın",
+      "description": "Hikaye panosu, düzenleyin, oluşturun.",
+      "resultsLabel": "{count} sonuçlar",
+      "uploadHint": "Sahneyi yönlendirmek için referans görselleri yükleyin",
+      "referenceImagesTitle": "Referans görselleri",
+      "referenceImagesDescription": "Stile uyacak şekilde en fazla 4 resim ekleyin"
+    },
+    "instadump": {
+      "sidebarTitle": "Instadump Stüdyosu",
+      "stepChoosePack": "Bir paket seçin",
+      "stepAddPhoto": "Fotoğraf ekle",
+      "stepGetInstadump": "Instadump'ı edinin",
+      "headerTitle": "Stadyum dökümü",
+      "headerDescription": "Bir selfieyi tam içerik kitaplığına dönüştürün.",
+      "addPhotoTitle": "Fotoğrafınızı ekleyin",
+      "addPhotoDescription": "Başlamak için net bir selfie yükleyin.",
+      "getInstadumpTitle": "Instadump'ınızı alın",
+      "newPhotosReady": "Yeni fotoğraflar hazır",
+      "tryFree": "Ücretsiz deneyin",
+      "premiumTitle": "prim",
+      "premiumBulletOne": "Paket başına daha fazla stil",
+      "premiumBulletTwo": "Öncelikli işleme",
+      "premiumBulletThree": "Tam çözünürlüklü indirmeler",
+      "upgradeNow": "Şimdi yükseltin"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Düzenle",
+      "subtitle": "Düzenleme özelliklerine ve modellerine erişin",
+      "back": "Düzenlemeye Geri Dön",
+      "workspace": {
+        "title": "Çalışma alanı",
+        "status": "Ön uç yer tutucusu",
+        "uploadTitle": "Medya yükle",
+        "uploadDescription": "Başlamak üzere bir resim/video yüklemek için bırakın veya tıklayın"
+      },
+      "settings": {
+        "title": "Ayarlar",
+        "modelTitle": "Modeli",
+        "modelDescription": "Bir model seçin (arka uç yakında gelecek)",
+        "promptTitle": "İstemi",
+        "promptDescription": "Ne istediğinizi açıklayın (arka uç yakında gelecek)",
+        "generate": "Oluştur"
+      },
+      "model": {
+        "title": "Model ayrıntıları",
+        "descriptionTitle": "Açıklama",
+        "descriptionBody": "Bu bir yer tutucudur. Ayrıntılar, arka uç kabloları bağlandığında doldurulacaktır."
+      }
+    },
+    "menu": {
+      "title": "Düzenle",
+      "sections": {
+        "features": "Özellikler",
+        "models": "Modeller"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Videoyu Düzenle",
+        "description": "Gelişmiş video düzenleme"
+      },
+      "inpaint": {
+        "title": "İç boya",
+        "description": "Bir alan seçin, değişikliği açıklayın"
+      },
+      "relight": {
+        "title": "Yeniden Aydınlat",
+        "description": "Aydınlatma konumunu, rengini ve parlaklığını ayarlayın"
+      },
+      "aiStylist": {
+        "title": "Yapay Zeka Stilisti",
+        "description": "Mükemmel görünümünüzü bulun"
+      },
+      "upscale": {
+        "title": "Lüks",
+        "description": "Çözünürlüğü ve kaliteyi artırın"
+      },
+      "skinEnhancer": {
+        "title": "Cilt İyileştirici",
+        "description": "Doğal, gerçekçi cilt dokuları"
+      },
+      "angles": {
+        "title": "Açılar",
+        "description": "Farklı açılardan oluşturun"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Maksimum ayrıntı ve doğruluk"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Hızlı, hafif düzenlemeler"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Sorunsuz ürün entegrasyonu"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Yüksek çözünürlüklü yükseltici"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Video referanslarıyla hareketi kontrol edin"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Gelişmiş video düzenleme"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Üst plan",
+      "completed": "{completed}/{total} tamamlandı",
+      "steps": {
+        "script": "Senaryo ve storyboard tasarımı",
+        "world": "Dünya varlık tasarımı",
+        "video": "Video üretimi",
+        "worldVideo": "Dünya varlıkları ve video üretimi",
+        "audio": "Ses ve audio tasarımı",
+        "final": "Final montajı"
+      }
+    }
+  }
+}

@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "پسند",
+      "liked": "پسندیده",
+      "share": "اشتراک‌گذاری",
+      "download": "دانلود",
+      "downloading": "در حال دانلود...",
+      "copying": "در حال کپی...",
+      "recreate": "بازآفرینی"
+    },
+    "aria": {
+      "closeVideo": "بستن ویدئو",
+      "goBack": "بازگشت",
+      "likeVideo": "پسندیدن ویدئو",
+      "unlikeVideo": "لغو پسند",
+      "shareVideo": "اشتراک‌گذاری ویدئو",
+      "downloadVideo": "دانلود ویدئو",
+      "copyingLink": "در حال کپی لینک...",
+      "downloading": "در حال دانلود..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "لینک کپی شد",
+      "videoLinkCopiedMessage": "لینک ویدئو در کلیپ‌بورد کپی شد",
+      "copyFailedTitle": "کپی ناموفق",
+      "copyFailedMessage": "امکان کپی لینک وجود ندارد",
+      "shareFailedTitle": "اشتراک‌گذاری ناموفق",
+      "shareFailedMessage": "امکان کپی لینک ویدئو وجود ندارد",
+      "loginFirst": "لطفاً ابتدا وارد شوید",
+      "cannotFollowYourself": "نمی‌توانید خودتان را دنبال کنید",
+      "followed": "با موفقیت دنبال شد",
+      "unfollowed": "لغو دنبال کردن",
+      "operationFailed": "عملیات ناموفق"
+    },
+    "generation": {
+      "generationModel": "مدل تولید",
+      "withEffect": "با {effect}",
+      "effectBadge": "افکت",
+      "prompt": "پرامپت",
+      "referenceImage": "تصویر مرجع",
+      "referenceImageAlt": "تصویر مرجع برای تولید ویدئو",
+      "negativePrompt": "پرامپت منفی",
+      "parameters": "پارامترها",
+      "guidance": "راهنما",
+      "steps": "گام‌ها",
+      "seed": "سید",
+      "ratio": "نسبت"
+    },
+    "author": {
+      "uploaded": "منتشر شد {time}",
+      "profile": "پروفایل",
+      "follow": "دنبال کردن",
+      "unfollow": "لغو دنبال",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "نظرات",
+      "placeholder": "نظر خود را درباره این ویدئو به اشتراک بگذارید...",
+      "send": "ارسال",
+      "sending": "در حال ارسال...",
+      "empty": "اولین نفر باشید و نظر خود را درباره این اثر بنویسید!"
+    },
+    "time": {
+      "now": "همین حالا",
+      "minutesAgo": "{minutes} دقیقه پیش",
+      "hoursAgo": "{hours} ساعت پیش",
+      "daysAgo": "{days} روز پیش"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "اعتبار"
+    },
+    "earnCreditsCapsule": {
+      "label": "کسب اعتبار",
+      "aria": {
+        "openRewardCenter": "کسب اعتبار"
+      },
+      "badge": {
+        "claimed": "دریافت شد"
+      },
+      "title": {
+        "base": "کسب اعتبار",
+        "canClaim": "کسب اعتبار (+{amount})",
+        "claimedToday": "کسب اعتبار (امروز دریافت شد)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "مرکز پاداش",
+      "subtitle": {
+        "main": "معرفی و کسب + پاداش‌های روزانه",
+        "joined": "ببینید چه کسانی پیوسته‌اند"
+      },
+      "common": {
+        "loading": "در حال بارگذاری..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} اعتبار"
+      },
+      "actions": {
+        "back": "بازگشت",
+        "close": "بستن",
+        "copy": "کپی",
+        "share": "اشتراک‌گذاری",
+        "inviteFriends": "دعوت از دوستان",
+        "claim": "دریافت",
+        "claiming": "در حال دریافت...",
+        "claimed": "دریافت شد"
+      },
+      "aria": {
+        "copyInviteCode": "کپی کردن کد دعوت",
+        "shareInviteLink": "اشتراک‌گذاری لینک دعوت"
+      },
+      "labels": {
+        "inviteLink": "لینک دعوت",
+        "inviteCode": "کد دعوت",
+        "invited": "دعوت‌شده",
+        "rewarded": "پاداش‌گرفته",
+        "pending": "در انتظار",
+        "recentInvites": "دعوت‌های اخیر",
+        "recentRewards": "پاداش‌های اخیر",
+        "referEarn": "معرفی و کسب",
+        "dailyRewards": "پاداش‌های روزانه",
+        "dailyLogin": "ورود روزانه",
+        "rewardedProgress": "پاداش: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "هنوز دعوتی ندارید.",
+        "noRewards": "هنوز پاداشی ندارید."
+      },
+      "status": {
+        "rewarded": "پاداش‌گرفته",
+        "pending": "در انتظار",
+        "verified": "تأیید شد"
+      },
+      "share": {
+        "title": "دعوت ReelMind",
+        "text": "با من در ReelMind عضو شوید و اعتبار رایگان دریافت کنید."
+      },
+      "toast": {
+        "copiedTitle": "کپی شد",
+        "copiedDescription": "{label} در کلیپ‌بورد کپی شد.",
+        "copyFailedTitle": "کپی ناموفق",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "لطفاً دستی کپی کنید.",
+        "claimFailedTitle": "دریافت ناموفق",
+        "claimedTitle": "دریافت شد",
+        "claimedDescription": "شما {amount} اعتبار دریافت کردید."
+      },
+      "referEarn": {
+        "tipLabel": "قوانین دعوت و کسب",
+        "tipTitle": "نحوه کار",
+        "tipBody1": "لینک دعوت خود را به اشتراک بگذارید. وقتی کاربر جدید با کد شما ثبت‌نام کند و یک اقدام واجد شرایط را انجام دهد، پس از تأیید سیستم، اعتبار صادر می‌شود.",
+        "tipBody2": "پاداش‌های پلکانی: ۱-۵ = ۵۰، ۶-۱۵ = ۱۰۰، ۱۶-۲۰ = ۲۰۰ اعتبار.",
+        "cardTitle": "با دعوت از دوستان اعتبار بگیرید",
+        "upTo": "تا سقف {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "قوانین ورود روزانه",
+        "tipTitle": "پاداش روزانه",
+        "tipBodyPrefix": "پاداش‌ها از",
+        "tipBodyDay2": "روز ۲",
+        "tipBodySuffix": "از روند شما شروع می‌شوند و هر روز UTC ریست می‌شوند.",
+        "status": {
+          "loading": "در حال بارگذاری وضعیت...",
+          "claimed": "دریافت شد",
+          "readyToClaim": "آماده دریافت",
+          "locked": "قفل‌شده"
+        },
+        "errors": {
+          "alreadyClaimed": "امروز قبلاً دریافت شده است.",
+          "notEligible": "فعلاً واجد شرایط دریافت نیستید.",
+          "riskBlocked": "به دلیل کنترل ریسک، دریافت مسدود شد.",
+          "generic": "مشکلی پیش آمد. لطفاً بعداً دوباره تلاش کنید."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "کاوش",
+      "video": "ویدئو",
+      "image": "تصویر",
+      "music": "موسیقی",
+      "edit": "ویرایش",
+      "experiment": "آزمایش"
+    },
+    "special": {
+      "nolan": "نولان"
+    },
+    "bottom": {
+      "affiliate": "همکاری در فروش",
+      "contactUs": "تماس با ما",
+      "blog": "بلاگ",
+      "apiPlatform": "پلتفرم API"
+    },
+    "badges": {
+      "help": "راهنما",
+      "new": "جدید",
+      "free": "رایگان"
+    },
+    "sidebar": {
+      "more": "بیشتر",
+      "closeMenu": "بستن منو",
+      "moreTools": "ابزارهای بیشتر",
+      "followOnX": "ما را در X (Twitter) دنبال کنید",
+      "followOnTikTok": "ما را در TikTok دنبال کنید",
+      "subscribeOnYouTube": "در کانال YouTube ما مشترک شوید",
+      "termsOfService": "شرایط استفاده",
+      "privacyPolicy": "سیاست حریم خصوصی"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "ویژگی ها",
+        "models": "مدل ها"
+      },
+      "features": {
+        "createVideo": {
+          "title": "ویدیو ایجاد کنید",
+          "description": "ویدیوهای هوش مصنوعی تولید کنید"
+        },
+        "cinemaStudioVideo": {
+          "title": "فیلم استودیو سینما",
+          "description": "فیلم حرفه ای با حرکات دوربین"
+        },
+        "mixedMedia": {
+          "title": "رسانه های ترکیبی",
+          "description": "متن، تصاویر و ویدئو را با هم ترکیب کنید"
+        },
+        "editVideo": {
+          "title": "ویرایش ویدیو",
+          "description": "ویرایش صحنه ها، عکس ها، عناصر"
+        },
+        "clickToAd": {
+          "title": "برای تبلیغ کلیک کنید",
+          "description": "تبدیل کلیپ ها به تبلیغات"
+        },
+        "sora2Trends": {
+          "title": "سورا 2 روند",
+          "description": "ایده های ویدئویی مبتنی بر روند"
+        },
+        "lipsyncStudio": {
+          "title": "Lipsync Studio",
+          "description": "همگام سازی صدا با چهره ها"
+        },
+        "drawToVideo": {
+          "title": "قرعه کشی به ویدیو",
+          "description": "اسکیس به سینما تبدیل می شود"
+        },
+        "sketchToVideo": {
+          "title": "طرح به ویدئو",
+          "description": "از طرح تا ویدئو با سورا 2"
+        },
+        "ugcFactory": {
+          "title": "کارخانه UGC",
+          "description": "محتوای آماده ساز سریع"
+        },
+        "videoUpscale": {
+          "title": "ارتقاء سطح ویدیو",
+          "description": "وضوح را با وضوح افزایش دهید"
+        },
+        "higgsfieldAnimate": {
+          "title": "هیگزفیلد انیمیشن",
+          "description": "عکس ها را با سبک متحرک کنید"
+        },
+        "recastStudio": {
+          "title": "Recast Studio",
+          "description": "بازگردانی بازیگران و سبک ها"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "کنترل دوربین سینمایی"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "کنترل حرکت پویا"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "متن به ویدئو با کیفیت بالا"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "ویرایش های ویدیویی دقیق"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "نسل بعدی ویدیو"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "فیلمبرداری واقع گرایانه"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "حرکت و ریتم تلطیف شده"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "ویدیوی سریع سینمایی"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "جزئیات و لحن تمیز"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "اجراهای آواتار محور"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "ویژگی ها",
+        "models": "مدل ها"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "ایجاد تصویر",
+          "description": "تصاویر هوش مصنوعی تولید کنید"
+        },
+        "cinemaStudioImage": {
+          "title": "تصویر استودیو سینما",
+          "description": "شبیه سازی واقعی دوربین و لنز"
+        },
+        "createStoryboard": {
+          "title": "استوری بورد ایجاد کنید",
+          "description": "صحنه های داستانی خود را طراحی کنید"
+        },
+        "soulIdCharacter": {
+          "title": "شخصیت شناسه روح",
+          "description": "شخصیت منحصر به فرد ایجاد کنید"
+        },
+        "relight": {
+          "title": "Relight",
+          "description": "موقعیت نور، رنگ و روشنایی را تنظیم کنید"
+        },
+        "inpaint": {
+          "title": "Inpaint",
+          "description": "یک منطقه را انتخاب کنید، تغییر را توصیف کنید"
+        },
+        "imageUpscale": {
+          "title": "ارتقاء تصویر",
+          "description": "افزایش کیفیت تصویر"
+        },
+        "faceSwap": {
+          "title": "تعویض چهره",
+          "description": "تغییر چهره واقع بینانه ایجاد کنید"
+        },
+        "characterSwap": {
+          "title": "تعویض کاراکتر",
+          "description": "جایگزینی واقعی شخصیت ها را ایجاد کنید"
+        },
+        "drawToEdit": {
+          "title": "به ویرایش بکشید",
+          "description": "از طرح به تصویر"
+        },
+        "instadump": {
+          "title": "Instadump",
+          "description": "یک سلفی را به یک کتابخانه محتوای کامل تبدیل کنید"
+        },
+        "photodumpStudio": {
+          "title": "Photodump Studio",
+          "description": "زیبایی شناسی خود را ایجاد کنید"
+        },
+        "fashionFactory": {
+          "title": "کارخانه مد",
+          "description": "ست های مد ایجاد کنید"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "تصاویری مد فوق العاده واقعی"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "استوری برد، ویرایش، ایجاد کنید"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "بهترین مدل تصویر 4K تا کنون"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "مدل تصویر 4K نسل بعدی"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "رندر دقیق با رنگ واقعی"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "جزئیات بهینه شده با سرعت"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "پرتره های واقعی فوری"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "تصاویر واقعی واقعی، سریع و دقیق"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "تصاویر واقعی"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "مدل ویرایش تصویر پیشرفته"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "ارتقاء دهنده با وضوح بالا"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "همه",
+        "recommended": "پیشنهادی",
+        "saved": "ذخیره‌شده"
+      },
+      "labels": {
+        "camera": "دوربین",
+        "lens": "لنز",
+        "focalLength": "فاصله کانونی",
+        "aperture": "دیافراگم"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "ذخیره تنظیم",
+        "removeSetup": "حذف تنظیم",
+        "close": "بستن"
+      },
+      "empty": "هنوز تنظیمی نیست"
+    },
+    "page": {
+      "title": "آزمایش کنید",
+      "subtitle": "ابتدا جریان های کاری جدید را امتحان کنید",
+      "back": "بازگشت به آزمایش"
+    },
+    "menu": {
+      "title": "آزمایش کنید",
+      "open": "باز کنید"
+    },
+    "tabs": {
+      "character": "شخصیت",
+      "inpaint": "Inpaint",
+      "cinemaStudio": "استودیو سینما",
+      "motionControl": "کنترل حرکت",
+      "assist": "کمک کنید"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "روی یک منطقه نقاشی کنید و تغییر را توصیف کنید"
+      },
+      "cinemaStudio": {
+        "title": "استودیو سینما",
+        "description": "گردش کار حرفه ای سینمایی"
+      },
+      "motionControl": {
+        "title": "کنترل حرکت",
+        "description": "حرکت را از یک ویدیوی مرجع کپی کنید"
+      },
+      "assist": {
+        "title": "کمک کنید",
+        "description": "ابزارهای کمکی و خلاقانه"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "شخصیت",
+        "subtitle": "ابزار سازگاری کاراکتر (جایگزین)"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "subtitle": "رسانه آپلود کنید، یک منطقه را انتخاب کنید و ویرایش را شرح دهید"
+      },
+      "cinemaStudio": {
+        "title": "استودیو سینما",
+        "subtitle": "با اعلان‌های دوربین آگاه، نماهای سینمایی ایجاد کنید"
+      },
+      "motionControl": {
+        "title": "کنترل حرکت",
+        "subtitle": "با تصویر خود حرکت را بازسازی کنید"
+      },
+      "assist": {
+        "title": "کمک کنید",
+        "subtitle": "چت، نکات، و ابزارهای سریع"
+      }
+    },
+    "actions": {
+      "upload": "آپلود رسانه",
+      "generate": "ایجاد کنید",
+      "history": "تاریخچه",
+      "howItWorks": "چگونه کار می کند",
+      "sendMessage": "ارسال پیام...",
+      "tryExample": "یک مثال را امتحان کنید",
+      "send": "ارسال کنید"
+    },
+    "placeholders": {
+      "exploreFeatures": "ویژگی ها را کاوش کنید",
+      "settings": "تنظیمات",
+      "camera": "دوربین",
+      "cameraHint": "رفتارهای دوربین را انتخاب کنید (قرار دهنده مکان)",
+      "lens": "لنز",
+      "lensHint": "گزینه‌های لنز را انتخاب کنید (مکان‌گیر)",
+      "image": "تصویر",
+      "video": "ویدئو",
+      "scenePrompt": "صحنه ای را که تصور می کنید توصیف کنید..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "حرکت را به کپی اضافه کنید",
+          "description": "مدت زمان ویدئو: 3 تا 30 ثانیه"
+        },
+        "addCharacter": {
+          "title": "شخصیت خود را اضافه کنید",
+          "description": "تصویر با چهره و بدن قابل مشاهده"
+        }
+      },
+      "quality": {
+        "title": "کیفیت",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "تنظیمات پیشرفته"
+      },
+      "hero": {
+        "title": {
+          "prefix": "ایجاد مجدد هر",
+          "highlight": "حرکت",
+          "suffix": "با تصویر شما"
+        },
+        "subtitle": "حرکت را از هر ویدیو کپی کنید و شخصیت خود را در همان حرکت قرار دهید"
+      },
+      "library": {
+        "title": "با کپی کردن حرکت از کتابخانه شروع کنید"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind کمک",
+        "subtitle": "تیمی از دکترا در جیب شما، ساخته شده برای سازندگان."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "چه کاری می توانید انجام دهید؟",
+          "description": "ویژگی های ReelMind AI را کاوش کنید"
+        },
+        "howToCreate": {
+          "title": "چگونه می توانم محتوای خیره کننده ایجاد کنم؟",
+          "description": "نکاتی برای نوشتن دستورات هوش مصنوعی بهتر"
+        },
+        "generateSoulImagePrompt": {
+          "title": "ایجاد اعلان تصویر روح",
+          "description": "یک درخواست برای تصاویر با زیبایی شناسی بالا بنویسید"
+        },
+        "generateVideoPrompt": {
+          "title": "ایجاد اعلان ویدیویی",
+          "description": "یک درخواست برای ویدیوهای سینمایی بنویسید"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "سازگاری شخصیت",
+          "description": "کاراکتر خود را در سراسر فریم ها منسجم نگه دارید (جایگاه)"
+        },
+        "library": {
+          "title": "کتابخانه شخصیت",
+          "description": "یک کاراکتر ذخیره شده را انتخاب کنید یا از الگوها شروع کنید (جایگاه)"
+        }
+      },
+      "placeholders": {
+        "preview": "پیش نمایش (جایگزین)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - جامعه رایگان سازندگان ویدئوی هوش مصنوعی برای ساخت و اشتراک‌گذاری ویدئوها",
+      "description": "ویدئوهای خلاقانه ترند از سازندگان سراسر جهان را کاوش کنید. الهام بگیرید، سرگرم شوید و آثار محبوب‌تان را ریمیکس کنید."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 اکنون فعال است!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "همه",
+        "latest": "جدیدترین",
+        "hot": "داغ"
+      },
+      "tooltip": {
+        "filterByModel": "فیلتر بر اساس مدل {model}"
+      },
+      "aria": {
+        "previous": "دسته‌بندی‌های قبلی",
+        "next": "دسته‌بندی‌های بعدی"
+      },
+      "error": {
+        "loadFailed": "بارگذاری دسته‌بندی‌ها ناموفق بود"
+      },
+      "actions": {
+        "retry": "تلاش دوباره"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "ساخت ویدئوهای AI"
+      },
+      "nolan": {
+        "title": "نولان",
+        "description": "کارگردان عامل هوش مصنوعی شماره ۱ جهان"
+      },
+      "badges": {
+        "models": "مدل‌ها",
+        "free": "رایگان"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "کاوش - ReelMind",
+      "description": "در ReelMind ویدئوهای خلاقانه ترند از سازندگان سراسر جهان را کاوش کنید."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "مدل‌ها و افکت‌های AI - ReelMind",
+      "description": "برای ساخت ویدئوهای شگفت‌انگیزِ تولیدشده با هوش مصنوعی در ReelMind، مدل‌ها و افکت‌های ویدئویی AI را مرور و استفاده کنید. مجموعه مدل‌های پیشرفته ما را کشف کنید."
+    },
+    "page": {
+      "title": "مدل‌ها و افکت‌های AI",
+      "description": "مجموعه مدل‌ها و افکت‌های پیشرفته ما را برای تولید ویدئو مرور کنید",
+      "footerIntro": "مجموعه {count} مدل AI برای تولید ویدئو را کشف کنید."
+    },
+    "sections": {
+      "models": "مدل‌ها",
+      "effects": "افکت‌ها"
+    },
+    "actions": {
+      "viewAll": "مشاهده همه",
+      "viewAllModels": "مشاهده همه مدل‌ها",
+      "backToModels": "بازگشت به مدل‌ها"
+    },
+    "types": {
+      "allModels": "همه مدل‌ها",
+      "textToVideo": "متن به ویدئو",
+      "imageToVideo": "تصویر به ویدئو",
+      "videoToVideo": "ویدئو به ویدئو"
+    },
+    "all": {
+      "titleAll": "همه مدل‌های ویدئویی",
+      "titleByType": "مدل‌های {type}",
+      "description": "مجموعه مدل‌های AI ما را برای تولید ویدئو مرور کنید",
+      "countAll": "({count} مدل)",
+      "countByType": "({count} مدل {type})",
+      "loadingMore": "در حال بارگذاری مدل‌های بیشتر...",
+      "loadMore": "بارگذاری مدل‌های بیشتر",
+      "end": "به پایان رسید! همه مدل‌ها بارگذاری شدند.",
+      "empty": "هیچ مدلی مطابق معیارهای شما پیدا نشد."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "ایست بازرسی",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "ویژگی‌های پشتیبانی‌شده",
+      "metaTitle": "{name} - مدل AI | ReelMind",
+      "metaDescriptionFallback": "مدل {name} را برای تولید ویدئو در ReelMind کاوش کنید.",
+      "metaErrorTitle": "جزئیات مدل | ReelMind",
+      "metaErrorDescription": "مدل‌های AI برای تولید ویدئو را در ReelMind کاوش کنید."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "افکت‌های AI - ReelMind",
+      "description": "برای بهبود ویدئوهای تولیدشده با هوش مصنوعی در ReelMind، افکت‌های ویدئویی AI را مرور و استفاده کنید."
+    },
+    "page": {
+      "title": "افکت‌های AI",
+      "description": "مجموعه افکت‌های AI ما را برای بهبود ویدئوهایتان مرور کنید"
+    },
+    "all": {
+      "title": "همه افکت‌های AI",
+      "description": "مجموعه کامل افکت‌های AI ما را برای بهبود ویدئوهایتان مرور کنید"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "بازگشت به افکت‌ها",
+        "goBack": "بازگشت",
+        "applyThisEffect": "اعمال این افکت"
+      },
+      "badge": "افکت",
+      "addedOn": "افزوده‌شده در {date}",
+      "errors": {
+        "notFound": "افکت پیدا نشد",
+        "loadFailed": "بارگذاری جزئیات افکت ناموفق بود"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "ساخت ویدئوهای AI - ReelMind",
+      "description": "با مدل‌ها و ابزارهای قدرتمند AI ما در ReelMind، ویدئوهای شگفت‌انگیزِ تولیدشده با هوش مصنوعی بسازید."
+    },
+    "loading": "در حال بارگذاری...",
+    "loadingMobile": "در حال بارگذاری نمای موبایل...",
+    "loadingControlPanel": "در حال بارگذاری پنل کنترل...",
+    "controlPanel": {
+      "modelAndSettings": "مدل و تنظیمات",
+      "history": "تاریخچه",
+      "model": "مدل",
+      "selectModel": "انتخاب مدل"
+    },
+    "mobile": {
+      "backToCreate": "بازگشت به Create"
+    },
+    "modelSelector": {
+      "loadingModels": "در حال بارگذاری مدل‌ها...",
+      "moreModels": "{count} مدل دیگر",
+      "exploreMoreModels": "کاوش {count} مدل دیگر"
+    },
+    "promptInput": {
+      "title": "پرامپت",
+      "placeholder": "توصیف کنید چه چیزی می‌خواهید بسازید...",
+      "enhance": "بهبود",
+      "undo": "بازگردانی",
+      "restoreOriginalPromptTitle": "بازگردانی پرامپت اصلی",
+      "toastEnhanced": "پرامپت بهبود یافت",
+      "toastRestored": "پرامپت اصلی بازگردانی شد",
+      "enhanceFailed": "بهبود پرامپت ناموفق بود",
+      "sensitiveError": "کلیدواژه حساس شناسایی شد: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "تصویر",
+      "mentionVideoTokenPrefix": "ویدئو",
+      "mentionAudioTokenPrefix": "صدا"
+    },
+    "referenceUploader": {
+      "addOptional": "افزودن مرجع اختیاری",
+      "referenceImage": "تصویر مرجع",
+      "referenceImages": "تصاویر مرجع ({current}/{max})",
+      "referenceVideo": "ویدئوی مرجع",
+      "dropImage": "یک تصویر را اینجا رها کنید یا برای آپلود کلیک کنید",
+      "dropImageMax": "تا {max} تصویر را اینجا رها کنید یا برای آپلود کلیک کنید",
+      "dropVideo": "یک ویدئو را اینجا رها کنید یا برای آپلود کلیک کنید",
+      "pasteHint": "چسباندن",
+      "videoUploaded": "ویدئو آپلود شد",
+      "uploading": "در حال آپلود...",
+      "addMore": "افزودن بیشتر",
+      "removeReference": "حذف",
+      "referenceImageAlt": "تصویر مرجع {index}",
+      "supportedFormats": "پشتیبانی‌شده: PNG، JPG",
+      "minimumSize": "حداقل {minWidth}×{minHeight}، نسبت تصویر {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "در حال آپلود {type}...",
+      "processingFile": "در حال پردازش فایل...",
+      "uploadReference": "آپلود مرجع {type}",
+      "image": "تصویر",
+      "video": "ویدئو",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "نسبت تصویر",
+      "duration": "مدت",
+      "seconds": "{seconds}ث",
+      "resolution": "رزولوشن",
+      "audio": "صدا",
+      "on": "روشن",
+      "off": "خاموش",
+      "advanced": "پیشرفته",
+      "advancedShort": "پیشرفته",
+      "creativityLevel": "خلاقیت",
+      "moreAccurate": "دقیق‌تر",
+      "moreCreative": "خلاقانه‌تر",
+      "samplingSteps": "گام‌های نمونه‌گیری",
+      "faster": "سریع‌تر ({steps} گام)",
+      "higherQuality": "کیفیت بالاتر ({steps} گام)",
+      "randomSeed": "Seed تصادفی",
+      "seedPlaceholder": "Seed را وارد کنید",
+      "generateRandomSeed": "تولید Seed تصادفی",
+      "seedHint": "برای نتایج قابل تکرار از Seed ثابت استفاده کنید.",
+      "movementAmplitude": "شدت حرکت",
+      "movementAmplitudeHint": "شدت حرکت را کنترل می‌کند.",
+      "backgroundMusic": "موسیقی پس‌زمینه",
+      "backgroundMusicHint": "در صورت پشتیبانی، موسیقی پس‌زمینه اضافه می‌کند.",
+      "enabled": "فعال",
+      "disabled": "غیرفعال",
+      "negativePrompt": "پرامپت منفی",
+      "negativePromptPlaceholder": "چه چیزهایی را باید اجتناب کرد..."
+    },
+    "startToEndUploader": {
+      "title": "فریم‌های شروع تا پایان",
+      "startFrame": "فریم شروع",
+      "endFrame": "فریم پایان",
+      "dropStartImage": "تصویر شروع را رها کنید یا برای آپلود کلیک کنید",
+      "dropEndImage": "تصویر پایان را رها کنید یا برای آپلود کلیک کنید",
+      "startFrameImageAlt": "فریم شروع",
+      "endFrameImageAlt": "فریم پایان",
+      "uploading": "در حال آپلود...",
+      "instructions": "برای هدایت گذار، تصاویر شروع و پایان را آپلود کنید.",
+      "supportedFormats": "پشتیبانی‌شده: PNG، JPG",
+      "minimumSize": "حداقل {minWidth}×{minHeight}، نسبت تصویر {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "در صورت نیاز، تصاویر به‌صورت خودکار فشرده می‌شوند."
+    },
+    "modelTabs": {
+      "imageToVideo": "تصویر به ویدئو",
+      "textToVideo": "متن به ویدئو",
+      "firstLastFrame": "فریم اول-آخر",
+      "edit": "ویرایش کنید",
+      "effect": "افکت"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "ویدئوی مرجع",
+      "required": "مورد نیاز",
+      "removeVideo": "حذف ویدیو",
+      "uploading": "در حال آپلود...",
+      "dropVideo": "یک ویدیو را اینجا رها کنید یا برای آپلود کلیک کنید",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "عناصر",
+      "optional": "اختیاری ({current}/{max})",
+      "addElements": "اضافه کنید",
+      "elementAlt": "عنصر {index}",
+      "removeElement": "حذف عنصر {index}",
+      "dropElements": "برای افزودن تصاویر عنصر کلیک کنید",
+      "elementsHint": "تصاویر اختیاری برای حفظ شخصیت ها / سبک.",
+      "errors": {
+        "invalidVideoTitle": "ویدیو نامعتبر است",
+        "invalidVideoDescription": "لطفا یک فایل ویدئویی انتخاب کنید.",
+        "videoTooLargeTitle": "ویدیو خیلی بزرگ است",
+        "videoTooLargeDescription": "حداکثر {maxMb} مگابایت. لطفا یک کلیپ کوتاهتر/کوچکتر آپلود کنید.",
+        "uploadFailedTitle": "آپلود انجام نشد",
+        "elementsLimitTitle": "به حد مجاز عناصر رسیده است",
+        "elementsLimitDescription": "می توانید تا {max} تصویر اضافه کنید.",
+        "imageTooSmall": "تصویر باید حداقل {minWidth}×{minHeight} (جاری: {width}×{height}) باشد.",
+        "imageBadRatio": "نسبت تصویر باید بین {minAspectRatio} و {maxAspectRatio} (فعالی: {current}) باشد."
+      },
+      "warnings": {
+        "someSkippedTitle": "برخی از فایل ها رد شدند",
+        "someSkippedDescription": "فایل های {count} به دلیل محدودیت ها حذف شدند.",
+        "skippedTitle": "رد شد",
+        "skippedNonImage": "فقط تصاویر برای عناصر مجاز هستند.",
+        "imageCompressedTitle": "تصویر فشرده شده است",
+        "imageCompressedDescription": "از {original} به {final} فشرده شده است.",
+        "skippedInvalidImage": "تصویر نامعتبر"
+      }
+    },
+    "howItWorks": {
+      "title": "چگونه کار می کند",
+      "hero": {
+        "title": "با یک کلیک ویدیو بسازید",
+        "subtitle": "از تنظیمات پیش‌تنظیمی برای کنترل دوربین، کادربندی و VFX استفاده کنید - یا با اعلان‌ها کاملاً دستی بروید."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "افزودن تصویر",
+          "2": "از پیش تعیین شده را انتخاب کنید",
+          "3": "دریافت ویدیو"
+        },
+        "t2v": {
+          "1": "اعلان بنویسید",
+          "2": "مدل را انتخاب کنید",
+          "3": "دریافت ویدیو"
+        },
+        "flf": {
+          "1": "قاب ها را اضافه کنید",
+          "2": "انتقال را توصیف کنید",
+          "3": "دریافت ویدیو"
+        },
+        "edit": {
+          "1": "افزودن ویدیو",
+          "2": "عناصر را اضافه کنید",
+          "3": "دریافت ویدیو"
+        }
+      },
+      "modes": {
+        "edit": "ویرایش (ویدیو به ویدیو)",
+        "flf": "فریم اول-آخر",
+        "i2v": "تصویر به ویدئو",
+        "t2v": "متن به ویدئو"
+      },
+      "steps": {
+        "edit": {
+          "1": "یک ویدیوی مرجع کوتاه بارگذاری کنید.",
+          "2": "به صورت اختیاری تا 4 تصویر عنصر اضافه کنید تا کاراکترها/سبک ها ثابت بماند.",
+          "3": "توضیح دهید که چه چیزی را تغییر دهید (و چه چیزی را نگه دارید) در اعلان، سپس ایجاد کنید."
+        },
+        "flf": {
+          "1": "یک قاب شروع و یک فریم پایان بارگذاری کنید.",
+          "2": "انتقال مورد نظر خود را شرح دهید.",
+          "3": "برای ایجاد یک تحول صاف تولید کنید."
+        },
+        "i2v": {
+          "1": "یک تصویر مرجع بارگذاری کنید.",
+          "2": "حرکت، دوربین و سبک را شرح دهید.",
+          "3": "نسبت/مدت را انتخاب کنید و تولید کنید."
+        },
+        "t2v": {
+          "1": "صحنه خود را توصیف کنید (سوژه، دوربین، نور، سبک).",
+          "2": "نسبت/مدت را انتخاب کنید و به صورت اختیاری یک درخواست منفی اضافه کنید.",
+          "3": "ایجاد و تکرار با تغییرات کوچک."
+        }
+      },
+      "tip": "نکته: مشخص باشید. به مدل بگویید چه چیزی باید ثابت بماند (هویت، لوگو، ترکیب).",
+      "templates": {
+        "title": "تنظیمات از پیش تعیین شده",
+        "subtitle": "یک پیش تنظیم کلاسیک را انتخاب کنید و سریعتر تولید کنید.",
+        "use": "استفاده کنید",
+        "clear": "پاک کردن",
+        "prev": "از پیش تعیین شده قبلی",
+        "next": "از پیش تعیین شده بعدی",
+        "edit": {
+          "relight": {
+            "title": "نور و جو",
+            "description": "تغییر زمان روز و نور سینمایی."
+          },
+          "grade": {
+            "title": "درجه سینمایی",
+            "description": "درجه نارنجی سبز + دانه فیلم، حرکت و هویت را حفظ کنید."
+          },
+          "weather": {
+            "title": "تغییر آب و هوا",
+            "description": "با حفظ هویت، باران/مه را اضافه کنید."
+          },
+          "anime": {
+            "title": "تغییر سبک انیمه",
+            "description": "ظاهر انیمه با حفظ هویت و حرکت."
+          },
+          "background": {
+            "title": "جایگزینی پس زمینه",
+            "description": "پس زمینه را با حفظ سوژه عوض کنید."
+          },
+          "lux": {
+            "title": "پولیش ممتاز",
+            "description": "تمیزتر، صاف تر، احساس تجاری برتر."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "روز → شب",
+            "description": "نورپردازی صاف / انتقال زمان با کادربندی ثابت."
+          },
+          "sketchToRender": {
+            "title": "طرح → رندر",
+            "description": "جزئیات را به تدریج از طرح تا رندر نهایی آشکار کنید."
+          },
+          "beforeAfter": {
+            "title": "قبل/پس از فاش شدن",
+            "description": "دگرگونی ذوقی با حرکت ظریف."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "زندگی پرتره",
+            "description": "پلک زدن + حرکت ظریف با فشار آهسته."
+          },
+          "pan": {
+            "title": "تشت پارالاکس",
+            "description": "پان سینمایی با عمق و تاری حرکت."
+          },
+          "product": {
+            "title": "چرخش محصول",
+            "description": "ظاهر محصول استودیویی با هایلایت های براق."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "تبلیغ پریمیوم 8s",
+            "description": "یک شات تجاری تمیز و سطح بالا."
+          },
+          "establish": {
+            "title": "استقرار شات",
+            "description": "معرفی گسترده سینمایی برای یک جهان/صحنه."
+          },
+          "anime": {
+            "title": "افتتاحیه انیمه",
+            "description": "عکسی به سبک افتتاحیه انیمه تلطیف شده."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "برای تصویر به ویدئو، تصویر مرجع لازم است.",
+        "i2vDescription": "لطفاً یک تصویر مرجع آپلود کنید یا به مدل متن به ویدئو تغییر دهید.",
+        "v2vTitle": "برای ویدئو به ویدئو، ویدئوی مرجع لازم است.",
+        "v2vDescription": "لطفاً یک ویدئوی مرجع آپلود کنید یا به مدل متن به ویدئو تغییر دهید."
+      },
+      "costLabel": "هزینه:",
+      "balanceLabel": "موجودی:",
+      "freeUnlimited": "رایگان (نامحدود)",
+      "credits": "اعتبار",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast یک مدل Luxury است و در استفاده رایگان Unlimited شامل نمی‌شود. پرداخت اضافی لازم است.",
+        "veo31": "VEO 3.1 یک مدل Luxury است و در استفاده رایگان Unlimited شامل نمی‌شود. پرداخت اضافی لازم است.",
+        "veo3": "VEO3 یک مدل Luxury است و در استفاده رایگان Unlimited شامل نمی‌شود. پرداخت اضافی لازم است.",
+        "sora2Pro": "Sora-2 Pro یک مدل Luxury است و در استفاده رایگان Unlimited شامل نمی‌شود. پرداخت اضافی لازم است."
+      },
+      "gettingCredits": "در حال دریافت اعتبار...",
+      "getBonusCredits": "دریافت {amount} اعتبار",
+      "submitting": "در حال ارسال...",
+      "loadingModels": "در حال بارگذاری مدل‌ها...",
+      "uploadingAsset": "در حال آپلود Asset...",
+      "uploadingImages": "در حال آپلود تصاویر...",
+      "claimingCredits": "در حال دریافت اعتبار...",
+      "getMoreCredits": "دریافت اعتبار بیشتر",
+      "generateVideo": "تولید ویدئو"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "انتشار ناموفق",
+        "missingTitleDescription": "لطفاً برای ویدئوی خود یک عنوان وارد کنید",
+        "processingTitle": "در حال پردازش",
+        "processingDescription": "در حال آماده‌سازی برای انتشار ویدئو...",
+        "successTitle": "با موفقیت منتشر شد",
+        "successDescription": "ویدئوی شما در جامعه به اشتراک گذاشته شد",
+        "failedTitle": "انتشار ناموفق",
+        "failedDescription": "لطفاً اتصال شبکه را بررسی کنید یا بعداً دوباره تلاش کنید"
+      },
+      "successTitle": "با موفقیت منتشر شد!",
+      "successDescription": "خلق شگفت‌انگیز شما اکنون در جامعه منتشر شد",
+      "publishingTitle": "در حال انتشار...",
+      "publishingDescriptionDesktop": "در حال آماده‌سازی ویدئوی شما برای لذت بردن جامعه...",
+      "publishingDescriptionMobile": "در حال آماده‌سازی ویدئو...",
+      "progressComplete": "{progress}% تکمیل شد",
+      "title": "اشتراک‌گذاری در جامعه",
+      "description": "خلق شگفت‌انگیز خود را با جهان به اشتراک بگذارید",
+      "benefits": {
+        "getLikes": "دریافت لایک",
+        "buildCommunityLong": "ساخت جامعه",
+        "buildCommunityShort": "جامعه",
+        "inspireLong": "الهام‌بخش دیگران",
+        "inspireShort": "الهام",
+        "earnLong": "کسب +{amount} اعتبار",
+        "earnShort": "+{amount} اعتبار"
+      },
+      "videoTitle": "عنوان ویدئو",
+      "videoTitlePlaceholder": "یک عنوان جذاب برای خلق خود بنویسید...",
+      "videoTitleHelperDesktop": "عنوان قوی بیننده بیشتری جذب می‌کند",
+      "videoTitleHelperMobile": "عنوان خوب بیننده جذب می‌کند",
+      "descriptionLabel": "توضیحات",
+      "optional": "اختیاری",
+      "descriptionPlaceholder": "درباره خلق خود به جامعه بگویید...",
+      "descriptionHelper": "فرآیند خلاقانه خود را به اشتراک بگذارید",
+      "cancel": "لغو",
+      "publish": "انتشار"
+    },
+    "history": {
+      "title": "تاریخچه",
+      "refresh": "تازه کردن",
+      "view": {
+        "one": "1 در هر ردیف",
+        "three": "در هر ردیف 3 عدد",
+        "nine": "9 در هر ردیف"
+      },
+      "filterPlaceholder": "فیلتر",
+      "empty": "هیچ کاری با وضعیت {status} یافت نشد",
+      "status": {
+        "all": "همه",
+        "pending": "در انتظار",
+        "queued": "در صف",
+        "processing": "در حال پردازش",
+        "completed": "تکمیل‌شده",
+        "failed": "ناموفق",
+        "canceled": "لغو‌شده"
+      }
+    },
+    "effectSelector": {
+      "loading": "در حال بارگذاری افکت‌ها...",
+      "defaultDescription": "افکت‌های ویژه را روی ویدئو اعمال کنید",
+      "ctaTitle": "یک افکت انتخاب کنید",
+      "ctaDescription": "برای انتخاب افکت ویدئویی کلیک کنید",
+      "modalTitle": "انتخاب افکت",
+      "close": "بستن انتخاب‌گر افکت"
+    },
+    "modelSelectorModal": {
+      "title": "انتخاب مدل",
+      "description": "یک مدل برای پروژه‌تان انتخاب کنید",
+      "close": "بستن انتخاب‌گر مدل",
+      "loadingMore": "در حال بارگذاری مدل‌های بیشتر...",
+      "allLoaded": "همه مدل‌ها بارگذاری شدند",
+      "noModelsFound": "هیچ مدلی پیدا نشد"
+    },
+    "modelSearch": {
+      "placeholder": "جستجوی مدل‌ها بر اساس نام، نوع یا ویژگی‌ها...",
+      "clear": "پاک کردن جستجو",
+      "searching": "در حال جستجو...",
+      "foundModels": "{count} مدل پیدا شد",
+      "modelsAvailable": "{count} مدل در دسترس"
+    },
+    "modelTypeFilter": {
+      "title": "نوع مدل",
+      "clear": "پاک کردن"
+    },
+    "remixLoader": {
+      "successTitle": "کار ریمیکس بارگذاری شد",
+      "successDescription": "پارامترهای ویدئو از کار اصلی بارگذاری شدند؛ می‌توانید مستقیم تولید کنید یا پارامترها را تغییر دهید.",
+      "errorTitle": "بارگذاری پارامترها ناموفق بود",
+      "errorDescription": "امکان بارگذاری پارامترها از کار اصلی نیست؛ لطفاً پارامترها را دستی تنظیم کنید."
+    },
+    "modelCard": {
+      "select": "انتخاب",
+      "credits": "اعتبار",
+      "premium": "PREMIUM",
+      "luxury": "لوکس"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "انتخاب‌شده توسط ReelMind",
+      "hot": "داغ",
+      "new": "جدید",
+      "select": "انتخاب"
+    },
+    "previewPanel": {
+      "generating": "در حال تولید...",
+      "download": "دانلود",
+      "downloading": "در حال دانلود...",
+      "shareToCommunity": "انتشار",
+      "tips": "نکته: با انتشار اعتبار کسب کنید",
+      "quality": "کیفیت",
+      "qualityHd": "HD",
+      "qualityStandard": "استاندارد",
+      "ratio": "نسبت",
+      "fullscreen": {
+        "enter": "تمام‌صفحه",
+        "exit": "خروج از تمام‌صفحه"
+      },
+      "empty": {
+        "title": "هنوز پیش‌نمایشی نیست",
+        "description": "برای دیدن پیش‌نمایش اینجا، یک ویدئو تولید کنید."
+      },
+      "queue": {
+        "loading": "در حال بارگذاری اطلاعات صف...",
+        "headerProcessing": "در حال پردازش",
+        "headerQueueStatus": "وضعیت صف",
+        "badgePosition": "موقعیت: {position} از {total}",
+        "badgeProcessing": "در حال پردازش",
+        "tasksInQueue": "کارها در صف",
+        "estimatedWait": "زمان انتظار تخمینی",
+        "elapsedTime": "زمان سپری‌شده",
+        "remainingTime": "زمان باقی‌مانده",
+        "startTime": "شروع تخمینی",
+        "completionTime": "پایان تخمینی"
+      },
+      "time": {
+        "calculating": "در حال محاسبه...",
+        "justNow": "همین حالا",
+        "lessThanMinute": "کمتر از یک دقیقه دیگر",
+        "inMinutes": "در {minutes, plural, one {# دقیقه} other {# دقیقه}}",
+        "inHours": "در {hours, plural, one {# ساعت} other {# ساعت}}",
+        "inDays": "در {days, plural, one {# روز} other {# روز}}",
+        "seconds": "{seconds, plural, one {# ثانیه} other {# ثانیه}}",
+        "minutesSeconds": "{minutes, plural, one {# دقیقه} other {# دقیقه}} {seconds, plural, one {# ثانیه} other {# ثانیه}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "در حال بارگذاری ویدئو...",
+      "notFound": "ویدئو پیدا نشد",
+      "notFoundDescription": "ویدئوی درخواستی پیدا نشد یا فعلاً در دسترس نیست.",
+      "detailsTitle": "جزئیات",
+      "videoInfoTitle": "اطلاعات ویدئو",
+      "advancedTitle": "پیشرفته",
+      "referenceImagesTitle": "تصاویر مرجع",
+      "startFrameAlt": "فریم شروع",
+      "endFrameAlt": "فریم پایان",
+      "endFrameLabel": "فریم پایان",
+      "creationDate": "تاریخ ایجاد",
+      "fields": {
+        "model": "مدل",
+        "generationType": "نوع تولید",
+        "resolution": "رزولوشن",
+        "aspectRatio": "نسبت تصویر",
+        "duration": "مدت",
+        "creativityLevel": "خلاقیت",
+        "effect": "افکت",
+        "samplingSteps": "گام‌های نمونه‌گیری",
+        "randomSeed": "Seed تصادفی",
+        "movementAmplitude": "دامنه حرکت",
+        "backgroundMusic": "موسیقی پس‌زمینه",
+        "negativePrompt": "پرامپت منفی"
+      },
+      "actions": {
+        "close": "بستن",
+        "closeModalTitle": "بستن مودال",
+        "remix": "ریمیکس",
+        "remixTitle": "ریمیکس با این پارامترها",
+        "download": "دانلود",
+        "downloadTitle": "دانلود این ویدئو",
+        "downloading": "در حال دانلود...",
+        "shareTitle": "اشتراک‌گذاری این ویدئو"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "حذف کار",
+      "description": "این اقدام قابل بازگشت نیست",
+      "cancel": "لغو",
+      "confirm": "حذف",
+      "deleting": "در حال حذف..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "تصویر مرجع"
+      },
+      "pending": {
+        "pending": "در انتظار...",
+        "queued": "در صف...",
+        "waitingInQueue": "در حال انتظار در صف..."
+      },
+      "processing": {
+        "phase1": "مرحله ۱",
+        "phase2": "مرحله ۲",
+        "phase3": "مرحله ۳",
+        "final": "نهایی",
+        "initializing": "در حال آماده‌سازی فرایند",
+        "processing": "در حال پردازش محتوا",
+        "rendering": "در حال رندر خروجی",
+        "finalizing": "در حال نهایی‌سازی",
+        "stuckMessage": "به نظر می‌رسد این کار گیر کرده است. می‌توانید آن را حذف کنید.",
+        "deleteTitle": "حذف این کار",
+        "deleteAria": "حذف"
+      },
+      "failed": {
+        "title": "تولید ناموفق",
+        "tryAgain": "تلاش دوباره",
+        "tryAgainTitle": "با همین پرامپت دوباره تلاش کنید",
+        "deleteTitle": "حذف این کار"
+      },
+      "completed": {
+        "recreateDesktop": "ساخت مجدد",
+        "remixMobile": "ریمیکس",
+        "remixTitle": "ساخت ویدئوی جدید با این پرامپت",
+        "publish": "انتشار",
+        "publishTitle": "در جامعه منتشر کنید و {amount} اعتبار کسب کنید",
+        "creditsBonusDesktop": "پاداش {amount} اعتبار",
+        "creditsBonusMobile": "+{amount}",
+        "share": "اشتراک‌گذاری",
+        "shareTitle": "اشتراک‌گذاری این ویدئو",
+        "downloadTitle": "دانلود این ویدئو",
+        "downloading": "در حال دانلود...",
+        "deleteTitle": "حذف این کار"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "لگو - ReelMind",
+      "description": "با ورک‌فلو Lego در ReelMind ویدئو بسازید و ریمیکس کنید."
+    },
+    "mobile": {
+      "backToBuilder": "بازگشت به Builder",
+      "history": "تاریخچه"
+    },
+    "badges": {
+      "new": "جدید"
+    },
+    "actions": {
+      "delete": "حذف",
+      "select": "انتخاب",
+      "selected": "انتخاب‌شده",
+      "download": "دانلود",
+      "downloading": "در حال دانلود...",
+      "deleting": "در حال حذف...",
+      "share": "اشتراک‌گذاری",
+      "close": "بستن"
+    },
+    "status": {
+      "pending": "در انتظار",
+      "processing": "در حال پردازش",
+      "failed": "ناموفق",
+      "completed": "تکمیل‌شده",
+      "generating": "در حال تولید",
+      "cancelled": "لغوشده"
+    },
+    "deleteConfirmDialog": {
+      "title": "حذف کار",
+      "description": "این اقدام قابل بازگشت نیست",
+      "cancel": "لغو",
+      "confirm": "حذف",
+      "deleting": "در حال حذف..."
+    },
+    "imageViewer": {
+      "close": "بستن",
+      "previous": "قبلی",
+      "next": "بعدی",
+      "view": "مشاهده {index}"
+    },
+    "historyList": {
+      "title": "Lego AI Image Generator",
+      "generatingFirstImage": "در حال تولید اولین تصویر شما...",
+      "loadFailed": "بارگذاری تاریخچه ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "emptyDescription": "با توصیف ایده‌تان و افزودن منابع برای هدایت AI، تصاویر خیره‌کننده بسازید",
+      "loadingMore": "در حال بارگذاری تصاویر تاریخچه...",
+      "scrollForMore": "برای بیشتر اسکرول کنید...",
+      "allLoaded": "همه {count} تصویر بارگذاری شدند"
+    },
+    "sidebar": {
+      "addCard": "افزودن کارت جدید",
+      "expand": "باز کردن سایدبار",
+      "sections": {
+        "theme": "تم",
+        "scene": "صحنه",
+        "style": "سبک"
+      }
+    },
+    "card": {
+      "placeholder": "{section} را توصیف کنید...",
+      "imageAlt": "مرجع {section}",
+      "options": {
+        "image": "تصویر",
+        "text": "متن"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "مرجع {index}",
+      "errors": {
+        "invalidType": "لطفاً یک فایل تصویر انتخاب کنید",
+        "tooLarge": "حجم تصویر نمی‌تواند بیش از {maxSizeMb}MB باشد",
+        "uploadFailed": "آپلود تصویر ناموفق بود. لطفاً دوباره تلاش کنید."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "اسکرول به پایین",
+      "collapsedPlaceholder": "تصویر خود را توصیف کنید...",
+      "close": "بستن"
+    },
+    "resultPreview": {
+      "previewTitle": "پیش‌نمایش",
+      "previewDescription": "تصویر تولیدشده شما اینجا نمایش داده می‌شود",
+      "generatedImageAlt": "تصویر تولیدشده",
+      "emptyPlaceholder": "خلق شما اینجا ظاهر می‌شود",
+      "dialogTitle": "تصویر ساخته‌شده شما",
+      "dialogDescription": "این تصویر بر اساس توضیحات و منابع شما ساخته شده است"
+    },
+    "resourceUploader": {
+      "uploadImage": "آپلود تصویر",
+      "imageFallbackAlt": "تصویر",
+      "imageFallbackLabel": "تصویر",
+      "removeImage": "حذف {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "نمایش سایدبار",
+      "hideSidebar": "پنهان کردن سایدبار",
+      "hideSidebarShort": "پنهان کردن سایدبار",
+      "addImage": "افزودن تصویر",
+      "addImageWithLimit": "افزودن تصویر ({current}/{max})",
+      "promptPlaceholder": "تصویر خود را بسازید یا ویرایش کنید...",
+      "model": "مدل",
+      "selectModel": "انتخاب مدل",
+      "loading": "در حال بارگذاری...",
+      "loadingModels": "در حال بارگذاری مدل‌ها...",
+      "noModelsAvailable": "هیچ مدلی در دسترس نیست",
+      "noModelsMatchFilters": "هیچ مدلی با فیلترهای شما مطابقت ندارد",
+      "modelLabel": "مدل: {name}",
+      "aspectRatio": "نسبت تصویر",
+      "ratioLabel": "نسبت: {value}",
+      "imagesLabel": "تصاویر: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 فقط یک تصویر خروجی می‌دهد",
+        "hint": "تعداد تصاویر برای تولید",
+        "numberOfImages": "تعداد تصاویر"
+      },
+      "advanced": {
+        "aria": "تنظیمات پیشرفته",
+        "label": "پیشرفته",
+        "title": "تنظیمات پیشرفته",
+        "negativePrompt": {
+          "label": "پرامپت منفی",
+          "placeholder": "عناصری که می‌خواهید حذف شوند...",
+          "aria": "پرامپت منفی",
+          "title": "عناصر مورد نظر برای حذف را مشخص کنید"
+        },
+        "seed": {
+          "label": "بذر",
+          "random": "تصادفی",
+          "randomTitle": "تولید Seed تصادفی",
+          "placeholder": "Seed تصادفی (اختیاری)",
+          "aria": "مقدار Seed",
+          "title": "تنظیم Seed برای نتایج قابل تکرار"
+        }
+      },
+      "resolution": "رزولوشن",
+      "resolutionLabel": "رزولوشن: {value}",
+      "resolutionPopoverTitle": "رزولوشن (Nano Banana 2)",
+      "generating": "در حال تولید...",
+      "generate": "تولید",
+      "limitReached": "به حد مجاز رسیدید",
+      "fluxLimitTooltip": "مدل‌های FLUX برای غیرعضوها به {limit} بار محدود هستند",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 یک مدل پریمیوم است و در استفاده رایگان Unlimited شامل نمی‌شود. برای هر تصویر تولیدشده اعتبار کسر می‌شود.",
+      "unlimited": {
+        "fast": "سریع",
+        "slow": "کند",
+        "fastMode": "حالت سریع",
+        "slowMode": "حالت کند",
+        "monthlyUsage": "استفاده ماهانه: {used}/{limit}",
+        "rateLimit": "محدودیت نرخ: {limit} تصویر در هر ۵ دقیقه",
+        "switchedToSlow": "به حد مجاز ماهانه رسیدید. به حالت کند تغییر کرد."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "تصویر تولیدشده",
+      "failedTitle": "تولید ناموفق",
+      "errors": {
+        "unableToComplete": "امکان تکمیل تولید نیست"
+      },
+      "actions": {
+        "deleteTitle": "حذف کار",
+        "viewFullSize": "برای مشاهده در اندازه کامل کلیک کنید",
+        "preview": "پیش‌نمایش {index}",
+        "retryTitle": "تلاش دوباره - با همان پارامترها دوباره امتحان کنید",
+        "retry": "تلاش دوباره",
+        "remixTitle": "ریمیکس - استفاده مجدد از پارامترها",
+        "remix": "ریمیکس",
+        "makeVideoTitle": "ساخت ویدئو",
+        "makeVideo": "ساخت ویدئو"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "دانلود شروع شد",
+      "downloadStartedMessage": "دانلود ویدئو شروع شد",
+      "downloadFailedTitle": "دانلود ناموفق",
+      "downloadFailedMessage": "دانلود ویدئو ناموفق بود",
+      "shareCopied": "لینک اشتراک‌گذاری در کلیپ‌بورد کپی شد",
+      "shareCopyFailed": "کپی لینک اشتراک‌گذاری ناموفق بود"
+    },
+    "empty": {
+      "title": "ویدئو در دسترس نیست",
+      "description": "این ویدئو برای اشتراک‌گذاری در دسترس نیست یا فایل ویدئو وجود ندارد.",
+      "ctaCreate": "ویدئوی خودتان را بسازید"
+    },
+    "notFound": {
+      "title": "ویدئو پیدا نشد",
+      "description": "ویدئویی که دنبال آن هستید وجود ندارد یا دیگر برای اشتراک‌گذاری در دسترس نیست.",
+      "ctaCreate": "ویدئوی خودتان را بسازید",
+      "ctaHome": "بازگشت به Home"
+    },
+    "details": {
+      "creationDate": "تاریخ ایجاد"
+    },
+    "actions": {
+      "remix": "ریمیکس",
+      "remixTitle": "ساخت ویدئوی جدید با این پرامپت",
+      "download": "دانلود",
+      "downloadTitle": "دانلود این ویدئو",
+      "downloading": "در حال دانلود...",
+      "downloadingTitle": "در حال دانلود...",
+      "shareTitle": "اشتراک‌گذاری این ویدئو"
+    },
+    "meta": {
+      "promptFallback": "ویدئوی تولیدشده با هوش مصنوعی",
+      "watchDescription": "این ویدئوی تولیدشده با هوش مصنوعی را ببینید: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "موسیقی",
+      "description": "با هوش مصنوعی موسیقی، افکت صوتی و گفتار تولید کنید."
+    },
+    "page": {
+      "loadingSoundStudio": "در حال بارگذاری Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "موسیقی",
+      "soundEffect": "افکت صوتی",
+      "textToSpeech": "متن به گفتار"
+    },
+    "controlPanel": {
+      "title": "کنترل",
+      "reset": "ریست",
+      "modelLabel": {
+        "tts": "مدل TTS",
+        "sound": "مدل صدا"
+      },
+      "modelPlaceholder": "انتخاب مدل",
+      "noModelsAvailableTitle": "هیچ مدلی در دسترس نیست",
+      "noModelsFound": {
+        "tts": "هیچ مدل TTS پیدا نشد",
+        "soundEffect": "هیچ مدل افکت صوتی پیدا نشد"
+      },
+      "tts": {
+        "stability": "پایداری",
+        "similarityBoost": "افزایش شباهت",
+        "styleExaggeration": "اغراق سبک",
+        "speed": "سرعت"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "آپلود صدای مرجع",
+      "dropHere": "اینجا رها کنید",
+      "supportedFormats": "فرمت‌های پشتیبانی‌شده: MP3، WAV، M4A، AAC، OGG",
+      "tip": "نکته: برای نتیجه بهتر حداقل ۱۵ ثانیه صدای واضح استفاده کنید.",
+      "uploadingProgress": "در حال آپلود... {progress}%",
+      "toast": {
+        "uploadSuccess": "آپلود کامل شد",
+        "uploadFailed": "آپلود ناموفق بود"
+      },
+      "errors": {
+        "selectAudioFile": "لطفاً یک فایل صوتی انتخاب کنید.",
+        "invalidAudioFile": "فایل صوتی نامعتبر است.",
+        "fileTooLarge": "فایل خیلی بزرگ است (حداکثر ۵۰MB).",
+        "durationTooShort": "طول صدا باید حداقل ۱۵ ثانیه باشد."
+      }
+    },
+    "audioPlayer": {
+      "play": "پخش",
+      "pause": "مکث"
+    },
+    "voiceSelector": {
+      "label": "صدا",
+      "selectVoiceTitle": "انتخاب صدا",
+      "gender": {
+        "all": "همه",
+        "male": "مرد",
+        "female": "زن"
+      },
+      "noVoicesAvailable": "هیچ صدایی در دسترس نیست",
+      "noVoicesFound": "هیچ صدایی پیدا نشد",
+      "bestFor": "بهترین برای {useCase}",
+      "clickToSelectVoice": "برای انتخاب صدا کلیک کنید"
+    },
+    "historyPanel": {
+      "title": "تاریخچه",
+      "empty": {
+        "title": "هنوز تولیدی ندارید",
+        "description": "تاریخچه تولید شما اینجا نمایش داده می‌شود"
+      },
+      "loading": "در حال بارگذاری...",
+      "loadMore": "بارگذاری بیشتر"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "در حال پردازش",
+        "failed": "ناموفق",
+        "completed": "تکمیل‌شده"
+      },
+      "actions": {
+        "copy": "کپی",
+        "download": "دانلود"
+      },
+      "time": {
+        "now": "اکنون",
+        "minutesAgo": "{minutes}دقیقه پیش",
+        "hoursAgo": "{hours}ساعت پیش"
+      },
+      "unknownModel": "مدل ناشناس",
+      "errors": {
+        "unknown": "خطای ناشناخته"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "استودیو صدا"
+      },
+      "menu": {
+        "open": "باز کردن منو",
+        "title": "منو",
+        "voiceGeneration": "ساخت",
+        "settings": "تنظیمات",
+        "history": "تاریخچه"
+      },
+      "tabs": {
+        "generate": "تولید",
+        "settings": "تنظیمات",
+        "history": "تاریخچه"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "متن خود را برای تولید گفتار تایپ کنید...",
+        "soundEffect": "افکت صوتی مورد نظر خود را توصیف کنید..."
+      },
+      "generateSpeech": "تولید گفتار",
+      "generateSound": "تولید صدا",
+      "generating": "در حال تولید...",
+      "loadingExamples": "در حال بارگذاری نمونه‌ها...",
+      "loadingMusicStyles": "در حال بارگذاری سبک‌های موسیقی...",
+      "rightTabs": {
+        "examples": "نمونه‌ها",
+        "history": "تاریخچه"
+      },
+      "history": {
+        "generationCount": "{count} تولید"
+      },
+      "price": {
+        "placeholder": "هزینه تخمینی",
+        "calculating": "در حال محاسبه...",
+        "credits": "{credits} اعتبار"
+      },
+      "musicHistory": {
+        "title": "تاریخچه موسیقی",
+        "empty": {
+          "title": "هنوز موسیقی تولید نشده",
+          "description": "تاریخچه موسیقی شما اینجا نمایش داده می‌شود"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "تاریخچه افکت صوتی",
+        "empty": {
+          "title": "هنوز افکت صوتی تولید نشده",
+          "description": "تاریخچه افکت‌های صوتی شما اینجا نمایش داده می‌شود"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "متن ترانه",
+      "lyricsPlaceholder": "متن ترانه با قالب‌بندی اختیاری. می‌توانید برای جدا کردن هر خط از خط جدید استفاده کنید. می‌توانید برای افزودن مکث بین خطوط از دو خط جدید استفاده کنید. می‌توانید با قرار دادن دو علامت # (##) در ابتدای و انتهای متن ترانه، همراهی اضافه کنید. حداکثر ۶۰۰ کاراکتر.",
+      "useReferenceAudio": {
+        "label": "استفاده از صدای مرجع",
+        "description": "از یک مرجع صوتی برای هدایت سبک AI استفاده کنید."
+      },
+      "referenceAudio": {
+        "title": "صدای مرجع",
+        "description": "یک آهنگ مرجع که هم موسیقی و هم وکال دارد آپلود کنید."
+      },
+      "musicStyle": {
+        "title": "سبک موسیقی",
+        "description": "سبک و حال‌وهوای موسیقی مورد نظر را توصیف کنید.",
+        "placeholder": "مثلاً R&B، پرانرژی، پاپ شاد، فولک آکوستیک، دنس الکترونیک...",
+        "tooShort": "توضیح سبک موسیقی باید حداقل ۱۰ کاراکتر باشد."
+      },
+      "generating": "در حال تولید...",
+      "generateMusicWithCredits": "تولید موسیقی ({credits} اعتبار)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "مدت",
+        "description": "طول افکت صوتی را تنظیم کنید."
+      },
+      "promptInfluence": {
+        "title": "تأثیر پرامپت",
+        "description": "مقادیر بالاتر، پرامپت را دقیق‌تر دنبال می‌کنند."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "تماس",
+      "description": "بازخورد خود را برای تیم ReelMind ارسال کنید."
+    },
+    "header": {
+      "title": "بازخورد سریع",
+      "description": "باگ پیدا کردید یا پیشنهادی دارید؟ در ۳۰ ثانیه به ما بگویید."
+    },
+    "card": {
+      "title": "بازخورد سریع",
+      "subtitle": "فقط ۳ فیلد، ۳۰ ثانیه زمان می‌برد"
+    },
+    "submitted": {
+      "title": "بازخورد ارسال شد",
+      "description": "از بازخورد شما متشکریم. آن را بررسی می‌کنیم و در صورت نیاز با شما تماس می‌گیریم."
+    },
+    "auth": {
+      "required": "برای ارسال بازخورد لطفاً وارد شوید."
+    },
+    "form": {
+      "errors": {
+        "unknown": "مشکلی پیش آمد. لطفاً دوباره تلاش کنید."
+      },
+      "type": {
+        "label": "نوع",
+        "placeholder": "نوع بازخورد را انتخاب کنید",
+        "options": {
+          "bug": "گزارش باگ",
+          "suggestion": "پیشنهاد",
+          "other": "سایر"
+        },
+        "errors": {
+          "required": "نوع بازخورد الزامی است.",
+          "invalid": "نوع بازخورد نامعتبر است."
+        }
+      },
+      "subject": {
+        "label": "موضوع *",
+        "placeholder": "مشکل یا پیشنهاد چیست؟",
+        "errors": {
+          "required": "موضوع الزامی است.",
+          "min": "موضوع باید حداقل {min} کاراکتر باشد.",
+          "max": "موضوع باید کمتر از {max} کاراکتر باشد.",
+          "invalid": "موضوع شامل محتوای نامعتبر است."
+        }
+      },
+      "message": {
+        "label": "جزئیات *",
+        "placeholder": "بیشتر توضیح دهید...",
+        "errors": {
+          "required": "جزئیات الزامی است.",
+          "min": "جزئیات باید حداقل {min} کاراکتر باشد.",
+          "max": "جزئیات باید کمتر از {max} کاراکتر باشد.",
+          "invalid": "جزئیات شامل محتوای نامعتبر است."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "در حال ارسال...",
+      "submit": "ارسال بازخورد"
+    },
+    "toast": {
+      "submitSuccess": "بازخورد با موفقیت ارسال شد!",
+      "submitFailed": "ارسال بازخورد ناموفق بود. لطفاً دوباره تلاش کنید.",
+      "authRequired": "برای ارسال بازخورد لطفاً وارد شوید.",
+      "rateLimited": "تعداد ارسال‌ها زیاد است. لطفاً بعداً دوباره تلاش کنید.",
+      "rateLimitedWithRetryAfter": "لطفاً {seconds} ثانیه صبر کنید و سپس دوباره ارسال کنید.",
+      "fixErrors": "لطفاً خطاهای فرم را برطرف کنید.",
+      "checkInput": "لطفاً ورودی را بررسی کرده و دوباره تلاش کنید."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "پست‌ها",
+      "following": "دنبال‌کردن",
+      "followingShort": "دنبال",
+      "followers": "دنبال‌کنندگان",
+      "followersShort": "طرفدارها",
+      "favorites": "علاقه‌مندی‌ها",
+      "favoritesShort": "علاقه"
+    },
+    "actions": {
+      "save": "ذخیره",
+      "saving": "در حال ذخیره...",
+      "cancel": "لغو",
+      "delete": "حذف",
+      "retry": "تلاش دوباره",
+      "editProfile": "ویرایش پروفایل",
+      "signOut": "خروج",
+      "follow": "دنبال‌کردن",
+      "unfollow": "لغو دنبال‌کردن",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "سازنده",
+      "avatarAltFallback": "کاربر",
+      "initialFallback": "U",
+      "edit": {
+        "displayNamePlaceholder": "نام نمایشی",
+        "bioPlaceholder": "بیو"
+      },
+      "stats": {
+        "following": "دنبال‌کردن",
+        "followers": "دنبال‌کنندگان"
+      },
+      "joined": "عضویت از {date}",
+      "joinedFallback": "مارس ۲۰۲۵"
+    },
+    "time": {
+      "now": "همین حالا",
+      "minutesAgo": "{minutes}دقیقه پیش",
+      "hoursAgo": "{hours}ساعت پیش",
+      "daysAgo": "{days}روز پیش"
+    },
+    "toast": {
+      "loginFirst": "لطفاً ابتدا وارد شوید",
+      "cannotFollowYourself": "نمی‌توانید خودتان را دنبال کنید",
+      "followed": "با موفقیت دنبال شد",
+      "unfollowed": "لغو دنبال‌کردن با موفقیت انجام شد",
+      "operationFailed": "عملیات ناموفق بود"
+    },
+    "posts": {
+      "loadingMore": "در حال بارگذاری پست‌های بیشتر...",
+      "error": {
+        "failedToLoad": "بارگذاری پست‌ها ناموفق بود"
+      },
+      "empty": {
+        "title": "هنوز پستی نیست",
+        "description": "این کاربر هنوز پستی به اشتراک نگذاشته است. بعداً دوباره سر بزنید!"
+      },
+      "deleteDialog": {
+        "title": "حذف پست",
+        "description": "این کار پست را از پروفایل و فید شما پنهان می‌کند. این اقدام قابل بازگشت نیست."
+      },
+      "toast": {
+        "deleted": "پست حذف شد",
+        "deleteFailed": "حذف پست ناموفق بود"
+      }
+    },
+    "favorites": {
+      "loadingMore": "در حال بارگذاری علاقه‌مندی‌های بیشتر...",
+      "error": {
+        "failedToLoad": "بارگذاری علاقه‌مندی‌ها ناموفق بود"
+      },
+      "empty": {
+        "title": "هنوز علاقه‌مندی‌ای نیست",
+        "description": "پست‌هایی که دوست دارید اینجا نمایش داده می‌شوند. شروع به کاوش کنید و علاقه‌مندی‌هایتان را ذخیره کنید!"
+      }
+    },
+    "followers": {
+      "empty": "هنوز دنبال‌کننده‌ای نیست",
+      "error": {
+        "failedToLoad": "بارگذاری دنبال‌کنندگان ناموفق بود"
+      },
+      "followerSince": "دنبال‌کننده از {time}"
+    },
+    "following": {
+      "empty": "هنوز کسی را دنبال نکرده‌اید",
+      "error": {
+        "failedToLoad": "بارگذاری دنبال‌شده‌ها ناموفق بود"
+      },
+      "followingSince": "دنبال‌کردن از {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "پلن‌های عضویت - ReelMind",
+      "description": "با پلن‌های عضویت ReelMind، اعتبار بیشتر و قابلیت‌های پریمیوم برای تولید ویدئوی AI دریافت کنید."
+    },
+    "plans": {
+      "hero": {
+        "title": "پلن‌های عضویت",
+        "subtitle": "با پلن‌های اشتراک انعطاف‌پذیر ReelMind، نهایت توان تولید ویدئوی AI را آزاد کنید"
+      },
+      "error": {
+        "loadFailed": "دریافت پلن‌های عضویت ناموفق بود، لطفاً بعداً دوباره تلاش کنید."
+      },
+      "names": {
+        "free": "رایگان",
+        "pro": "حرفه ای",
+        "max": "حداکثر",
+        "unlimited": "نامحدود"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "سالانه"
+      },
+      "monthly": {
+        "label": "ماهانه"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "۷۰٪ تخفیف ماه اول",
+        "short": "۷۰٪ تخفیف",
+        "description": "مشترکین اولین‌بار ۷۰٪ تخفیف می‌گیرند؛ کوپن ۲۴ ساعت معتبر است"
+      },
+      "yearly": {
+        "full": "۶ ماه اول رایگان",
+        "short": "۶ ماه رایگان",
+        "description": "مشترکین سالانه ۶ ماه اول را کاملاً رایگان دریافت می‌کنند - معادل ۵۰٪ تخفیف سال اول!"
+      },
+      "percentOff": "{percent}% تخفیف",
+      "badge": {
+        "preview": "🎁 {offer} در دسترس است",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(بعد از دریافت)"
+    },
+    "pricing": {
+      "perYear": "در سال",
+      "perMonth": "در ماه",
+      "breakdown": {
+        "originalPrice": "قیمت اصلی:",
+        "discount": "تخفیف شما:",
+        "payFirstYear": "پرداخت شما (سال اول):",
+        "firstMonth": "ماه اول:"
+      }
+    },
+    "status": {
+      "title": "وضعیت عضویت",
+      "loading": "در حال بارگذاری اطلاعات عضویت...",
+      "currentPlan": "پلن فعلی:",
+      "expiresOn": "انقضا در:",
+      "unlimitedDescription": "شما به همه قابلیت‌های تولید بدون مصرف اعتبار دسترسی نامحدود دارید.",
+      "planDescription": "شما به همه ویژگی‌ها و مزایای {plan} دسترسی دارید.",
+      "noActive": {
+        "title": "شما عضویت فعالی ندارید.",
+        "subtitle": "برای باز کردن قابلیت‌های پریمیوم، از پلن‌های زیر یکی را انتخاب کنید."
+      }
+    },
+    "creditsBalance": {
+      "title": "موجودی اعتبار",
+      "loading": "در حال بارگذاری اطلاعات اعتبار...",
+      "availableCredits": "اعتبار موجود:",
+      "unlimited": {
+        "video": "تولید ویدئو نامحدود",
+        "image": "تولید تصویر نامحدود",
+        "audio": "تولید صدا نامحدود"
+      },
+      "estimate": {
+        "videos": "تا {count} ویدئو",
+        "images": "تا {count} تصویر",
+        "audios": "تا {count} صدا"
+      },
+      "cost": {
+        "videos": "ویدئوها: از {credits} اعتبار",
+        "images": "تصاویر: از {credits} اعتبار",
+        "audios": "صداها: از {credits} اعتبار"
+      }
+    },
+    "credits": {
+      "title": "خرید اعتبار",
+      "history": {
+        "toggle": {
+          "show": "نمایش تاریخچه تراکنش‌ها",
+          "hide": "پنهان کردن تاریخچه تراکنش‌ها"
+        }
+      },
+      "card": {
+        "description": "یک بسته اعتبار انتخاب کنید تا توان تولید AI خود را افزایش دهید"
+      },
+      "packages": {
+        "basic": {
+          "label": "بسته پایه"
+        },
+        "standard": {
+          "label": "بسته استاندارد"
+        },
+        "premium": {
+          "label": "بسته پریمیوم"
+        },
+        "pro": {
+          "label": "بسته اولترا"
+        },
+        "bonus": "بونوس: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "نرخ پایه: ۱ دلار = ۱۰۰ اعتبار",
+        "buyMoreBonus": "بیشتر بخرید، بونوس بیشتری بگیرید!",
+        "neverExpire": "اعتبارها منقضی نمی‌شوند",
+        "instantDelivery": "تحویل فوری پس از پرداخت"
+      },
+      "actions": {
+        "processing": "در حال پردازش...",
+        "buyCredits": "خرید {credits} اعتبار"
+      }
+    },
+    "creditsHistory": {
+      "title": "تاریخچه تراکنش‌ها",
+      "subtitle": "تراکنش‌های اخیر اعتبار شما",
+      "actions": {
+        "retry": "تلاش دوباره",
+        "loading": "در حال بارگذاری...",
+        "loadMore": "بارگذاری بیشتر"
+      },
+      "table": {
+        "date": "تاریخ",
+        "type": "نوع",
+        "amount": "مقدار",
+        "status": "وضعیت"
+      },
+      "empty": "هیچ تاریخچه تراکنشی موجود نیست",
+      "types": {
+        "membershipMonthly": "اعتبار ماهانه عضویت",
+        "membershipInitial": "اعتبار اولیه عضویت",
+        "freeMonthly": "اعتبار ماهانه رایگان",
+        "purchase": "خرید اعتبار",
+        "platformReward": "پاداش پلتفرم",
+        "newUserBonus": "بونوس کاربر جدید",
+        "postReward": "پاداش پست",
+        "videoPostReward": "پاداش پست ویدئویی",
+        "refund": "بازپرداخت",
+        "balanceAdjustment": "تنظیم موجودی",
+        "videoGeneration": "تولید ویدئو",
+        "imageGeneration": "تولید تصویر",
+        "modelTraining": "آموزش مدل",
+        "audioGeneration": "تولید صدا",
+        "systemAdjustment": "تنظیم سیستم"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}س {m}د {s}ث",
+        "ms": "{m}د {s}ث",
+        "s": "{s}ث",
+        "expired": "منقضی شد"
+      },
+      "toast": {
+        "claimedTitle": "کوپن با موفقیت دریافت شد",
+        "claimedDescription": "کوپن به حساب شما اضافه شد، برای {hours} ساعت معتبر است",
+        "claimFailedTitle": "دریافت ناموفق",
+        "tryAgainLater": "لطفاً بعداً دوباره تلاش کنید",
+        "networkError": "خطای شبکه، لطفاً بعداً دوباره تلاش کنید"
+      }
+    },
+    "couponStatus": {
+      "title": "وضعیت کوپن",
+      "active": {
+        "annualTitle": "پیشنهاد سالانه فعال است",
+        "couponTitle": "کوپن فعال شد"
+      },
+      "fields": {
+        "claimed": "دریافت‌شده:",
+        "expires": "انقضا:",
+        "timeLeft": "زمان باقی‌مانده:",
+        "usedAt": "استفاده در:",
+        "discount": "تخفیف:"
+      },
+      "expired": "کوپن منقضی شد",
+      "used": {
+        "title": "کوپن استفاده شد"
+      },
+      "available": "{offer} در دسترس است",
+      "offer": {
+        "annualSpecial": "🎁 ویژه سالانه",
+        "newUserExclusive": "🎉 ویژه کاربران جدید",
+        "bestValue": "بهترین ارزش",
+        "limitedTime": "زمان محدود",
+        "claimYearly": "دریافت پیشنهاد ۶ ماه رایگان",
+        "claimMonthly": "دریافت کوپن اکنون"
+      },
+      "none": {
+        "title": "هیچ کوپنی موجود نیست",
+        "description": "{offer} فقط برای کاربران جدیدی است که هیچ‌وقت عضویت خریداری نکرده‌اند."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "محبوب",
+        "advanced": "پیشرفته",
+        "unlimited": "نامحدود"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "دریافت دسترسی نامحدود",
+        "getUnlimitedMobile": "نامحدود",
+        "subscribeDesktop": "شروع اشتراک",
+        "subscribeMobile": "اشتراک",
+        "claimAndSubscribeMobile": "دریافت و اشتراک",
+        "getDiscountMobile": "دریافت {discount}",
+        "claimDiscountAndSubscribeDesktop": "دریافت {discount} و اشتراک"
+      },
+      "toast": {
+        "loginSuccess": "ورود موفق! برای دریافت تخفیف و اشتراک، دوباره روی دکمه کلیک کنید.",
+        "claimCouponFailed": "دریافت کوپن ناموفق بود",
+        "tryAgainLater": "لطفاً بعداً دوباره تلاش کنید",
+        "couponClaimed": "کوپن با موفقیت دریافت شد!",
+        "failedToProcess": "پردازش ناموفق بود"
+      },
+      "usageEstimate": {
+        "title": "برآورد استفاده ماهانه",
+        "videos": "تا {count} ویدئو در ماه",
+        "images": "تا {count} تصویر در ماه",
+        "audios": "تا {count} صدا در ماه"
+      },
+      "unlimitedNotes": {
+        "title": "نکات استفاده",
+        "videoTasks": {
+          "title": "کارهای ویدئویی:",
+          "body": "می‌توانید همزمان تا ۵ کار را اجرا کنید. سقف ماهانه: ۳۰۰. پس از رسیدن به سقف ماهانه، حالت کند اعمال می‌شود: سقف روزانه ۳۰ ویدئو در هر ۲۴ ساعت و ۱۰ کار در هر ساعت."
+        },
+        "imageTasks": {
+          "title": "کارهای تصویری:",
+          "body": "تا ۳۰۰ کار در ماه. حالت سریع تا کار ۳۰۰ام (۵ در دقیقه) اعمال می‌شود. بعد از آن، حالت کند به ۱ کار در دقیقه محدود می‌کند."
+        },
+        "premiumModels": {
+          "title": "مدل‌های پریمیوم:",
+          "body": "برخی مدل‌های پرهزینه در پلن‌های UNLIMITED شامل نمی‌شوند. نسخه‌های non-fast از VEO 3.* و نسخه‌های Sora-2 /pro همچنان اعتبار مصرف می‌کنند."
+        }
+      },
+      "currentPlan": "طرح فعلی",
+      "yearlyEquivalent": "معادل <price>{value}</price>",
+      "yearlySavings": "در مقایسه با صورت‌حساب ماهانه <amount>{value}</amount> صرفه‌جویی کنید"
+    },
+    "features": {
+      "monthlyCredits": "{credits} اعتبار ماهانه",
+      "monthlyVideoCredits": "{credits} اعتبار ویدئویی ماهانه",
+      "fullAccessTopModels": "دسترسی کامل به {count} مدل برتر ویدئوی هوش مصنوعی",
+      "accessAllModels": "دسترسی به همه مدل‌ها",
+      "purchaseMoreRolloverVideoCredits": "خرید اعتبار ویدئویی بیشتر (قابل انتقال)",
+      "downloadNoWatermark": "دانلود ویدئو بدون واترمارک",
+      "commercialUse": "استفاده تجاری",
+      "fastGenerations": "تولید سریع",
+      "prioritySupport": "پشتیبانی اولویت‌دار",
+      "unlimitedVideoAndImageGeneration": "تولید نامحدود ویدئو و تصویر"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "باز کردن گزینه‌های صورتحساب"
+      },
+      "actions": {
+        "opening": "در حال باز کردن...",
+        "billingOptions": "گزینه‌های صورتحساب"
+      },
+      "confirm": {
+        "title": "مدیریت اشتراک شما",
+        "description": "آیا قصد لغو اشتراک را دارید؟ قبل از رفتن، دوست داریم بازخوردتان را بدانیم.",
+        "keep": "اشتراک را نگه دار",
+        "continueCancel": "ادامه برای لغو"
+      },
+      "toast": {
+        "openFailed": "باز کردن مدیریت اشتراک ناموفق بود",
+        "feedbackThanks": "از بازخورد شما متشکریم!",
+        "feedbackSaveFailed": "ذخیره بازخورد ناموفق بود، اما همچنان می‌توانید اشتراک را مدیریت کنید"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "بازخورد شما برای ما مهم است",
+        "subtitle": "با پاسخ به چند سؤال کوتاه به بهبود ما کمک کنید"
+      },
+      "common": {
+        "close": "بستن",
+        "other": "سایر",
+        "stepIndicator": "مرحله {current} از {total}"
+      },
+      "actions": {
+        "back": "بازگشت",
+        "next": "بعدی",
+        "submitting": "در حال ارسال...",
+        "complete": "تکمیل و ادامه"
+      },
+      "satisfaction": {
+        "1": "بسیار ناراضی",
+        "2": "ناراضی",
+        "3": "خنثی",
+        "4": "راضی",
+        "5": "بسیار راضی"
+      },
+      "steps": {
+        "1": {
+          "title": "چطور با ReelMind آشنا شدید؟",
+          "options": {
+            "social": "شبکه‌های اجتماعی (Twitter، Instagram و ...)",
+            "search": "موتور جستجو (Google، Bing و ...)",
+            "friend": "پیشنهاد دوست یا همکار",
+            "ads": "تبلیغات آنلاین",
+            "blog": "بلاگ فنی یا سایت بررسی"
+          }
+        },
+        "2": {
+          "title": "ReelMind را عمدتاً برای چه کاری استفاده می‌کنید؟",
+          "description": "همه موارد مرتبط با اهداف خلاقانه‌تان را انتخاب کنید.",
+          "options": {
+            "video": "ساخت ویدئو",
+            "image": "تولید تصویر",
+            "music": "ساخت موسیقی",
+            "marketing": "محتوای تبلیغاتی و بازاریابی",
+            "socialPosts": "پست‌های شبکه‌های اجتماعی",
+            "education": "محتوای آموزشی",
+            "personal": "پروژه‌های شخصی",
+            "exploring": "کاوش ایده‌های جدید"
+          }
+        },
+        "3": {
+          "title": "کدام گزینه بیشتر شما را توصیف می‌کند؟",
+          "options": {
+            "creator": "تولیدکننده محتوا",
+            "developer": "توسعه‌دهنده فریلنس",
+            "marketingPro": "متخصص بازاریابی",
+            "businessOwner": "صاحب کسب‌وکار",
+            "designer": "طراح",
+            "hobbyist": "علاقه‌مند",
+            "student": "دانشجو",
+            "artist": "هنرمند"
+          }
+        },
+        "4": {
+          "title": "تجربه‌تان را چطور ارزیابی می‌کنید؟",
+          "description": "لطفاً میزان رضایت کلی خود از ReelMind را امتیاز دهید"
+        },
+        "5": {
+          "title": "دلیل اصلی لغو اشتراک چه بود؟",
+          "options": {
+            "price": "بیش از حد گران",
+            "usage": "به اندازه کافی استفاده نکردم",
+            "features": "کمبود ویژگی‌های کلیدی",
+            "quality": "کیفیت نتایج تولیدشده",
+            "bugs": "مشکلات فنی یا باگ‌ها",
+            "alternative": "جایگزین بهتری پیدا کردم"
+          }
+        },
+        "6": {
+          "title": "بازخورد شما برای ما ارزشمند است",
+          "description": "نظر شما کمک می‌کند ReelMind را برای همه بهتر کنیم.",
+          "placeholder": "چه چیزی را می‌توانیم بهتر کنیم؟ ویژگی‌ای هست که دوست دارید اضافه شود؟ (اختیاری)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "درخواست ارسال شد. به زودی با شما تماس می‌گیریم.",
+        "submitFailed": "ارسال درخواست ناموفق بود"
+      },
+      "card": {
+        "title": "پلن سازمانی و سفارشی",
+        "subtitle": "قیمت‌گذاری سفارشی، فاکتور و پشتیبانی",
+        "description": "به فاکتور، پشتیبانی انطباق یا ورک‌فلو سفارشی نیاز دارید؟ نیازمندی‌ها را با ما به اشتراک بگذارید تا بهترین گزینه را پیشنهاد دهیم.",
+        "toggle": {
+          "hide": "پنهان کردن فرم",
+          "show": "تماس با فروش"
+        },
+        "highlights": {
+          "sso": "SSO و انطباق",
+          "invoices": "فاکتور و سفارش خرید",
+          "support": "پشتیبانی اولویت‌دار",
+          "workflows": "ورک‌فلوهای سفارشی"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "نوع تماس",
+          "placeholder": "نوع تماس را انتخاب کنید",
+          "options": {
+            "business": "کسب‌وکار",
+            "individual": "شخصی"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "برآورد استفاده ماهانه (USD)",
+          "placeholder": "یک برآورد انتخاب کنید",
+          "options": {
+            "0to1000": "0 تا 1000 دلار",
+            "1000to5000": "1000 تا 5000 دلار",
+            "5000to10000": "5000 تا 10000 دلار",
+            "10000plus": "10000 دلار +",
+            "custom": "مقدار سفارشی (USD)"
+          },
+          "custom": {
+            "label": "استفاده ماهانه سفارشی (USD)",
+            "placeholder": "یک مقدار USD وارد کنید"
+          }
+        },
+        "firstName": {
+          "label": "نام",
+          "placeholder": "جین"
+        },
+        "lastName": {
+          "label": "نام خانوادگی",
+          "placeholder": "گوزن"
+        },
+        "email": {
+          "label": "ایمیل",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "وب‌سایت",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "درباره پروژه و نیازمندی‌های خود بگویید",
+          "placeholder": "چه چیزی می‌سازید؟ چه ورک‌فلوها، نیازهای انطباق و حجم مورد انتظار دارید؟"
+        },
+        "actions": {
+          "cancel": "لغو",
+          "submitting": "در حال ارسال...",
+          "submit": "ارسال"
+        },
+        "validation": {
+          "firstNameRequired": "نام الزامی است",
+          "lastNameRequired": "نام خانوادگی الزامی است",
+          "emailInvalid": "ایمیل باید معتبر باشد",
+          "websiteInvalid": "وب‌سایت باید یک URL معتبر باشد",
+          "monthlyEstimateRequired": "برآورد ماهانه الزامی است",
+          "monthlyEstimateEnter": "لطفاً برآورد ماهانه را وارد کنید",
+          "monthlyEstimateMin": "برآورد ماهانه باید >= 0 باشد",
+          "requirementsMin": "لطفاً جزئیات بیشتری ارائه دهید (حداقل {count} کاراکتر)",
+          "maxChars": "حداکثر {count} کاراکتر"
+        }
+      }
+    },
+    "faq": {
+      "title": "سؤالات متداول",
+      "items": {
+        "proBenefits": {
+          "question": "مزایای عضویت PRO چیست؟",
+          "answer": "عضویت PRO هر ماه ۱۰۰۰ اعتبار به شما می‌دهد (ارزش $10)، دسترسی اولویت‌دار به قابلیت‌های جدید، تولید ویدئوی سریع‌تر، گزینه‌های ویرایش پیشرفته و پشتیبانی اولویت‌دار."
+        },
+        "cancelAnytime": {
+          "question": "می‌توانم اشتراک را هر زمان لغو کنم؟",
+          "answer": "بله، می‌توانید هر زمان اشتراک را لغو کنید. مزایای شما تا پایان دوره فعلی صورتحساب ادامه خواهد داشت.",
+          "discountNote": {
+            "title": "نکته ویژه برای اشتراک‌های تخفیف‌دار:",
+            "body": "اگر با کوپن تخفیف مشترک شده‌اید و در ماه اول اعتبار بیشتری از مقدار تخفیف‌دار مصرف کرده‌اید، فقط پس از پردازش پرداخت ماه دوم می‌توانید اشتراک را لغو کنید. این سیاست برای استفاده منصفانه از پیشنهادهای تبلیغاتی است."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "آیا بین اشتراک ماهانه و سالانه تفاوتی هست؟",
+          "answer": "بله، اشتراک سالانه نسبت به ماهانه تخفیف قابل توجهی دارد. با انتخاب پرداخت سالانه حدود ۲۰٪ صرفه‌جویی می‌کنید."
+        },
+        "whatAreCredits": {
+          "question": "اعتبارهای ReelMind چیست؟",
+          "answer": "اعتبارهای ReelMind ارز مجازی پلتفرم ما برای تولید ویدئو و تصویر با هوش مصنوعی هستند. ویژگی‌های مختلف، مقدار متفاوتی اعتبار مصرف می‌کنند. مثلاً تولید یک ویدئوی استاندارد (480p) ۵۰ اعتبار و یک ویدئوی HD (720p) ۸۰ اعتبار هزینه دارد."
+        },
+        "earnCredits": {
+          "question": "چطور می‌توانم اعتبار کسب کنم؟",
+          "intro": "از راه‌های مختلف می‌توانید اعتبار کسب کنید:",
+          "items": {
+            "membership": "از طریق پلن‌های عضویت (اعضای PRO ماهانه ۱۰۰۰ اعتبار می‌گیرند، اعضای MAX ۲۰۰۰)",
+            "purchase": "با خرید بسته‌های اعتبار",
+            "newUser": "کاربران جدید هنگام ثبت‌نام ۱۰۰ اعتبار رایگان دریافت می‌کنند",
+            "posting": "با انتشار محتوا در ReelMind (۵۰ اعتبار در روز)",
+            "promotions": "پروموشن‌ها و پاداش‌های ویژه"
+          }
+        },
+        "expire": {
+          "question": "آیا اعتبارها منقضی می‌شوند؟",
+          "answer": "اعتبارهایی که مستقیماً خریداری می‌کنید منقضی نمی‌شوند و تا زمان مصرف در حساب شما باقی می‌مانند. اعتبارهای ماهانه اعطایی در ابتدای هر ماه ریست می‌شوند. اعتبار استفاده‌نشده از ماه‌های قبل منتقل نمی‌شود."
+        },
+        "refund": {
+          "question": "آیا برای اعتبار استفاده‌نشده امکان بازپرداخت وجود دارد؟",
+          "answer": "ما برای اعتبارهای خریداری‌شده بازپرداخت ارائه نمی‌دهیم. اما اگر مشکل فنی باعث شده نتوانید اعتبارها را درست استفاده کنید، با تیم پشتیبانی تماس بگیرید تا رسیدگی کنیم."
+        },
+        "membershipVsCredits": {
+          "question": "تفاوت عضویت و اعتبار چیست؟",
+          "answer": "عضویت‌ها علاوه بر سهمیه ماهانه اعتبار، مزایایی مثل پردازش اولویت‌دار و دسترسی به قابلیت‌های اختصاصی ارائه می‌کنند. اعتبارها را می‌توان جداگانه بدون عضویت خرید و هنگام تولید محتوا مصرف کرد. برای استفاده منظم عضویت را انتخاب کنید یا برای استفاده گاه‌به‌گاه اعتبار بخرید."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. تمامی حقوق محفوظ است."
+    }
+  },
+  "Search": {
+    "placeholder": "جستجو...",
+    "noResultsFound": "نتیجه‌ای پیدا نشد",
+    "viewAllResults": "مشاهده همه نتایج",
+    "sections": {
+      "posts": "پست‌ها",
+      "users": "کاربران"
+    },
+    "tabs": {
+      "posts": "پست‌ها",
+      "users": "کاربران"
+    },
+    "unknownUser": "ناشناس",
+    "loading": "در حال بارگذاری...",
+    "searching": "در حال جستجو...",
+    "loadingMore": "در حال بارگذاری بیشتر...",
+    "tryAgain": "تلاش دوباره",
+    "noPostsFound": "هیچ پستی پیدا نشد",
+    "noUsersFound": "هیچ کاربری پیدا نشد",
+    "empty": {
+      "title": "جستجو",
+      "hint": "برای یافتن محتوا، کلیدواژه وارد کنید"
+    },
+    "errors": {
+      "searchFailed": "جستجو ناموفق بود"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "پورسانت مادام‌العمر - ۲۰٪ برای همیشه"
+    },
+    "hero": {
+      "lifetime": "مادام‌العمر",
+      "passiveIncome": "درآمد غیرفعال",
+      "subtitle": {
+        "prefix": "کسب",
+        "suffix": "پورسانت برای همیشه"
+      }
+    },
+    "actions": {
+      "getStarted": "شروع کنید",
+      "viewDashboard": "مشاهده داشبورد",
+      "signInFirst": "لطفاً ابتدا وارد شوید"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "پلتفرم API ReelMind",
+      "actions": {
+        "modelsPricing": "مدل‌ها و قیمت‌گذاری",
+        "viewDocumentation": "مشاهده مستندات"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "کلید API با موفقیت ایجاد شد",
+      "apiKeyCreateFailed": "ایجاد کلید API ناموفق بود",
+      "apiKeyDeleted": "کلید API با موفقیت حذف شد",
+      "apiKeyDeletedDescription": "کلید API حذف شد",
+      "apiKeyDeleteFailed": "حذف کلید API ناموفق بود",
+      "apiKeyCopied": "کلید API در کلیپ‌بورد کپی شد",
+      "modelIdCopied": "شناسه مدل در کلیپ‌بورد کپی شد"
+    },
+    "accountCard": {
+      "notLoggedIn": "وارد نشده‌اید",
+      "loadingKeys": "در حال بارگذاری کلیدهای API...",
+      "keysAvailable": "{count} کلید API {count, plural, one {در دسترس است} other {در دسترس هستند}}",
+      "createKey": "ایجاد کلید API",
+      "helpPrefix": "اگر به کمک نیاز دارید، لطفاً ",
+      "apiDocumentation": "مستندات API"
+    },
+    "stats": {
+      "plan": "پلن",
+      "resetDate": "تاریخ ریست",
+      "credits": "اعتبار",
+      "tasks": "کارها",
+      "loading": "در حال بارگذاری...",
+      "freePlan": "پلن رایگان",
+      "na": "نامشخص",
+      "buyCredits": "خرید اعتبار"
+    },
+    "apiKeys": {
+      "title": "مدیریت کلیدهای API",
+      "description": "کلیدهای API خود را برای دسترسی به API تولید ویدئوی ReelMind مدیریت کنید",
+      "createNew": "ایجاد کلید API جدید",
+      "loading": "در حال بارگذاری کلیدهای API...",
+      "label": "کلید API",
+      "created": "ایجاد شده در {date}",
+      "active": "فعال",
+      "inactive": "غیرفعال",
+      "show": "نمایش کلید API",
+      "hide": "پنهان کردن کلید API",
+      "copy": "کپی کلید API",
+      "totalCalls": "کل تماس‌ها",
+      "creditsUsed": "اعتبار مصرف‌شده",
+      "empty": {
+        "title": "هیچ کلید API‌ای وجود ندارد",
+        "description": "شما هنوز هیچ کلید API‌ای ایجاد نکرده‌اید. برای شروع استفاده از API ReelMind، اولین کلید API خود را ایجاد کنید.",
+        "createFirst": "ایجاد اولین کلید API"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "مدل‌ها و قیمت‌گذاری",
+      "apiDocumentation": "مستندات API"
+    },
+    "documentation": {
+      "title": "مستندات API",
+      "authentication": "احراز هویت",
+      "authenticationIntro": "همه درخواست‌های API نیاز به احراز هویت با کلید API دارند. کلید API شما یک UUID است که می‌توانید آن را در بخش مدیریت کلیدهای API در پایین ایجاد کنید.",
+      "authenticationMethods": "روش‌های احراز هویت",
+      "exampleRequest": "نمونه درخواست",
+      "important": "مهم",
+      "apiEndpoints": "اندپوینت‌های API",
+      "responseFormat": "فرمت پاسخ",
+      "responseFormatIntro": "فرمت پاسخ وظیفه تولید ویدئو:",
+      "parameters": "پارامترها",
+      "table": {
+        "name": "نام",
+        "type": "نوع",
+        "required": "الزامی",
+        "description": "توضیحات"
+      },
+      "yes": "بله",
+      "no": "خیر"
+    },
+    "pricing": {
+      "title": "قیمت‌گذاری API و مدل‌ها",
+      "intro": "مدل‌های AI موجود و قیمت‌گذاری آن‌ها را برای APIهای تولید ویدئو و تصویر بررسی کنید",
+      "loading": "در حال بارگذاری مدل‌های موجود...",
+      "available": "در دسترس",
+      "unavailable": "ناموجود",
+      "credits": "{credits} اعتبار",
+      "basePricePerImage": "قیمت پایه (برای هر تصویر)",
+      "basePrice5sVideo": "قیمت پایه (ویدئوی ۵ ثانیه‌ای)",
+      "creditsPerSecond": "+{credits} اعتبار/ثانیه",
+      "modelId": "شناسه مدل",
+      "copyModelId": "کپی شناسه مدل",
+      "noModels": {
+        "title": "هیچ مدلی در دسترس نیست",
+        "description": "فعلاً هیچ مدل AI برای دسترسی API موجود نیست. لطفاً بعداً دوباره بررسی کنید."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "متن به ویدئو",
+      "imageToVideo": "تصویر به ویدئو",
+      "videoToVideo": "ویدئو به ویدئو",
+      "textToImage": "متن به تصویر",
+      "imageToImage": "تصویر به تصویر"
+    },
+    "deleteModal": {
+      "title": "تأیید حذف",
+      "description": "آیا مطمئن هستید می‌خواهید این کلید API را حذف کنید؟ این اقدام قابل بازگشت نیست.",
+      "keyName": "نام کلید: {name}",
+      "createdOn": "ایجاد شده در {date}",
+      "cancel": "لغو",
+      "deleting": "در حال حذف...",
+      "deleteKey": "حذف کلید API"
+    },
+    "modelParameters": {
+      "title": "پارامترهای مدل",
+      "required": "الزامی",
+      "default": "پیش‌فرض: {value}",
+      "labels": {
+        "prompt": "پرامپت",
+        "guidance_scale": "مقیاس راهنمایی",
+        "aspect_ratio": "نسبت تصویر",
+        "seed": "بذر",
+        "image_url": "URL تصویر",
+        "duration": "مدت",
+        "resolution": "رزولوشن",
+        "num_inference_steps": "گام‌های استنتاج",
+        "cfg_scale": "مقیاس CFG"
+      },
+      "flux": {
+        "promptDescription": "پرامپت متنی که تصویر تولیدی را توصیف می‌کند",
+        "guidanceScaleDescription": "کنترل می‌کند تصویر چقدر به پرامپت پایبند باشد",
+        "aspectRatioDescription": "نسبت تصویرِ تصویر تولیدشده",
+        "seedDescription": "Seed تصادفی برای تولید قابل تکرار",
+        "imageUrlDescription": "URL تصویر ورودی برای تولید تصویر به تصویر"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "متن به تصویر · ویرایش تصویر",
+      "title": "FLUX / نانو موز / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - کارگردان عامل هوش مصنوعی شماره ۱ جهان",
+      "description": "کارگردان عامل هوش مصنوعی شماره ۱ جهان"
+    },
+    "page": {
+      "loading": "در حال بارگذاری کارگردان هوش مصنوعی Nolan..."
+    },
+    "heroBanner": {
+      "label": "فناوری انقلابی هوش مصنوعی",
+      "name": "نولان",
+      "worldFirst": "اولین در جهان",
+      "aiAgentDirector": "کارگردان عامل هوش مصنوعی"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "در انتظار",
+        "queued": "در صف",
+        "processing": "پردازش",
+        "completed": "تکمیل شد",
+        "failed": "شکست خورد",
+        "canceled": "لغو شد"
+      },
+      "model": {
+        "unknown": "مدل ناشناس",
+        "unnamed": "بی نام"
+      },
+      "errors": {
+        "fetchListTitle": "بارگیری وظایف انجام نشد",
+        "unknown": "خطای ناشناخته",
+        "fetchDetails": "جزئیات کار واکشی نشد",
+        "downloadFailed": "دانلود انجام نشد",
+        "retryFailed": "تلاش مجدد ناموفق بود"
+      },
+      "details": {
+        "videoTitle": "جزئیات کار ویدیویی",
+        "imageTitle": "جزئیات کار تصویر",
+        "videoPreview": "پیش نمایش ویدیو",
+        "hideVideo": "مخفی کردن ویدیو",
+        "showVideo": "نمایش ویدیو",
+        "downloadVideo": "دانلود ویدیو",
+        "browserNoVideoSupport": "مرورگر شما از پخش ویدئو پشتیبانی نمی کند.",
+        "labels": {
+          "duration": "مدت",
+          "fileSize": "اندازه فایل",
+          "format": "قالب",
+          "prompt": "اعلان",
+          "model": "مدل",
+          "ratio": "نسبت تصویر",
+          "resolution": "قطعنامه",
+          "taskId": "شناسه وظیفه",
+          "user": "کاربر",
+          "status": "وضعیت",
+          "createdTime": "زمان ایجاد شد",
+          "startedTime": "زمان شروع",
+          "completedTime": "زمان تکمیل شده",
+          "generationModel": "مدل نسل",
+          "priority": "اولویت",
+          "requestId": "شناسه درخواست",
+          "lastActivity": "آخرین فعالیت"
+        },
+        "videoPreviewUnavailable": "پیش نمایش ویدیو در دسترس نیست",
+        "videoNoOutput": "کار تکمیل شد اما خروجی ویدیو وجود ندارد",
+        "videoNotCompleted": "کار هنوز تکمیل نشده است",
+        "generationParams": "پارامترهای تولید",
+        "basicInfo": "اطلاعات پایه",
+        "timeInfo": "اطلاعات زمان",
+        "detailData": "داده های تفصیلی",
+        "inputParams": "پارامترهای ورودی",
+        "outputResult": "نتیجه خروجی",
+        "errorLog": "گزارش خطا",
+        "retrying": "تلاش مجدد...",
+        "retryTask": "Task را دوباره امتحان کنید",
+        "generatedImage": "تصویر تولید شده",
+        "close": "بستن"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "مدیریت بازخورد کاربر",
+        "subtitle": "بازخورد و شکایات ارسال شده توسط کاربر را مدیریت کنید"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "واکشی انجام نشد",
+          "fetchFailedDescription": "واکشی داده های بازخورد ممکن نیست: {error}",
+          "unknown": "خطای ناشناخته"
+        },
+        "type": {
+          "bug": "گزارش اشکال",
+          "suggestion": "پیشنهاد",
+          "other": "دیگر"
+        },
+        "loading": "در حال بارگیری...",
+        "filter": {
+          "label": "نوع بازخورد",
+          "all": "همه انواع"
+        },
+        "total": "مجموع: {total} مورد بازخورد",
+        "empty": "هیچ داده بازخوردی وجود ندارد",
+        "headers": {
+          "userInfo": "اطلاعات کاربر",
+          "type": "تایپ کنید",
+          "subject": "موضوع",
+          "submittedAt": "ارسال شد",
+          "actions": "اقدامات"
+        },
+        "user": {
+          "unknown": "کاربر ناشناس",
+          "noEmail": "بدون ایمیل"
+        },
+        "actions": {
+          "collapse": "فرو ریختن",
+          "viewDetails": "مشاهده جزئیات"
+        },
+        "contentLabel": "بازخورد:",
+        "pagination": {
+          "previous": "قبلی",
+          "next": "بعدی"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "لطفا کلمه کلیدی جستجو را وارد کنید.",
+        "noUsersFound": "کاربر منطبقی پیدا نشد",
+        "searchFailed": "جستجوی کاربران انجام نشد.",
+        "userRequired": "لطفا یک کاربر را انتخاب کنید یا یک شناسه کاربری وارد کنید.",
+        "amountInvalid": "لطفاً یک مقدار اعتبار معتبر وارد کنید.",
+        "descriptionRequired": "لطفاً توضیحات کمک هزینه را وارد کنید.",
+        "grantFailed": "اعطای اعتبار ناموفق بود."
+      },
+      "success": {
+        "granted": "اعتبارات با موفقیت اعطا شد."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "نظرسنجی ها واکشی نشد.",
+        "fetchStats": "واکشی آمار نظرسنجی انجام نشد."
+      }
+    },
+    "memberships": {
+      "title": "مدیریت اشتراک کاربر",
+      "search": {
+        "placeholder": "جستجوی شناسه کاربر، ایمیل یا نام مستعار...",
+        "button": "جستجو کنید"
+      },
+      "stats": {
+        "total": "کل اشتراک ها",
+        "yearly": "اعضای سالانه"
+      },
+      "list": {
+        "title": "لیست اشتراک"
+      },
+      "loading": "در حال بارگیری...",
+      "actions": {
+        "retry": "دوباره امتحان کنید"
+      },
+      "empty": "هیچ داده اشتراکی وجود ندارد",
+      "table": {
+        "headers": {
+          "userInfo": "اطلاعات کاربر",
+          "plan": "برنامه ریزی کنید",
+          "billingCycle": "چرخه صورتحساب",
+          "status": "وضعیت",
+          "credits": "مانده اعتباری",
+          "videoTasks": "وظایف ویدیویی",
+          "imageTasks": "وظایف تصویر",
+          "createdAt": "زمان ایجاد شد",
+          "expiresAt": "زمان انقضا"
+        },
+        "user": {
+          "unknown": "ناشناس"
+        },
+        "status": {
+          "active": "فعال",
+          "inactive": "غیر فعال",
+          "cancelAtPeriodEnd": "در پایان دوره لغو کنید"
+        },
+        "creditsUnit": "اعتبارات",
+        "flagged": "پرچم گذاری شده است",
+        "tasksUnit": "وظایف",
+        "never": "هرگز"
+      },
+      "pagination": {
+        "summary": "نمایش {start} تا {end} از سوابق {total}",
+        "previous": "قبلی",
+        "next": "بعدی",
+        "page": "صفحه {currentPage} از {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "پست حذف نشد لطفا دوباره امتحان کنید."
+      }
+    }
+  },
+  "Common": {
+    "language": "زبان",
+    "onlyEnglish": "در حال حاضر فقط انگلیسی موجود است.",
+    "onlySupportedPages": "زبان‌های اضافی در حال حاضر فقط در صفحات صفحه اصلی، کاوش، جستجو، ایجاد، لگو، موسیقی، عضویت، تماس، کاربر، اشتراک‌گذاری، مدل‌ها، جلوه‌ها و وبلاگ موجود است.",
+    "languages": {
+      "en": "انگلیسی",
+      "zh-CN": "چینی (ساده شده)"
+    },
+    "actions": {
+      "viewAll": "مشاهده همه",
+      "cancel": "لغو کنید",
+      "recreate": "بازآفرینی کنید",
+      "download": "دانلود کنید",
+      "downloading": "در حال دانلود...",
+      "showMore": "نمایش بیشتر",
+      "showLess": "کمتر نشان دادن"
+    },
+    "aria": {
+      "scrollRight": "به سمت راست پیمایش کنید",
+      "search": "جستجو کنید"
+    },
+    "search": {
+      "placeholder": "جستجوی پست ها و کاربران ..."
+    },
+    "share": {
+      "button": "به اشتراک بگذارید",
+      "toast": {
+        "copiedTitle": "کپی شده",
+        "copiedMessage": "پیوند در کلیپ بورد کپی شد",
+        "failedTitle": "کپی نشد",
+        "failedMessage": "پیوند در کلیپ بورد کپی نشد"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "مدیر هوش مصنوعی نولان",
+      "earlyAccess": "دسترسی زودهنگام",
+      "justOneCredit": "فقط ۱ اعتبار"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "حالت نور",
+        "darkMode": "حالت تاریک",
+        "switchToLightMode": "به حالت نور تغییر دهید",
+        "switchToDarkMode": "به حالت تاریک بروید"
+      },
+      "profile": {
+        "myProfile": "نمایه من",
+        "goToMyProfile": "برو به پروفایل من"
+      },
+      "menu": {
+        "openMenu": "منو را باز کنید",
+        "close": "بستن"
+      },
+      "membership": {
+        "title": "عضویت",
+        "tapToViewPlans": "برای مشاهده طرح ها ضربه بزنید",
+        "upgrade": "ارتقا دهید",
+        "plans": {
+          "free": "رایگان",
+          "pro": "حرفه ای",
+          "max": "حداکثر",
+          "unlimited": "نامحدود"
+        }
+      },
+      "actions": {
+        "pricing": "قیمت گذاری",
+        "signIn": "وارد شوید"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. تمامی حقوق محفوظ است."
+    },
+    "video": {
+      "labels": {
+        "prompt": "اعلان",
+        "model": "مدل",
+        "ratio": "نسبت",
+        "guidance": "راهنمایی",
+        "steps": "مراحل",
+        "seed": "بذر",
+        "definition": "تعریف"
+      },
+      "values": {
+        "unknownModel": "مدل ناشناخته",
+        "random": "تصادفی"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "صفحه بندی",
+        "previous": "برو به صفحه قبل",
+        "next": "به صفحه بعد بروید"
+      },
+      "previous": "قبلی",
+      "next": "بعدی",
+      "more": "صفحات بیشتر"
+    },
+    "concurrentLimit": {
+      "title": "به حد مجاز کار رسیده است",
+      "defaultMessage": "کاربران رایگان می توانند تنها یک وظیفه تولید ویدیو را در یک زمان اجرا کنند.",
+      "currentStatus": "وضعیت فعلی",
+      "currentPlan": "طرح فعلی",
+      "premiumBenefits": "مزایای حق بیمه",
+      "plans": {
+        "unlimited": "طرح نامحدود",
+        "free": "رایگان",
+        "unlimitedTasks": "وظایف نامحدود"
+      },
+      "unlimited": {
+        "maxTasks": "حداکثر 3 کار همزمان",
+        "priority": "پردازش با اولویت بالا",
+        "features": "تمام ویژگی های برتر",
+        "waitNote": "لطفاً قبل از ارسال کارهای جدید منتظر بمانید تا برخی از کارهای فعلی شما تکمیل شود."
+      },
+      "free": {
+        "maxTasks": "1 کار همزمان",
+        "priority": "اولویت استاندارد",
+        "features": "ویژگی های اساسی"
+      },
+      "upgrade": {
+        "maxTasks": "حداکثر 5 کار همزمان",
+        "priority": "پردازش با اولویت بالاتر",
+        "features": "دسترسی به تمامی مدل ها"
+      },
+      "actions": {
+        "acknowledge": "متوجه شدم",
+        "upgrade": "ارتقا دهید",
+        "loading": "در حال بارگیری..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "آپلود محلی",
+      "reelmind": "ReelMind تولید شد"
+    },
+    "reelmind": {
+      "description": "یک ویدیوی تولید شده در ReelMind را انتخاب کنید.",
+      "browse": "ویدیوهای ReelMind را مرور کنید"
+    },
+    "title": {
+      "placeholder": "عنوان اضافه کنید..."
+    },
+    "tags": {
+      "title": "برچسب ها",
+      "empty": "برای دسته بندی بهتر ویدیوی خود برچسب هایی اضافه کنید.",
+      "placeholder": "یک برچسب اضافه کنید (برای تأیید اینتر را فشار دهید)",
+      "count": "{count}/{limit}",
+      "helper": "تا برچسب {limit}، هر کدام {max} نویسه."
+    },
+    "description": {
+      "placeholder": "اضافه کردن توضیحات..."
+    },
+    "generationType": {
+      "title": "نوع نسل",
+      "txt2video": "متن به ویدیو",
+      "txt2videoDescription": "از یک درخواست متنی ایجاد کنید.",
+      "img2video": "تصویر به ویدیو",
+      "img2videoDescription": "از یک تصویر مرجع تولید کنید."
+    },
+    "prompts": {
+      "promptTitle": "اعلان",
+      "promptPlaceholder": "اعلان مورد استفاده برای تولید این ویدیو را وارد کنید...",
+      "negativeTitle": "اعلان منفی",
+      "negativePlaceholder": "اعلان منفی را وارد کنید..."
+    },
+    "modelResources": {
+      "title": "منابع مدل",
+      "placeholder": "منابع مدل مورد استفاده را فهرست کنید، به عنوان مثال. مدل‌ها، LoRAها، جاسازی‌ها..."
+    },
+    "aigc": {
+      "guidanceScale": "مقیاس راهنمایی",
+      "guidanceScalePlaceholder": "به عنوان مثال 7.5",
+      "steps": "مراحل",
+      "stepsPlaceholder": "به عنوان مثال 30",
+      "seed": "بذر",
+      "seedPlaceholder": "به عنوان مثال 1234567890"
+    },
+    "tools": {
+      "title": "ابزارهای نسل"
+    },
+    "videoPreview": {
+      "uploadComplete": "آپلود کامل شد",
+      "uploading": "در حال آپلود...",
+      "clickToUpload": "برای آپلود ویدیو کلیک کنید",
+      "remove": "ویدیو را حذف کنید"
+    },
+    "actions": {
+      "publish": "منتشر کنید",
+      "publishing": "در حال انتشار...",
+      "back": "برگشت"
+    },
+    "errors": {
+      "tagEmpty": "برچسب نمی تواند خالی باشد.",
+      "tagTooLong": "برچسب نمی تواند بیش از {max} نویسه باشد.",
+      "tagExists": "این برچسب از قبل وجود دارد.",
+      "tagLimit": "می توانید تا {limit} برچسب اضافه کنید.",
+      "authRequired": "لطفا برای آپلود وارد شوید",
+      "uploadFailed": "آپلود انجام نشد. لطفا دوباره امتحان کنید.",
+      "uploadParamsFailed": "پارامترهای آپلود واکشی نشد.",
+      "fileAddFailed": "فایل اضافه نشد. لطفا دوباره امتحان کنید."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "وبلاگ - ReelMind",
+      "description": "نکات، آموزش‌ها و بینش‌هایی درباره ایجاد محتوای هوش مصنوعی، تولید ویدیو و آخرین ویژگی‌های ReelMind کشف کنید."
+    },
+    "page": {
+      "title": "وبلاگ",
+      "empty": "هیچ پست وبلاگی یافت نشد"
+    },
+    "error": {
+      "title": "خطا در بارگیری پست ها",
+      "description": "هنگام بارگیری پست‌های وبلاگ مشکلی پیش آمد.",
+      "retry": "دوباره امتحان کنید"
+    },
+    "notFound": {
+      "title": "صفحه پیدا نشد",
+      "description": "صفحه وبلاگی که درخواست کردید وجود ندارد."
+    },
+    "feed": {
+      "end": "به آخر رسیدی",
+      "retry": "دوباره امتحان کنید",
+      "loadFailed": "پست های وبلاگ بارگیری نشد"
+    },
+    "topFeed": {
+      "refresh": "تازه کردن",
+      "exploreMore": "سرگرمی بیشتر کاوش کنید",
+      "loadFailed": "پست‌های تصادفی بارگیری نشد"
+    },
+    "floatingChat": {
+      "title": "از هوش مصنوعی نولان بپرسید",
+      "subtitle": "شماره 1 مدیر عامل هوش مصنوعی!",
+      "placeholder": "درباره این مقاله بپرسید یا ایده های سینمایی خود را به اشتراک بگذارید...",
+      "cta": "برای نولان بفرست"
+    },
+    "featureCard": {
+      "label": "مدل های ویدیویی",
+      "title": "Reelmind ابزارهای قدرتمندی را برای زنده کردن ایده های شما ارائه می دهد.",
+      "subtitle": "با 101 مدل هوش مصنوعی ایده های خود را به تصاویری خیره کننده تبدیل کنید",
+      "cta": "اکنون امتحان کنید"
+    },
+    "breadcrumbs": {
+      "home": "صفحه اصلی"
+    },
+    "article": {
+      "notFoundTitle": "مقاله یافت نشد",
+      "notFoundDescription": "مقاله درخواستی یافت نشد."
+    }
+  },
+  "Favorites": {
+    "title": "موارد دلخواه من",
+    "subtitle": "در اینجا می توانید ویدیوها و مدل های مورد علاقه خود را مدیریت کنید",
+    "tabs": {
+      "video": "ویدئو",
+      "model": "مدل"
+    },
+    "empty": {
+      "title": "شما هنوز مورد علاقه ای ندارید"
+    },
+    "alert": {
+      "title": "خطا",
+      "retry": "دوباره امتحان کنید",
+      "loadFailed": "بارگیری موارد دلخواه ممکن نیست. لطفا دوباره امتحان کنید.",
+      "removeFailed": "مورد علاقه حذف نشد. لطفا دوباره امتحان کنید."
+    },
+    "card": {
+      "video": "ویدئو",
+      "model": "مدل"
+    },
+    "button": {
+      "favorite": "مورد علاقه",
+      "favorited": "مورد علاقه"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "به ReelMind خوش آمدید",
+      "subtitle": "وارد شوید یا حساب سازنده خود را ایجاد کنید",
+      "continueWithGoogle": "ادامه با Google",
+      "orContinueWithEmail": "یا ادامه با ایمیل",
+      "emailLabel": "ایمیل",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "آدرس ایمیل",
+      "passwordLabel": "گذرواژه",
+      "passwordPlaceholder": "••••••••",
+      "show": "نمایش",
+      "hide": "پنهان",
+      "inviteCodeLabelOptional": "کد دعوت (اختیاری)",
+      "inviteCodePlaceholder": "کد را وارد کنید",
+      "invitedBy": "دعوت‌شده توسط <name>{value}</name>",
+      "continue": "ادامه",
+      "signIn": "ورود",
+      "createAccount": "ایجاد حساب",
+      "switchToSignIn": "حساب دارید؟ وارد شوید",
+      "switchToSignUp": "حساب ندارید؟ ثبت‌نام کنید",
+      "pageSubtitleCreate": "حساب خود را ایجاد کنید",
+      "pageSubtitleSignIn": "به حساب خود وارد شوید",
+      "termsLine": "با ادامه، با <terms>شرایط</terms> و <privacy>سیاست حریم خصوصی</privacy> ما موافقت می‌کنید"
+    },
+    "verifyEmail": {
+      "title": "ایمیل خود را تأیید کنید",
+      "sentLinkTo": "لینک تأیید را به این ایمیل فرستادیم",
+      "checkInbox": "لطفاً صندوق ورودی را بررسی کنید و برای ادامه روی لینک کلیک کنید.",
+      "understand": "متوجه شدم",
+      "useDifferentEmail": "استفاده از ایمیل دیگر"
+    },
+    "errors": {
+      "invalidEmail": "آدرس ایمیل نامعتبر است",
+      "suspiciousEmail": "این ایمیل مشکوک به نظر می‌رسد",
+      "verifyBeforeLogin": "لطفاً قبل از ورود ایمیل خود را تأیید کنید",
+      "operationFailed": "عملیات ناموفق بود، دوباره تلاش کنید",
+      "googleFailed": "ورود با Google ناموفق بود، دوباره تلاش کنید",
+      "checkEmailConfirmation": "برای لینک تأیید، ایمیل خود را بررسی کنید!"
+    },
+    "brand": {
+      "headlineLine1": "قرقره سازان",
+      "headlineLine2": "خوش آمدید",
+      "taglineLine1": "ذهن‌تان را باز کنید.",
+      "taglineLine2": "بگذارید هوش مصنوعی آن را به تصویر بکشد.",
+      "cta": "به جامعه سازندگان ما بپیوندید و خلق‌کردن را شروع کنید."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "اضافه کردن تصویر",
+      "addMoreReferences": "منابع بیشتری اضافه کنید",
+      "auto": "خودکار",
+      "back": "برگشت",
+      "character": "شخصیت",
+      "clear": "پاک کردن",
+      "clearAll": "همه را پاک کنید",
+      "close": "بستن",
+      "createPack": "بسته ایجاد کنید",
+      "downloadCount": "دانلود {current}/{total}",
+      "dropOrUploadPhoto": "عکس را رها یا آپلود کنید",
+      "goToLibrary": "به کتابخانه بروید",
+      "high": "بالا",
+      "history": "تاریخچه",
+      "inQueue": "در صف",
+      "info": "اطلاعات",
+      "instadump": "Instadump",
+      "manual": "دستی",
+      "new": "جدید",
+      "next": "بعدی",
+      "open": "باز کنید",
+      "previous": "قبلی",
+      "ready": "آماده است",
+      "recent": "اخیر",
+      "remove": "حذف کنید",
+      "replace": "جایگزین کنید",
+      "reset": "بازنشانی کنید",
+      "restart": "راه اندازی مجدد",
+      "selectPack": "بسته را انتخاب کنید",
+      "storyboard": "استوری برد",
+      "upload": "آپلود کنید",
+      "uploading": "در حال آپلود..."
+    },
+    "prompts": {
+      "defaultImage": "یک تصویر سینمایی با جزئیات بالا با نور طبیعی",
+      "relightDefault": "سوژه را با نورپردازی ملایم استودیویی روشن کنید",
+      "faceSwapDefault": "در حالی که صحنه را دست نخورده نگه دارید، صورت را عوض کنید",
+      "characterSwapDefault": "با حفظ سبک، کاراکتر را عوض کنید",
+      "drawToEditDefault": "طراحی را به یک تصویر تمیز و دقیق اصلاح کنید"
+    },
+    "swap": {
+      "sourceTitle": "منبع",
+      "targetTitle": "هدف",
+      "faceSourceDescription": "تصویر منبع برای صورت",
+      "faceTargetDescription": "تصویر مورد نظر برای جایگزینی",
+      "characterSourceDescription": "تصویر منبع برای شخصیت",
+      "characterTargetDescription": "تصویر مورد نظر برای جایگزینی"
+    },
+    "inpaint": {
+      "sourceAlt": "تصویر منبع",
+      "paintHint": "ناحیه ای را که می خواهید ویرایش کنید رنگ کنید",
+      "maskUploading": "در حال آپلود ماسک",
+      "maskReady": "ماسک آماده است",
+      "maskPaint": "ماسک رنگ",
+      "paint": "رنگ کنید",
+      "erase": "پاک کردن"
+    },
+    "relight": {
+      "title": "Relight",
+      "quickSelect": "انتخاب سریع",
+      "directions": {
+        "top": "بالا",
+        "front": "جلو",
+        "right": "درسته",
+        "left": "سمت چپ",
+        "back": "برگشت",
+        "bottom": "پایین"
+      },
+      "brightness": "روشنایی",
+      "color": "رنگ"
+    },
+    "upscale": {
+      "title": "سطح بالا"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "طرح به ویدئو",
+      "drawToVideo": "قرعه کشی به ویدیو",
+      "drawToEdit": "به ویرایش بکشید",
+      "pen": "قلم",
+      "eraser": "پاک کن",
+      "color": "رنگ",
+      "size": "اندازه",
+      "undo": "واگرد",
+      "redo": "دوباره انجام دهید",
+      "clear": "پاک کردن",
+      "generateVideo": "ویدیو تولید کنید",
+      "uploadTitle": "آپلود رسانه",
+      "uploadDescription": "یک عکس برای هدایت نقاشی اضافه کنید"
+    },
+    "soulId": {
+      "heroTitle": "شخصیت شناسه روح",
+      "heroDescription": "یک شخصیت ثابت از عکس های خود بسازید.",
+      "createButton": "شخصیت ایجاد کنید",
+      "photoCount": "{count} عکس",
+      "characterLabel": "شخصیت {index}",
+      "emptyGallery": "هنوز هیچ شخصیتی وجود ندارد.",
+      "dialogTitle": "ایجاد شناسه روح",
+      "dialogSubtitle": "برای ساختن شخصیت خود عکس آپلود کنید.",
+      "addPhotosTitle": "عکس اضافه کنید",
+      "addPhotosDescription": "6-12 عکس واضح آپلود کنید.",
+      "tip": "نکته: از زوایا و عبارات متنوع استفاده کنید."
+    },
+    "storyboard": {
+      "relightScene": "صحنه رلایت",
+      "headline": "کارخانه مد",
+      "headlineAccent": "زیبایی شناسی خود را ایجاد کنید",
+      "description": "استوری برد، ویرایش، ایجاد کنید.",
+      "resultsLabel": "نتایج {count}",
+      "uploadHint": "تصاویر مرجع را برای راهنمایی صحنه بارگذاری کنید",
+      "referenceImagesTitle": "تصاویر مرجع",
+      "referenceImagesDescription": "حداکثر 4 تصویر برای مطابقت با سبک اضافه کنید"
+    },
+    "instadump": {
+      "sidebarTitle": "Instadump Studio",
+      "stepChoosePack": "یک بسته را انتخاب کنید",
+      "stepAddPhoto": "یک عکس اضافه کنید",
+      "stepGetInstadump": "Instadump را دریافت کنید",
+      "headerTitle": "Instadump",
+      "headerDescription": "یک سلفی را به یک کتابخانه محتوای کامل تبدیل کنید.",
+      "addPhotoTitle": "عکس خود را اضافه کنید",
+      "addPhotoDescription": "برای شروع یک سلفی واضح آپلود کنید.",
+      "getInstadumpTitle": "Instadump خود را دریافت کنید",
+      "newPhotosReady": "عکس های جدید آماده است",
+      "tryFree": "رایگان امتحان کنید",
+      "premiumTitle": "حق بیمه",
+      "premiumBulletOne": "سبک های بیشتر در هر بسته",
+      "premiumBulletTwo": "پردازش اولویت",
+      "premiumBulletThree": "دانلود با وضوح کامل",
+      "upgradeNow": "اکنون ارتقا دهید"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "ویرایش کنید",
+      "subtitle": "به ویژگی ها و مدل های ویرایش دسترسی داشته باشید",
+      "back": "بازگشت به ویرایش",
+      "workspace": {
+        "title": "فضای کار",
+        "status": "نگهدارنده پیشانی",
+        "uploadTitle": "آپلود رسانه",
+        "uploadDescription": "رها کنید یا کلیک کنید تا یک تصویر/ویدیو برای شروع آپلود شود"
+      },
+      "settings": {
+        "title": "تنظیمات",
+        "modelTitle": "مدل",
+        "modelDescription": "مدلی را انتخاب کنید (بک‌اند به زودی)",
+        "promptTitle": "اعلان",
+        "promptDescription": "آنچه را که می خواهید توصیف کنید (بک اند به زودی)",
+        "generate": "ایجاد کنید"
+      },
+      "model": {
+        "title": "جزئیات مدل",
+        "descriptionTitle": "توضیحات",
+        "descriptionBody": "این یک مکان نگهدار است. پس از سیم کشی backend، جزئیات تکمیل می شود."
+      }
+    },
+    "menu": {
+      "title": "ویرایش کنید",
+      "sections": {
+        "features": "ویژگی ها",
+        "models": "مدل ها"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "ویرایش ویدیو",
+        "description": "ویرایش پیشرفته ویدیو"
+      },
+      "inpaint": {
+        "title": "Inpaint",
+        "description": "یک منطقه را انتخاب کنید، تغییر را توصیف کنید"
+      },
+      "relight": {
+        "title": "Relight",
+        "description": "موقعیت نور، رنگ و روشنایی را تنظیم کنید"
+      },
+      "aiStylist": {
+        "title": "استایلیست هوش مصنوعی",
+        "description": "ظاهر ایده آل خود را پیدا کنید"
+      },
+      "upscale": {
+        "title": "سطح بالا",
+        "description": "وضوح و کیفیت را افزایش دهید"
+      },
+      "skinEnhancer": {
+        "title": "تقویت کننده پوست",
+        "description": "بافت های طبیعی و واقعی پوست"
+      },
+      "angles": {
+        "title": "زاویه ها",
+        "description": "از زوایای مختلف تولید کنید"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "حداکثر جزئیات و دقت"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "ویرایش های سریع و سبک"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "یکپارچه سازی یکپارچه محصول"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "ارتقاء دهنده با وضوح بالا"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "کنترل حرکت با مراجع ویدیویی"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "ویرایش پیشرفته ویدیو"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "برنامه اصلی",
+      "completed": "{completed}/{total} تکمیل شد",
+      "steps": {
+        "script": "طراحی فیلمنامه و استوری‌بورد",
+        "world": "طراحی دارایی‌های جهان",
+        "video": "تولید ویدیو",
+        "worldVideo": "دارایی‌های جهان و تولید ویدیو",
+        "audio": "طراحی صدا و گفتار",
+        "final": "مونتاژ نهایی"
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "newChat": "Yeni sohbet",
+  "placeholder": "Mesajınızı buraya yazın...",
+  "textarea": {
+    "placeholder": "Nolan ile birlikte çalışmak istediğiniz bir hikâye var mı?",
+    "selectModel": "Lütfen bir metin modeli seçin! Henüz yapmadıysanız API anahtarlarınızı Ayarlar'dan belirleyin.",
+    "enterPrompt": "Lütfen bir prompt girin",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Görüntüye git",
+    "audioPositioning": "Sese git",
+    "videoPositioning": "Videoya git",
+    "showMore": "Daha fazla göster",
+    "showLess": "Daha az göster"
+  },
+  "jsonCard": {
+    "copy": "Kopyala",
+    "copied": "Kopyalandı",
+    "showCode": "Kodu göster",
+    "hideCode": "Kodu gizle"
+  },
+  "welcome": {
+    "greeting": "Selam, ReelMaker!",
+    "help": "Bugün nasıl yardımcı olabilirim?"
+  },
+  "replay": {
+    "replaying": "Sohbet tekrar oynatılıyor... ({{current}}/{{total}})",
+    "completed": "Sohbet tekrar oynatma tamamlandı",
+    "ready": "Sohbeti tekrar oynatmaya hazır",
+    "skipToEnd": "Sona atla",
+    "replayAgain": "Tekrar oynat",
+    "startReplay": "Tekrar oynatmayı başlat",
+    "continueConversation": "Sohbete devam et",
+    "forking": "Fork oluşturuluyor...",
+    "forkingToast": "Kanvas fork ediliyor...",
+    "forkSuccessToast": "Kanvas fork edildi! Yönlendiriliyor...",
+    "forkFailedToast": "Kanvas fork edilemedi"
+  },
+  "errors": {
+    "createSessionError": "Sohbet oturumu oluşturulamadı"
+  },
+  "toolCallNames": {
+    "generate_image": "Görüntü oluşturucu",
+    "edit_image": "Görüntü düzenleyici",
+    "generate_audio": "Ses oluştur",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "FLF video",
+    "generate_tts_audio": "TTS sesi oluştur",
+    "generate_music": "Müzik oluştur",
+    "generate_structured_output": "Yapılandırılmış çıktı oluştur",
+    "execute_storyboard": "Hikâye panosunu çalıştır",
+    "analyze_timeline_state": "Zaman çizelgesini analiz et",
+    "recommend_generation_strategy": "Strateji öner",
+    "execute_code": "Kodu çalıştır",
+    "analyze_documents": "Belgeleri analiz et",
+    "analyze_media": "Medyayı analiz et",
+    "execute_function_call": "Fonksiyon çağrısını çalıştır",
+    "analyze_web_context": "Web bağlamını analiz et",
+    "search_and_generate": "Ara ve oluştur",
+    "prompt_user_multi_choice": "Çoklu seçim sor",
+    "prompt_user_single_choice": "Tekli seçim sor",
+    "write_plan": "Plan yaz",
+    "finish": "Bitir"
+  },
+  "publish": {
+    "title": "Topluluğa yayınla",
+    "titleLabel": "Başlık *",
+    "titlePlaceholder": "Sohbetiniz için dikkat çekici bir başlık girin",
+    "descriptionLabel": "Açıklama",
+    "descriptionPlaceholder": "Bu sohbeti ilginç yapan şeyi açıklayın...",
+    "tagsLabel": "Etiketler (en fazla 5)",
+    "tagPlaceholder": "Etiket ekle...",
+    "visibilityLabel": "Görünürlük",
+    "visibilityPublic": "Herkese açık",
+    "visibilityUnlisted": "Liste dışı",
+    "visibilityPublicHint": "Herkes bu sohbeti keşfedebilir ve görüntüleyebilir",
+    "visibilityUnlistedHint": "Yalnızca bağlantısı olan kişiler bu sohbeti görüntüleyebilir",
+    "cancel": "İptal",
+    "publish": "Yayınla",
+    "publishing": "Yayınlanıyor...",
+    "enterTitleError": "Lütfen bir başlık girin",
+    "success": "Oturum başarıyla yayınlandı!",
+    "failed": "Oturum yayınlanamadı",
+    "publishButton": "Yayınla"
+  },
+  "sessionSelector": {
+    "placeholder": "Tema"
+  },
+  "thinking": {
+    "title": "Düşünme"
+  },
+  "plan": {
+    "title": "Plan",
+    "steps": {
+      "singular": "adım",
+      "plural": "adım"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

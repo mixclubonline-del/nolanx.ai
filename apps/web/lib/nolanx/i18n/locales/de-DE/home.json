@@ -1,0 +1,21 @@
+{
+  "title": "Der weltweit erste KI‑Agent‑Regisseur: Nolan",
+  "subtitle": "Early‑Access‑Programm",
+  "description": "Der weltweit erste KI‑Agent‑Regisseur: Nolan",
+  "tabs": {
+    "myCanvases": "Meine Leinwände",
+    "community": "Community"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan bereitet deine Leinwand vor…",
+    "communitySessions": "Community‑Sessions werden geladen..."
+  },
+  "community": {
+    "loadFailed": "Community‑Sessions konnten nicht geladen werden",
+    "canvasNotAvailable": "Leinwand ist für diese Session nicht verfügbar",
+    "likeFailed": "Like konnte nicht aktualisiert werden"
+  },
+  "allProjects": "Alle Projekte",
+  "noCanvases": "Noch keine Storyboards",
+  "newCanvas": "Unbenannte Szene"
+}

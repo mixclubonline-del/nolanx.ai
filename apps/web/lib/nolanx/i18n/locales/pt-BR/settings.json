@@ -1,0 +1,98 @@
+{
+  "title": "Configurações",
+  "messages": {
+    "settingsSaved": "Configurações salvas com sucesso",
+    "settingsReset": "Configurações redefinidas para o padrão",
+    "failedToSave": "Falha ao salvar configurações",
+    "failedToLoad": "Falha ao carregar configuração",
+    "restartRequired": "Reinicie o aplicativo para que as configurações de proxy entrem em vigor"
+  },
+  "models": {
+    "title": "Modelos",
+    "placeholder": "Digite o nome do modelo",
+    "addModel": "Adicionar modelo",
+    "types": {
+      "text": "texto",
+      "image": "imagem",
+      "video": "vídeo"
+    }
+  },
+  "provider": {
+    "title": "Provedores",
+    "addProvider": "Adicionar provedor",
+    "providerName": "Nome do provedor",
+    "providerNamePlaceholder": "Digite o nome do provedor",
+    "apiUrl": "URL da API",
+    "apiUrlPlaceholder": "Digite a URL da API",
+    "apiKey": "Chave de API",
+    "apiKeyPlaceholder": "Digite a chave de API",
+    "apiKeyDescription": "Sua chave de API será armazenada com segurança",
+    "maxTokens": "Máx. tokens",
+    "maxTokensPlaceholder": "Digite seu máximo de tokens",
+    "maxTokensDescription": "O número máximo de tokens na resposta",
+    "customProvider": "✨ Provedor personalizado",
+    "imageGeneration": "🎨 Geração de imagens",
+    "delete": "Excluir",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "noModelsSelected": "Adicione pelo menos um modelo"
+  },
+  "proxy": {
+    "title": "Configurações de proxy",
+    "mode": "Modo de proxy",
+    "selectMode": "Selecione o modo de proxy",
+    "modes": {
+      "none": "Sem proxy",
+      "system": "Proxy do sistema",
+      "custom": "Proxy personalizado"
+    },
+    "enable": "Ativar proxy",
+    "url": "URL do proxy",
+    "urlPlaceholder": "http://proxy.example.com:8080",
+    "testConnection": "Testar conexão",
+    "testing": "Testando...",
+    "testSuccess": "Teste de conexão do proxy bem-sucedido",
+    "testFailed": "Falha no teste de conexão do proxy: {{message}}",
+    "testError": "Erro no teste de conexão do proxy",
+    "status": {
+      "enabled": "Ativado",
+      "disabled": "Desativado",
+      "misconfigured": "Configurado incorretamente"
+    }
+  },
+  "comfyui.workflows": "Fluxos de trabalho",
+  "comfyui": {
+    "title": "ComfyUI",
+    "localImageGeneration": "🎨 Geração local de imagens",
+    "enable": "Ativar",
+    "debugStatus": "🔍 Status de depuração",
+    "status": {
+      "disabled": "Desativado",
+      "running": "Em execução",
+      "installed": "Instalado (não em execução)",
+      "notInstalled": "Não instalado",
+      "notRunning": "Não em execução",
+      "checking": "Verificando..."
+    },
+    "urlDescription": "URL do serviço ComfyUI, digite o endereço se já estiver instalado",
+    "invalidUrl": "Digite uma URL válida (ex.: http://127.0.0.1:8188)",
+    "notInstalledTitle": "ComfyUI não instalado",
+    "notInstalledDescription": "Instale o ComfyUI para habilitar a geração local de imagens com modelos Flux",
+    "installButton": "Instalar ComfyUI",
+    "startButton": "Iniciar ComfyUI",
+    "uninstallButton": "Desinstalar ComfyUI",
+    "confirmUninstall": "Tem certeza de que deseja desinstalar o ComfyUI? Isso removerá completamente o ComfyUI do seu sistema, incluindo todos os modelos baixados e configurações.",
+    "confirmUninstallButton": "Confirmar desinstalação",
+    "uninstallProgress": {
+      "title": "Desinstalando o ComfyUI",
+      "preparing": "Preparando desinstalação...",
+      "inProgress": "Desinstalação em andamento... Aguarde.",
+      "logTitle": "Log de desinstalação:",
+      "completed": "Desinstalação concluída"
+    },
+    "notInstalled": "ComfyUI não está instalado"
+  },
+  "saveSettings": "Salvar configurações",
+  "close": "Fechar",
+  "cancel": "Cancelar"
+}

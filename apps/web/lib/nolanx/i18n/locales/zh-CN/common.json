@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "English",
+    "zh-CN": "简体中文"
+  },
+  "buttons": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "submit": "提交",
+    "loading": "加载中...",
+    "retry": "重试"
+  },
+  "common": {
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "error": "错误",
+    "success": "成功",
+    "warning": "警告",
+    "info": "信息"
+  },
+  "messages": {
+    "success": "操作成功完成",
+    "error": "发生了错误",
+    "loading": "正在加载，请稍候...",
+    "noData": "暂无数据",
+    "confirmDelete": "确定要删除此项吗？",
+    "saved": "保存成功",
+    "deleted": "删除成功"
+  },
+  "notifications": {
+    "title": "通知",
+    "clear": "清空",
+    "markAllAsRead": "全部已读",
+    "allRead": "全部已读",
+    "newImageGenerated": "新图片生成"
+  },
+  "navigation": {
+    "home": "首页",
+    "canvas": "故事板",
+    "settings": "设置",
+    "back": "返回"
+  },
+  "dialog": {
+    "confirmTitle": "确认操作",
+    "confirmDescription": "此操作无法撤销",
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "update": {
+    "title": "🎉 新版本可用",
+    "description": "发现新版本 v{{version}}，是否立即安装更新？",
+    "installNote": "点击“安装更新”将重启应用并安装。",
+    "laterButton": "稍后提醒",
+    "installButton": "安装更新",
+    "installing": "正在安装..."
+  },
+  "auth": {
+    "login": "登录",
+    "logout": "退出登录",
+    "loginToJaaz": "登录到诺兰",
+    "myAccount": "我的账户",
+    "loginDescription": "登录后可以使用云端 AI 模型",
+    "startLogin": "开始登录",
+    "preparingLogin": "准备登录中...",
+    "cancel": "取消",
+    "loginSuccessMessage": "登录成功！",
+    "authExpiredMessage": "授权已过期，请重新登录",
+    "authErrorMessage": "检查授权状态时发生错误",
+    "waitingForBrowser": "等待浏览器中完成登录...",
+    "pollErrorMessage": "检查登录状态失败，请重试",
+    "preparingLoginMessage": "正在准备登录...",
+    "browserLoginMessage": "请在浏览器中完成登录",
+    "loginRequestFailed": "登录请求失败，请重试",
+    "logoutSuccessMessage": "已成功登出",
+    "notLoggedIn": "未登录",
+    "balance": "余额",
+    "recharge": "充值"
+  },
+  "socket": {
+    "connectionError": "连接错误 ({{current}}/{{max}}): {{error}}",
+    "maxRetriesReached": "连接失败，请重启应用重试"
+  }
+}

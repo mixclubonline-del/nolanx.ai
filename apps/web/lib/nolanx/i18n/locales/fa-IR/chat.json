@@ -1,0 +1,113 @@
+{
+  "newChat": "گفتگوی جدید",
+  "placeholder": "پیام خود را اینجا بنویسید...",
+  "textarea": {
+    "placeholder": "چه داستانی دوست دارید با Nolan همکاری کنید؟",
+    "selectModel": "لطفاً یک مدل متنی انتخاب کنید! اگر هنوز انجام نداده‌اید، به تنظیمات بروید و کلیدهای API را تنظیم کنید.",
+    "enterPrompt": "لطفاً یک پرامپت وارد کنید",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "رفتن به تصویر",
+    "audioPositioning": "رفتن به صدا",
+    "videoPositioning": "رفتن به ویدئو",
+    "showMore": "نمایش بیشتر",
+    "showLess": "نمایش کمتر"
+  },
+  "jsonCard": {
+    "copy": "کپی",
+    "copied": "کپی شد",
+    "showCode": "نمایش کد",
+    "hideCode": "پنهان کردن کد"
+  },
+  "welcome": {
+    "greeting": "سلام، ReelMaker!",
+    "help": "امروز چطور می‌توانم کمک کنم؟"
+  },
+  "replay": {
+    "replaying": "بازپخش گفتگو... ({{current}}/{{total}})",
+    "completed": "بازپخش گفتگو کامل شد",
+    "ready": "آماده بازپخش گفتگو",
+    "skipToEnd": "رفتن به انتها",
+    "replayAgain": "بازپخش دوباره",
+    "startReplay": "شروع بازپخش",
+    "continueConversation": "ادامه گفتگو",
+    "forking": "در حال فورک...",
+    "forkingToast": "در حال فورک کردن بوم...",
+    "forkSuccessToast": "بوم فورک شد! در حال هدایت...",
+    "forkFailedToast": "فورک کردن بوم ناموفق بود"
+  },
+  "errors": {
+    "createSessionError": "ایجاد نشست گفتگو ناموفق بود"
+  },
+  "toolCallNames": {
+    "generate_image": "مولد تصویر",
+    "edit_image": "ویرایشگر تصویر",
+    "generate_audio": "تولید صدا",
+    "generate_video": "ویدئو",
+    "generate_video_first_last_frame": "ویدئوی FLF",
+    "generate_tts_audio": "تولید صدای TTS",
+    "generate_music": "تولید موسیقی",
+    "generate_structured_output": "تولید خروجی ساختارمند",
+    "execute_storyboard": "اجرای استوری‌بورد",
+    "analyze_timeline_state": "تحلیل تایم‌لاین",
+    "recommend_generation_strategy": "پیشنهاد استراتژی",
+    "execute_code": "اجرای کد",
+    "analyze_documents": "تحلیل اسناد",
+    "analyze_media": "تحلیل رسانه",
+    "execute_function_call": "اجرای فراخوانی تابع",
+    "analyze_web_context": "تحلیل زمینه وب",
+    "search_and_generate": "جستجو و تولید",
+    "prompt_user_multi_choice": "پرسش چندگزینه‌ای",
+    "prompt_user_single_choice": "پرسش تک‌گزینه‌ای",
+    "write_plan": "نوشتن برنامه",
+    "finish": "پایان"
+  },
+  "publish": {
+    "title": "انتشار در جامعه",
+    "titleLabel": "عنوان *",
+    "titlePlaceholder": "یک عنوان جذاب برای گفتگوی خود وارد کنید",
+    "descriptionLabel": "توضیحات",
+    "descriptionPlaceholder": "توضیح دهید چه چیزی این گفتگو را جالب می‌کند...",
+    "tagsLabel": "برچسب‌ها (حداکثر ۵)",
+    "tagPlaceholder": "یک برچسب اضافه کنید...",
+    "visibilityLabel": "دیده‌شدن",
+    "visibilityPublic": "عمومی",
+    "visibilityUnlisted": "فهرست‌نشده",
+    "visibilityPublicHint": "هرکسی می‌تواند این گفتگو را کشف کند و ببیند",
+    "visibilityUnlistedHint": "فقط افرادی که لینک دارند می‌توانند این گفتگو را ببینند",
+    "cancel": "لغو",
+    "publish": "انتشار",
+    "publishing": "در حال انتشار...",
+    "enterTitleError": "لطفاً یک عنوان وارد کنید",
+    "success": "نشست با موفقیت منتشر شد!",
+    "failed": "انتشار نشست ناموفق بود",
+    "publishButton": "انتشار"
+  },
+  "sessionSelector": {
+    "placeholder": "موضوع"
+  },
+  "thinking": {
+    "title": "در حال فکر"
+  },
+  "plan": {
+    "title": "برنامه",
+    "steps": {
+      "singular": "مرحله",
+      "plural": "مرحله"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

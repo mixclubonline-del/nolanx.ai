@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "좋아요",
+      "liked": "좋아요됨",
+      "share": "공유",
+      "download": "다운로드",
+      "downloading": "다운로드 중...",
+      "copying": "복사 중...",
+      "recreate": "다시 만들기"
+    },
+    "aria": {
+      "closeVideo": "동영상 닫기",
+      "goBack": "뒤로",
+      "likeVideo": "좋아요",
+      "unlikeVideo": "좋아요 취소",
+      "shareVideo": "동영상 공유",
+      "downloadVideo": "동영상 다운로드",
+      "copyingLink": "링크 복사 중...",
+      "downloading": "다운로드 중..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "링크 복사됨",
+      "videoLinkCopiedMessage": "동영상 링크를 클립보드에 복사했습니다",
+      "copyFailedTitle": "복사 실패",
+      "copyFailedMessage": "링크를 클립보드에 복사할 수 없습니다",
+      "shareFailedTitle": "공유 실패",
+      "shareFailedMessage": "동영상 링크를 복사할 수 없습니다",
+      "loginFirst": "먼저 로그인하세요",
+      "cannotFollowYourself": "자기 자신을 팔로우할 수 없습니다",
+      "followed": "팔로우했습니다",
+      "unfollowed": "언팔로우했습니다",
+      "operationFailed": "작업에 실패했습니다"
+    },
+    "generation": {
+      "generationModel": "생성 모델",
+      "withEffect": "{effect} 적용",
+      "effectBadge": "효과",
+      "prompt": "프롬프트",
+      "referenceImage": "참조 이미지",
+      "referenceImageAlt": "동영상 생성을 위한 참조 이미지",
+      "negativePrompt": "네거티브 프롬프트",
+      "parameters": "파라미터",
+      "guidance": "가이던스",
+      "steps": "스텝",
+      "seed": "시드",
+      "ratio": "비율"
+    },
+    "author": {
+      "uploaded": "{time} 업로드",
+      "profile": "프로필",
+      "follow": "팔로우",
+      "unfollow": "언팔로우",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "댓글",
+      "placeholder": "이 동영상에 대한 생각을 공유하세요...",
+      "send": "보내기",
+      "sending": "전송 중...",
+      "empty": "이 작품에 대한 첫 댓글을 남겨보세요!"
+    },
+    "time": {
+      "now": "방금",
+      "minutesAgo": "{minutes}분 전",
+      "hoursAgo": "{hours}시간 전",
+      "daysAgo": "{days}일 전"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "크레딧"
+    },
+    "earnCreditsCapsule": {
+      "label": "크레딧 획득",
+      "aria": {
+        "openRewardCenter": "크레딧 획득"
+      },
+      "badge": {
+        "claimed": "수령 완료"
+      },
+      "title": {
+        "base": "크레딧 획득",
+        "canClaim": "크레딧 획득 (+{amount})",
+        "claimedToday": "크레딧 획득(오늘 수령함)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "리워드 센터",
+      "subtitle": {
+        "main": "추천하고 적립 + 일일 리워드",
+        "joined": "참여한 사람 보기"
+      },
+      "common": {
+        "loading": "로딩 중..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} 크레딧"
+      },
+      "actions": {
+        "back": "뒤로",
+        "close": "닫기",
+        "copy": "복사",
+        "share": "공유",
+        "inviteFriends": "친구 초대",
+        "claim": "받기",
+        "claiming": "받는 중...",
+        "claimed": "받음"
+      },
+      "aria": {
+        "copyInviteCode": "초대 코드 복사",
+        "shareInviteLink": "초대 링크 공유"
+      },
+      "labels": {
+        "inviteLink": "초대 링크",
+        "inviteCode": "초대 코드",
+        "invited": "초대됨",
+        "rewarded": "보상됨",
+        "pending": "대기 중",
+        "recentInvites": "최근 초대",
+        "recentRewards": "최근 보상",
+        "referEarn": "추천하고 적립",
+        "dailyRewards": "일일 리워드",
+        "dailyLogin": "일일 로그인",
+        "rewardedProgress": "보상: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "아직 초대가 없습니다.",
+        "noRewards": "아직 보상이 없습니다."
+      },
+      "status": {
+        "rewarded": "보상됨",
+        "pending": "대기 중",
+        "verified": "확인됨"
+      },
+      "share": {
+        "title": "ReelMind 초대",
+        "text": "ReelMind에서 함께하고 무료 크레딧을 받으세요."
+      },
+      "toast": {
+        "copiedTitle": "복사됨",
+        "copiedDescription": "{label}이(가) 클립보드에 복사되었습니다.",
+        "copyFailedTitle": "복사 실패",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "수동으로 복사해 주세요.",
+        "claimFailedTitle": "수령 실패",
+        "claimedTitle": "수령 완료",
+        "claimedDescription": "{amount} 크레딧을 받았습니다."
+      },
+      "referEarn": {
+        "tipLabel": "초대 및 적립 규칙",
+        "tipTitle": "작동 방식",
+        "tipBody1": "초대 링크를 공유하세요. 새 사용자가 코드로 가입하고 조건을 충족하면, 시스템 확인 후 크레딧이 지급됩니다.",
+        "tipBody2": "단계별 보상: 1-5 = 50, 6-15 = 100, 16-20 = 200 크레딧.",
+        "cardTitle": "친구 초대로 크레딧 받기",
+        "upTo": "최대 {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "일일 로그인 규칙",
+        "tipTitle": "일일 보상",
+        "tipBodyPrefix": "보상은 연속 로그인",
+        "tipBodyDay2": "2일차부터",
+        "tipBodySuffix": "시작하며, 매 UTC일마다 초기화됩니다.",
+        "status": {
+          "loading": "상태 불러오는 중...",
+          "claimed": "수령 완료",
+          "readyToClaim": "수령 가능",
+          "locked": "잠김"
+        },
+        "errors": {
+          "alreadyClaimed": "오늘은 이미 수령했습니다.",
+          "notEligible": "지금은 수령할 수 없습니다.",
+          "riskBlocked": "리스크 관리로 인해 수령이 차단되었습니다.",
+          "generic": "문제가 발생했습니다. 잠시 후 다시 시도해 주세요."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "탐색",
+      "video": "비디오",
+      "image": "이미지",
+      "music": "음악",
+      "edit": "편집",
+      "experiment": "실험"
+    },
+    "special": {
+      "nolan": "놀란"
+    },
+    "bottom": {
+      "affiliate": "제휴",
+      "contactUs": "문의하기",
+      "blog": "블로그",
+      "apiPlatform": "API 플랫폼"
+    },
+    "badges": {
+      "help": "도움말",
+      "new": "신규",
+      "free": "무료"
+    },
+    "sidebar": {
+      "more": "더보기",
+      "closeMenu": "메뉴 닫기",
+      "moreTools": "더 많은 도구",
+      "followOnX": "X(Twitter)에서 팔로우하기",
+      "followOnTikTok": "TikTok에서 팔로우하기",
+      "subscribeOnYouTube": "YouTube 채널 구독하기",
+      "termsOfService": "서비스 이용약관",
+      "privacyPolicy": "개인정보처리방침"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "특징",
+        "models": "모델"
+      },
+      "features": {
+        "createVideo": {
+          "title": "비디오 만들기",
+          "description": "AI 비디오 생성"
+        },
+        "cinemaStudioVideo": {
+          "title": "시네마 스튜디오 비디오",
+          "description": "카메라 움직임이 포함된 전문가용 동영상"
+        },
+        "mixedMedia": {
+          "title": "혼합 매체",
+          "description": "텍스트, 이미지, 비디오 혼합"
+        },
+        "editVideo": {
+          "title": "비디오 편집",
+          "description": "장면, 샷, 요소 편집"
+        },
+        "clickToAd": {
+          "title": "광고하려면 클릭하세요",
+          "description": "클립을 광고로 전환"
+        },
+        "sora2Trends": {
+          "title": "소라 2 트렌드",
+          "description": "트렌드 중심의 비디오 아이디어"
+        },
+        "lipsyncStudio": {
+          "title": "립싱크 스튜디오",
+          "description": "얼굴에 오디오 동기화"
+        },
+        "drawToVideo": {
+          "title": "비디오에 그리기",
+          "description": "스케치가 영화관으로 변하다"
+        },
+        "sketchToVideo": {
+          "title": "비디오로 스케치",
+          "description": "Sora 2를 사용하여 스케치부터 영상까지"
+        },
+        "ugcFactory": {
+          "title": "UGC 공장",
+          "description": "크리에이터가 바로 사용할 수 있는 콘텐츠를 빠르게"
+        },
+        "videoUpscale": {
+          "title": "비디오 고급",
+          "description": "선명도로 해상도 높이기"
+        },
+        "higgsfieldAnimate": {
+          "title": "힉스필드 애니메이트",
+          "description": "스타일로 스틸에 애니메이션을 적용하세요"
+        },
+        "recastStudio": {
+          "title": "리캐스트 스튜디오",
+          "description": "배우와 스타일을 재구성하다"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "시네마틱 카메라 제어"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "동적 모션 제어"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "고품질 텍스트-비디오"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "정밀한 비디오 편집"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "차세대 비디오 세대"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "사실적인 영화 촬영법"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "양식화된 모션과 리듬"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "빠른 영화 비디오"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "깔끔한 디테일과 톤"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "아바타 중심 공연"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "특징",
+        "models": "모델"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "이미지 생성",
+          "description": "AI 이미지 생성"
+        },
+        "cinemaStudioImage": {
+          "title": "시네마 스튜디오 이미지",
+          "description": "실제 카메라 및 렌즈 시뮬레이션"
+        },
+        "createStoryboard": {
+          "title": "스토리보드 만들기",
+          "description": "스토리 장면을 디자인하세요"
+        },
+        "soulIdCharacter": {
+          "title": "소울ID 캐릭터",
+          "description": "독특한 캐릭터 만들기"
+        },
+        "relight": {
+          "title": "재조명",
+          "description": "조명 위치, 색상, 밝기 조정"
+        },
+        "inpaint": {
+          "title": "인페인트",
+          "description": "영역을 선택하고 변경 사항을 설명하세요."
+        },
+        "imageUpscale": {
+          "title": "이미지 업스케일",
+          "description": "이미지 품질 향상"
+        },
+        "faceSwap": {
+          "title": "얼굴 교환",
+          "description": "사실적인 얼굴 스왑 만들기"
+        },
+        "characterSwap": {
+          "title": "캐릭터 교환",
+          "description": "현실적인 캐릭터 스왑 생성"
+        },
+        "drawToEdit": {
+          "title": "편집을 위해 그리기",
+          "description": "스케치부터 그림까지"
+        },
+        "instadump": {
+          "title": "인스타덤프",
+          "description": "셀카를 전체 콘텐츠 라이브러리로 전환"
+        },
+        "photodumpStudio": {
+          "title": "포토덤프 스튜디오",
+          "description": "당신의 미학을 창조하세요"
+        },
+        "fashionFactory": {
+          "title": "패션공장",
+          "description": "패션 세트 만들기"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "초현실적인 패션 비주얼"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "스토리보드, 편집, 생성"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "역대 최고의 4K 이미지 모델"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "차세대 4K 이미지 모델"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "트루컬러 정밀 렌더링"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "속도에 최적화된 디테일"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "즉각적이고 생생한 인물 사진"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "사실적이며 신속하고 정확한 이미지"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "사실적인 이미지"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "고급 이미지 편집 모델"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "고해상도 업스케일러"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "전체",
+        "recommended": "추천",
+        "saved": "저장됨"
+      },
+      "labels": {
+        "camera": "카메라",
+        "lens": "렌즈",
+        "focalLength": "초점거리",
+        "aperture": "조리개"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "설정 저장",
+        "removeSetup": "설정 삭제",
+        "close": "닫기"
+      },
+      "empty": "저장된 설정이 없습니다"
+    },
+    "page": {
+      "title": "실험",
+      "subtitle": "새로운 작업 흐름을 먼저 시도해 보세요",
+      "back": "실험으로 돌아가기"
+    },
+    "menu": {
+      "title": "실험",
+      "open": "열기"
+    },
+    "tabs": {
+      "character": "캐릭터",
+      "inpaint": "인페인트",
+      "cinemaStudio": "시네마 스튜디오",
+      "motionControl": "모션 제어",
+      "assist": "어시스트"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "인페인트",
+        "description": "영역을 칠하고 변경 사항을 설명합니다."
+      },
+      "cinemaStudio": {
+        "title": "시네마 스튜디오",
+        "description": "전문적인 영화 작업 흐름"
+      },
+      "motionControl": {
+        "title": "모션 제어",
+        "description": "참조 비디오에서 모션 복사"
+      },
+      "assist": {
+        "title": "어시스트",
+        "description": "프롬프트하고 창의적인 보조 도구"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "캐릭터",
+        "subtitle": "문자 일관성 도구(자리 표시자)"
+      },
+      "inpaint": {
+        "title": "인페인트",
+        "subtitle": "미디어 업로드, 영역 선택, 편집 내용 설명"
+      },
+      "cinemaStudio": {
+        "title": "시네마 스튜디오",
+        "subtitle": "카메라 인식 프롬프트로 영화 같은 장면 생성"
+      },
+      "motionControl": {
+        "title": "모션 제어",
+        "subtitle": "이미지로 모션을 재현하세요"
+      },
+      "assist": {
+        "title": "어시스트",
+        "subtitle": "채팅, 팁, 프롬프트 유틸리티"
+      }
+    },
+    "actions": {
+      "upload": "미디어 업로드",
+      "generate": "생성",
+      "history": "역사",
+      "howItWorks": "작동 원리",
+      "sendMessage": "메시지 보내기...",
+      "tryExample": "예시를 들어보세요",
+      "send": "보내기"
+    },
+    "placeholders": {
+      "exploreFeatures": "기능 살펴보기",
+      "settings": "설정",
+      "camera": "카메라",
+      "cameraHint": "카메라 동작 선택(자리표시자)",
+      "lens": "렌즈",
+      "lensHint": "렌즈 옵션 선택(자리표시자)",
+      "image": "이미지",
+      "video": "비디오",
+      "scenePrompt": "상상하는 장면을 묘사해 보세요."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "복사할 모션 추가",
+          "description": "동영상 길이: 3~30초"
+        },
+        "addCharacter": {
+          "title": "캐릭터 추가",
+          "description": "얼굴과 신체가 보이는 이미지"
+        }
+      },
+      "quality": {
+        "title": "품질",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "고급 설정"
+      },
+      "hero": {
+        "title": {
+          "prefix": "무엇이든 다시 만드세요",
+          "highlight": "모션",
+          "suffix": "귀하의 이미지로"
+        },
+        "subtitle": "모든 비디오의 모션을 복사하고 캐릭터를 동일한 모션에 배치하세요."
+      },
+      "library": {
+        "title": "라이브러리에서 모션을 복사하여 시작"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind 지원",
+        "subtitle": "창작자를 위해 만들어진 주머니 속 박사팀."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "당신은 무엇을 할 수 있나요?",
+          "description": "ReelMind AI 기능 살펴보기"
+        },
+        "howToCreate": {
+          "title": "멋진 콘텐츠를 어떻게 만들 수 있나요?",
+          "description": "더 나은 AI 프롬프트 작성을 위한 팁"
+        },
+        "generateSoulImagePrompt": {
+          "title": "영혼 이미지 프롬프트 생성",
+          "description": "심미적인 이미지를 위한 프롬프트 작성"
+        },
+        "generateVideoPrompt": {
+          "title": "비디오 프롬프트 생성",
+          "description": "영화 비디오에 대한 프롬프트 작성"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "캐릭터 일관성",
+          "description": "프레임 전체에서 캐릭터의 일관성을 유지하세요(자리 표시자)."
+        },
+        "library": {
+          "title": "문자 라이브러리",
+          "description": "저장된 캐릭터를 선택하거나 템플릿(자리 표시자)에서 시작하세요."
+        }
+      },
+      "placeholders": {
+        "preview": "미리보기(자리 표시자)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - AI 비디오 제작과 공유를 위한 무료 크리에이터 커뮤니티",
+      "description": "전 세계 크리에이터의 인기 창작 비디오를 둘러보세요. 영감과 즐거움을 얻고, 마음에 드는 콘텐츠를 리믹스해 보세요."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2가 지금 출시되었습니다!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "전체",
+        "latest": "최신",
+        "hot": "인기"
+      },
+      "tooltip": {
+        "filterByModel": "{model} 모델로 필터"
+      },
+      "aria": {
+        "previous": "이전 카테고리",
+        "next": "다음 카테고리"
+      },
+      "error": {
+        "loadFailed": "카테고리를 불러오지 못했습니다"
+      },
+      "actions": {
+        "retry": "다시 시도"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "AI 비디오 만들기"
+      },
+      "nolan": {
+        "title": "놀란",
+        "description": "세계 1위 AI 에이전트 감독"
+      },
+      "badges": {
+        "models": "모델",
+        "free": "무료"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "탐색 - ReelMind",
+      "description": "ReelMind에서 전 세계 크리에이터의 인기 크리에이티브 비디오를 탐색하세요."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "AI 모델 & 효과 - ReelMind",
+      "description": "ReelMind 플랫폼에서 놀라운 AI 생성 비디오를 만들기 위한 AI 비디오 모델과 효과를 찾아보고 사용하세요. 최첨단 AI 모델 컬렉션을 둘러보세요."
+    },
+    "page": {
+      "title": "AI 모델 & 효과",
+      "description": "비디오 생성용 최첨단 AI 모델과 효과 컬렉션을 둘러보세요",
+      "footerIntro": "비디오 생성을 위한 {count}개의 AI 모델 컬렉션을 확인하세요."
+    },
+    "sections": {
+      "models": "모델",
+      "effects": "효과"
+    },
+    "actions": {
+      "viewAll": "모두 보기",
+      "viewAllModels": "모델 모두 보기",
+      "backToModels": "모델로 돌아가기"
+    },
+    "types": {
+      "allModels": "전체 모델",
+      "textToVideo": "텍스트→비디오",
+      "imageToVideo": "이미지→비디오",
+      "videoToVideo": "비디오→비디오"
+    },
+    "all": {
+      "titleAll": "모든 비디오 모델",
+      "titleByType": "{type} 모델",
+      "description": "비디오 생성을 위한 AI 모델 컬렉션을 둘러보세요",
+      "countAll": "({count}개 모델)",
+      "countByType": "({count}개 {type} 모델)",
+      "loadingMore": "모델을 더 불러오는 중...",
+      "loadMore": "모델 더 불러오기",
+      "end": "끝까지 도달했습니다! 모든 모델을 불러왔습니다.",
+      "empty": "조건에 맞는 모델이 없습니다."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "체크포인트",
+        "lora": "로라"
+      },
+      "supportedFeatures": "지원 기능",
+      "metaTitle": "{name} - AI 모델 | ReelMind",
+      "metaDescriptionFallback": "ReelMind에서 비디오 생성을 위한 {name} 모델을 확인해 보세요.",
+      "metaErrorTitle": "모델 상세 | ReelMind",
+      "metaErrorDescription": "ReelMind에서 비디오 생성을 위한 AI 모델을 확인해 보세요."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "AI 효과 - ReelMind",
+      "description": "ReelMind 플랫폼에서 AI 생성 비디오를 향상시키기 위한 AI 비디오 효과를 찾아보고 사용하세요."
+    },
+    "page": {
+      "title": "AI 효과",
+      "description": "비디오를 향상시키는 AI 효과 컬렉션을 둘러보세요"
+    },
+    "all": {
+      "title": "모든 AI 효과",
+      "description": "비디오를 향상시키는 전체 AI 효과 컬렉션을 둘러보세요"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "효과로 돌아가기",
+        "goBack": "뒤로",
+        "applyThisEffect": "이 효과 적용"
+      },
+      "badge": "효과",
+      "addedOn": "{date}에 추가됨",
+      "errors": {
+        "notFound": "효과를 찾을 수 없습니다",
+        "loadFailed": "효과 상세를 불러오지 못했습니다"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "AI 비디오 만들기 - ReelMind",
+      "description": "ReelMind의 강력한 AI 모델과 도구로 놀라운 AI 생성 비디오를 만들어 보세요."
+    },
+    "loading": "로딩 중...",
+    "loadingMobile": "모바일 뷰 로딩 중...",
+    "loadingControlPanel": "컨트롤 패널 로딩 중...",
+    "controlPanel": {
+      "modelAndSettings": "모델 및 설정",
+      "history": "기록",
+      "model": "모델",
+      "selectModel": "모델 선택"
+    },
+    "mobile": {
+      "backToCreate": "만들기로 돌아가기"
+    },
+    "modelSelector": {
+      "loadingModels": "모델 불러오는 중...",
+      "moreModels": "추가 모델 {count}개",
+      "exploreMoreModels": "{count}개 모델 더 보기"
+    },
+    "promptInput": {
+      "title": "프롬프트",
+      "placeholder": "만들고 싶은 내용을 설명해 주세요...",
+      "enhance": "향상",
+      "undo": "실행 취소",
+      "restoreOriginalPromptTitle": "원본 프롬프트 복원",
+      "toastEnhanced": "프롬프트가 향상되었습니다",
+      "toastRestored": "원본 프롬프트로 복원되었습니다",
+      "enhanceFailed": "프롬프트 향상에 실패했습니다",
+      "sensitiveError": "민감한 키워드가 감지되었습니다: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "이미지",
+      "mentionVideoTokenPrefix": "비디오",
+      "mentionAudioTokenPrefix": "오디오"
+    },
+    "referenceUploader": {
+      "addOptional": "선택적 레퍼런스 추가",
+      "referenceImage": "참고 이미지",
+      "referenceImages": "참고 이미지 ({current}/{max})",
+      "referenceVideo": "참고 비디오",
+      "dropImage": "이미지를 여기에 드롭하거나 클릭하여 업로드하세요",
+      "dropImageMax": "최대 {max}개의 이미지를 여기에 드롭하거나 클릭하여 업로드하세요",
+      "dropVideo": "비디오를 여기에 드롭하거나 클릭하여 업로드하세요",
+      "pasteHint": "붙여넣기",
+      "videoUploaded": "비디오가 업로드되었습니다",
+      "uploading": "업로드 중...",
+      "addMore": "더 추가",
+      "removeReference": "제거",
+      "referenceImageAlt": "참고 이미지 {index}",
+      "supportedFormats": "지원: PNG, JPG",
+      "minimumSize": "최소 {minWidth}×{minHeight}, 종횡비 {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "{type} 업로드 중...",
+      "processingFile": "파일 처리 중...",
+      "uploadReference": "참고 {type} 업로드",
+      "image": "이미지",
+      "video": "비디오",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "종횡비",
+      "duration": "지속 시간",
+      "seconds": "{seconds}초",
+      "resolution": "해상도",
+      "audio": "오디오",
+      "on": "켜짐",
+      "off": "꺼짐",
+      "advanced": "고급",
+      "advancedShort": "고급",
+      "creativityLevel": "창의성",
+      "moreAccurate": "더 정확하게",
+      "moreCreative": "더 창의적으로",
+      "samplingSteps": "샘플링 단계",
+      "faster": "더 빠르게 ({steps}단계)",
+      "higherQuality": "더 높은 품질 ({steps}단계)",
+      "randomSeed": "랜덤 시드",
+      "seedPlaceholder": "시드를 입력하세요",
+      "generateRandomSeed": "랜덤 시드 생성",
+      "seedHint": "재현 가능한 결과를 위해 고정 시드를 사용하세요.",
+      "movementAmplitude": "움직임",
+      "movementAmplitudeHint": "모션 강도를 제어합니다.",
+      "backgroundMusic": "배경 음악",
+      "backgroundMusicHint": "지원되는 경우 배경 음악을 추가합니다.",
+      "enabled": "활성화",
+      "disabled": "비활성화",
+      "negativePrompt": "네거티브 프롬프트",
+      "negativePromptPlaceholder": "피하고 싶은 요소..."
+    },
+    "startToEndUploader": {
+      "title": "시작-끝 프레임",
+      "startFrame": "시작 프레임",
+      "endFrame": "끝 프레임",
+      "dropStartImage": "시작 이미지를 드롭하거나 클릭하여 업로드하세요",
+      "dropEndImage": "끝 이미지를 드롭하거나 클릭하여 업로드하세요",
+      "startFrameImageAlt": "시작 프레임",
+      "endFrameImageAlt": "끝 프레임",
+      "uploading": "업로드 중...",
+      "instructions": "전환을 안내하기 위해 시작 및 끝 이미지를 업로드하세요.",
+      "supportedFormats": "지원: PNG, JPG",
+      "minimumSize": "최소 {minWidth}×{minHeight}, 종횡비 {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "필요 시 이미지가 자동으로 압축됩니다."
+    },
+    "modelTabs": {
+      "imageToVideo": "이미지→비디오",
+      "textToVideo": "텍스트→비디오",
+      "firstLastFrame": "첫-마지막 프레임",
+      "edit": "편집",
+      "effect": "효과"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "참고영상",
+      "required": "필수",
+      "removeVideo": "동영상 삭제",
+      "uploading": "업로드 중...",
+      "dropVideo": "여기에 비디오를 놓거나 클릭하여 업로드하세요.",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "요소",
+      "optional": "선택사항({current}/{max})",
+      "addElements": "추가",
+      "elementAlt": "요소 {index}",
+      "removeElement": "{index} 요소 제거",
+      "dropElements": "요소 이미지를 추가하려면 클릭하세요.",
+      "elementsHint": "문자/스타일을 유지하기 위한 선택적 이미지입니다.",
+      "errors": {
+        "invalidVideoTitle": "잘못된 동영상",
+        "invalidVideoDescription": "동영상 파일을 선택해주세요.",
+        "videoTooLargeTitle": "동영상이 너무 큼",
+        "videoTooLargeDescription": "최대 {maxMb}MB. 더 짧거나 작은 클립을 업로드해 주세요.",
+        "uploadFailedTitle": "업로드 실패",
+        "elementsLimitTitle": "요소 한도에 도달했습니다.",
+        "elementsLimitDescription": "최대 {max}개의 이미지를 추가할 수 있습니다.",
+        "imageTooSmall": "이미지는 최소 {minWidth}×{minHeight}(현재: {width}×{height}) 이상이어야 합니다.",
+        "imageBadRatio": "이미지 가로세로 비율은 {minAspectRatio}에서 {maxAspectRatio}(현재: {current}) 사이여야 합니다."
+      },
+      "warnings": {
+        "someSkippedTitle": "일부 파일을 건너뛰었습니다.",
+        "someSkippedDescription": "{count} 파일은 제한으로 인해 건너뛰었습니다.",
+        "skippedTitle": "건너뛰었습니다.",
+        "skippedNonImage": "요소에는 이미지만 허용됩니다.",
+        "imageCompressedTitle": "이미지 압축",
+        "imageCompressedDescription": "{original}에서 {final}로 압축되었습니다.",
+        "skippedInvalidImage": "이미지가 잘못되었습니다."
+      }
+    },
+    "howItWorks": {
+      "title": "작동 원리",
+      "hero": {
+        "title": "한 번의 클릭으로 비디오 제작",
+        "subtitle": "카메라 제어, 프레이밍, VFX에 대한 사전 설정을 사용하거나 프롬프트를 통해 완전 수동으로 전환하세요."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "이미지 추가",
+          "2": "사전 설정 선택",
+          "3": "비디오 받기"
+        },
+        "t2v": {
+          "1": "프롬프트 쓰기",
+          "2": "모델 선택",
+          "3": "비디오 받기"
+        },
+        "flf": {
+          "1": "프레임 추가",
+          "2": "전환 설명",
+          "3": "비디오 받기"
+        },
+        "edit": {
+          "1": "비디오 추가",
+          "2": "요소 추가",
+          "3": "비디오 받기"
+        }
+      },
+      "modes": {
+        "edit": "편집(비디오-비디오)",
+        "flf": "첫 번째-마지막 프레임",
+        "i2v": "이미지-비디오",
+        "t2v": "텍스트-비디오"
+      },
+      "steps": {
+        "edit": {
+          "1": "짧은 참조 동영상을 업로드하세요.",
+          "2": "선택적으로 최대 4개의 요소 이미지를 추가하여 문자/스타일의 일관성을 유지할 수 있습니다.",
+          "3": "프롬프트에서 무엇을 변경할지(그리고 무엇을 유지할지) 설명하고 생성하세요."
+        },
+        "flf": {
+          "1": "시작 프레임과 끝 프레임을 업로드합니다.",
+          "2": "원하는 전환을 설명하세요.",
+          "3": "부드러운 변환을 생성하려면 생성하세요."
+        },
+        "i2v": {
+          "1": "참조 이미지를 업로드하세요.",
+          "2": "동작, 카메라 및 스타일을 설명합니다.",
+          "3": "비율/기간을 선택하고 생성합니다."
+        },
+        "t2v": {
+          "1": "장면(피사체, 카메라, 조명, 스타일)을 설명하세요.",
+          "2": "비율/기간을 선택하고 선택적으로 부정적인 프롬프트를 추가하세요.",
+          "3": "작은 변경 사항을 생성하고 반복합니다."
+        }
+      },
+      "tip": "팁: 구체적으로 작성하세요. 모델에게 동일하게 유지되어야 하는 사항(아이덴티티, 로고, 구성)을 알려주세요.",
+      "templates": {
+        "title": "사전 설정",
+        "subtitle": "클래식 사전 설정을 선택하고 더 빠르게 생성하세요.",
+        "use": "사용",
+        "clear": "지우기",
+        "prev": "이전 사전 설정",
+        "next": "다음 프리셋",
+        "edit": {
+          "relight": {
+            "title": "편안함과 분위기",
+            "description": "시간과 영화 조명을 변경하세요."
+          },
+          "grade": {
+            "title": "시네마틱 등급",
+            "description": "청록색 등급 + 필름 그레인, 움직임과 정체성을 유지합니다."
+          },
+          "weather": {
+            "title": "날씨 변화",
+            "description": "정체성을 유지하면서 비/안개를 추가하세요."
+          },
+          "anime": {
+            "title": "애니메이션 스타일 변경",
+            "description": "아이덴티티와 모션을 보존하면서 애니메이션 룩을 연출합니다."
+          },
+          "background": {
+            "title": "배경 교체",
+            "description": "피사체를 유지하면서 배경을 바꾸세요."
+          },
+          "lux": {
+            "title": "프리미엄 폴리쉬",
+            "description": "더 깔끔하고, 더 매끄럽고, 더 고급스러운 상업용 느낌."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "낮 → 밤",
+            "description": "일관된 프레이밍으로 부드러운 조명/시간 전환."
+          },
+          "sketchToRender": {
+            "title": "스케치 → 렌더링",
+            "description": "스케치부터 최종 렌더링까지 점차적으로 세부 사항을 공개합니다."
+          },
+          "beforeAfter": {
+            "title": "공개 전/후",
+            "description": "미묘한 움직임으로 세련된 변신."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "초상화 생활",
+            "description": "깜박임 + 느린 푸시인으로 미묘한 동작."
+          },
+          "pan": {
+            "title": "시차 팬",
+            "description": "깊이와 모션 블러가 포함된 시네마틱 팬입니다."
+          },
+          "product": {
+            "title": "제품 스핀",
+            "description": "글로시한 하이라이트가 돋보이는 스튜디오 제품 룩."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "8s 프리미엄 광고",
+            "description": "깔끔하고 고급스러운 광고 사진입니다."
+          },
+          "establish": {
+            "title": "설정샷",
+            "description": "세계/장면에 대한 폭넓은 영화 소개."
+          },
+          "anime": {
+            "title": "애니메이션 오프닝",
+            "description": "스타일화된 애니메이션 오프닝 스타일의 샷입니다."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "이미지→비디오는 참고 이미지가 필요합니다.",
+        "i2vDescription": "참고 이미지를 업로드하거나 텍스트→비디오 모델로 전환하세요.",
+        "v2vTitle": "비디오→비디오는 참고 비디오가 필요합니다.",
+        "v2vDescription": "참고 비디오를 업로드하거나 텍스트→비디오 모델로 전환하세요."
+      },
+      "costLabel": "비용:",
+      "balanceLabel": "잔액:",
+      "freeUnlimited": "무료(무제한)",
+      "credits": "크레딧",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast는 럭셔리 모델이며 Unlimited 무료 사용에 포함되지 않습니다. 추가 결제가 필요합니다.",
+        "veo31": "VEO 3.1은 럭셔리 모델이며 Unlimited 무료 사용에 포함되지 않습니다. 추가 결제가 필요합니다.",
+        "veo3": "VEO3는 럭셔리 모델이며 Unlimited 무료 사용에 포함되지 않습니다. 추가 결제가 필요합니다.",
+        "sora2Pro": "Sora-2 Pro는 럭셔리 모델이며 Unlimited 무료 사용에 포함되지 않습니다. 추가 결제가 필요합니다."
+      },
+      "gettingCredits": "크레딧을 가져오는 중...",
+      "getBonusCredits": "{amount} 크레딧 받기",
+      "submitting": "제출 중...",
+      "loadingModels": "모델 로딩 중...",
+      "uploadingAsset": "자산 업로드 중...",
+      "uploadingImages": "이미지 업로드 중...",
+      "claimingCredits": "크레딧 수령 중...",
+      "getMoreCredits": "크레딧 더 받기",
+      "generateVideo": "비디오 생성"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "게시 실패",
+        "missingTitleDescription": "비디오 제목을 입력해 주세요",
+        "processingTitle": "처리 중",
+        "processingDescription": "비디오를 게시할 준비 중...",
+        "successTitle": "게시 완료",
+        "successDescription": "비디오가 커뮤니티에 공유되었습니다",
+        "failedTitle": "게시 실패",
+        "failedDescription": "네트워크 연결을 확인하거나 잠시 후 다시 시도해 주세요"
+      },
+      "successTitle": "성공적으로 게시되었습니다!",
+      "successDescription": "멋진 작품이 커뮤니티에 공개되었습니다",
+      "publishingTitle": "게시 중...",
+      "publishingDescriptionDesktop": "커뮤니티에서 즐길 수 있도록 비디오를 준비하고 있습니다...",
+      "publishingDescriptionMobile": "비디오를 준비하는 중...",
+      "progressComplete": "{progress}% 완료",
+      "title": "커뮤니티에 공유",
+      "description": "멋진 작품을 세상과 공유하세요",
+      "benefits": {
+        "getLikes": "좋아요 받기",
+        "buildCommunityLong": "커뮤니티 구축",
+        "buildCommunityShort": "커뮤니티",
+        "inspireLong": "다른 사람에게 영감 주기",
+        "inspireShort": "영감",
+        "earnLong": "+{amount} 크레딧 적립",
+        "earnShort": "+{amount} 크레딧"
+      },
+      "videoTitle": "비디오 제목",
+      "videoTitlePlaceholder": "작품에 어울리는 제목을 입력하세요...",
+      "videoTitleHelperDesktop": "매력적인 제목은 더 많은 시청자를 끌어옵니다",
+      "videoTitleHelperMobile": "좋은 제목은 시청자를 끌어옵니다",
+      "descriptionLabel": "설명",
+      "optional": "선택 사항",
+      "descriptionPlaceholder": "커뮤니티에 작품에 대해 알려주세요...",
+      "descriptionHelper": "창작 과정을 공유해 보세요",
+      "cancel": "취소",
+      "publish": "게시"
+    },
+    "history": {
+      "title": "역사",
+      "refresh": "새로고침",
+      "view": {
+        "one": "행당 1개",
+        "three": "행당 3개",
+        "nine": "행당 9개"
+      },
+      "filterPlaceholder": "필터",
+      "empty": "{status} 작업이 없습니다",
+      "status": {
+        "all": "전체",
+        "pending": "대기",
+        "queued": "대기열",
+        "processing": "처리 중",
+        "completed": "완료",
+        "failed": "실패",
+        "canceled": "취소됨"
+      }
+    },
+    "effectSelector": {
+      "loading": "효과 로딩 중...",
+      "defaultDescription": "비디오에 특수 효과를 적용하세요",
+      "ctaTitle": "효과 선택",
+      "ctaDescription": "클릭하여 비디오 효과를 선택하세요",
+      "modalTitle": "효과 선택",
+      "close": "효과 선택기 닫기"
+    },
+    "modelSelectorModal": {
+      "title": "모델 선택",
+      "description": "프로젝트에 사용할 모델을 선택하세요",
+      "close": "모델 선택기 닫기",
+      "loadingMore": "모델을 더 불러오는 중...",
+      "allLoaded": "모든 모델을 불러왔습니다",
+      "noModelsFound": "모델을 찾을 수 없습니다"
+    },
+    "modelSearch": {
+      "placeholder": "이름, 유형, 기능으로 모델 검색...",
+      "clear": "검색 지우기",
+      "searching": "검색 중...",
+      "foundModels": "{count}개 모델을 찾았습니다",
+      "modelsAvailable": "{count}개 모델 사용 가능"
+    },
+    "modelTypeFilter": {
+      "title": "모델 유형",
+      "clear": "지우기"
+    },
+    "remixLoader": {
+      "successTitle": "리믹스 작업 불러오기 완료",
+      "successDescription": "원본 작업의 비디오 파라미터를 불러왔습니다. 바로 생성하거나 파라미터를 수정할 수 있습니다.",
+      "errorTitle": "파라미터 불러오기 실패",
+      "errorDescription": "원본 작업에서 파라미터를 불러올 수 없습니다. 수동으로 설정해 주세요."
+    },
+    "modelCard": {
+      "select": "선택",
+      "credits": "크레딧",
+      "premium": "프리미엄",
+      "luxury": "럭셔리"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind 선정",
+      "hot": "인기",
+      "new": "NEW",
+      "select": "선택"
+    },
+    "previewPanel": {
+      "generating": "생성 중...",
+      "download": "다운로드",
+      "downloading": "다운로드 중...",
+      "shareToCommunity": "게시",
+      "tips": "팁: 게시하면 크레딧을 받을 수 있어요",
+      "quality": "품질",
+      "qualityHd": "HD",
+      "qualityStandard": "표준",
+      "ratio": "비율",
+      "fullscreen": {
+        "enter": "전체 화면",
+        "exit": "전체 화면 종료"
+      },
+      "empty": {
+        "title": "아직 미리보기가 없습니다",
+        "description": "비디오를 생성하면 여기에서 미리보기를 볼 수 있습니다."
+      },
+      "queue": {
+        "loading": "대기열 정보 불러오는 중...",
+        "headerProcessing": "처리 중",
+        "headerQueueStatus": "대기열 상태",
+        "badgePosition": "순서: {position} / {total}",
+        "badgeProcessing": "처리 중",
+        "tasksInQueue": "대기열 작업 수",
+        "estimatedWait": "예상 대기 시간",
+        "elapsedTime": "경과 시간",
+        "remainingTime": "남은 시간",
+        "startTime": "예상 시작",
+        "completionTime": "예상 완료"
+      },
+      "time": {
+        "calculating": "계산 중...",
+        "justNow": "방금",
+        "lessThanMinute": "1분 이내",
+        "inMinutes": "{minutes, plural, one {#분} other {#분}} 후",
+        "inHours": "{hours, plural, one {#시간} other {#시간}} 후",
+        "inDays": "{days, plural, one {#일} other {#일}} 후",
+        "seconds": "{seconds, plural, one {#초} other {#초}}",
+        "minutesSeconds": "{minutes, plural, one {#분} other {#분}} {seconds, plural, one {#초} other {#초}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "비디오 로딩 중...",
+      "notFound": "비디오를 찾을 수 없습니다",
+      "notFoundDescription": "요청한 비디오를 찾을 수 없거나 현재 이용할 수 없습니다.",
+      "detailsTitle": "세부 정보",
+      "videoInfoTitle": "비디오 정보",
+      "advancedTitle": "고급",
+      "referenceImagesTitle": "참고 이미지",
+      "startFrameAlt": "시작 프레임",
+      "endFrameAlt": "끝 프레임",
+      "endFrameLabel": "끝 프레임",
+      "creationDate": "생성일",
+      "fields": {
+        "model": "모델",
+        "generationType": "생성 유형",
+        "resolution": "해상도",
+        "aspectRatio": "종횡비",
+        "duration": "지속 시간",
+        "creativityLevel": "창의성",
+        "effect": "효과",
+        "samplingSteps": "샘플링 단계",
+        "randomSeed": "랜덤 시드",
+        "movementAmplitude": "움직임 진폭",
+        "backgroundMusic": "배경 음악",
+        "negativePrompt": "네거티브 프롬프트"
+      },
+      "actions": {
+        "close": "닫기",
+        "closeModalTitle": "모달 닫기",
+        "remix": "리믹스",
+        "remixTitle": "이 설정으로 리믹스",
+        "download": "다운로드",
+        "downloadTitle": "이 비디오 다운로드",
+        "downloading": "다운로드 중...",
+        "shareTitle": "이 비디오 공유"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "작업 삭제",
+      "description": "이 작업은 되돌릴 수 없습니다",
+      "cancel": "취소",
+      "confirm": "삭제",
+      "deleting": "삭제 중..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "참고 이미지"
+      },
+      "pending": {
+        "pending": "대기 중...",
+        "queued": "대기열...",
+        "waitingInQueue": "대기열에서 기다리는 중..."
+      },
+      "processing": {
+        "phase1": "1단계",
+        "phase2": "2단계",
+        "phase3": "3단계",
+        "final": "최종",
+        "initializing": "초기화 중",
+        "processing": "콘텐츠 처리 중",
+        "rendering": "렌더링 중",
+        "finalizing": "마무리 중",
+        "stuckMessage": "이 작업이 멈춘 것 같습니다. 삭제할 수 있습니다.",
+        "deleteTitle": "이 작업 삭제",
+        "deleteAria": "삭제"
+      },
+      "failed": {
+        "title": "생성 실패",
+        "tryAgain": "다시 시도",
+        "tryAgainTitle": "이 프롬프트로 다시 시도",
+        "deleteTitle": "이 작업 삭제"
+      },
+      "completed": {
+        "recreateDesktop": "다시 생성",
+        "remixMobile": "리믹스",
+        "remixTitle": "이 프롬프트로 새 비디오 만들기",
+        "publish": "게시",
+        "publishTitle": "커뮤니티에 게시하고 {amount} 크레딧을 받으세요",
+        "creditsBonusDesktop": "{amount} 크레딧 보너스",
+        "creditsBonusMobile": "+{amount}",
+        "share": "공유",
+        "shareTitle": "이 비디오 공유",
+        "downloadTitle": "이 비디오 다운로드",
+        "downloading": "다운로드 중...",
+        "deleteTitle": "이 작업 삭제"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "레고 - ReelMind",
+      "description": "ReelMind에서 Lego 워크플로우로 비디오를 만들고 리믹스하세요."
+    },
+    "mobile": {
+      "backToBuilder": "빌더로 돌아가기",
+      "history": "기록"
+    },
+    "badges": {
+      "new": "신규"
+    },
+    "actions": {
+      "delete": "삭제",
+      "select": "선택",
+      "selected": "선택됨",
+      "download": "다운로드",
+      "downloading": "다운로드 중...",
+      "deleting": "삭제 중...",
+      "share": "공유",
+      "close": "닫기"
+    },
+    "status": {
+      "pending": "대기",
+      "processing": "처리 중",
+      "failed": "실패",
+      "completed": "완료",
+      "generating": "생성 중",
+      "cancelled": "취소됨"
+    },
+    "deleteConfirmDialog": {
+      "title": "작업 삭제",
+      "description": "이 작업은 되돌릴 수 없습니다",
+      "cancel": "취소",
+      "confirm": "삭제",
+      "deleting": "삭제 중..."
+    },
+    "imageViewer": {
+      "close": "닫기",
+      "previous": "이전",
+      "next": "다음",
+      "view": "{index} 보기"
+    },
+    "historyList": {
+      "title": "Lego AI 이미지 생성기",
+      "generatingFirstImage": "첫 이미지를 생성하는 중...",
+      "loadFailed": "기록을 불러오지 못했습니다. 다시 시도해 주세요.",
+      "emptyDescription": "아이디어를 설명하고 AI를 안내할 리소스를 추가하여 멋진 이미지를 만들어 보세요",
+      "loadingMore": "기록 이미지 불러오는 중...",
+      "scrollForMore": "더 보려면 스크롤하세요...",
+      "allLoaded": "총 {count}개의 이미지를 모두 불러왔습니다"
+    },
+    "sidebar": {
+      "addCard": "새 카드 추가",
+      "expand": "사이드바 확장",
+      "sections": {
+        "theme": "테마",
+        "scene": "장면",
+        "style": "스타일"
+      }
+    },
+    "card": {
+      "placeholder": "{section}을(를) 설명하세요...",
+      "imageAlt": "{section} 참고",
+      "options": {
+        "image": "이미지",
+        "text": "텍스트"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "참고 {index}",
+      "errors": {
+        "invalidType": "이미지 파일을 선택해 주세요",
+        "tooLarge": "이미지 크기는 {maxSizeMb}MB를 초과할 수 없습니다",
+        "uploadFailed": "이미지 업로드에 실패했습니다. 다시 시도해 주세요."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "아래로 스크롤",
+      "collapsedPlaceholder": "이미지를 설명하세요...",
+      "close": "닫기"
+    },
+    "resultPreview": {
+      "previewTitle": "미리보기",
+      "previewDescription": "생성된 이미지가 여기에 표시됩니다",
+      "generatedImageAlt": "생성된 이미지",
+      "emptyPlaceholder": "작품이 여기에 표시됩니다",
+      "dialogTitle": "생성된 이미지",
+      "dialogDescription": "설명과 리소스를 바탕으로 생성한 이미지입니다"
+    },
+    "resourceUploader": {
+      "uploadImage": "이미지 업로드",
+      "imageFallbackAlt": "이미지",
+      "imageFallbackLabel": "이미지",
+      "removeImage": "{title} 제거"
+    },
+    "controlPanel": {
+      "showSidebar": "사이드바 표시",
+      "hideSidebar": "사이드바 숨기기",
+      "hideSidebarShort": "사이드바 숨기기",
+      "addImage": "이미지 추가",
+      "addImageWithLimit": "이미지 추가 ({current}/{max})",
+      "promptPlaceholder": "이미지를 만들거나 수정하세요...",
+      "model": "모델",
+      "selectModel": "모델 선택",
+      "loading": "로딩 중...",
+      "loadingModels": "모델 로딩 중...",
+      "noModelsAvailable": "사용 가능한 모델이 없습니다",
+      "noModelsMatchFilters": "필터에 맞는 모델이 없습니다",
+      "modelLabel": "모델: {name}",
+      "aspectRatio": "종횡비",
+      "ratioLabel": "비율: {value}",
+      "imagesLabel": "이미지: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2는 한 장의 이미지만 출력합니다",
+        "hint": "생성할 이미지 수",
+        "numberOfImages": "이미지 개수"
+      },
+      "advanced": {
+        "aria": "고급 설정",
+        "label": "고급",
+        "title": "고급 설정",
+        "negativePrompt": {
+          "label": "네거티브 프롬프트",
+          "placeholder": "제외하고 싶은 요소...",
+          "aria": "네거티브 프롬프트",
+          "title": "제외할 요소를 지정하세요"
+        },
+        "seed": {
+          "label": "시드",
+          "random": "랜덤",
+          "randomTitle": "랜덤 시드 생성",
+          "placeholder": "랜덤 시드(선택 사항)",
+          "aria": "시드 값",
+          "title": "재현 가능한 결과를 위해 시드를 설정하세요"
+        }
+      },
+      "resolution": "해상도",
+      "resolutionLabel": "해상도: {value}",
+      "resolutionPopoverTitle": "해상도 (Nano Banana 2)",
+      "generating": "생성 중...",
+      "generate": "생성",
+      "limitReached": "제한에 도달했습니다",
+      "fluxLimitTooltip": "비회원은 FLUX 모델을 {limit}회까지만 사용할 수 있습니다",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2는 프리미엄 모델이며 Unlimited 무료 사용에 포함되지 않습니다. 생성되는 각 이미지마다 크레딧이 차감됩니다.",
+      "unlimited": {
+        "fast": "빠름",
+        "slow": "느림",
+        "fastMode": "빠른 모드",
+        "slowMode": "느린 모드",
+        "monthlyUsage": "월 사용량: {used}/{limit}",
+        "rateLimit": "속도 제한: 5분당 {limit}장",
+        "switchedToSlow": "월 한도에 도달했습니다. 느린 모드로 전환되었습니다."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "생성된 이미지",
+      "failedTitle": "생성 실패",
+      "errors": {
+        "unableToComplete": "생성을 완료할 수 없습니다"
+      },
+      "actions": {
+        "deleteTitle": "작업 삭제",
+        "viewFullSize": "클릭하여 전체 크기로 보기",
+        "preview": "미리보기 {index}",
+        "retryTitle": "재시도 - 동일한 파라미터로 다시 시도",
+        "retry": "다시 시도",
+        "remixTitle": "리믹스 - 파라미터 재사용",
+        "remix": "리믹스",
+        "makeVideoTitle": "비디오 만들기",
+        "makeVideo": "비디오 생성"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "다운로드 시작",
+      "downloadStartedMessage": "비디오 다운로드가 시작되었습니다",
+      "downloadFailedTitle": "다운로드 실패",
+      "downloadFailedMessage": "비디오 다운로드에 실패했습니다",
+      "shareCopied": "공유 링크가 클립보드에 복사되었습니다",
+      "shareCopyFailed": "공유 링크 복사에 실패했습니다"
+    },
+    "empty": {
+      "title": "비디오를 사용할 수 없습니다",
+      "description": "이 비디오는 공유할 수 없거나 비디오 파일이 누락되었습니다.",
+      "ctaCreate": "내 비디오 만들기"
+    },
+    "notFound": {
+      "title": "비디오를 찾을 수 없습니다",
+      "description": "찾는 비디오가 없거나 더 이상 공유할 수 없습니다.",
+      "ctaCreate": "내 비디오 만들기",
+      "ctaHome": "홈으로 돌아가기"
+    },
+    "details": {
+      "creationDate": "생성일"
+    },
+    "actions": {
+      "remix": "리믹스",
+      "remixTitle": "이 프롬프트로 새 비디오 만들기",
+      "download": "다운로드",
+      "downloadTitle": "이 비디오 다운로드",
+      "downloading": "다운로드 중...",
+      "downloadingTitle": "다운로드 중...",
+      "shareTitle": "이 비디오 공유"
+    },
+    "meta": {
+      "promptFallback": "AI 생성 비디오",
+      "watchDescription": "이 AI 생성 비디오를 시청하세요: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "음악",
+      "description": "AI로 음악, 사운드 효과, 음성을 생성하세요."
+    },
+    "page": {
+      "loadingSoundStudio": "사운드 스튜디오 로딩 중..."
+    },
+    "functionToggle": {
+      "music": "음악",
+      "soundEffect": "사운드 효과",
+      "textToSpeech": "텍스트→음성"
+    },
+    "controlPanel": {
+      "title": "컨트롤",
+      "reset": "초기화",
+      "modelLabel": {
+        "tts": "TTS 모델",
+        "sound": "사운드 모델"
+      },
+      "modelPlaceholder": "모델 선택",
+      "noModelsAvailableTitle": "사용 가능한 모델이 없습니다",
+      "noModelsFound": {
+        "tts": "TTS 모델을 찾을 수 없습니다",
+        "soundEffect": "사운드 효과 모델을 찾을 수 없습니다"
+      },
+      "tts": {
+        "stability": "안정성",
+        "similarityBoost": "유사도 부스트",
+        "styleExaggeration": "스타일 과장",
+        "speed": "속도"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "참고 오디오 업로드",
+      "dropHere": "여기에 드롭하세요",
+      "supportedFormats": "지원 형식: MP3, WAV, M4A, AAC, OGG",
+      "tip": "팁: 더 좋은 결과를 위해 최소 15초 이상의 선명한 오디오를 사용하세요.",
+      "uploadingProgress": "업로드 중... {progress}%",
+      "toast": {
+        "uploadSuccess": "업로드 완료",
+        "uploadFailed": "업로드 실패"
+      },
+      "errors": {
+        "selectAudioFile": "오디오 파일을 선택해 주세요.",
+        "invalidAudioFile": "유효하지 않은 오디오 파일입니다.",
+        "fileTooLarge": "파일이 너무 큽니다(최대 50MB).",
+        "durationTooShort": "오디오는 최소 15초 이상이어야 합니다."
+      }
+    },
+    "audioPlayer": {
+      "play": "재생",
+      "pause": "일시정지"
+    },
+    "voiceSelector": {
+      "label": "보이스",
+      "selectVoiceTitle": "보이스 선택",
+      "gender": {
+        "all": "전체",
+        "male": "남성",
+        "female": "여성"
+      },
+      "noVoicesAvailable": "사용 가능한 보이스가 없습니다",
+      "noVoicesFound": "보이스를 찾을 수 없습니다",
+      "bestFor": "{useCase}에 적합",
+      "clickToSelectVoice": "클릭하여 보이스를 선택하세요"
+    },
+    "historyPanel": {
+      "title": "기록",
+      "empty": {
+        "title": "아직 생성한 항목이 없습니다",
+        "description": "생성 기록이 여기에 표시됩니다"
+      },
+      "loading": "로딩 중...",
+      "loadMore": "더 불러오기"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "처리 중",
+        "failed": "실패",
+        "completed": "완료"
+      },
+      "actions": {
+        "copy": "복사",
+        "download": "다운로드"
+      },
+      "time": {
+        "now": "지금",
+        "minutesAgo": "{minutes}분 전",
+        "hoursAgo": "{hours}시간 전"
+      },
+      "unknownModel": "알 수 없는 모델",
+      "errors": {
+        "unknown": "알 수 없는 오류"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "사운드 스튜디오"
+      },
+      "menu": {
+        "open": "메뉴 열기",
+        "title": "메뉴",
+        "voiceGeneration": "생성",
+        "settings": "설정",
+        "history": "기록"
+      },
+      "tabs": {
+        "generate": "생성",
+        "settings": "설정",
+        "history": "기록"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "음성 생성을 위한 텍스트를 입력하세요...",
+        "soundEffect": "만들고 싶은 사운드 효과를 설명하세요..."
+      },
+      "generateSpeech": "음성 생성",
+      "generateSound": "사운드 생성",
+      "generating": "생성 중...",
+      "loadingExamples": "예시 불러오는 중...",
+      "loadingMusicStyles": "음악 스타일 불러오는 중...",
+      "rightTabs": {
+        "examples": "예시",
+        "history": "기록"
+      },
+      "history": {
+        "generationCount": "{count}회 생성"
+      },
+      "price": {
+        "placeholder": "예상 비용",
+        "calculating": "계산 중...",
+        "credits": "{credits} 크레딧"
+      },
+      "musicHistory": {
+        "title": "음악 기록",
+        "empty": {
+          "title": "아직 생성한 음악이 없습니다",
+          "description": "음악 생성 기록이 여기에 표시됩니다"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "사운드 효과 기록",
+        "empty": {
+          "title": "아직 생성한 사운드 효과가 없습니다",
+          "description": "사운드 효과 생성 기록이 여기에 표시됩니다"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "가사",
+      "lyricsPlaceholder": "선택적 서식을 포함한 가사입니다. 줄바꿈으로 각 줄을 구분할 수 있고, 두 번 줄바꿈하여 줄 사이에 휴지(일시정지)를 넣을 수 있습니다. 가사 시작과 끝에 ##를 넣으면 반주를 추가할 수 있습니다. 최대 600자.",
+      "useReferenceAudio": {
+        "label": "참고 오디오 사용",
+        "description": "오디오 레퍼런스로 AI의 스타일을 안내합니다."
+      },
+      "referenceAudio": {
+        "title": "참고 오디오",
+        "description": "음악과 보컬이 모두 포함된 참고 곡을 업로드하세요."
+      },
+      "musicStyle": {
+        "title": "음악 스타일",
+        "description": "만들고 싶은 음악의 스타일과 분위기를 설명하세요.",
+        "placeholder": "예: R&B, 에너지 넘치는, 경쾌한 팝, 어쿠스틱 포크, 일렉트로닉 댄스...",
+        "tooShort": "음악 스타일 설명은 최소 10자 이상이어야 합니다."
+      },
+      "generating": "생성 중...",
+      "generateMusicWithCredits": "음악 생성 ({credits} 크레딧)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "지속 시간",
+        "description": "사운드 효과 길이를 설정합니다."
+      },
+      "promptInfluence": {
+        "title": "프롬프트 영향",
+        "description": "값이 높을수록 프롬프트를 더 충실히 따릅니다."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "문의",
+      "description": "ReelMind 팀에 피드백을 보내세요."
+    },
+    "header": {
+      "title": "빠른 피드백",
+      "description": "버그를 발견했거나 제안이 있으신가요? 30초 만에 알려주세요."
+    },
+    "card": {
+      "title": "빠른 피드백",
+      "subtitle": "3개 항목만 입력하면 30초면 끝!"
+    },
+    "submitted": {
+      "title": "피드백이 제출되었습니다",
+      "description": "피드백을 보내주셔서 감사합니다. 검토 후 필요 시 연락드리겠습니다."
+    },
+    "auth": {
+      "required": "피드백을 제출하려면 로그인해 주세요."
+    },
+    "form": {
+      "errors": {
+        "unknown": "문제가 발생했습니다. 다시 시도해 주세요."
+      },
+      "type": {
+        "label": "유형",
+        "placeholder": "피드백 유형 선택",
+        "options": {
+          "bug": "버그 신고",
+          "suggestion": "제안",
+          "other": "기타"
+        },
+        "errors": {
+          "required": "피드백 유형은 필수입니다.",
+          "invalid": "유효하지 않은 피드백 유형입니다."
+        }
+      },
+      "subject": {
+        "label": "제목 *",
+        "placeholder": "문제 또는 제안을 입력하세요",
+        "errors": {
+          "required": "제목은 필수입니다.",
+          "min": "제목은 최소 {min}자 이상이어야 합니다.",
+          "max": "제목은 {max}자 미만이어야 합니다.",
+          "invalid": "제목에 유효하지 않은 내용이 포함되어 있습니다."
+        }
+      },
+      "message": {
+        "label": "세부 내용 *",
+        "placeholder": "자세히 알려주세요...",
+        "errors": {
+          "required": "세부 내용은 필수입니다.",
+          "min": "세부 내용은 최소 {min}자 이상이어야 합니다.",
+          "max": "세부 내용은 {max}자 미만이어야 합니다.",
+          "invalid": "세부 내용에 유효하지 않은 내용이 포함되어 있습니다."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "제출 중...",
+      "submit": "피드백 제출"
+    },
+    "toast": {
+      "submitSuccess": "피드백이 성공적으로 제출되었습니다!",
+      "submitFailed": "피드백 제출에 실패했습니다. 다시 시도해 주세요.",
+      "authRequired": "피드백을 제출하려면 로그인해 주세요.",
+      "rateLimited": "제출이 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+      "rateLimitedWithRetryAfter": "{seconds}초 후에 다시 제출해 주세요.",
+      "fixErrors": "폼의 오류를 수정해 주세요.",
+      "checkInput": "입력 내용을 확인한 후 다시 시도해 주세요."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "게시글",
+      "following": "팔로잉",
+      "followingShort": "팔로우",
+      "followers": "팔로워",
+      "followersShort": "팬",
+      "favorites": "즐겨찾기",
+      "favoritesShort": "즐찾"
+    },
+    "actions": {
+      "save": "저장",
+      "saving": "저장 중...",
+      "cancel": "취소",
+      "delete": "삭제",
+      "retry": "다시 시도",
+      "editProfile": "프로필 편집",
+      "signOut": "로그아웃",
+      "follow": "팔로우",
+      "unfollow": "언팔로우",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "크리에이터",
+      "avatarAltFallback": "사용자",
+      "initialFallback": "유",
+      "edit": {
+        "displayNamePlaceholder": "표시 이름",
+        "bioPlaceholder": "소개"
+      },
+      "stats": {
+        "following": "팔로잉",
+        "followers": "팔로워"
+      },
+      "joined": "{date} 가입",
+      "joinedFallback": "2025년 3월"
+    },
+    "time": {
+      "now": "방금",
+      "minutesAgo": "{minutes}분 전",
+      "hoursAgo": "{hours}시간 전",
+      "daysAgo": "{days}일 전"
+    },
+    "toast": {
+      "loginFirst": "먼저 로그인해 주세요",
+      "cannotFollowYourself": "자기 자신은 팔로우할 수 없습니다",
+      "followed": "팔로우했습니다",
+      "unfollowed": "언팔로우했습니다",
+      "operationFailed": "작업에 실패했습니다"
+    },
+    "posts": {
+      "loadingMore": "게시글을 더 불러오는 중...",
+      "error": {
+        "failedToLoad": "게시글을 불러오지 못했습니다"
+      },
+      "empty": {
+        "title": "아직 게시글이 없습니다",
+        "description": "이 사용자는 아직 게시글을 공유하지 않았습니다. 나중에 다시 확인해 주세요!"
+      },
+      "deleteDialog": {
+        "title": "게시글 삭제",
+        "description": "이 작업은 게시글을 프로필과 피드에서 숨깁니다. 되돌릴 수 없습니다."
+      },
+      "toast": {
+        "deleted": "게시글이 삭제되었습니다",
+        "deleteFailed": "게시글 삭제에 실패했습니다"
+      }
+    },
+    "favorites": {
+      "loadingMore": "즐겨찾기를 더 불러오는 중...",
+      "error": {
+        "failedToLoad": "즐겨찾기를 불러오지 못했습니다"
+      },
+      "empty": {
+        "title": "아직 즐겨찾기가 없습니다",
+        "description": "좋아요한 게시글이 여기에 표시됩니다. 탐색을 시작하고 즐겨찾기에 저장해 보세요!"
+      }
+    },
+    "followers": {
+      "empty": "아직 팔로워가 없습니다",
+      "error": {
+        "failedToLoad": "팔로워를 불러오지 못했습니다"
+      },
+      "followerSince": "{time}부터 팔로워"
+    },
+    "following": {
+      "empty": "아직 팔로잉이 없습니다",
+      "error": {
+        "failedToLoad": "팔로잉을 불러오지 못했습니다"
+      },
+      "followingSince": "{time}부터 팔로잉"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "멤버십 요금제 - ReelMind",
+      "description": "ReelMind 멤버십 요금제에 가입하여 AI 비디오 생성을 위한 더 많은 크레딧과 프리미엄 기능을 이용하세요."
+    },
+    "plans": {
+      "hero": {
+        "title": "멤버십 요금제",
+        "subtitle": "ReelMind의 유연한 구독 요금제로 AI 비디오 생성의 잠재력을 모두 열어보세요"
+      },
+      "error": {
+        "loadFailed": "멤버십 요금제를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요."
+      },
+      "names": {
+        "free": "무료",
+        "pro": "프로",
+        "max": "맥스",
+        "unlimited": "무제한"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "연간"
+      },
+      "monthly": {
+        "label": "월간"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "첫 달 70% 할인",
+        "short": "70% 할인",
+        "description": "처음 멤버십을 구독하는 경우 70% 할인이 적용되며, 쿠폰은 24시간 유효합니다"
+      },
+      "yearly": {
+        "full": "처음 6개월 무료",
+        "short": "6개월 무료",
+        "description": "연간 구독자는 처음 6개월이 완전히 무료입니다(첫 해 약 50% 할인 효과)!"
+      },
+      "percentOff": "{percent}% 할인",
+      "badge": {
+        "preview": "🎁 {offer} 이용 가능",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(수령 후)"
+    },
+    "pricing": {
+      "perYear": "연간",
+      "perMonth": "월간",
+      "breakdown": {
+        "originalPrice": "정가:",
+        "discount": "할인:",
+        "payFirstYear": "결제 금액(첫 해):",
+        "firstMonth": "첫 달:"
+      }
+    },
+    "status": {
+      "title": "멤버십 상태",
+      "loading": "멤버십 정보 불러오는 중...",
+      "currentPlan": "현재 요금제:",
+      "expiresOn": "만료일:",
+      "unlimitedDescription": "크레딧을 소모하지 않고 모든 생성 기능을 무제한으로 이용할 수 있습니다.",
+      "planDescription": "{plan} 요금제의 모든 기능과 혜택을 이용할 수 있습니다.",
+      "noActive": {
+        "title": "활성 멤버십이 없습니다.",
+        "subtitle": "아래 요금제에 구독하여 프리미엄 기능을 이용하세요."
+      }
+    },
+    "creditsBalance": {
+      "title": "크레딧 잔액",
+      "loading": "크레딧 정보 불러오는 중...",
+      "availableCredits": "사용 가능한 크레딧:",
+      "unlimited": {
+        "video": "무제한 비디오 생성",
+        "image": "무제한 이미지 생성",
+        "audio": "무제한 사운드 생성"
+      },
+      "estimate": {
+        "videos": "최대 {count}개 비디오",
+        "images": "최대 {count}개 이미지",
+        "audios": "최대 {count}개 사운드"
+      },
+      "cost": {
+        "videos": "비디오: {credits} 크레딧부터",
+        "images": "이미지: {credits} 크레딧부터",
+        "audios": "사운드: {credits} 크레딧부터"
+      }
+    },
+    "credits": {
+      "title": "크레딧 구매",
+      "history": {
+        "toggle": {
+          "show": "거래 내역 보기",
+          "hide": "거래 내역 숨기기"
+        }
+      },
+      "card": {
+        "description": "AI 생성 기능을 강화할 크레딧 패키지를 선택하세요"
+      },
+      "packages": {
+        "basic": {
+          "label": "베이직 팩"
+        },
+        "standard": {
+          "label": "스탠다드 팩"
+        },
+        "premium": {
+          "label": "프리미엄 팩"
+        },
+        "pro": {
+          "label": "울트라 팩"
+        },
+        "bonus": "보너스: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "기본 환율: 1 USD = 100 크레딧",
+        "buyMoreBonus": "많이 살수록 보너스도 더!",
+        "neverExpire": "크레딧은 만료되지 않습니다",
+        "instantDelivery": "결제 후 즉시 지급"
+      },
+      "actions": {
+        "processing": "처리 중...",
+        "buyCredits": "{credits} 크레딧 구매"
+      }
+    },
+    "creditsHistory": {
+      "title": "거래 내역",
+      "subtitle": "최근 크레딧 거래 내역",
+      "actions": {
+        "retry": "다시 시도",
+        "loading": "로딩 중...",
+        "loadMore": "더 불러오기"
+      },
+      "table": {
+        "date": "날짜",
+        "type": "유형",
+        "amount": "금액",
+        "status": "상태"
+      },
+      "empty": "거래 내역이 없습니다",
+      "types": {
+        "membershipMonthly": "멤버십 월간 크레딧",
+        "membershipInitial": "멤버십 초기 크레딧",
+        "freeMonthly": "무료 월간 크레딧",
+        "purchase": "크레딧 구매",
+        "platformReward": "플랫폼 보상",
+        "newUserBonus": "신규 사용자 보너스",
+        "postReward": "게시글 보상",
+        "videoPostReward": "비디오 게시글 보상",
+        "refund": "환불",
+        "balanceAdjustment": "잔액 조정",
+        "videoGeneration": "비디오 생성",
+        "imageGeneration": "이미지 생성",
+        "modelTraining": "모델 학습",
+        "audioGeneration": "오디오 생성",
+        "systemAdjustment": "시스템 조정"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}시간 {m}분 {s}초",
+        "ms": "{m}분 {s}초",
+        "s": "{s}초",
+        "expired": "만료됨"
+      },
+      "toast": {
+        "claimedTitle": "쿠폰을 성공적으로 받았습니다",
+        "claimedDescription": "쿠폰이 계정에 추가되었습니다. {hours}시간 동안 유효합니다",
+        "claimFailedTitle": "수령 실패",
+        "tryAgainLater": "잠시 후 다시 시도해 주세요",
+        "networkError": "네트워크 오류입니다. 잠시 후 다시 시도해 주세요"
+      }
+    },
+    "couponStatus": {
+      "title": "쿠폰 상태",
+      "active": {
+        "annualTitle": "연간 혜택 활성화",
+        "couponTitle": "쿠폰이 활성화되었습니다"
+      },
+      "fields": {
+        "claimed": "수령:",
+        "expires": "만료:",
+        "timeLeft": "남은 시간:",
+        "usedAt": "사용:",
+        "discount": "할인:"
+      },
+      "expired": "쿠폰이 만료되었습니다",
+      "used": {
+        "title": "쿠폰 사용됨"
+      },
+      "available": "{offer} 이용 가능",
+      "offer": {
+        "annualSpecial": "🎁 연간 스페셜",
+        "newUserExclusive": "🎉 신규 사용자 전용",
+        "bestValue": "가성비 최고",
+        "limitedTime": "기간 한정",
+        "claimYearly": "6개월 무료 혜택 받기",
+        "claimMonthly": "지금 쿠폰 받기"
+      },
+      "none": {
+        "title": "사용 가능한 쿠폰이 없습니다",
+        "description": "{offer}은(는) 멤버십을 구매한 적이 없는 신규 사용자에게만 제공됩니다."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "인기",
+        "advanced": "고급",
+        "unlimited": "무제한"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "무제한 이용하기",
+        "getUnlimitedMobile": "무제한",
+        "subscribeDesktop": "구독 시작",
+        "subscribeMobile": "구독",
+        "claimAndSubscribeMobile": "받고 구독",
+        "getDiscountMobile": "{discount} 받기",
+        "claimDiscountAndSubscribeDesktop": "{discount} 받고 구독"
+      },
+      "toast": {
+        "loginSuccess": "로그인 완료! 다시 버튼을 눌러 할인을 받고 구독하세요.",
+        "claimCouponFailed": "쿠폰 받기에 실패했습니다",
+        "tryAgainLater": "잠시 후 다시 시도해 주세요",
+        "couponClaimed": "쿠폰을 받았습니다!",
+        "failedToProcess": "처리에 실패했습니다"
+      },
+      "usageEstimate": {
+        "title": "월 사용량 예상",
+        "videos": "월 최대 {count}개 비디오",
+        "images": "월 최대 {count}개 이미지",
+        "audios": "월 최대 {count}개 사운드"
+      },
+      "unlimitedNotes": {
+        "title": "사용 안내",
+        "videoTasks": {
+          "title": "비디오 작업:",
+          "body": "동시에 최대 5개의 작업을 실행할 수 있습니다. 월 한도: 300. 월 한도에 도달하면 느린 모드가 적용됩니다(24시간당 일일 한도 30개 비디오, 시간당 10개 작업)."
+        },
+        "imageTasks": {
+          "title": "이미지 작업:",
+          "body": "월 최대 300개 작업. 300번째 작업까지는 빠른 모드(분당 5개)가 적용되며, 이후에는 느린 모드로 분당 1개로 제한됩니다."
+        },
+        "premiumModels": {
+          "title": "프리미엄 모델:",
+          "body": "일부 고비용 모델은 UNLIMITED 요금제에 포함되지 않습니다. VEO 3.*의 느린 변형과 Sora-2 /pro 변형은 여전히 크레딧을 소모합니다."
+        }
+      },
+      "currentPlan": "현재 계획",
+      "yearlyEquivalent": "<price>{value}</price>와 동일",
+      "yearlySavings": "월별 결제 대비 <amount>{value}</amount> 절약"
+    },
+    "features": {
+      "monthlyCredits": "월 {credits} 크레딧",
+      "monthlyVideoCredits": "월 {credits} 비디오 크레딧",
+      "fullAccessTopModels": "상위 {count}개 AI 비디오 모델 전체 이용",
+      "accessAllModels": "모든 모델 이용",
+      "purchaseMoreRolloverVideoCredits": "추가 이월 비디오 크레딧 구매",
+      "downloadNoWatermark": "워터마크 없이 다운로드",
+      "commercialUse": "상업적 이용 가능",
+      "fastGenerations": "빠른 생성",
+      "prioritySupport": "우선 지원",
+      "unlimitedVideoAndImageGeneration": "비디오 및 이미지 무제한 생성"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "결제 옵션 열기"
+      },
+      "actions": {
+        "opening": "여는 중...",
+        "billingOptions": "결제 옵션"
+      },
+      "confirm": {
+        "title": "구독 관리",
+        "description": "구독을 취소하려고 하시나요? 떠나시기 전에 피드백을 듣고 싶습니다.",
+        "keep": "구독 유지",
+        "continueCancel": "취소 계속"
+      },
+      "toast": {
+        "openFailed": "구독 관리 페이지를 열지 못했습니다",
+        "feedbackThanks": "피드백 감사합니다!",
+        "feedbackSaveFailed": "피드백 저장에 실패했지만, 구독 관리는 계속할 수 있습니다"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "피드백을 부탁드립니다",
+        "subtitle": "몇 가지 간단한 질문에 답해 주세요"
+      },
+      "common": {
+        "close": "닫기",
+        "other": "기타",
+        "stepIndicator": "{total}단계 중 {current}단계"
+      },
+      "actions": {
+        "back": "뒤로",
+        "next": "다음",
+        "submitting": "제출 중...",
+        "complete": "완료하고 계속"
+      },
+      "satisfaction": {
+        "1": "매우 불만족",
+        "2": "불만족",
+        "3": "보통",
+        "4": "만족",
+        "5": "매우 만족"
+      },
+      "steps": {
+        "1": {
+          "title": "ReelMind를 어떻게 알게 되셨나요?",
+          "options": {
+            "social": "SNS(Twitter, Instagram 등)",
+            "search": "검색 엔진(Google, Bing 등)",
+            "friend": "친구/동료 추천",
+            "ads": "온라인 광고",
+            "blog": "테크 블로그 또는 리뷰 사이트"
+          }
+        },
+        "2": {
+          "title": "ReelMind를 주로 어떤 용도로 사용하나요?",
+          "description": "창작 목표에 해당하는 항목을 모두 선택하세요.",
+          "options": {
+            "video": "비디오 제작",
+            "image": "이미지 생성",
+            "music": "음악 작곡",
+            "marketing": "광고 및 마케팅 콘텐츠",
+            "socialPosts": "SNS 게시물",
+            "education": "교육 자료",
+            "personal": "개인 프로젝트",
+            "exploring": "새 아이디어 탐색"
+          }
+        },
+        "3": {
+          "title": "당신을 가장 잘 설명하는 것은 무엇인가요?",
+          "options": {
+            "creator": "콘텐츠 크리에이터",
+            "developer": "프리랜서 개발자",
+            "marketingPro": "마케팅 전문가",
+            "businessOwner": "사업자",
+            "designer": "디자이너",
+            "hobbyist": "취미",
+            "student": "학생",
+            "artist": "아티스트"
+          }
+        },
+        "4": {
+          "title": "경험을 어떻게 평가하시나요?",
+          "description": "ReelMind에 대한 전반적인 만족도를 평가해 주세요"
+        },
+        "5": {
+          "title": "취소를 결정한 주된 이유는 무엇인가요?",
+          "options": {
+            "price": "너무 비쌈",
+            "usage": "사용 빈도가 낮음",
+            "features": "필수 기능 부족",
+            "quality": "생성 결과의 품질",
+            "bugs": "기술 문제 또는 버그",
+            "alternative": "더 나은 대안 발견"
+          }
+        },
+        "6": {
+          "title": "피드백을 부탁드립니다",
+          "description": "의견은 ReelMind를 모두에게 더 좋게 만드는 데 도움이 됩니다.",
+          "placeholder": "개선할 점이 있나요? 보고 싶은 기능이 있다면 알려주세요(선택 사항)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "요청이 제출되었습니다. 곧 연락드리겠습니다.",
+        "submitFailed": "요청 제출에 실패했습니다"
+      },
+      "card": {
+        "title": "기업 및 맞춤 요금제",
+        "subtitle": "맞춤 가격, 인보이스, 지원",
+        "description": "인보이스, 컴플라이언스 지원, 맞춤 워크플로우가 필요하신가요? 요구사항을 공유해 주시면 최적의 플랜을 제안드리겠습니다.",
+        "toggle": {
+          "hide": "폼 숨기기",
+          "show": "영업팀 문의"
+        },
+        "highlights": {
+          "sso": "SSO 및 컴플라이언스",
+          "invoices": "인보이스 및 구매 주문",
+          "support": "우선 지원",
+          "workflows": "맞춤 워크플로우"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "문의 유형",
+          "placeholder": "유형 선택",
+          "options": {
+            "business": "기업",
+            "individual": "개인"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "예상 월 사용량(USD)",
+          "placeholder": "예상을 선택하세요",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "$1,000 – $5,000",
+            "5000to10000": "$5,000 – $10,000",
+            "10000plus": "$10,000+",
+            "custom": "맞춤 금액(USD)"
+          },
+          "custom": {
+            "label": "맞춤 월 사용량(USD)",
+            "placeholder": "USD 금액을 입력하세요"
+          }
+        },
+        "firstName": {
+          "label": "이름",
+          "placeholder": "제인"
+        },
+        "lastName": {
+          "label": "성",
+          "placeholder": "미상"
+        },
+        "email": {
+          "label": "이메일",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "웹사이트",
+          "placeholder": "https://company.com"
+        },
+        "requirements": {
+          "label": "프로젝트 및 요구사항을 알려주세요",
+          "placeholder": "무엇을 만들고 있나요? 어떤 워크플로우/컴플라이언스가 필요하며, 예상 물량은 어느 정도인가요?"
+        },
+        "actions": {
+          "cancel": "취소",
+          "submitting": "제출 중...",
+          "submit": "제출"
+        },
+        "validation": {
+          "firstNameRequired": "이름은 필수입니다",
+          "lastNameRequired": "성은 필수입니다",
+          "emailInvalid": "유효한 이메일이어야 합니다",
+          "websiteInvalid": "웹사이트는 유효한 URL이어야 합니다",
+          "monthlyEstimateRequired": "월 사용량 예상은 필수입니다",
+          "monthlyEstimateEnter": "월 사용량을 입력해 주세요",
+          "monthlyEstimateMin": "월 사용량은 0 이상이어야 합니다",
+          "requirementsMin": "더 자세히 작성해 주세요(최소 {count}자)",
+          "maxChars": "최대 {count}자"
+        }
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "items": {
+        "proBenefits": {
+          "question": "PRO 멤버십의 혜택은 무엇인가요?",
+          "answer": "PRO 멤버십은 매달 1000 크레딧(10달러 상당)을 제공하며, 새로운 기능 우선 이용, 더 빠른 비디오 생성, 고급 편집 옵션, 우선 고객 지원을 제공합니다."
+        },
+        "cancelAnytime": {
+          "question": "언제든지 구독을 취소할 수 있나요?",
+          "answer": "네, 언제든지 구독을 취소할 수 있습니다. 혜택은 현재 결제 주기가 끝날 때까지 유지됩니다.",
+          "discountNote": {
+            "title": "할인 구독 특별 안내:",
+            "body": "쿠폰 할인으로 구독했고 첫 달에 할인 금액을 초과하는 크레딧을 사용한 경우, 두 번째 달 결제가 처리된 후에만 취소할 수 있습니다. 이는 프로모션의 공정한 사용을 위한 정책입니다."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "월간 구독과 연간 구독에 차이가 있나요?",
+          "answer": "네, 연간 구독은 월간보다 큰 할인을 제공합니다. 연간 결제를 선택하면 약 20%를 절약할 수 있습니다."
+        },
+        "whatAreCredits": {
+          "question": "ReelMind 크레딧이란 무엇인가요?",
+          "answer": "ReelMind 크레딧은 플랫폼에서 AI 비디오와 이미지를 생성하는 데 사용하는 가상 화폐입니다. 기능마다 필요한 크레딧이 다릅니다. 예를 들어, 일반 비디오(480p)는 50 크레딧, HD 비디오(720p)는 80 크레딧이 필요합니다."
+        },
+        "earnCredits": {
+          "question": "크레딧은 어떻게 받을 수 있나요?",
+          "intro": "크레딧은 다음과 같은 방법으로 얻을 수 있습니다:",
+          "items": {
+            "membership": "멤버십 요금제(프로는 월 1000 크레딧, 맥스는 2000)",
+            "purchase": "크레딧 팩 구매",
+            "newUser": "신규 사용자는 가입 시 100 크레딧 무료 제공",
+            "posting": "ReelMind에 게시물 업로드(하루 50 크레딧)",
+            "promotions": "특별 프로모션 및 리워드"
+          }
+        },
+        "expire": {
+          "question": "크레딧은 만료되나요?",
+          "answer": "직접 구매한 크레딧은 만료되지 않으며 사용하기 전까지 계정에 유지됩니다. 월간 지급 크레딧은 매달 초에 초기화되며, 이전 달에 남은 크레딧은 이월되지 않습니다."
+        },
+        "refund": {
+          "question": "사용하지 않은 크레딧을 환불받을 수 있나요?",
+          "answer": "구매한 크레딧은 환불되지 않습니다. 다만 기술적 문제로 정상적으로 사용할 수 없었던 경우, 지원팀에 문의해 주시면 도와드리겠습니다."
+        },
+        "membershipVsCredits": {
+          "question": "멤버십과 크레딧의 차이는 무엇인가요?",
+          "answer": "멤버십은 월간 크레딧과 함께 우선 처리, 독점 기능 접근 등 추가 혜택을 제공합니다. 크레딧은 멤버십 없이도 별도로 구매할 수 있으며 콘텐츠 생성 시 소모됩니다. 자주 사용한다면 멤버십, 가끔 사용한다면 크레딧 구매를 권장합니다."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. 모든 권리 보유."
+    }
+  },
+  "Search": {
+    "placeholder": "검색...",
+    "noResultsFound": "결과가 없습니다",
+    "viewAllResults": "전체 결과 보기",
+    "sections": {
+      "posts": "게시글",
+      "users": "사용자"
+    },
+    "tabs": {
+      "posts": "게시글",
+      "users": "사용자"
+    },
+    "unknownUser": "알 수 없음",
+    "loading": "로딩 중...",
+    "searching": "검색 중...",
+    "loadingMore": "더 불러오는 중...",
+    "tryAgain": "다시 시도",
+    "noPostsFound": "게시글이 없습니다",
+    "noUsersFound": "사용자가 없습니다",
+    "empty": {
+      "title": "검색",
+      "hint": "키워드를 입력하여 콘텐츠를 찾아보세요"
+    },
+    "errors": {
+      "searchFailed": "검색에 실패했습니다"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "평생 커미션 - 영구 20%"
+    },
+    "hero": {
+      "lifetime": "평생",
+      "passiveIncome": "패시브 인컴",
+      "subtitle": {
+        "prefix": "영구적으로",
+        "suffix": "커미션을 받으세요"
+      }
+    },
+    "actions": {
+      "getStarted": "시작하기",
+      "viewDashboard": "대시보드 보기",
+      "signInFirst": "먼저 로그인해 주세요"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "ReelMind API 플랫폼",
+      "actions": {
+        "modelsPricing": "모델 및 요금",
+        "viewDocumentation": "문서 보기"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "API 키가 생성되었습니다",
+      "apiKeyCreateFailed": "API 키 생성에 실패했습니다",
+      "apiKeyDeleted": "API 키가 삭제되었습니다",
+      "apiKeyDeletedDescription": "API 키가 삭제되었습니다",
+      "apiKeyDeleteFailed": "API 키 삭제에 실패했습니다",
+      "apiKeyCopied": "API 키가 클립보드에 복사되었습니다",
+      "modelIdCopied": "모델 ID가 클립보드에 복사되었습니다"
+    },
+    "accountCard": {
+      "notLoggedIn": "로그인되지 않음",
+      "loadingKeys": "API 키 불러오는 중...",
+      "keysAvailable": "사용 가능한 API 키 {count}개",
+      "createKey": "API 키 생성",
+      "helpPrefix": "도움이 필요하시면 ",
+      "apiDocumentation": "API 문서를 확인하세요"
+    },
+    "stats": {
+      "plan": "요금제",
+      "resetDate": "리셋 날짜",
+      "credits": "크레딧",
+      "tasks": "작업",
+      "loading": "로딩 중...",
+      "freePlan": "무료 플랜",
+      "na": "해당 없음",
+      "buyCredits": "크레딧 구매"
+    },
+    "apiKeys": {
+      "title": "API 키 관리",
+      "description": "ReelMind 비디오 생성 API에 접근하기 위한 API 키를 관리하세요",
+      "createNew": "새 API 키 생성",
+      "loading": "API 키 불러오는 중...",
+      "label": "API 키",
+      "created": "{date}에 생성됨",
+      "active": "활성",
+      "inactive": "비활성",
+      "show": "API 키 표시",
+      "hide": "API 키 숨기기",
+      "copy": "API 키 복사",
+      "totalCalls": "총 호출 수",
+      "creditsUsed": "사용한 크레딧",
+      "empty": {
+        "title": "API 키가 없습니다",
+        "description": "아직 API 키를 생성하지 않았습니다. ReelMind API를 사용하려면 첫 API 키를 생성하세요.",
+        "createFirst": "첫 API 키 생성하기"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "모델 및 요금",
+      "apiDocumentation": "API 문서"
+    },
+    "documentation": {
+      "title": "API 문서",
+      "authentication": "인증",
+      "authenticationIntro": "모든 API 요청은 API 키를 사용한 인증이 필요합니다. API 키는 아래의 API 키 관리 섹션에서 생성할 수 있는 UUID입니다.",
+      "authenticationMethods": "인증 방법",
+      "exampleRequest": "요청 예시",
+      "important": "중요",
+      "apiEndpoints": "API 엔드포인트",
+      "responseFormat": "응답 형식",
+      "responseFormatIntro": "비디오 생성 작업 응답 형식:",
+      "parameters": "파라미터",
+      "table": {
+        "name": "이름",
+        "type": "유형",
+        "required": "필수",
+        "description": "설명"
+      },
+      "yes": "예",
+      "no": "아니오"
+    },
+    "pricing": {
+      "title": "API 요금 및 모델",
+      "intro": "비디오 및 이미지 생성 API에 사용할 수 있는 AI 모델과 요금을 확인하세요",
+      "loading": "사용 가능한 모델 불러오는 중...",
+      "available": "사용 가능",
+      "unavailable": "사용 불가",
+      "credits": "{credits} 크레딧",
+      "basePricePerImage": "기본 가격(이미지당)",
+      "basePrice5sVideo": "기본 가격(5초 비디오)",
+      "creditsPerSecond": "+{credits} 크레딧/초",
+      "modelId": "모델 ID",
+      "copyModelId": "모델 ID 복사",
+      "noModels": {
+        "title": "사용 가능한 모델이 없습니다",
+        "description": "현재 API에서 사용할 수 있는 AI 모델이 없습니다. 나중에 다시 확인해 주세요."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "텍스트→비디오",
+      "imageToVideo": "이미지→비디오",
+      "videoToVideo": "비디오→비디오",
+      "textToImage": "텍스트→이미지",
+      "imageToImage": "이미지→이미지"
+    },
+    "deleteModal": {
+      "title": "삭제 확인",
+      "description": "이 API 키를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+      "keyName": "키 이름: {name}",
+      "createdOn": "{date}에 생성됨",
+      "cancel": "취소",
+      "deleting": "삭제 중...",
+      "deleteKey": "API 키 삭제"
+    },
+    "modelParameters": {
+      "title": "모델 파라미터",
+      "required": "필수",
+      "default": "기본값: {value}",
+      "labels": {
+        "prompt": "프롬프트",
+        "guidance_scale": "가이던스 스케일",
+        "aspect_ratio": "종횡비",
+        "seed": "시드",
+        "image_url": "이미지 URL",
+        "duration": "지속 시간",
+        "resolution": "해상도",
+        "num_inference_steps": "추론 단계",
+        "cfg_scale": "CFG 스케일"
+      },
+      "flux": {
+        "promptDescription": "생성할 이미지를 설명하는 텍스트 프롬프트",
+        "guidanceScaleDescription": "이미지가 프롬프트를 얼마나 잘 따르는지 제어합니다",
+        "aspectRatioDescription": "생성된 이미지의 종횡비",
+        "seedDescription": "재현 가능한 생성을 위한 랜덤 시드",
+        "imageUrlDescription": "이미지→이미지 생성을 위한 입력 이미지 URL"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "텍스트→이미지 · 이미지 편집",
+      "title": "플럭스 / 나노바나나 / 씨드림"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - 세계 1위 AI 에이전트 감독",
+      "description": "세계 1위 AI 에이전트 감독"
+    },
+    "page": {
+      "loading": "Nolan AI 감독 로딩 중..."
+    },
+    "heroBanner": {
+      "label": "혁신적인 AI 기술",
+      "name": "놀란",
+      "worldFirst": "세계 최초",
+      "aiAgentDirector": "AI 에이전트 감독"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "보류 중",
+        "queued": "대기 중",
+        "processing": "처리",
+        "completed": "완료됨",
+        "failed": "실패",
+        "canceled": "취소됨"
+      },
+      "model": {
+        "unknown": "알 수 없는 모델",
+        "unnamed": "이름 없음"
+      },
+      "errors": {
+        "fetchListTitle": "작업을 로드하지 못했습니다.",
+        "unknown": "알 수 없는 오류",
+        "fetchDetails": "작업 세부정보를 가져오지 못했습니다.",
+        "downloadFailed": "다운로드 실패",
+        "retryFailed": "재시도 실패"
+      },
+      "details": {
+        "videoTitle": "비디오 작업 세부정보",
+        "imageTitle": "이미지 작업 세부정보",
+        "videoPreview": "비디오 미리보기",
+        "hideVideo": "비디오 숨기기",
+        "showVideo": "비디오 보기",
+        "downloadVideo": "비디오 다운로드",
+        "browserNoVideoSupport": "귀하의 브라우저는 비디오 재생을 지원하지 않습니다.",
+        "labels": {
+          "duration": "기간",
+          "fileSize": "파일 크기",
+          "format": "형식",
+          "prompt": "프롬프트",
+          "model": "모델",
+          "ratio": "종횡비",
+          "resolution": "해상도",
+          "taskId": "작업 ID",
+          "user": "사용자",
+          "status": "상태",
+          "createdTime": "생성시간",
+          "startedTime": "시작 시간",
+          "completedTime": "완료 시간",
+          "generationModel": "세대 모델",
+          "priority": "우선순위",
+          "requestId": "요청 ID",
+          "lastActivity": "마지막 활동"
+        },
+        "videoPreviewUnavailable": "동영상 미리보기를 사용할 수 없습니다.",
+        "videoNoOutput": "작업이 완료되었지만 비디오 출력이 없습니다.",
+        "videoNotCompleted": "작업이 아직 완료되지 않았습니다.",
+        "generationParams": "세대 매개변수",
+        "basicInfo": "기본정보",
+        "timeInfo": "시간정보",
+        "detailData": "상세 데이터",
+        "inputParams": "입력 매개변수",
+        "outputResult": "출력 결과",
+        "errorLog": "오류 로그",
+        "retrying": "재시도 중...",
+        "retryTask": "작업 재시도",
+        "generatedImage": "생성된 이미지",
+        "close": "닫기"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "사용자 피드백 관리",
+        "subtitle": "사용자가 제출한 피드백 및 불만 사항을 관리합니다."
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "가져오기 실패",
+          "fetchFailedDescription": "피드백 데이터를 가져올 수 없습니다: {error}",
+          "unknown": "알 수 없는 오류"
+        },
+        "type": {
+          "bug": "버그 신고",
+          "suggestion": "제안",
+          "other": "기타"
+        },
+        "loading": "로드 중...",
+        "filter": {
+          "label": "피드백 유형",
+          "all": "모든 유형"
+        },
+        "total": "총계: {total} 피드백 항목",
+        "empty": "피드백 데이터 없음",
+        "headers": {
+          "userInfo": "사용자 정보",
+          "type": "유형",
+          "subject": "주제",
+          "submittedAt": "제출됨",
+          "actions": "작업"
+        },
+        "user": {
+          "unknown": "알 수 없는 사용자",
+          "noEmail": "이메일 없음"
+        },
+        "actions": {
+          "collapse": "접기",
+          "viewDetails": "세부정보 보기"
+        },
+        "contentLabel": "피드백:",
+        "pagination": {
+          "previous": "이전",
+          "next": "다음"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "검색 키워드를 입력해주세요.",
+        "noUsersFound": "일치하는 사용자가 없습니다.",
+        "searchFailed": "사용자를 검색하지 못했습니다.",
+        "userRequired": "사용자를 선택하거나 사용자 ID를 입력하세요.",
+        "amountInvalid": "유효한 크레딧 금액을 입력하세요.",
+        "descriptionRequired": "보조금 설명을 입력하세요.",
+        "grantFailed": "크레딧을 부여하지 못했습니다."
+      },
+      "success": {
+        "granted": "크레딧이 성공적으로 부여되었습니다."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "설문조사를 가져오지 못했습니다.",
+        "fetchStats": "설문조사 통계를 가져오지 못했습니다."
+      }
+    },
+    "memberships": {
+      "title": "사용자 구독 관리",
+      "search": {
+        "placeholder": "사용자 ID, 이메일, 닉네임을 검색하세요...",
+        "button": "검색"
+      },
+      "stats": {
+        "total": "총 구독수",
+        "yearly": "연간 회원"
+      },
+      "list": {
+        "title": "구독 목록"
+      },
+      "loading": "로드 중...",
+      "actions": {
+        "retry": "재시도"
+      },
+      "empty": "구독 데이터 없음",
+      "table": {
+        "headers": {
+          "userInfo": "사용자 정보",
+          "plan": "계획",
+          "billingCycle": "청구 주기",
+          "status": "상태",
+          "credits": "크레딧 잔액",
+          "videoTasks": "비디오 작업",
+          "imageTasks": "이미지 작업",
+          "createdAt": "생성시간",
+          "expiresAt": "만료 시간"
+        },
+        "user": {
+          "unknown": "알 수 없음"
+        },
+        "status": {
+          "active": "활성",
+          "inactive": "비활성",
+          "cancelAtPeriodEnd": "기간 종료 시 취소"
+        },
+        "creditsUnit": "크레딧",
+        "flagged": "신고됨",
+        "tasksUnit": "작업",
+        "never": "절대로"
+      },
+      "pagination": {
+        "summary": "{total} 레코드 중 {start}~{end} 표시 중",
+        "previous": "이전",
+        "next": "다음",
+        "page": "{totalPages} 중 {currentPage} 페이지"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "게시물을 삭제하지 못했습니다. 다시 시도해 주세요."
+      }
+    }
+  },
+  "Common": {
+    "language": "언어",
+    "onlyEnglish": "현재는 영어만 가능합니다.",
+    "onlySupportedPages": "추가 언어는 현재 홈, 탐색, 검색, 만들기, 레고, 음악, 멤버십, 연락처, 사용자, 공유, 모델, 효과 및 블로그 페이지에서만 사용할 수 있습니다.",
+    "languages": {
+      "en": "영어",
+      "zh-CN": "중국어(간체)"
+    },
+    "actions": {
+      "viewAll": "모두 보기",
+      "cancel": "취소",
+      "recreate": "재창조",
+      "download": "다운로드",
+      "downloading": "다운로드 중...",
+      "showMore": "더 보기",
+      "showLess": "간략히 보기"
+    },
+    "aria": {
+      "scrollRight": "오른쪽으로 스크롤",
+      "search": "찾다"
+    },
+    "search": {
+      "placeholder": "게시물 및 사용자 검색..."
+    },
+    "share": {
+      "button": "공유하다",
+      "toast": {
+        "copiedTitle": "복사됨",
+        "copiedMessage": "링크가 클립보드에 복사되었습니다.",
+        "failedTitle": "복사하지 못했습니다.",
+        "failedMessage": "링크를 클립보드에 복사할 수 없습니다."
+      }
+    },
+    "header": {
+      "nolanAIDirector": "놀란 AI 디렉터",
+      "earlyAccess": "조기 액세스",
+      "justOneCredit": "단 1 크레딧"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "라이트 모드",
+        "darkMode": "다크 모드",
+        "switchToLightMode": "조명 모드로 전환",
+        "switchToDarkMode": "다크 모드로 전환"
+      },
+      "profile": {
+        "myProfile": "내 프로필",
+        "goToMyProfile": "내 프로필로 이동"
+      },
+      "menu": {
+        "openMenu": "메뉴 열기",
+        "close": "닫다"
+      },
+      "membership": {
+        "title": "회원",
+        "tapToViewPlans": "계획을 보려면 탭하세요.",
+        "upgrade": "치받이",
+        "plans": {
+          "free": "무료",
+          "pro": "찬성",
+          "max": "맥스",
+          "unlimited": "제한 없는"
+        }
+      },
+      "actions": {
+        "pricing": "가격",
+        "signIn": "로그인"
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. 모든 권리 보유."
+    },
+    "video": {
+      "labels": {
+        "prompt": "즉각적인",
+        "model": "모델",
+        "ratio": "비율",
+        "guidance": "안내",
+        "steps": "단계",
+        "seed": "씨앗",
+        "definition": "정의"
+      },
+      "values": {
+        "unknownModel": "알 수 없는 모델",
+        "random": "무작위의"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "쪽수 매기기",
+        "previous": "이전 페이지로 이동",
+        "next": "다음 페이지로 이동"
+      },
+      "previous": "이전의",
+      "next": "다음",
+      "more": "더 많은 페이지"
+    },
+    "concurrentLimit": {
+      "title": "작업 한도에 도달했습니다.",
+      "defaultMessage": "무료 사용자는 한 번에 하나의 비디오 생성 작업만 실행할 수 있습니다.",
+      "currentStatus": "현황",
+      "currentPlan": "현재 계획",
+      "premiumBenefits": "프리미엄 혜택",
+      "plans": {
+        "unlimited": "무제한 플랜",
+        "free": "무료",
+        "unlimitedTasks": "무제한 작업"
+      },
+      "unlimited": {
+        "maxTasks": "최대 3개의 동시 작업",
+        "priority": "높은 우선순위 처리",
+        "features": "모든 프리미엄 기능",
+        "waitNote": "새 작업을 제출하기 전에 현재 작업 중 일부가 완료될 때까지 기다리십시오."
+      },
+      "free": {
+        "maxTasks": "동시 작업 1개",
+        "priority": "표준 우선순위",
+        "features": "기본 기능"
+      },
+      "upgrade": {
+        "maxTasks": "최대 5개의 동시 작업",
+        "priority": "더 높은 우선순위 처리",
+        "features": "모든 모델에 대한 액세스"
+      },
+      "actions": {
+        "acknowledge": "알았어요",
+        "upgrade": "치받이",
+        "loading": "로드 중..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "로컬 업로드",
+      "reelmind": "ReelMind가 생성되었습니다."
+    },
+    "reelmind": {
+      "description": "ReelMind에서 생성된 비디오를 선택하세요.",
+      "browse": "ReelMind 비디오 찾아보기"
+    },
+    "title": {
+      "placeholder": "제목을 추가하세요..."
+    },
+    "tags": {
+      "title": "태그",
+      "empty": "동영상을 더 효과적으로 분류하려면 태그를 추가하세요.",
+      "placeholder": "태그 추가(확인하려면 Enter를 누르세요)",
+      "count": "{count}/{limit}",
+      "helper": "최대 {limit} 태그, 각각 {max}자."
+    },
+    "description": {
+      "placeholder": "설명 추가..."
+    },
+    "generationType": {
+      "title": "세대 유형",
+      "txt2video": "텍스트를 비디오로",
+      "txt2videoDescription": "텍스트 프롬프트에서 생성합니다.",
+      "img2video": "이미지를 비디오로",
+      "img2videoDescription": "참조 이미지에서 생성합니다."
+    },
+    "prompts": {
+      "promptTitle": "즉각적인",
+      "promptPlaceholder": "이 비디오를 생성하는 데 사용된 프롬프트를 입력하세요...",
+      "negativeTitle": "부정적인 프롬프트",
+      "negativePlaceholder": "부정적인 프롬프트를 입력하세요..."
+    },
+    "modelResources": {
+      "title": "모델 리소스",
+      "placeholder": "사용된 모델 리소스를 나열합니다. 모델, LoRA, 임베딩..."
+    },
+    "aigc": {
+      "guidanceScale": "안내 척도",
+      "guidanceScalePlaceholder": "예를 들어 7.5",
+      "steps": "단계",
+      "stepsPlaceholder": "예를 들어 30",
+      "seed": "씨앗",
+      "seedPlaceholder": "예를 들어 1234567890"
+    },
+    "tools": {
+      "title": "생성 도구"
+    },
+    "videoPreview": {
+      "uploadComplete": "업로드 완료",
+      "uploading": "업로드 중...",
+      "clickToUpload": "동영상을 업로드하려면 클릭하세요.",
+      "remove": "동영상 삭제"
+    },
+    "actions": {
+      "publish": "게시",
+      "publishing": "출판...",
+      "back": "뒤쪽에"
+    },
+    "errors": {
+      "tagEmpty": "태그는 비워둘 수 없습니다.",
+      "tagTooLong": "태그는 {max}자를 초과할 수 없습니다.",
+      "tagExists": "이 태그는 이미 존재합니다.",
+      "tagLimit": "최대 {limit} 태그를 추가할 수 있습니다.",
+      "authRequired": "업로드하려면 로그인하세요.",
+      "uploadFailed": "업로드에 실패했습니다. 다시 시도해 주세요.",
+      "uploadParamsFailed": "업로드 매개변수를 가져오지 못했습니다.",
+      "fileAddFailed": "파일을 추가하지 못했습니다. 다시 시도해 주세요."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "블로그-ReelMind",
+      "description": "AI 콘텐츠 제작, 비디오 생성 및 최신 ReelMind 기능에 대한 팁, 튜토리얼 및 통찰력을 찾아보세요."
+    },
+    "page": {
+      "title": "블로그",
+      "empty": "블로그 게시물을 찾을 수 없습니다."
+    },
+    "error": {
+      "title": "게시물을 로드하는 중에 오류가 발생했습니다.",
+      "description": "블로그 게시물을 로드하는 중에 문제가 발생했습니다.",
+      "retry": "다시 시도하세요"
+    },
+    "notFound": {
+      "title": "페이지를 찾을 수 없습니다",
+      "description": "요청하신 블로그 페이지가 존재하지 않습니다."
+    },
+    "feed": {
+      "end": "당신은 끝에 도달했습니다",
+      "retry": "다시 해 보다",
+      "loadFailed": "블로그 게시물을 로드하지 못했습니다."
+    },
+    "topFeed": {
+      "refresh": "새로 고치다",
+      "exploreMore": "더 많은 즐거움을 탐험해보세요",
+      "loadFailed": "무작위 게시물을 로드하지 못했습니다."
+    },
+    "floatingChat": {
+      "title": "놀란 AI에게 물어보세요",
+      "subtitle": "No.1 AI 에이전트 디렉터!",
+      "placeholder": "이 기사에 대해 질문하거나 영화 아이디어를 공유하세요...",
+      "cta": "놀란에게 보내기"
+    },
+    "featureCard": {
+      "label": "비디오 모델",
+      "title": "Reelmind는 아이디어를 실현할 수 있는 강력한 도구를 제공합니다.",
+      "subtitle": "101가지 AI 모델을 사용하여 아이디어를 멋진 시각적 요소로 바꿔 보세요.",
+      "cta": "지금 사용해 보세요"
+    },
+    "breadcrumbs": {
+      "home": "집"
+    },
+    "article": {
+      "notFoundTitle": "기사를 찾을 수 없습니다",
+      "notFoundDescription": "요청하신 기사를 찾을 수 없습니다."
+    }
+  },
+  "Favorites": {
+    "title": "내 즐겨찾기",
+    "subtitle": "여기에서 좋아하는 비디오와 모델을 관리할 수 있습니다.",
+    "tabs": {
+      "video": "동영상",
+      "model": "모델"
+    },
+    "empty": {
+      "title": "아직 즐겨찾기가 없습니다."
+    },
+    "alert": {
+      "title": "오류",
+      "retry": "다시 해 보다",
+      "loadFailed": "즐겨찾기를 로드할 수 없습니다. 다시 시도해 주세요.",
+      "removeFailed": "즐겨찾기를 삭제할 수 없습니다. 다시 시도해 주세요."
+    },
+    "card": {
+      "video": "동영상",
+      "model": "모델"
+    },
+    "button": {
+      "favorite": "가장 좋아하는",
+      "favorited": "즐겨찾기"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "ReelMind에 오신 것을 환영합니다",
+      "subtitle": "로그인하거나 크리에이터 계정을 만들어요",
+      "continueWithGoogle": "Google로 계속하기",
+      "orContinueWithEmail": "또는 이메일로 계속하기",
+      "emailLabel": "이메일",
+      "emailPlaceholder": "your@email.com",
+      "emailAddressPlaceholder": "이메일 주소",
+      "passwordLabel": "비밀번호",
+      "passwordPlaceholder": "••••••••",
+      "show": "표시",
+      "hide": "숨기기",
+      "inviteCodeLabelOptional": "초대 코드(선택)",
+      "inviteCodePlaceholder": "코드 입력",
+      "invitedBy": "<name>{value}</name>님이 초대함",
+      "continue": "계속",
+      "signIn": "로그인",
+      "createAccount": "계정 만들기",
+      "switchToSignIn": "이미 계정이 있나요? 로그인",
+      "switchToSignUp": "계정이 없나요? 가입하기",
+      "pageSubtitleCreate": "계정을 만드세요",
+      "pageSubtitleSignIn": "계정에 로그인하세요",
+      "termsLine": "계속하면 <terms>이용약관</terms> 및 <privacy>개인정보 처리방침</privacy>에 동의하게 됩니다"
+    },
+    "verifyEmail": {
+      "title": "이메일을 인증하세요",
+      "sentLinkTo": "인증 링크를 다음 이메일로 보냈습니다",
+      "checkInbox": "받은편지함을 확인하고 링크를 클릭해 계속하세요.",
+      "understand": "확인",
+      "useDifferentEmail": "다른 이메일 사용"
+    },
+    "errors": {
+      "invalidEmail": "유효하지 않은 이메일 주소",
+      "suspiciousEmail": "이 이메일은 의심스러워 보입니다",
+      "verifyBeforeLogin": "로그인하기 전에 이메일을 인증해주세요",
+      "operationFailed": "작업에 실패했습니다. 다시 시도해주세요",
+      "googleFailed": "Google 로그인에 실패했습니다. 다시 시도해주세요",
+      "checkEmailConfirmation": "확인 링크를 이메일에서 확인하세요!"
+    },
+    "brand": {
+      "headlineLine1": "릴 제작자",
+      "headlineLine2": "환영합니다",
+      "taglineLine1": "상상을 펼쳐보세요.",
+      "taglineLine2": "AI가 영상으로 담아드립니다.",
+      "cta": "크리에이터 커뮤니티에 참여해 창작을 시작하세요."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "이미지 추가",
+      "addMoreReferences": "더 많은 참조 추가",
+      "auto": "자동",
+      "back": "뒤로",
+      "character": "캐릭터",
+      "clear": "지우기",
+      "clearAll": "모두 지우기",
+      "close": "닫기",
+      "createPack": "팩 만들기",
+      "downloadCount": "{current}/{total} 다운로드",
+      "dropOrUploadPhoto": "사진 삭제 또는 업로드",
+      "goToLibrary": "도서관으로 이동",
+      "high": "높음",
+      "history": "역사",
+      "inQueue": "대기열에 있음",
+      "info": "정보",
+      "instadump": "인스타덤프",
+      "manual": "매뉴얼",
+      "new": "새로운",
+      "next": "다음",
+      "open": "열기",
+      "previous": "이전",
+      "ready": "준비",
+      "recent": "최근",
+      "remove": "제거",
+      "replace": "바꾸기",
+      "reset": "재설정",
+      "restart": "다시 시작",
+      "selectPack": "팩 선택",
+      "storyboard": "스토리보드",
+      "upload": "업로드",
+      "uploading": "업로드 중..."
+    },
+    "prompts": {
+      "defaultImage": "자연광을 활용한 영화 같은 고해상도 이미지",
+      "relightDefault": "부드러운 스튜디오 조명으로 피사체를 다시 조명하세요",
+      "faceSwapDefault": "장면을 그대로 유지하면서 얼굴을 바꾸세요.",
+      "characterSwapDefault": "스타일을 유지하면서 문자를 교체하세요",
+      "drawToEditDefault": "도면을 깨끗하고 상세한 이미지로 다듬습니다."
+    },
+    "swap": {
+      "sourceTitle": "소스",
+      "targetTitle": "대상",
+      "faceSourceDescription": "얼굴의 소스 이미지",
+      "faceTargetDescription": "교체할 대상 이미지",
+      "characterSourceDescription": "캐릭터의 소스 이미지",
+      "characterTargetDescription": "교체할 대상 이미지"
+    },
+    "inpaint": {
+      "sourceAlt": "소스 이미지",
+      "paintHint": "편집하고 싶은 부분을 칠해주세요",
+      "maskUploading": "마스크 업로드 중",
+      "maskReady": "마스크 준비",
+      "maskPaint": "페인트 마스크",
+      "paint": "페인트",
+      "erase": "지우기"
+    },
+    "relight": {
+      "title": "재조명",
+      "quickSelect": "빠른 선택",
+      "directions": {
+        "top": "탑",
+        "front": "전면",
+        "right": "오른쪽",
+        "left": "왼쪽",
+        "back": "뒤로",
+        "bottom": "바닥"
+      },
+      "brightness": "밝기",
+      "color": "색상"
+    },
+    "upscale": {
+      "title": "고급"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "비디오로 스케치",
+      "drawToVideo": "비디오에 그리기",
+      "drawToEdit": "편집을 위해 그리기",
+      "pen": "펜",
+      "eraser": "지우개",
+      "color": "색상",
+      "size": "크기",
+      "undo": "실행 취소",
+      "redo": "다시 실행",
+      "clear": "지우기",
+      "generateVideo": "비디오 생성",
+      "uploadTitle": "미디어 업로드",
+      "uploadDescription": "그림을 안내할 사진을 추가하세요."
+    },
+    "soulId": {
+      "heroTitle": "소울ID 캐릭터",
+      "heroDescription": "사진에서 일관된 캐릭터를 만들어 보세요.",
+      "createButton": "캐릭터 생성",
+      "photoCount": "{count} 사진",
+      "characterLabel": "문자 {index}",
+      "emptyGallery": "아직 문자가 없습니다.",
+      "dialogTitle": "소울 ID 만들기",
+      "dialogSubtitle": "캐릭터를 구축하려면 사진을 업로드하세요.",
+      "addPhotosTitle": "사진 추가",
+      "addPhotosDescription": "6~12장의 선명한 사진을 업로드하세요.",
+      "tip": "팁: 다양한 각도와 표현을 사용하세요."
+    },
+    "storyboard": {
+      "relightScene": "장면 재조명",
+      "headline": "패션공장",
+      "headlineAccent": "당신의 미학을 창조하세요",
+      "description": "스토리보드, 편집, 생성.",
+      "resultsLabel": "{count} 결과",
+      "uploadHint": "현장 안내를 위한 참조 이미지 업로드",
+      "referenceImagesTitle": "참조 이미지",
+      "referenceImagesDescription": "스타일에 맞게 최대 4개의 이미지를 추가하세요."
+    },
+    "instadump": {
+      "sidebarTitle": "인스타덤프 스튜디오",
+      "stepChoosePack": "팩을 선택하세요",
+      "stepAddPhoto": "사진 추가",
+      "stepGetInstadump": "인스타덤프 받기",
+      "headerTitle": "인스타덤프",
+      "headerDescription": "셀카를 전체 콘텐츠 라이브러리로 바꿔보세요.",
+      "addPhotoTitle": "사진 추가",
+      "addPhotoDescription": "시작하려면 선명한 셀카를 업로드하세요.",
+      "getInstadumpTitle": "Instadump 받기",
+      "newPhotosReady": "새 사진이 준비되었습니다.",
+      "tryFree": "무료로 사용해 보세요",
+      "premiumTitle": "프리미엄",
+      "premiumBulletOne": "팩당 더 많은 스타일",
+      "premiumBulletTwo": "우선 처리",
+      "premiumBulletThree": "전체 해상도 다운로드",
+      "upgradeNow": "지금 업그레이드"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "편집",
+      "subtitle": "편집 기능 및 모델에 액세스",
+      "back": "편집으로 돌아가기",
+      "workspace": {
+        "title": "작업공간",
+        "status": "프런트엔드 자리 표시자",
+        "uploadTitle": "미디어 업로드",
+        "uploadDescription": "시작하려면 드롭하거나 클릭하여 이미지/동영상을 업로드하세요."
+      },
+      "settings": {
+        "title": "설정",
+        "modelTitle": "모델",
+        "modelDescription": "모델 선택(백엔드 출시 예정)",
+        "promptTitle": "프롬프트",
+        "promptDescription": "원하는 것이 무엇인지 설명하세요(백엔드 출시 예정)",
+        "generate": "생성"
+      },
+      "model": {
+        "title": "모델 세부정보",
+        "descriptionTitle": "설명",
+        "descriptionBody": "이것은 자리 표시자입니다. 백엔드가 연결되면 세부정보가 채워집니다."
+      }
+    },
+    "menu": {
+      "title": "편집",
+      "sections": {
+        "features": "특징",
+        "models": "모델"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "비디오 편집",
+        "description": "고급 비디오 편집"
+      },
+      "inpaint": {
+        "title": "인페인트",
+        "description": "영역을 선택하고 변경 사항을 설명하세요."
+      },
+      "relight": {
+        "title": "재조명",
+        "description": "조명 위치, 색상, 밝기 조정"
+      },
+      "aiStylist": {
+        "title": "AI 스타일리스트",
+        "description": "당신의 완벽한 모습을 찾아보세요"
+      },
+      "upscale": {
+        "title": "고급",
+        "description": "해상도 및 품질 향상"
+      },
+      "skinEnhancer": {
+        "title": "스킨 강화제",
+        "description": "자연스럽고 사실적인 피부 질감"
+      },
+      "angles": {
+        "title": "각도",
+        "description": "다양한 각도에서 생성"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "최대의 디테일과 정확성"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "빠르고 가벼운 편집"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "원활한 제품 통합"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "고해상도 업스케일러"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "비디오 참조로 모션 제어"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "고급 비디오 편집"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "상위 계획",
+      "completed": "{completed}/{total} 완료",
+      "steps": {
+        "script": "스크립트 및 스토리보드 설계",
+        "world": "월드 자산 설계",
+        "video": "비디오 생성",
+        "worldVideo": "월드 자산 및 비디오 생성",
+        "audio": "음성 및 오디오 설계",
+        "final": "최종 합성"
+      }
+    }
+  }
+}

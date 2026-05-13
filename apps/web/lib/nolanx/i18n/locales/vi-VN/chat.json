@@ -1,0 +1,113 @@
+{
+  "newChat": "Chat mới",
+  "placeholder": "Nhập tin nhắn ở đây...",
+  "textarea": {
+    "placeholder": "Bạn muốn hợp tác cùng Nolan tạo câu chuyện nào?",
+    "selectModel": "Vui lòng chọn mô hình văn bản! Vào Cài đặt để đặt API key nếu bạn chưa làm.",
+    "enterPrompt": "Vui lòng nhập prompt",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Đi tới ảnh",
+    "audioPositioning": "Đi tới âm thanh",
+    "videoPositioning": "Đi tới video",
+    "showMore": "Hiển thị thêm",
+    "showLess": "Ẩn bớt"
+  },
+  "jsonCard": {
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "showCode": "Hiện mã",
+    "hideCode": "Ẩn mã"
+  },
+  "welcome": {
+    "greeting": "Chào, ReelMaker!",
+    "help": "Hôm nay tôi có thể giúp gì cho bạn?"
+  },
+  "replay": {
+    "replaying": "Đang phát lại cuộc trò chuyện... ({{current}}/{{total}})",
+    "completed": "Phát lại cuộc trò chuyện hoàn tất",
+    "ready": "Sẵn sàng phát lại cuộc trò chuyện",
+    "skipToEnd": "Bỏ qua tới cuối",
+    "replayAgain": "Phát lại",
+    "startReplay": "Bắt đầu phát lại",
+    "continueConversation": "Tiếp tục trò chuyện",
+    "forking": "Đang tạo fork...",
+    "forkingToast": "Đang fork canvas...",
+    "forkSuccessToast": "Đã fork canvas! Đang chuyển hướng...",
+    "forkFailedToast": "Không thể fork canvas"
+  },
+  "errors": {
+    "createSessionError": "Không thể tạo phiên chat"
+  },
+  "toolCallNames": {
+    "generate_image": "Trình tạo ảnh",
+    "edit_image": "Trình sửa ảnh",
+    "generate_audio": "Tạo âm thanh",
+    "generate_video": "Video",
+    "generate_video_first_last_frame": "Video FLF",
+    "generate_tts_audio": "Tạo âm thanh TTS",
+    "generate_music": "Tạo nhạc",
+    "generate_structured_output": "Tạo đầu ra có cấu trúc",
+    "execute_storyboard": "Thực thi bảng phân cảnh",
+    "analyze_timeline_state": "Phân tích timeline",
+    "recommend_generation_strategy": "Đề xuất chiến lược",
+    "execute_code": "Thực thi mã",
+    "analyze_documents": "Phân tích tài liệu",
+    "analyze_media": "Phân tích media",
+    "execute_function_call": "Thực thi gọi hàm",
+    "analyze_web_context": "Phân tích ngữ cảnh web",
+    "search_and_generate": "Tìm kiếm & tạo",
+    "prompt_user_multi_choice": "Hỏi nhiều lựa chọn",
+    "prompt_user_single_choice": "Hỏi một lựa chọn",
+    "write_plan": "Viết kế hoạch",
+    "finish": "Hoàn tất"
+  },
+  "publish": {
+    "title": "Xuất bản lên Cộng đồng",
+    "titleLabel": "Tiêu đề *",
+    "titlePlaceholder": "Nhập một tiêu đề hấp dẫn cho cuộc trò chuyện của bạn",
+    "descriptionLabel": "Mô tả",
+    "descriptionPlaceholder": "Mô tả điều gì làm cuộc trò chuyện này thú vị...",
+    "tagsLabel": "Thẻ (tối đa 5)",
+    "tagPlaceholder": "Thêm thẻ...",
+    "visibilityLabel": "Hiển thị",
+    "visibilityPublic": "Công khai",
+    "visibilityUnlisted": "Không liệt kê",
+    "visibilityPublicHint": "Ai cũng có thể khám phá và xem cuộc trò chuyện này",
+    "visibilityUnlistedHint": "Chỉ những người có liên kết mới xem được cuộc trò chuyện này",
+    "cancel": "Hủy",
+    "publish": "Xuất bản",
+    "publishing": "Đang xuất bản...",
+    "enterTitleError": "Vui lòng nhập tiêu đề",
+    "success": "Phiên đã được xuất bản thành công!",
+    "failed": "Không thể xuất bản phiên",
+    "publishButton": "Xuất bản"
+  },
+  "sessionSelector": {
+    "placeholder": "Chủ đề"
+  },
+  "thinking": {
+    "title": "Đang suy nghĩ"
+  },
+  "plan": {
+    "title": "Kế hoạch",
+    "steps": {
+      "singular": "bước",
+      "plural": "bước"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

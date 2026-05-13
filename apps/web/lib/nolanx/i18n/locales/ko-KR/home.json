@@ -1,0 +1,21 @@
+{
+  "title": "세계 최초의 AI 에이전트 감독: Nolan",
+  "subtitle": "얼리 액세스 프로그램",
+  "description": "세계 최초의 AI 에이전트 감독: Nolan",
+  "tabs": {
+    "myCanvases": "내 캔버스",
+    "community": "커뮤니티"
+  },
+  "loading": {
+    "preparingCanvas": "Nolan이 캔버스를 준비하고 있어요…",
+    "communitySessions": "커뮤니티 세션을 불러오는 중..."
+  },
+  "community": {
+    "loadFailed": "커뮤니티 세션을 불러오지 못했습니다",
+    "canvasNotAvailable": "이 세션에서 캔버스를 사용할 수 없습니다",
+    "likeFailed": "좋아요 업데이트에 실패했습니다"
+  },
+  "allProjects": "모든 프로젝트",
+  "noCanvases": "아직 스토리보드가 없습니다",
+  "newCanvas": "제목 없는 씬"
+}

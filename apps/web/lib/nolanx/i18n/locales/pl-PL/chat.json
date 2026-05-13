@@ -1,0 +1,113 @@
+{
+  "newChat": "Nowy czat",
+  "placeholder": "Wpisz tu wiadomość...",
+  "textarea": {
+    "placeholder": "Jaka historia, nad którą chcesz współpracować z Nolanem?",
+    "selectModel": "Wybierz model tekstowy! Przejdź do Ustawień, aby ustawić klucze API, jeśli jeszcze tego nie zrobiłeś.",
+    "enterPrompt": "Wprowadź prompt",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "Przejdź do obrazu",
+    "audioPositioning": "Przejdź do audio",
+    "videoPositioning": "Przejdź do wideo",
+    "showMore": "Pokaż więcej",
+    "showLess": "Pokaż mniej"
+  },
+  "jsonCard": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "showCode": "Pokaż kod",
+    "hideCode": "Ukryj kod"
+  },
+  "welcome": {
+    "greeting": "Hej, ReelMaker!",
+    "help": "Jak mogę Ci dziś pomóc?"
+  },
+  "replay": {
+    "replaying": "Odtwarzanie rozmowy... ({{current}}/{{total}})",
+    "completed": "Odtwarzanie rozmowy zakończone",
+    "ready": "Gotowe do odtwarzania rozmowy",
+    "skipToEnd": "Przejdź do końca",
+    "replayAgain": "Odtwórz ponownie",
+    "startReplay": "Rozpocznij odtwarzanie",
+    "continueConversation": "Kontynuuj rozmowę",
+    "forking": "Tworzenie forka...",
+    "forkingToast": "Forkowanie płótna...",
+    "forkSuccessToast": "Płótno sforkowane! Przekierowanie...",
+    "forkFailedToast": "Nie udało się sforkować płótna"
+  },
+  "errors": {
+    "createSessionError": "Nie udało się utworzyć sesji czatu"
+  },
+  "toolCallNames": {
+    "generate_image": "Generator obrazów",
+    "edit_image": "Edytor obrazów",
+    "generate_audio": "Generuj audio",
+    "generate_video": "Wideo",
+    "generate_video_first_last_frame": "Wideo FLF",
+    "generate_tts_audio": "Generuj audio TTS",
+    "generate_music": "Generuj muzykę",
+    "generate_structured_output": "Generuj uporządkowane dane",
+    "execute_storyboard": "Wykonaj storyboard",
+    "analyze_timeline_state": "Analizuj oś czasu",
+    "recommend_generation_strategy": "Zarekomenduj strategię",
+    "execute_code": "Wykonaj kod",
+    "analyze_documents": "Analizuj dokumenty",
+    "analyze_media": "Analizuj media",
+    "execute_function_call": "Wykonaj wywołanie funkcji",
+    "analyze_web_context": "Analizuj kontekst web",
+    "search_and_generate": "Szukaj i generuj",
+    "prompt_user_multi_choice": "Pytanie wielokrotnego wyboru",
+    "prompt_user_single_choice": "Pytanie jednokrotnego wyboru",
+    "write_plan": "Napisz plan",
+    "finish": "Zakończ"
+  },
+  "publish": {
+    "title": "Opublikuj w społeczności",
+    "titleLabel": "Tytuł *",
+    "titlePlaceholder": "Wpisz chwytliwy tytuł dla swojej rozmowy",
+    "descriptionLabel": "Opis",
+    "descriptionPlaceholder": "Opisz, co czyni tę rozmowę interesującą...",
+    "tagsLabel": "Tagi (maks. 5)",
+    "tagPlaceholder": "Dodaj tag...",
+    "visibilityLabel": "Widoczność",
+    "visibilityPublic": "Publiczne",
+    "visibilityUnlisted": "Nielistowane",
+    "visibilityPublicHint": "Każdy może odkryć i zobaczyć tę rozmowę",
+    "visibilityUnlistedHint": "Tylko osoby z linkiem mogą zobaczyć tę rozmowę",
+    "cancel": "Anuluj",
+    "publish": "Opublikuj",
+    "publishing": "Publikowanie...",
+    "enterTitleError": "Wprowadź tytuł",
+    "success": "Sesja została opublikowana!",
+    "failed": "Nie udało się opublikować sesji",
+    "publishButton": "Opublikuj"
+  },
+  "sessionSelector": {
+    "placeholder": "Motyw"
+  },
+  "thinking": {
+    "title": "Myślenie"
+  },
+  "plan": {
+    "title": "Plan",
+    "steps": {
+      "singular": "krok",
+      "plural": "kroki"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

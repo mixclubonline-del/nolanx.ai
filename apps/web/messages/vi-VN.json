@@ -1,0 +1,3291 @@
+{
+  "Posts": {
+    "actions": {
+      "like": "Thích",
+      "liked": "Đã thích",
+      "share": "Chia sẻ",
+      "download": "Tải xuống",
+      "downloading": "Đang tải xuống...",
+      "copying": "Đang sao chép...",
+      "recreate": "Tạo lại"
+    },
+    "aria": {
+      "closeVideo": "Đóng video",
+      "goBack": "Quay lại",
+      "likeVideo": "Thích video",
+      "unlikeVideo": "Bỏ thích",
+      "shareVideo": "Chia sẻ video",
+      "downloadVideo": "Tải video",
+      "copyingLink": "Đang sao chép liên kết...",
+      "downloading": "Đang tải xuống..."
+    },
+    "toasts": {
+      "linkCopiedTitle": "Đã sao chép liên kết",
+      "videoLinkCopiedMessage": "Đã sao chép liên kết video vào clipboard",
+      "copyFailedTitle": "Sao chép thất bại",
+      "copyFailedMessage": "Không thể sao chép liên kết",
+      "shareFailedTitle": "Chia sẻ thất bại",
+      "shareFailedMessage": "Không thể sao chép liên kết video",
+      "loginFirst": "Vui lòng đăng nhập trước",
+      "cannotFollowYourself": "Bạn không thể theo dõi chính mình",
+      "followed": "Đã theo dõi",
+      "unfollowed": "Đã bỏ theo dõi",
+      "operationFailed": "Thao tác thất bại"
+    },
+    "generation": {
+      "generationModel": "Mô hình tạo",
+      "withEffect": "với {effect}",
+      "effectBadge": "HIỆU ỨNG",
+      "prompt": "Lời nhắc",
+      "referenceImage": "Ảnh tham chiếu",
+      "referenceImageAlt": "Ảnh tham chiếu để tạo video",
+      "negativePrompt": "Prompt âm",
+      "parameters": "Tham số",
+      "guidance": "hướng dẫn",
+      "steps": "Bước",
+      "seed": "Hạt giống",
+      "ratio": "Tỷ lệ"
+    },
+    "author": {
+      "uploaded": "Đã đăng {time}",
+      "profile": "Hồ sơ",
+      "follow": "Theo dõi",
+      "unfollow": "Bỏ theo dõi",
+      "loading": "..."
+    },
+    "comments": {
+      "title": "Bình luận",
+      "placeholder": "Chia sẻ suy nghĩ của bạn về video này...",
+      "send": "Gửi",
+      "sending": "Đang gửi...",
+      "empty": "Hãy là người đầu tiên chia sẻ suy nghĩ về tác phẩm này!"
+    },
+    "time": {
+      "now": "Vừa xong",
+      "minutesAgo": "{minutes} phút trước",
+      "hoursAgo": "{hours} giờ trước",
+      "daysAgo": "{days} ngày trước"
+    }
+  },
+  "Credits": {
+    "common": {
+      "credits": "Tín dụng"
+    },
+    "earnCreditsCapsule": {
+      "label": "Nhận Credits",
+      "aria": {
+        "openRewardCenter": "Nhận Credits"
+      },
+      "badge": {
+        "claimed": "Đã nhận"
+      },
+      "title": {
+        "base": "Nhận Credits",
+        "canClaim": "Nhận Credits (+{amount})",
+        "claimedToday": "Nhận Credits (đã nhận hôm nay)"
+      }
+    },
+    "rewardCenterModal": {
+      "title": "Trung tâm phần thưởng",
+      "subtitle": {
+        "main": "Giới thiệu & Nhận thưởng + Phần thưởng hằng ngày",
+        "joined": "Xem ai đã tham gia"
+      },
+      "common": {
+        "loading": "Đang tải..."
+      },
+      "units": {
+        "creditsWithAmount": "{amount} Tín dụng"
+      },
+      "actions": {
+        "back": "Quay lại",
+        "close": "Đóng",
+        "copy": "Sao chép",
+        "share": "Chia sẻ",
+        "inviteFriends": "Mời bạn bè",
+        "claim": "Nhận",
+        "claiming": "Đang nhận...",
+        "claimed": "Đã nhận"
+      },
+      "aria": {
+        "copyInviteCode": "Sao chép mã mời",
+        "shareInviteLink": "Chia sẻ liên kết mời"
+      },
+      "labels": {
+        "inviteLink": "Liên kết mời",
+        "inviteCode": "Mã mời",
+        "invited": "Đã mời",
+        "rewarded": "Đã thưởng",
+        "pending": "Đang chờ",
+        "recentInvites": "Lời mời gần đây",
+        "recentRewards": "Phần thưởng gần đây",
+        "referEarn": "Giới thiệu & Nhận thưởng",
+        "dailyRewards": "Phần thưởng hằng ngày",
+        "dailyLogin": "Đăng nhập hằng ngày",
+        "rewardedProgress": "Đã thưởng: {rewarded} / {cap}"
+      },
+      "empty": {
+        "noInvites": "Chưa có lời mời.",
+        "noRewards": "Chưa có phần thưởng."
+      },
+      "status": {
+        "rewarded": "Đã thưởng",
+        "pending": "Đang chờ",
+        "verified": "Đã xác minh"
+      },
+      "share": {
+        "title": "Lời mời ReelMind",
+        "text": "Tham gia ReelMind cùng tôi và nhận credits miễn phí."
+      },
+      "toast": {
+        "copiedTitle": "Đã sao chép",
+        "copiedDescription": "{label} đã được sao chép vào khay nhớ tạm.",
+        "copyFailedTitle": "Sao chép thất bại",
+        "copyFailedDescription": "{message}",
+        "copyFailedFallback": "Vui lòng sao chép thủ công.",
+        "claimFailedTitle": "Nhận thất bại",
+        "claimedTitle": "Đã nhận",
+        "claimedDescription": "Bạn đã nhận {amount} Credits."
+      },
+      "referEarn": {
+        "tipLabel": "Quy tắc mời & nhận thưởng",
+        "tipTitle": "Cách hoạt động",
+        "tipBody1": "Chia sẻ liên kết mời của bạn. Khi người dùng mới đăng ký bằng mã của bạn và hoàn thành hành động đủ điều kiện, credits sẽ được cấp sau khi hệ thống xác minh.",
+        "tipBody2": "Thưởng theo bậc: 1-5 = 50, 6-15 = 100, 16-20 = 200 credits.",
+        "cardTitle": "Nhận Credits bằng cách mời bạn bè",
+        "upTo": "Tối đa {max}"
+      },
+      "dailyRewards": {
+        "tipLabel": "Quy tắc đăng nhập hằng ngày",
+        "tipTitle": "Phần thưởng hằng ngày",
+        "tipBodyPrefix": "Phần thưởng bắt đầu từ",
+        "tipBodyDay2": "ngày 2",
+        "tipBodySuffix": "của chuỗi và được đặt lại mỗi ngày UTC.",
+        "status": {
+          "loading": "Đang tải trạng thái...",
+          "claimed": "Đã nhận",
+          "readyToClaim": "Sẵn sàng nhận",
+          "locked": "Bị khóa"
+        },
+        "errors": {
+          "alreadyClaimed": "Hôm nay đã nhận rồi.",
+          "notEligible": "Hiện chưa đủ điều kiện để nhận.",
+          "riskBlocked": "Bị chặn nhận do kiểm soát rủi ro.",
+          "generic": "Đã xảy ra lỗi. Vui lòng thử lại sau."
+        }
+      }
+    }
+  },
+  "Navigation": {
+    "main": {
+      "explore": "Khám phá",
+      "video": "Video",
+      "image": "Hình ảnh",
+      "music": "Âm nhạc",
+      "edit": "Chỉnh sửa",
+      "experiment": "Thử nghiệm"
+    },
+    "special": {
+      "nolan": "Nolan"
+    },
+    "bottom": {
+      "affiliate": "Tiếp thị liên kết",
+      "contactUs": "Liên hệ",
+      "blog": "Blog",
+      "apiPlatform": "Nền tảng API"
+    },
+    "badges": {
+      "help": "Trợ giúp",
+      "new": "Mới",
+      "free": "Miễn phí"
+    },
+    "sidebar": {
+      "more": "Thêm",
+      "closeMenu": "Đóng menu",
+      "moreTools": "Thêm công cụ",
+      "followOnX": "Theo dõi chúng tôi trên X (Twitter)",
+      "followOnTikTok": "Theo dõi chúng tôi trên TikTok",
+      "subscribeOnYouTube": "Đăng ký kênh YouTube của chúng tôi",
+      "termsOfService": "Điều khoản dịch vụ",
+      "privacyPolicy": "Chính sách quyền riêng tư"
+    },
+    "videoMenu": {
+      "badges": {
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "sections": {
+        "features": "TÍNH NĂNG",
+        "models": "MÔ HÌNH"
+      },
+      "features": {
+        "createVideo": {
+          "title": "Tạo Video",
+          "description": "Tạo video AI"
+        },
+        "cinemaStudioVideo": {
+          "title": "Video trường quay điện ảnh",
+          "description": "Video chuyên nghiệp với chuyển động của camera"
+        },
+        "mixedMedia": {
+          "title": "Phương tiện hỗn hợp",
+          "description": "Trộn văn bản, hình ảnh và video"
+        },
+        "editVideo": {
+          "title": "Chỉnh sửa video",
+          "description": "Chỉnh sửa cảnh, ảnh, yếu tố"
+        },
+        "clickToAd": {
+          "title": "Bấm vào quảng cáo",
+          "description": "Biến clip thành quảng cáo"
+        },
+        "sora2Trends": {
+          "title": "Sora 2 Xu hướng",
+          "description": "Ý tưởng video theo xu hướng"
+        },
+        "lipsyncStudio": {
+          "title": "Studio Lipsync",
+          "description": "Đồng bộ hóa âm thanh với khuôn mặt"
+        },
+        "drawToVideo": {
+          "title": "Vẽ vào video",
+          "description": "Phác thảo biến thành rạp chiếu phim"
+        },
+        "sketchToVideo": {
+          "title": "Phác thảo thành video",
+          "description": "Từ bản phác thảo đến video với Sora 2"
+        },
+        "ugcFactory": {
+          "title": "Nhà máy UGC",
+          "description": "Nội dung sẵn sàng cho người sáng tạo nhanh chóng"
+        },
+        "videoUpscale": {
+          "title": "Nâng cấp video",
+          "description": "Tăng độ phân giải một cách rõ ràng"
+        },
+        "higgsfieldAnimate": {
+          "title": "Higgsfield hoạt hình",
+          "description": "Làm sinh động các ảnh tĩnh có phong cách"
+        },
+        "recastStudio": {
+          "title": "Xưởng làm lại",
+          "description": "Làm lại diễn viên và phong cách"
+        }
+      },
+      "models": {
+        "higgsfieldDop": {
+          "title": "Higgsfield DOP",
+          "description": "Điều khiển máy ảnh điện ảnh"
+        },
+        "klingMotion": {
+          "title": "Kling Motion",
+          "description": "Điều khiển chuyển động động"
+        },
+        "kling26": {
+          "title": "Kling 2.6",
+          "description": "Chuyển văn bản thành video chất lượng cao"
+        },
+        "kling01Edit": {
+          "title": "Kling 0.1 Edit",
+          "description": "Chỉnh sửa video chính xác"
+        },
+        "sora2": {
+          "title": "Sora 2",
+          "description": "Thế hệ video thế hệ tiếp theo"
+        },
+        "veo31": {
+          "title": "Veo 3.1",
+          "description": "Điện ảnh chân thực"
+        },
+        "seedance15Pro": {
+          "title": "Seedance 1.5 Pro",
+          "description": "Chuyển động và nhịp điệu cách điệu"
+        },
+        "wan26": {
+          "title": "Wan 2.6",
+          "description": "Video điện ảnh nhanh"
+        },
+        "hailuo02": {
+          "title": "Hailuo 0.2",
+          "description": "Chi tiết và tông màu rõ ràng"
+        },
+        "klingAvatars20": {
+          "title": "Kling Avatars 2.0",
+          "description": "Màn trình diễn dựa trên Avatar"
+        }
+      }
+    },
+    "imageMenu": {
+      "sections": {
+        "features": "Tính năng",
+        "models": "Người mẫu"
+      },
+      "badges": {
+        "best": "BEST",
+        "top": "TOP",
+        "new": "NEW"
+      },
+      "features": {
+        "createImage": {
+          "title": "Tạo hình ảnh",
+          "description": "Tạo hình ảnh AI"
+        },
+        "cinemaStudioImage": {
+          "title": "Hình ảnh trường quay rạp chiếu phim",
+          "description": "Mô phỏng máy ảnh và ống kính thực"
+        },
+        "createStoryboard": {
+          "title": "Tạo bảng phân cảnh",
+          "description": "Thiết kế cảnh câu chuyện của bạn"
+        },
+        "soulIdCharacter": {
+          "title": "Nhân vật ID linh hồn",
+          "description": "Tạo nhân vật độc đáo"
+        },
+        "relight": {
+          "title": "Chiếu sáng",
+          "description": "Điều chỉnh vị trí, màu sắc và độ sáng của đèn"
+        },
+        "inpaint": {
+          "title": "Sơn trong",
+          "description": "Chọn một khu vực, mô tả sự thay đổi"
+        },
+        "imageUpscale": {
+          "title": "Hình ảnh cao cấp",
+          "description": "Nâng cao chất lượng hình ảnh"
+        },
+        "faceSwap": {
+          "title": "Hoán đổi khuôn mặt",
+          "description": "Tạo hoán đổi khuôn mặt thực tế"
+        },
+        "characterSwap": {
+          "title": "Hoán đổi nhân vật",
+          "description": "Tạo hoán đổi nhân vật thực tế"
+        },
+        "drawToEdit": {
+          "title": "Vẽ để chỉnh sửa",
+          "description": "Từ bản phác thảo đến hình ảnh"
+        },
+        "instadump": {
+          "title": "Instadump",
+          "description": "Biến ảnh selfie thành thư viện nội dung đầy đủ"
+        },
+        "photodumpStudio": {
+          "title": "Studio Photodump",
+          "description": "Tạo tính thẩm mỹ của bạn"
+        },
+        "fashionFactory": {
+          "title": "Nhà máy thời trang",
+          "description": "Tạo bộ thời trang"
+        }
+      },
+      "models": {
+        "higgsfieldSoul": {
+          "title": "Higgsfield Soul",
+          "description": "Hình ảnh thời trang siêu thực"
+        },
+        "higgsfieldPopcorn": {
+          "title": "Higgsfield Popcorn",
+          "description": "Bảng phân cảnh, chỉnh sửa, tạo"
+        },
+        "nanoBananaPro": {
+          "title": "Nano Banana Pro",
+          "description": "Mẫu hình ảnh 4K tốt nhất từ trước đến nay"
+        },
+        "seedream45": {
+          "title": "Seedream 5 Lite",
+          "description": "Mẫu hình ảnh 4K thế hệ tiếp theo"
+        },
+        "gptImage15": {
+          "title": "GPT Image-2",
+          "description": "Kết xuất chính xác màu sắc thực"
+        },
+        "flux2": {
+          "title": "FLUX.2",
+          "description": "Chi tiết được tối ưu hóa tốc độ"
+        },
+        "zImage": {
+          "title": "Z-Image",
+          "description": "Chân dung tức thì sống động như thật"
+        },
+        "kling01Image": {
+          "title": "Kling 01 Image",
+          "description": "Hình ảnh chân thực, nhanh chóng và chính xác"
+        },
+        "wan22Image": {
+          "title": "Wan 2.2 Image",
+          "description": "Hình ảnh thực tế"
+        },
+        "reve": {
+          "title": "Reve",
+          "description": "Mô hình chỉnh sửa ảnh nâng cao"
+        },
+        "topaz": {
+          "title": "Topaz",
+          "description": "Nâng cấp độ phân giải cao"
+        }
+      }
+    }
+  },
+  "Experiment": {
+    "cinemaStudio": {
+      "setupTabs": {
+        "all": "Tất cả",
+        "recommended": "Đề xuất",
+        "saved": "Đã lưu"
+      },
+      "labels": {
+        "camera": "MÁY ẢNH",
+        "lens": "ỐNG KÍNH",
+        "focalLength": "TIÊU CỰ",
+        "aperture": "KHẨU ĐỘ"
+      },
+      "units": {
+        "mm": "mm"
+      },
+      "actions": {
+        "saveSetup": "Lưu thiết lập",
+        "removeSetup": "Xóa thiết lập",
+        "close": "Đóng"
+      },
+      "empty": "Chưa có thiết lập"
+    },
+    "page": {
+      "title": "Thử nghiệm",
+      "subtitle": "Trước tiên hãy thử quy trình công việc mới",
+      "back": "Quay lại thử nghiệm"
+    },
+    "menu": {
+      "title": "Thử nghiệm",
+      "open": "Mở"
+    },
+    "tabs": {
+      "character": "nhân vật",
+      "inpaint": "Sơn trong",
+      "cinemaStudio": "Xưởng phim",
+      "motionControl": "Điều khiển chuyển động",
+      "assist": "Hỗ trợ"
+    },
+    "badges": {
+      "v15": "v1.5"
+    },
+    "cards": {
+      "inpaint": {
+        "title": "Sơn trong",
+        "description": "Sơn lên một khu vực và mô tả sự thay đổi"
+      },
+      "cinemaStudio": {
+        "title": "Xưởng phim",
+        "description": "Quy trình làm việc điện ảnh chuyên nghiệp"
+      },
+      "motionControl": {
+        "title": "Điều khiển chuyển động",
+        "description": "Sao chép chuyển động từ video tham chiếu"
+      },
+      "assist": {
+        "title": "Hỗ trợ",
+        "description": "Công cụ trợ giúp nhắc nhở và sáng tạo"
+      }
+    },
+    "tools": {
+      "character": {
+        "title": "nhân vật",
+        "subtitle": "Công cụ nhất quán ký tự (giữ chỗ)"
+      },
+      "inpaint": {
+        "title": "Sơn trong",
+        "subtitle": "Tải phương tiện lên, chọn một khu vực và mô tả chỉnh sửa"
+      },
+      "cinemaStudio": {
+        "title": "Xưởng phim",
+        "subtitle": "Tạo cảnh quay điện ảnh với lời nhắc nhận biết máy ảnh"
+      },
+      "motionControl": {
+        "title": "Điều khiển chuyển động",
+        "subtitle": "Tái tạo chuyển động bằng hình ảnh của bạn"
+      },
+      "assist": {
+        "title": "Hỗ trợ",
+        "subtitle": "Tiện ích trò chuyện, thủ thuật và nhắc nhở"
+      }
+    },
+    "actions": {
+      "upload": "Tải lên phương tiện",
+      "generate": "Tạo",
+      "history": "Lịch sử",
+      "howItWorks": "Nó hoạt động như thế nào",
+      "sendMessage": "Gửi tin nhắn...",
+      "tryExample": "Hãy thử một ví dụ",
+      "send": "Gửi"
+    },
+    "placeholders": {
+      "exploreFeatures": "KHÁM PHÁ TÍNH NĂNG",
+      "settings": "Cài đặt",
+      "camera": "Máy ảnh",
+      "cameraHint": "Chọn hành vi của máy ảnh (giữ chỗ)",
+      "lens": "Ống kính",
+      "lensHint": "Chọn tùy chọn ống kính (giữ chỗ)",
+      "image": "Hình ảnh",
+      "video": "Video",
+      "scenePrompt": "Hãy miêu tả cảnh tượng mà bạn tưởng tượng..."
+    },
+    "motionControl": {
+      "cards": {
+        "addMotion": {
+          "title": "Thêm chuyển động để sao chép",
+          "description": "Thời lượng video: 3–30 giây"
+        },
+        "addCharacter": {
+          "title": "Thêm nhân vật của bạn",
+          "description": "Hình ảnh có thể nhìn thấy khuôn mặt và cơ thể"
+        }
+      },
+      "quality": {
+        "title": "chất lượng",
+        "value": "720p"
+      },
+      "advanced": {
+        "title": "Cài đặt nâng cao"
+      },
+      "hero": {
+        "title": {
+          "prefix": "TÁI TẠO BẤT KỲ",
+          "highlight": "CHUYỂN ĐỘNG",
+          "suffix": "VỚI HÌNH ẢNH CỦA BẠN"
+        },
+        "subtitle": "Sao chép chuyển động từ bất kỳ video nào và đặt nhân vật của bạn vào cùng một chuyển động"
+      },
+      "library": {
+        "title": "Bắt đầu bằng cách sao chép chuyển động từ thư viện"
+      }
+    },
+    "assist": {
+      "hero": {
+        "title": "ReelMind Hỗ trợ",
+        "subtitle": "Một nhóm tiến sĩ trong túi của bạn, được xây dựng cho người sáng tạo."
+      },
+      "cards": {
+        "whatYouCanDo": {
+          "title": "Bạn có thể làm gì?",
+          "description": "Khám phá ReelMind tính năng AI"
+        },
+        "howToCreate": {
+          "title": "Làm cách nào tôi có thể tạo nội dung ấn tượng?",
+          "description": "Mẹo để viết lời nhắc AI tốt hơn"
+        },
+        "generateSoulImagePrompt": {
+          "title": "Tạo lời nhắc hình ảnh linh hồn",
+          "description": "Viết lời nhắc cho hình ảnh có tính thẩm mỹ cao"
+        },
+        "generateVideoPrompt": {
+          "title": "Tạo lời nhắc video",
+          "description": "Viết lời nhắc cho video điện ảnh"
+        }
+      }
+    },
+    "character": {
+      "cards": {
+        "consistency": {
+          "title": "Tính nhất quán của ký tự",
+          "description": "Giữ nhân vật của bạn mạch lạc trên các khung hình (giữ chỗ)"
+        },
+        "library": {
+          "title": "Thư viện nhân vật",
+          "description": "Chọn một ký tự đã lưu hoặc bắt đầu từ các mẫu (giữ chỗ)"
+        }
+      },
+      "placeholders": {
+        "preview": "Xem trước (giữ chỗ)"
+      }
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "ReelMind - Cộng đồng tạo video AI miễn phí để tạo và chia sẻ video",
+      "description": "Khám phá các video sáng tạo thịnh hành từ những nhà sáng tạo nội dung trên khắp thế giới. Tìm cảm hứng, giải trí và remix những video bạn yêu thích."
+    },
+    "banner": {
+      "nanoBanana2": "Nano Banana 2 đã lên sóng!"
+    },
+    "categories": {
+      "tabs": {
+        "all": "Tất cả",
+        "latest": "Mới nhất",
+        "hot": "Nổi bật"
+      },
+      "tooltip": {
+        "filterByModel": "Lọc theo model {model}"
+      },
+      "aria": {
+        "previous": "Danh mục trước",
+        "next": "Danh mục tiếp theo"
+      },
+      "error": {
+        "loadFailed": "Không thể tải danh mục"
+      },
+      "actions": {
+        "retry": "Thử lại"
+      }
+    },
+    "featureCards": {
+      "createAiVideos": {
+        "title": "Tạo video AI"
+      },
+      "nolan": {
+        "title": "Nolan",
+        "description": "Đạo diễn tác nhân AI số 1 thế giới"
+      },
+      "badges": {
+        "models": "Mô hình",
+        "free": "MIỄN PHÍ"
+      }
+    }
+  },
+  "Explore": {
+    "meta": {
+      "title": "Khám phá - ReelMind",
+      "description": "Khám phá các video sáng tạo thịnh hành từ những nhà sáng tạo nội dung trên khắp thế giới trên ReelMind."
+    }
+  },
+  "Models": {
+    "meta": {
+      "title": "Mô hình AI & Hiệu ứng - ReelMind",
+      "description": "Duyệt và sử dụng các mô hình và hiệu ứng video AI để tạo những video do AI tạo tuyệt vời trên nền tảng ReelMind. Khám phá bộ sưu tập mô hình AI tiên tiến của chúng tôi."
+    },
+    "page": {
+      "title": "Mô hình AI & Hiệu ứng",
+      "description": "Duyệt bộ sưu tập mô hình AI và hiệu ứng tiên tiến cho tạo video",
+      "footerIntro": "Khám phá bộ sưu tập {count} mô hình AI cho tạo video."
+    },
+    "sections": {
+      "models": "Mô hình",
+      "effects": "Hiệu ứng"
+    },
+    "actions": {
+      "viewAll": "Xem tất cả",
+      "viewAllModels": "Xem tất cả mô hình",
+      "backToModels": "Quay lại Mô hình"
+    },
+    "types": {
+      "allModels": "Tất cả mô hình",
+      "textToVideo": "Văn bản → Video",
+      "imageToVideo": "Ảnh → Video",
+      "videoToVideo": "Video → Video"
+    },
+    "all": {
+      "titleAll": "Tất cả mô hình video",
+      "titleByType": "Mô hình {type}",
+      "description": "Duyệt bộ sưu tập mô hình AI cho tạo video",
+      "countAll": "({count} mô hình)",
+      "countByType": "({count} mô hình {type})",
+      "loadingMore": "Đang tải thêm mô hình...",
+      "loadMore": "Tải thêm mô hình",
+      "end": "Bạn đã tới cuối! Đã tải tất cả mô hình.",
+      "empty": "Không tìm thấy mô hình phù hợp tiêu chí."
+    },
+    "detail": {
+      "badges": {
+        "checkpoint": "Điểm kiểm tra",
+        "lora": "LoRA"
+      },
+      "supportedFeatures": "Tính năng hỗ trợ",
+      "metaTitle": "{name} - Mô hình AI | ReelMind",
+      "metaDescriptionFallback": "Khám phá mô hình {name} cho tạo video trên ReelMind.",
+      "metaErrorTitle": "Chi tiết mô hình | ReelMind",
+      "metaErrorDescription": "Khám phá mô hình AI cho tạo video trên ReelMind."
+    }
+  },
+  "Effects": {
+    "meta": {
+      "title": "Hiệu ứng AI - ReelMind",
+      "description": "Duyệt và sử dụng hiệu ứng video AI để nâng cao video do AI tạo của bạn trên nền tảng ReelMind."
+    },
+    "page": {
+      "title": "Hiệu ứng AI",
+      "description": "Duyệt bộ sưu tập hiệu ứng AI để nâng cao video của bạn"
+    },
+    "all": {
+      "title": "Tất cả hiệu ứng AI",
+      "description": "Duyệt bộ sưu tập đầy đủ hiệu ứng AI để nâng cao video của bạn"
+    },
+    "detail": {
+      "actions": {
+        "backToEffects": "Quay lại Hiệu ứng",
+        "goBack": "Quay lại",
+        "applyThisEffect": "Áp dụng hiệu ứng này"
+      },
+      "badge": "Hiệu ứng",
+      "addedOn": "Thêm vào {date}",
+      "errors": {
+        "notFound": "Không tìm thấy hiệu ứng",
+        "loadFailed": "Không thể tải chi tiết hiệu ứng"
+      }
+    }
+  },
+  "Create": {
+    "meta": {
+      "title": "Tạo video AI - ReelMind",
+      "description": "Tạo những video do AI tạo tuyệt vời bằng các mô hình và công cụ AI mạnh mẽ của chúng tôi trên nền tảng ReelMind."
+    },
+    "loading": "Đang tải...",
+    "loadingMobile": "Đang tải chế độ xem trên di động...",
+    "loadingControlPanel": "Đang tải bảng điều khiển...",
+    "controlPanel": {
+      "modelAndSettings": "Mô hình & Cài đặt",
+      "history": "Lịch sử",
+      "model": "Mô hình",
+      "selectModel": "Chọn mô hình"
+    },
+    "mobile": {
+      "backToCreate": "Quay lại Tạo"
+    },
+    "modelSelector": {
+      "loadingModels": "Đang tải mô hình...",
+      "moreModels": "{count} mô hình nữa",
+      "exploreMoreModels": "Khám phá thêm {count} mô hình"
+    },
+    "promptInput": {
+      "title": "Lời nhắc",
+      "placeholder": "Mô tả điều bạn muốn tạo...",
+      "enhance": "Cải thiện",
+      "undo": "Hoàn tác",
+      "restoreOriginalPromptTitle": "Khôi phục prompt gốc",
+      "toastEnhanced": "Đã cải thiện prompt",
+      "toastRestored": "Đã khôi phục prompt gốc",
+      "enhanceFailed": "Không thể cải thiện prompt",
+      "sensitiveError": "Phát hiện từ khóa nhạy cảm: {keyword}",
+      "insertReference": "Insert Reference",
+      "noMatchingReference": "No matching reference",
+      "mentionImageTokenPrefix": "ảnh",
+      "mentionVideoTokenPrefix": "video",
+      "mentionAudioTokenPrefix": "âmthanh"
+    },
+    "referenceUploader": {
+      "addOptional": "Thêm tham chiếu (tùy chọn)",
+      "referenceImage": "Ảnh tham chiếu",
+      "referenceImages": "Ảnh tham chiếu ({current}/{max})",
+      "referenceVideo": "Video tham chiếu",
+      "dropImage": "Thả ảnh vào đây hoặc nhấp để tải lên",
+      "dropImageMax": "Thả tối đa {max} ảnh vào đây hoặc nhấp để tải lên",
+      "dropVideo": "Thả video vào đây hoặc nhấp để tải lên",
+      "pasteHint": "Dán",
+      "videoUploaded": "Đã tải lên video",
+      "uploading": "Đang tải lên...",
+      "addMore": "Thêm nữa",
+      "removeReference": "Xóa",
+      "referenceImageAlt": "Ảnh tham chiếu {index}",
+      "supportedFormats": "Hỗ trợ: PNG, JPG",
+      "minimumSize": "Tối thiểu {minWidth}×{minHeight}, tỉ lệ {minAspectRatio}-{maxAspectRatio}",
+      "uploadingMedia": "Đang tải lên {type}...",
+      "processingFile": "Đang xử lý tệp...",
+      "uploadReference": "Tải lên tham chiếu {type}",
+      "image": "ảnh",
+      "video": "video",
+      "audio": "audio",
+      "library": "Library",
+      "videoLimitReachedTitle": "Video limit reached",
+      "videoLimitReachedDescription": "Maximum {max} reference videos allowed",
+      "audioLimitReachedTitle": "Audio limit reached",
+      "audioLimitReachedDescription": "Maximum {max} reference audios allowed",
+      "someVideoFilesSkippedTitle": "Some video files were skipped",
+      "someAudioFilesSkippedTitle": "Some audio files were skipped",
+      "onlyFilesAdded": "Only {count} files were added",
+      "skippedUnsupportedFilesTitle": "Skipped unsupported files",
+      "skippedUnsupportedFilesDescription": "{count} files were ignored",
+      "onlyVideoFilesAllowed": "Only video files can be used as reference videos",
+      "onlyAudioFilesAllowed": "Only audio files can be used as reference audio",
+      "removeReferenceVideo": "Remove reference video {index}",
+      "removeReferenceAudio": "Remove reference audio {index}",
+      "referenceVideoRemovedTitle": "Reference videos removed",
+      "referenceVideoRemovedDescription": "The selected model does not support reference videos.",
+      "referenceAudioRemovedTitle": "Reference audio removed",
+      "referenceAudioRemovedDescription": "The selected model does not support reference audio."
+    },
+    "settingsPills": {
+      "aspectRatio": "Tỉ lệ khung hình",
+      "duration": "Thời lượng",
+      "seconds": "{seconds}s",
+      "resolution": "Độ phân giải",
+      "audio": "Âm thanh",
+      "on": "Bật",
+      "off": "Tắt",
+      "advanced": "Nâng cao",
+      "advancedShort": "Nâng cao",
+      "creativityLevel": "Sáng tạo",
+      "moreAccurate": "Chính xác hơn",
+      "moreCreative": "Sáng tạo hơn",
+      "samplingSteps": "Số bước lấy mẫu",
+      "faster": "Nhanh hơn ({steps} bước)",
+      "higherQuality": "Chất lượng cao hơn ({steps} bước)",
+      "randomSeed": "Seed ngẫu nhiên",
+      "seedPlaceholder": "Nhập seed",
+      "generateRandomSeed": "Tạo seed ngẫu nhiên",
+      "seedHint": "Dùng seed cố định để tái tạo kết quả.",
+      "movementAmplitude": "Chuyển động",
+      "movementAmplitudeHint": "Điều chỉnh cường độ chuyển động.",
+      "backgroundMusic": "Nhạc nền",
+      "backgroundMusicHint": "Thêm nhạc nền khi được hỗ trợ.",
+      "enabled": "Bật",
+      "disabled": "Tắt",
+      "negativePrompt": "Lời nhắc tiêu cực",
+      "negativePromptPlaceholder": "Những điều cần tránh..."
+    },
+    "startToEndUploader": {
+      "title": "Khung đầu-cuối",
+      "startFrame": "Khung bắt đầu",
+      "endFrame": "Khung kết thúc",
+      "dropStartImage": "Thả ảnh bắt đầu hoặc nhấp để tải lên",
+      "dropEndImage": "Thả ảnh kết thúc hoặc nhấp để tải lên",
+      "startFrameImageAlt": "Khung bắt đầu",
+      "endFrameImageAlt": "Khung kết thúc",
+      "uploading": "Đang tải lên...",
+      "instructions": "Tải lên ảnh bắt đầu và kết thúc để hướng dẫn chuyển cảnh.",
+      "supportedFormats": "Hỗ trợ: PNG, JPG",
+      "minimumSize": "Tối thiểu {minWidth}×{minHeight}, tỉ lệ {minAspectRatio}-{maxAspectRatio}",
+      "autoCompress": "Ảnh sẽ được nén tự động nếu cần."
+    },
+    "modelTabs": {
+      "imageToVideo": "Ảnh → Video",
+      "textToVideo": "Văn bản → Video",
+      "firstLastFrame": "Khung đầu-cuối",
+      "edit": "Chỉnh sửa",
+      "effect": "Hiệu ứng"
+    },
+    "videoEdit": {
+      "referenceVideoTitle": "Video tham khảo",
+      "required": "Bắt buộc",
+      "removeVideo": "Xóa video",
+      "uploading": "Đang tải lên...",
+      "dropVideo": "Thả video vào đây hoặc nhấp để tải lên",
+      "videoHint": "Minimum width is 720 pixels. Maximum width is 2160 pixels. Maximum is 10.05 seconds.",
+      "elementsTitle": "Yếu tố",
+      "optional": "Tùy chọn ({current}/{max})",
+      "addElements": "Thêm",
+      "elementAlt": "Phần tử {index}",
+      "removeElement": "Xóa phần tử {index}",
+      "dropElements": "Nhấp để thêm hình ảnh thành phần",
+      "elementsHint": "Hình ảnh tùy chọn để giữ nguyên ký tự/phong cách.",
+      "errors": {
+        "invalidVideoTitle": "Video không hợp lệ",
+        "invalidVideoDescription": "Vui lòng chọn một tập tin video.",
+        "videoTooLargeTitle": "Video quá lớn",
+        "videoTooLargeDescription": "Tối đa {maxMb}MB. Vui lòng tải lên một clip ngắn hơn/nhỏ hơn.",
+        "uploadFailedTitle": "Tải lên không thành công",
+        "elementsLimitTitle": "Đã đạt đến giới hạn phần tử",
+        "elementsLimitDescription": "Bạn có thể thêm tối đa {max} hình ảnh.",
+        "imageTooSmall": "Hình ảnh phải có ít nhất {minWidth}×{minHeight} (hiện tại: {width}×{height}).",
+        "imageBadRatio": "Tỷ lệ khung hình của hình ảnh phải nằm trong khoảng {minAspectRatio} và {maxAspectRatio} (hiện tại: {current})."
+      },
+      "warnings": {
+        "someSkippedTitle": "Một số tệp bị bỏ qua",
+        "someSkippedDescription": "Tệp {count} đã bị bỏ qua do giới hạn.",
+        "skippedTitle": "Đã bỏ qua",
+        "skippedNonImage": "Chỉ cho phép hình ảnh cho các phần tử.",
+        "imageCompressedTitle": "Hình ảnh được nén",
+        "imageCompressedDescription": "Đã nén từ {original} thành {final}.",
+        "skippedInvalidImage": "Hình ảnh không hợp lệ."
+      }
+    },
+    "howItWorks": {
+      "title": "Nó hoạt động như thế nào",
+      "hero": {
+        "title": "LÀM VIDEO TRONG MỘT NHẤP CHUỘT",
+        "subtitle": "Sử dụng các cài đặt trước để điều khiển máy ảnh, lập khung hình và VFX — hoặc thực hiện hoàn toàn thủ công kèm theo lời nhắc."
+      },
+      "cardTitles": {
+        "i2v": {
+          "1": "THÊM HÌNH ẢNH",
+          "2": "CHỌN ĐẶT TRƯỚC",
+          "3": "NHẬN VIDEO"
+        },
+        "t2v": {
+          "1": "VIẾT NHẮC NHỞ",
+          "2": "CHỌN MÔ HÌNH",
+          "3": "NHẬN VIDEO"
+        },
+        "flf": {
+          "1": "THÊM KHUNG",
+          "2": "MÔ TẢ CHUYỂN TIẾP",
+          "3": "NHẬN VIDEO"
+        },
+        "edit": {
+          "1": "THÊM VIDEO",
+          "2": "THÊM YẾU TỐ",
+          "3": "NHẬN VIDEO"
+        }
+      },
+      "modes": {
+        "edit": "Chỉnh sửa (Chuyển video thành video)",
+        "flf": "Khung hình đầu tiên-cuối cùng",
+        "i2v": "Chuyển hình ảnh thành video",
+        "t2v": "Chuyển văn bản thành video"
+      },
+      "steps": {
+        "edit": {
+          "1": "Tải lên một video tham khảo ngắn.",
+          "2": "Tùy chọn thêm tối đa 4 hình ảnh thành phần để giữ cho các ký tự/kiểu nhất quán.",
+          "3": "Mô tả những gì cần thay đổi (và những gì cần giữ) trong lời nhắc, sau đó tạo."
+        },
+        "flf": {
+          "1": "Tải lên khung bắt đầu và khung kết thúc.",
+          "2": "Mô tả quá trình chuyển đổi mà bạn muốn.",
+          "3": "Tạo để tạo ra một sự chuyển đổi trơn tru."
+        },
+        "i2v": {
+          "1": "Tải lên một hình ảnh tham khảo.",
+          "2": "Mô tả chuyển động, máy ảnh và phong cách.",
+          "3": "Chọn tỷ lệ/thời lượng và tạo."
+        },
+        "t2v": {
+          "1": "Mô tả cảnh của bạn (chủ đề, máy ảnh, ánh sáng, phong cách).",
+          "2": "Chọn tỷ lệ/thời lượng và tùy ý thêm lời nhắc phủ định.",
+          "3": "Tạo và lặp lại với những thay đổi nhỏ."
+        }
+      },
+      "tip": "Mẹo: Hãy cụ thể. Nói với người mẫu những gì phải giữ nguyên (bản sắc, logo, bố cục).",
+      "templates": {
+        "title": "cài đặt trước",
+        "subtitle": "Chọn một cài đặt trước cổ điển và tạo nhanh hơn.",
+        "use": "sử dụng",
+        "clear": "Xóa",
+        "prev": "Giá trị đặt trước trước đó",
+        "next": "Giá trị đặt trước tiếp theo",
+        "edit": {
+          "relight": {
+            "title": "Ánh sáng & bầu không khí",
+            "description": "Thay đổi thời gian trong ngày và ánh sáng điện ảnh."
+          },
+          "grade": {
+            "title": "Lớp điện ảnh",
+            "description": "Lớp màu cam mòng két + hạt màng, giữ chuyển động và nhận dạng."
+          },
+          "weather": {
+            "title": "Thay đổi thời tiết",
+            "description": "Thêm mưa/sương mù trong khi vẫn giữ được danh tính."
+          },
+          "anime": {
+            "title": "phong cách anime",
+            "description": "Diện mạo anime trong khi vẫn giữ được bản sắc và chuyển động."
+          },
+          "background": {
+            "title": "Thay thế nền",
+            "description": "Hoán đổi nền trong khi vẫn giữ chủ đề."
+          },
+          "lux": {
+            "title": "Đánh bóng cao cấp",
+            "description": "Sạch hơn, mượt mà hơn, mang lại cảm giác thương mại cao cấp hơn."
+          }
+        },
+        "flf": {
+          "dayToNight": {
+            "title": "Ngày → Đêm",
+            "description": "Ánh sáng/chuyển tiếp thời gian mượt mà với khung hình nhất quán."
+          },
+          "sketchToRender": {
+            "title": "Phác thảo → Kết xuất",
+            "description": "Tiết lộ chi tiết dần dần từ bản phác thảo đến kết xuất cuối cùng."
+          },
+          "beforeAfter": {
+            "title": "Trước/Sau tiết lộ",
+            "description": "Chuyển đổi trang nhã với chuyển động tinh tế."
+          }
+        },
+        "i2v": {
+          "portrait": {
+            "title": "cuộc sống chân dung",
+            "description": "Chớp mắt + chuyển động tinh tế với động tác đẩy chậm."
+          },
+          "pan": {
+            "title": "chảo thị sai",
+            "description": "Xoay điện ảnh với độ sâu và chuyển động mờ."
+          },
+          "product": {
+            "title": "Quay sản phẩm",
+            "description": "Sản phẩm studio trông có điểm nhấn sáng bóng."
+          }
+        },
+        "t2v": {
+          "ad": {
+            "title": "quảng cáo cao cấp 8s",
+            "description": "Một cảnh quay thương mại cao cấp, rõ ràng."
+          },
+          "establish": {
+            "title": "cú đánh thành lập",
+            "description": "Phần giới thiệu điện ảnh rộng rãi cho một thế giới/cảnh."
+          },
+          "anime": {
+            "title": "Mở đầu phim hoạt hình",
+            "description": "Cảnh quay theo phong cách mở đầu phim hoạt hình cách điệu."
+          }
+        }
+      }
+    },
+    "generateButton": {
+      "errors": {
+        "i2vTitle": "Ảnh → Video yêu cầu ảnh tham chiếu.",
+        "i2vDescription": "Vui lòng tải lên ảnh tham chiếu hoặc chuyển sang mô hình Văn bản → Video.",
+        "v2vTitle": "Video → Video yêu cầu video tham chiếu.",
+        "v2vDescription": "Vui lòng tải lên video tham chiếu hoặc chuyển sang mô hình Văn bản → Video."
+      },
+      "costLabel": "Chi phí:",
+      "balanceLabel": "Số dư:",
+      "freeUnlimited": "Miễn phí (Không giới hạn)",
+      "credits": "Tín dụng",
+      "luxuryWarning": {
+        "veo3Fast": "VEO3 Fast là mô hình Luxury và không nằm trong gói Unlimited miễn phí. Cần thanh toán thêm.",
+        "veo31": "VEO 3.1 là mô hình Luxury và không nằm trong gói Unlimited miễn phí. Cần thanh toán thêm.",
+        "veo3": "VEO3 là mô hình Luxury và không nằm trong gói Unlimited miễn phí. Cần thanh toán thêm.",
+        "sora2Pro": "Sora-2 Pro là mô hình Luxury và không nằm trong gói Unlimited miễn phí. Cần thanh toán thêm."
+      },
+      "gettingCredits": "Đang lấy credits...",
+      "getBonusCredits": "Nhận {amount} Credits",
+      "submitting": "Đang gửi...",
+      "loadingModels": "Đang tải mô hình...",
+      "uploadingAsset": "Đang tải lên tài nguyên...",
+      "uploadingImages": "Đang tải lên ảnh...",
+      "claimingCredits": "Đang nhận credits...",
+      "getMoreCredits": "Nhận thêm credits",
+      "generateVideo": "Tạo video"
+    },
+    "publishDialog": {
+      "toast": {
+        "missingTitleTitle": "Đăng tải thất bại",
+        "missingTitleDescription": "Vui lòng nhập tiêu đề cho video của bạn",
+        "processingTitle": "Đang xử lý",
+        "processingDescription": "Đang chuẩn bị đăng tải video của bạn...",
+        "successTitle": "Đã đăng tải",
+        "successDescription": "Video của bạn đã được chia sẻ tới cộng đồng",
+        "failedTitle": "Đăng tải thất bại",
+        "failedDescription": "Vui lòng kiểm tra kết nối mạng hoặc thử lại sau"
+      },
+      "successTitle": "Đăng tải thành công!",
+      "successDescription": "Tác phẩm tuyệt vời của bạn đã lên sóng trong cộng đồng",
+      "publishingTitle": "Đang đăng tải...",
+      "publishingDescriptionDesktop": "Chúng tôi đang chuẩn bị video của bạn để cộng đồng thưởng thức...",
+      "publishingDescriptionMobile": "Đang chuẩn bị video...",
+      "progressComplete": "Hoàn thành {progress}%",
+      "title": "Chia sẻ lên cộng đồng",
+      "description": "Chia sẻ tác phẩm tuyệt vời của bạn với thế giới",
+      "benefits": {
+        "getLikes": "Nhận lượt thích",
+        "buildCommunityLong": "Xây dựng cộng đồng",
+        "buildCommunityShort": "Cộng đồng",
+        "inspireLong": "Truyền cảm hứng",
+        "inspireShort": "Cảm hứng",
+        "earnLong": "Nhận +{amount} Credits",
+        "earnShort": "+{amount} Tín dụng"
+      },
+      "videoTitle": "Tiêu đề video",
+      "videoTitlePlaceholder": "Đặt tiêu đề hấp dẫn cho tác phẩm...",
+      "videoTitleHelperDesktop": "Tiêu đề hấp dẫn sẽ thu hút nhiều người xem hơn",
+      "videoTitleHelperMobile": "Tiêu đề hay sẽ thu hút người xem",
+      "descriptionLabel": "Mô tả",
+      "optional": "Tùy chọn",
+      "descriptionPlaceholder": "Hãy kể cho cộng đồng về tác phẩm của bạn...",
+      "descriptionHelper": "Chia sẻ quá trình sáng tạo",
+      "cancel": "Hủy",
+      "publish": "Đăng"
+    },
+    "history": {
+      "title": "Lịch sử",
+      "refresh": "Làm mới",
+      "view": {
+        "one": "1 mỗi hàng",
+        "three": "3 mỗi hàng",
+        "nine": "9 mỗi hàng"
+      },
+      "filterPlaceholder": "Lọc",
+      "empty": "Không tìm thấy tác vụ {status}",
+      "status": {
+        "all": "Tất cả",
+        "pending": "Đang chờ",
+        "queued": "Trong hàng đợi",
+        "processing": "Đang xử lý",
+        "completed": "Hoàn tất",
+        "failed": "Thất bại",
+        "canceled": "Đã hủy"
+      }
+    },
+    "effectSelector": {
+      "loading": "Đang tải hiệu ứng...",
+      "defaultDescription": "Áp dụng hiệu ứng đặc biệt cho video của bạn",
+      "ctaTitle": "Chọn hiệu ứng",
+      "ctaDescription": "Nhấp để chọn hiệu ứng video",
+      "modalTitle": "Chọn hiệu ứng",
+      "close": "Đóng bộ chọn hiệu ứng"
+    },
+    "modelSelectorModal": {
+      "title": "Chọn mô hình",
+      "description": "Chọn mô hình cho dự án của bạn",
+      "close": "Đóng bộ chọn mô hình",
+      "loadingMore": "Đang tải thêm mô hình...",
+      "allLoaded": "Đã tải tất cả mô hình",
+      "noModelsFound": "Không tìm thấy mô hình"
+    },
+    "modelSearch": {
+      "placeholder": "Tìm mô hình theo tên, loại hoặc tính năng...",
+      "clear": "Xóa tìm kiếm",
+      "searching": "Đang tìm...",
+      "foundModels": "Tìm thấy {count} mô hình",
+      "modelsAvailable": "{count} mô hình khả dụng"
+    },
+    "modelTypeFilter": {
+      "title": "Loại mô hình",
+      "clear": "Xóa"
+    },
+    "remixLoader": {
+      "successTitle": "Đã tải tác vụ Remix",
+      "successDescription": "Đã nạp tham số video từ tác vụ gốc, bạn có thể tạo ngay hoặc chỉnh sửa tham số.",
+      "errorTitle": "Không thể tải tham số",
+      "errorDescription": "Không thể tải tham số từ tác vụ gốc, vui lòng tự thiết lập tham số."
+    },
+    "modelCard": {
+      "select": "Chọn",
+      "credits": "Tín dụng",
+      "premium": "CAO CẤP",
+      "luxury": "SANG TRỌNG"
+    },
+    "modelPreviewCard": {
+      "reelmindSelected": "ReelMind chọn",
+      "hot": "Nóng",
+      "new": "NEW",
+      "select": "Chọn"
+    },
+    "previewPanel": {
+      "generating": "Đang tạo...",
+      "download": "Tải xuống",
+      "downloading": "Đang tải xuống...",
+      "shareToCommunity": "Đăng",
+      "tips": "Mẹo: Đăng để nhận credits",
+      "quality": "Chất lượng",
+      "qualityHd": "HD",
+      "qualityStandard": "Tiêu chuẩn",
+      "ratio": "Tỉ lệ",
+      "fullscreen": {
+        "enter": "Toàn màn hình",
+        "exit": "Thoát toàn màn hình"
+      },
+      "empty": {
+        "title": "Chưa có xem trước",
+        "description": "Tạo video để xem trước tại đây."
+      },
+      "queue": {
+        "loading": "Đang tải thông tin hàng đợi...",
+        "headerProcessing": "Đang xử lý",
+        "headerQueueStatus": "Trạng thái hàng đợi",
+        "badgePosition": "Vị trí: {position} / {total}",
+        "badgeProcessing": "Đang xử lý",
+        "tasksInQueue": "Tác vụ trong hàng",
+        "estimatedWait": "Thời gian chờ ước tính",
+        "elapsedTime": "Đã trôi qua",
+        "remainingTime": "Còn lại",
+        "startTime": "Bắt đầu ước tính",
+        "completionTime": "Hoàn tất ước tính"
+      },
+      "time": {
+        "calculating": "Đang tính...",
+        "justNow": "Vừa xong",
+        "lessThanMinute": "Trong chưa đầy một phút",
+        "inMinutes": "Trong {minutes, plural, one {# phút} other {# phút}}",
+        "inHours": "Trong {hours, plural, one {# giờ} other {# giờ}}",
+        "inDays": "Trong {days, plural, one {# ngày} other {# ngày}}",
+        "seconds": "{seconds, plural, one {# giây} other {# giây}}",
+        "minutesSeconds": "{minutes, plural, one {# phút} other {# phút}} {seconds, plural, one {# giây} other {# giây}}"
+      }
+    },
+    "historyVideoModal": {
+      "loadingVideo": "Đang tải video...",
+      "notFound": "Không tìm thấy video",
+      "notFoundDescription": "Không thể tìm thấy video được yêu cầu hoặc hiện không khả dụng.",
+      "detailsTitle": "Chi tiết",
+      "videoInfoTitle": "Thông tin video",
+      "advancedTitle": "Nâng cao",
+      "referenceImagesTitle": "Ảnh tham chiếu",
+      "startFrameAlt": "Khung bắt đầu",
+      "endFrameAlt": "Khung kết thúc",
+      "endFrameLabel": "Khung kết thúc",
+      "creationDate": "Ngày tạo",
+      "fields": {
+        "model": "Mô hình",
+        "generationType": "Loại tạo",
+        "resolution": "Độ phân giải",
+        "aspectRatio": "Tỉ lệ khung hình",
+        "duration": "Thời lượng",
+        "creativityLevel": "Sáng tạo",
+        "effect": "Hiệu ứng",
+        "samplingSteps": "Số bước lấy mẫu",
+        "randomSeed": "Seed ngẫu nhiên",
+        "movementAmplitude": "Biên độ chuyển động",
+        "backgroundMusic": "Nhạc nền",
+        "negativePrompt": "Lời nhắc tiêu cực"
+      },
+      "actions": {
+        "close": "Đóng",
+        "closeModalTitle": "Đóng hộp thoại",
+        "remix": "phối lại",
+        "remixTitle": "Remix với các tham số này",
+        "download": "Tải xuống",
+        "downloadTitle": "Tải xuống video này",
+        "downloading": "Đang tải xuống...",
+        "shareTitle": "Chia sẻ video này"
+      }
+    },
+    "deleteConfirmDialog": {
+      "title": "Xóa tác vụ",
+      "description": "Thao tác này không thể hoàn tác",
+      "cancel": "Hủy",
+      "confirm": "Xóa",
+      "deleting": "Đang xóa..."
+    },
+    "taskCards": {
+      "common": {
+        "referenceImageAlt": "Ảnh tham chiếu"
+      },
+      "pending": {
+        "pending": "Đang chờ...",
+        "queued": "Trong hàng...",
+        "waitingInQueue": "Đang chờ trong hàng..."
+      },
+      "processing": {
+        "phase1": "Giai đoạn 1",
+        "phase2": "Giai đoạn 2",
+        "phase3": "Giai đoạn 3",
+        "final": "Cuối",
+        "initializing": "Đang khởi tạo",
+        "processing": "Đang xử lý nội dung",
+        "rendering": "Đang kết xuất",
+        "finalizing": "Đang hoàn tất",
+        "stuckMessage": "Tác vụ có vẻ bị kẹt. Bạn có thể xóa nó.",
+        "deleteTitle": "Xóa tác vụ này",
+        "deleteAria": "Xóa"
+      },
+      "failed": {
+        "title": "Tạo thất bại",
+        "tryAgain": "Thử lại",
+        "tryAgainTitle": "Thử lại với prompt này",
+        "deleteTitle": "Xóa tác vụ này"
+      },
+      "completed": {
+        "recreateDesktop": "Tạo lại",
+        "remixMobile": "phối lại",
+        "remixTitle": "Tạo video mới bằng prompt này",
+        "publish": "Đăng",
+        "publishTitle": "Đăng lên cộng đồng và nhận {amount} credits",
+        "creditsBonusDesktop": "Thưởng {amount} credits",
+        "creditsBonusMobile": "+{amount}",
+        "share": "Chia sẻ",
+        "shareTitle": "Chia sẻ video này",
+        "downloadTitle": "Tải xuống video này",
+        "downloading": "Đang tải xuống...",
+        "deleteTitle": "Xóa tác vụ này"
+      }
+    }
+  },
+  "Lego": {
+    "meta": {
+      "title": "Lego - ReelMind",
+      "description": "Tạo và remix video với quy trình Lego trên ReelMind."
+    },
+    "mobile": {
+      "backToBuilder": "Quay lại Builder",
+      "history": "Lịch sử"
+    },
+    "badges": {
+      "new": "Mới"
+    },
+    "actions": {
+      "delete": "Xóa",
+      "select": "Chọn",
+      "selected": "Đã chọn",
+      "download": "Tải xuống",
+      "downloading": "Đang tải xuống...",
+      "deleting": "Đang xóa...",
+      "share": "Chia sẻ",
+      "close": "Đóng"
+    },
+    "status": {
+      "pending": "Đang chờ",
+      "processing": "Đang xử lý",
+      "failed": "Thất bại",
+      "completed": "Hoàn tất",
+      "generating": "Đang tạo",
+      "cancelled": "Đã hủy"
+    },
+    "deleteConfirmDialog": {
+      "title": "Xóa tác vụ",
+      "description": "Thao tác này không thể hoàn tác",
+      "cancel": "Hủy",
+      "confirm": "Xóa",
+      "deleting": "Đang xóa..."
+    },
+    "imageViewer": {
+      "close": "Đóng",
+      "previous": "Trước",
+      "next": "Sau",
+      "view": "Xem {index}"
+    },
+    "historyList": {
+      "title": "Trình tạo ảnh AI Lego",
+      "generatingFirstImage": "Đang tạo ảnh đầu tiên của bạn...",
+      "loadFailed": "Không thể tải lịch sử. Vui lòng thử lại.",
+      "emptyDescription": "Tạo những bức ảnh ấn tượng bằng cách mô tả ý tưởng và thêm tài nguyên để hướng dẫn AI",
+      "loadingMore": "Đang tải thêm ảnh lịch sử...",
+      "scrollForMore": "Cuộn để xem thêm...",
+      "allLoaded": "Đã tải tất cả {count} ảnh"
+    },
+    "sidebar": {
+      "addCard": "Thêm thẻ mới",
+      "expand": "Mở rộng thanh bên",
+      "sections": {
+        "theme": "Chủ đề",
+        "scene": "Bối cảnh",
+        "style": "Phong cách"
+      }
+    },
+    "card": {
+      "placeholder": "Mô tả {section}...",
+      "imageAlt": "Tham chiếu {section}",
+      "options": {
+        "image": "Ảnh",
+        "text": "Văn bản"
+      }
+    },
+    "fluxUploader": {
+      "referenceAlt": "Tham chiếu {index}",
+      "errors": {
+        "invalidType": "Vui lòng chọn tệp ảnh",
+        "tooLarge": "Kích thước ảnh không được vượt quá {maxSizeMb}MB",
+        "uploadFailed": "Không thể tải ảnh lên. Vui lòng thử lại."
+      }
+    },
+    "responsiveLayout": {
+      "scrollToBottom": "Cuộn xuống cuối",
+      "collapsedPlaceholder": "Mô tả ảnh của bạn...",
+      "close": "Đóng"
+    },
+    "resultPreview": {
+      "previewTitle": "Xem trước",
+      "previewDescription": "Ảnh bạn tạo sẽ xuất hiện ở đây",
+      "generatedImageAlt": "Ảnh đã tạo",
+      "emptyPlaceholder": "Tác phẩm của bạn sẽ xuất hiện ở đây",
+      "dialogTitle": "Ảnh bạn đã tạo",
+      "dialogDescription": "Đây là ảnh chúng tôi tạo dựa trên mô tả và tài nguyên của bạn"
+    },
+    "resourceUploader": {
+      "uploadImage": "Tải ảnh lên",
+      "imageFallbackAlt": "Ảnh",
+      "imageFallbackLabel": "ảnh",
+      "removeImage": "Xóa {title}"
+    },
+    "controlPanel": {
+      "showSidebar": "Hiện thanh bên",
+      "hideSidebar": "Ẩn thanh bên",
+      "hideSidebarShort": "Ẩn thanh bên",
+      "addImage": "Thêm ảnh",
+      "addImageWithLimit": "Thêm ảnh ({current}/{max})",
+      "promptPlaceholder": "Tạo hoặc chỉnh sửa ảnh của bạn...",
+      "model": "Mô hình",
+      "selectModel": "Chọn mô hình",
+      "loading": "Đang tải...",
+      "loadingModels": "Đang tải mô hình...",
+      "noModelsAvailable": "Không có mô hình khả dụng",
+      "noModelsMatchFilters": "Không có mô hình phù hợp bộ lọc",
+      "modelLabel": "Mô hình: {name}",
+      "aspectRatio": "Tỉ lệ khung hình",
+      "ratioLabel": "Tỉ lệ: {value}",
+      "imagesLabel": "Ảnh: {count}",
+      "imagesPopover": {
+        "flux2Hint": "Flux.2 chỉ xuất ra một ảnh",
+        "hint": "Số lượng ảnh cần tạo",
+        "numberOfImages": "Số lượng ảnh"
+      },
+      "advanced": {
+        "aria": "Cài đặt nâng cao",
+        "label": "Nâng cao",
+        "title": "Cài đặt nâng cao",
+        "negativePrompt": {
+          "label": "Lời nhắc tiêu cực",
+          "placeholder": "Những yếu tố bạn muốn loại bỏ...",
+          "aria": "Lời nhắc phủ định",
+          "title": "Chỉ định các yếu tố cần loại bỏ"
+        },
+        "seed": {
+          "label": "Hạt giống",
+          "random": "Ngẫu nhiên",
+          "randomTitle": "Tạo seed ngẫu nhiên",
+          "placeholder": "Seed ngẫu nhiên (tùy chọn)",
+          "aria": "Giá trị seed",
+          "title": "Đặt seed để tái tạo kết quả"
+        }
+      },
+      "resolution": "Độ phân giải",
+      "resolutionLabel": "Độ phân giải: {value}",
+      "resolutionPopoverTitle": "Độ phân giải (Nano Banana 2)",
+      "generating": "Đang tạo...",
+      "generate": "Tạo",
+      "limitReached": "Đã đạt giới hạn",
+      "fluxLimitTooltip": "Mô hình FLUX bị giới hạn {limit} lần sử dụng cho người không phải thành viên",
+      "unlimitedNanoBanana2Warning": "Nano Banana 2 là mô hình premium và không nằm trong gói Unlimited miễn phí. Credits sẽ được trừ cho mỗi ảnh được tạo.",
+      "unlimited": {
+        "fast": "Nhanh",
+        "slow": "Chậm",
+        "fastMode": "Chế độ nhanh",
+        "slowMode": "Chế độ chậm",
+        "monthlyUsage": "Sử dụng theo tháng: {used}/{limit}",
+        "rateLimit": "Giới hạn tốc độ: {limit} ảnh mỗi 5 phút",
+        "switchedToSlow": "Bạn đã đạt giới hạn theo tháng. Đã chuyển sang chế độ chậm."
+      }
+    },
+    "historyCard": {
+      "generatedImageFallback": "Ảnh đã tạo",
+      "failedTitle": "Tạo thất bại",
+      "errors": {
+        "unableToComplete": "Không thể hoàn tất tạo"
+      },
+      "actions": {
+        "deleteTitle": "Xóa tác vụ",
+        "viewFullSize": "Nhấp để xem kích thước đầy đủ",
+        "preview": "Xem trước {index}",
+        "retryTitle": "Thử lại - Thử lại với cùng tham số",
+        "retry": "Thử lại",
+        "remixTitle": "Remix - Dùng lại tham số",
+        "remix": "phối lại",
+        "makeVideoTitle": "Tạo video",
+        "makeVideo": "Tạo video"
+      }
+    }
+  },
+  "Share": {
+    "toast": {
+      "downloadStartedTitle": "Bắt đầu tải xuống",
+      "downloadStartedMessage": "Đã bắt đầu tải video",
+      "downloadFailedTitle": "Tải xuống thất bại",
+      "downloadFailedMessage": "Không thể tải video xuống",
+      "shareCopied": "Liên kết chia sẻ đã được sao chép",
+      "shareCopyFailed": "Không thể sao chép liên kết chia sẻ"
+    },
+    "empty": {
+      "title": "Video không khả dụng",
+      "description": "Video này không thể chia sẻ hoặc tệp video bị thiếu.",
+      "ctaCreate": "Tạo video của bạn"
+    },
+    "notFound": {
+      "title": "Không tìm thấy video",
+      "description": "Video bạn tìm không tồn tại hoặc không còn khả dụng để chia sẻ.",
+      "ctaCreate": "Tạo video của bạn",
+      "ctaHome": "Quay lại trang chủ"
+    },
+    "details": {
+      "creationDate": "Ngày tạo"
+    },
+    "actions": {
+      "remix": "phối lại",
+      "remixTitle": "Tạo video mới với prompt này",
+      "download": "Tải xuống",
+      "downloadTitle": "Tải xuống video này",
+      "downloading": "Đang tải xuống...",
+      "downloadingTitle": "Đang tải xuống...",
+      "shareTitle": "Chia sẻ video này"
+    },
+    "meta": {
+      "promptFallback": "Video do AI tạo",
+      "watchDescription": "Xem video do AI tạo này: {prompt}"
+    }
+  },
+  "Music": {
+    "meta": {
+      "title": "Âm nhạc",
+      "description": "Tạo nhạc, hiệu ứng âm thanh và giọng nói bằng AI."
+    },
+    "page": {
+      "loadingSoundStudio": "Đang tải Sound Studio..."
+    },
+    "functionToggle": {
+      "music": "Âm nhạc",
+      "soundEffect": "Hiệu ứng âm thanh",
+      "textToSpeech": "Văn bản → Giọng nói"
+    },
+    "controlPanel": {
+      "title": "Điều khiển",
+      "reset": "Đặt lại",
+      "modelLabel": {
+        "tts": "Mô hình TTS",
+        "sound": "Mô hình âm thanh"
+      },
+      "modelPlaceholder": "Chọn mô hình",
+      "noModelsAvailableTitle": "Không có mô hình khả dụng",
+      "noModelsFound": {
+        "tts": "Không tìm thấy mô hình TTS",
+        "soundEffect": "Không tìm thấy mô hình hiệu ứng âm thanh"
+      },
+      "tts": {
+        "stability": "Độ ổn định",
+        "similarityBoost": "Tăng cường tương đồng",
+        "styleExaggeration": "Cường điệu phong cách",
+        "speed": "Tốc độ"
+      }
+    },
+    "audioUpload": {
+      "uploadReferenceAudio": "Tải lên âm thanh tham chiếu",
+      "dropHere": "Thả vào đây",
+      "supportedFormats": "Định dạng hỗ trợ: MP3, WAV, M4A, AAC, OGG",
+      "tip": "Mẹo: Dùng ít nhất 15 giây âm thanh rõ ràng để có kết quả tốt hơn.",
+      "uploadingProgress": "Đang tải lên... {progress}%",
+      "toast": {
+        "uploadSuccess": "Tải lên hoàn tất",
+        "uploadFailed": "Tải lên thất bại"
+      },
+      "errors": {
+        "selectAudioFile": "Vui lòng chọn tệp âm thanh.",
+        "invalidAudioFile": "Tệp âm thanh không hợp lệ.",
+        "fileTooLarge": "Tệp quá lớn (tối đa 50MB).",
+        "durationTooShort": "Âm thanh phải dài ít nhất 15 giây."
+      }
+    },
+    "audioPlayer": {
+      "play": "Phát",
+      "pause": "Tạm dừng"
+    },
+    "voiceSelector": {
+      "label": "Giọng",
+      "selectVoiceTitle": "Chọn giọng",
+      "gender": {
+        "all": "Tất cả",
+        "male": "Nam",
+        "female": "Nữ"
+      },
+      "noVoicesAvailable": "Không có giọng khả dụng",
+      "noVoicesFound": "Không tìm thấy giọng",
+      "bestFor": "Phù hợp nhất cho {useCase}",
+      "clickToSelectVoice": "Nhấp để chọn giọng"
+    },
+    "historyPanel": {
+      "title": "Lịch sử",
+      "empty": {
+        "title": "Chưa có bản tạo nào",
+        "description": "Lịch sử tạo của bạn sẽ hiển thị ở đây"
+      },
+      "loading": "Đang tải...",
+      "loadMore": "Tải thêm"
+    },
+    "historyCard": {
+      "status": {
+        "processing": "Đang xử lý",
+        "failed": "Thất bại",
+        "completed": "Hoàn tất"
+      },
+      "actions": {
+        "copy": "Sao chép",
+        "download": "Tải xuống"
+      },
+      "time": {
+        "now": "Bây giờ",
+        "minutesAgo": "{minutes} phút trước",
+        "hoursAgo": "{hours} giờ trước"
+      },
+      "unknownModel": "Mô hình không xác định",
+      "errors": {
+        "unknown": "Lỗi không xác định"
+      }
+    },
+    "mobile": {
+      "header": {
+        "title": "Phòng thu âm"
+      },
+      "menu": {
+        "open": "Mở menu",
+        "title": "Thực đơn",
+        "voiceGeneration": "Tạo",
+        "settings": "Cài đặt",
+        "history": "Lịch sử"
+      },
+      "tabs": {
+        "generate": "Tạo",
+        "settings": "Cài đặt",
+        "history": "Lịch sử"
+      }
+    },
+    "mainPanel": {
+      "placeholder": {
+        "tts": "Nhập văn bản để tạo giọng nói...",
+        "soundEffect": "Mô tả hiệu ứng âm thanh bạn muốn tạo..."
+      },
+      "generateSpeech": "Tạo giọng nói",
+      "generateSound": "Tạo âm thanh",
+      "generating": "Đang tạo...",
+      "loadingExamples": "Đang tải ví dụ...",
+      "loadingMusicStyles": "Đang tải phong cách nhạc...",
+      "rightTabs": {
+        "examples": "Ví dụ",
+        "history": "Lịch sử"
+      },
+      "history": {
+        "generationCount": "{count} bản tạo"
+      },
+      "price": {
+        "placeholder": "Chi phí ước tính",
+        "calculating": "Đang tính...",
+        "credits": "{credits} tín dụng"
+      },
+      "musicHistory": {
+        "title": "Lịch sử âm nhạc",
+        "empty": {
+          "title": "Chưa tạo nhạc",
+          "description": "Lịch sử nhạc của bạn sẽ hiển thị ở đây"
+        }
+      },
+      "soundEffectHistory": {
+        "title": "Lịch sử hiệu ứng âm thanh",
+        "empty": {
+          "title": "Chưa tạo hiệu ứng âm thanh",
+          "description": "Lịch sử hiệu ứng âm thanh sẽ hiển thị ở đây"
+        }
+      }
+    },
+    "musicInput": {
+      "lyricsTitle": "Lời bài hát",
+      "lyricsPlaceholder": "Lời bài hát có thể kèm định dạng. Bạn có thể dùng xuống dòng để tách từng dòng lời. Bạn có thể dùng hai lần xuống dòng để thêm khoảng dừng giữa các dòng. Bạn có thể dùng dấu thăng đôi (##) ở đầu và cuối lời để thêm phần đệm. Tối đa 600 ký tự.",
+      "useReferenceAudio": {
+        "label": "Dùng âm thanh tham chiếu",
+        "description": "Dùng tham chiếu âm thanh để hướng dẫn phong cách của AI."
+      },
+      "referenceAudio": {
+        "title": "Âm thanh tham chiếu",
+        "description": "Tải lên bài hát tham chiếu có cả nhạc và giọng."
+      },
+      "musicStyle": {
+        "title": "Phong cách nhạc",
+        "description": "Mô tả phong cách và tâm trạng âm nhạc bạn muốn tạo.",
+        "placeholder": "ví dụ: R&B, sôi động, pop vui tươi, acoustic folk, electronic dance...",
+        "tooShort": "Mô tả phong cách nhạc phải dài ít nhất 10 ký tự."
+      },
+      "generating": "Đang tạo...",
+      "generateMusicWithCredits": "Tạo nhạc ({credits} credits)"
+    },
+    "soundEffectSettings": {
+      "duration": {
+        "title": "Thời lượng",
+        "description": "Đặt độ dài của hiệu ứng âm thanh."
+      },
+      "promptInfluence": {
+        "title": "Mức ảnh hưởng của prompt",
+        "description": "Giá trị cao hơn sẽ bám sát prompt hơn."
+      }
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Liên hệ",
+      "description": "Gửi phản hồi tới đội ngũ ReelMind."
+    },
+    "header": {
+      "title": "Phản hồi nhanh",
+      "description": "Bạn phát hiện lỗi hoặc có gợi ý? Hãy cho chúng tôi biết trong 30 giây."
+    },
+    "card": {
+      "title": "Phản hồi nhanh",
+      "subtitle": "Chỉ 3 trường, mất 30 giây"
+    },
+    "submitted": {
+      "title": "Đã gửi phản hồi",
+      "description": "Cảm ơn phản hồi của bạn. Chúng tôi sẽ xem xét và liên hệ lại nếu cần."
+    },
+    "auth": {
+      "required": "Vui lòng đăng nhập để gửi phản hồi."
+    },
+    "form": {
+      "errors": {
+        "unknown": "Đã xảy ra lỗi. Vui lòng thử lại."
+      },
+      "type": {
+        "label": "Loại",
+        "placeholder": "Chọn loại phản hồi",
+        "options": {
+          "bug": "Báo lỗi",
+          "suggestion": "Góp ý",
+          "other": "Khác"
+        },
+        "errors": {
+          "required": "Cần chọn loại phản hồi.",
+          "invalid": "Loại phản hồi không hợp lệ."
+        }
+      },
+      "subject": {
+        "label": "Chủ đề *",
+        "placeholder": "Vấn đề hoặc gợi ý là gì?",
+        "errors": {
+          "required": "Cần nhập chủ đề.",
+          "min": "Chủ đề phải có ít nhất {min} ký tự.",
+          "max": "Chủ đề phải ít hơn {max} ký tự.",
+          "invalid": "Chủ đề chứa nội dung không hợp lệ."
+        }
+      },
+      "message": {
+        "label": "Chi tiết *",
+        "placeholder": "Cho chúng tôi biết thêm...",
+        "errors": {
+          "required": "Cần nhập chi tiết.",
+          "min": "Chi tiết phải có ít nhất {min} ký tự.",
+          "max": "Chi tiết phải ít hơn {max} ký tự.",
+          "invalid": "Chi tiết chứa nội dung không hợp lệ."
+        }
+      }
+    },
+    "actions": {
+      "submitting": "Đang gửi...",
+      "submit": "Gửi phản hồi"
+    },
+    "toast": {
+      "submitSuccess": "Gửi phản hồi thành công!",
+      "submitFailed": "Không thể gửi phản hồi. Vui lòng thử lại.",
+      "authRequired": "Vui lòng đăng nhập để gửi phản hồi.",
+      "rateLimited": "Bạn gửi quá nhiều. Vui lòng thử lại sau.",
+      "rateLimitedWithRetryAfter": "Vui lòng đợi {seconds}s trước khi gửi lại.",
+      "fixErrors": "Vui lòng sửa các lỗi trong biểu mẫu.",
+      "checkInput": "Vui lòng kiểm tra dữ liệu và thử lại."
+    }
+  },
+  "User": {
+    "tabs": {
+      "posts": "Bài viết",
+      "following": "Đang theo dõi",
+      "followingShort": "Theo dõi",
+      "followers": "Người theo dõi",
+      "followersShort": "Fan",
+      "favorites": "Yêu thích",
+      "favoritesShort": "yêu thích"
+    },
+    "actions": {
+      "save": "Lưu",
+      "saving": "Đang lưu...",
+      "cancel": "Hủy",
+      "delete": "Xóa",
+      "retry": "Thử lại",
+      "editProfile": "Chỉnh sửa hồ sơ",
+      "signOut": "Đăng xuất",
+      "follow": "Theo dõi",
+      "unfollow": "Bỏ theo dõi",
+      "loading": "..."
+    },
+    "profile": {
+      "creatorFallback": "Nhà sáng tạo",
+      "avatarAltFallback": "Người dùng",
+      "initialFallback": "bạn",
+      "edit": {
+        "displayNamePlaceholder": "Tên hiển thị",
+        "bioPlaceholder": "Tiểu sử"
+      },
+      "stats": {
+        "following": "Đang theo dõi",
+        "followers": "Người theo dõi"
+      },
+      "joined": "Tham gia {date}",
+      "joinedFallback": "Th3 2025"
+    },
+    "time": {
+      "now": "Vừa xong",
+      "minutesAgo": "{minutes} phút trước",
+      "hoursAgo": "{hours} giờ trước",
+      "daysAgo": "{days} ngày trước"
+    },
+    "toast": {
+      "loginFirst": "Vui lòng đăng nhập trước",
+      "cannotFollowYourself": "Không thể theo dõi chính mình",
+      "followed": "Theo dõi thành công",
+      "unfollowed": "Đã bỏ theo dõi",
+      "operationFailed": "Thao tác thất bại"
+    },
+    "posts": {
+      "loadingMore": "Đang tải thêm bài viết...",
+      "error": {
+        "failedToLoad": "Không thể tải bài viết"
+      },
+      "empty": {
+        "title": "Chưa có bài viết",
+        "description": "Người dùng này chưa chia sẻ bài viết nào. Hãy quay lại sau!"
+      },
+      "deleteDialog": {
+        "title": "Xóa bài viết",
+        "description": "Thao tác này sẽ ẩn bài viết khỏi hồ sơ và bảng tin. Bạn không thể hoàn tác."
+      },
+      "toast": {
+        "deleted": "Đã xóa bài viết",
+        "deleteFailed": "Không thể xóa bài viết"
+      }
+    },
+    "favorites": {
+      "loadingMore": "Đang tải thêm mục yêu thích...",
+      "error": {
+        "failedToLoad": "Không thể tải mục yêu thích"
+      },
+      "empty": {
+        "title": "Chưa có mục yêu thích",
+        "description": "Các bài bạn thích sẽ hiển thị ở đây. Hãy bắt đầu khám phá và lưu mục yêu thích!"
+      }
+    },
+    "followers": {
+      "empty": "Chưa có người theo dõi",
+      "error": {
+        "failedToLoad": "Không thể tải người theo dõi"
+      },
+      "followerSince": "Theo dõi từ {time}"
+    },
+    "following": {
+      "empty": "Chưa theo dõi ai",
+      "error": {
+        "failedToLoad": "Không thể tải danh sách đang theo dõi"
+      },
+      "followingSince": "Theo dõi từ {time}"
+    }
+  },
+  "Membership": {
+    "meta": {
+      "title": "Gói thành viên - ReelMind",
+      "description": "Tham gia các gói thành viên ReelMind để nhận thêm credits và tính năng premium cho tạo video AI."
+    },
+    "plans": {
+      "hero": {
+        "title": "Gói thành viên",
+        "subtitle": "Mở khóa toàn bộ tiềm năng tạo video AI với các gói đăng ký linh hoạt của ReelMind"
+      },
+      "error": {
+        "loadFailed": "Không thể lấy các gói thành viên, vui lòng thử lại sau."
+      },
+      "names": {
+        "free": "Miễn phí",
+        "pro": "chuyên nghiệp",
+        "max": "Tối đa",
+        "unlimited": "Không giới hạn"
+      }
+    },
+    "billingToggle": {
+      "yearly": {
+        "label": "Hằng năm"
+      },
+      "monthly": {
+        "label": "Hằng tháng"
+      }
+    },
+    "discount": {
+      "monthly": {
+        "full": "GIẢM 70% tháng đầu",
+        "short": "GIẢM 70%",
+        "description": "Người đăng ký lần đầu được GIẢM 70%, coupon có hiệu lực 24 giờ"
+      },
+      "yearly": {
+        "full": "MIỄN PHÍ 6 tháng đầu",
+        "short": "MIỄN PHÍ 6 tháng",
+        "description": "Người đăng ký hằng năm được miễn phí hoàn toàn 6 tháng đầu - tương đương GIẢM 50% cho năm đầu tiên!"
+      },
+      "percentOff": "GIẢM {percent}%",
+      "badge": {
+        "preview": "🎁 Có {offer}",
+        "active": "🔥 {offer}"
+      },
+      "afterClaiming": "(sau khi nhận)"
+    },
+    "pricing": {
+      "perYear": "mỗi năm",
+      "perMonth": "mỗi tháng",
+      "breakdown": {
+        "originalPrice": "Giá gốc:",
+        "discount": "Giảm giá:",
+        "payFirstYear": "Bạn trả (năm đầu):",
+        "firstMonth": "Tháng đầu:"
+      }
+    },
+    "status": {
+      "title": "Trạng thái thành viên",
+      "loading": "Đang tải thông tin thành viên...",
+      "currentPlan": "Gói hiện tại:",
+      "expiresOn": "Hết hạn vào:",
+      "unlimitedDescription": "Bạn có quyền truy cập không giới hạn vào mọi tính năng tạo mà không bị trừ credits.",
+      "planDescription": "Bạn có quyền truy cập tất cả tính năng và lợi ích của gói {plan}.",
+      "noActive": {
+        "title": "Bạn không có gói thành viên đang hoạt động.",
+        "subtitle": "Hãy đăng ký một gói bên dưới để mở khóa tính năng premium."
+      }
+    },
+    "creditsBalance": {
+      "title": "Số dư Credits",
+      "loading": "Đang tải thông tin credits...",
+      "availableCredits": "Credits khả dụng:",
+      "unlimited": {
+        "video": "Tạo video không giới hạn",
+        "image": "Tạo ảnh không giới hạn",
+        "audio": "Tạo âm thanh không giới hạn"
+      },
+      "estimate": {
+        "videos": "Tối đa {count} video",
+        "images": "Tối đa {count} ảnh",
+        "audios": "Tối đa {count} âm thanh"
+      },
+      "cost": {
+        "videos": "Video: từ {credits} credits",
+        "images": "Ảnh: từ {credits} credits",
+        "audios": "Âm thanh: từ {credits} credits"
+      }
+    },
+    "credits": {
+      "title": "Mua Credits",
+      "history": {
+        "toggle": {
+          "show": "Hiện lịch sử giao dịch",
+          "hide": "Ẩn lịch sử giao dịch"
+        }
+      },
+      "card": {
+        "description": "Chọn gói credits để tăng khả năng tạo AI của bạn"
+      },
+      "packages": {
+        "basic": {
+          "label": "Gói cơ bản"
+        },
+        "standard": {
+          "label": "Gói tiêu chuẩn"
+        },
+        "premium": {
+          "label": "Gói cao cấp"
+        },
+        "pro": {
+          "label": "Gói Ultra"
+        },
+        "bonus": "Thưởng: +{bonus}"
+      },
+      "usage": {
+        "baseRate": "Tỉ lệ cơ bản: 1 USD = 100 credits",
+        "buyMoreBonus": "Mua nhiều, thưởng nhiều!",
+        "neverExpire": "Credits không bao giờ hết hạn",
+        "instantDelivery": "Nhận ngay sau khi thanh toán"
+      },
+      "actions": {
+        "processing": "Đang xử lý...",
+        "buyCredits": "Mua {credits} Credits"
+      }
+    },
+    "creditsHistory": {
+      "title": "Lịch sử giao dịch",
+      "subtitle": "Các giao dịch credits gần đây",
+      "actions": {
+        "retry": "Thử lại",
+        "loading": "Đang tải...",
+        "loadMore": "Tải thêm"
+      },
+      "table": {
+        "date": "Ngày",
+        "type": "Loại",
+        "amount": "Số lượng",
+        "status": "Trạng thái"
+      },
+      "empty": "Không có lịch sử giao dịch",
+      "types": {
+        "membershipMonthly": "Credits thành viên hằng tháng",
+        "membershipInitial": "Credits thành viên ban đầu",
+        "freeMonthly": "Credits miễn phí hằng tháng",
+        "purchase": "Mua credits",
+        "platformReward": "Thưởng từ nền tảng",
+        "newUserBonus": "Thưởng người dùng mới",
+        "postReward": "Thưởng bài đăng",
+        "videoPostReward": "Thưởng bài đăng video",
+        "refund": "Hoàn tiền",
+        "balanceAdjustment": "Điều chỉnh số dư",
+        "videoGeneration": "Tạo video",
+        "imageGeneration": "Tạo ảnh",
+        "modelTraining": "Huấn luyện mô hình",
+        "audioGeneration": "Tạo âm thanh",
+        "systemAdjustment": "Điều chỉnh hệ thống"
+      }
+    },
+    "couponLogic": {
+      "time": {
+        "hms": "{h}h {m}m {s}s",
+        "ms": "{m}m {s}s",
+        "s": "{s}s",
+        "expired": "Hết hạn"
+      },
+      "toast": {
+        "claimedTitle": "Nhận coupon thành công",
+        "claimedDescription": "Coupon đã được thêm vào tài khoản, có hiệu lực {hours} giờ",
+        "claimFailedTitle": "Nhận thất bại",
+        "tryAgainLater": "Vui lòng thử lại sau",
+        "networkError": "Lỗi mạng, vui lòng thử lại sau"
+      }
+    },
+    "couponStatus": {
+      "title": "Trạng thái coupon",
+      "active": {
+        "annualTitle": "Ưu đãi năm đang hoạt động",
+        "couponTitle": "Coupon đã kích hoạt"
+      },
+      "fields": {
+        "claimed": "Đã nhận:",
+        "expires": "Hết hạn:",
+        "timeLeft": "Còn lại:",
+        "usedAt": "Đã dùng lúc:",
+        "discount": "Giảm giá:"
+      },
+      "expired": "Coupon đã hết hạn",
+      "used": {
+        "title": "Coupon đã dùng"
+      },
+      "available": "Có {offer}",
+      "offer": {
+        "annualSpecial": "🎁 Ưu đãi năm",
+        "newUserExclusive": "🎉 Dành riêng cho người dùng mới",
+        "bestValue": "Giá trị tốt nhất",
+        "limitedTime": "Có hạn",
+        "claimYearly": "Nhận ưu đãi miễn phí 6 tháng",
+        "claimMonthly": "Nhận coupon ngay"
+      },
+      "none": {
+        "title": "Không có coupon khả dụng",
+        "description": "{offer} chỉ dành cho người dùng mới chưa từng mua gói thành viên."
+      }
+    },
+    "pricingCard": {
+      "badges": {
+        "popular": "Phổ biến",
+        "advanced": "Nâng cao",
+        "unlimited": "Không giới hạn"
+      },
+      "actions": {
+        "getUnlimitedDesktop": "Nhận quyền truy cập Unlimited",
+        "getUnlimitedMobile": "Nhận Unlimited",
+        "subscribeDesktop": "Bắt đầu đăng ký",
+        "subscribeMobile": "Đăng ký",
+        "claimAndSubscribeMobile": "Nhận & Đăng ký",
+        "getDiscountMobile": "Nhận {discount}",
+        "claimDiscountAndSubscribeDesktop": "Nhận {discount} & Đăng ký"
+      },
+      "toast": {
+        "loginSuccess": "Đăng nhập thành công! Nhấn nút lần nữa để nhận ưu đãi và đăng ký.",
+        "claimCouponFailed": "Không thể nhận coupon",
+        "tryAgainLater": "Vui lòng thử lại sau",
+        "couponClaimed": "Đã nhận coupon!",
+        "failedToProcess": "Xử lý thất bại"
+      },
+      "usageEstimate": {
+        "title": "Ước tính sử dụng hằng tháng",
+        "videos": "Tối đa {count} video mỗi tháng",
+        "images": "Tối đa {count} ảnh mỗi tháng",
+        "audios": "Tối đa {count} âm thanh mỗi tháng"
+      },
+      "unlimitedNotes": {
+        "title": "Lưu ý sử dụng",
+        "videoTasks": {
+          "title": "Tác vụ video:",
+          "body": "Bạn có thể chạy tối đa 5 tác vụ cùng lúc. Giới hạn theo tháng: 300. Khi đạt giới hạn tháng, áp dụng chế độ chậm: giới hạn ngày 30 video mỗi 24 giờ và 10 tác vụ mỗi giờ."
+        },
+        "imageTasks": {
+          "title": "Tác vụ ảnh:",
+          "body": "Tối đa 300 tác vụ mỗi tháng. Áp dụng chế độ nhanh tới tác vụ thứ 300 (5 tác vụ/phút). Sau đó chế độ chậm giới hạn 1 tác vụ/phút."
+        },
+        "premiumModels": {
+          "title": "Mô hình premium:",
+          "body": "Một số mô hình chi phí cao không nằm trong gói UNLIMITED. Các biến thể VEO 3.* không-fast và Sora-2 /pro vẫn tiêu tốn credits."
+        }
+      },
+      "currentPlan": "Kế hoạch hiện tại",
+      "yearlyEquivalent": "Tương đương với <price>{value}</price>",
+      "yearlySavings": "Tiết kiệm <amount>{value}</amount> so với thanh toán hàng tháng"
+    },
+    "features": {
+      "monthlyCredits": "{credits} credit mỗi tháng",
+      "monthlyVideoCredits": "{credits} credit video mỗi tháng",
+      "fullAccessTopModels": "Truy cập đầy đủ {count} mô hình video AI hàng đầu",
+      "accessAllModels": "Truy cập tất cả mô hình",
+      "purchaseMoreRolloverVideoCredits": "Mua thêm credit video có thể cộng dồn",
+      "downloadNoWatermark": "Tải video không watermark",
+      "commercialUse": "Sử dụng thương mại",
+      "fastGenerations": "Tạo nhanh",
+      "prioritySupport": "Hỗ trợ ưu tiên",
+      "unlimitedVideoAndImageGeneration": "Tạo video và hình ảnh không giới hạn"
+    },
+    "manageSubscription": {
+      "aria": {
+        "openBillingOptions": "Mở tùy chọn thanh toán"
+      },
+      "actions": {
+        "opening": "Đang mở...",
+        "billingOptions": "Tùy chọn thanh toán"
+      },
+      "confirm": {
+        "title": "Quản lý đăng ký",
+        "description": "Bạn muốn hủy đăng ký? Chúng tôi rất muốn nghe phản hồi của bạn trước khi bạn rời đi.",
+        "keep": "Giữ đăng ký",
+        "continueCancel": "Tiếp tục hủy"
+      },
+      "toast": {
+        "openFailed": "Không thể mở quản lý đăng ký",
+        "feedbackThanks": "Cảm ơn phản hồi của bạn!",
+        "feedbackSaveFailed": "Không thể lưu phản hồi, nhưng bạn vẫn có thể quản lý đăng ký"
+      }
+    },
+    "cancelSurvey": {
+      "header": {
+        "title": "Chúng tôi rất muốn nhận phản hồi",
+        "subtitle": "Giúp chúng tôi cải thiện bằng cách trả lời vài câu hỏi nhanh"
+      },
+      "common": {
+        "close": "Đóng",
+        "other": "Khác",
+        "stepIndicator": "Bước {current} / {total}"
+      },
+      "actions": {
+        "back": "Quay lại",
+        "next": "Tiếp",
+        "submitting": "Đang gửi...",
+        "complete": "Hoàn tất & Tiếp tục"
+      },
+      "satisfaction": {
+        "1": "Rất không hài lòng",
+        "2": "Không hài lòng",
+        "3": "Bình thường",
+        "4": "Hài lòng",
+        "5": "Rất hài lòng"
+      },
+      "steps": {
+        "1": {
+          "title": "Bạn biết ReelMind qua đâu?",
+          "options": {
+            "social": "Mạng xã hội (Twitter, Instagram, v.v.)",
+            "search": "Công cụ tìm kiếm (Google, Bing, v.v.)",
+            "friend": "Bạn bè hoặc đồng nghiệp giới thiệu",
+            "ads": "Quảng cáo trực tuyến",
+            "blog": "Blog công nghệ hoặc trang đánh giá"
+          }
+        },
+        "2": {
+          "title": "Bạn chủ yếu dùng ReelMind để làm gì?",
+          "description": "Chọn tất cả mục phù hợp với mục tiêu sáng tạo của bạn.",
+          "options": {
+            "video": "Tạo video",
+            "image": "Tạo ảnh",
+            "music": "Sáng tác nhạc",
+            "marketing": "Nội dung quảng cáo & marketing",
+            "socialPosts": "Bài đăng mạng xã hội",
+            "education": "Tài liệu giáo dục",
+            "personal": "Dự án cá nhân",
+            "exploring": "Khám phá ý tưởng mới"
+          }
+        },
+        "3": {
+          "title": "Mô tả nào đúng nhất về bạn?",
+          "options": {
+            "creator": "Nhà sáng tạo nội dung",
+            "developer": "Lập trình viên tự do",
+            "marketingPro": "Chuyên gia marketing",
+            "businessOwner": "Chủ doanh nghiệp",
+            "designer": "Nhà thiết kế",
+            "hobbyist": "Người đam mê",
+            "student": "Học sinh/Sinh viên",
+            "artist": "Nghệ sĩ"
+          }
+        },
+        "4": {
+          "title": "Bạn đánh giá trải nghiệm của mình thế nào?",
+          "description": "Vui lòng đánh giá mức độ hài lòng tổng thể với ReelMind"
+        },
+        "5": {
+          "title": "Lý do chính bạn quyết định hủy là gì?",
+          "options": {
+            "price": "Quá đắt",
+            "usage": "Không dùng đủ nhiều",
+            "features": "Thiếu tính năng quan trọng",
+            "quality": "Chất lượng kết quả tạo",
+            "bugs": "Sự cố kỹ thuật hoặc lỗi",
+            "alternative": "Tìm được lựa chọn tốt hơn"
+          }
+        },
+        "6": {
+          "title": "Chúng tôi rất muốn nghe phản hồi của bạn",
+          "description": "Ý kiến của bạn giúp chúng tôi làm ReelMind tốt hơn cho mọi người.",
+          "placeholder": "Bạn muốn chúng tôi cải thiện điều gì? Có tính năng nào bạn muốn thấy không? (tùy chọn)"
+        }
+      }
+    },
+    "enterprise": {
+      "toast": {
+        "submitted": "Đã gửi yêu cầu. Chúng tôi sẽ sớm liên hệ.",
+        "submitFailed": "Không thể gửi yêu cầu"
+      },
+      "card": {
+        "title": "Gói doanh nghiệp & tùy chỉnh",
+        "subtitle": "Giá tùy chỉnh, xuất hóa đơn và hỗ trợ",
+        "description": "Bạn cần hóa đơn, hỗ trợ tuân thủ hoặc quy trình tùy chỉnh? Hãy chia sẻ yêu cầu và chúng tôi sẽ đề xuất lựa chọn phù hợp nhất.",
+        "toggle": {
+          "hide": "Ẩn biểu mẫu",
+          "show": "Liên hệ sales"
+        },
+        "highlights": {
+          "sso": "SSO & tuân thủ",
+          "invoices": "Hóa đơn & đơn đặt hàng",
+          "support": "Hỗ trợ ưu tiên",
+          "workflows": "Quy trình tùy chỉnh"
+        }
+      },
+      "form": {
+        "contactType": {
+          "label": "Loại liên hệ",
+          "placeholder": "Chọn loại liên hệ",
+          "options": {
+            "business": "Doanh nghiệp",
+            "individual": "Cá nhân"
+          }
+        },
+        "monthlyEstimate": {
+          "label": "Ước tính sử dụng hằng tháng (USD)",
+          "placeholder": "Chọn ước tính",
+          "options": {
+            "0to1000": "$0 – $1,000",
+            "1000to5000": "1.000 USD – 5.000 USD",
+            "5000to10000": "5.000 USD – 10.000 USD",
+            "10000plus": "10.000 USD+",
+            "custom": "Số tiền tùy chỉnh (USD)"
+          },
+          "custom": {
+            "label": "Sử dụng hằng tháng tùy chỉnh (USD)",
+            "placeholder": "Nhập số tiền bằng USD"
+          }
+        },
+        "firstName": {
+          "label": "Tên",
+          "placeholder": "Jane"
+        },
+        "lastName": {
+          "label": "Họ",
+          "placeholder": "Nai"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your.email@company.com"
+        },
+        "website": {
+          "label": "Trang web",
+          "placeholder": "https://công ty.com"
+        },
+        "requirements": {
+          "label": "Hãy cho chúng tôi biết về dự án và yêu cầu của bạn",
+          "placeholder": "Bạn đang xây dựng gì? Bạn cần quy trình nào, yêu cầu tuân thủ gì và khối lượng dự kiến ra sao?"
+        },
+        "actions": {
+          "cancel": "Hủy",
+          "submitting": "Đang gửi...",
+          "submit": "Gửi"
+        },
+        "validation": {
+          "firstNameRequired": "Cần nhập tên",
+          "lastNameRequired": "Cần nhập họ",
+          "emailInvalid": "Email phải hợp lệ",
+          "websiteInvalid": "Website phải là URL hợp lệ",
+          "monthlyEstimateRequired": "Cần chọn ước tính hằng tháng",
+          "monthlyEstimateEnter": "Vui lòng nhập ước tính hằng tháng",
+          "monthlyEstimateMin": "Ước tính hằng tháng phải >= 0",
+          "requirementsMin": "Vui lòng cung cấp thêm chi tiết (tối thiểu {count} ký tự)",
+          "maxChars": "Tối đa {count} ký tự"
+        }
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "items": {
+        "proBenefits": {
+          "question": "Lợi ích của gói PRO là gì?",
+          "answer": "Gói PRO cung cấp 1000 credits mỗi tháng (trị giá $10), ưu tiên truy cập tính năng mới, tạo video nhanh hơn, tùy chọn chỉnh sửa nâng cao và hỗ trợ khách hàng ưu tiên."
+        },
+        "cancelAnytime": {
+          "question": "Tôi có thể hủy đăng ký bất cứ lúc nào không?",
+          "answer": "Có. Bạn có thể hủy đăng ký bất cứ lúc nào. Quyền lợi sẽ tiếp tục cho đến hết chu kỳ thanh toán hiện tại.",
+          "discountNote": {
+            "title": "Lưu ý đặc biệt cho đăng ký có giảm giá:",
+            "body": "Nếu bạn đăng ký bằng coupon giảm giá và đã sử dụng credits vượt quá mức giảm trong tháng đầu, bạn chỉ có thể hủy sau khi thanh toán tháng thứ hai được xử lý. Chính sách này nhằm đảm bảo việc sử dụng ưu đãi công bằng."
+          }
+        },
+        "monthlyVsYearly": {
+          "question": "Có khác biệt giữa gói hằng tháng và hằng năm không?",
+          "answer": "Có. Gói hằng năm giảm giá đáng kể so với gói hằng tháng. Bạn sẽ tiết kiệm khoảng 20% khi chọn thanh toán hằng năm."
+        },
+        "whatAreCredits": {
+          "question": "Credits ReelMind là gì?",
+          "answer": "Credits ReelMind là đơn vị tiền tệ ảo dùng để tạo video và ảnh AI trên nền tảng. Các tính năng khác nhau cần số credits khác nhau. Ví dụ: tạo video tiêu chuẩn (480p) tốn 50 credits, còn video HD (720p) tốn 80 credits."
+        },
+        "earnCredits": {
+          "question": "Tôi có thể kiếm credits bằng cách nào?",
+          "intro": "Bạn có thể kiếm credits theo nhiều cách:",
+          "items": {
+            "membership": "Thông qua gói thành viên (PRO nhận 1000 credits/tháng, MAX nhận 2000)",
+            "purchase": "Mua gói credits",
+            "newUser": "Người dùng mới nhận 100 credits miễn phí khi đăng ký",
+            "posting": "Đăng nội dung trên ReelMind (50 credits/ngày)",
+            "promotions": "Khuyến mãi và phần thưởng đặc biệt"
+          }
+        },
+        "expire": {
+          "question": "Credits có hết hạn không?",
+          "answer": "Credits bạn mua trực tiếp sẽ không hết hạn và sẽ ở trong tài khoản cho đến khi dùng. Credits được cấp hằng tháng sẽ được đặt lại vào đầu mỗi tháng. Credits chưa dùng từ các tháng trước sẽ không được cộng dồn."
+        },
+        "refund": {
+          "question": "Tôi có thể hoàn tiền credits chưa dùng không?",
+          "answer": "Chúng tôi không hoàn tiền cho credits đã mua. Tuy nhiên, nếu bạn gặp sự cố kỹ thuật khiến không thể sử dụng credits đúng cách, hãy liên hệ bộ phận hỗ trợ để chúng tôi xử lý."
+        },
+        "membershipVsCredits": {
+          "question": "Khác biệt giữa gói thành viên và credits là gì?",
+          "answer": "Gói thành viên cung cấp credits hằng tháng cùng với các lợi ích như xử lý ưu tiên và truy cập tính năng độc quyền. Credits có thể mua riêng mà không cần gói thành viên và sẽ bị trừ khi tạo nội dung. Chọn gói thành viên nếu dùng thường xuyên hoặc mua credits nếu dùng thỉnh thoảng."
+        }
+      }
+    },
+    "footer": {
+      "rights": "© {year} ReelMind. Mọi quyền được bảo lưu."
+    }
+  },
+  "Search": {
+    "placeholder": "Tìm kiếm...",
+    "noResultsFound": "Không tìm thấy kết quả",
+    "viewAllResults": "Xem tất cả kết quả",
+    "sections": {
+      "posts": "Bài viết",
+      "users": "Người dùng"
+    },
+    "tabs": {
+      "posts": "Bài viết",
+      "users": "Người dùng"
+    },
+    "unknownUser": "Không xác định",
+    "loading": "Đang tải...",
+    "searching": "Đang tìm kiếm...",
+    "loadingMore": "Đang tải thêm...",
+    "tryAgain": "Thử lại",
+    "noPostsFound": "Không tìm thấy bài viết",
+    "noUsersFound": "Không tìm thấy người dùng",
+    "empty": {
+      "title": "Tìm kiếm",
+      "hint": "Nhập từ khóa để tìm nội dung"
+    },
+    "errors": {
+      "searchFailed": "Tìm kiếm thất bại"
+    }
+  },
+  "Affiliate": {
+    "banner": {
+      "lifetimeCommissions": "HOA HỒNG TRỌN ĐỜI - 20% mãi mãi"
+    },
+    "hero": {
+      "lifetime": "TRỌN ĐỜI",
+      "passiveIncome": "THU NHẬP THỤ ĐỘNG",
+      "subtitle": {
+        "prefix": "Nhận hoa hồng",
+        "suffix": "mãi mãi"
+      }
+    },
+    "actions": {
+      "getStarted": "Bắt đầu",
+      "viewDashboard": "Xem Dashboard",
+      "signInFirst": "Vui lòng đăng nhập trước"
+    }
+  },
+  "Platform": {
+    "hero": {
+      "title": "Nền tảng API ReelMind",
+      "actions": {
+        "modelsPricing": "Mô hình & Bảng giá",
+        "viewDocumentation": "Xem tài liệu"
+      }
+    },
+    "toasts": {
+      "apiKeyCreated": "Tạo API key thành công",
+      "apiKeyCreateFailed": "Không thể tạo API key",
+      "apiKeyDeleted": "Xóa API key thành công",
+      "apiKeyDeletedDescription": "API key đã được xóa",
+      "apiKeyDeleteFailed": "Không thể xóa API key",
+      "apiKeyCopied": "Đã sao chép API key vào khay nhớ tạm",
+      "modelIdCopied": "Đã sao chép Model ID vào khay nhớ tạm"
+    },
+    "accountCard": {
+      "notLoggedIn": "Chưa đăng nhập",
+      "loadingKeys": "Đang tải API keys...",
+      "keysAvailable": "Có {count} API key",
+      "createKey": "Tạo API Key",
+      "helpPrefix": "Nếu bạn cần trợ giúp, vui lòng xem ",
+      "apiDocumentation": "Tài liệu API"
+    },
+    "stats": {
+      "plan": "Gói",
+      "resetDate": "Ngày đặt lại",
+      "credits": "Tín dụng",
+      "tasks": "Tác vụ",
+      "loading": "Đang tải...",
+      "freePlan": "Gói miễn phí",
+      "na": "không áp dụng",
+      "buyCredits": "Mua Credits"
+    },
+    "apiKeys": {
+      "title": "Quản lý API Keys",
+      "description": "Quản lý API keys để truy cập API tạo video của ReelMind",
+      "createNew": "Tạo API Key mới",
+      "loading": "Đang tải API keys...",
+      "label": "Khóa API",
+      "created": "Tạo {date}",
+      "active": "Hoạt động",
+      "inactive": "Không hoạt động",
+      "show": "Hiện API key",
+      "hide": "Ẩn API key",
+      "copy": "Sao chép API key",
+      "totalCalls": "Tổng số lượt gọi",
+      "creditsUsed": "Credits đã dùng",
+      "empty": {
+        "title": "Chưa có API Keys",
+        "description": "Bạn chưa tạo API key nào. Hãy tạo API key đầu tiên để bắt đầu dùng API ReelMind.",
+        "createFirst": "Tạo API Key đầu tiên"
+      }
+    },
+    "tabs": {
+      "modelsPricing": "Mô hình & Bảng giá",
+      "apiDocumentation": "Tài liệu API"
+    },
+    "documentation": {
+      "title": "Tài liệu API",
+      "authentication": "Xác thực",
+      "authenticationIntro": "Tất cả yêu cầu API cần xác thực bằng API key. API key của bạn là một UUID, bạn có thể tạo ở mục Quản lý API Keys bên dưới.",
+      "authenticationMethods": "Phương thức xác thực",
+      "exampleRequest": "Ví dụ yêu cầu",
+      "important": "Quan trọng",
+      "apiEndpoints": "Điểm cuối API",
+      "responseFormat": "Định dạng phản hồi",
+      "responseFormatIntro": "Định dạng phản hồi tác vụ tạo video:",
+      "parameters": "Tham số",
+      "table": {
+        "name": "Tên",
+        "type": "Loại",
+        "required": "Bắt buộc",
+        "description": "Mô tả"
+      },
+      "yes": "Có",
+      "no": "Không"
+    },
+    "pricing": {
+      "title": "Bảng giá API & Mô hình",
+      "intro": "Khám phá các mô hình AI khả dụng và bảng giá của chúng cho API tạo video và hình ảnh",
+      "loading": "Đang tải mô hình khả dụng...",
+      "available": "Khả dụng",
+      "unavailable": "Không khả dụng",
+      "credits": "{credits} tín dụng",
+      "basePricePerImage": "Giá cơ bản (mỗi ảnh)",
+      "basePrice5sVideo": "Giá cơ bản (video 5s)",
+      "creditsPerSecond": "+{credits} credits/giây",
+      "modelId": "Mã mẫu",
+      "copyModelId": "Sao chép Model ID",
+      "noModels": {
+        "title": "Không có mô hình khả dụng",
+        "description": "Hiện không có mô hình AI nào khả dụng cho truy cập API. Vui lòng quay lại sau."
+      }
+    },
+    "modelTypes": {
+      "textToVideo": "Văn bản → Video",
+      "imageToVideo": "Ảnh → Video",
+      "videoToVideo": "Video → Video",
+      "textToImage": "Văn bản → Ảnh",
+      "imageToImage": "Ảnh → Ảnh"
+    },
+    "deleteModal": {
+      "title": "Xác nhận xóa",
+      "description": "Bạn có chắc muốn xóa API key này không? Thao tác này không thể hoàn tác.",
+      "keyName": "Tên key: {name}",
+      "createdOn": "Tạo vào {date}",
+      "cancel": "Hủy",
+      "deleting": "Đang xóa...",
+      "deleteKey": "Xóa API Key"
+    },
+    "modelParameters": {
+      "title": "Tham số mô hình",
+      "required": "Bắt buộc",
+      "default": "Mặc định: {value}",
+      "labels": {
+        "prompt": "Lời nhắc",
+        "guidance_scale": "Thang hướng dẫn",
+        "aspect_ratio": "Tỉ lệ khung hình",
+        "seed": "Hạt giống",
+        "image_url": "URL ảnh",
+        "duration": "Thời lượng",
+        "resolution": "Độ phân giải",
+        "num_inference_steps": "Số bước suy luận",
+        "cfg_scale": "cân CFG"
+      },
+      "flux": {
+        "promptDescription": "Prompt văn bản mô tả hình ảnh cần tạo",
+        "guidanceScaleDescription": "Điều khiển mức độ hình ảnh bám sát prompt",
+        "aspectRatioDescription": "Tỉ lệ khung hình của ảnh được tạo",
+        "seedDescription": "Seed ngẫu nhiên để tái tạo kết quả",
+        "imageUrlDescription": "URL ảnh đầu vào cho tạo ảnh từ ảnh"
+      }
+    }
+  },
+  "Flux": {
+    "banner": {
+      "badge": "Văn bản → Ảnh · Chỉnh sửa ảnh",
+      "title": "FLUX / Nano Chuối / Seedream"
+    }
+  },
+  "Nolan": {
+    "meta": {
+      "title": "Nolan - Đạo diễn tác nhân AI số 1 thế giới",
+      "description": "Đạo diễn tác nhân AI số 1 thế giới"
+    },
+    "page": {
+      "loading": "Đang tải Đạo diễn AI Nolan..."
+    },
+    "heroBanner": {
+      "label": "Công nghệ AI mang tính cách mạng",
+      "name": "Nolan",
+      "worldFirst": "Đầu tiên trên thế giới",
+      "aiAgentDirector": "Đạo diễn tác nhân AI"
+    }
+  },
+  "Admin": {
+    "tasks": {
+      "status": {
+        "pending": "Đang chờ xử lý",
+        "queued": "Đã xếp hàng",
+        "processing": "Đang xử lý",
+        "completed": "Đã hoàn thành",
+        "failed": "thất bại",
+        "canceled": "Đã hủy"
+      },
+      "model": {
+        "unknown": "Người mẫu không xác định",
+        "unnamed": "Chưa đặt tên"
+      },
+      "errors": {
+        "fetchListTitle": "Không tải được nhiệm vụ",
+        "unknown": "Lỗi không xác định",
+        "fetchDetails": "Không tìm nạp được thông tin chi tiết về nhiệm vụ",
+        "downloadFailed": "Tải xuống không thành công",
+        "retryFailed": "Thử lại không thành công"
+      },
+      "details": {
+        "videoTitle": "Chi tiết nhiệm vụ video",
+        "imageTitle": "Chi tiết tác vụ hình ảnh",
+        "videoPreview": "Xem trước video",
+        "hideVideo": "Ẩn video",
+        "showVideo": "Hiển thị video",
+        "downloadVideo": "Tải xuống video",
+        "browserNoVideoSupport": "Trình duyệt của bạn không hỗ trợ phát lại video.",
+        "labels": {
+          "duration": "Thời lượng",
+          "fileSize": "Kích thước tệp",
+          "format": "định dạng",
+          "prompt": "Lời nhắc",
+          "model": "người mẫu",
+          "ratio": "Tỷ lệ khung hình",
+          "resolution": "Độ phân giải",
+          "taskId": "ID nhiệm vụ",
+          "user": "người dùng",
+          "status": "Trạng thái",
+          "createdTime": "Thời gian được tạo",
+          "startedTime": "Thời gian bắt đầu",
+          "completedTime": "Thời gian hoàn thành",
+          "generationModel": "Mô hình thế hệ",
+          "priority": "Ưu tiên",
+          "requestId": "ID yêu cầu",
+          "lastActivity": "Hoạt động cuối cùng"
+        },
+        "videoPreviewUnavailable": "Xem trước video không có sẵn",
+        "videoNoOutput": "Nhiệm vụ đã hoàn thành nhưng không có đầu ra video",
+        "videoNotCompleted": "Nhiệm vụ vẫn chưa hoàn thành",
+        "generationParams": "Thông số thế hệ",
+        "basicInfo": "Thông tin cơ bản",
+        "timeInfo": "Thông tin thời gian",
+        "detailData": "Dữ liệu chi tiết",
+        "inputParams": "Thông số đầu vào",
+        "outputResult": "Kết quả đầu ra",
+        "errorLog": "Nhật ký lỗi",
+        "retrying": "Đang thử lại...",
+        "retryTask": "Thử lại nhiệm vụ",
+        "generatedImage": "Hình ảnh được tạo",
+        "close": "Đóng"
+      }
+    },
+    "feedbacks": {
+      "page": {
+        "title": "Quản lý phản hồi của người dùng",
+        "subtitle": "Quản lý phản hồi và khiếu nại do người dùng gửi"
+      },
+      "table": {
+        "toast": {
+          "fetchFailedTitle": "Tìm nạp không thành công",
+          "fetchFailedDescription": "Không thể tìm nạp dữ liệu phản hồi: {error}",
+          "unknown": "Lỗi không xác định"
+        },
+        "type": {
+          "bug": "Báo cáo lỗi",
+          "suggestion": "Đề xuất",
+          "other": "Khác"
+        },
+        "loading": "Đang tải...",
+        "filter": {
+          "label": "Loại phản hồi",
+          "all": "Tất cả các loại"
+        },
+        "total": "Tổng cộng: {total} mục phản hồi",
+        "empty": "Không có dữ liệu phản hồi",
+        "headers": {
+          "userInfo": "Thông tin người dùng",
+          "type": "Loại",
+          "subject": "chủ đề",
+          "submittedAt": "Đã gửi",
+          "actions": "hành động"
+        },
+        "user": {
+          "unknown": "Người dùng không xác định",
+          "noEmail": "Không có email"
+        },
+        "actions": {
+          "collapse": "Thu gọn",
+          "viewDetails": "Xem chi tiết"
+        },
+        "contentLabel": "Phản hồi:",
+        "pagination": {
+          "previous": "trước đó",
+          "next": "Tiếp theo"
+        }
+      }
+    },
+    "credits": {
+      "errors": {
+        "searchKeywordRequired": "Vui lòng nhập từ khóa tìm kiếm.",
+        "noUsersFound": "Không tìm thấy người dùng phù hợp.",
+        "searchFailed": "Không thể tìm kiếm người dùng.",
+        "userRequired": "Vui lòng chọn một người dùng hoặc nhập ID người dùng.",
+        "amountInvalid": "Vui lòng nhập số tiền tín dụng hợp lệ.",
+        "descriptionRequired": "Vui lòng nhập mô tả trợ cấp.",
+        "grantFailed": "Không thể cấp tín dụng."
+      },
+      "success": {
+        "granted": "Tín dụng được cấp thành công."
+      }
+    },
+    "surveys": {
+      "errors": {
+        "fetchList": "Không tìm nạp được khảo sát.",
+        "fetchStats": "Không thể tìm nạp số liệu thống kê khảo sát."
+      }
+    },
+    "memberships": {
+      "title": "Quản lý đăng ký người dùng",
+      "search": {
+        "placeholder": "Tìm kiếm ID người dùng, email hoặc biệt hiệu...",
+        "button": "Tìm kiếm"
+      },
+      "stats": {
+        "total": "Tổng số đăng ký",
+        "yearly": "Thành viên hàng năm"
+      },
+      "list": {
+        "title": "Danh sách đăng ký"
+      },
+      "loading": "Đang tải...",
+      "actions": {
+        "retry": "Thử lại"
+      },
+      "empty": "Không có dữ liệu đăng ký",
+      "table": {
+        "headers": {
+          "userInfo": "Thông tin người dùng",
+          "plan": "Kế hoạch",
+          "billingCycle": "Chu kỳ thanh toán",
+          "status": "Trạng thái",
+          "credits": "Số dư tín dụng",
+          "videoTasks": "Nhiệm vụ video",
+          "imageTasks": "Nhiệm vụ hình ảnh",
+          "createdAt": "Thời gian được tạo",
+          "expiresAt": "Thời gian hết hạn"
+        },
+        "user": {
+          "unknown": "Không xác định"
+        },
+        "status": {
+          "active": "Đang hoạt động",
+          "inactive": "Không hoạt động",
+          "cancelAtPeriodEnd": "Hủy vào cuối kỳ"
+        },
+        "creditsUnit": "tín chỉ",
+        "flagged": "Đã gắn cờ",
+        "tasksUnit": "nhiệm vụ",
+        "never": "không bao giờ"
+      },
+      "pagination": {
+        "summary": "Đang hiển thị {start} đến {end} trong số {total} bản ghi",
+        "previous": "trước đó",
+        "next": "Tiếp theo",
+        "page": "Trang {currentPage} trong số {totalPages}"
+      }
+    },
+    "blog": {
+      "delete": {
+        "error": "Không thể xóa bài đăng. Vui lòng thử lại."
+      }
+    }
+  },
+  "Common": {
+    "language": "Ngôn ngữ",
+    "onlyEnglish": "Hiện tại chỉ có tiếng Anh.",
+    "onlySupportedPages": "Các ngôn ngữ bổ sung hiện chỉ có sẵn trên các trang Trang chủ, Khám phá, Tìm kiếm, Tạo, Lego, Âm nhạc, Tư cách thành viên, Liên hệ, Người dùng, Chia sẻ, Mô hình, Hiệu ứng và Blog.",
+    "languages": {
+      "en": "Tiếng Anh",
+      "zh-CN": "Tiếng Trung (Giản thể)"
+    },
+    "actions": {
+      "viewAll": "Xem tất cả",
+      "cancel": "Hủy bỏ",
+      "recreate": "Tạo lại",
+      "download": "Tải xuống",
+      "downloading": "Đang tải xuống...",
+      "showMore": "Hiển thị thêm",
+      "showLess": "Hiển thị ít hơn"
+    },
+    "aria": {
+      "scrollRight": "Cuộn sang phải",
+      "search": "Tìm kiếm"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm bài viết và người dùng..."
+    },
+    "share": {
+      "button": "Chia sẻ",
+      "toast": {
+        "copiedTitle": "Đã sao chép",
+        "copiedMessage": "Đã sao chép liên kết vào bảng nhớ tạm",
+        "failedTitle": "Không sao chép được",
+        "failedMessage": "Không thể sao chép liên kết vào clipboard"
+      }
+    },
+    "header": {
+      "nolanAIDirector": "Giám đốc AI Nolan",
+      "earlyAccess": "Truy cập sớm",
+      "justOneCredit": "Chỉ 1 credit"
+    },
+    "userNav": {
+      "theme": {
+        "lightMode": "Chế độ ánh sáng",
+        "darkMode": "Chế độ tối",
+        "switchToLightMode": "Chuyển sang chế độ ánh sáng",
+        "switchToDarkMode": "Chuyển sang Chế độ tối"
+      },
+      "profile": {
+        "myProfile": "Hồ sơ của tôi",
+        "goToMyProfile": "Đi tới hồ sơ của tôi"
+      },
+      "menu": {
+        "openMenu": "Mở trình đơn",
+        "close": "Đóng"
+      },
+      "membership": {
+        "title": "Tư cách thành viên",
+        "tapToViewPlans": "Nhấn để xem kế hoạch",
+        "upgrade": "Nâng cấp",
+        "plans": {
+          "free": "Miễn phí",
+          "pro": "chuyên nghiệp",
+          "max": "Tối đa",
+          "unlimited": "Không giới hạn"
+        }
+      },
+      "actions": {
+        "pricing": "giá cả",
+        "signIn": "Đăng nhập"
+      }
+    },
+    "footer": {
+      "rights": "© {year} reelMind. Mọi quyền được bảo lưu."
+    },
+    "video": {
+      "labels": {
+        "prompt": "Lời nhắc",
+        "model": "Người mẫu",
+        "ratio": "Tỷ lệ",
+        "guidance": "hướng dẫn",
+        "steps": "bước",
+        "seed": "Hạt giống",
+        "definition": "Sự định nghĩa"
+      },
+      "values": {
+        "unknownModel": "Người mẫu không xác định",
+        "random": "Ngẫu nhiên"
+      }
+    },
+    "pagination": {
+      "aria": {
+        "label": "Phân trang",
+        "previous": "Đi tới trang trước",
+        "next": "Chuyển đến trang tiếp theo"
+      },
+      "previous": "Trước",
+      "next": "Kế tiếp",
+      "more": "Nhiều trang hơn"
+    },
+    "concurrentLimit": {
+      "title": "Đã đạt đến giới hạn nhiệm vụ",
+      "defaultMessage": "Người dùng miễn phí chỉ có thể chạy một tác vụ tạo video tại một thời điểm.",
+      "currentStatus": "Tình trạng hiện tại",
+      "currentPlan": "Kế hoạch hiện tại",
+      "premiumBenefits": "Lợi ích cao cấp",
+      "plans": {
+        "unlimited": "Gói không giới hạn",
+        "free": "Miễn phí",
+        "unlimitedTasks": "Nhiệm vụ không giới hạn"
+      },
+      "unlimited": {
+        "maxTasks": "Tối đa 3 nhiệm vụ đồng thời",
+        "priority": "Xử lý ưu tiên cao",
+        "features": "Tất cả các tính năng cao cấp",
+        "waitNote": "Vui lòng đợi một số nhiệm vụ hiện tại của bạn hoàn thành trước khi gửi nhiệm vụ mới."
+      },
+      "free": {
+        "maxTasks": "1 nhiệm vụ đồng thời",
+        "priority": "Ưu tiên tiêu chuẩn",
+        "features": "Tính năng cơ bản"
+      },
+      "upgrade": {
+        "maxTasks": "Tối đa 5 nhiệm vụ đồng thời",
+        "priority": "Xử lý ưu tiên cao hơn",
+        "features": "Truy cập vào tất cả các mô hình"
+      },
+      "actions": {
+        "acknowledge": "Hiểu rồi",
+        "upgrade": "Nâng cấp",
+        "loading": "Đang tải..."
+      }
+    }
+  },
+  "Upload": {
+    "tabs": {
+      "local": "Tải lên cục bộ",
+      "reelmind": "reelMind được tạo"
+    },
+    "reelmind": {
+      "description": "Chọn video được tạo trên reelMind.",
+      "browse": "Duyệt qua các video của reelMind"
+    },
+    "title": {
+      "placeholder": "Thêm tiêu đề..."
+    },
+    "tags": {
+      "title": "Thẻ",
+      "empty": "Thêm thẻ để phân loại video của bạn tốt hơn.",
+      "placeholder": "Thêm thẻ (nhấn Enter để xác nhận)",
+      "count": "{count}/{limit}",
+      "helper": "Tối đa {limit} thẻ, mỗi thẻ {max} ký tự."
+    },
+    "description": {
+      "placeholder": "Thêm mô tả..."
+    },
+    "generationType": {
+      "title": "Loại thế hệ",
+      "txt2video": "Chuyển văn bản thành video",
+      "txt2videoDescription": "Tạo từ lời nhắc văn bản.",
+      "img2video": "Hình ảnh thành video",
+      "img2videoDescription": "Tạo từ một hình ảnh tham khảo."
+    },
+    "prompts": {
+      "promptTitle": "Lời nhắc",
+      "promptPlaceholder": "Nhập lời nhắc được sử dụng để tạo video này...",
+      "negativeTitle": "Lời nhắc tiêu cực",
+      "negativePlaceholder": "Nhập dấu nhắc phủ định..."
+    },
+    "modelResources": {
+      "title": "Tài nguyên mẫu",
+      "placeholder": "Liệt kê các tài nguyên mô hình được sử dụng, ví dụ: Mô hình, LoRA, phần nhúng..."
+    },
+    "aigc": {
+      "guidanceScale": "Thang hướng dẫn",
+      "guidanceScalePlaceholder": "ví dụ. 7,5",
+      "steps": "bước",
+      "stepsPlaceholder": "ví dụ. 30",
+      "seed": "Hạt giống",
+      "seedPlaceholder": "ví dụ. 1234567890"
+    },
+    "tools": {
+      "title": "Công cụ tạo"
+    },
+    "videoPreview": {
+      "uploadComplete": "Tải lên hoàn tất",
+      "uploading": "Đang tải lên...",
+      "clickToUpload": "Bấm để tải video lên",
+      "remove": "Xóa video"
+    },
+    "actions": {
+      "publish": "Xuất bản",
+      "publishing": "Đang xuất bản...",
+      "back": "Mặt sau"
+    },
+    "errors": {
+      "tagEmpty": "Thẻ không được để trống.",
+      "tagTooLong": "Thẻ không được vượt quá {max} ký tự.",
+      "tagExists": "Thẻ này đã tồn tại.",
+      "tagLimit": "Bạn có thể thêm tối đa thẻ {limit}.",
+      "authRequired": "Vui lòng đăng nhập để tải lên.",
+      "uploadFailed": "Tải lên không thành công. Vui lòng thử lại.",
+      "uploadParamsFailed": "Không tìm nạp được thông số tải lên.",
+      "fileAddFailed": "Không thể thêm tệp. Vui lòng thử lại."
+    }
+  },
+  "Blog": {
+    "meta": {
+      "title": "Blog - ReelMind",
+      "description": "Khám phá các mẹo, hướng dẫn và thông tin chi tiết về cách tạo nội dung AI, tạo video và các tính năng reelMind mới nhất."
+    },
+    "page": {
+      "title": "Blog",
+      "empty": "Không tìm thấy bài viết blog"
+    },
+    "error": {
+      "title": "Lỗi tải bài viết",
+      "description": "Đã xảy ra lỗi khi tải bài đăng trên blog.",
+      "retry": "Thử lại"
+    },
+    "notFound": {
+      "title": "Không tìm thấy trang",
+      "description": "Trang blog bạn yêu cầu không tồn tại."
+    },
+    "feed": {
+      "end": "Bạn đã đi đến cuối cùng",
+      "retry": "Thử lại",
+      "loadFailed": "Không tải được bài đăng trên blog"
+    },
+    "topFeed": {
+      "refresh": "Làm cho khỏe lại",
+      "exploreMore": "Khám phá thú vị hơn",
+      "loadFailed": "Không thể tải bài viết ngẫu nhiên"
+    },
+    "floatingChat": {
+      "title": "Hỏi Nolan AI",
+      "subtitle": "Giám đốc đại lý AI số 1!",
+      "placeholder": "Hỏi về bài viết này hoặc chia sẻ ý tưởng phim của bạn...",
+      "cta": "Gửi tới Nolan"
+    },
+    "featureCard": {
+      "label": "Mô hình Video",
+      "title": "reelmind cung cấp các công cụ mạnh mẽ để biến ý tưởng của bạn thành hiện thực.",
+      "subtitle": "Biến ý tưởng của bạn thành hình ảnh tuyệt đẹp với 101 mô hình AI",
+      "cta": "Thử ngay"
+    },
+    "breadcrumbs": {
+      "home": "Trang chủ"
+    },
+    "article": {
+      "notFoundTitle": "Không tìm thấy bài viết",
+      "notFoundDescription": "Không thể tìm thấy bài viết được yêu cầu."
+    }
+  },
+  "Favorites": {
+    "title": "Yêu thích của tôi",
+    "subtitle": "Tại đây bạn có thể quản lý các video và mô hình yêu thích của mình",
+    "tabs": {
+      "video": "Băng hình",
+      "model": "Người mẫu"
+    },
+    "empty": {
+      "title": "Bạn chưa có mục yêu thích nào"
+    },
+    "alert": {
+      "title": "Lỗi",
+      "retry": "Thử lại",
+      "loadFailed": "Không thể tải mục yêu thích. Vui lòng thử lại.",
+      "removeFailed": "Không thể xóa yêu thích. Vui lòng thử lại."
+    },
+    "card": {
+      "video": "Băng hình",
+      "model": "Người mẫu"
+    },
+    "button": {
+      "favorite": "Yêu thích",
+      "favorited": "Yêu thích"
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Chào mừng đến với ReelMind",
+      "subtitle": "Đăng nhập hoặc tạo tài khoản nhà sáng tạo",
+      "continueWithGoogle": "Tiếp tục với Google",
+      "orContinueWithEmail": "hoặc tiếp tục bằng email",
+      "emailLabel": "Email",
+      "emailPlaceholder": "ban@email.com",
+      "emailAddressPlaceholder": "Địa chỉ email",
+      "passwordLabel": "Mật khẩu",
+      "passwordPlaceholder": "•···········",
+      "show": "hiện",
+      "hide": "ẩn",
+      "inviteCodeLabelOptional": "Mã mời (tùy chọn)",
+      "inviteCodePlaceholder": "Nhập mã",
+      "invitedBy": "Được mời bởi <name>{value}</name>",
+      "continue": "Tiếp tục",
+      "signIn": "Đăng nhập",
+      "createAccount": "Tạo tài khoản",
+      "switchToSignIn": "Đã có tài khoản? Đăng nhập",
+      "switchToSignUp": "Chưa có tài khoản? Đăng ký",
+      "pageSubtitleCreate": "Tạo tài khoản của bạn",
+      "pageSubtitleSignIn": "Đăng nhập vào tài khoản của bạn",
+      "termsLine": "Khi tiếp tục, bạn đồng ý với <terms>Điều khoản</terms> và <privacy>Chính sách quyền riêng tư</privacy> của chúng tôi"
+    },
+    "verifyEmail": {
+      "title": "Xác minh email của bạn",
+      "sentLinkTo": "Chúng tôi đã gửi liên kết xác minh tới",
+      "checkInbox": "Vui lòng kiểm tra hộp thư đến và nhấp liên kết để tiếp tục.",
+      "understand": "Tôi hiểu",
+      "useDifferentEmail": "Dùng email khác"
+    },
+    "errors": {
+      "invalidEmail": "Địa chỉ email không hợp lệ",
+      "suspiciousEmail": "Email này có vẻ đáng ngờ",
+      "verifyBeforeLogin": "Vui lòng xác minh email trước khi đăng nhập",
+      "operationFailed": "Thao tác thất bại, vui lòng thử lại",
+      "googleFailed": "Đăng nhập Google thất bại, vui lòng thử lại",
+      "checkEmailConfirmation": "Hãy kiểm tra email để nhận liên kết xác nhận!"
+    },
+    "brand": {
+      "headlineLine1": "Máy làm cuộn",
+      "headlineLine2": "Chào mừng",
+      "taglineLine1": "Mở cuộn trí tưởng tượng.",
+      "taglineLine2": "Để AI biến nó thành thước phim.",
+      "cta": "Tham gia cộng đồng nhà sáng tạo và bắt đầu sáng tạo."
+    }
+  },
+  "Apps": {
+    "common": {
+      "addImage": "Thêm hình ảnh",
+      "addMoreReferences": "Thêm tài liệu tham khảo",
+      "auto": "Tự động",
+      "back": "Quay lại",
+      "character": "nhân vật",
+      "clear": "Xóa",
+      "clearAll": "Xóa tất cả",
+      "close": "Đóng",
+      "createPack": "Tạo gói",
+      "downloadCount": "Tải xuống {current}/{total}",
+      "dropOrUploadPhoto": "Thả hoặc tải ảnh lên",
+      "goToLibrary": "Đi đến thư viện",
+      "high": "Cao",
+      "history": "Lịch sử",
+      "inQueue": "Đang xếp hàng",
+      "info": "Thông tin",
+      "instadump": "Instadump",
+      "manual": "Hướng dẫn sử dụng",
+      "new": "Mới",
+      "next": "Tiếp theo",
+      "open": "Mở",
+      "previous": "trước đó",
+      "ready": "Sẵn sàng",
+      "recent": "Gần đây",
+      "remove": "Xóa",
+      "replace": "Thay thế",
+      "reset": "Đặt lại",
+      "restart": "Khởi động lại",
+      "selectPack": "Chọn gói",
+      "storyboard": "Bảng phân cảnh",
+      "upload": "Tải lên",
+      "uploading": "Đang tải lên..."
+    },
+    "prompts": {
+      "defaultImage": "Hình ảnh có độ chi tiết cao, mang tính điện ảnh với ánh sáng tự nhiên",
+      "relightDefault": "Làm sáng lại đối tượng bằng ánh sáng studio dịu nhẹ",
+      "faceSwapDefault": "Hoán đổi khuôn mặt mà vẫn giữ nguyên khung cảnh",
+      "characterSwapDefault": "Hoán đổi nhân vật trong khi vẫn giữ phong cách",
+      "drawToEditDefault": "Tinh chỉnh bản vẽ thành hình ảnh rõ ràng, chi tiết"
+    },
+    "swap": {
+      "sourceTitle": "Nguồn",
+      "targetTitle": "Mục tiêu",
+      "faceSourceDescription": "Hình ảnh nguồn cho khuôn mặt",
+      "faceTargetDescription": "Hình ảnh mục tiêu để thay thế",
+      "characterSourceDescription": "Nguồn hình ảnh nhân vật",
+      "characterTargetDescription": "Hình ảnh mục tiêu để thay thế"
+    },
+    "inpaint": {
+      "sourceAlt": "Hình ảnh nguồn",
+      "paintHint": "Vẽ vùng bạn muốn chỉnh sửa",
+      "maskUploading": "Đang tải mặt nạ lên",
+      "maskReady": "Mặt nạ đã sẵn sàng",
+      "maskPaint": "Mặt nạ sơn",
+      "paint": "Sơn",
+      "erase": "Xóa"
+    },
+    "relight": {
+      "title": "Chiếu sáng",
+      "quickSelect": "Chọn nhanh",
+      "directions": {
+        "top": "hàng đầu",
+        "front": "phía trước",
+        "right": "Đúng",
+        "left": "trái",
+        "back": "Quay lại",
+        "bottom": "Dưới cùng"
+      },
+      "brightness": "Độ sáng",
+      "color": "Màu sắc"
+    },
+    "upscale": {
+      "title": "cao cấp"
+    },
+    "drawToEdit": {
+      "sketchToVideo": "Phác thảo thành video",
+      "drawToVideo": "Vẽ vào video",
+      "drawToEdit": "Vẽ để chỉnh sửa",
+      "pen": "bút",
+      "eraser": "Cục tẩy",
+      "color": "Màu sắc",
+      "size": "Kích thước",
+      "undo": "Hoàn tác",
+      "redo": "Làm lại",
+      "clear": "Xóa",
+      "generateVideo": "Tạo video",
+      "uploadTitle": "Tải lên phương tiện",
+      "uploadDescription": "Thêm ảnh để hướng dẫn vẽ"
+    },
+    "soulId": {
+      "heroTitle": "Nhân vật ID linh hồn",
+      "heroDescription": "Xây dựng một nhân vật nhất quán từ các bức ảnh của bạn.",
+      "createButton": "Tạo nhân vật",
+      "photoCount": "{count} ảnh",
+      "characterLabel": "Nhân vật {index}",
+      "emptyGallery": "Chưa có nhân vật nào.",
+      "dialogTitle": "Tạo ID linh hồn",
+      "dialogSubtitle": "Tải ảnh lên để xây dựng nhân vật của bạn.",
+      "addPhotosTitle": "Thêm ảnh",
+      "addPhotosDescription": "Tải lên 6-12 ảnh rõ nét.",
+      "tip": "Mẹo: sử dụng các góc độ và cách diễn đạt khác nhau."
+    },
+    "storyboard": {
+      "relightScene": "Cảnh chiếu sáng",
+      "headline": "Nhà máy thời trang",
+      "headlineAccent": "Tạo tính thẩm mỹ của bạn",
+      "description": "Bảng phân cảnh, chỉnh sửa, tạo.",
+      "resultsLabel": "{count} kết quả",
+      "uploadHint": "Tải lên hình ảnh tham khảo để hướng dẫn hiện trường",
+      "referenceImagesTitle": "Hình ảnh tham khảo",
+      "referenceImagesDescription": "Thêm tối đa 4 hình ảnh để phù hợp với phong cách"
+    },
+    "instadump": {
+      "sidebarTitle": "Studio Instadump",
+      "stepChoosePack": "Chọn một gói",
+      "stepAddPhoto": "Thêm ảnh",
+      "stepGetInstadump": "Nhận Instadump",
+      "headerTitle": "Instadump",
+      "headerDescription": "Biến ảnh selfie thành thư viện nội dung đầy đủ.",
+      "addPhotoTitle": "Thêm ảnh của bạn",
+      "addPhotoDescription": "Tải lên một bức ảnh selfie rõ ràng để bắt đầu.",
+      "getInstadumpTitle": "Nhận Instadump của bạn",
+      "newPhotosReady": "Đã có ảnh mới",
+      "tryFree": "Dùng thử miễn phí",
+      "premiumTitle": "Cao cấp",
+      "premiumBulletOne": "Nhiều phong cách hơn cho mỗi gói",
+      "premiumBulletTwo": "Xử lý ưu tiên",
+      "premiumBulletThree": "Tải xuống ở độ phân giải đầy đủ",
+      "upgradeNow": "Nâng cấp ngay bây giờ"
+    }
+  },
+  "Edit": {
+    "page": {
+      "title": "Chỉnh sửa",
+      "subtitle": "Truy cập các tính năng và mô hình chỉnh sửa",
+      "back": "Quay lại chỉnh sửa",
+      "workspace": {
+        "title": "Không gian làm việc",
+        "status": "Trình giữ chỗ giao diện người dùng",
+        "uploadTitle": "Tải lên phương tiện",
+        "uploadDescription": "Thả hoặc nhấp để tải lên hình ảnh/video để bắt đầu"
+      },
+      "settings": {
+        "title": "Cài đặt",
+        "modelTitle": "người mẫu",
+        "modelDescription": "Chọn một mô hình (sắp có phụ trợ)",
+        "promptTitle": "Lời nhắc",
+        "promptDescription": "Mô tả những gì bạn muốn (sắp có phần phụ trợ)",
+        "generate": "Tạo"
+      },
+      "model": {
+        "title": "Chi tiết mô hình",
+        "descriptionTitle": "Mô tả",
+        "descriptionBody": "Đây là một trình giữ chỗ. Thông tin chi tiết sẽ được điền sau khi phần phụ trợ được kết nối."
+      }
+    },
+    "menu": {
+      "title": "Chỉnh sửa",
+      "sections": {
+        "features": "Tính năng",
+        "models": "Người mẫu"
+      },
+      "badges": {
+        "new": "NEW"
+      }
+    },
+    "features": {
+      "video": {
+        "title": "Chỉnh sửa video",
+        "description": "Chỉnh sửa video nâng cao"
+      },
+      "inpaint": {
+        "title": "Sơn trong",
+        "description": "Chọn một khu vực, mô tả sự thay đổi"
+      },
+      "relight": {
+        "title": "Chiếu sáng",
+        "description": "Điều chỉnh vị trí, màu sắc và độ sáng của đèn"
+      },
+      "aiStylist": {
+        "title": "Nhà tạo mẫu AI",
+        "description": "Tìm cái nhìn hoàn hảo của bạn"
+      },
+      "upscale": {
+        "title": "cao cấp",
+        "description": "Nâng cao độ phân giải và chất lượng"
+      },
+      "skinEnhancer": {
+        "title": "Thuốc tăng cường da",
+        "description": "Kết cấu da tự nhiên, chân thực"
+      },
+      "angles": {
+        "title": "góc",
+        "description": "Tạo từ các góc độ khác nhau"
+      }
+    },
+    "models": {
+      "nanoBananaProInpaint": {
+        "title": "Nano Banana Pro Inpaint",
+        "description": "Chi tiết và độ chính xác tối đa"
+      },
+      "nanoBananaInpaint": {
+        "title": "Nano Banana Inpaint",
+        "description": "Chỉnh sửa nhanh, nhẹ"
+      },
+      "productPlacement": {
+        "title": "Product Placement",
+        "description": "Tích hợp sản phẩm liền mạch"
+      },
+      "topaz": {
+        "title": "Topaz",
+        "description": "Nâng cấp độ phân giải cao"
+      },
+      "klingMotionControl": {
+        "title": "Kling Motion Control",
+        "description": "Kiểm soát chuyển động bằng tài liệu tham khảo video"
+      },
+      "kling01Edit": {
+        "title": "Kling 01 Edit",
+        "description": "Chỉnh sửa video nâng cao"
+      }
+    }
+  },
+  "CanvasChat": {
+    "planner": {
+      "title": "Kế hoạch chính",
+      "completed": "Hoàn thành {completed}/{total}",
+      "steps": {
+        "script": "Thiết kế kịch bản & storyboard",
+        "world": "Thiết kế tài sản thế giới",
+        "video": "Tạo video",
+        "worldVideo": "Tài sản thế giới và tạo video",
+        "audio": "Thiết kế giọng nói & âm thanh",
+        "final": "Lắp ghép cuối cùng"
+      }
+    }
+  }
+}

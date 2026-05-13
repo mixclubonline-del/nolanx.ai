@@ -1,0 +1,30 @@
+fastapi
+uvicorn[standard]
+anthropic
+mcp
+toml
+pyinstaller
+openai
+ollama
+httpx
+aiohttp
+gunicorn
+aiosqlite
+requests
+Pillow
+nanoid
+python-multipart
+aiofiles
+certifi
+websocket-client # needed for comfyui execution
+rich # needed for comfyui execution
+typer # needed for comfyui execution
+langgraph
+langchain_ollama
+langchain_openai
+python-socketio==5.13.0
+langgraph-swarm
+fal-client
+google-genai # Google Genai SDK for TTS, Music, Code Execution, etc.
+boto3 # AWS SDK for R2 storage uploads
+botocore # AWS core library for R2 storage

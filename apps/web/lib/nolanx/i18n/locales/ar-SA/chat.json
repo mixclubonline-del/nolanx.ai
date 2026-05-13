@@ -1,0 +1,113 @@
+{
+  "newChat": "محادثة جديدة",
+  "placeholder": "اكتب رسالتك هنا...",
+  "textarea": {
+    "placeholder": "هل لديك قصة تريد التعاون عليها مع Nolan؟",
+    "selectModel": "يرجى اختيار نموذج نصي! اذهب إلى الإعدادات لتعيين مفاتيح API إذا لم تفعل ذلك بعد.",
+    "enterPrompt": "يرجى إدخال موجه",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "الانتقال إلى الصورة",
+    "audioPositioning": "الانتقال إلى الصوت",
+    "videoPositioning": "الانتقال إلى الفيديو",
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل"
+  },
+  "jsonCard": {
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "showCode": "عرض الكود",
+    "hideCode": "إخفاء الكود"
+  },
+  "welcome": {
+    "greeting": "مرحبًا، ReelMaker!",
+    "help": "كيف يمكنني مساعدتك اليوم؟"
+  },
+  "replay": {
+    "replaying": "جارٍ إعادة تشغيل المحادثة... ({{current}}/{{total}})",
+    "completed": "اكتملت إعادة تشغيل المحادثة",
+    "ready": "جاهز لإعادة تشغيل المحادثة",
+    "skipToEnd": "تخطي إلى النهاية",
+    "replayAgain": "إعادة التشغيل مرة أخرى",
+    "startReplay": "بدء إعادة التشغيل",
+    "continueConversation": "متابعة المحادثة",
+    "forking": "جارٍ إنشاء نسخة...",
+    "forkingToast": "جارٍ إنشاء نسخة من اللوحة...",
+    "forkSuccessToast": "تم إنشاء نسخة من اللوحة! جارٍ إعادة التوجيه...",
+    "forkFailedToast": "فشل إنشاء نسخة من اللوحة"
+  },
+  "errors": {
+    "createSessionError": "فشل إنشاء جلسة محادثة"
+  },
+  "toolCallNames": {
+    "generate_image": "مولّد الصور",
+    "edit_image": "محرّر الصور",
+    "generate_audio": "إنشاء صوت",
+    "generate_video": "فيديو",
+    "generate_video_first_last_frame": "فيديو FLF",
+    "generate_tts_audio": "إنشاء صوت TTS",
+    "generate_music": "إنشاء موسيقى",
+    "generate_structured_output": "إنشاء مخرجات منظمة",
+    "execute_storyboard": "تنفيذ لوحة القصة",
+    "analyze_timeline_state": "تحليل الخط الزمني",
+    "recommend_generation_strategy": "اقتراح استراتيجية",
+    "execute_code": "تنفيذ كود",
+    "analyze_documents": "تحليل المستندات",
+    "analyze_media": "تحليل الوسائط",
+    "execute_function_call": "تنفيذ استدعاء دالة",
+    "analyze_web_context": "تحليل سياق الويب",
+    "search_and_generate": "بحث وإنشاء",
+    "prompt_user_multi_choice": "سؤال متعدد الخيارات",
+    "prompt_user_single_choice": "سؤال اختيار واحد",
+    "write_plan": "كتابة خطة",
+    "finish": "إنهاء"
+  },
+  "publish": {
+    "title": "نشر في المجتمع",
+    "titleLabel": "العنوان *",
+    "titlePlaceholder": "أدخل عنوانًا جذابًا لمحادثتك",
+    "descriptionLabel": "الوصف",
+    "descriptionPlaceholder": "صف ما الذي يجعل هذه المحادثة مثيرة للاهتمام...",
+    "tagsLabel": "الوسوم (حد أقصى 5)",
+    "tagPlaceholder": "أضف وسمًا...",
+    "visibilityLabel": "الرؤية",
+    "visibilityPublic": "عام",
+    "visibilityUnlisted": "غير مُدرج",
+    "visibilityPublicHint": "يمكن لأي شخص اكتشاف هذه المحادثة وعرضها",
+    "visibilityUnlistedHint": "يمكن فقط للأشخاص الذين لديهم الرابط عرض هذه المحادثة",
+    "cancel": "إلغاء",
+    "publish": "نشر",
+    "publishing": "جارٍ النشر...",
+    "enterTitleError": "يرجى إدخال عنوان",
+    "success": "تم نشر الجلسة بنجاح!",
+    "failed": "فشل نشر الجلسة",
+    "publishButton": "نشر"
+  },
+  "sessionSelector": {
+    "placeholder": "الموضوع"
+  },
+  "thinking": {
+    "title": "تفكير"
+  },
+  "plan": {
+    "title": "خطة",
+    "steps": {
+      "singular": "خطوة",
+      "plural": "خطوات"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

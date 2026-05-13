@@ -1,0 +1,113 @@
+{
+  "newChat": "新しいチャット",
+  "placeholder": "ここにメッセージを入力...",
+  "textarea": {
+    "placeholder": "Nolan と一緒に作りたいストーリーはありますか？",
+    "selectModel": "テキストモデルを選択してください！まだAPIキーを設定していない場合は、設定で設定してください。",
+    "enterPrompt": "プロンプトを入力してください",
+    "uploadFailed": "Failed to upload image",
+    "waitForUploads": "Please wait for uploads to finish",
+    "invalidFileType": "Unsupported file type: {{fileName}}",
+    "fileTooLarge": "File is too large: {{fileName}}",
+    "dropImagesHere": "Drop images here",
+    "uploadedImageAlt": "Uploaded image"
+  },
+  "messages": {
+    "imagePositioning": "画像へ移動",
+    "audioPositioning": "音声へ移動",
+    "videoPositioning": "動画へ移動",
+    "showMore": "もっと見る",
+    "showLess": "折りたたむ"
+  },
+  "jsonCard": {
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "showCode": "コードを表示",
+    "hideCode": "コードを非表示"
+  },
+  "welcome": {
+    "greeting": "やあ、ReelMaker！",
+    "help": "今日は何をお手伝いできますか？"
+  },
+  "replay": {
+    "replaying": "会話をリプレイ中...（{{current}}/{{total}}）",
+    "completed": "会話のリプレイが完了しました",
+    "ready": "会話をリプレイする準備ができました",
+    "skipToEnd": "最後までスキップ",
+    "replayAgain": "もう一度リプレイ",
+    "startReplay": "リプレイ開始",
+    "continueConversation": "会話を続ける",
+    "forking": "フォーク中...",
+    "forkingToast": "キャンバスをフォーク中...",
+    "forkSuccessToast": "キャンバスをフォークしました！リダイレクトしています...",
+    "forkFailedToast": "キャンバスのフォークに失敗しました"
+  },
+  "errors": {
+    "createSessionError": "チャットセッションの作成に失敗しました"
+  },
+  "toolCallNames": {
+    "generate_image": "画像生成",
+    "edit_image": "画像編集",
+    "generate_audio": "音声生成",
+    "generate_video": "動画",
+    "generate_video_first_last_frame": "FLF 動画",
+    "generate_tts_audio": "TTS音声生成",
+    "generate_music": "音楽生成",
+    "generate_structured_output": "構造化出力生成",
+    "execute_storyboard": "ストーリーボード実行",
+    "analyze_timeline_state": "タイムライン分析",
+    "recommend_generation_strategy": "戦略を提案",
+    "execute_code": "コード実行",
+    "analyze_documents": "ドキュメント分析",
+    "analyze_media": "メディア分析",
+    "execute_function_call": "関数呼び出しを実行",
+    "analyze_web_context": "Webコンテキスト分析",
+    "search_and_generate": "検索して生成",
+    "prompt_user_multi_choice": "複数選択質問",
+    "prompt_user_single_choice": "単一選択質問",
+    "write_plan": "計画",
+    "finish": "完了"
+  },
+  "publish": {
+    "title": "コミュニティに公開",
+    "titleLabel": "タイトル *",
+    "titlePlaceholder": "会話に魅力的なタイトルを付けてください",
+    "descriptionLabel": "説明",
+    "descriptionPlaceholder": "この会話の見どころを説明してください...",
+    "tagsLabel": "タグ（最大5つ）",
+    "tagPlaceholder": "タグを追加...",
+    "visibilityLabel": "公開範囲",
+    "visibilityPublic": "公開",
+    "visibilityUnlisted": "限定公開",
+    "visibilityPublicHint": "誰でもこの会話を発見・閲覧できます",
+    "visibilityUnlistedHint": "リンクを知っている人だけが閲覧できます",
+    "cancel": "キャンセル",
+    "publish": "公開",
+    "publishing": "公開中...",
+    "enterTitleError": "タイトルを入力してください",
+    "success": "セッションを公開しました！",
+    "failed": "セッションの公開に失敗しました",
+    "publishButton": "公開"
+  },
+  "sessionSelector": {
+    "placeholder": "テーマ"
+  },
+  "thinking": {
+    "title": "思考中"
+  },
+  "plan": {
+    "title": "計画",
+    "steps": {
+      "singular": "ステップ",
+      "plural": "ステップ"
+    }
+  },
+  "modelSelector": {
+    "textPlaceholder": "Select a text model",
+    "imagePlaceholder": "Select an image model",
+    "imageSelectedCount": "{{count}} images selected",
+    "modelsLabel": "Models",
+    "workspaceLabel": "Workspace",
+    "imageLabel": "Image Models"
+  }
+}

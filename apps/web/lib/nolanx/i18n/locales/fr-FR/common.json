@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "en": "Anglais",
+    "zh-CN": "Chinois (simplifié)"
+  },
+  "buttons": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "submit": "Envoyer",
+    "loading": "Chargement...",
+    "retry": "Réessayer"
+  },
+  "common": {
+    "yes": "Oui",
+    "no": "Non",
+    "ok": "OK",
+    "error": "Erreur",
+    "success": "Succès",
+    "warning": "Avertissement",
+    "info": "Information"
+  },
+  "messages": {
+    "success": "Opération effectuée avec succès",
+    "error": "Une erreur est survenue",
+    "loading": "Chargement, veuillez patienter...",
+    "noData": "Aucune donnée disponible",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+    "saved": "Enregistré avec succès",
+    "deleted": "Supprimé avec succès"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "clear": "Effacer",
+    "markAllAsRead": "Tout marquer comme lu",
+    "allRead": "Tout lu",
+    "newImageGenerated": "Nouvelle image générée"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "canvas": "Storyboard",
+    "settings": "Paramètres",
+    "back": "Retour"
+  },
+  "dialog": {
+    "confirmTitle": "Confirmer l’action",
+    "confirmDescription": "Cette action est irréversible",
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
+  },
+  "update": {
+    "title": "🎉 Nouvelle version disponible",
+    "description": "Une nouvelle version v{{version}} est disponible. Voulez-vous l’installer maintenant ?",
+    "installNote": "Cliquez sur « Installer la mise à jour » pour redémarrer l’app et installer la nouvelle version.",
+    "laterButton": "Me le rappeler plus tard",
+    "installButton": "Installer la mise à jour",
+    "installing": "Installation..."
+  },
+  "auth": {
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "loginToJaaz": "Se connecter à Jaaz",
+    "myAccount": "Mon compte",
+    "loginDescription": "Connectez-vous pour utiliser les modèles IA cloud",
+    "startLogin": "Démarrer la connexion",
+    "preparingLogin": "Préparation de la connexion...",
+    "cancel": "Annuler",
+    "loginSuccessMessage": "Connexion réussie !",
+    "authExpiredMessage": "Autorisation expirée, veuillez vous reconnecter",
+    "authErrorMessage": "Une erreur est survenue lors de la vérification de l’autorisation",
+    "waitingForBrowser": "En attente de la connexion dans le navigateur...",
+    "pollErrorMessage": "Impossible de vérifier l’état de connexion, veuillez réessayer",
+    "preparingLoginMessage": "Préparation de la connexion...",
+    "browserLoginMessage": "Veuillez terminer la connexion dans le navigateur",
+    "loginRequestFailed": "La demande de connexion a échoué, veuillez réessayer",
+    "logoutSuccessMessage": "Déconnexion réussie",
+    "notLoggedIn": "Non connecté",
+    "balance": "Solde",
+    "recharge": "Recharger"
+  },
+  "socket": {
+    "connectionError": "Erreur de connexion ({{current}}/{{max}}) : {{error}}",
+    "maxRetriesReached": "Connexion échouée, veuillez actualiser la page"
+  }
+}

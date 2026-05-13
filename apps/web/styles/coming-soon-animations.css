@@ -1,0 +1,539 @@
+@keyframes fall-slow {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+@keyframes fall-medium {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(540deg); opacity: 0; }
+}
+@keyframes fall-fast {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(45deg); }
+    50% { transform: translateY(-20px) rotate(45deg); }
+}
+@keyframes float-medium {
+    0%, 100% { transform: translateY(0) rotate(-30deg); }
+    50% { transform: translateY(-15px) rotate(-30deg); }
+}
+@keyframes float-fast {
+    0%, 100% { transform: translateY(0) rotate(15deg); }
+    50% { transform: translateY(-25px) rotate(15deg); }
+}
+
+/* Firework Animations */
+.firework-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.firework-burst {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    animation: burst 4s ease-out infinite;
+}
+
+.firework-large {
+    width: 15px;
+    height: 15px;
+}
+
+.firework-small {
+    width: 5px;
+    height: 5px;
+}
+
+.firework-particle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.firework-large .firework-particle {
+    width: 8px;
+    height: 8px;
+}
+
+.firework-small .firework-particle {
+    width: 4px;
+    height: 4px;
+}
+
+/* Sparkle Effect */
+.sparkle-container {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    animation: sparkle-appear 5s ease-out infinite;
+}
+
+.sparkle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+}
+
+@keyframes sparkle-appear {
+    0% { transform: scale(0); opacity: 0; }
+    10% { transform: scale(1); opacity: 1; }
+    30%, 100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes burst {
+    0% { transform: scale(0); opacity: 0; }
+    5% { transform: scale(0.1); opacity: 1; }
+    15% { transform: scale(1); opacity: 1; }
+    30%, 100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes firework-1 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(80px, 80px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-2 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(80px, -80px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-3 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-80px, -80px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-4 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-80px, 80px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-5 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(0, 100px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-6 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(100px, 0) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-7 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(0, -100px) scale(0.2); opacity: 0; }
+}
+
+@keyframes firework-8 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-100px, 0) scale(0.2); opacity: 0; }
+}
+
+/* Large Firework Animations */
+@keyframes firework-large-1 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(120px, 120px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-2 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(120px, -120px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-3 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-120px, -120px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-4 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-120px, 120px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-5 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(0, 150px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-6 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(150px, 0) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-7 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(0, -150px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-8 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-150px, 0) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-9 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(100px, 50px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-10 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-100px, 50px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-11 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(50px, -100px) scale(0.1); opacity: 0; }
+}
+
+@keyframes firework-large-12 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-50px, -100px) scale(0.1); opacity: 0; }
+}
+
+/* Small Firework Animations */
+@keyframes firework-small-1 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(40px, 40px) scale(0.3); opacity: 0; }
+}
+
+@keyframes firework-small-2 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-40px, 40px) scale(0.3); opacity: 0; }
+}
+
+@keyframes firework-small-3 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(40px, -40px) scale(0.3); opacity: 0; }
+}
+
+@keyframes firework-small-4 {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: translate(-40px, -40px) scale(0.3); opacity: 0; }
+}
+
+/* Sparkle Animations */
+@keyframes sparkle-1 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(15px, 15px) scale(1); opacity: 1; }
+    100% { transform: translate(30px, 30px) scale(0); opacity: 0; }
+}
+
+@keyframes sparkle-2 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(-15px, 15px) scale(1); opacity: 1; }
+    100% { transform: translate(-30px, 30px) scale(0); opacity: 0; }
+}
+
+@keyframes sparkle-3 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(15px, -15px) scale(1); opacity: 1; }
+    100% { transform: translate(30px, -30px) scale(0); opacity: 0; }
+}
+
+@keyframes sparkle-4 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(-15px, -15px) scale(1); opacity: 1; }
+    100% { transform: translate(-30px, -30px) scale(0); opacity: 0; }
+}
+
+@keyframes sparkle-5 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(0, 20px) scale(1); opacity: 1; }
+    100% { transform: translate(0, 40px) scale(0); opacity: 0; }
+}
+
+@keyframes sparkle-6 {
+    0% { transform: translate(0, 0) scale(0); opacity: 0; }
+    20% { transform: translate(0, -20px) scale(1); opacity: 1; }
+    100% { transform: translate(0, -40px) scale(0); opacity: 0; }
+}
+
+/* Ribbon Explosion Animations */
+.ribbon-explosion {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    animation: ribbon-burst 5s ease-out infinite;
+}
+
+.ribbon-strand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 30px;
+    border-radius: 2px;
+    transform-origin: bottom center;
+}
+
+@keyframes ribbon-burst {
+    0% { transform: scale(0); opacity: 0; }
+    5% { transform: scale(0.1); opacity: 1; }
+    15% { transform: scale(1); opacity: 1; }
+    30%, 100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes ribbon-explosion-1 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(30deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-2 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(60deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-3 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(90deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-4 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(120deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-5 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(150deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-6 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(180deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-7 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(210deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-8 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(240deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-9 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(270deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-10 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(300deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-11 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(330deg); opacity: 0; height: 30px; }
+}
+
+@keyframes ribbon-explosion-12 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 30px; }
+    100% { transform: translateY(-120px) rotate(360deg); opacity: 0; height: 30px; }
+}
+
+/* Spiral Ribbon Animations */
+.ribbon-spiral {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    animation: spiral-appear 6s ease-out infinite;
+}
+
+.ribbon-spiral-strand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    border-radius: 2px;
+    transform-origin: bottom center;
+}
+
+@keyframes spiral-appear {
+    0% { transform: scale(0); opacity: 0; }
+    10% { transform: scale(1); opacity: 1; }
+    30%, 100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes ribbon-spiral-1 {
+    0% { transform: translateY(0) rotate(0); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(720deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-2 {
+    0% { transform: translateY(0) rotate(45deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(765deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-3 {
+    0% { transform: translateY(0) rotate(90deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(810deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-4 {
+    0% { transform: translateY(0) rotate(135deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(855deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-5 {
+    0% { transform: translateY(0) rotate(180deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(900deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-6 {
+    0% { transform: translateY(0) rotate(225deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(945deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-7 {
+    0% { transform: translateY(0) rotate(270deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(990deg); opacity: 0; height: 40px; }
+}
+
+@keyframes ribbon-spiral-8 {
+    0% { transform: translateY(0) rotate(315deg); opacity: 0; height: 0; }
+    10% { opacity: 1; height: 40px; }
+    100% { transform: translateY(-80px) rotate(1035deg); opacity: 0; height: 40px; }
+}
+
+.animate-firework-1 { animation: firework-1 2s ease-out forwards; }
+.animate-firework-2 { animation: firework-2 2s ease-out forwards; }
+.animate-firework-3 { animation: firework-3 2s ease-out forwards; }
+.animate-firework-4 { animation: firework-4 2s ease-out forwards; }
+.animate-firework-5 { animation: firework-5 2s ease-out forwards; }
+.animate-firework-6 { animation: firework-6 2s ease-out forwards; }
+.animate-firework-7 { animation: firework-7 2s ease-out forwards; }
+.animate-firework-8 { animation: firework-8 2s ease-out forwards; }
+
+.animate-firework-large-1 { animation: firework-large-1 2.5s ease-out forwards; }
+.animate-firework-large-2 { animation: firework-large-2 2.5s ease-out forwards; }
+.animate-firework-large-3 { animation: firework-large-3 2.5s ease-out forwards; }
+.animate-firework-large-4 { animation: firework-large-4 2.5s ease-out forwards; }
+.animate-firework-large-5 { animation: firework-large-5 2.5s ease-out forwards; }
+.animate-firework-large-6 { animation: firework-large-6 2.5s ease-out forwards; }
+.animate-firework-large-7 { animation: firework-large-7 2.5s ease-out forwards; }
+.animate-firework-large-8 { animation: firework-large-8 2.5s ease-out forwards; }
+.animate-firework-large-9 { animation: firework-large-9 2.5s ease-out forwards; }
+.animate-firework-large-10 { animation: firework-large-10 2.5s ease-out forwards; }
+.animate-firework-large-11 { animation: firework-large-11 2.5s ease-out forwards; }
+.animate-firework-large-12 { animation: firework-large-12 2.5s ease-out forwards; }
+
+.animate-firework-small-1 { animation: firework-small-1 1.5s ease-out forwards; }
+.animate-firework-small-2 { animation: firework-small-2 1.5s ease-out forwards; }
+.animate-firework-small-3 { animation: firework-small-3 1.5s ease-out forwards; }
+.animate-firework-small-4 { animation: firework-small-4 1.5s ease-out forwards; }
+
+.animate-sparkle-1 { animation: sparkle-1 1s ease-out forwards; animation-delay: 0.1s; }
+.animate-sparkle-2 { animation: sparkle-2 1s ease-out forwards; animation-delay: 0.2s; }
+.animate-sparkle-3 { animation: sparkle-3 1s ease-out forwards; animation-delay: 0.3s; }
+.animate-sparkle-4 { animation: sparkle-4 1s ease-out forwards; animation-delay: 0.4s; }
+.animate-sparkle-5 { animation: sparkle-5 1s ease-out forwards; animation-delay: 0.5s; }
+.animate-sparkle-6 { animation: sparkle-6 1s ease-out forwards; animation-delay: 0.6s; }
+
+.animate-fall-slow {
+    animation: fall-slow 10s linear infinite;
+}
+.animate-fall-medium {
+    animation: fall-medium 8s linear infinite;
+}
+.animate-fall-fast {
+    animation: fall-fast 6s linear infinite;
+}
+.animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+}
+.animate-float-medium {
+    animation: float-medium 6s ease-in-out infinite;
+}
+.animate-float-fast {
+    animation: float-fast 4s ease-in-out infinite;
+}
+
+.animate-ribbon-explosion-1 { animation: ribbon-explosion-1 3s ease-out forwards; }
+.animate-ribbon-explosion-2 { animation: ribbon-explosion-2 3s ease-out forwards; }
+.animate-ribbon-explosion-3 { animation: ribbon-explosion-3 3s ease-out forwards; }
+.animate-ribbon-explosion-4 { animation: ribbon-explosion-4 3s ease-out forwards; }
+.animate-ribbon-explosion-5 { animation: ribbon-explosion-5 3s ease-out forwards; }
+.animate-ribbon-explosion-6 { animation: ribbon-explosion-6 3s ease-out forwards; }
+.animate-ribbon-explosion-7 { animation: ribbon-explosion-7 3s ease-out forwards; }
+.animate-ribbon-explosion-8 { animation: ribbon-explosion-8 3s ease-out forwards; }
+.animate-ribbon-explosion-9 { animation: ribbon-explosion-9 3s ease-out forwards; }
+.animate-ribbon-explosion-10 { animation: ribbon-explosion-10 3s ease-out forwards; }
+.animate-ribbon-explosion-11 { animation: ribbon-explosion-11 3s ease-out forwards; }
+.animate-ribbon-explosion-12 { animation: ribbon-explosion-12 3s ease-out forwards; }
+
+.animate-ribbon-spiral-1 { animation: ribbon-spiral-1 4s ease-out forwards; }
+.animate-ribbon-spiral-2 { animation: ribbon-spiral-2 4s ease-out forwards; }
+.animate-ribbon-spiral-3 { animation: ribbon-spiral-3 4s ease-out forwards; }
+.animate-ribbon-spiral-4 { animation: ribbon-spiral-4 4s ease-out forwards; }
+.animate-ribbon-spiral-5 { animation: ribbon-spiral-5 4s ease-out forwards; }
+.animate-ribbon-spiral-6 { animation: ribbon-spiral-6 4s ease-out forwards; }
+.animate-ribbon-spiral-7 { animation: ribbon-spiral-7 4s ease-out forwards; }
+.animate-ribbon-spiral-8 { animation: ribbon-spiral-8 4s ease-out forwards; } 
+
+/* Fade In Animation for Invitation Code UI */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}

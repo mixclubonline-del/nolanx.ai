@@ -1,0 +1,21 @@
+{
+  "title": "全球首个AI智能导演：诺兰",
+  "subtitle": "抢先体验计划",
+  "description": "世界上第一个AI智能体导演：诺兰",
+  "tabs": {
+    "myCanvases": "我的画布",
+    "community": "社区"
+  },
+  "loading": {
+    "preparingCanvas": "诺兰正在准备你的画布…",
+    "communitySessions": "正在加载社区对话..."
+  },
+  "community": {
+    "loadFailed": "加载社区对话失败",
+    "canvasNotAvailable": "该对话暂不支持打开画布",
+    "likeFailed": "点赞更新失败"
+  },
+  "allProjects": "所有项目",
+  "noCanvases": "还没有故事板",
+  "newCanvas": "无标题场景"
+}
