@@ -6,7 +6,7 @@ Open-source long-runtime multi-modal agent infrastructure for filmmaking.
 
 ![NolanX Timeline](apps/web/public/nolanx-timeline.png)
 
-NolanX is the system behind `nolanx.ai`. It is designed to push video models far beyond their native single-generation limits and keep long creative runs coherent across language, image, audio, and video.
+NolanX is the system behind [`nolanx.ai`](https://nolanx.ai/). It is designed to push video models far beyond their native single-generation limits and keep long creative runs coherent across language, image, audio, and video.
 
 With the right model stack, NolanX can turn short-form generators such as Seedance 2.0, Kling 03, Google Veo 3.1 Lite, LTX 2.3, PixVerse v6, Wan 2.7, and others into much longer production pipelines: 5 minutes, 30 minutes, even 1 hour.
 
@@ -14,7 +14,7 @@ It also keeps consistency across large agent workloads: story logic, screenplay,
 
 ## Why this exists
 
-There are only two of us maintaining `reelmind.ai` and `nolanx.ai`.
+There are only two of us maintaining [`reelmind.ai`](https://reelmind.ai/) and [`nolanx.ai`](https://nolanx.ai/).
 
 I’m a 10-year entrepreneur, now living as an AI nomad between Serbia, Europe, and North Africa.
 
@@ -40,7 +40,7 @@ This repo is trimmed to the NolanX path. Community, membership, admin, and credi
 
 ## Use NolanX
 
-1. Use `nolanx.ai` directly with membership or credit packs
+1. Use [`nolanx.ai`](https://nolanx.ai/) directly with membership or credit packs
    Just open [nolanx.ai](https://nolanx.ai/).
 
 2. Use the hosted API route if you want NolanX runtime behavior without wiring every provider yourself
