@@ -61,7 +61,7 @@ This repo is trimmed to the NolanX path. Community, membership, admin, and credi
 Clone and start:
 
 ```bash
-git clone https://github.com/penglipan/nolanx.ai.git && cd nolanx.ai && ./dev.sh
+git clone https://github.com/nolanx-ai/nolanx.ai.git && cd nolanx.ai && ./dev.sh
 ```
 
 Or, if you already cloned the repo:
