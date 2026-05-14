@@ -54,6 +54,7 @@ type NolanHeroBannerProps = {
 export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
   const { resolvedTheme } = useThemeContext()
   const isDark = resolvedTheme === 'dark'
+  const nolanLogoSrc = '/logo_dark_nolanx.png'
   const [glitchActive, setGlitchActive] = useState(false)
   const [mosaics, setMosaics] = useState<Mosaic[]>([])
   const mosaicIdCounterRef = useRef(0)
@@ -167,7 +168,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
             {/* Top label */}
             <div className="flex justify-center mb-3">
               <div className={`
-                inline-flex items-center gap-2 px-3 py-1 rounded-full
+                inline-flex max-w-full items-center gap-1.5 px-2.5 py-1 md:gap-2 md:px-3 rounded-full
                 ${isDark
                   ? 'bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30'
                   : 'bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30'
@@ -175,7 +176,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                 backdrop-blur-sm
               `}>
                 <div className="w-2 h-2 rounded-full animate-pulse bg-orange-500" />
-                <span className="text-xs font-semibold tracking-wider uppercase text-black">
+                <span className="whitespace-nowrap text-[10px] font-semibold uppercase leading-none tracking-[0.12em] text-black md:text-xs md:tracking-wider">
                   {labelText}
                 </span>
               </div>
@@ -201,7 +202,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                     }}
                   >
                     <Image
-                      src="/logo_light_nolanx.png"
+                      src={nolanLogoSrc}
                       alt={nameText}
                       width={512}
                       height={155}
@@ -216,7 +217,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                     <>
                       <span className="nolan-logo-glitch-layer nolan-logo-glitch-white absolute inset-0 pointer-events-none">
                         <Image
-                          src="/logo_light_nolanx.png"
+                          src={nolanLogoSrc}
                           alt=""
                           width={512}
                           height={155}
@@ -225,7 +226,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                       </span>
                       <span className="nolan-logo-glitch-layer nolan-logo-glitch-black absolute inset-0 pointer-events-none">
                         <Image
-                          src="/logo_light_nolanx.png"
+                          src={nolanLogoSrc}
                           alt=""
                           width={512}
                           height={155}
@@ -234,7 +235,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                       </span>
                       <span className="nolan-logo-glitch-layer nolan-logo-glitch-orange absolute inset-0 pointer-events-none">
                         <Image
-                          src="/logo_light_nolanx.png"
+                          src={nolanLogoSrc}
                           alt=""
                           width={512}
                           height={155}
@@ -243,7 +244,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                       </span>
                       <span className="nolan-logo-glitch-layer nolan-logo-glitch-deep-orange absolute inset-0 pointer-events-none">
                         <Image
-                          src="/logo_light_nolanx.png"
+                          src={nolanLogoSrc}
                           alt=""
                           width={512}
                           height={155}
@@ -257,9 +258,9 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
 
               {/* Line 2: The World's First AI Agent Director */}
               <h1 className={`
-                flex items-center justify-center gap-1 md:gap-2
-                whitespace-nowrap
-                ${transparent ? 'text-[clamp(3.4rem,18vw,24rem)] md:text-[clamp(8.5rem,22vw,24rem)]' : 'text-[clamp(8.5rem,22vw,24rem)]'}
+                flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0 md:flex-nowrap md:gap-x-2
+                whitespace-normal md:whitespace-nowrap
+                ${transparent ? 'text-[clamp(2.4rem,11vw,4.8rem)] md:text-[clamp(8.5rem,22vw,24rem)]' : 'text-[clamp(4rem,12vw,24rem)]'}
                 font-black text-center
                 leading-[0.92] tracking-[0.05em]
                 ${transparent || isDark ? 'text-white' : 'text-black'}
