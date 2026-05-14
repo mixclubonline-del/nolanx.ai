@@ -267,7 +267,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                 transition-all duration-200
               `}>
                 <span className="relative inline-block">
-                  <span className="relative z-10">
+                  <span className="relative z-10 text-orange-500">
                     {worldFirstText}
                   </span>
                 </span>
