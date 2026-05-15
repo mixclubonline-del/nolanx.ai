@@ -154,3 +154,9 @@ Over that year we kept breaking through hard technical problems, modifying LangC
 Thanks to the open-source community for the work that made this path possible.
 
 This is our contribution back.
+
+## WhatsApp Group
+
+Scan this QR code using the WhatsApp camera to join this group.
+
+![Nolanx.ai WhatsApp group QR code](apps/web/public/whatsapp.png)
