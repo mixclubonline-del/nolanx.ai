@@ -195,7 +195,7 @@ export default function VideoGenerationGateDialog({ sessionId }: { sessionId: st
                 className="h-8 gap-2 rounded-lg border-orange-400/20 bg-white/60 text-foreground hover:bg-white/80 dark:bg-white/5 dark:hover:bg-white/10"
               >
                 {submitting ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <PauseCircle className="h-3.5 w-3.5" />}
-                {t('canvas:timeline.videoGate.pauseNow', { defaultValue: 'Pause now' })}
+                Pause
               </Button>
               <Button
                 type="button"

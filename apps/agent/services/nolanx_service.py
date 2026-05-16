@@ -18,10 +18,11 @@ Features:
 import json
 import re
 import traceback
+import uuid
 from typing import List, Dict, Any, Set, Optional
 from langgraph_swarm import create_swarm
-from services.config_service import config_service
 from services.websocket_service import send_session_update
+from services.message_api_service import create_chat_message
 
 # Import modular components
 from .nolanx.config.models import create_llm_model, create_context_config, refresh_context_memory
@@ -51,6 +52,7 @@ from .nolanx.agents import (
 )
 from .nolanx.utils.streaming import handle_streaming_response
 from .nolanx.utils.prompt_engineering import build_numbered_media_lines
+from .nolanx.utils.intent import classify_continuation_intent_with_llm
 from services.runtime_logger import (
     log_runtime_event,
     log_runtime_exception,
@@ -58,9 +60,8 @@ from services.runtime_logger import (
 )
 
 
-CONTINUATION_COMMANDS = [
-    "生成啊", "继续", "开始", "执行", "做", "generate", "continue", "start", "go", "proceed"
-]
+TERMINAL_RESUME_STATUSES = {"cancelled", "completed"}
+RECOVERABLE_RESUME_STATUSES = {"running", "failed", "interrupted"}
 RESUME_TOOL_PRIORITY = [
     "execute_storyboard",
     "generate_structured_output",
@@ -74,6 +75,8 @@ STORYBOARD_CHILD_TOOLS = {
     "generate_video",
     "generate_video_first_last_frame",
 }
+
+RESUME_FORCEABLE_PHASES = {"all", "videos", "video", "world_track", "world", "script_track", "script", "keyframes", "keyframe"}
 
 IMAGE_MARKDOWN_RE = re.compile(r"!\[image_(?:url|id):[^\]]*\]\(([^)]+)\)")
 URL_RE = re.compile(r"https?://[^\s)]+", re.IGNORECASE)
@@ -328,11 +331,11 @@ def _build_media_runtime_instruction(
     return "\n".join(media_lines)
 
 
-def _is_continuation_command(text: str) -> bool:
-    normalized = (text or "").strip().lower()
-    if not normalized:
-        return False
-    return any(cmd.lower() in normalized for cmd in CONTINUATION_COMMANDS)
+def _extract_latest_user_text(messages: List[Dict[str, Any]]) -> str:
+    for message in reversed(messages or []):
+        if isinstance(message, dict) and message.get("role") == "user":
+            return _extract_text_content(message.get("content")).strip()
+    return ""
 
 
 def _extract_primary_user_text(messages: List[Dict[str, Any]]) -> str:
@@ -346,8 +349,7 @@ def _extract_primary_user_text(messages: List[Dict[str, Any]]) -> str:
             continue
         if not fallback_text:
             fallback_text = content
-        if not _is_continuation_command(content):
-            return content
+        return content
     return fallback_text
 
 
@@ -417,8 +419,7 @@ def _extract_recoverable_interrupted_tool_call(messages: List[Dict[str, Any]]) -
         return None
 
     last_user_message = messages[last_user_idx] if last_user_idx < len(messages or []) else {}
-    last_user_text = _extract_text_content((last_user_message or {}).get("content"))
-    if not _is_continuation_command(last_user_text):
+    if not bool((last_user_message or {}).get("_continuation_intent")):
         return None
 
     resume_state = _extract_storyboard_resume_state(messages)
@@ -426,7 +427,9 @@ def _extract_recoverable_interrupted_tool_call(messages: List[Dict[str, Any]]) -
         resume_status = str(resume_state.get("status") or "").strip().lower()
         resume_tool = str(resume_state.get("resumeTool") or "").strip()
         resume_args = resume_state.get("resumeArgs")
-        if resume_tool == "execute_storyboard" and resume_status in {"running", "failed", "interrupted"}:
+        if resume_tool == "execute_storyboard" and resume_status in TERMINAL_RESUME_STATUSES:
+            return None
+        if resume_tool == "execute_storyboard" and resume_status in RECOVERABLE_RESUME_STATUSES:
             if isinstance(resume_args, dict):
                 return {"name": "execute_storyboard", "args": {**resume_args, "resume": True}}
             return {"name": "execute_storyboard", "args": {"resume": True}}
@@ -504,13 +507,125 @@ def _extract_recoverable_interrupted_tool_call(messages: List[Dict[str, Any]]) -
     return selected
 
 
+def _has_storyboard_resume_context(messages: List[Dict[str, Any]]) -> bool:
+    if _extract_storyboard_resume_state(messages):
+        return True
+    for message in messages or []:
+        if not isinstance(message, dict):
+            continue
+        if str(message.get("role") or "").strip() == "tool" and _looks_like_storyboard_payload(message.get("content")):
+            return True
+        if _looks_like_storyboard_payload(message.get("content")):
+            return True
+    return False
+
+
+def _forced_storyboard_resume_args(messages: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    resume_state = _extract_storyboard_resume_state(messages)
+    if isinstance(resume_state, dict):
+        resume_status = str(resume_state.get("status") or "").strip().lower()
+        resume_tool = str(resume_state.get("resumeTool") or "").strip()
+        if resume_tool == "execute_storyboard" and resume_status in TERMINAL_RESUME_STATUSES:
+            return None
+        if resume_tool == "execute_storyboard":
+            resume_args = resume_state.get("resumeArgs")
+            args = dict(resume_args) if isinstance(resume_args, dict) else {}
+            args["resume"] = True
+            if "storyboard_json" not in args:
+                embedded_storyboard = resume_state.get("storyboard")
+                if isinstance(embedded_storyboard, dict) and isinstance(embedded_storyboard.get("shots"), list):
+                    args["storyboard_json"] = json.dumps(embedded_storyboard, ensure_ascii=False)
+            phase = str(resume_state.get("phase") or "").strip()
+            if phase in RESUME_FORCEABLE_PHASES and "phase" not in args:
+                args["phase"] = "videos" if phase in {"videos", "video"} else "all"
+            return args
+
+    if _has_storyboard_resume_context(messages):
+        return {"resume": True}
+    return None
+
+
+async def _run_forced_storyboard_resume(
+    *,
+    ctx: Dict[str, Any],
+    args: Dict[str, Any],
+    session_id: str,
+    canvas_id: str,
+    user_id: str,
+) -> str:
+    tool_call_id = f"forced_execute_storyboard_{uuid.uuid4().hex}"
+    args = {**dict(args or {}), "resume": True}
+    args_str = json.dumps(args, ensure_ascii=False, indent=2)
+
+    log_runtime_event(
+        "resume.storyboard.force_execute",
+        session_id=session_id,
+        canvas_id=canvas_id,
+        user_id=user_id,
+        tool_call_id=tool_call_id,
+        args=args,
+    )
+    await send_session_update(
+        user_id,
+        session_id,
+        canvas_id,
+        {"type": "tool_call", "id": tool_call_id, "name": "execute_storyboard", "arguments": args_str},
+    )
+    await send_session_update(
+        user_id,
+        session_id,
+        canvas_id,
+        {"type": "tool_call_arguments", "id": tool_call_id, "text": args_str},
+    )
+    await create_chat_message(
+        session_id=session_id,
+        role="assistant",
+        user_id=user_id,
+        content={
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+                {
+                    "id": tool_call_id,
+                    "type": "function",
+                    "function": {"name": "execute_storyboard", "arguments": args_str},
+                }
+            ],
+        },
+    )
+
+    from tools.storyboard_executor import execute_storyboard
+
+    result = await execute_storyboard.coroutine(
+        config=ctx,
+        tool_call_id=tool_call_id,
+        storyboard_json=args.get("storyboard_json"),
+        dry_run=bool(args.get("dry_run", False)),
+        phase=args.get("phase", "all"),
+        resume=True,
+    )
+    result_text = str(result or "")
+    await send_session_update(
+        user_id,
+        session_id,
+        canvas_id,
+        {"type": "tool_result", "tool_call_id": tool_call_id, "content": result_text},
+    )
+    await create_chat_message(
+        session_id=session_id,
+        role="tool",
+        user_id=user_id,
+        content={"role": "tool", "tool_call_id": tool_call_id, "content": result_text, "name": "execute_storyboard"},
+    )
+    return result_text
+
+
 def _is_continuation_request_from_messages(messages: List[Dict[str, Any]]) -> bool:
     last_user_idx = _last_user_message_index(messages)
     if last_user_idx is None:
         return False
     last_user_message = messages[last_user_idx] if last_user_idx < len(messages or []) else {}
-    last_user_text = _extract_text_content((last_user_message or {}).get("content"))
-    return _is_continuation_command(last_user_text)
+    return bool((last_user_message or {}).get("_continuation_intent"))
 
 
 def _detect_preferred_language(text: str) -> str:
@@ -932,6 +1047,13 @@ def _fix_chat_history(messages):
     if not messages:
         return messages
 
+    messages = [
+        {key: value for key, value in dict(msg).items() if key != "_continuation_intent"}
+        if isinstance(msg, dict)
+        else msg
+        for msg in messages
+    ]
+
     log_runtime_event("chat_history.repair.started", message_count=len(messages))
 
     fixed_messages: List[Dict[str, Any]] = []
@@ -1106,9 +1228,9 @@ def get_last_active_agent(messages, agent_names):
     # Find the last user message
     for message in messages[::-1]:
         if message.get('role') == 'user':
-            content = _extract_text_content(message.get('content')).strip().lower()
             # If it's a continuation command, always start with planner
-            if _is_continuation_command(content):
+            if bool(message.get("_continuation_intent")):
+                content = _extract_text_content(message.get('content')).strip().lower()
                 log_runtime_event("routing.continuation_command", command=content, target_agent="planner")
                 return None  # This will cause system to start with planner
             break
@@ -1176,31 +1298,39 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
             user_id=user_id,
             message_count=len(messages or []),
         )
-        config_service.reload()
-        interrupted_tool_call = _extract_recoverable_interrupted_tool_call(messages or [])
-        if not interrupted_tool_call and _is_continuation_request_from_messages(messages or []) and canvas_id and session_id:
-            try:
-                from tools.structured_output_generators import get_latest_structured_output
-
-                latest_storyboard = get_latest_structured_output(canvas_id=canvas_id, session_id=session_id)
-            except Exception:
-                latest_storyboard = None
-
-            if isinstance(latest_storyboard, dict) and latest_storyboard.get("shots"):
-                interrupted_tool_call = {"name": "execute_storyboard", "args": {"resume": True}}
-                log_runtime_event(
-                    "resume.storyboard_fallback_selected",
-                    session_id=session_id,
-                    canvas_id=canvas_id,
-                    user_id=user_id,
-                    reason="continuation_with_cached_storyboard",
-                )
         runtime_components = get_runtime_components()
 
         # Create LLM model
         model = create_llm_model()
         
-        fixedMsgs = _fix_chat_history(messages)
+        raw_messages = list(messages or [])
+        latest_user_text = _extract_latest_user_text(raw_messages)
+        is_continuation = await classify_continuation_intent_with_llm(
+            model=model,
+            text=latest_user_text,
+            session_id=session_id,
+            canvas_id=canvas_id,
+            user_id=user_id,
+        )
+        log_runtime_event(
+            "chat.continuation_intent.resolved",
+            session_id=session_id,
+            canvas_id=canvas_id,
+            user_id=user_id,
+            is_continuation=is_continuation,
+            latest_user_text=latest_user_text[:160],
+        )
+        resume_detection_messages = [
+            dict(message) if isinstance(message, dict) else message
+            for message in raw_messages
+        ]
+        if is_continuation:
+            for message in reversed(resume_detection_messages):
+                if isinstance(message, dict) and message.get("role") == "user":
+                    message["_continuation_intent"] = True
+                    break
+        interrupted_tool_call = _extract_recoverable_interrupted_tool_call(resume_detection_messages or [])
+        fixedMsgs = _fix_chat_history(raw_messages)
         uploaded_image_urls = _collect_uploaded_image_urls(fixedMsgs)
         uploaded_video_urls = _collect_uploaded_video_urls(fixedMsgs)
         uploaded_audio_urls = _collect_uploaded_audio_urls(fixedMsgs)
@@ -1271,7 +1401,14 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
                 tool_name=interrupted_tool_call.get("name"),
                 tool_args=interrupted_tool_call.get("args"),
             )
-        is_continuation = _is_continuation_command(primary_user_text)
+        elif is_continuation:
+            log_runtime_warning(
+                "resume.continuation_without_interrupted_tool",
+                session_id=session_id,
+                canvas_id=canvas_id,
+                user_id=user_id,
+                has_storyboard_context=_has_storyboard_resume_context(resume_detection_messages),
+            )
         auto_skills = _select_auto_skills(
             primary_user_text=primary_user_text,
             is_continuation=is_continuation,
@@ -1308,6 +1445,59 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
             skill_runtime_instruction=skill_runtime_instruction,
         )
 
+        # Create context configuration
+        ctx = create_context_config(
+            canvas_id,
+            session_id,
+            user_id,
+            preferred_language=preferred_language,
+            preferred_language_instruction=preferred_language_instruction,
+            messages=fixedMsgs,
+            uploaded_image_urls=uploaded_image_urls,
+            uploaded_video_urls=uploaded_video_urls,
+            uploaded_audio_urls=uploaded_audio_urls,
+            user_wants_self_insert=user_wants_self_insert,
+            continuation_intent=is_continuation,
+            interrupted_tool_call=interrupted_tool_call,
+            auto_skills=auto_skills,
+            agent_auto_skill_map=agent_auto_skill_map,
+        )
+        await refresh_context_memory(
+            user_id=user_id,
+            session_id=session_id,
+            canvas_id=canvas_id,
+            ctx=ctx,
+        )
+
+        forced_resume_args = _forced_storyboard_resume_args(resume_detection_messages) if is_continuation else None
+        log_runtime_event(
+            "resume.storyboard.route_decision",
+            session_id=session_id,
+            canvas_id=canvas_id,
+            user_id=user_id,
+            is_continuation=is_continuation,
+            has_forced_resume_args=forced_resume_args is not None,
+            forced_resume_args=forced_resume_args,
+            has_storyboard_context=_has_storyboard_resume_context(resume_detection_messages),
+        )
+        if forced_resume_args is not None:
+            await _run_forced_storyboard_resume(
+                ctx=ctx,
+                args=forced_resume_args,
+                session_id=session_id,
+                canvas_id=canvas_id,
+                user_id=user_id,
+            )
+            log_runtime_event(
+                "chat.pipeline.completed",
+                canvas_id=canvas_id,
+                session_id=session_id,
+                user_id=user_id,
+                forced_resume=True,
+            )
+            await send_session_update(user_id, session_id, canvas_id, {"type": "done"})
+            return
+
         # Create all agents
         agents = create_agents(model)
         agent_names = [
@@ -1332,29 +1522,6 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
             checkpointer=runtime_components["checkpointer"],
             store=runtime_components["store"],
             name="nolanx_swarm",
-        )
-
-        # Create context configuration
-        ctx = create_context_config(
-            canvas_id,
-            session_id,
-            user_id,
-            preferred_language=preferred_language,
-            preferred_language_instruction=preferred_language_instruction,
-            messages=fixedMsgs,
-            uploaded_image_urls=uploaded_image_urls,
-            uploaded_video_urls=uploaded_video_urls,
-            uploaded_audio_urls=uploaded_audio_urls,
-            user_wants_self_insert=user_wants_self_insert,
-            interrupted_tool_call=interrupted_tool_call,
-            auto_skills=auto_skills,
-            agent_auto_skill_map=agent_auto_skill_map,
-        )
-        await refresh_context_memory(
-            user_id=user_id,
-            session_id=session_id,
-            canvas_id=canvas_id,
-            ctx=ctx,
         )
 
         # 最终修复：确保所有 ToolMessage 都有 name 字段，特别处理空的 tool_call_id

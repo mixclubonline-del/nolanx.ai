@@ -13,7 +13,6 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from '@/lib/nolanx/i18n/useTranslation'
 import { toast } from 'sonner'
 import '@/styles/nolanx/nolan-dreamlike-chat.css'
-import { NolanxRuntimeSettings } from '@/components/nolanx/home/NolanxRuntimeSettings'
 
 type ChatTextareaProps = {
   pending: boolean
@@ -22,6 +21,8 @@ type ChatTextareaProps = {
   sessionId?: string
   initialPrompt?: string
   autoSend?: boolean
+  showSleepButton?: boolean
+  queuedMessageCount?: number
   onSendMessages: (
     data: Message[],
   ) => void
@@ -35,6 +36,8 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
   sessionId,
   initialPrompt,
   autoSend = false,
+  showSleepButton = false,
+  queuedMessageCount = 0,
   onSendMessages,
   onCancelChat,
 }) => {
@@ -57,6 +60,12 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
     }[]
   >([])
   const [isFocused, setIsFocused] = useState(false)
+  const [isSleeping, setIsSleeping] = useState(false)
+  const [isSleepHintHovered, setIsSleepHintHovered] = useState(false)
+  const hasDraftContent = prompt.trim().length > 0 || images.length > 0
+  const defaultPlaceholderText = t('chat:textarea.placeholder')
+  const sleepHintText = 'You could sleep screen or enjoy your free time while nolanx is stilling working'
+  const placeholderText = isSleepHintHovered ? sleepHintText : defaultPlaceholderText
 
   useEffect(() => {
     if (initialPrompt && initialPrompt.trim() !== '') {
@@ -185,7 +194,6 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
   }, [sessionId, onCancelChat, t])
 
   const handleSendPrompt = useCallback(() => {
-    if (pending) return
     let value = prompt
     if (value.length === 0 || value.trim() === '') {
       toast.error(t('chat:textarea.enterPrompt'))
@@ -209,7 +217,6 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
 
     onSendMessages(newMessage)
   }, [
-    pending,
     prompt,
     onSendMessages,
     images,
@@ -220,8 +227,6 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
   useEffect(() => {
     if (initialPrompt && initialPrompt.trim() !== '' && autoSend && prompt === initialPrompt.trim()) {
       const timer = setTimeout(() => {
-        if (pending) return
-
         let value = prompt
         if (value.length === 0 || value.trim() === '') {
           return
@@ -247,7 +252,7 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
 
       return () => clearTimeout(timer)
     }
-  }, [initialPrompt, autoSend, prompt, pending, images, messages, onSendMessages])
+  }, [initialPrompt, autoSend, prompt, images, messages, onSendMessages])
 
   const dropAreaRef = useRef<HTMLDivElement>(null)
   const [isDragOver, setIsDragOver] = useState(false)
@@ -447,22 +452,38 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
           )}
         </AnimatePresence>
 
-        <Textarea
-          ref={textareaRef}
-          className="nolan-textarea max-h-[calc(100vh-700px)] px-4 py-3"
-          placeholder={t('chat:textarea.placeholder')}
-          value={prompt}
-          autoSize
-          onChange={(e) => setPrompt(e.target.value)}
-          onFocus={() => setIsFocused(true)}
-          onBlur={() => setIsFocused(false)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-              e.preventDefault()
-              handleSendPrompt()
-            }
-          }}
-        />
+        <div className="nolan-textarea-shell">
+          <Textarea
+            ref={textareaRef}
+            className="nolan-textarea max-h-[calc(100vh-700px)]"
+            placeholder=""
+            value={prompt}
+            autoSize
+            onChange={(e) => setPrompt(e.target.value)}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault()
+                handleSendPrompt()
+              }
+            }}
+          />
+          <AnimatePresence mode="wait" initial={false}>
+            {prompt.length === 0 ? (
+              <motion.div
+                key={placeholderText}
+                className="nolan-placeholder-fade"
+                initial={{ opacity: 0, y: 4, filter: 'blur(4px)' }}
+                animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                exit={{ opacity: 0, y: -4, filter: 'blur(4px)' }}
+                transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {placeholderText}
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+        </div>
 
         <div className="nolan-controls">
           <div className="flex items-center gap-2">
@@ -478,18 +499,49 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
               onClick={() => imageInputRef.current?.click()}
               disabled={uploadingImages.length > 0}
               className="nolan-upload-button"
-              >
-                {uploadingImages.length > 0 ? (
-                  <Loader2 className="size-4 nolan-loading-spinner" />
-                ) : (
-                  <PlusIcon className="size-4" />
-                )}
-              </button>
-              <NolanxRuntimeSettings compact />
-            </div>
+            >
+              {uploadingImages.length > 0 ? (
+                <Loader2 className="size-4 nolan-loading-spinner" />
+              ) : (
+                <PlusIcon className="size-4" />
+              )}
+            </button>
+          </div>
 
-          <div className="flex items-center gap-2">
-            {pending ? (
+          {showSleepButton ? (
+            <div className="absolute right-0 top-0 z-20 overflow-visible">
+              <button
+                type="button"
+                aria-label="Sleep screen"
+                onClick={() => setIsSleeping((value) => !value)}
+                onMouseEnter={() => setIsSleepHintHovered(true)}
+                onMouseLeave={() => setIsSleepHintHovered(false)}
+                onFocus={() => setIsSleepHintHovered(true)}
+                onBlur={() => setIsSleepHintHovered(false)}
+                className={cn(
+                  'group absolute right-2 top-2 h-6 w-6 overflow-visible bg-transparent transition-all duration-300',
+                  isSleeping && 'opacity-100'
+                )}
+              >
+                <span
+                  className={cn(
+                    'absolute right-0 top-0 h-full w-full rounded-tr-full border-r-[4px] border-t-[4px] border-white/25 transition-all duration-300',
+                    isSleeping && 'border-white/55'
+                  )}
+                />
+              </button>
+            </div>
+          ) : null}
+
+          {pending ? (
+            hasDraftContent ? (
+              <button
+                className={cn('nolan-button', queuedMessageCount > 0 && 'ring-1 ring-white/30')}
+                onClick={handleSendPrompt}
+              >
+                <ArrowUp className="size-4" />
+              </button>
+            ) : (
               <button
                 className="nolan-button bg-red-500 hover:bg-red-600"
                 onClick={handleCancelChat}
@@ -497,17 +549,26 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
                 <Loader2 className="size-5 nolan-loading-spinner absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 <Square className="size-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
               </button>
-            ) : (
-              <button
-                className="nolan-button"
-                onClick={handleSendPrompt}
-                disabled={prompt.length === 0}
-              >
-                <ArrowUp className="size-4" />
-              </button>
-            )}
-          </div>
+            )
+          ) : (
+            <button
+              className={cn('nolan-button', queuedMessageCount > 0 && 'ring-1 ring-white/30')}
+              onClick={handleSendPrompt}
+              disabled={prompt.length === 0}
+            >
+              <ArrowUp className="size-4" />
+            </button>
+          )}
         </div>
+        {queuedMessageCount > 0 ? (
+          <div className="mt-2 flex items-center justify-end">
+            <span className="rounded-full border border-white/15 bg-white/8 px-3 py-1 text-[11px] font-medium text-white/70 backdrop-blur-md">
+              {queuedMessageCount === 1
+                ? 'Messages to be submitted after next tool call'
+                : `${queuedMessageCount} messages to be submitted after next tool call`}
+            </span>
+          </div>
+        ) : null}
     </motion.div>
     </div>
   )

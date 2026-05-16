@@ -28,17 +28,106 @@ function canUseBrowserFfmpeg(pathname: string | null) {
   return pathname === '/canvas' || pathname.startsWith('/canvas/') || /^\/[a-z]{2}(?:-[A-Z]{2})?\/canvas(?:\/|$)/.test(pathname);
 }
 
-function getOrderedVideoTrackAssets(assets: TimelineAsset[]) {
-  const seen = new Map<string, TimelineAsset>();
+function getStoryboardClipIndex(asset: TimelineAsset): number | null {
+  const clipIndex = asset.metadata?.storyboard?.scriptClipIndex ?? asset.metadata?.storyboard?.clipIndex;
+  return typeof clipIndex === 'number' && Number.isFinite(clipIndex) ? clipIndex : null;
+}
 
-  assets.forEach((asset) => {
-    if (!asset.content.videoUrl || asset.duration <= 0) return;
-    if (!seen.has(asset.id)) {
-      seen.set(asset.id, asset);
+function getScriptClipIndex(asset: TimelineAsset): number | null {
+  const clipIndex = asset.metadata?.storyboard?.scriptClipIndex ?? asset.metadata?.clipIndex;
+  return typeof clipIndex === 'number' && Number.isFinite(clipIndex) ? clipIndex : null;
+}
+
+function getAssetTimestamp(asset: TimelineAsset): number {
+  const raw = asset.updated_at || asset.created_at || '';
+  const parsed = Date.parse(raw);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function getExportOrderedVideoAssets(timelineData: TimelineData): TimelineAsset[] {
+  const scriptTrack = timelineData.tracks.find((track) => track.type === 'script');
+  const videoTrack = timelineData.tracks.find((track) => track.type === 'video');
+  const scriptAssets = (scriptTrack?.assets || [])
+    .filter((asset) => asset.duration > 0)
+    .sort((a, b) => a.startTime - b.startTime);
+  const candidateVideoAssets = (videoTrack?.assets || [])
+    .filter((asset) => asset.content.videoUrl && asset.duration > 0);
+
+  const bestVideoByClipIndex = new Map<number, TimelineAsset>();
+  const fallbackVideoAssets: TimelineAsset[] = [];
+
+  candidateVideoAssets.forEach((asset) => {
+    const clipIndex = getStoryboardClipIndex(asset);
+    if (clipIndex == null) {
+      fallbackVideoAssets.push(asset);
+      return;
+    }
+
+    const existing = bestVideoByClipIndex.get(clipIndex);
+    if (!existing) {
+      bestVideoByClipIndex.set(clipIndex, asset);
+      return;
+    }
+
+    const existingTs = getAssetTimestamp(existing);
+    const candidateTs = getAssetTimestamp(asset);
+    if (candidateTs >= existingTs) {
+      bestVideoByClipIndex.set(clipIndex, asset);
     }
   });
 
-  return Array.from(seen.values()).sort((a, b) => a.startTime - b.startTime);
+  const ordered: TimelineAsset[] = [];
+  const usedAssetIds = new Set<string>();
+  const scriptClipIndexes = scriptAssets.map((asset, index) => {
+    const storyboardClipIndex = getScriptClipIndex(asset) ?? getStoryboardClipIndex(asset);
+    const metadataClipIndex = typeof asset.metadata?.clipIndex === 'number' ? asset.metadata.clipIndex : null;
+    return metadataClipIndex ?? storyboardClipIndex ?? (index + 1);
+  });
+
+  scriptClipIndexes.forEach((clipIndex) => {
+    const matchedVideo = clipIndex != null ? bestVideoByClipIndex.get(clipIndex) : undefined;
+    if (matchedVideo && !usedAssetIds.has(matchedVideo.id)) {
+      ordered.push(matchedVideo);
+      usedAssetIds.add(matchedVideo.id);
+    }
+  });
+
+  const remainingVideos = candidateVideoAssets
+    .filter((asset) => !usedAssetIds.has(asset.id))
+    .sort((a, b) => {
+      const clipA = getStoryboardClipIndex(a) ?? Number.MAX_SAFE_INTEGER;
+      const clipB = getStoryboardClipIndex(b) ?? Number.MAX_SAFE_INTEGER;
+      if (clipA !== clipB) return clipA - clipB;
+      if (a.startTime !== b.startTime) return a.startTime - b.startTime;
+      return getAssetTimestamp(a) - getAssetTimestamp(b);
+    });
+
+  ordered.push(...remainingVideos);
+  return ordered;
+}
+
+function buildScriptVideoAlignmentReport(timelineData: TimelineData) {
+  const scriptTrack = timelineData.tracks.find((track) => track.type === 'script');
+  const videoTrack = timelineData.tracks.find((track) => track.type === 'video');
+  const scriptAssets = (scriptTrack?.assets || [])
+    .filter((asset) => asset.duration > 0)
+    .sort((a, b) => a.startTime - b.startTime);
+  const videoAssets = (videoTrack?.assets || [])
+    .filter((asset) => asset.content.videoUrl && asset.duration > 0);
+  const videoByClip = new Set(
+    videoAssets
+      .map((asset) => getStoryboardClipIndex(asset))
+      .filter((clipIndex): clipIndex is number => typeof clipIndex === 'number')
+  );
+  const scriptClipIndexes = scriptAssets.map((asset, index) => {
+    const metadataClipIndex = typeof asset.metadata?.clipIndex === 'number' ? asset.metadata.clipIndex : null;
+    return metadataClipIndex ?? getScriptClipIndex(asset) ?? getStoryboardClipIndex(asset) ?? (index + 1);
+  });
+  return {
+    scriptCount: scriptClipIndexes.length,
+    videoCount: videoAssets.length,
+    alignedCount: scriptClipIndexes.filter((clipIndex) => videoByClip.has(clipIndex)).length,
+  };
 }
 
 export function PreviewPlayer({
@@ -85,17 +174,20 @@ export function PreviewPlayer({
     setIsExporting(true);
 
     try {
-      // 1. Only export the current video track, in timeline order.
-      const videoTrack = timelineData.tracks.find(t => t.type === 'video');
-      const videoAssets = getOrderedVideoTrackAssets(videoTrack?.assets || []);
+      // 1. Export by script-track order, then match the unique video asset for each clipIndex.
+      const videoAssets = getExportOrderedVideoAssets(timelineData);
+      const alignment = buildScriptVideoAlignmentReport(timelineData);
 
       if (videoAssets.length === 0) {
         throw new Error('No video assets found to export');
       }
 
+      console.log('🎯 Script/video alignment:', alignment);
+
       console.log('Exporting video track assets:', videoAssets.map((asset, index) => ({
         index,
         id: asset.id,
+        clipIndex: getStoryboardClipIndex(asset),
         startTime: asset.startTime,
         duration: asset.duration,
         videoUrl: asset.content.videoUrl,

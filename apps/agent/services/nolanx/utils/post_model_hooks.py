@@ -17,6 +17,7 @@ import uuid
 from typing import Any, Dict, List, Set
 
 from langchain_core.messages import AIMessage, ToolMessage, HumanMessage
+from .intent import continuation_intent_from_config
 
 
 SCRIPT_WRITER_OUTPUT_SCHEMA: Dict[str, Any] = {
@@ -370,39 +371,13 @@ def _forced_tool_call(name: str, args: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-_CONTINUATION_REQUEST_RE = re.compile(
-    r"^\s*(继续|繼續|continue|resume|go on|keep going|start|开始|開始|生成啊|执行|執行|proceed|next)\s*[.!?~～]*\s*$",
-    re.IGNORECASE,
-)
-_CONTINUATION_TOKENS = (
-    "继续",
-    "繼續",
-    "continue",
-    "resume",
-    "go on",
-    "keep going",
-    "start",
-    "开始",
-    "開始",
-    "生成啊",
-    "执行",
-    "執行",
-    "proceed",
-    "next",
-)
-
-
 def _tool_call_name(tool_call: Dict[str, Any]) -> str:
     return str(tool_call.get("name") or (tool_call.get("function") or {}).get("name") or "").strip()
 
 
-def _is_continuation_request_text(text: str) -> bool:
-    normalized = str(text or "").strip().lower()
-    if not normalized:
-        return False
-    if _CONTINUATION_REQUEST_RE.match(normalized):
-        return True
-    return any(token in normalized for token in _CONTINUATION_TOKENS)
+def _is_continuation_request(state: Dict[str, Any], text: str) -> bool:
+    configurable = (state or {}).get("configurable") or {}
+    return continuation_intent_from_config(configurable, text)
 
 
 def _last_human_message_text(messages: List[Any]) -> str:
@@ -412,6 +387,23 @@ def _last_human_message_text(messages: List[Any]) -> str:
     return ""
 
 
+def _last_human_message_index(messages: List[Any]) -> int | None:
+    for index in range(len(messages or []) - 1, -1, -1):
+        if isinstance(messages[index], HumanMessage):
+            return index
+    return None
+
+
+def _tool_returned_after_last_user(messages: List[Any], tool_name: str) -> bool:
+    last_user_idx = _last_human_message_index(messages)
+    if last_user_idx is None:
+        return False
+    for message in messages[last_user_idx + 1 :]:
+        if isinstance(message, ToolMessage) and getattr(message, "name", None) == tool_name:
+            return True
+    return False
+
+
 def _latest_resume_target(
     state: Dict[str, Any],
     messages: List[Any],
@@ -419,7 +411,7 @@ def _latest_resume_target(
     allowed_tools: set[str],
 ) -> Dict[str, Any] | None:
     last_user_text = _last_human_message_text(messages)
-    if not _is_continuation_request_text(last_user_text):
+    if not _is_continuation_request(state, last_user_text):
         return None
 
     configurable = (state or {}).get("configurable") or {}
@@ -430,6 +422,9 @@ def _latest_resume_target(
     tool_name = str(interrupted_tool_call.get("name") or "").strip()
     tool_args = interrupted_tool_call.get("args")
     if not tool_name or tool_name not in allowed_tools or not isinstance(tool_args, dict):
+        return None
+
+    if _tool_returned_after_last_user(messages, tool_name):
         return None
 
     if tool_name == "execute_storyboard" and "resume" not in tool_args:
@@ -490,11 +485,13 @@ def _force_resume_handoff(state: Dict[str, Any], messages: List[Any]) -> Dict[st
         if not isinstance(interrupted_tool_call, dict):
             return {}
         last_user_text = _last_human_message_text(messages)
-        if not _is_continuation_request_text(last_user_text):
+        if not _is_continuation_request(state, last_user_text):
             return {}
         tool_name = str(interrupted_tool_call.get("name") or "").strip()
         tool_args = interrupted_tool_call.get("args")
         if not tool_name or not isinstance(tool_args, dict):
+            return {}
+        if _tool_returned_after_last_user(messages, tool_name):
             return {}
         resume_target = {"name": tool_name, "args": dict(tool_args)}
 
@@ -520,13 +517,6 @@ def _force_resume_handoff(state: Dict[str, Any], messages: List[Any]) -> Dict[st
     return {"messages": [updated_ai]}
 
 
-def _last_human_message_index(messages: List[Any]) -> int | None:
-    for index in range(len(messages or []) - 1, -1, -1):
-        if isinstance(messages[index], HumanMessage):
-            return index
-    return None
-
-
 def _has_prior_generation_context(messages: List[Any], last_user_idx: int | None) -> bool:
     if last_user_idx is None:
         return False
@@ -539,9 +529,9 @@ def _has_prior_generation_context(messages: List[Any], last_user_idx: int | None
     return False
 
 
-def _is_fresh_request_without_generation_context(messages: List[Any]) -> bool:
+def _is_fresh_request_without_generation_context(state: Dict[str, Any], messages: List[Any]) -> bool:
     last_user_text = _last_human_message_text(messages)
-    if not last_user_text or _is_continuation_request_text(last_user_text):
+    if not last_user_text or _is_continuation_request(state, last_user_text):
         return False
 
     last_user_idx = _last_human_message_index(messages)
@@ -748,6 +738,9 @@ def script_writer_post_model_hook(state: Dict[str, Any]) -> Dict[str, Any]:
             return {"messages": [updated_ai]}
         return update
 
+    if last_execute_idx is not None and last_execute_idx > last_structured_idx:
+        return update
+
     if last_ai is None:
         return update
 
@@ -814,7 +807,7 @@ def planner_post_model_hook(state: Dict[str, Any]) -> Dict[str, Any]:
     if resume_handoff:
         return resume_handoff
 
-    if original_last_ai is not None and original_last_ai.tool_calls and _is_fresh_request_without_generation_context(original_messages):
+    if original_last_ai is not None and original_last_ai.tool_calls and _is_fresh_request_without_generation_context(state, original_messages):
         filtered_calls = [
             tool_call
             for tool_call in list(original_last_ai.tool_calls or [])

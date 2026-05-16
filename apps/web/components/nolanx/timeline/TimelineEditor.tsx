@@ -441,7 +441,6 @@ export function TimelineEditor({ canvasId, initialData, sessionList = [], canvas
               <button
                 onClick={() => handleZoom(Math.max(timelineState.zoom / 1.5, 0.1))}
                 className="p-2 rounded-xl bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-black/30 dark:border-white/20 hover:border-black/50 dark:hover:border-white/30 transition-all duration-200 hover:scale-105 shadow-lg"
-                title={t('canvas:timeline.tooltips.zoomOut')}
               >
                 <ZoomOut className="w-4 h-4 text-orange-600 dark:text-orange-400" />
               </button>
@@ -455,7 +454,6 @@ export function TimelineEditor({ canvasId, initialData, sessionList = [], canvas
               <button
                 onClick={() => handleZoom(Math.min(timelineState.zoom * 1.5, 10))}
                 className="p-2 rounded-xl bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-black/30 dark:border-white/20 hover:border-black/50 dark:hover:border-white/30 transition-all duration-200 hover:scale-105 shadow-lg"
-                title={t('canvas:timeline.tooltips.zoomIn')}
               >
                 <ZoomIn className="w-4 h-4 text-orange-600 dark:text-orange-400" />
               </button>
@@ -466,7 +464,6 @@ export function TimelineEditor({ canvasId, initialData, sessionList = [], canvas
               <button
                 onClick={forceRearrangeAllLanes}
                 className="p-2 rounded-xl bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-black/30 dark:border-white/20 hover:border-black/50 dark:hover:border-white/30 transition-all duration-200 hover:scale-105 shadow-lg"
-                title={t('canvas:timeline.tooltips.rearrangeAllLanes')}
               >
                 <svg className="w-4 h-4 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

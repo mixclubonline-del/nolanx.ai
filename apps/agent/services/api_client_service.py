@@ -237,6 +237,81 @@ class ApiClientService:
         )
         return response is not None
 
+    async def update_timeline_asset_with_detail(
+        self,
+        canvas_id: str,
+        asset_id: str,
+        start_time: float = None,
+        duration: float = None,
+        track_id: str = None,
+        properties: Dict[str, Any] = None,
+        user_id: str = None
+    ) -> Dict[str, Any]:
+        """Update a timeline asset and return error details on failure."""
+        headers = {}
+        if user_id:
+            headers['X-User-ID'] = user_id
+
+        payload = {}
+        if start_time is not None:
+            payload['startTime'] = start_time
+        if duration is not None:
+            payload['duration'] = duration
+        if track_id is not None:
+            payload['trackId'] = track_id
+        if properties is not None:
+            payload['properties'] = properties
+
+        url = f"{self.base_url}/internal/canvas/{canvas_id}/timeline/asset/{asset_id}"
+        default_headers = {
+            'Content-Type': 'application/json',
+            'X-API-Key': self.api_key,
+        }
+        default_headers.update(headers)
+
+        try:
+            async with aiohttp.ClientSession(timeout=self.timeout) as session:
+                async with session.request(
+                    method='PUT',
+                    url=url,
+                    json=payload,
+                    headers=default_headers,
+                ) as response:
+                    raw_text = await response.text()
+                    parsed_body: Optional[Dict[str, Any]] = None
+                    if response.content_type == 'application/json':
+                        try:
+                            parsed_body = json.loads(raw_text)
+                        except Exception:
+                            parsed_body = None
+
+                    if response.status >= 400:
+                        error_message = raw_text.strip() or f"HTTP {response.status}"
+                        print(
+                            f"API request failed with status {response.status}: "
+                            f"PUT {url} - {error_message}"
+                        )
+                        return {
+                            'ok': False,
+                            'status': response.status,
+                            'error': error_message,
+                            'response': parsed_body,
+                        }
+
+                    return {
+                        'ok': True,
+                        'status': response.status,
+                        'response': parsed_body if parsed_body is not None else {'text': raw_text},
+                    }
+        except aiohttp.ClientError as e:
+            error_message = f"{type(e).__name__}: {str(e)}"
+            print(f"API request failed: PUT {url} - {error_message}")
+            return {'ok': False, 'error': error_message}
+        except Exception as e:
+            error_message = f"{type(e).__name__}: {str(e)}"
+            print(f"Unexpected error in API request: PUT {url} - {error_message}")
+            return {'ok': False, 'error': error_message}
+
     async def update_assets_start_time(
         self,
         canvas_id: str,

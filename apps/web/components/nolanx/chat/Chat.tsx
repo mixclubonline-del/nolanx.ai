@@ -89,9 +89,13 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   const [session, setSession] = useState<Session | null>(null)
   const { initCanvas, setInitCanvas } = useConfigs()
   const [isForking, setIsForking] = useState(false) // 控制是否显示聊天输入框(shared模式)
+  const [queuedUserMessages, setQueuedUserMessages] = useState<Message[]>([])
+  const queuedMessageInFlightRef = useRef(false)
+  const queuePausedRef = useRef(false)
 
   const searchParams = useSearchParams()
   const searchSessionId = searchParams?.get('sessionId') || ''
+  const selectedSessionStorageKey = `nolanx:canvas:${canvasId}:sessionId`
 
   const buildCanvasUrl = useCallback(
     (nextCanvasId: string, nextSessionId?: string | null) => {
@@ -102,18 +106,51 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   )
 
   useEffect(() => {
-    if (sessionList.length > 0) {
-      let _session = null
-      if (searchSessionId) {
-        _session = sessionList.find((s) => s.id === searchSessionId) || null
-      } else {
-        _session = sessionList[0]
+    setSession((prev) => {
+      if (sessionList.length === 0) {
+        return null
       }
-      setSession(_session)
-    } else {
-      setSession(null)
+
+      if (searchSessionId) {
+        const urlSession = sessionList.find((s) => s.id === searchSessionId) || null
+        if (urlSession) {
+          return urlSession
+        }
+        return prev && sessionList.some((s) => s.id === prev.id) ? prev : null
+      }
+
+      if (prev && sessionList.some((s) => s.id === prev.id)) {
+        return prev
+      }
+
+      if (typeof window !== 'undefined') {
+        try {
+          const storedSessionId = window.localStorage.getItem(selectedSessionStorageKey)
+          const storedSession = storedSessionId
+            ? sessionList.find((s) => s.id === storedSessionId) || null
+            : null
+          if (storedSession) {
+            return storedSession
+          }
+        } catch (error) {
+          console.warn('Failed to read selected session cache:', error)
+        }
+      }
+
+      return sessionList[0]
+    })
+  }, [sessionList, searchSessionId, selectedSessionStorageKey])
+
+  useEffect(() => {
+    if (!session?.id || typeof window === 'undefined') {
+      return
     }
-  }, [sessionList, searchSessionId])
+    try {
+      window.localStorage.setItem(selectedSessionStorageKey, session.id)
+    } catch (error) {
+      console.warn('Failed to persist selected session cache:', error)
+    }
+  }, [session?.id, selectedSessionStorageKey])
 
   // Notify parent component when session changes
   useEffect(() => {
@@ -363,22 +400,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
         return
       }
 
-      const contentText = typeof data.content === 'string' ? data.content : ''
-      const normalized = contentText.toLowerCase()
-      const keyMissing =
-        normalized.includes('api key is not set') ||
-        normalized.includes('image layer is unavailable') ||
-        normalized.includes('video layer is unavailable') ||
-        normalized.includes('add an image api key') ||
-        normalized.includes('add a video api key')
-
-      if (keyMissing) {
-        eventBus.emit('Runtime::OpenSettings', {
-          source: normalized.includes('video') ? 'video' : 'image',
-          reason: contentText,
-        })
-      }
-
       setMessages(
         produce((prev) => {
           const alreadyExists = prev.some(
@@ -541,23 +562,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       } catch (e) {}
     }
 
-    const normalized = `${raw} ${shortMessage}`.toLowerCase()
-    const keyMissing =
-      normalized.includes('api key is not set') ||
-      normalized.includes('image layer is unavailable') ||
-      normalized.includes('video layer is unavailable') ||
-      normalized.includes('add an image api key') ||
-      normalized.includes('add a video api key') ||
-      normalized.includes('fal.ai api key is not set') ||
-      normalized.includes('reelmind api key is not set')
-
-    if (keyMissing) {
-      eventBus.emit('Runtime::OpenSettings', {
-        source: normalized.includes('video') ? 'video' : 'image',
-        reason: shortMessage || raw,
-      })
-    }
-
     toast.error(shortMessage || 'Error', {
       closeButton: true,
       duration: 3600 * 1000,
@@ -566,11 +570,17 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   }, [])
 
   const handleInfo = useCallback((data: TEvents['Socket::Session::Info']) => {
+    if (data.session_id && data.session_id !== sessionId) {
+      return
+    }
+    if (data.info === 'chat_cancelled') {
+      setPending(false)
+    }
     toast.info(data.info, {
       closeButton: true,
       duration: 10 * 1000,
     })
-  }, [])
+  }, [sessionId])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -697,7 +707,11 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   }, [messages.length, scrollToBottom])
 
   const onSelectSession = (sessionId: string) => {
-    setSession(sessionList.find((s) => s.id === sessionId) || null)
+    const nextSession = sessionList.find((s) => s.id === sessionId) || null
+    if (!nextSession) {
+      return
+    }
+    setSession(nextSession)
     window.history.pushState(
       {},
       '',
@@ -727,19 +741,23 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     }
   }
 
-  const onSendMessages = useCallback(
-    (data: Message[]) => {
+  const submitMessages = useCallback(
+    async (data: Message[]) => {
+      if (!sessionId) {
+        return
+      }
+
       setPending('text')
       setMessages(data)
 
-      sendMessages({
+      await sendMessages({
         sessionId: sessionId!,
         canvasId: canvasId,
         newMessages: data,
         preferredLanguage,
       })
 
-      if (searchSessionId !== sessionId) {
+      if (searchSessionId && searchSessionId !== sessionId) {
         window.history.pushState(
           {},
           '',
@@ -752,9 +770,52 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     [canvasId, preferredLanguage, sessionId, searchSessionId, scrollToBottom]
   )
 
+  const onSendMessages = useCallback(
+    (data: Message[]) => {
+      if (pending) {
+        queuePausedRef.current = false
+        const newUserMessages = data.slice(messages.length).filter((message) => message.role === 'user')
+        if (newUserMessages.length === 0) {
+          return
+        }
+        setQueuedUserMessages((prev) => [...prev, ...newUserMessages])
+        scrollToBottom()
+        return
+      }
+
+      void submitMessages(data).catch((error) => {
+        console.error('Failed to send messages:', error)
+        toast.error(t('common:errors.generic'))
+      })
+    },
+    [messages.length, pending, scrollToBottom, submitMessages, t]
+  )
+
   const handleCancelChat = useCallback(() => {
+    queuePausedRef.current = true
+    setQueuedUserMessages([])
     setPending(false)
   }, [])
+
+  useEffect(() => {
+    if (pending || queuedUserMessages.length === 0 || queuedMessageInFlightRef.current || queuePausedRef.current) {
+      return
+    }
+
+    const nextUserMessages = queuedUserMessages
+    const nextBatch = messages.concat(nextUserMessages)
+    queuedMessageInFlightRef.current = true
+    setQueuedUserMessages([])
+
+    void submitMessages(nextBatch)
+      .catch((error) => {
+        console.error('Failed to flush queued messages:', error)
+        setQueuedUserMessages(nextUserMessages)
+      })
+      .finally(() => {
+        queuedMessageInFlightRef.current = false
+      })
+  }, [messages, pending, queuedUserMessages, submitMessages])
 
   const getMessageRenderKey = useCallback((message: Message, idx: number): string => {
     const messageMeta = message as Message & { id?: string; created_at?: string }
@@ -780,10 +841,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
         </header>
 
         <ScrollArea className="flex-1 min-h-0 w-full min-w-0" viewportRef={scrollRef}>
-          {messages.length > 0
+          {messages.length > 0 || queuedUserMessages.length > 0
             ? <div className="flex-1 px-4 pb-6 pt-16 w-full min-w-0 max-w-full overflow-x-hidden">
               {/* Messages */}
-              {filterMessages(messages).map((message, idx) => (
+              {filterMessages(messages.concat(queuedUserMessages)).map((message, idx) => (
                 <div key={getMessageRenderKey(message, idx)}>
                   {/* Regular message content */}
                   {typeof message.content == 'string' &&
@@ -878,6 +939,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
                 sessionId={sessionId!}
                 pending={!!pending}
                 messages={messages}
+                showSleepButton
+                queuedMessageCount={queuedUserMessages.length}
                 onSendMessages={onSendMessages}
                 onCancelChat={handleCancelChat}
               />

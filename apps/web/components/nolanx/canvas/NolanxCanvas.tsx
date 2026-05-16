@@ -29,6 +29,7 @@ interface NolanxCanvasProps {
 
 const INIT_CANVAS_RETRY_INTERVAL_MS = 500;
 const INIT_CANVAS_RETRY_WINDOW_MS = 30_000;
+const CANVAS_HISTORY_GUARD_STATE = { __nolanxCanvasGuard: true };
 
 type CanvasDetails =
   | Awaited<ReturnType<typeof getCanvas>>
@@ -52,6 +53,7 @@ export function NolanxCanvas({ canvasId, onBackToHome, isShared = false }: Nolan
   const refreshInFlightRef = useRef(false);
   const initRetryTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const initRetryStartedAtRef = useRef(0);
+  const skipNextPopstateGuardRef = useRef(false);
 
   // Detect mobile screen
   useEffect(() => {
@@ -77,6 +79,35 @@ export function NolanxCanvas({ canvasId, onBackToHome, isShared = false }: Nolan
       initRetryTimeoutRef.current = null;
     }
   }, [canvasId]);
+
+  useEffect(() => {
+    if (isShared || typeof window === 'undefined') {
+      return;
+    }
+
+    try {
+      window.history.pushState(CANVAS_HISTORY_GUARD_STATE, '', window.location.href);
+    } catch (error) {
+      console.warn('Failed to install canvas history guard:', error);
+    }
+
+    const handlePopState = () => {
+      if (skipNextPopstateGuardRef.current) {
+        skipNextPopstateGuardRef.current = false;
+        return;
+      }
+      try {
+        window.history.pushState(CANVAS_HISTORY_GUARD_STATE, '', window.location.href);
+      } catch (error) {
+        console.warn('Failed to restore canvas history guard:', error);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [canvasId, isShared]);
 
   useEffect(() => {
     let mounted = true;
@@ -208,6 +239,7 @@ export function NolanxCanvas({ canvasId, onBackToHome, isShared = false }: Nolan
   };
 
   const handleBackToHome = () => {
+    skipNextPopstateGuardRef.current = true;
     if (onBackToHome) {
       onBackToHome();
     } else {

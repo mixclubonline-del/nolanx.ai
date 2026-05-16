@@ -40,18 +40,18 @@ def build_numbered_media_lines(
     lines = ["RUNTIME MEDIA CONTEXT:"]
     if clean_images:
         lines.append("Uploaded images with explicit numbering:")
-        lines.extend(f"- 图{idx} = {url}" for idx, url in enumerate(clean_images, start=1))
+        lines.extend(f"- image {idx} = {url}" for idx, url in enumerate(clean_images, start=1))
     if clean_videos:
         lines.append("Uploaded videos with explicit numbering:")
-        lines.extend(f"- 视频{idx} = {url}" for idx, url in enumerate(clean_videos, start=1))
+        lines.extend(f"- video {idx} = {url}" for idx, url in enumerate(clean_videos, start=1))
     if clean_audios:
         lines.append("Uploaded audio with explicit numbering:")
-        lines.extend(f"- 音频{idx} = {url}" for idx, url in enumerate(clean_audios, start=1))
+        lines.extend(f"- audio {idx} = {url}" for idx, url in enumerate(clean_audios, start=1))
     if user_wants_self_insert and clean_images:
         lines.append(
             "Treat uploaded images as identity anchors for the primary on-screen character and preserve face/look continuity across planning and execution."
         )
-    lines.append("Do not infer semantic identity from raw asset ids; bind references through explicit 图N/视频N/音频N mappings only.")
+    lines.append("Do not infer semantic identity from raw asset ids; bind references through explicit image N / video N / audio N mappings only.")
     return lines
 
 
@@ -64,4 +64,5 @@ def seedance_prompt_engineering_rules() -> list[str]:
         "When multiple people are present, disambiguate each person explicitly and avoid relying on implicit naming or raw asset ids.",
         "If dialogue exists, keep it short enough to be fully performed within the clip and let reactions / pickups / interruptions motivate the cut structure.",
         "For nine-grid or storyboard-style references, bind each image to the relevant beat instead of asking the model to infer the full sequence from one dense paragraph.",
+        "All prompt fields ending in `_en` must be written in English only, even if surrounding UI text or progress messages are localized.",
     ]

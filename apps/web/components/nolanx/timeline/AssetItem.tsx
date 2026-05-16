@@ -831,7 +831,6 @@ export function AssetItem({
       }}
       data-asset-id={asset.id}
       onClick={handleClick}
-      title={`${asset.type}: ${asset.content.title || t('canvas:timeline.fallbackTitles.untitled')} (${asset.duration.toFixed(1)}s) - ${t('canvas:timeline.actions.clickToSelect')}`}
     >
       {supportsPointRegenerate ? (
         <Popover
@@ -955,53 +954,18 @@ export function AssetItem({
       )}
 
       {review ? (
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <div className={cn('ml-1 flex-shrink-0 rounded-full border px-1.5 py-0.5 text-[10px] font-semibold tabular-nums', reviewToneClass)}>
-              <div className="flex items-center gap-1">
-                {reviewStatus === 'approved_auto' ? (
-                  <ShieldCheck className="h-3 w-3" />
-                ) : reviewStatus === 'attention_needed' ? (
-                  <AlertTriangle className="h-3 w-3" />
-                ) : (
-                  <Eye className="h-3 w-3" />
-                )}
-                <span>{Number.isFinite(reviewScore) ? reviewScore : '--'}</span>
-              </div>
-            </div>
-          </TooltipTrigger>
-          <TooltipContent
-            side="top"
-            className="max-w-80 border border-black/10 bg-white/95 p-3 text-gray-900 shadow-xl dark:border-white/10 dark:bg-black/95 dark:text-white"
-          >
-            <div className="space-y-2 text-[11px] leading-4">
-              <div className="flex items-center justify-between gap-2">
-                <div className="font-semibold">Review</div>
-                <div className="text-[10px] uppercase tracking-[0.08em] text-black/45 dark:text-white/45">
-                  {reviewStatus || 'needs_review'}
-                </div>
-              </div>
-              {review.summary ? (
-                <div className="text-black/70 dark:text-white/72">{review.summary}</div>
-              ) : null}
-              {review.promptReview?.promptExcerpt ? (
-                <div className="rounded-md bg-black/[0.04] px-2 py-1.5 text-black/65 dark:bg-white/[0.06] dark:text-white/68">
-                  {review.promptReview.promptExcerpt}
-                </div>
-              ) : null}
-              {reviewChecks.length ? (
-                <div className="space-y-1">
-                  {reviewChecks.map((check) => (
-                    <div key={`${asset.id}-${check.name}`} className="flex items-start gap-2">
-                      <span className={cn('mt-0.5 inline-block h-1.5 w-1.5 rounded-full', check.status === 'ok' ? 'bg-emerald-500' : check.status === 'error' ? 'bg-red-500' : 'bg-amber-500')} />
-                      <span className="text-black/68 dark:text-white/72">{check.detail}</span>
-                    </div>
-                  ))}
-                </div>
-              ) : null}
-            </div>
-          </TooltipContent>
-        </Tooltip>
+        <div className={cn('ml-1 flex-shrink-0 rounded-full border px-1.5 py-0.5 text-[10px] font-semibold tabular-nums', reviewToneClass)}>
+          <div className="flex items-center gap-1">
+            {reviewStatus === 'approved_auto' ? (
+              <ShieldCheck className="h-3 w-3" />
+            ) : reviewStatus === 'attention_needed' ? (
+              <AlertTriangle className="h-3 w-3" />
+            ) : (
+              <Eye className="h-3 w-3" />
+            )}
+            <span>{Number.isFinite(reviewScore) ? reviewScore : '--'}</span>
+          </div>
+        </div>
       ) : null}
     </div>
   );

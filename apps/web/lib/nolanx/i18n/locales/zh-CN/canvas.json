@@ -92,7 +92,6 @@
     "tooltips": {
       "zoomOut": "缩小",
       "zoomIn": "放大",
-      "rearrangeAllLanes": "重新排列所有轨道（磁吸对齐，0 间隔）",
       "play": "播放",
       "pause": "暂停"
     },
@@ -170,7 +169,6 @@
       "clipLabel": "本批待生成 {{count}} 个片段",
       "countdownLabel": "{{seconds}} 秒后自动开始生成",
       "generateNow": "立即生成",
-      "pauseNow": "立即暂停",
       "starting": "正在启动这一批..."
     }
   },

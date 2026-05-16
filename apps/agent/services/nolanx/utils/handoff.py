@@ -43,19 +43,19 @@ def _augment_handoff_context_with_runtime_media(state: dict, context: str) -> st
     parts: list[str] = [str(context or "").strip()]
     if uploaded_image_urls:
         image_lines = ", ".join(
-            f"图{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_image_urls[:8], start=1) if str(url).strip()
+            f"image{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_image_urls[:8], start=1) if str(url).strip()
         )
         if image_lines:
             parts.append(f"uploaded_image_urls: {image_lines}")
     if uploaded_video_urls:
         video_lines = ", ".join(
-            f"视频{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_video_urls[:8], start=1) if str(url).strip()
+            f"video{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_video_urls[:8], start=1) if str(url).strip()
         )
         if video_lines:
             parts.append(f"uploaded_video_urls: {video_lines}")
     if uploaded_audio_urls:
         audio_lines = ", ".join(
-            f"音频{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_audio_urls[:8], start=1) if str(url).strip()
+            f"audio{idx}={str(url).strip()}" for idx, url in enumerate(uploaded_audio_urls[:8], start=1) if str(url).strip()
         )
         if audio_lines:
             parts.append(f"uploaded_audio_urls: {audio_lines}")
@@ -64,7 +64,7 @@ def _augment_handoff_context_with_runtime_media(state: dict, context: str) -> st
             "user_wants_self_insert: true; if the request is story/script/world design related, treat uploaded images as identity anchors for the user appearing on screen"
         )
     if uploaded_image_urls or uploaded_video_urls or uploaded_audio_urls:
-        parts.append("Do not infer semantic identity from raw asset ids; use explicit 图N/视频N/音频N mappings only.")
+        parts.append("Do not infer semantic identity from raw asset ids; use explicit image N / video N / audio N mappings only.")
     return " | ".join(part for part in parts if part)
 
 

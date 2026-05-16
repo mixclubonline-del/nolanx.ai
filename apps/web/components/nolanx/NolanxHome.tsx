@@ -1,29 +1,36 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
 import { toast } from 'sonner';
 import { useSSRSafeTranslation } from '@/lib/nolanx/hooks/use-ssr-safe-translation';
+
+// Nolanx imports
 import { createCanvas } from '@/lib/nolanx/api/canvas';
 import { ChatTextarea } from './chat/ChatTextarea';
 import { CanvasList } from './home/CanvasList';
 import { NolanHeroBanner } from '@/components/nolan/nolan-hero-banner';
 import { NolanxVideoHeroBackground } from './home/NolanxVideoHeroBackground';
+
+import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 import { useConfigs } from '@/lib/nolanx/contexts/configs';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from "next/navigation";
 import '@/styles/nolanx/nolan-zen.css';
 import '@/styles/nolanx/nolan-dreamlike-chat.css';
 import { cn } from '@/lib/utils';
 import { useLocale } from 'next-intl';
 import { localizePathname } from '@/i18n/pathname';
+import { isNolanxHostname } from '@/lib/site';
 
 type TabType = 'canvases' | 'community';
 
 const MOCK_COMMUNITY_URL = 'https://nolanx.ai/canvas/share/74d497c6-6c47-4feb-aedd-da2bacc338c5?sessionId=dfb2210f-db00-49fd-82f8-5061c7a67ce2';
 const MOCK_COMMUNITY_COVER_VIDEO = 'https://gen-video.tos-ap-southeast-1.bytepluses.com/dreamina-seedance-2-0/02177805162773200000000000000000000ffffc0a899b549ef62.mp4';
 
-const HERO_VIDEOS: string[] = [
+const HERO_VIDEOS = [
   'https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/02177733952850600000000000000000000ffffc0a86fd66bc225%20(1).mp4',
   'https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/02177733961738400000000000000000000ffffc0a8b52c540e8c.mp4',
   'https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/02177733965872100000000000000000000ffffc0a86fd6fb1040.mp4',
@@ -41,6 +48,10 @@ export function NolanxHome() {
   const appLocale = locale === 'zh-CN' ? 'zh-CN' : 'en';
   const [activeTab, setActiveTab] = useState<TabType>('community');
   const [isCreatingCanvas, setIsCreatingCanvas] = useState(false);
+  const showReelMindButton =
+    typeof window !== 'undefined' && isNolanxHostname(window.location.hostname);
+
+  // 获取URL中的prompt参数
   const initialPrompt = searchParams?.get('prompt');
 
   return (
@@ -60,12 +71,28 @@ export function NolanxHome() {
             >
               <NolanHeroBanner transparent />
 
-              <div className="relative z-10 -mt-2 w-full max-w-2xl md:-mt-4">
+              {showReelMindButton ? (
+                <div className="relative z-10 mt-4 flex w-full justify-center">
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="h-10 rounded-full border-white/18 bg-white/[0.04] px-5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(0,0,0,0.24)] backdrop-blur-xl hover:bg-white/[0.08] hover:text-white dark:border-white/18 dark:bg-white/[0.04] dark:hover:bg-white/[0.08]"
+                  >
+                    <Link href="https://reelmind.ai/" target="_blank" rel="noreferrer">
+                      Explore ReelMind
+                      <ArrowUpRight className="size-4" />
+                    </Link>
+                  </Button>
+                </div>
+              ) : null}
+
+              <div className="relative z-10 mx-auto mt-4 w-full max-w-2xl px-1 sm:px-0">
                 <ChatTextarea
                   className="w-full"
                   messages={[]}
                   initialPrompt={initialPrompt || undefined}
                   autoSend={false}
+                  showSleepButton={false}
                   onSendMessages={(messages) => {
                     const canvasId = crypto.randomUUID();
                     const canvasPath = localizePathname(`/canvas/${canvasId}`, appLocale);
@@ -90,6 +117,7 @@ export function NolanxHome() {
                   pending={isCreatingCanvas}
                 />
               </div>
+
             </motion.div>
           </div>
 
@@ -99,10 +127,10 @@ export function NolanxHome() {
                 <button
                   onClick={() => setActiveTab('canvases')}
                   className={cn(
-                    'rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200 md:px-6',
+                    "rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200 md:px-6",
                     activeTab === 'canvases'
-                      ? 'bg-white/[0.09] text-white shadow-[0_12px_32px_rgba(0,0,0,0.24)]'
-                      : 'text-white/56 hover:bg-white/[0.04] hover:text-white/88'
+                      ? "bg-white/[0.09] text-white shadow-[0_12px_32px_rgba(0,0,0,0.24)]"
+                      : "text-white/56 hover:bg-white/[0.04] hover:text-white/88"
                   )}
                 >
                   {t('home:tabs.myCanvases', locale === 'zh-CN' ? '我的画布' : 'My Canvases')}
@@ -110,10 +138,10 @@ export function NolanxHome() {
                 <button
                   onClick={() => setActiveTab('community')}
                   className={cn(
-                    'rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200 md:px-6',
+                    "rounded-full px-5 py-2 text-sm font-semibold transition-all duration-200 md:px-6",
                     activeTab === 'community'
-                      ? 'bg-white/[0.09] text-white shadow-[0_12px_32px_rgba(0,0,0,0.24)]'
-                      : 'text-white/56 hover:bg-white/[0.04] hover:text-white/88'
+                      ? "bg-white/[0.09] text-white shadow-[0_12px_32px_rgba(0,0,0,0.24)]"
+                      : "text-white/56 hover:bg-white/[0.04] hover:text-white/88"
                   )}
                 >
                   {t('home:tabs.community', locale === 'zh-CN' ? '社区' : 'Community')}
@@ -130,7 +158,7 @@ export function NolanxHome() {
                     href={MOCK_COMMUNITY_URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="group overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] text-white shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-2xl transition-transform duration-300 hover:-translate-y-1 hover:border-white/18"
+                    className="group block overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] text-white shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-2xl transition-transform duration-300 hover:-translate-y-1 hover:border-white/18"
                   >
                     <div className="grid md:grid-cols-[1.15fr_0.85fr]">
                       <div className="relative min-h-[280px] overflow-hidden bg-black">

@@ -3,43 +3,14 @@
 # Import necessary modules
 import asyncio
 import json
-import re
+from datetime import datetime, timezone
 
 # Import service modules
 from services.nolanx_service import nolanx_multi_agent
-from services.message_api_service import fetch_session_messages, broadcast_all_messages
+from services.message_api_service import fetch_session_messages, create_chat_message
 from services.runtime_logger import log_runtime_event, log_runtime_warning
 from services.websocket_service import send_session_update
-from services.stream_service import add_stream_task, remove_stream_task
-
-
-_CONTINUATION_REQUEST_RE = re.compile(
-    r"^\s*(继续|繼續|continue|resume|go on|keep going|start|开始|開始|生成啊|执行|執行|proceed|next)\b",
-    re.IGNORECASE,
-)
-
-
-def _extract_message_text(message: dict) -> str:
-    content = (message or {}).get("content")
-    if isinstance(content, str):
-        return content.strip()
-    if isinstance(content, list):
-        parts: list[str] = []
-        for item in content:
-            if isinstance(item, str):
-                parts.append(item)
-            elif isinstance(item, dict) and isinstance(item.get("text"), str):
-                parts.append(item.get("text", ""))
-        return "\n".join(parts).strip()
-    return ""
-
-
-def _is_continuation_request(messages: list[dict] | None) -> bool:
-    for message in reversed(messages or []):
-        if not isinstance(message, dict) or message.get("role") != "user":
-            continue
-        return bool(_CONTINUATION_REQUEST_RE.search(_extract_message_text(message)))
-    return False
+from services.stream_service import add_stream_task, remove_stream_task, add_stream_task_metadata
 
 
 def _message_fingerprint(message: dict) -> str | None:
@@ -66,6 +37,50 @@ def _merge_message_history(persisted_messages: list[dict], incoming_messages: li
         merged.append(message)
 
     return merged
+
+
+async def persist_cancelled_resume_state(*, session_id: str, canvas_id: str | None, user_id: str | None) -> None:
+    if not session_id:
+        return
+
+    snapshot = {
+        "type": "storyboard_resume_state",
+        "schemaVersion": 1,
+        "resumeTool": "execute_storyboard",
+        "resumeArgs": {"resume": False},
+        "status": "cancelled",
+        "phase": "cancelled",
+        "sessionId": str(session_id or "").strip(),
+        "canvasId": str(canvas_id or "").strip(),
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+    }
+
+    await create_chat_message(
+        session_id=session_id,
+        role="assistant",
+        user_id=user_id,
+        content={
+            "role": "assistant",
+            "content": "<hide_in_user_ui> Storyboard resume state cancelled.</hide_in_user_ui>",
+            "metadata": {"storyboard_resume_state": snapshot},
+        },
+    )
+
+    if user_id:
+        await send_session_update(
+            user_id,
+            session_id,
+            canvas_id or "",
+            {
+                "type": "info",
+                "info": "chat_cancelled",
+                "data": {
+                    "resumeStatus": "cancelled",
+                    "sessionId": session_id,
+                    "canvasId": canvas_id,
+                },
+            },
+        )
 
 async def handle_chat(data):
     """
@@ -98,27 +113,16 @@ async def handle_chat(data):
     if session_id:
         persisted_messages = await fetch_session_messages(session_id=session_id)
         if persisted_messages:
-            should_restore_full_history = _is_continuation_request(incoming_messages) or len(incoming_messages) < len(persisted_messages)
-            if should_restore_full_history:
-                messages = _merge_message_history(persisted_messages, incoming_messages)
-                log_runtime_event(
-                    "chat.history.restored",
-                    session_id=session_id,
-                    canvas_id=canvas_id,
-                    user_id=user_id,
-                    incoming_message_count=len(incoming_messages),
-                    persisted_message_count=len(persisted_messages),
-                    merged_message_count=len(messages or []),
-                    continuation_request=_is_continuation_request(incoming_messages),
-                )
-                if user_id:
-                    await broadcast_all_messages(
-                        user_id=user_id,
-                        session_id=session_id,
-                        canvas_id=canvas_id,
-                    )
-            else:
-                messages = incoming_messages
+            messages = _merge_message_history(persisted_messages, incoming_messages)
+            log_runtime_event(
+                "chat.history.restored",
+                session_id=session_id,
+                canvas_id=canvas_id,
+                user_id=user_id,
+                incoming_message_count=len(incoming_messages),
+                persisted_message_count=len(persisted_messages),
+                merged_message_count=len(messages or []),
+            )
         else:
             messages = incoming_messages
 
@@ -137,6 +141,14 @@ async def handle_chat(data):
 
     # Register the task in stream_tasks (for possible cancellation)
     add_stream_task(session_id, task)
+    add_stream_task_metadata(
+        session_id,
+        {
+            "session_id": session_id,
+            "canvas_id": canvas_id,
+            "user_id": user_id,
+        },
+    )
 
     try:
         # Await completion of the langgraph_agent task

@@ -33,11 +33,10 @@ from langchain_core.runnables import RunnableConfig
 from services.api_client_service import api_client_service
 from services.config_service import config_service
 from services.websocket_service import send_session_update
-from services.message_api_service import create_chat_message
+from services.message_api_service import create_chat_message, fetch_session_messages
 from services.video_gate_service import prepare_video_gate, wait_for_video_gate, clear_video_gate
 from services.nolanx.bridges import invoke_acp_bridge
 from services.nolanx.memory import mutate_memory
-from services.nolanx.runtime_capabilities import get_runtime_capability_flags
 from services.runtime_logger import log_runtime_event, log_runtime_warning
 
 from .timeline_utils import (
@@ -48,8 +47,8 @@ from .timeline_utils import (
     create_world_asset,
     generate_file_id,
 )
-from .img_generators.fal_ai import FalAIGenerator
-from .img_generators.base import has_r2_storage
+from .img_generators.reelmind import ReelMindGenerator
+from .img_edit_generators.reelmind import ReelMindImageEditGenerator
 from .structured_output_generators import get_latest_structured_output
 from .vid_generators.reelmind import ReelMindVideoGenerator
 from .aspect_ratio_utils import normalize_generation_aspect_ratio
@@ -67,7 +66,7 @@ WORLD_ASSET_VIDEO_BUDGET_SECONDS = 15
 MAX_EDIT_INPUT_IMAGES = 6
 MAX_FORMAL_VIDEO_REFERENCE_IMAGES = 9
 MAX_PARALLEL_WORLD_GENERATIONS = 4
-MAX_PARALLEL_VIDEO_GENERATIONS = 4
+MAX_PARALLEL_VIDEO_GENERATIONS = 1
 MAX_VIDEO_PROMPT_CHARS = 2500
 MAX_VIDEO_REF_LINES = 8
 MAX_VIDEO_BEAT_LINES = 8
@@ -76,9 +75,13 @@ MAX_VIDEO_FAILURES_IN_MESSAGE = 3
 VIDEO_BATCH_GATE_SECONDS = 180
 MAX_VIDEO_CONTINUITY_REFS = 3
 MAX_REFERENCE_VIDEO_TOTAL_SECONDS = 15
-VIDEO_CONTINUITY_PROMPT_PREFIX = "不要重复原视频的内容，按照下面的剧本继续创作："
+VIDEO_CONTINUITY_PROMPT_PREFIX = "Do not repeat the original video content. Continue creatively according to the script below: "
+WORLD_ASSET_PROMPT_QUALITY_SUFFIX = (
+    " Use clean, even exposure. Keep faces naturally lit, never underexposed, never muddy, never blacked out. "
+    "Preserve visible skin detail, readable shadows, and clear subject separation."
+)
 MAX_FORMAL_VIDEO_INPUTS = 3
-VIDEO_GENERATION_BATCH_SIZE = 4
+VIDEO_GENERATION_BATCH_SIZE = 1
 CONTINUITY_TAIL_DURATION_SECONDS = 6
 FIRST_VIDEO_GATE_TIMEOUT_SECONDS = 120
 SECOND_BATCH_GATE_TIMEOUT_SECONDS = 120
@@ -94,10 +97,6 @@ def _dedupe_keep_order(values: list[str]) -> list[str]:
         seen.add(normalized)
         deduped.append(normalized)
     return deduped
-
-
-def _enhanced_storyboard_storage_enabled() -> bool:
-    return has_r2_storage()
 
 
 def _nolanx_phase_runtime_config() -> dict[str, Any]:
@@ -276,10 +275,10 @@ _EXECUTOR_PROGRESS_MESSAGES: dict[str, dict[str, str]] = {
         "ko-KR": "고정된 비주얼 바이블로 월드 트랙 자산을 생성하는 중입니다...",
     },
     "keyframes": {
-        "en": "Generating keyframes and reference images for the planned clips...",
-        "zh-CN": "正在为已规划片段生成关键帧和参考图...",
-        "ja-JP": "計画済みクリップのキーフレームと参照画像を生成しています...",
-        "ko-KR": "계획된 클립용 키프레임과 참조 이미지를 생성하는 중입니다...",
+        "en": "",
+        "zh-CN": "",
+        "ja-JP": "",
+        "ko-KR": "",
     },
     "video_start": {
         "en": "Generating {count} video clips sequentially with timeline continuity...",
@@ -524,49 +523,53 @@ def _build_world_asset_video_prompt(
         prefix += f" Emotional continuity: {emotional_tone}."
     if base:
         prefix += f" Locked design: {base}"
-    return prefix.strip()
+    return (prefix.strip() + WORLD_ASSET_PROMPT_QUALITY_SUFFIX).strip()
 
 
 def _build_world_asset_image_prompt(element: dict, base_prompt: str) -> str:
     base = str(base_prompt or "").strip()
     name = str(element.get("name") or element.get("id") or "world asset").strip()
     description = str(element.get("description") or "").strip()
+    kind = str(element.get("kind") or "").strip().lower()
     visual_invariants = element.get("visual_invariants")
     invariant_text = (
         ", ".join(str(item).strip() for item in visual_invariants if str(item).strip())
         if isinstance(visual_invariants, list)
         else str(visual_invariants or "").strip()
     )
-
+    kind_instruction = "single world asset"
     if _element_is_character(element):
-        prefix = (
-            f"{name} character reference image for World Track audition. "
-            "Generate one strict character design sheet: clean readable front / side / back three-view layout, one character only, white or neutral minimal background. "
-            "Preserve 1:1 identity across all three views: face, hair, body proportions, silhouette, costume layers, accessories, materials, and temperament. "
-            "This image is a locked downstream identity anchor for image-to-video audition and formal video generation."
-        )
+        kind_instruction = "single recurring character"
     elif _element_is_location(element):
-        prefix = (
-            f"{name} environment reference image for World Track audition. "
-            "Generate one no-human environment design board image with a main cinematic view plus two smaller angle/reference views when possible. "
-            "Preserve stable foreground, midground, background geography, architecture/material logic, lighting direction, color palette, atmosphere, and spatial depth. "
-            "This image is a locked downstream location anchor for image-to-video audition and formal video generation."
-        )
-    else:
-        prefix = (
-            f"{name} prop/object reference image for World Track audition. "
-            "Generate one single-hero object design sheet with front / side / back or three-quarter multi-angle views when possible. "
-            "Preserve stable silhouette, material detail, scale cues, surface wear, key markings, and readable construction. "
-            "No extra unrelated objects, no people, no poster text. This image is a locked downstream prop anchor."
-        )
+        kind_instruction = "single environment/location with no people, silhouettes, body parts, or faces"
+    elif kind:
+        kind_instruction = f"single {kind} world asset"
 
+    parts = [
+        f"{name} World Track reference board for downstream audition and formal video generation.",
+        "Generate exactly one complete 3x3 nine-panel cinematic storyboard contact sheet in a single image.",
+        f"The board must depict the same locked {kind_instruction} across all nine panels.",
+        "Keep character identity, costume, environment, lighting direction, color palette, weather, materials, textures, and overall film style perfectly consistent.",
+        "Only change action, expression, camera position, composition, and depth of field.",
+        "Do not add any new characters, creatures, props, architecture, vehicles, or objects that are not already implied by the locked design.",
+        "If this is a location asset, the entire board must be empty of people, silhouettes, body parts, faces, or human reflections.",
+        "If this is a prop asset, the entire board must be a pure object study with no people, no hands, no faces, no silhouettes, and no human reflections.",
+        "Follow real photographic logic, realistic physical lighting, cinematic contrast, subtle film texture, and emotional progression.",
+        "Reference analysis rules: preserve subject position/orientation/posture/action logic, preserve foreground/midground/background relationships, preserve light direction/quality/shadows/contrast/time-of-day mood, preserve unified visual anchors such as palette, props, texture, weather, and material response.",
+        "Emotion arc across the grid: setup, escalation, turn, release.",
+        "Depth-of-field logic must stay realistic: wide shots use deep depth of field, medium shots use medium depth of field, close-ups use shallow depth of field.",
+        "Panel order is mandatory: panel 1 establishing wide with full subject/environment relation; panel 2 medium-wide with slight action; panel 3 medium emotional observation; panel 4 medium variation with action escalation; panel 5 medium-close with atmosphere intensifying; panel 6 close-up emotional peak; panel 7 extreme close-up of prop/detail; panel 8 expressive high-angle or low-angle shot; panel 9 wide or half-body closing resolution shot.",
+        "The whole board must read as one continuous western cinematic sequence with consistent grading and continuity.",
+        "No text labels, no subtitles, no infographic layout chrome, no extra borders beyond the clean 3x3 panel structure.",
+    ]
     if description:
-        prefix += f" Description: {description}."
+        parts.append(f"Description: {description}.")
     if invariant_text:
-        prefix += f" Visual invariants: {invariant_text}."
+        parts.append(f"Visual invariants: {invariant_text}.")
     if base:
-        prefix += f" Locked design prompt: {base}"
-    return prefix.strip()
+        parts.append(f"Locked design prompt: {base}")
+    prompt = " ".join(part.strip() for part in parts if part).strip()
+    return (prompt + WORLD_ASSET_PROMPT_QUALITY_SUFFIX).strip()
 
 
 def _select_world_reference_videos_for_shot(
@@ -777,10 +780,9 @@ def _build_ordered_reference_prompt_block(
     world_map: dict[str, dict],
     continuity_ref: Optional[dict[str, Any]],
 ) -> str:
-    enhanced_storage_enabled = _enhanced_storyboard_storage_enabled()
     lines: list[str] = [
-        "Multimodal reference binding rule: input video URLs and image URLs are ordered. Refer to them exactly as @video 1, @video 2, @video 3, then @image 1, @image 2, etc. Do not invent, skip, or reorder reference labels.",
-        "Reference persistence rule: input videos and input images are continuity/design anchors, not flash inserts. Do not let any input video or input image appear as a brief cutaway, overlay, replay fragment, freeze frame, or one-frame flicker inside the output video. Absorb them into seamless ongoing action only."
+        "Use the ordered @video N and @image N references directly as continuity anchors.",
+        "Keep the image bright, readable, and clean: preserve faces, skin tones, costumes, props, and midtones; avoid crushed blacks, muddy shadows, and uniformly dark frames.",
     ]
     continuity_source_type = str((continuity_ref or {}).get("source_type") or "")
     continuity_duration = float((continuity_ref or {}).get("duration_seconds") or 0.0) if isinstance(continuity_ref, dict) else 0.0
@@ -792,18 +794,10 @@ def _build_ordered_reference_prompt_block(
         name = str((matched_ref or {}).get("name") or (continuity_ref or {}).get("name") or f"video reference {idx}")
         kind = str((matched_ref or {}).get("reference_kind") or (continuity_ref or {}).get("reference_kind") or "video reference")
         lines.append(f"@video {idx}: {name} / {kind}.")
-    if enhanced_storage_enabled and video_urls and continuity_source_type == "tail":
-        lines.append(
-            f"Hard continuation rule: @video 1 is the final {continuity_duration:.1f}s tail of the previous formal clip. The generated video must be a seamless extend of @video 1. Do not repeat @video 1, do not restart the scene, and do not use it as style-only reference. Continue the exact final frame state, camera motion, action momentum, eyeline, blocking, lighting, sound carry, and story situation, then advance the next script beat."
-        )
-    elif enhanced_storage_enabled and video_urls:
-        lines.append(
-            "Continuation rule: use @video 1 as the prior continuity source. Do not repeat the source video content; continue from its ending state and advance the next script beat."
-        )
+    if video_urls and continuity_source_type == "tail":
+        lines.append(f"Continue from the final {continuity_duration:.1f}s tail of @video 1 without repeating or restarting it.")
     elif video_urls:
-        lines.append(
-            "Reference video rule: use @video references as style / identity / motion anchors only. Do not force direct continuation from a previous clip unless the prompt explicitly requires it."
-        )
+        lines.append("Continue from @video 1 without repeating its content.")
 
     ordered_world_refs: list[str] = []
     if isinstance(primary_world_ref, str) and primary_world_ref.strip():
@@ -817,9 +811,7 @@ def _build_ordered_reference_prompt_block(
         kind = str(element.get("kind") or "world asset")
         lines.append(f"@image {idx}: {name} / {kind}.")
     if image_urls:
-        lines.append(
-            "Image anchor rule: use @image references only as current-scene character / location / prop design locks. Keep identity, layout, materials, and prop continuity, while staging new action according to the script."
-        )
+        lines.append("Use @image references as current-scene design locks.")
     return " ".join(lines).strip()
 
 
@@ -1016,6 +1008,20 @@ def _load_storyboard_from_messages(messages: list[dict]) -> Optional[dict]:
     for m in reversed(messages or []):
         if not isinstance(m, dict):
             continue
+        snapshot = _load_resume_state_from_message(m)
+        if isinstance(snapshot, dict):
+            embedded_storyboard = snapshot.get("storyboard")
+            if isinstance(embedded_storyboard, dict) and isinstance(embedded_storyboard.get("shots"), list):
+                return embedded_storyboard
+            resume_args = snapshot.get("resumeArgs")
+            storyboard_text = resume_args.get("storyboard_json") if isinstance(resume_args, dict) else None
+            if isinstance(storyboard_text, str) and storyboard_text.strip():
+                try:
+                    parsed = json.loads(storyboard_text)
+                    if isinstance(parsed, dict) and isinstance(parsed.get("shots"), list):
+                        return parsed
+                except Exception:
+                    pass
         content = m.get("content")
         if not isinstance(content, str):
             continue
@@ -1029,6 +1035,32 @@ def _load_storyboard_from_messages(messages: list[dict]) -> Optional[dict]:
                 return parsed
         except Exception:
             continue
+    return None
+
+
+def _load_resume_state_from_message(message: dict) -> Optional[dict]:
+    if not isinstance(message, dict):
+        return None
+    metadata = message.get("metadata")
+    if isinstance(metadata, dict):
+        snapshot = metadata.get("storyboard_resume_state")
+        if isinstance(snapshot, dict) and snapshot.get("type") == "storyboard_resume_state":
+            return dict(snapshot)
+    content = message.get("content")
+    if isinstance(content, dict):
+        metadata = content.get("metadata")
+        if isinstance(metadata, dict):
+            snapshot = metadata.get("storyboard_resume_state")
+            if isinstance(snapshot, dict) and snapshot.get("type") == "storyboard_resume_state":
+                return dict(snapshot)
+    return None
+
+
+def _load_latest_resume_state_from_messages(messages: list[dict]) -> Optional[dict]:
+    for message in reversed(messages or []):
+        snapshot = _load_resume_state_from_message(message)
+        if snapshot:
+            return snapshot
     return None
 
 
@@ -1550,6 +1582,10 @@ class VideoGenerationResult:
     voice_direction: Optional[str] = None
     dialogue_lines: list[dict[str, Any]] = field(default_factory=list)
     request_attempts: int = 1
+    request_id: Optional[str] = None
+    base_request_id: Optional[str] = None
+    fresh_request_attempts: int = 1
+    clip_attempt: int = 1
 
 
 def _stable_agent_request_id(raw_value: str) -> str:
@@ -1560,6 +1596,12 @@ def _stable_agent_request_id(raw_value: str) -> str:
         return str(uuid.UUID(raw))
     except ValueError:
         return str(uuid.uuid5(AGENT_REQUEST_NAMESPACE, raw))
+
+
+def _next_clip_attempt(clip_attempts_by_index: dict[int, int], clip_index: int) -> int:
+    attempt = int(clip_attempts_by_index.get(int(clip_index), 0) or 0) + 1
+    clip_attempts_by_index[int(clip_index)] = attempt
+    return attempt
 
 
 def _pick_ref_url_by_shot_index(keyframes_by_shot: dict[int, str], ref_shot_index: Optional[int]) -> Optional[str]:
@@ -1765,6 +1807,8 @@ async def execute_storyboard(
         return "execute_storyboard failed: missing canvas_id/session_id"
 
     messages = ctx.get("messages") or []
+    persisted_messages_for_resume: Optional[list[dict]] = None
+    resume_state = _load_latest_resume_state_from_messages(messages) if resume else None
 
     storyboard: Optional[dict] = None
     if storyboard_json:
@@ -1780,6 +1824,11 @@ async def execute_storyboard(
         storyboard = get_latest_structured_output(canvas_id=canvas_id, session_id=session_id)
         if not storyboard:
             storyboard = _load_storyboard_from_messages(messages)
+        if not storyboard:
+            persisted_messages_for_resume = await fetch_session_messages(session_id=session_id)
+            storyboard = _load_storyboard_from_messages(persisted_messages_for_resume)
+            if resume and not resume_state:
+                resume_state = _load_latest_resume_state_from_messages(persisted_messages_for_resume)
 
     if not storyboard:
         return "execute_storyboard failed: no storyboard found (pass storyboard_json or ensure last tool output contains JSON)."
@@ -1815,18 +1864,16 @@ async def execute_storyboard(
             indent=2,
         )
 
-    img_gen = FalAIGenerator()
-    img_edit = FalAIGenerator()
+    img_gen = ReelMindGenerator()
+    img_edit = ReelMindImageEditGenerator()
     vid_gen = ReelMindVideoGenerator()
-    enhanced_storage_enabled = _enhanced_storyboard_storage_enabled()
-    capability_flags = get_runtime_capability_flags()
     world_map = _world_elements_by_id(storyboard)
     visual_bible = storyboard.get("visual_bible") or storyboard.get("visualBible") or {}
     primary_user_character_id = _primary_user_character_element_id(_extract_world_elements(storyboard))
 
-    phase_norm = (phase or "all").strip().lower()
-    run_keyframes = phase_norm in {"keyframes", "keyframe"}
-    run_videos = phase_norm in {"all", "videos", "video"}
+    requested_phase_norm = (phase or "all").strip().lower()
+    run_keyframes = requested_phase_norm in {"keyframes", "keyframe"}
+    run_videos = requested_phase_norm in {"all", "videos", "video"}
 
     # Load current canvas timeline once, so we can optionally resume/skip duplicates.
     canvas = await api_client_service.get_canvas_data(canvas_id, user_id=user_id)
@@ -1881,6 +1928,36 @@ async def execute_storyboard(
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()
 
     storyboard_fp = _storyboard_fingerprint(storyboard)
+    if resume and not resume_state:
+        if persisted_messages_for_resume is None:
+            persisted_messages_for_resume = await fetch_session_messages(session_id=session_id)
+        resume_state = _load_latest_resume_state_from_messages(persisted_messages_for_resume)
+
+    storyboard_run_id = ""
+    if isinstance(resume_state, dict):
+        storyboard_run_id = str(resume_state.get("storyboardRunId") or resume_state.get("runId") or "").strip()
+    if not storyboard_run_id:
+        storyboard_run_id = f"storyboard-run-{_stable_agent_request_id(f'{session_id}-{storyboard_fp}')}"
+
+    clip_attempts_by_index: dict[int, int] = {}
+    if isinstance(resume_state, dict):
+        raw_clip_attempts = resume_state.get("clipAttempts")
+        if isinstance(raw_clip_attempts, dict):
+            for raw_idx, raw_attempt in raw_clip_attempts.items():
+                try:
+                    clip_idx = int(raw_idx)
+                    attempt = int(raw_attempt)
+                except Exception:
+                    continue
+                if clip_idx > 0 and attempt > 0:
+                    clip_attempts_by_index[clip_idx] = attempt
+        failed_clip_index = resume_state.get("failedClipIndex")
+        try:
+            failed_clip_idx = int(failed_clip_index)
+        except Exception:
+            failed_clip_idx = 0
+        if failed_clip_idx > 0:
+            clip_attempts_by_index[failed_clip_idx] = max(clip_attempts_by_index.get(failed_clip_idx, 0), 1)
 
     def _draft_script_asset_id(shot_index: int) -> str:
         safe_session = re.sub(r"[^a-zA-Z0-9]+", "", str(session_id or ""))[:12] or "session"
@@ -1902,7 +1979,13 @@ async def execute_storyboard(
     existing_script_asset_ids = {a.get("id") for a in existing_script_assets if isinstance(a, dict) and a.get("id")}
 
     existing_world_assets = _existing_world_assets() if resume else []
+    existing_world_assets_by_id = {
+        str(asset.get("id")): asset
+        for asset in existing_world_assets
+        if isinstance(asset, dict) and asset.get("id")
+    }
     existing_world_asset_ids = {a.get("id") for a in existing_world_assets if isinstance(a, dict) and a.get("id")}
+    existing_world_video_ready_asset_ids: set[str] = set()
 
     world_images_by_id: dict[str, str] = {}
     world_video_refs_by_id: dict[str, dict[str, Any]] = {}
@@ -1961,6 +2044,7 @@ async def execute_storyboard(
         public_video_url = content.get("videoUrl") or md.get("publicVideoUrl") or md.get("resourceUrl") or source_public_video_url
         preferred_video_url = provider_video_url or public_video_url or source_public_video_url
         if isinstance(preferred_video_url, str) and preferred_video_url:
+            existing_world_video_ready_asset_ids.add(str(asset.get("id") or ""))
             element = world_map.get(element_id.strip()) or {}
             world_video_refs_by_id[element_id.strip()] = {
                 "element_id": element_id.strip(),
@@ -2064,10 +2148,14 @@ async def execute_storyboard(
         keyframe_track = next((t for t in tracks if t.get("id") == "keyframe-track"), None)
         assets = (keyframe_track or {}).get("assets") or []
         found: dict[tuple[int, str], dict] = {}
+        legacy_found: dict[tuple[int, str], dict] = {}
         for asset in assets:
             md = (asset or {}).get("metadata") or {}
             sb = md.get("storyboard") or {}
             if not isinstance(sb, dict):
+                continue
+            asset_run_id = str(sb.get("storyboardRunId") or sb.get("runId") or "").strip()
+            if asset_run_id and asset_run_id != storyboard_run_id:
                 continue
             clip_idx = sb.get("clipIndex")
             role = sb.get("role")
@@ -2075,8 +2163,96 @@ async def execute_storyboard(
                 continue
             if not isinstance(clip_idx, (int, float)):
                 continue
-            found[(int(clip_idx), role)] = asset
+            key = (int(clip_idx), role)
+            if asset_run_id == storyboard_run_id:
+                found[key] = asset
+            elif key not in legacy_found:
+                legacy_found[key] = asset
+        for key, asset in legacy_found.items():
+            found.setdefault(key, asset)
         return found
+
+    def _coerce_positive_int(value: Any) -> Optional[int]:
+        if isinstance(value, bool):
+            return None
+        if isinstance(value, (int, float)):
+            parsed = int(value)
+            return parsed if parsed > 0 else None
+        if isinstance(value, str):
+            text = value.strip()
+            if not text:
+                return None
+            try:
+                parsed = int(float(text))
+            except Exception:
+                return None
+            return parsed if parsed > 0 else None
+        return None
+
+    def _video_asset_url(asset: dict) -> str:
+        content = (asset or {}).get("content") or {}
+        metadata = (asset or {}).get("metadata") or {}
+        for candidate in (
+            content.get("videoUrl"),
+            content.get("url"),
+            metadata.get("resourceUrl"),
+            metadata.get("videoUrl"),
+            metadata.get("primaryVideoUrl"),
+        ):
+            if isinstance(candidate, str) and candidate.strip():
+                return candidate.strip()
+        return ""
+
+    def _infer_video_clip_index(asset: dict, fallback_order: int) -> Optional[int]:
+        metadata = (asset or {}).get("metadata") or {}
+        storyboard_meta = metadata.get("storyboard") or {}
+        if not isinstance(storyboard_meta, dict):
+            storyboard_meta = {}
+
+        for candidate in (
+            storyboard_meta.get("scriptClipIndex"),
+            storyboard_meta.get("clipIndex"),
+            metadata.get("scriptClipIndex"),
+            metadata.get("clipIndex"),
+            (asset or {}).get("scriptClipIndex"),
+            (asset or {}).get("clipIndex"),
+        ):
+            clip_index = _coerce_positive_int(candidate)
+            if clip_index:
+                return clip_index
+
+        script_asset_id = str(storyboard_meta.get("scriptAssetId") or metadata.get("scriptAssetId") or "").strip()
+        if script_asset_id:
+            match = re.search(r"(\d+)$", script_asset_id)
+            if match:
+                clip_index = _coerce_positive_int(match.group(1))
+                if clip_index:
+                    return clip_index
+
+        for candidate in (
+            (asset or {}).get("startTime"),
+            metadata.get("startTime"),
+            ((metadata.get("editHistory") or [{}])[-1].get("newValue") or {}).get("startTime")
+            if isinstance(metadata.get("editHistory"), list) and metadata.get("editHistory")
+            else None,
+        ):
+            try:
+                start_time = float(candidate)
+            except Exception:
+                continue
+            if start_time < 0:
+                continue
+            return int(start_time // CANONICAL_DURATION_SECONDS) + 1
+
+        return fallback_order if fallback_order > 0 else None
+
+    def _video_asset_sort_start(asset: dict) -> float:
+        for candidate in ((asset or {}).get("startTime"), ((asset or {}).get("metadata") or {}).get("startTime")):
+            try:
+                return float(candidate)
+            except Exception:
+                continue
+        return float(10**9)
 
     def _existing_aligned_videos() -> dict[int, dict]:
         timeline = (canvas_data or {}).get("timeline") or {}
@@ -2084,15 +2260,31 @@ async def execute_storyboard(
         video_track = next((t for t in tracks if t.get("id") == "video-track"), None)
         assets = (video_track or {}).get("assets") or []
         found: dict[int, dict] = {}
-        for asset in assets:
-            md = (asset or {}).get("metadata") or {}
-            sb = md.get("storyboard") or {}
-            if not isinstance(sb, dict):
+        legacy_found: dict[int, dict] = {}
+        sorted_assets = sorted(
+            [asset for asset in assets if isinstance(asset, dict) and _video_asset_url(asset)],
+            key=lambda asset: (
+                _video_asset_sort_start(asset),
+                str(asset.get("created_at") or asset.get("updated_at") or ""),
+            ),
+        )
+        for fallback_order, asset in enumerate(sorted_assets, start=1):
+            metadata = (asset or {}).get("metadata") or {}
+            storyboard_meta = metadata.get("storyboard") or {}
+            if not isinstance(storyboard_meta, dict):
+                storyboard_meta = {}
+            asset_run_id = str(storyboard_meta.get("storyboardRunId") or storyboard_meta.get("runId") or "").strip()
+            if asset_run_id and asset_run_id != storyboard_run_id:
                 continue
-            clip_idx = sb.get("clipIndex")
-            if not isinstance(clip_idx, (int, float)):
+            clip_idx = _infer_video_clip_index(asset, fallback_order)
+            if not clip_idx or clip_idx > len(clips):
                 continue
-            found[int(clip_idx)] = asset
+            if asset_run_id == storyboard_run_id:
+                found[int(clip_idx)] = asset
+            elif int(clip_idx) not in legacy_found:
+                legacy_found[int(clip_idx)] = asset
+        for clip_idx, asset in legacy_found.items():
+            found.setdefault(clip_idx, asset)
         return found
 
     existing_aligned_keyframes = _existing_aligned_keyframes() if resume else {}
@@ -2108,6 +2300,97 @@ async def execute_storyboard(
     available_video_urls_by_clip: dict[int, str] = {}
     clip_context_by_index: dict[int, dict[str, Any]] = {}
     total_clip_count = len(clips)
+
+    if resume:
+        for clip_index, existing_asset in existing_aligned_videos.items():
+            url = (((existing_asset or {}).get("content") or {}).get("videoUrl")) or (((existing_asset or {}).get("metadata") or {}).get("resourceUrl"))
+            if not isinstance(url, str) or not url.strip():
+                continue
+            storyboard_meta = (((existing_asset or {}).get("metadata") or {}).get("storyboard") or {})
+            try:
+                existing_clip_attempt = int(storyboard_meta.get("clipAttempt") or 0)
+            except Exception:
+                existing_clip_attempt = 0
+            if existing_clip_attempt > 0:
+                clip_attempts_by_index[int(clip_index)] = max(
+                    int(clip_attempts_by_index.get(int(clip_index), 0) or 0),
+                    existing_clip_attempt,
+                )
+            available_video_urls_by_clip[int(clip_index)] = url.strip()
+            clip_context_by_index[int(clip_index)] = {
+                "public_url": url.strip(),
+                "provider_video_url": (((existing_asset or {}).get("metadata") or {}).get("storyboard") or {}).get("providerVideoUrl")
+                or (((existing_asset or {}).get("metadata") or {}).get("providerVideoUrl"))
+                or (((existing_asset or {}).get("metadata") or {}).get("sourceProviderVideoUrl")),
+                "world_refs": storyboard_meta.get("worldRefs") or [],
+                "primary_world_ref": storyboard_meta.get("primaryWorldRef"),
+                "shot_index": storyboard_meta.get("shotIndex"),
+            }
+
+    pending_clip_indexes = [
+        int(clip.get("clipIndex") or 0)
+        for clip in clips
+        if int(clip.get("clipIndex") or 0) and int(clip.get("clipIndex") or 0) not in available_video_urls_by_clip
+    ]
+    if resume:
+        log_runtime_event(
+            "storyboard.resume.timeline_reconciled",
+            session_id=session_id,
+            canvas_id=canvas_id,
+            user_id=user_id,
+            requested_phase=requested_phase_norm,
+            existing_video_clip_indexes=sorted(int(idx) for idx in available_video_urls_by_clip.keys()),
+            pending_clip_indexes=pending_clip_indexes,
+            next_clip_index=pending_clip_indexes[0] if pending_clip_indexes else None,
+            total_clip_count=total_clip_count,
+        )
+    if resume and requested_phase_norm in {"all", "videos", "video"}:
+        run_videos = bool(pending_clip_indexes)
+
+    total_world_element_count = sum(
+        1
+        for element in _extract_world_elements(storyboard)
+        if isinstance(element, dict)
+        and str(element.get("image_prompt_en") or "").strip()
+        and _element_supports_world_video(element)
+    )
+    completed_world_video_count = len(world_video_refs_by_id)
+    completed_script_segment_count = sum(
+        1
+        for asset in existing_script_assets
+        if isinstance(asset, dict) and str(((asset.get("metadata") or {}).get("kind") or "")).strip() == "script_segment"
+    )
+    completed_keyframe_count = len(existing_aligned_keyframes)
+    total_expected_keyframe_assets = 0
+    for clip in clips:
+        mode = str(clip.get("mode") or "")
+        total_expected_keyframe_assets += 1 if mode == "image_to_video" else 2
+
+    inferred_phase_norm = requested_phase_norm
+    if resume and requested_phase_norm in {"videos", "video"}:
+        inferred_phase_norm = "videos" if pending_clip_indexes else "finalize"
+    elif resume and requested_phase_norm == "all":
+        if total_world_element_count > 0 and completed_world_video_count < total_world_element_count:
+            inferred_phase_norm = "all"
+        elif total_expected_keyframe_assets > 0 and completed_keyframe_count < total_expected_keyframe_assets:
+            inferred_phase_norm = "all"
+        elif pending_clip_indexes:
+            inferred_phase_norm = "videos"
+        else:
+            inferred_phase_norm = "finalize"
+    elif resume and requested_phase_norm == "cancelled":
+        if total_world_element_count > 0 and completed_world_video_count < total_world_element_count:
+            inferred_phase_norm = "all"
+        elif total_expected_keyframe_assets > 0 and completed_keyframe_count < total_expected_keyframe_assets:
+            inferred_phase_norm = "all"
+        elif pending_clip_indexes:
+            inferred_phase_norm = "videos"
+        else:
+            inferred_phase_norm = "finalize"
+
+    phase_norm = inferred_phase_norm
+    run_keyframes = phase_norm in {"keyframes", "keyframe"}
+    run_videos = phase_norm in {"all", "videos", "video"} and bool(pending_clip_indexes)
 
     # Keep image metadata so we can duplicate frames (same URL) as separate timeline assets.
     image_meta_by_url: dict[str, dict[str, Any]] = {}
@@ -2182,6 +2465,24 @@ async def execute_storyboard(
                 return clip_index
         return None
 
+    def _resume_reconciliation_snapshot() -> dict[str, Any]:
+        return {
+            "requestedPhase": requested_phase_norm,
+            "resolvedPhase": phase_norm,
+            "resume": bool(resume),
+            "scriptSegmentsCompleted": completed_script_segment_count,
+            "scriptSegmentsExpected": total_clip_count,
+            "worldVideosCompleted": completed_world_video_count,
+            "worldVideosExpected": total_world_element_count,
+            "keyframesCompleted": completed_keyframe_count,
+            "keyframesExpected": total_expected_keyframe_assets,
+            "videosCompleted": len(available_video_urls_by_clip),
+            "videosExpected": total_clip_count,
+            "existingVideoClipIndexes": sorted(int(idx) for idx in available_video_urls_by_clip.keys()),
+            "pendingClipIndexes": pending_clip_indexes,
+            "nextClipIndex": _next_pending_clip_index(),
+        }
+
     def _build_storyboard_resume_state(
         *,
         status: str,
@@ -2190,21 +2491,28 @@ async def execute_storyboard(
         failure_message: Optional[str] = None,
     ) -> dict[str, Any]:
         completed_clip_indexes = sorted(int(idx) for idx in available_video_urls_by_clip.keys() if isinstance(idx, int))
+        storyboard_payload = json.dumps(storyboard, ensure_ascii=False, sort_keys=True)
+        resume_phase = "videos" if str(phase_name or "").strip() in {"videos", "video"} else str(phase_name or "").strip()
         return {
             "type": "storyboard_resume_state",
             "schemaVersion": 1,
             "resumeTool": "execute_storyboard",
-            "resumeArgs": {"resume": True},
+            "resumeArgs": {"resume": True, "phase": resume_phase or "videos", "storyboard_json": storyboard_payload},
             "status": str(status or "").strip(),
             "phase": str(phase_name or "").strip(),
+            "runId": storyboard_run_id,
+            "storyboardRunId": storyboard_run_id,
             "sessionId": str(session_id or "").strip(),
             "canvasId": str(canvas_id or "").strip(),
             "storyboardFingerprint": str(storyboard_fp or "").strip(),
+            "storyboard": storyboard,
+            "clipAttempts": {str(int(idx)): int(attempt) for idx, attempt in sorted(clip_attempts_by_index.items())},
             "aspectRatio": str(aspect_ratio or "").strip(),
             "clipCount": int(total_clip_count or 0),
             "completedClipCount": len(completed_clip_indexes),
             "completedClipIndexes": completed_clip_indexes[-12:],
             "nextClipIndex": _next_pending_clip_index(),
+            "resumeReconciliation": _resume_reconciliation_snapshot(),
             "failedClipIndex": int(failed_clip_index) if isinstance(failed_clip_index, int) else None,
             "failureMessage": str(failure_message or "").strip() or None,
             "updatedAt": datetime.now(timezone.utc).isoformat(),
@@ -2308,6 +2616,8 @@ async def execute_storyboard(
                     metadata={
                         "kind": "clip_continuity_tail",
                         "isContinuityTail": True,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
                         "storyboardFingerprint": storyboard_fp,
                         "name": f"Clip {clip_index} continuity tail",
                         "sourceClipIndex": clip_index,
@@ -2425,19 +2735,15 @@ async def execute_storyboard(
             primary_world_ref,
             world_map,
         )
-        continuity_ref = (
-            _select_preferred_continuity_reference_video(
-                clip_index=clip_index,
-                shot_index=shot_index,
-                shot=shot,
-                primary_world_ref=primary_world_ref,
-                raw_world_refs=list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
-                available_continuity_tail_refs_by_clip=available_continuity_tail_refs_by_clip,
-                available_video_urls_by_clip=available_video_urls_by_clip,
-                clip_context_by_index=clip_context_by_index,
-            )
-            if enhanced_storage_enabled
-            else None
+        continuity_ref = _select_preferred_continuity_reference_video(
+            clip_index=clip_index,
+            shot_index=shot_index,
+            shot=shot,
+            primary_world_ref=primary_world_ref,
+            raw_world_refs=list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
+            available_continuity_tail_refs_by_clip=available_continuity_tail_refs_by_clip,
+            available_video_urls_by_clip=available_video_urls_by_clip,
+            clip_context_by_index=clip_context_by_index,
         )
         continuity_reference_video_url = (
             str(continuity_ref.get("preferred_video_url") or "").strip()
@@ -2540,7 +2846,10 @@ async def execute_storyboard(
                 },
             )
             try:
-                stable_request_id = _stable_agent_request_id(f"{session_id}-clip-{clip_index}-{execution_mode}")
+                clip_attempt = _next_clip_attempt(clip_attempts_by_index, clip_index)
+                stable_request_id = _stable_agent_request_id(
+                    f"{storyboard_run_id}-clip-{clip_index:03d}-{execution_mode}-attempt-{clip_attempt:03d}"
+                )
                 mime_type, public_url, response_data = await vid_gen.generate(
                     prompt=locked_prompt,
                     image_urls=selected_world_image_urls,
@@ -2560,11 +2869,15 @@ async def execute_storyboard(
                     else None
                 )
                 request_attempts = int(response_data.get("request_attempts", 1) or 1) if isinstance(response_data, dict) else 1
+                final_request_id = str(response_data.get("request_id") or stable_request_id) if isinstance(response_data, dict) else stable_request_id
+                base_request_id = str(response_data.get("base_request_id") or stable_request_id) if isinstance(response_data, dict) else stable_request_id
+                fresh_request_attempts = int(response_data.get("fresh_request_attempts", 1) or 1) if isinstance(response_data, dict) else 1
             except Exception as e:
+                error_text = str(e) or type(e).__name__
                 await _emit_tool_result_card(
                     tool_call_id=tc_id,
                     name="generate_video",
-                    content=f"video generation failed: {e}",
+                    content=f"video generation failed: {error_text}",
                 )
                 raise
 
@@ -2597,6 +2910,10 @@ async def execute_storyboard(
                 voice_direction=str(shot.get("voice_direction") or ""),
                 dialogue_lines=shot.get("dialogue_lines") or [],
                 request_attempts=request_attempts,
+                request_id=final_request_id,
+                base_request_id=base_request_id,
+                fresh_request_attempts=fresh_request_attempts,
+                clip_attempt=clip_attempt,
             )
 
         if selected_world_video_refs:
@@ -2629,7 +2946,10 @@ async def execute_storyboard(
             },
         )
         try:
-            stable_request_id = _stable_agent_request_id(f"{session_id}-clip-{clip_index}-{execution_mode}")
+            clip_attempt = _next_clip_attempt(clip_attempts_by_index, clip_index)
+            stable_request_id = _stable_agent_request_id(
+                f"{storyboard_run_id}-clip-{clip_index:03d}-{execution_mode}-attempt-{clip_attempt:03d}"
+            )
             mime_type, public_url, response_data = await vid_gen.generate(
                 prompt=continuation_prompt,
                 image_urls=selected_world_image_urls,
@@ -2649,11 +2969,15 @@ async def execute_storyboard(
                 else None
             )
             request_attempts = int(response_data.get("request_attempts", 1) or 1) if isinstance(response_data, dict) else 1
+            final_request_id = str(response_data.get("request_id") or stable_request_id) if isinstance(response_data, dict) else stable_request_id
+            base_request_id = str(response_data.get("base_request_id") or stable_request_id) if isinstance(response_data, dict) else stable_request_id
+            fresh_request_attempts = int(response_data.get("fresh_request_attempts", 1) or 1) if isinstance(response_data, dict) else 1
         except Exception as e:
+            error_text = str(e) or type(e).__name__
             await _emit_tool_result_card(
                 tool_call_id=tc_id,
                 name="generate_video",
-                content=f"video generation failed: {e}",
+                content=f"video generation failed: {error_text}",
             )
             raise
 
@@ -2686,6 +3010,10 @@ async def execute_storyboard(
             voice_direction=str(shot.get("voice_direction") or ""),
             dialogue_lines=shot.get("dialogue_lines") or [],
             request_attempts=request_attempts,
+            request_id=final_request_id,
+            base_request_id=base_request_id,
+            fresh_request_attempts=fresh_request_attempts,
+            clip_attempt=clip_attempt,
         )
 
     async def _add_world_track_assets() -> None:
@@ -2719,7 +3047,7 @@ async def execute_storyboard(
             start_time = current_time
             current_time += duration
 
-            if resume and element_asset_id in existing_world_asset_ids:
+            if resume and element_asset_id in existing_world_video_ready_asset_ids:
                 continue
 
             name = str(el.get("name") or element_id)
@@ -2814,6 +3142,8 @@ async def execute_storyboard(
                 metadata={
                     "kind": "world_element_image",
                     "worldElement": True,
+                    "runId": storyboard_run_id,
+                    "storyboardRunId": storyboard_run_id,
                     "storyboardFingerprint": storyboard_fp,
                     "elementId": str(job["element_id"]),
                     "elementKind": str(job["kind"]),
@@ -2931,17 +3261,19 @@ async def execute_storyboard(
                         )
                         request_attempts = int(response_data.get("request_attempts", 1) or 1) if isinstance(response_data, dict) else 1
                     except Exception as retry_error:
+                        error_text = str(retry_error) or type(retry_error).__name__
                         await _emit_tool_result_card(
                             tool_call_id=tc_id,
                             name="generate_video",
-                            content=f"video generation failed: {retry_error}",
+                            content=f"video generation failed: {error_text}",
                         )
-                        return {"ok": False, "job": job, "error": str(retry_error), "tool_name": "generate_video"}
+                        return {"ok": False, "job": job, "error": error_text, "tool_name": "generate_video"}
                 else:
+                    error_text = str(e) or type(e).__name__
                     await _emit_tool_result_card(
-                        tool_call_id=tc_id, name="generate_video", content=f"video generation failed: {e}"
+                        tool_call_id=tc_id, name="generate_video", content=f"video generation failed: {error_text}"
                     )
-                    return {"ok": False, "job": job, "error": str(e), "tool_name": "generate_video"}
+                    return {"ok": False, "job": job, "error": error_text, "tool_name": "generate_video"}
 
             await _emit_tool_result_card(
                 tool_call_id=tc_id,
@@ -3038,6 +3370,8 @@ async def execute_storyboard(
                     metadata={
                         "kind": "world_element_video",
                         "worldElement": True,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
                         "storyboardFingerprint": storyboard_fp,
                         "elementId": element_id,
                         "elementKind": kind,
@@ -3074,7 +3408,7 @@ async def execute_storyboard(
                     },
                 )
                 if image_persisted:
-                    persist_ok = await api_client_service.update_timeline_asset(
+                    persist_result = await api_client_service.update_timeline_asset_with_detail(
                         canvas_id=canvas_id,
                         asset_id=element_asset_id,
                         properties={
@@ -3084,7 +3418,15 @@ async def execute_storyboard(
                         },
                         user_id=user_id,
                     )
-                    persist_result = {"ok": persist_ok, "error": None if persist_ok else "timeline asset update failed"}
+                    if not persist_result.get("ok"):
+                        fallback_reason = str(persist_result.get("error") or "timeline asset update failed")
+                        print(
+                            "⚠️ World asset timeline update failed; retrying as add: "
+                            f"canvas={canvas_id} element={element_id} error={fallback_reason}"
+                        )
+                        persist_result = await api_client_service.add_timeline_asset_with_detail(
+                            canvas_id=canvas_id, asset_type="world", asset_data=world_asset, user_id=user_id
+                        )
                 else:
                     persist_result = await api_client_service.add_timeline_asset_with_detail(
                         canvas_id=canvas_id, asset_type="world", asset_data=world_asset, user_id=user_id
@@ -3111,6 +3453,7 @@ async def execute_storyboard(
                         f"source_provider={provider_video_url or 'none'}"
                     )
                     existing_world_asset_ids.add(element_asset_id)
+                    existing_world_video_ready_asset_ids.add(element_asset_id)
                     await send_session_update(
                         user_id,
                         session_id,
@@ -3175,6 +3518,8 @@ async def execute_storyboard(
                 start_time=main_duration_seconds,
                 metadata={
                     "kind": "screenplay",
+                    "runId": storyboard_run_id,
+                    "storyboardRunId": storyboard_run_id,
                     "storyboardFingerprint": storyboard_fp,
                     "language": screenplay_language,
                     "summary": screenplay_summary,
@@ -3299,6 +3644,8 @@ async def execute_storyboard(
                 start_time=clip_start,
                 metadata={
                     "kind": "script_segment",
+                    "runId": storyboard_run_id,
+                    "storyboardRunId": storyboard_run_id,
                     "storyboardFingerprint": storyboard_fp,
                     "clipIndex": clip_index,
                     "shotIndex": shot_index,
@@ -3379,41 +3726,39 @@ async def execute_storyboard(
 
     image_tool_by_url: dict[str, str] = {}
 
-    try:
-        delegated_script_phase = await _try_delegate_phase_to_acp(
-            phase_name="script_writer",
-            operation_default="prepare_storyboard_script_phase",
-            payload={
-                "storyboard": storyboard,
-                "storyboard_json": storyboard_json,
-                "phase": "script_track",
-                "aspect_ratio": aspect_ratio,
-            },
-            session_id=session_id,
-            canvas_id=canvas_id,
-            user_id=user_id,
-        )
-        if delegated_script_phase:
-            log_runtime_event("storyboard.phase.delegated", phase_name="script_writer", session_id=session_id, canvas_id=canvas_id, user_id=user_id)
-    except Exception as exc:
-        log_runtime_warning("storyboard.phase.delegation_failed_fallback_local", phase_name="script_writer", session_id=session_id, canvas_id=canvas_id, user_id=user_id, error=str(exc))
+    run_pre_video_tracks = phase_norm in {"all", "world_track", "world", "script_track", "script", "keyframes", "keyframe"}
+    if run_pre_video_tracks:
+        try:
+            delegated_script_phase = await _try_delegate_phase_to_acp(
+                phase_name="script_writer",
+                operation_default="prepare_storyboard_script_phase",
+                payload={
+                    "storyboard": storyboard,
+                    "storyboard_json": storyboard_json,
+                    "phase": "script_track",
+                    "aspect_ratio": aspect_ratio,
+                },
+                session_id=session_id,
+                canvas_id=canvas_id,
+                user_id=user_id,
+            )
+            if delegated_script_phase:
+                log_runtime_event("storyboard.phase.delegated", phase_name="script_writer", session_id=session_id, canvas_id=canvas_id, user_id=user_id)
+        except Exception as exc:
+            log_runtime_warning("storyboard.phase.delegation_failed_fallback_local", phase_name="script_writer", session_id=session_id, canvas_id=canvas_id, user_id=user_id, error=str(exc))
 
-    await _emit_executor_progress(_executor_progress_message("script_track", preferred_language))
-    await _add_script_track_assets()
-    await _persist_storyboard_resume_state(status="running", phase_name="script_track")
-    await _emit_executor_progress(_executor_progress_message("world_track", preferred_language))
-    world_track_task = asyncio.create_task(_add_world_track_assets(), name=f"world-track-{session_id}")
-    try:
-        await asyncio.shield(world_track_task)
-    except asyncio.CancelledError:
-        await _persist_storyboard_resume_state(status="interrupted", phase_name="world_track")
-        print(
-            "⚠️ Chat stream cancelled during world-track generation; "
-            f"finishing current world asset persistence before aborting session={session_id}"
-        )
-        await world_track_task
-        raise
-    await _persist_storyboard_resume_state(status="running", phase_name="world_track")
+        await _emit_executor_progress(_executor_progress_message("script_track", preferred_language))
+        await _add_script_track_assets()
+        await _persist_storyboard_resume_state(status="running", phase_name="script_track")
+        await _emit_executor_progress(_executor_progress_message("world_track", preferred_language))
+        world_track_task = asyncio.create_task(_add_world_track_assets(), name=f"world-track-{session_id}")
+        try:
+            await asyncio.shield(world_track_task)
+        except asyncio.CancelledError:
+            world_track_task.cancel()
+            await _persist_storyboard_resume_state(status="interrupted", phase_name="world_track")
+            raise
+        await _persist_storyboard_resume_state(status="running", phase_name="world_track")
 
     missing_world_refs_by_clip: list[str] = []
     for clip in clips:
@@ -3559,11 +3904,12 @@ async def execute_storyboard(
                     )
                     used_tool_name = "edit_image"
                     try:
-                        mime_type, width, height, url = await img_edit.generate(
+                        mime_type, width, height, url = await img_edit.edit(
                             prompt=prompt,
-                            model="openai/gpt-image-2",
+                            model="",
                             aspect_ratio=aspect_ratio,
                             input_image=ref_url,
+                            input_images=ref_urls if len(ref_urls) > 1 else None,
                             user_id=user_id,
                         )
                     except Exception as e:
@@ -3586,7 +3932,7 @@ async def execute_storyboard(
                 try:
                     mime_type, width, height, url = await img_gen.generate(
                         prompt=prompt,
-                        model="openai/gpt-image-2",
+                        model="",
                         aspect_ratio=aspect_ratio,
                         user_id=user_id,
                     )
@@ -3661,7 +4007,14 @@ async def execute_storyboard(
                     prompt=str(meta.get("prompt") or ""),
                     duration=CANONICAL_DURATION_SECONDS,
                     start_time=clip_start,
-                    storyboard={"clipIndex": clip_index, "shotIndex": shot_index, "mode": mode, "role": "single"},
+                    storyboard={
+                        "clipIndex": clip_index,
+                        "shotIndex": shot_index,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
+                        "mode": mode,
+                        "role": "single",
+                    },
                 )
                 ok = await api_client_service.add_timeline_asset(
                     canvas_id=canvas_id, asset_type="keyframe", asset_data=asset, user_id=user_id
@@ -3700,7 +4053,14 @@ async def execute_storyboard(
                     prompt=str(first_meta.get("prompt") or ""),
                     duration=HALF_DURATION_SECONDS,
                     start_time=clip_start,
-                    storyboard={"clipIndex": clip_index, "shotIndex": shot_index, "mode": mode, "role": "flf_first"},
+                    storyboard={
+                        "clipIndex": clip_index,
+                        "shotIndex": shot_index,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
+                        "mode": mode,
+                        "role": "flf_first",
+                    },
                 )
                 ok = await api_client_service.add_timeline_asset(
                     canvas_id=canvas_id, asset_type="keyframe", asset_data=first_asset, user_id=user_id
@@ -3738,7 +4098,14 @@ async def execute_storyboard(
                     prompt=str(last_meta.get("prompt") or ""),
                     duration=HALF_DURATION_SECONDS,
                     start_time=clip_start + HALF_DURATION_SECONDS,
-                    storyboard={"clipIndex": clip_index, "shotIndex": shot_index, "mode": mode, "role": "flf_last"},
+                    storyboard={
+                        "clipIndex": clip_index,
+                        "shotIndex": shot_index,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
+                        "mode": mode,
+                        "role": "flf_last",
+                    },
                 )
                 ok = await api_client_service.add_timeline_asset(
                     canvas_id=canvas_id, asset_type="keyframe", asset_data=last_asset, user_id=user_id
@@ -3764,17 +4131,7 @@ async def execute_storyboard(
                 if review_event:
                     await send_session_update(user_id, session_id, canvas_id, review_event)
 
-    await _persist_storyboard_resume_state(status="running", phase_name="keyframes")
-
-    if not capability_flags.get("image_ready"):
-        await _persist_storyboard_resume_state(status="completed", phase_name="script_only")
-        await _emit_executor_progress("")
-        return (
-            f"execute_storyboard completed in script-only mode: "
-            f"keyframes_planned={len(keyframe_plan)}, videos_planned={len(video_plan)}, "
-            f"images_generated=0, videos_generated=0, duration={CANONICAL_DURATION_SECONDS}, "
-            f"aspect_ratio={aspect_ratio}, capabilities=text_only"
-        )
+    await _persist_storyboard_resume_state(status="running", phase_name="videos")
 
     # 2) Generate videos after keyframes exist
     if run_videos:
@@ -3803,23 +4160,22 @@ async def execute_storyboard(
 
         if pending_video_clips:
             max_pending_clip_index = max(int(clip["clipIndex"]) for clip in pending_video_clips)
-            if enhanced_storage_enabled:
-                for existing_clip_index in sorted(available_video_urls_by_clip.keys()):
-                    if existing_clip_index >= max_pending_clip_index:
-                        continue
-                    existing_source_url = str(available_video_urls_by_clip.get(existing_clip_index) or "").strip()
-                    if not existing_source_url or existing_clip_index in available_continuity_tail_refs_by_clip:
-                        continue
-                    existing_context = clip_context_by_index.get(existing_clip_index) or {}
-                    await _ensure_continuity_tail_world_asset(
-                        clip_index=existing_clip_index,
-                        shot_index=int(existing_context.get("shot_index") or existing_clip_index),
-                        source_video_url=existing_source_url,
-                        source_download_url=str(existing_context.get("provider_video_url") or "").strip() or None,
-                        world_refs=list(existing_context.get("world_refs") or []),
-                        primary_world_ref=existing_context.get("primary_world_ref"),
-                        required=False,
-                    )
+            for existing_clip_index in sorted(available_video_urls_by_clip.keys()):
+                if existing_clip_index >= max_pending_clip_index:
+                    continue
+                existing_source_url = str(available_video_urls_by_clip.get(existing_clip_index) or "").strip()
+                if not existing_source_url or existing_clip_index in available_continuity_tail_refs_by_clip:
+                    continue
+                existing_context = clip_context_by_index.get(existing_clip_index) or {}
+                await _ensure_continuity_tail_world_asset(
+                    clip_index=existing_clip_index,
+                    shot_index=int(existing_context.get("shot_index") or existing_clip_index),
+                    source_video_url=existing_source_url,
+                    source_download_url=str(existing_context.get("provider_video_url") or "").strip() or None,
+                    world_refs=list(existing_context.get("world_refs") or []),
+                    primary_world_ref=existing_context.get("primary_world_ref"),
+                    required=False,
+                )
 
             await _emit_executor_progress(
                 _executor_progress_message(
@@ -3879,6 +4235,11 @@ async def execute_storyboard(
                     storyboard={
                         "clipIndex": result.clip_index,
                         "shotIndex": result.shot_index,
+                        "runId": storyboard_run_id,
+                        "storyboardRunId": storyboard_run_id,
+                        "scriptAssetId": f"script-seg-{storyboard_fp[:12]}-{result.clip_index:03d}",
+                        "scriptClipIndex": result.clip_index,
+                        "clipAttempt": result.clip_attempt,
                         "mode": result.mode,
                         "plannedMode": clip.get("mode"),
                         "bindingLock": result.binding_lock,
@@ -3889,6 +4250,9 @@ async def execute_storyboard(
                         "voiceDirection": result.voice_direction,
                         "dialogueLines": result.dialogue_lines,
                         "providerVideoUrl": result.provider_video_url,
+                        "requestId": result.request_id,
+                        "baseRequestId": result.base_request_id,
+                        "freshRequestAttempts": result.fresh_request_attempts,
                         "requestAttempts": result.request_attempts,
                         "requestRetryCount": max(0, int(result.request_attempts or 1) - 1),
                         "visualBibleStyleName": visual_bible.get("style_name"),
@@ -3924,16 +4288,15 @@ async def execute_storyboard(
                 if review_event:
                     await send_session_update(user_id, session_id, canvas_id, review_event)
                 generated_videos.append(result.public_url)
-                if enhanced_storage_enabled:
-                    await _ensure_continuity_tail_world_asset(
-                        clip_index=result.clip_index,
-                        shot_index=result.shot_index,
-                        source_video_url=result.public_url,
-                        source_download_url=result.provider_video_url,
-                        world_refs=list(result.world_refs),
-                        primary_world_ref=result.primary_world_ref,
-                        required=False,
-                    )
+                await _ensure_continuity_tail_world_asset(
+                    clip_index=result.clip_index,
+                    shot_index=result.shot_index,
+                    source_video_url=result.public_url,
+                    source_download_url=result.provider_video_url,
+                    world_refs=list(result.world_refs),
+                    primary_world_ref=result.primary_world_ref,
+                    required=False,
+                )
 
             async def _run_video_clip_with_capture(clip: dict[str, Any]) -> tuple[int, dict[str, Any], Optional[VideoGenerationResult], Optional[Exception]]:
                 try:
@@ -3998,7 +4361,7 @@ async def execute_storyboard(
                     if not clip_batch:
                         continue
 
-                    if enhanced_storage_enabled and batch_id == 1:
+                    if batch_id == 1:
                         if any(int(clip["clipIndex"]) == 1 for clip in clip_batch):
                             await _maybe_wait_for_video_gate(
                                 logical_batch_index=1,
@@ -4021,7 +4384,7 @@ async def execute_storyboard(
                             break
                         continue
 
-                    if enhanced_storage_enabled and batch_id == 2:
+                    if batch_id == 2:
                         await _maybe_wait_for_video_gate(
                             logical_batch_index=batch_id,
                             total_batches=total_batches,
@@ -4050,7 +4413,27 @@ async def execute_storyboard(
 
             if video_failures:
                 failure_preview = " | ".join(video_failures[:MAX_VIDEO_FAILURES_IN_MESSAGE])
-                raise ValueError(f"Storyboard video generation stopped after first failure: {failure_preview}")
+                first_failed_clip_index: Optional[int] = None
+                match = re.search(r"clip\s+(\d+)", failure_preview)
+                if match:
+                    try:
+                        first_failed_clip_index = int(match.group(1))
+                    except Exception:
+                        first_failed_clip_index = None
+                await _persist_storyboard_resume_state(
+                    status="interrupted",
+                    phase_name="videos",
+                    failed_clip_index=first_failed_clip_index,
+                    failure_message=failure_preview,
+                )
+                await _emit_executor_progress(
+                    f"Video generation paused after a recoverable failure. Send continue to resume from the latest timeline state. {failure_preview}"
+                )
+                return (
+                    "execute_storyboard paused: video_generation_failed; "
+                    f"completed_videos={len(generated_videos)}, pending_videos={len(ordered_pending_clip_indexes) - completed_count}, "
+                    f"failure={failure_preview}"
+                )
 
     # Keep the tool result compact; per-asset cards are emitted as regular assistant messages.
     await _emit_executor_progress(_executor_progress_message("finalize", preferred_language))

@@ -1,7 +1,7 @@
 #server/routers/chat_router.py
 from fastapi import APIRouter, Request
-from services.chat_service import handle_chat
-from services.stream_service import get_stream_task
+from services.chat_service import handle_chat, persist_cancelled_resume_state
+from services.stream_service import get_stream_task, get_stream_task_metadata
 from services.video_gate_service import approve_video_gate
 
 router = APIRouter(prefix="/api")
@@ -39,6 +39,12 @@ async def cancel_chat(session_id: str):
         {"status": "not_found_or_done"} if no such task exists or it is already done.
     """
     task = get_stream_task(session_id)
+    metadata = get_stream_task_metadata(session_id) or {}
+    await persist_cancelled_resume_state(
+        session_id=session_id,
+        canvas_id=metadata.get("canvas_id"),
+        user_id=metadata.get("user_id"),
+    )
     if task and not task.done():
         task.cancel()
         return {"status": "cancelled"}

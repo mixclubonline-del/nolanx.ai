@@ -66,7 +66,6 @@ export function TimelineControls({
             <button
               onClick={handleExportFullscreen}
               className="flex items-center gap-1.5 p-2.5 rounded-xl bg-white/90 dark:bg-black/90 backdrop-blur-sm border border-black/30 dark:border-white/20 hover:border-black/50 dark:hover:border-white/30 transition-all duration-200 hover:scale-105 shadow-lg"
-              title="Export and play fullscreen"
             >
               <Play className="w-4 h-4 text-orange-600 dark:text-orange-400" />
               <Expand className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400" />
@@ -76,7 +75,6 @@ export function TimelineControls({
               <button
                 onClick={handlePlayPause}
                 className="p-2.5 rounded-xl bg-white/80 dark:bg-black/80 backdrop-blur-sm border border-black/30 dark:border-white/20 hover:border-black/50 dark:hover:border-white/30 transition-all duration-200 hover:scale-105 shadow-lg"
-                title={isPlaying ? t('canvas:timeline.tooltips.pause') : t('canvas:timeline.tooltips.play')}
               >
                 {isPlaying ? (
                   <Pause className="w-4 h-4 text-orange-600 dark:text-orange-400" />
@@ -88,7 +86,6 @@ export function TimelineControls({
               <button
                 onClick={handleExportFullscreen}
                 className="pointer-events-none -ml-1 translate-x-2 opacity-0 p-2.5 rounded-xl bg-white/92 text-black dark:bg-black/92 dark:text-white backdrop-blur-sm border border-black/20 dark:border-white/20 shadow-lg transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-x-0 group-hover:opacity-100"
-                title="Export and play fullscreen"
               >
                 <Expand className="w-4 h-4" />
               </button>
