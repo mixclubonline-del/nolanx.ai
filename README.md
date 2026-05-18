@@ -1,5 +1,7 @@
 # NolanX
 
+<video src="https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/nolanx.mp4" controls autoplay muted loop playsinline preload="auto" width="100%"></video>
+
 Open-source long-runtime multi-modal agent infrastructure for filmmaking.
 
 ![NolanX Home](apps/web/public/nolanx-home.png)
