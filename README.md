@@ -1,6 +1,10 @@
 # NolanX
 
-[![NolanX demo video](apps/web/public/readme/nolanx-preview.gif)](https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/nolanx.mp4)
+<p align="center">
+  <a href="https://pub-fb1cce7145174a7b9989934451fb797a.r2.dev/nolanx/nolanx.mp4">
+    <img src="apps/web/public/readme/nolanx-preview.gif" alt="NolanX demo video" />
+  </a>
+</p>
 
 Open-source long-runtime multi-modal agent infrastructure for filmmaking.
 
