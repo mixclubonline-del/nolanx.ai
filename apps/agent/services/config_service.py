@@ -54,7 +54,7 @@ class ConfigService:
     def _with_defaults(self, config):
         config.setdefault("openrouter", {})
         config["openrouter"].setdefault("url", "https://openrouter.ai/api/v1")
-        config["openrouter"].setdefault("model", "google/gemini-3.1-pro-preview")
+        config["openrouter"].setdefault("model", "google/gemini-3.5-flash")
         config["openrouter"].setdefault("site_url", "http://localhost:3000")
         config["openrouter"].setdefault("site_name", "NolanX")
         config["openrouter"].setdefault("max_tokens", 8192)

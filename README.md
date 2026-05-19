@@ -100,7 +100,7 @@ The stack is layered by capability.
 ### Text
 
 - key: `OPENROUTER_API_KEY`
-- default model: `google/gemini-3.1-pro-preview`
+- default model: `google/gemini-3.5-flash`
 - responsibility: chat, planning, screenplay generation, routing, general reasoning
 - link: [OpenRouter](https://openrouter.ai/workspaces/default/keys)
 - self-host note: this is the first provider family you swap or extend

@@ -53,7 +53,7 @@ export class RuntimeConfigService {
     const stored = this.readStoredConfig();
     return {
       openrouter_api_key: stored.openrouter_api_key || this.envValue('OPENROUTER_API_KEY'),
-      openrouter_model: stored.openrouter_model || this.envValue('OPENROUTER_MODEL') || 'google/gemini-3.1-pro-preview',
+      openrouter_model: stored.openrouter_model || this.envValue('OPENROUTER_MODEL') || 'google/gemini-3.5-flash',
       image_api_key: stored.image_api_key || this.envValue('IMAGE_API_KEY') || this.envValue('FAL_KEY') || this.envValue('REELMIND_FAL_KEY'),
       image_model: stored.image_model || this.envValue('IMAGE_MODEL') || 'openai/gpt-image-2',
       image_edit_model: stored.image_edit_model || this.envValue('IMAGE_EDIT_MODEL') || 'openai/gpt-image-2',
@@ -74,7 +74,7 @@ export class RuntimeConfigService {
     return {
       openrouter: {
         api_key: this.trim(editable.openrouter_api_key),
-        model: this.trim(editable.openrouter_model) || 'google/gemini-3.1-pro-preview',
+        model: this.trim(editable.openrouter_model) || 'google/gemini-3.5-flash',
         url: 'https://openrouter.ai/api/v1',
         site_url: appUrl,
         site_name: 'NolanX',

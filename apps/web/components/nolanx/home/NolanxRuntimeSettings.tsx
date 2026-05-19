@@ -20,7 +20,7 @@ import { eventBus } from '@/lib/nolanx/utils/event'
 import { cn } from '@/lib/utils'
 
 const DEFAULTS: RuntimeConfigData = {
-  openrouter_model: 'google/gemini-3.1-pro-preview',
+  openrouter_model: 'google/gemini-3.5-flash',
   image_model: 'openai/gpt-image-2',
   image_edit_model: 'openai/gpt-image-2',
   video_model: 'dreamina-seedance-2-0-260128',
@@ -304,7 +304,7 @@ export function NolanxRuntimeSettings({ compact = false }: { compact?: boolean }
                   <Input
                     value={config.openrouter_model || ''}
                     onChange={(e) => setField('openrouter_model', e.target.value)}
-                    placeholder="google/gemini-3.1-pro-preview"
+                    placeholder="google/gemini-3.5-flash"
                     className="h-11 rounded-2xl border-white/10 bg-black/20 text-white placeholder:text-white/28"
                   />
                 </Field>

@@ -1665,7 +1665,7 @@ async def _generate_structured_with_openrouter(
     }
 
     # Always follow config.toml's default OpenRouter model to keep behavior consistent.
-    configured_model_name = openrouter_config.get("model") or "google/gemini-3.1-pro-preview"
+    configured_model_name = openrouter_config.get("model") or "google/gemini-3.5-flash"
 
     model = ChatOpenAI(
         model=configured_model_name,
@@ -1824,7 +1824,7 @@ async def generate_structured_output(
 
     # The model used is always the OpenRouter configured model for consistency.
     openrouter_config = config_service.get_service_config("openrouter") or {}
-    configured_model_name = openrouter_config.get("model") or "google/gemini-3.1-pro-preview"
+    configured_model_name = openrouter_config.get("model") or "google/gemini-3.5-flash"
     configured_max_tokens = int(openrouter_config.get("max_tokens", 8192) or 8192)
     structured_max_tokens = int(
         openrouter_config.get("structured_output_max_tokens", max(configured_max_tokens, MIN_STRUCTURED_OUTPUT_MAX_TOKENS))

@@ -22,7 +22,7 @@ def get_model_config():
     return {
         "provider": provider,
         "url": provider_config.get("url", "https://openrouter.ai/api/v1"),
-        "model": provider_config.get("model", "google/gemini-3.1-pro-preview"),
+        "model": provider_config.get("model", "google/gemini-3.5-flash"),
         "max_tokens": provider_config.get("max_tokens", 8192),
         "temperature": provider_config.get("temperature", 0.1),
         "disable_streaming": bool(provider_config.get("disable_streaming", True)),
