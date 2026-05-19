@@ -1,6 +1,6 @@
 "use client"
 
-import { getChatSession, sendMessages, createChatSession, forkSession } from '@/lib/nolanx/api/chat'
+import { getActiveChatTasks, getChatSession, sendMessages, createChatSession, forkSession } from '@/lib/nolanx/api/chat'
 import { getSharedChatHistory } from '@/lib/nolanx/api/canvas'
 import Blur from '@/components/nolanx/common/Blur'
 import { ScrollArea } from '../ui/scroll-area'
@@ -64,6 +64,11 @@ function shouldHideMessage(message: Message): boolean {
 
 function filterMessages(messages: Message[]): Message[] {
   return messages.filter((m) => !shouldHideMessage(m))
+}
+
+async function isSessionTaskActive(sessionId: string): Promise<boolean> {
+  const status = await getActiveChatTasks()
+  return status.activeSessions.includes(sessionId)
 }
 
 type ChatInterfaceProps = {
@@ -666,10 +671,21 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
         }
       } else {
         // 正常模式：直接加载消息
+        const activeStatePromise = isSessionTaskActive(sessionId)
+          .then((isActive) => {
+            if (sessionIdRef.current === sessionId) {
+              setPending(isActive ? 'text' : false)
+            }
+          })
+          .catch((error) => {
+            console.warn('Failed to sync initial active chat state:', error)
+          })
+
         const msgs = await getChatSession(sessionId)
         const messages = filterMessages(msgs?.length ? msgs : [])
         setMessages(messages)
         setExpandingToolCalls([])
+        await activeStatePromise
         if (messages.length > 0) {
           setInitCanvas(false)
         }
@@ -687,6 +703,50 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   useEffect(() => {
     initChat()
   }, [sessionId, initChat])
+
+  useEffect(() => {
+    if (!sessionId || isShared || !pending) {
+      return
+    }
+
+    let disposed = false
+
+    const syncActiveState = async () => {
+      try {
+        const isActive = await isSessionTaskActive(sessionId)
+        if (disposed || sessionIdRef.current !== sessionId) {
+          return
+        }
+
+        if (isActive) {
+          return
+        }
+
+        setPending(false)
+        const msgs = await getChatSession(sessionId)
+        if (disposed || sessionIdRef.current !== sessionId) {
+          return
+        }
+
+        setMessages(filterMessages(msgs?.length ? msgs : []))
+        setExpandingToolCalls([])
+        eventBus.emit('Canvas::DataUpdated', {
+          canvasId,
+          trigger: 'history_sync',
+        })
+        scrollToBottom(true)
+      } catch (error) {
+        console.warn('Failed to sync active chat state:', error)
+      }
+    }
+
+    const timer = window.setInterval(syncActiveState, 5000)
+
+    return () => {
+      disposed = true
+      window.clearInterval(timer)
+    }
+  }, [canvasId, isShared, pending, scrollToBottom, sessionId])
 
   // 清理定时器
   useEffect(() => {

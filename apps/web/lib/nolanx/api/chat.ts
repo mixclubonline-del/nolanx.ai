@@ -46,6 +46,21 @@ export const cancelChat = async (sessionId: string): Promise<ApiResponse<any>> =
   return apiClient.post<ApiResponse<any>>(`/chat/session/${sessionId}/cancel`);
 }
 
+export interface ActiveChatTasksStatus {
+  activeTaskCount: number
+  activeSessions: string[]
+}
+
+export const getActiveChatTasks = async (): Promise<ActiveChatTasksStatus> => {
+  const res = await apiClient.get<ApiResponse<ActiveChatTasksStatus> | ActiveChatTasksStatus>('/chat/status/active-tasks')
+  const data = 'data' in res ? res.data : res
+
+  return {
+    activeTaskCount: Number(data?.activeTaskCount || 0),
+    activeSessions: Array.isArray(data?.activeSessions) ? data.activeSessions : [],
+  }
+}
+
 export const approveVideoGate = async (sessionId: string, reason = 'generate_now'): Promise<ApiResponse<any>> => {
   return apiClient.post<ApiResponse<any>>(`/chat/session/${sessionId}/video-gate/approve`, { reason });
 }

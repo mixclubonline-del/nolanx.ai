@@ -13,6 +13,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from '@/lib/nolanx/i18n/useTranslation'
 import { toast } from 'sonner'
 import '@/styles/nolanx/nolan-dreamlike-chat.css'
+import { NolanxRuntimeSettings } from '@/components/nolanx/home/NolanxRuntimeSettings'
 
 type ChatTextareaProps = {
   pending: boolean
@@ -506,6 +507,7 @@ const ChatTextarea: React.FC<ChatTextareaProps> = ({
                 <PlusIcon className="size-4" />
               )}
             </button>
+            <NolanxRuntimeSettings compact />
           </div>
 
           {showSleepButton ? (
