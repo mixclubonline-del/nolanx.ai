@@ -51,6 +51,9 @@ def get_video_model_config():
 
 def create_llm_model():
     """Create and configure the LLM model instance."""
+    # Reload runtime config on each model creation so UI/API updates are visible
+    # to the long-lived agent process without requiring a restart.
+    config_service.reload()
     model_config = get_model_config()
 
     provider = model_config["provider"]
