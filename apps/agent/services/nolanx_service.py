@@ -22,7 +22,8 @@ import uuid
 from typing import List, Dict, Any, Set, Optional
 from langgraph_swarm import create_swarm
 from services.websocket_service import send_session_update
-from services.message_api_service import create_chat_message
+from services.message_api_service import create_chat_message, fetch_session_messages
+from services.api_client_service import api_client_service
 
 # Import modular components
 from .nolanx.config.models import create_llm_model, create_context_config, refresh_context_memory
@@ -60,8 +61,8 @@ from services.runtime_logger import (
 )
 
 
-TERMINAL_RESUME_STATUSES = {"cancelled", "completed"}
-RECOVERABLE_RESUME_STATUSES = {"running", "failed", "interrupted"}
+TERMINAL_RESUME_STATUSES = {"completed"}
+RECOVERABLE_RESUME_STATUSES = {"running", "failed", "interrupted", "cancelled"}
 RESUME_TOOL_PRIORITY = [
     "execute_storyboard",
     "generate_structured_output",
@@ -301,6 +302,71 @@ def _collect_uploaded_audio_urls(messages: List[Dict[str, Any]]) -> List[str]:
     return _dedupe_keep_order(collected)
 
 
+def _iter_canvas_timeline_assets(canvas: Dict[str, Any]) -> List[Dict[str, Any]]:
+    canvas_data = canvas.get("data") if isinstance(canvas, dict) and isinstance(canvas.get("data"), dict) else canvas
+    timeline = (canvas_data or {}).get("timeline") if isinstance(canvas_data, dict) else None
+    tracks = (timeline or {}).get("tracks") if isinstance(timeline, dict) else []
+    assets: List[Dict[str, Any]] = []
+    for track in tracks if isinstance(tracks, list) else []:
+        for asset in (track or {}).get("assets") or []:
+            if isinstance(asset, dict):
+                assets.append(asset)
+    return assets
+
+
+async def _collect_canvas_timeline_media_urls(canvas_id: str, user_id: str) -> Dict[str, List[str]]:
+    if not canvas_id:
+        return {"image_urls": [], "video_urls": [], "audio_urls": []}
+    try:
+        canvas = await api_client_service.get_canvas_data(canvas_id, user_id=user_id)
+    except Exception:
+        canvas = None
+    image_urls: List[str] = []
+    video_urls: List[str] = []
+    audio_urls: List[str] = []
+    for asset in _iter_canvas_timeline_assets(canvas or {}):
+        content = asset.get("content") or {}
+        metadata = asset.get("metadata") or {}
+        storyboard = metadata.get("storyboard") or {}
+        for value in (
+            content.get("imageUrl"),
+            content.get("thumbnailUrl"),
+            content.get("posterUrl"),
+            metadata.get("thumbnailUrl"),
+            metadata.get("primaryImageUrl"),
+            metadata.get("inputImageUrl"),
+            *list(metadata.get("imageUrls") or []),
+            *list(storyboard.get("resolvedReferenceImageUrls") or []),
+        ):
+            if isinstance(value, str) and value.strip():
+                image_urls.append(value.strip())
+        for value in (
+            content.get("videoUrl"),
+            content.get("url"),
+            metadata.get("resourceUrl"),
+            metadata.get("videoUrl"),
+            metadata.get("primaryVideoUrl"),
+            metadata.get("providerVideoUrl"),
+            storyboard.get("providerVideoUrl"),
+            *list(metadata.get("referenceVideoUrls") or []),
+            *list(storyboard.get("resolvedReferenceVideoUrls") or []),
+        ):
+            if isinstance(value, str) and value.strip():
+                video_urls.append(value.strip())
+        for value in (
+            content.get("audioUrl"),
+            metadata.get("audioUrl"),
+            metadata.get("resourceUrl") if asset.get("type") == "audio" else None,
+        ):
+            if isinstance(value, str) and value.strip():
+                audio_urls.append(value.strip())
+    return {
+        "image_urls": _dedupe_keep_order(image_urls),
+        "video_urls": _dedupe_keep_order(video_urls),
+        "audio_urls": _dedupe_keep_order(audio_urls),
+    }
+
+
 def _detect_user_wants_self_insert(messages: List[Dict[str, Any]]) -> bool:
     for message in reversed(messages or []):
         if not isinstance(message, dict) or message.get("role") != "user":
@@ -336,6 +402,28 @@ def _extract_latest_user_text(messages: List[Dict[str, Any]]) -> str:
         if isinstance(message, dict) and message.get("role") == "user":
             return _extract_text_content(message.get("content")).strip()
     return ""
+
+
+def _merge_persisted_messages_for_resume(
+    persisted_messages: List[Dict[str, Any]],
+    request_messages: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    if not persisted_messages:
+        return list(request_messages or [])
+    merged = list(persisted_messages)
+    persisted_signatures = {
+        json.dumps(message, ensure_ascii=False, sort_keys=True, default=str)
+        for message in merged
+        if isinstance(message, dict)
+    }
+    for message in request_messages or []:
+        if not isinstance(message, dict):
+            continue
+        signature = json.dumps(message, ensure_ascii=False, sort_keys=True, default=str)
+        if signature not in persisted_signatures:
+            merged.append(message)
+            persisted_signatures.add(signature)
+    return merged
 
 
 def _extract_primary_user_text(messages: List[Dict[str, Any]]) -> str:
@@ -1325,6 +1413,21 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
             for message in raw_messages
         ]
         if is_continuation:
+            persisted_messages = await fetch_session_messages(session_id=session_id)
+            if persisted_messages:
+                resume_detection_messages = _merge_persisted_messages_for_resume(
+                    persisted_messages,
+                    resume_detection_messages,
+                )
+                log_runtime_event(
+                    "resume.persisted_messages.loaded",
+                    session_id=session_id,
+                    canvas_id=canvas_id,
+                    user_id=user_id,
+                    persisted_message_count=len(persisted_messages),
+                    merged_message_count=len(resume_detection_messages),
+                )
+        if is_continuation:
             for message in reversed(resume_detection_messages):
                 if isinstance(message, dict) and message.get("role") == "user":
                     message["_continuation_intent"] = True
@@ -1334,6 +1437,11 @@ async def nolanx_multi_agent(messages, canvas_id, session_id, user_id, preferred
         uploaded_image_urls = _collect_uploaded_image_urls(fixedMsgs)
         uploaded_video_urls = _collect_uploaded_video_urls(fixedMsgs)
         uploaded_audio_urls = _collect_uploaded_audio_urls(fixedMsgs)
+        if is_continuation:
+            timeline_media = await _collect_canvas_timeline_media_urls(canvas_id=canvas_id, user_id=user_id)
+            uploaded_image_urls = _dedupe_keep_order(uploaded_image_urls + timeline_media.get("image_urls", []))
+            uploaded_video_urls = _dedupe_keep_order(uploaded_video_urls + timeline_media.get("video_urls", []))
+            uploaded_audio_urls = _dedupe_keep_order(uploaded_audio_urls + timeline_media.get("audio_urls", []))
         user_wants_self_insert = _detect_user_wants_self_insert(fixedMsgs)
         primary_user_text = _extract_primary_user_text(fixedMsgs)
         preferred_language = str(preferred_language or "").strip() or _detect_preferred_language(primary_user_text)

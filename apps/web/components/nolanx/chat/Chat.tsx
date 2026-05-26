@@ -166,6 +166,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
   const [pending, setPending] = useState<PendingType>(
     initCanvas ? 'text' : false
   )
+  const [serverTaskActive, setServerTaskActive] = useState(false)
 
   // 重放相关状态
   const [isReplaying, setIsReplaying] = useState(false)
@@ -178,6 +179,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   const sessionIdRef = useRef<string>(session?.id || '')
   const [expandingToolCalls, setExpandingToolCalls] = useState<string[]>([])
+  const isAgentRunning = Boolean(pending || serverTaskActive)
 
   const scrollRef = useRef<HTMLDivElement>(null)
   const isAtBottomRef = useRef(false)
@@ -258,6 +260,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       }
 
       setPending('text')
+      setServerTaskActive(true)
       setMessages(
         produce((prev) => {
           const last = prev.at(-1)
@@ -313,18 +316,22 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
             case 'generate_image':
             case 'edit_image':
               setPending('image')
+              setServerTaskActive(true)
               break
             case 'generate_video':
             case 'generate_video_first_last_frame':
               setPending('video')
+              setServerTaskActive(true)
               break
             case 'generate_audio':
             case 'generate_tts_audio':
             case 'generate_music':
               setPending('audio')
+              setServerTaskActive(true)
               break
             default:
               setPending('tool')
+              setServerTaskActive(true)
               break
           }
 
@@ -376,18 +383,22 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
                 case 'generate_image':
                 case 'edit_image':
                   setPending('image')
+                  setServerTaskActive(true)
                   break
                 case 'generate_video':
                 case 'generate_video_first_last_frame':
                   setPending('video')
+                  setServerTaskActive(true)
                   break
                 case 'generate_audio':
                 case 'generate_tts_audio':
                 case 'generate_music':
                   setPending('audio')
+                  setServerTaskActive(true)
                   break
                 default:
                   setPending('tool')
+                  setServerTaskActive(true)
                   break
               }
             }
@@ -437,6 +448,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
       console.log('⭐️dispatching image_generated', data)
       setPending('image')
+      setServerTaskActive(true)
 
       // Notify timeline to refresh data
       console.log('📤 Chat emitting Canvas::DataUpdated event for image_generated');
@@ -460,6 +472,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
       console.log('🎬 dispatching video_generated', data)
       setPending('video')
+      setServerTaskActive(true)
 
       // Notify timeline to refresh data
       console.log('📤 Chat emitting Canvas::DataUpdated event for video_generated');
@@ -483,6 +496,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
       console.log('🎵 dispatching audio_generated', data)
       setPending('audio')
+      setServerTaskActive(true)
 
       // Notify timeline to refresh data
       console.log('📤 Chat emitting Canvas::DataUpdated event for audio_generated');
@@ -536,22 +550,34 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   const handleDone = useCallback(
     (data: TEvents['Socket::Session::Done']) => {
-      if (data.session_id && data.session_id !== sessionId) {
+      if (!sessionId || (data.session_id && data.session_id !== sessionId)) {
         return
       }
 
-      setPending(false)
+      void isSessionTaskActive(sessionId)
+        .then((isActive) => {
+          if (sessionIdRef.current !== sessionId) {
+            return
+          }
+          setServerTaskActive(isActive)
+          setPending(isActive ? 'text' : false)
+        })
+        .catch(() => {
+          setPending(false)
+          setServerTaskActive(false)
+        })
       scrollToBottom()
 
       // Note: No need to emit Canvas::DataUpdated for conversation_done
       // Timeline and canvas components now only refresh for actual content generation
       console.log('✅ Conversation completed - no refresh needed');
     },
-    [sessionId, scrollToBottom, canvasId]
+    [sessionId, scrollToBottom]
   )
 
   const handleError = useCallback((data: TEvents['Socket::Session::Error']) => {
     setPending(false)
+    setServerTaskActive(false)
     const raw = String(data.error || '')
     const httpMatch = raw.match(/HTTP\\s+(\\d{3})/i)
     const jsonStart = raw.indexOf('{')
@@ -580,6 +606,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     }
     if (data.info === 'chat_cancelled') {
       setPending(false)
+      setServerTaskActive(false)
     }
     toast.info(data.info, {
       closeButton: true,
@@ -674,6 +701,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
         const activeStatePromise = isSessionTaskActive(sessionId)
           .then((isActive) => {
             if (sessionIdRef.current === sessionId) {
+              setServerTaskActive(isActive)
               setPending(isActive ? 'text' : false)
             }
           })
@@ -698,14 +726,15 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
     // Force scroll to bottom when initializing chat
     scrollToBottom(true)
-  }, [sessionId, scrollToBottom, setInitCanvas, isShared])
+  }, [sessionId, scrollToBottom, setInitCanvas, isShared, startReplay])
 
   useEffect(() => {
     initChat()
   }, [sessionId, initChat])
 
   useEffect(() => {
-    if (!sessionId || isShared || !pending) {
+    if (!sessionId || isShared) {
+      setServerTaskActive(false)
       return
     }
 
@@ -718,7 +747,16 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
           return
         }
 
+        const wasRunning = Boolean(pending || serverTaskActive)
+        setServerTaskActive(isActive)
         if (isActive) {
+          if (!pending) {
+            setPending('text')
+          }
+          return
+        }
+
+        if (!wasRunning) {
           return
         }
 
@@ -740,13 +778,14 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       }
     }
 
+    void syncActiveState()
     const timer = window.setInterval(syncActiveState, 5000)
 
     return () => {
       disposed = true
       window.clearInterval(timer)
     }
-  }, [canvasId, isShared, pending, scrollToBottom, sessionId])
+  }, [canvasId, isShared, pending, scrollToBottom, serverTaskActive, sessionId])
 
   // 清理定时器
   useEffect(() => {
@@ -808,6 +847,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       }
 
       setPending('text')
+      setServerTaskActive(true)
       setMessages(data)
 
       await sendMessages({
@@ -827,12 +867,12 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
       scrollToBottom()
     },
-    [canvasId, preferredLanguage, sessionId, searchSessionId, scrollToBottom]
+    [buildCanvasUrl, canvasId, preferredLanguage, sessionId, searchSessionId, scrollToBottom]
   )
 
   const onSendMessages = useCallback(
     (data: Message[]) => {
-      if (pending) {
+      if (isAgentRunning) {
         queuePausedRef.current = false
         const newUserMessages = data.slice(messages.length).filter((message) => message.role === 'user')
         if (newUserMessages.length === 0) {
@@ -848,17 +888,18 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
         toast.error(t('common:errors.generic'))
       })
     },
-    [messages.length, pending, scrollToBottom, submitMessages, t]
+    [isAgentRunning, messages.length, scrollToBottom, submitMessages, t]
   )
 
   const handleCancelChat = useCallback(() => {
     queuePausedRef.current = true
     setQueuedUserMessages([])
     setPending(false)
+    setServerTaskActive(false)
   }, [])
 
   useEffect(() => {
-    if (pending || queuedUserMessages.length === 0 || queuedMessageInFlightRef.current || queuePausedRef.current) {
+    if (isAgentRunning || queuedUserMessages.length === 0 || queuedMessageInFlightRef.current || queuePausedRef.current) {
       return
     }
 
@@ -875,7 +916,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
       .finally(() => {
         queuedMessageInFlightRef.current = false
       })
-  }, [messages, pending, queuedUserMessages, submitMessages])
+  }, [isAgentRunning, messages, queuedUserMessages, submitMessages])
 
   const getMessageRenderKey = useCallback((message: Message, idx: number): string => {
     const messageMeta = message as Message & { id?: string; created_at?: string }
@@ -997,7 +1038,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
               {sessionId && <VideoGenerationGateDialog sessionId={sessionId} />}
               <ChatTextarea
                 sessionId={sessionId!}
-                pending={!!pending}
+                pending={isAgentRunning}
                 messages={messages}
                 showSleepButton
                 queuedMessageCount={queuedUserMessages.length}

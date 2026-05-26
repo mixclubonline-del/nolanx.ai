@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
@@ -56,6 +57,19 @@ export function NolanxHome() {
 
   return (
     <div className="nolanx-video-home flex h-full flex-col bg-[#050403] text-white">
+      <div className="pointer-events-none fixed left-3 top-3 z-50 flex items-center gap-1.5 md:left-4 md:top-4">
+        <Image
+          src="/logo_dark_nolanx.png"
+          alt="NolanX"
+          width={112}
+          height={34}
+          priority
+          className="h-auto w-24 object-contain drop-shadow-[0_14px_30px_rgba(0,0,0,0.38)]"
+        />
+        <span className="rounded-full border border-[#f37021] bg-[#f37021] px-1.5 py-0.5 text-[10px] font-semibold leading-none tracking-[0.1em] text-black shadow-[0_10px_26px_rgba(243,112,33,0.24)]">
+          V1.1
+        </span>
+      </div>
       <ScrollArea className="h-full">
         <div className="relative isolate overflow-hidden">
           <div className="relative flex min-h-[88svh] flex-col items-center justify-center px-4 pb-32 pt-[92px] md:min-h-[104svh] md:px-6 md:pb-44 md:pt-[108px]">

@@ -39,6 +39,9 @@ from .timeline_utils import create_script_asset
 
 
 CANONICAL_VIDEO_DURATION_SECONDS = 15
+BRIDGE_VIDEO_DURATION_SECONDS = 5
+MAIN_VIDEO_DURATION_SECONDS = 15
+BRIDGE_ARCHITECTURE_CYCLE_SECONDS = BRIDGE_VIDEO_DURATION_SECONDS + MAIN_VIDEO_DURATION_SECONDS
 MIN_STRUCTURED_OUTPUT_MAX_TOKENS = 16384
 DEFAULT_STRUCTURED_OUTPUT_ATTEMPTS = 2
 DEFAULT_STRUCTURED_MODEL_RETRIES = 0
@@ -476,8 +479,25 @@ def _is_storyboard_schema(output_schema: Dict[str, Any]) -> bool:
     return all(key in props for key in ("title", "premise", "shots", "script_segments", "bible", "screenplay"))
 
 
+def _as_dict(value: Any) -> dict[str, Any]:
+    return value if isinstance(value, dict) else {}
+
+
+def _as_list(value: Any) -> list[Any]:
+    return value if isinstance(value, list) else []
+
+
+def _schema_expects_object(schema: Any) -> bool:
+    if not isinstance(schema, dict):
+        return False
+    schema_type = schema.get("type")
+    if isinstance(schema_type, list):
+        return "object" in schema_type
+    return schema_type == "object" or isinstance(schema.get("required"), list)
+
+
 def _storyboard_overview_schema(output_schema: Dict[str, Any]) -> Dict[str, Any]:
-    props = copy.deepcopy(output_schema.get("properties") or {})
+    props = copy.deepcopy(_as_dict(_as_dict(output_schema).get("properties")))
     overview_props = {
         key: props[key]
         for key in (
@@ -547,9 +567,9 @@ def _storyboard_overview_schema(output_schema: Dict[str, Any]) -> Dict[str, Any]
 
 
 def _storyboard_shot_chunk_schema(output_schema: Dict[str, Any]) -> Dict[str, Any]:
-    props = output_schema.get("properties") or {}
-    shot_schema = copy.deepcopy(((props.get("shots") or {}).get("items")) or {"type": "object"})
-    segment_schema = copy.deepcopy(((props.get("script_segments") or {}).get("items")) or {"type": "object"})
+    props = _as_dict(_as_dict(output_schema).get("properties"))
+    shot_schema = copy.deepcopy(_as_dict(props.get("shots")).get("items") or {"type": "object"})
+    segment_schema = copy.deepcopy(_as_dict(props.get("script_segments")).get("items") or {"type": "object"})
     return {
         "type": "object",
         "required": ["shot", "script_segment", "brief_summary"],
@@ -585,33 +605,52 @@ def _safe_int(value: Any, default: int) -> int:
 
 
 def _normalize_storyboard_blueprints(overview: Dict[str, Any]) -> list[dict[str, Any]]:
-    story_metrics = overview.get("story_metrics") or {}
+    overview = _as_dict(overview)
+    story_metrics = _as_dict(overview.get("story_metrics"))
     total_duration = _safe_int(overview.get("total_duration_seconds"), 0)
     clip_count = _safe_int(story_metrics.get("clip_count"), 0)
-    blueprints = overview.get("shot_blueprints") or []
-    if not isinstance(blueprints, list):
-        blueprints = []
+    blueprints = _as_list(overview.get("shot_blueprints"))
 
     if clip_count <= 0:
-        clip_count = len(blueprints) if blueprints else max(1, total_duration // CANONICAL_VIDEO_DURATION_SECONDS)
+        clip_count = len(blueprints) if blueprints else max(
+            1,
+            (total_duration + BRIDGE_ARCHITECTURE_CYCLE_SECONDS - 1) // BRIDGE_ARCHITECTURE_CYCLE_SECONDS * 2,
+        )
     if clip_count <= 0:
         clip_count = 1
 
     normalized: list[dict[str, Any]] = []
+    cursor_sec = 0
     for idx in range(clip_count):
         raw = blueprints[idx] if idx < len(blueprints) and isinstance(blueprints[idx], dict) else {}
-        start_sec = _safe_int(raw.get("start_sec"), idx * CANONICAL_VIDEO_DURATION_SECONDS)
-        duration_seconds = _safe_int(raw.get("duration_seconds"), CANONICAL_VIDEO_DURATION_SECONDS)
-        if duration_seconds <= 0:
-            duration_seconds = CANONICAL_VIDEO_DURATION_SECONDS
+        raw_role = str(raw.get("clip_role") or raw.get("role") or raw.get("shot_role") or "").strip().lower()
+        is_anchor = (
+            raw_role in {"bridge", "bridge_5s", "transition", "transition_5s", "anchor", "anchor_5s", "key_anchor_5s"}
+            or (not raw_role and idx % 2 == 0)
+        )
+        clip_role = "anchor_5s" if is_anchor else "story_15s"
+        default_duration = BRIDGE_VIDEO_DURATION_SECONDS if is_anchor else MAIN_VIDEO_DURATION_SECONDS
+        start_sec = _safe_int(raw.get("start_sec"), cursor_sec)
+        duration_seconds = _safe_int(raw.get("duration_seconds"), default_duration)
+        if clip_role == "anchor_5s":
+            duration_seconds = BRIDGE_VIDEO_DURATION_SECONDS
+        elif duration_seconds <= 0:
+            duration_seconds = MAIN_VIDEO_DURATION_SECONDS
         end_sec = _safe_int(raw.get("end_sec"), start_sec + duration_seconds)
         if end_sec <= start_sec:
             end_sec = start_sec + duration_seconds
+        cursor_sec = end_sec
         normalized.append({
             "index": idx + 1,
             "start_sec": start_sec,
             "end_sec": end_sec,
             "duration_seconds": duration_seconds,
+            "clip_role": clip_role,
+            "anchor_group_index": idx // 2 + 1 if clip_role == "anchor_5s" else None,
+            "anchor_pair": {
+                "previous_anchor_index": idx if clip_role == "story_15s" else None,
+                "next_anchor_index": idx + 2 if clip_role == "story_15s" else None,
+            },
             "title": str(raw.get("title") or f"Shot {idx + 1}").strip(),
             "goal": str(raw.get("goal") or "").strip(),
             "scene_tag": str(raw.get("scene_tag") or "").strip(),
@@ -640,6 +679,15 @@ def _normalize_storyboard_chunk(
     duration_seconds = _safe_int(shot.get("duration_seconds"), _safe_int(blueprint.get("duration_seconds"), CANONICAL_VIDEO_DURATION_SECONDS))
     if duration_seconds <= 0:
         duration_seconds = max(CANONICAL_VIDEO_DURATION_SECONDS, end_sec - start_sec)
+    clip_role = str(shot.get("clip_role") or blueprint.get("clip_role") or "").strip() or (
+        "anchor_5s" if duration_seconds <= BRIDGE_VIDEO_DURATION_SECONDS else "story_15s"
+    )
+    if clip_role == "anchor_5s":
+        duration_seconds = BRIDGE_VIDEO_DURATION_SECONDS
+        end_sec = start_sec + duration_seconds
+    elif duration_seconds <= BRIDGE_VIDEO_DURATION_SECONDS:
+        duration_seconds = MAIN_VIDEO_DURATION_SECONDS
+        end_sec = start_sec + duration_seconds
     binding_lock = str(shot.get("binding_lock") or f"SHOT_{shot_index:03d}_LOCK").strip()
 
     world_refs = shot.get("world_refs") if isinstance(shot.get("world_refs"), list) else []
@@ -663,8 +711,8 @@ def _normalize_storyboard_chunk(
 
     subshots = shot.get("subshots") if isinstance(shot.get("subshots"), list) else []
     provided_subshots = [sub for sub in subshots if isinstance(sub, dict)]
-    target_subshot_count = len(provided_subshots) if provided_subshots else 6
-    target_subshot_count = max(1, min(CANONICAL_VIDEO_DURATION_SECONDS, target_subshot_count))
+    target_subshot_count = len(provided_subshots) if provided_subshots else (2 if clip_role == "anchor_5s" else 6)
+    target_subshot_count = max(1, min(duration_seconds, target_subshot_count))
     default_cameras = [
         "continuation pickup framing",
         "medium action follow",
@@ -677,7 +725,7 @@ def _normalize_storyboard_chunk(
     ]
     normalized_subshots: list[Dict[str, Any]] = []
     boundaries = [
-        round((CANONICAL_VIDEO_DURATION_SECONDS * idx) / target_subshot_count, 2)
+        round((duration_seconds * idx) / target_subshot_count, 2)
         for idx in range(target_subshot_count + 1)
     ]
 
@@ -718,6 +766,9 @@ def _normalize_storyboard_chunk(
     shot["start_sec"] = start_sec
     shot["end_sec"] = end_sec
     shot["duration_seconds"] = duration_seconds
+    shot["clip_role"] = clip_role
+    shot["anchor_group_index"] = blueprint.get("anchor_group_index") or shot.get("anchor_group_index")
+    shot["anchor_pair"] = shot.get("anchor_pair") if isinstance(shot.get("anchor_pair"), dict) else blueprint.get("anchor_pair")
     shot["binding_lock"] = binding_lock
     shot["continuity_note"] = continuity_note
     shot["world_refs"] = [str(ref).strip() for ref in world_refs if str(ref).strip()]
@@ -728,6 +779,9 @@ def _normalize_storyboard_chunk(
     segment["shot_index"] = _safe_int(segment.get("shot_index"), shot_index)
     segment["start_sec"] = _safe_int(segment.get("start_sec"), start_sec)
     segment["end_sec"] = _safe_int(segment.get("end_sec"), end_sec)
+    segment["duration_seconds"] = _safe_int(segment.get("duration_seconds"), duration_seconds)
+    segment["clip_role"] = str(segment.get("clip_role") or shot.get("clip_role") or "").strip()
+    segment["anchor_pair"] = segment.get("anchor_pair") if isinstance(segment.get("anchor_pair"), dict) else shot.get("anchor_pair")
     segment["binding_lock"] = str(segment.get("binding_lock") or binding_lock).strip()
     segment["continuity_note"] = continuity_note
     segment_world_refs = segment.get("world_refs") if isinstance(segment.get("world_refs"), list) else []
@@ -975,16 +1029,17 @@ def _compact_storyboard_overview_for_shot_prompt(
     *,
     screenplay_text_limit: int = 1600,
 ) -> Dict[str, Any]:
+    overview = _as_dict(overview)
     compact: Dict[str, Any] = {
         "title": overview.get("title"),
         "premise": overview.get("premise"),
         "style": overview.get("style"),
         "aspect_ratio": overview.get("aspect_ratio"),
         "total_duration_seconds": overview.get("total_duration_seconds"),
-        "story_metrics": copy.deepcopy(overview.get("story_metrics") or {}),
-        "visual_bible": copy.deepcopy(overview.get("visual_bible") or overview.get("visualBible") or {}),
-        "audio": copy.deepcopy(overview.get("audio") or {}),
-        "safety": copy.deepcopy(overview.get("safety") or {}),
+        "story_metrics": copy.deepcopy(_as_dict(overview.get("story_metrics"))),
+        "visual_bible": copy.deepcopy(_as_dict(overview.get("visual_bible") or overview.get("visualBible"))),
+        "audio": copy.deepcopy(_as_dict(overview.get("audio"))),
+        "safety": copy.deepcopy(_as_dict(overview.get("safety"))),
     }
 
     screenplay = overview.get("screenplay") if isinstance(overview.get("screenplay"), dict) else {}
@@ -994,7 +1049,7 @@ def _compact_storyboard_overview_for_shot_prompt(
         "text_excerpt": _truncate_text(screenplay.get("text"), screenplay_text_limit),
     }
 
-    bible_elements = overview.get("bible", {}).get("elements") if isinstance(overview.get("bible"), dict) else []
+    bible_elements = _as_list(_as_dict(overview.get("bible")).get("elements"))
     compact["bible"] = {
         "elements": [
             {
@@ -1069,11 +1124,11 @@ async def _generate_storyboard_iteratively(
             "Do NOT write full detailed shots yet.\n"
             "Instead, produce:\n"
             "- title / premise / style / aspect ratio / total duration\n"
-            "- story_metrics with canonical 15-second clip planning\n"
+            "- story_metrics with alternating 5-second anchor shots and 15-second story shots\n"
             "- screenplay and summary in the user's language\n"
             "- bible.elements with stable world ids\n"
             "- audio / safety\n"
-            "- shot_blueprints: lightweight plan rows for every 15-second shot in order\n"
+            "- shot_blueprints: lightweight plan rows in this repeating architecture: 5s anchor, 15s story, 5s anchor, 15s story...\n"
             "Requirements:\n"
             "- Infer one global format intent for the package: overseas short drama / domestic short drama / cinematic film / advertisement / general video\n"
             "- Choose one top-level aspect_ratio for the whole package:\n"
@@ -1087,6 +1142,10 @@ async def _generate_storyboard_iteratively(
             "- Absorb any specialized user overlays such as overseas short drama adaptation, domestic short drama adaptation, character-sheet / three-view modeling, and pure no-human scene extraction\n"
             "- Treat character-sheet / three-view requirements as world-reference asset rules, not as the visual layout of normal story shots\n"
             "- shot_blueprints length MUST equal story_metrics.clip_count\n"
+            "- `clip_role` must be `anchor_5s` for the 5-second shots and `story_15s` for the 15-second shots\n"
+            "- 5-second `anchor_5s` shots are NOT filler: each one must be a carefully designed dramatic anchor that can be a key reaction, reveal, montage image, symbolic cutaway, power-shift beat, cliffhanger, or transition hook\n"
+            "- 15-second `story_15s` shots must be designed to connect from the previous 5-second anchor ending and land cleanly into the next 5-second anchor opening\n"
+            "- Use montage language aggressively where useful: elliptical cuts, symbolic inserts, sensory flashes, sound bridges, match cuts, and compressed action\n"
             "- Every shot_blueprint must include a concrete `continuity_note` describing how that clip enters from the previous clip and/or hands off to the next clip\n"
             "- Design clip-to-clip flow so consecutive 15-second clips feel editorially connected rather than abrupt\n"
             "- Each shot_blueprint should implicitly define an editorial bridge strategy such as match-on-action, eyeline carry, sound bridge, prop continuation, movement direction, or reaction hold\n"
@@ -1220,25 +1279,27 @@ async def _generate_storyboard_iteratively(
         next_blueprint = blueprints[batch_end] if batch_end < total_shots else None
         batch_schema = _storyboard_shot_batch_schema(output_schema, len(batch_blueprints))
         shot_prompt = (
-            f"Create EXACTLY {len(batch_blueprints)} detailed 15-second storyboard shots and their matching script segments in one batch.\n"
+            f"Create EXACTLY {len(batch_blueprints)} detailed storyboard shots and their matching script segments in one batch.\n"
             "This is part of a larger storyboard package.\n"
             "Return one JSON object with `items`, in the same order as the provided blueprints.\n"
             "Each `items[]` entry must contain exactly one `shot`, one `script_segment`, and one short `brief_summary`.\n"
             "Rules:\n"
             "- The number of returned `items` MUST equal the number of provided blueprints\n"
-            "- `items[i].shot.index`, `start_sec`, `end_sec`, and `duration_seconds` must match blueprint i\n"
+            "- `items[i].shot.index`, `start_sec`, `end_sec`, `duration_seconds`, and `clip_role` must match blueprint i\n"
+            "- If `clip_role` is `anchor_5s`, write it as a polished 5-second key anchor, not filler: it may carry a reveal, reaction, object clue, montage flash, visual metaphor, hard transition, or cliffhanger\n"
+            "- If `clip_role` is `story_15s`, write it as the full dramatic movement between the previous anchor and next anchor, with a clear beginning/middle/end and montage compression where useful\n"
             "- `items[i].script_segment` must be 1:1 aligned with `items[i].shot`\n"
             "- Keep continuity coherent across all shots inside this batch, and also respect the provided previous/next batch context\n"
             "- Write the shot as if you are filling a professional storyboard spreadsheet row, not writing a loose paragraph\n"
             "- `shot_description` should function like the final editable 画面描述 column\n"
             "- `characters[].description` should be concrete visual continuity descriptions, useful for casting / costume / look consistency\n"
-            "- Write the internal beat design as finely as needed across the 15-second shot\n"
-            "- `subshots` should normally contain 4-8 entries depending on dialogue density, action density, emotional rhythm, and whether the moment benefits from a longer take\n"
+            "- Write the internal beat design as finely as needed for that shot's actual duration and role\n"
+            "- For `anchor_5s`, `subshots` should usually contain 1-3 precise beats with strong visual intent; for `story_15s`, `subshots` should normally contain 4-8 entries depending on dialogue density, action density, emotional rhythm, and whether the moment benefits from a longer take\n"
             "- Each `subshot` must have a distinct beat_description plus concrete camera/action/emotion/audio detail\n"
             "- Make the shot feel visually rich and realistic through internal camera language, not a single flat description\n"
-            "- Keep the shot focused on one continuous dramatic scene beat, while still using multiple camera angles / viewpoints inside that 15-second unit\n"
+            "- Keep the shot focused on one continuous dramatic objective, while still using multiple camera angles / viewpoints when the duration supports it\n"
             "- Use multi-angle or multi-viewpoint cinematic beats when appropriate: wide, medium, close-up, detail insert, over-shoulder, reaction, motion-follow, environment/crowd beat\n"
-            "- Keep the multi-camera coverage abundant, but let all coverage serve the same dramatic objective so the 15-second shot feels unified rather than stitched together\n"
+            "- Keep the multi-camera coverage motivated, but let all coverage serve the same dramatic objective so each clip feels unified rather than stitched together\n"
             "- Give the internal subshots an editorial spine: entry hook, development, escalation, exit bridge\n"
             "- Make each cut motivated by action, eyeline, reaction, sound cue, movement, power shift, or information reveal rather than arbitrary angle changes\n"
             "- If dialogue or monologue exists, the subshots must protect performance continuity: cut around speaker emphasis, listener reaction, pauses, interruptions, subtext, and status changes rather than shredding the line unnaturally\n"
@@ -1252,7 +1313,7 @@ async def _generate_storyboard_iteratively(
             "- `lighting_mood` must describe practical light source, color tone, contrast, and atmosphere in a shootable way\n"
             "- `sound_effects` must describe the key editorial sound layer for the shot in a concrete way\n"
             "- `dialogue` may be an empty string if the shot should stay silent or rely only on montage / sound design\n"
-            "- Keep spoken dialogue brief, playable, and lip-syncable inside the 15-second clip\n"
+            "- Keep spoken dialogue brief, playable, and lip-syncable inside the actual clip duration\n"
             "- Use the package-level `audio` guidance for integrated dialogue / ambience / optional BGM inside the video itself, not as a separate required pipeline\n"
             "- Keep user-facing fields in the user's language\n"
             "- Fields ending in `_en` must be English\n"
@@ -1387,7 +1448,11 @@ async def _generate_storyboard_iteratively(
     final_output["script_segments"] = [item["script_segment"] for item in shot_results]
     if isinstance(final_output.get("story_metrics"), dict):
         final_output["story_metrics"]["clip_count"] = len(final_output["shots"])
-        final_output["story_metrics"]["canonical_clip_duration_seconds"] = CANONICAL_VIDEO_DURATION_SECONDS
+        final_output["story_metrics"]["clip_architecture"] = {
+            "pattern": "anchor_5s/story_15s",
+            "anchor_duration_seconds": BRIDGE_VIDEO_DURATION_SECONDS,
+            "story_duration_seconds": MAIN_VIDEO_DURATION_SECONDS,
+        }
     if final_output["shots"]:
         final_output["total_duration_seconds"] = final_output["shots"][-1].get("end_sec") or final_output.get("total_duration_seconds")
     missing_fields = _get_missing_required_fields(final_output, output_schema)
@@ -1463,9 +1528,13 @@ def _extract_json(text: str) -> str:
 
 
 def _validate_required_fields(output: Any, schema: Dict[str, Any]) -> None:
+    if _schema_expects_object(schema) and not isinstance(output, dict):
+        raise ValueError(
+            f"Structured output root must be an object for this schema, got {type(output).__name__}"
+        )
     if not isinstance(output, dict):
         return
-    required = schema.get("required") or []
+    required = _as_dict(schema).get("required") or []
     if not isinstance(required, list):
         return
     missing = [k for k in required if k not in output]
@@ -1474,11 +1543,11 @@ def _validate_required_fields(output: Any, schema: Dict[str, Any]) -> None:
 
 
 def _get_missing_required_fields(output: Any, schema: Dict[str, Any]) -> list[str]:
-    if not isinstance(output, dict):
-        return []
-    required = schema.get("required") or []
+    required = _as_dict(schema).get("required") or []
     if not isinstance(required, list):
         return []
+    if not isinstance(output, dict):
+        return [str(k) for k in required]
     return [str(k) for k in required if k not in output]
 
 
@@ -1518,7 +1587,7 @@ async def _repair_missing_required_fields(
             "type": "object",
             "required": remaining,
             "properties": {
-                key: copy.deepcopy((output_schema.get("properties") or {}).get(key, {"type": "object"}))
+                key: copy.deepcopy(_as_dict(_as_dict(output_schema).get("properties")).get(key, {"type": "object"}))
                 for key in remaining
             },
         }
@@ -1561,12 +1630,12 @@ async def _repair_missing_required_fields(
 
 
 _DURATION_RE = re.compile(
-    rf"\bduration\s*[:=]?\s*{CANONICAL_VIDEO_DURATION_SECONDS}(?:\s*(?:s|sec|secs|second|seconds))?\b",
+    r"\bduration\s*[:=]?\s*(?:5|15)(?:\s*(?:s|sec|secs|second|seconds))?\b",
     re.IGNORECASE,
 )
 
 _DURATION_SUFFIX_RE = re.compile(
-    rf"\s*\(?\s*duration\s*[:=]?\s*{CANONICAL_VIDEO_DURATION_SECONDS}(?:\s*(?:s|sec|secs|second|seconds))?\s*\)?\s*$",
+    r"\s*\(?\s*duration\s*[:=]?\s*(?:5|15)(?:\s*(?:s|sec|secs|second|seconds))?\s*\)?\s*$",
     re.IGNORECASE,
 )
 
@@ -1580,14 +1649,14 @@ def _ensure_duration_phrase(text: str, *, duration_seconds: int = CANONICAL_VIDE
     if _DURATION_RE.search(text):
         return text
 
-    # Keep prompts consistent: always use `duration: 15` (no "s") as a plain phrase.
+    # Keep prompts consistent: always use `duration: N` (no "s") as a plain phrase.
     # Prefer appending with a comma to avoid changing semantics.
     return text.rstrip().rstrip(".") + f", duration: {duration_seconds}"
 
 
 def _enforce_video_duration_in_prompts(structured_output: Any) -> Any:
     """
-    Ensure every shot prompt explicitly mentions the canonical 15-second duration.
+    Ensure every shot prompt explicitly mentions the architecture duration for that shot.
     This is purely prompt-level; actual duration is enforced in video/audio tools.
     """
     if not isinstance(structured_output, dict):
@@ -1599,6 +1668,12 @@ def _enforce_video_duration_in_prompts(structured_output: Any) -> Any:
     for shot in shots:
         if not isinstance(shot, dict):
             continue
+        duration_seconds = _safe_int(shot.get("duration_seconds"), CANONICAL_VIDEO_DURATION_SECONDS)
+        clip_role = str(shot.get("clip_role") or "").strip()
+        if clip_role == "anchor_5s":
+            duration_seconds = BRIDGE_VIDEO_DURATION_SECONDS
+        elif clip_role == "story_15s":
+            duration_seconds = MAIN_VIDEO_DURATION_SECONDS
         for key in (
             "motion_prompt_en",
             "visual_prompt_en",
@@ -1606,11 +1681,11 @@ def _enforce_video_duration_in_prompts(structured_output: Any) -> Any:
             "keyframe_edit_prompt_en",
         ):
             if key in shot and isinstance(shot.get(key), str):
-                shot[key] = _ensure_duration_phrase(shot[key])
+                shot[key] = _ensure_duration_phrase(shot[key], duration_seconds=duration_seconds)
         # For FLF, these prompts often get used to generate the two keyframes; still keep duration context explicit.
         for key in ("first_frame_prompt_en", "last_frame_prompt_en"):
             if key in shot and isinstance(shot.get(key), str):
-                shot[key] = _ensure_duration_phrase(shot[key])
+                shot[key] = _ensure_duration_phrase(shot[key], duration_seconds=duration_seconds)
 
     return structured_output
 
@@ -1665,7 +1740,7 @@ async def _generate_structured_with_openrouter(
     }
 
     # Always follow config.toml's default OpenRouter model to keep behavior consistent.
-    configured_model_name = openrouter_config.get("model") or "google/gemini-3.5-flash"
+    configured_model_name = openrouter_config.get("model") or "google/gemini-3.1-pro-preview"
 
     model = ChatOpenAI(
         model=configured_model_name,
@@ -1675,8 +1750,6 @@ async def _generate_structured_with_openrouter(
         max_retries=model_retries,
         max_tokens=max_tokens,
         temperature=0.2,
-        streaming=False,
-        disable_streaming=bool(openrouter_config.get("disable_streaming", True)),
         http_client=http_client,
         http_async_client=http_async_client,
         default_headers=extra_headers,
@@ -1742,6 +1815,10 @@ async def _generate_structured_with_openrouter(
 
             try:
                 structured_output = json.loads(_extract_json(last_text))
+                if _schema_expects_object(output_schema) and not isinstance(structured_output, dict):
+                    raise ValueError(
+                        f"Structured JSON root must be an object, got {type(structured_output).__name__}"
+                    )
                 missing_fields = _get_missing_required_fields(structured_output, output_schema)
                 if missing_fields:
                     structured_output = await _repair_missing_required_fields(
@@ -1824,7 +1901,7 @@ async def generate_structured_output(
 
     # The model used is always the OpenRouter configured model for consistency.
     openrouter_config = config_service.get_service_config("openrouter") or {}
-    configured_model_name = openrouter_config.get("model") or "google/gemini-3.5-flash"
+    configured_model_name = openrouter_config.get("model") or "google/gemini-3.1-pro-preview"
     configured_max_tokens = int(openrouter_config.get("max_tokens", 8192) or 8192)
     structured_max_tokens = int(
         openrouter_config.get("structured_output_max_tokens", max(configured_max_tokens, MIN_STRUCTURED_OUTPUT_MAX_TOKENS))
@@ -1974,6 +2051,10 @@ async def generate_structured_output(
                     model_timeout_seconds=structured_model_timeout_seconds,
                 )
             result["structured_output"] = _enforce_video_duration_in_prompts(result.get("structured_output"))
+            if not isinstance(result["structured_output"], dict):
+                raise ValueError(
+                    f"Structured output root must be an object before caching, got {type(result['structured_output']).__name__}"
+                )
             fingerprint = cache_latest_structured_output(
                 canvas_id=canvas_id,
                 session_id=session_id,

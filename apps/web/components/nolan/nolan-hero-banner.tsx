@@ -189,7 +189,7 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                 <div className="relative inline-block">
                   <div
                     className={`
-                      relative z-10 text-4xl md:text-5xl lg:text-6xl font-black
+                      relative z-10 flex items-start gap-2 text-4xl md:text-5xl lg:text-6xl font-black
                       tracking-[0.04em]
                       ${glitchActive ? 'nolan-logo-glitch' : ''}
                     `}
@@ -209,6 +209,9 @@ export function NolanHeroBanner({ transparent = false }: NolanHeroBannerProps) {
                       priority
                       className="h-auto w-[min(42vw,18rem)] object-contain"
                     />
+                    <span className="mt-1 shrink-0 rounded-full border border-[#f37021] bg-[#f37021] px-2 py-1 text-[10px] font-semibold leading-none tracking-[0.1em] text-black shadow-[0_10px_26px_rgba(243,112,33,0.24)] md:mt-2 md:text-xs">
+                      V1.1
+                    </span>
                   </div>
                   <div className="absolute -bottom-1 left-0 right-0 h-1 overflow-hidden">
                     <div className={`h-full w-full ${transparent || isDark ? 'bg-white' : 'bg-black'}`} />

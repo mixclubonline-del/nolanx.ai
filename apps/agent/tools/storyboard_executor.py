@@ -2,9 +2,9 @@
 Storyboard executor.
 
 Deterministic execution layer for the multi-agent system:
-- Writes detailed Script Track rows aligned 1:1 with 15-second clips first.
+- Writes detailed Script Track rows aligned 1:1 with alternating 5-second anchor and 15-second story clips first.
 - Then generates World Track assets (characters / locations / props / style anchors).
-- Generates the first clip with direct text-to-video, then continues sequentially with video-to-video using the nearest previous clips as references.
+- Generates 5-second dramatic anchors first, then fills the 15-second story clips between anchors with video-to-video references.
 - Keyframe Track is optional and no longer the default execution path.
 """
 
@@ -57,6 +57,8 @@ AGENT_REQUEST_NAMESPACE = uuid.UUID("2af58b64-a8f4-4c0e-9d49-7ef7f7d5b6d1")
 
 
 CANONICAL_DURATION_SECONDS = 15
+ANCHOR_DURATION_SECONDS = 5
+MAIN_STORY_DURATION_SECONDS = 15
 HALF_DURATION_SECONDS = CANONICAL_DURATION_SECONDS / 2
 WORLD_TRACK_MAX_ASSETS = 50
 WORLD_DURATION_TIERS_SECONDS = (8, 4, 2, 1)
@@ -65,8 +67,7 @@ WORLD_ASSET_REFERENCE_DURATION_SECONDS = 4
 WORLD_ASSET_VIDEO_BUDGET_SECONDS = 15
 MAX_EDIT_INPUT_IMAGES = 6
 MAX_FORMAL_VIDEO_REFERENCE_IMAGES = 9
-MAX_PARALLEL_WORLD_GENERATIONS = 4
-MAX_PARALLEL_VIDEO_GENERATIONS = 1
+MAX_PARALLEL_VIDEO_GENERATIONS = 7
 MAX_VIDEO_PROMPT_CHARS = 2500
 MAX_VIDEO_REF_LINES = 8
 MAX_VIDEO_BEAT_LINES = 8
@@ -83,6 +84,8 @@ WORLD_ASSET_PROMPT_QUALITY_SUFFIX = (
 MAX_FORMAL_VIDEO_INPUTS = 3
 VIDEO_GENERATION_BATCH_SIZE = 1
 CONTINUITY_TAIL_DURATION_SECONDS = 6
+ANCHOR_VIDEO_BATCH_SIZE = 8
+MAIN_VIDEO_BATCH_SIZE = 7
 FIRST_VIDEO_GATE_TIMEOUT_SECONDS = 120
 SECOND_BATCH_GATE_TIMEOUT_SECONDS = 120
 
@@ -281,10 +284,10 @@ _EXECUTOR_PROGRESS_MESSAGES: dict[str, dict[str, str]] = {
         "ko-KR": "",
     },
     "video_start": {
-        "en": "Generating {count} video clips sequentially with timeline continuity...",
-        "zh-CN": "正在按时间线连续性顺序生成 {count} 个视频片段...",
-        "ja-JP": "タイムラインの連続性を保ちながら {count} 本の動画クリップを順番に生成しています...",
-        "ko-KR": "타임라인 연속성을 유지하면서 {count}개의 비디오 클립을 순차 생성하는 중입니다...",
+        "en": "Generating {count} video clips with 5s anchors first, then 15s story clips between anchors...",
+        "zh-CN": "正在先生成 5 秒关键锚点，再生成锚点之间的 15 秒剧情片段，共 {count} 个视频片段...",
+        "ja-JP": "まず5秒のアンカーを生成し、その後アンカー間の15秒ストーリークリップを生成しています（計 {count} 本）...",
+        "ko-KR": "먼저 5초 앵커를 생성한 뒤 앵커 사이의 15초 스토리 클립을 생성하는 중입니다. 총 {count}개...",
     },
     "video_progress": {
         "en": "Video generation progressing: {done}/{total} clips committed to the timeline...",
@@ -756,11 +759,12 @@ def _select_preferred_continuity_reference_video(
 
     continuity_url = str(available_video_urls_by_clip.get(best_clip_index) or "").strip()
     if continuity_url:
+        candidate_context = clip_context_by_index.get(best_clip_index) or {}
         return {
             "source_clip_index": best_clip_index,
             "preferred_video_url": continuity_url,
             "public_video_url": continuity_url,
-            "duration_seconds": float(CANONICAL_DURATION_SECONDS),
+            "duration_seconds": _safe_float(candidate_context.get("duration_seconds"), CANONICAL_DURATION_SECONDS),
             "source_type": "full_clip_fallback",
             "reference_kind": "正式视频续接参考",
             "name": f"Clip {best_clip_index} full clip",
@@ -797,7 +801,10 @@ def _build_ordered_reference_prompt_block(
     if video_urls and continuity_source_type == "tail":
         lines.append(f"Continue from the final {continuity_duration:.1f}s tail of @video 1 without repeating or restarting it.")
     elif video_urls:
-        lines.append("Continue from @video 1 without repeating its content.")
+        if isinstance(continuity_ref, dict) and str(continuity_ref.get("preferred_video_url") or "").strip():
+            lines.append("Continue from @video 1 without repeating its content.")
+        else:
+            lines.append("Use @video references as visual, motion, and identity anchors only; do not continue or copy their story action.")
 
     ordered_world_refs: list[str] = []
     if isinstance(primary_world_ref, str) and primary_world_ref.strip():
@@ -811,7 +818,10 @@ def _build_ordered_reference_prompt_block(
         kind = str(element.get("kind") or "world asset")
         lines.append(f"@image {idx}: {name} / {kind}.")
     if image_urls:
-        lines.append("Use @image references as current-scene design locks.")
+        lines.append(
+            "Use @image references as current-scene design locks. If a required world audition video is unavailable, "
+            "treat its @image reference as the authoritative image-only world asset fallback for identity, costume, prop, location, and material continuity."
+        )
     return " ".join(lines).strip()
 
 
@@ -1292,6 +1302,8 @@ def _compose_locked_video_prompt(
     dialogue = _compact_text(shot.get("dialogue"), 120)
     voice_direction = _compact_text(shot.get("voice_direction"), 120)
     sound_effects = _compact_text(shot.get("sound_effects"), 120)
+    clip_role = _clip_role_for_shot(shot)
+    clip_duration = ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else MAIN_STORY_DURATION_SECONDS
     dialogue_lines = shot.get("dialogue_lines") or []
     global_audio = global_audio or {}
     global_music_prompt = _compact_text(global_audio.get("music_prompt_en"), 90)
@@ -1464,7 +1476,7 @@ def _compose_locked_video_prompt(
         "Do not restate the reference catalog, do not rename assets, and do not repeat identity/location summaries.",
         "Never render input videos or input images as quick flashes, inserted frames, picture-in-picture, montage cutaways, or visible reference plates; they must be integrated invisibly as continuity, identity, staging, and design locks.",
         "Move straight into the formal scene and express continuity, blocking, acting, and camera design by directly referring to @video N and @image N when needed.",
-        "Write the scene as a production-ready 15-second execution prompt with performance, staging, subshots, dialogue breaths, micro-expressions, action beats, and multi-camera coverage.",
+        f"Write the scene as a production-ready {clip_duration}-second execution prompt with performance, staging, subshots, dialogue breaths, micro-expressions, action beats, and multi-camera coverage.",
     ]
     if audition_labels:
         direct_scene_rules.append(
@@ -1477,15 +1489,15 @@ def _compose_locked_video_prompt(
         f"REFERENCE LOCK {binding_lock}.",
         " ".join(direct_scene_rules),
         "Core cinema lock: 2.35:1 anamorphic widescreen intent, highest practical resolution, 85mm focal length, T1.8 aperture, ARRI Master Primes lens feel, subtle film grain, bloom/halation, natural 24fps shutter-rule motion blur, top-tier cinematic CG texture, strong narrative tension, deep background defocus with oval bokeh.",
-        f"Formal clip requirement: build one continuous {CANONICAL_DURATION_SECONDS}-second dramatic scene, usually 4-8 motivated subshots with readable multi-camera coverage unless a sustained take is dramatically superior.",
+        f"Formal clip requirement: build one continuous {clip_duration}-second dramatic scene. For 5-second anchors, make every frame intentional and memorable; for 15-second story shots, use 4-8 motivated subshots unless a sustained take is dramatically superior.",
         "Unless the user explicitly requests a sustained take, every 2-second window should contain a meaningful camera beat, blocking change, performance escalation, or action punctuation.",
         "Keep multi-camera coverage abundant, but make the clip feel like one coherent dramatic event rather than a collage.",
-        "For action, fight, chase, transformation, impact, or combat beats: split the 15 seconds into 4-5 core action intervals and include exact 0.1s hit marks. Every hit mark must specify impact frame, screen shake, and particle/material ejection such as electric sparks, metal fragments, dust, debris, smoke, or energy pulses.",
+        f"For action, fight, chase, transformation, impact, or combat beats: split the {clip_duration} seconds into readable core action intervals and include exact 0.1s hit marks when impacts matter. Every hit mark must specify impact frame, screen shake, and particle/material ejection such as electric sparks, metal fragments, dust, debris, smoke, or energy pulses.",
         "Action camera rule: avoid centered static composition. Prefer orbital, handheld tracking, dolly zoom, motivated lateral tracking, impact push-in, recovery drift, quick editorial cutting, readable geography, and one dominant camera intention per time slice.",
         "Action wording rule: preserve asset identity 1:1, and avoid biological gore language; describe structural components, kinetic stress posture, armor plates, energy pulses, material response, silhouette deformation, and mechanical collapse instead.",
         "Make the internal cuts feel motivated and continuous: preserve eyeline logic, screen direction, movement flow, prop continuity, and sound carry whenever relevant.",
         "If dialogue is present, protect spoken performance and lip-sync continuity: let angle changes support the speaker, listener reaction, interruption, subtext, and emotional shift instead of breaking the line unnaturally.",
-        f"If dialogue is present, every spoken line must be fully, clearly, and emotionally performed within this {CANONICAL_DURATION_SECONDS}-second clip. Do not over-write dialogue, do not rush delivery unnaturally, and do not let a line get clipped by the shot end.",
+        f"If dialogue is present, every spoken line must be fully, clearly, and emotionally performed within this {clip_duration}-second clip. Do not over-write dialogue, do not rush delivery unnaturally, and do not let a line get clipped by the shot end.",
         "If dialogue timing windows are provided, each line must start, breathe, peak, and finish inside its own assigned window; no line may spill across a clip boundary or get chopped at an internal cut.",
         "Keep dialogue, acting reactions, and micro-expressions rich and playable; emotional texture should stay visible inside the camera design, not only in exposition text.",
         "Start from the carried-over state instead of replaying the previous clip's ending, and end on a clean bridge into the next clip instead of duplicating the next opening.",
@@ -1566,6 +1578,9 @@ class VideoPlanItem:
 class VideoGenerationResult:
     clip_index: int
     shot_index: int
+    start_sec: float
+    duration_seconds: float
+    clip_role: str
     mode: str
     public_url: str
     mime_type: str
@@ -1596,6 +1611,49 @@ def _stable_agent_request_id(raw_value: str) -> str:
         return str(uuid.UUID(raw))
     except ValueError:
         return str(uuid.uuid5(AGENT_REQUEST_NAMESPACE, raw))
+
+
+def _safe_float(value: Any, default: float) -> float:
+    try:
+        parsed = float(value)
+        return parsed if parsed >= 0 else default
+    except Exception:
+        return default
+
+
+def _clip_role_for_shot(shot: dict[str, Any]) -> str:
+    role = str(shot.get("clip_role") or shot.get("role") or shot.get("shot_role") or "").strip().lower()
+    if role in {"anchor", "anchor_5s", "bridge", "bridge_5s", "transition", "transition_5s", "key_anchor_5s"}:
+        return "anchor_5s"
+    if role in {"story", "story_15s", "main", "main_15s"}:
+        return "story_15s"
+    duration = _safe_float(shot.get("duration_seconds"), CANONICAL_DURATION_SECONDS)
+    return "anchor_5s" if duration <= ANCHOR_DURATION_SECONDS else "story_15s"
+
+
+def _unwrap_canvas_data(raw_canvas: Any) -> dict[str, Any]:
+    """Normalize reelmind.server canvas responses into the actual canvas data payload."""
+    if not isinstance(raw_canvas, dict):
+        return {}
+    payload: Any = raw_canvas.get("data") if isinstance(raw_canvas.get("data"), dict) else raw_canvas
+    # Some internal responses are shaped as { data: { id, data: { timeline } } }.
+    if isinstance(payload, dict) and isinstance(payload.get("data"), dict):
+        nested = payload.get("data") or {}
+        if "timeline" in nested or "tracks" in nested:
+            payload = nested
+    return payload if isinstance(payload, dict) else {}
+
+
+def _timeline_track_assets(canvas_data: Any, track_id: str) -> list[dict[str, Any]]:
+    if not isinstance(canvas_data, dict):
+        return []
+    timeline = canvas_data.get("timeline") if isinstance(canvas_data.get("timeline"), dict) else {}
+    tracks = timeline.get("tracks") if isinstance(timeline, dict) else []
+    if not isinstance(tracks, list):
+        return []
+    track = next((t for t in tracks if isinstance(t, dict) and t.get("id") == track_id), None)
+    assets = (track or {}).get("assets") or []
+    return [asset for asset in assets if isinstance(asset, dict)]
 
 
 def _next_clip_attempt(clip_attempts_by_index: dict[int, int], clip_index: int) -> int:
@@ -1634,6 +1692,8 @@ def _build_plan(storyboard: dict) -> tuple[list[KeyframePlanItem], list[VideoPla
         world_refs = _extract_shot_world_refs(shot)
         primary_world_ref = str(shot.get("video_primary_world_ref") or "").strip() or (world_refs[0] if world_refs else None)
         binding_lock = str(shot.get("binding_lock") or f"SHOT_{shot_index:03d}_LOCK")
+        clip_role = _clip_role_for_shot(shot)
+        clip_duration = ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else MAIN_STORY_DURATION_SECONDS
 
         visual_prompt = shot.get("visual_prompt_en") or ""
         motion_prompt = shot.get("motion_prompt_en") or ""
@@ -1642,13 +1702,14 @@ def _build_plan(storyboard: dict) -> tuple[list[KeyframePlanItem], list[VideoPla
         first_prompt = shot.get("first_frame_prompt_en") or keyframe_prompt or visual_prompt
         last_prompt = shot.get("last_frame_prompt_en") or keyframe_prompt or visual_prompt
 
-        # Enforce canonical duration in prompts (no "s").
+        # Enforce the architecture duration in prompts (no "s").
         def _ensure_duration(p: str) -> str:
             if not isinstance(p, str):
                 return ""
-            if re.search(rf"\bduration\s*[:=]?\s*{CANONICAL_DURATION_SECONDS}\b", p, flags=re.IGNORECASE):
+            p = re.sub(r"\bduration\s*[:=]?\s*(?:5|15)\b", f"duration: {clip_duration}", p, flags=re.IGNORECASE)
+            if re.search(rf"\bduration\s*[:=]?\s*{clip_duration}\b", p, flags=re.IGNORECASE):
                 return p
-            return p.rstrip().rstrip(".") + f", duration: {CANONICAL_DURATION_SECONDS}"
+            return p.rstrip().rstrip(".") + f", duration: {clip_duration}"
 
         visual_prompt = _ensure_duration(visual_prompt)
         motion_prompt = _ensure_duration(motion_prompt)
@@ -1769,7 +1830,8 @@ def _build_plan(storyboard: dict) -> tuple[list[KeyframePlanItem], list[VideoPla
 @tool(
     "execute_storyboard",
     description=(
-        "Execute a storyboard deterministically: generate Script Track assets first, then short World Track audition/orbit videos for recurring characters/locations/props, then generate formal clips using those world-video anchors within the 15-second total reference-video budget. "
+        "Execute a storyboard deterministically: generate Script Track assets first, then short World Track audition/orbit videos for recurring characters/locations/props, then generate formal clips as alternating 5-second dramatic anchors and 15-second story clips. "
+        "The 5-second anchors are key designed story moments, not filler; 15-second story clips bridge from the previous anchor into the next anchor using world-video anchors within the 15-second total reference-video budget. "
         "Keyframe generation is optional and no longer the default path."
     ),
     args_schema=ExecuteStoryboardInputSchema,
@@ -1879,7 +1941,7 @@ async def execute_storyboard(
     canvas = await api_client_service.get_canvas_data(canvas_id, user_id=user_id)
     if canvas is None:
         canvas = {"data": {}}
-    canvas_data = canvas.get("data", {}) if isinstance(canvas, dict) else {}
+    canvas_data = _unwrap_canvas_data(canvas)
 
     def _storyboard_fingerprint(sb: dict) -> str:
         payload = {
@@ -1964,16 +2026,10 @@ async def execute_storyboard(
         return f"script-draft-{safe_session}-{int(shot_index):03d}"
 
     def _existing_script_assets() -> list[dict]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        script_track = next((t for t in tracks if t.get("id") == "script-track"), None)
-        return (script_track or {}).get("assets") or []
+        return _timeline_track_assets(canvas_data, "script-track")
 
     def _existing_world_assets() -> list[dict]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        world_track = next((t for t in tracks if t.get("id") == "world-track"), None)
-        return (world_track or {}).get("assets") or []
+        return _timeline_track_assets(canvas_data, "world-track")
 
     existing_script_assets = _existing_script_assets()
     existing_script_asset_ids = {a.get("id") for a in existing_script_assets if isinstance(a, dict) and a.get("id")}
@@ -2000,84 +2056,106 @@ async def execute_storyboard(
             default=0.0,
         )
     }
-    for asset in existing_world_assets:
-        if not isinstance(asset, dict):
-            continue
-        md = (asset.get("metadata") or {}) if isinstance(asset.get("metadata"), dict) else {}
-        if md.get("kind") == "clip_continuity_tail" or md.get("isContinuityTail"):
-            source_clip_index = md.get("sourceClipIndex")
-            content = asset.get("content") or {}
+
+    def _index_existing_world_assets(assets: list[dict[str, Any]]) -> None:
+        for asset in assets:
+            if not isinstance(asset, dict):
+                continue
+            md = (asset.get("metadata") or {}) if isinstance(asset.get("metadata"), dict) else {}
+            content = (asset.get("content") or {}) if isinstance(asset.get("content"), dict) else {}
+            if md.get("kind") == "clip_continuity_tail" or md.get("isContinuityTail"):
+                source_clip_index = md.get("sourceClipIndex")
+                public_video_url = (
+                    content.get("videoUrl")
+                    or md.get("publicVideoUrl")
+                    or md.get("resourceUrl")
+                    or md.get("sourcePublicVideoUrl")
+                )
+                if isinstance(source_clip_index, (int, float)) and isinstance(public_video_url, str) and public_video_url.strip():
+                    clip_idx = int(source_clip_index)
+                    available_continuity_tail_refs_by_clip[clip_idx] = {
+                        "source_clip_index": clip_idx,
+                        "source_shot_index": md.get("sourceShotIndex"),
+                        "preferred_video_url": public_video_url.strip(),
+                        "public_video_url": public_video_url.strip(),
+                        "poster_url": content.get("thumbnailUrl") or public_video_url.strip(),
+                        "duration_seconds": float(asset.get("duration") or md.get("tailDurationSeconds") or CONTINUITY_TAIL_DURATION_SECONDS),
+                        "source_public_video_url": md.get("sourcePublicVideoUrl"),
+                        "source_type": "tail",
+                        "reference_kind": "连续性尾段参考",
+                        "name": str(md.get("name") or f"Clip {clip_idx} continuity tail"),
+                    }
+                continue
+            element_id = (
+                md.get("elementId")
+                or md.get("worldId")
+                or md.get("code")
+                or content.get("code")
+                or asset.get("code")
+            )
+            if not isinstance(element_id, str) or not element_id.strip():
+                continue
+            element_id = element_id.strip()
+            image_url = (
+                content.get("imageUrl")
+                or content.get("thumbnailUrl")
+                or content.get("posterUrl")
+                or md.get("imageUrl")
+                or md.get("posterUrl")
+                or md.get("thumbnailUrl")
+            )
+            if isinstance(image_url, str) and image_url.strip():
+                world_images_by_id[element_id] = image_url.strip()
+            provider_video_url = (
+                md.get("preferredProviderVideoUrl")
+                or md.get("sourceProviderVideoUrl")
+                or md.get("providerVideoUrl")
+            )
+            source_public_video_url = md.get("sourcePublicVideoUrl") or md.get("rawPublicVideoUrl")
             public_video_url = (
                 content.get("videoUrl")
                 or md.get("publicVideoUrl")
                 or md.get("resourceUrl")
-                or md.get("sourcePublicVideoUrl")
+                or source_public_video_url
             )
-            if isinstance(source_clip_index, (int, float)) and isinstance(public_video_url, str) and public_video_url.strip():
-                clip_idx = int(source_clip_index)
-                available_continuity_tail_refs_by_clip[clip_idx] = {
-                    "source_clip_index": clip_idx,
-                    "source_shot_index": md.get("sourceShotIndex"),
-                    "preferred_video_url": public_video_url.strip(),
-                    "public_video_url": public_video_url.strip(),
-                    "poster_url": content.get("thumbnailUrl") or public_video_url.strip(),
-                    "duration_seconds": float(asset.get("duration") or md.get("tailDurationSeconds") or CONTINUITY_TAIL_DURATION_SECONDS),
-                    "source_public_video_url": md.get("sourcePublicVideoUrl"),
-                    "source_type": "tail",
-                    "reference_kind": "连续性尾段参考",
-                    "name": str(md.get("name") or f"Clip {clip_idx} continuity tail"),
+            preferred_video_url = provider_video_url or public_video_url or source_public_video_url
+            if isinstance(preferred_video_url, str) and preferred_video_url.strip():
+                preferred_video_url = preferred_video_url.strip()
+                existing_world_video_ready_asset_ids.add(str(asset.get("id") or ""))
+                element = world_map.get(element_id) or {}
+                world_video_refs_by_id[element_id] = {
+                    "element_id": element_id,
+                    "name": str(md.get("name") or element.get("name") or content.get("title") or element_id).strip(),
+                    "reference_kind": _world_video_reference_kind_label(element),
+                    "label": "",
+                    "preferred_video_url": preferred_video_url,
+                    "public_video_url": public_video_url if isinstance(public_video_url, str) and public_video_url else preferred_video_url,
+                    "provider_video_url": provider_video_url if isinstance(provider_video_url, str) and provider_video_url else None,
+                    "poster_url": (
+                        content.get("thumbnailUrl")
+                        or content.get("imageUrl")
+                        or md.get("posterUrl")
+                        or image_url
+                        or public_video_url
+                        or source_public_video_url
+                        or preferred_video_url
+                    ),
+                    "duration_seconds": float(
+                        asset.get("duration")
+                        or md.get("generationDurationSeconds")
+                        or WORLD_ASSET_REFERENCE_DURATION_SECONDS
+                    ),
+                    "source_public_video_url": (
+                        source_public_video_url if isinstance(source_public_video_url, str) and source_public_video_url else None
+                    ),
                 }
-            continue
-        element_id = md.get("elementId") or md.get("worldId") or md.get("code")
-        if not isinstance(element_id, str) or not element_id.strip():
-            continue
-        content = asset.get("content") or {}
-        url = (content.get("imageUrl") or content.get("thumbnailUrl") or md.get("resourceUrl"))
-        if isinstance(url, str) and url:
-            world_images_by_id[element_id.strip()] = url
-        provider_video_url = (
-            md.get("sourceProviderVideoUrl")
-            or md.get("providerVideoUrl")
-            or md.get("preferredProviderVideoUrl")
-        )
-        source_public_video_url = md.get("sourcePublicVideoUrl") or md.get("rawPublicVideoUrl")
-        public_video_url = content.get("videoUrl") or md.get("publicVideoUrl") or md.get("resourceUrl") or source_public_video_url
-        preferred_video_url = provider_video_url or public_video_url or source_public_video_url
-        if isinstance(preferred_video_url, str) and preferred_video_url:
-            existing_world_video_ready_asset_ids.add(str(asset.get("id") or ""))
-            element = world_map.get(element_id.strip()) or {}
-            world_video_refs_by_id[element_id.strip()] = {
-                "element_id": element_id.strip(),
-                "name": str(md.get("name") or element.get("name") or element_id).strip(),
-                "reference_kind": _world_video_reference_kind_label(element),
-                "label": "",
-                "preferred_video_url": preferred_video_url,
-                "public_video_url": public_video_url if isinstance(public_video_url, str) and public_video_url else preferred_video_url,
-                "provider_video_url": provider_video_url if isinstance(provider_video_url, str) and provider_video_url else None,
-                "poster_url": (
-                    content.get("thumbnailUrl")
-                    or content.get("imageUrl")
-                    or public_video_url
-                    or source_public_video_url
-                    or preferred_video_url
-                ),
-                "duration_seconds": float(
-                    asset.get("duration")
-                    or md.get("generationDurationSeconds")
-                    or WORLD_ASSET_REFERENCE_DURATION_SECONDS
-                ),
-                "source_public_video_url": (
-                    source_public_video_url if isinstance(source_public_video_url, str) and source_public_video_url else None
-                ),
-            }
+
+    _index_existing_world_assets(existing_world_assets)
 
     # Script/world track assets are added later, after tool-card helpers are initialized.
 
     def _existing_storyboard_keyframes() -> dict[tuple[int, str], str]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        keyframe_track = next((t for t in tracks if t.get("id") == "keyframe-track"), None)
-        assets = (keyframe_track or {}).get("assets") or []
+        assets = _timeline_track_assets(canvas_data, "keyframe-track")
         found: dict[tuple[int, str], str] = {}
         for asset in assets:
             md = (asset or {}).get("metadata") or {}
@@ -2096,10 +2174,7 @@ async def execute_storyboard(
         return found
 
     def _existing_storyboard_videos() -> dict[tuple[int, str], str]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        video_track = next((t for t in tracks if t.get("id") == "video-track"), None)
-        assets = (video_track or {}).get("assets") or []
+        assets = _timeline_track_assets(canvas_data, "video-track")
         found: dict[tuple[int, str], str] = {}
         for asset in assets:
             md = (asset or {}).get("metadata") or {}
@@ -2128,12 +2203,24 @@ async def execute_storyboard(
         if isinstance(shot, dict) and isinstance(shot.get("index"), (int, float)):
             shots_by_index[int(shot.get("index"))] = shot
     for idx, vp in enumerate(video_plan, start=1):
+        shot = shots_by_index.get(vp.shot_index) or {}
+        clip_role = _clip_role_for_shot(shot)
+        duration_seconds = ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else _safe_float(
+            shot.get("duration_seconds"),
+            MAIN_STORY_DURATION_SECONDS,
+        )
+        if clip_role == "story_15s" and duration_seconds <= ANCHOR_DURATION_SECONDS:
+            duration_seconds = MAIN_STORY_DURATION_SECONDS
+        start_sec = _safe_float(shot.get("start_sec"), sum(_safe_float(item.get("durationSeconds"), CANONICAL_DURATION_SECONDS) for item in clips))
         clips.append(
             {
                 "clipIndex": idx,
                 "shotIndex": vp.shot_index,
+                "clipRole": clip_role,
+                "startSec": start_sec,
+                "durationSeconds": duration_seconds,
                 "mode": vp.mode,
-                "executionMode": "text_to_video" if idx == 1 else "video_to_video",
+                "executionMode": "image_to_video" if clip_role == "anchor_5s" else "video_to_video",
                 "prompt": vp.prompt,
                 "worldRefs": list(vp.world_refs),
                 "primaryWorldRef": vp.primary_world_ref,
@@ -2141,12 +2228,10 @@ async def execute_storyboard(
             }
         )
         shot_to_clip_index[vp.shot_index] = idx
+    clips_by_index: dict[int, dict[str, Any]] = {int(clip["clipIndex"]): clip for clip in clips}
 
     def _existing_aligned_keyframes() -> dict[tuple[int, str], dict]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        keyframe_track = next((t for t in tracks if t.get("id") == "keyframe-track"), None)
-        assets = (keyframe_track or {}).get("assets") or []
+        assets = _timeline_track_assets(canvas_data, "keyframe-track")
         found: dict[tuple[int, str], dict] = {}
         legacy_found: dict[tuple[int, str], dict] = {}
         for asset in assets:
@@ -2242,7 +2327,19 @@ async def execute_storyboard(
                 continue
             if start_time < 0:
                 continue
-            return int(start_time // CANONICAL_DURATION_SECONDS) + 1
+            best_clip_index: Optional[int] = None
+            best_distance: Optional[float] = None
+            for clip in clips:
+                try:
+                    clip_start = float(clip.get("startSec") or 0)
+                except Exception:
+                    continue
+                distance = abs(start_time - clip_start)
+                if best_distance is None or distance < best_distance:
+                    best_distance = distance
+                    best_clip_index = int(clip.get("clipIndex") or 0) or None
+            if best_clip_index:
+                return best_clip_index
 
         return fallback_order if fallback_order > 0 else None
 
@@ -2255,10 +2352,7 @@ async def execute_storyboard(
         return float(10**9)
 
     def _existing_aligned_videos() -> dict[int, dict]:
-        timeline = (canvas_data or {}).get("timeline") or {}
-        tracks = timeline.get("tracks") or []
-        video_track = next((t for t in tracks if t.get("id") == "video-track"), None)
-        assets = (video_track or {}).get("assets") or []
+        assets = _timeline_track_assets(canvas_data, "video-track")
         found: dict[int, dict] = {}
         legacy_found: dict[int, dict] = {}
         sorted_assets = sorted(
@@ -2509,6 +2603,13 @@ async def execute_storyboard(
             "clipAttempts": {str(int(idx)): int(attempt) for idx, attempt in sorted(clip_attempts_by_index.items())},
             "aspectRatio": str(aspect_ratio or "").strip(),
             "clipCount": int(total_clip_count or 0),
+            "clipArchitecture": {
+                "pattern": "anchor_5s/story_15s",
+                "anchorDurationSeconds": ANCHOR_DURATION_SECONDS,
+                "storyDurationSeconds": MAIN_STORY_DURATION_SECONDS,
+                "anchorBatchSize": ANCHOR_VIDEO_BATCH_SIZE,
+                "storyBatchSize": MAIN_VIDEO_BATCH_SIZE,
+            },
             "completedClipCount": len(completed_clip_indexes),
             "completedClipIndexes": completed_clip_indexes[-12:],
             "nextClipIndex": _next_pending_clip_index(),
@@ -2722,6 +2823,16 @@ async def execute_storyboard(
     async def _generate_video_clip(clip: dict[str, Any]) -> VideoGenerationResult:
         clip_index = int(clip["clipIndex"])
         shot_index = int(clip["shotIndex"])
+        clip_role = str(clip.get("clipRole") or "story_15s")
+        clip_duration_seconds = _safe_float(
+            clip.get("durationSeconds"),
+            ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else MAIN_STORY_DURATION_SECONDS,
+        )
+        if clip_role == "anchor_5s":
+            clip_duration_seconds = ANCHOR_DURATION_SECONDS
+        elif clip_duration_seconds <= ANCHOR_DURATION_SECONDS:
+            clip_duration_seconds = MAIN_STORY_DURATION_SECONDS
+        clip_start_sec = _safe_float(clip.get("startSec"), 0.0)
         planned_mode = str(clip["mode"])
         execution_mode = str(clip.get("executionMode") or planned_mode)
         shot = shots_by_index.get(shot_index) or {}
@@ -2735,19 +2846,53 @@ async def execute_storyboard(
             primary_world_ref,
             world_map,
         )
-        continuity_ref = _select_preferred_continuity_reference_video(
-            clip_index=clip_index,
-            shot_index=shot_index,
-            shot=shot,
-            primary_world_ref=primary_world_ref,
-            raw_world_refs=list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
-            available_continuity_tail_refs_by_clip=available_continuity_tail_refs_by_clip,
-            available_video_urls_by_clip=available_video_urls_by_clip,
-            clip_context_by_index=clip_context_by_index,
-        )
+        continuity_ref: Optional[dict[str, Any]]
+        next_anchor_ref: Optional[dict[str, Any]] = None
+        if clip_role == "anchor_5s":
+            continuity_ref = None
+        else:
+            prev_anchor_clip_index = clip_index - 1
+            next_anchor_clip_index = clip_index + 1
+            prev_anchor_url = str(available_video_urls_by_clip.get(prev_anchor_clip_index) or "").strip()
+            next_anchor_url = str(available_video_urls_by_clip.get(next_anchor_clip_index) or "").strip()
+            continuity_ref = {
+                "source_clip_index": prev_anchor_clip_index,
+                "preferred_video_url": prev_anchor_url,
+                "public_video_url": prev_anchor_url,
+                "duration_seconds": float(ANCHOR_DURATION_SECONDS),
+                "source_type": "previous_anchor_5s",
+                "reference_kind": "previous 5-second dramatic anchor",
+                "name": f"Clip {prev_anchor_clip_index} 5s anchor",
+                "poster_url": prev_anchor_url,
+            } if prev_anchor_url else _select_preferred_continuity_reference_video(
+                clip_index=clip_index,
+                shot_index=shot_index,
+                shot=shot,
+                primary_world_ref=primary_world_ref,
+                raw_world_refs=list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
+                available_continuity_tail_refs_by_clip=available_continuity_tail_refs_by_clip,
+                available_video_urls_by_clip=available_video_urls_by_clip,
+                clip_context_by_index=clip_context_by_index,
+            )
+            if next_anchor_url:
+                next_anchor_ref = {
+                    "source_clip_index": next_anchor_clip_index,
+                    "preferred_video_url": next_anchor_url,
+                    "public_video_url": next_anchor_url,
+                    "duration_seconds": float(ANCHOR_DURATION_SECONDS),
+                    "source_type": "next_anchor_5s",
+                    "reference_kind": "next 5-second dramatic anchor",
+                    "name": f"Clip {next_anchor_clip_index} 5s anchor",
+                    "poster_url": next_anchor_url,
+                }
         continuity_reference_video_url = (
             str(continuity_ref.get("preferred_video_url") or "").strip()
             if isinstance(continuity_ref, dict)
+            else ""
+        )
+        next_anchor_reference_video_url = (
+            str(next_anchor_ref.get("preferred_video_url") or "").strip()
+            if isinstance(next_anchor_ref, dict)
             else ""
         )
         continuity_duration_seconds = (
@@ -2755,15 +2900,22 @@ async def execute_storyboard(
             if isinstance(continuity_ref, dict)
             else 0.0
         )
-        world_video_budget_seconds = max(0.0, MAX_REFERENCE_VIDEO_TOTAL_SECONDS - continuity_duration_seconds)
-        remaining_world_ref_slots = max(0, MAX_FORMAL_VIDEO_INPUTS - (1 if continuity_reference_video_url else 0))
+        next_anchor_duration_seconds = (
+            float(next_anchor_ref.get("duration_seconds") or 0.0)
+            if isinstance(next_anchor_ref, dict)
+            else 0.0
+        )
+        reserved_reference_seconds = continuity_duration_seconds + next_anchor_duration_seconds
+        reserved_reference_slots = (1 if continuity_reference_video_url else 0) + (1 if next_anchor_reference_video_url else 0)
+        world_video_budget_seconds = max(0.0, MAX_REFERENCE_VIDEO_TOTAL_SECONDS - reserved_reference_seconds)
+        remaining_world_ref_slots = max(0, MAX_FORMAL_VIDEO_INPUTS - reserved_reference_slots)
         selected_world_video_refs = _select_world_reference_videos_for_shot(
             list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
             primary_world_ref,
             world_map,
             world_video_refs_by_id,
-            max_total_seconds=world_video_budget_seconds if continuity_reference_video_url else WORLD_ASSET_VIDEO_BUDGET_SECONDS,
-            max_videos=remaining_world_ref_slots if continuity_reference_video_url else MAX_FORMAL_VIDEO_INPUTS,
+            max_total_seconds=world_video_budget_seconds if reserved_reference_slots else WORLD_ASSET_VIDEO_BUDGET_SECONDS,
+            max_videos=remaining_world_ref_slots if reserved_reference_slots else MAX_FORMAL_VIDEO_INPUTS,
         )
         selected_world_image_urls = _select_world_reference_image_urls_for_shot(
             list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
@@ -2774,6 +2926,8 @@ async def execute_storyboard(
         reference_video_urls: list[str] = []
         if continuity_reference_video_url:
             reference_video_urls.append(continuity_reference_video_url)
+        if next_anchor_reference_video_url and next_anchor_reference_video_url not in reference_video_urls:
+            reference_video_urls.append(next_anchor_reference_video_url)
         for ref_info in selected_world_video_refs:
             candidate_url = str(ref_info.get("preferred_video_url") or "").strip()
             if candidate_url and candidate_url not in reference_video_urls:
@@ -2787,7 +2941,12 @@ async def execute_storyboard(
         for url in reference_video_urls:
             if not isinstance(url, str) or not url.strip() or url in capped_reference_video_urls:
                 continue
-            duration_seconds = continuity_duration_seconds if url == continuity_reference_video_url else WORLD_ASSET_REFERENCE_DURATION_SECONDS
+            if url == continuity_reference_video_url:
+                duration_seconds = continuity_duration_seconds
+            elif url == next_anchor_reference_video_url:
+                duration_seconds = next_anchor_duration_seconds
+            else:
+                duration_seconds = WORLD_ASSET_REFERENCE_DURATION_SECONDS
             if accumulated_reference_seconds + float(duration_seconds or 0) > MAX_REFERENCE_VIDEO_TOTAL_SECONDS:
                 continue
             capped_reference_video_urls.append(url)
@@ -2796,13 +2955,19 @@ async def execute_storyboard(
                 break
         reference_video_urls = capped_reference_video_urls
         using_continuity_video_ref = bool(continuity_reference_video_url)
-        if required_world_ref_ids and not selected_world_video_refs and not selected_world_image_urls and not reference_video_urls and execution_mode != "text_to_video":
+        using_next_anchor_ref = bool(next_anchor_reference_video_url)
+        missing_required_ref_ids = [
+            element_id
+            for element_id in required_world_ref_ids
+            if element_id not in world_video_refs_by_id and not world_images_by_id.get(element_id)
+        ]
+        if missing_required_ref_ids and not selected_world_video_refs and not selected_world_image_urls and not reference_video_urls and execution_mode != "text_to_video":
             raise ValueError(
                 f"video generation failed: missing usable world/continuity references for clip {clip_index}: "
-                + ", ".join(required_world_ref_ids[:6])
+                + ", ".join(missing_required_ref_ids[:6])
             )
         for idx, ref_info in enumerate(selected_world_video_refs, start=1):
-            label_index = idx + (1 if using_continuity_video_ref else 0)
+            label_index = idx + (1 if using_continuity_video_ref else 0) + (1 if using_next_anchor_ref else 0)
             ref_info["label"] = f"@视频{label_index}"
 
         prompt_world_refs = []
@@ -2825,7 +2990,7 @@ async def execute_storyboard(
         ordered_reference_block = _build_ordered_reference_prompt_block(
             video_urls=reference_video_urls,
             image_urls=selected_world_image_urls,
-            video_refs=selected_world_video_refs,
+            video_refs=([next_anchor_ref] if isinstance(next_anchor_ref, dict) else []) + selected_world_video_refs,
             world_refs=list(raw_world_refs) if isinstance(raw_world_refs, list) else [],
             primary_world_ref=primary_world_ref,
             world_map=world_map,
@@ -2833,6 +2998,24 @@ async def execute_storyboard(
         )
         if ordered_reference_block:
             locked_prompt = f"{ordered_reference_block} {locked_prompt}".strip()
+        if clip_role != "anchor_5s" and next_anchor_reference_video_url in reference_video_urls:
+            next_anchor_label = reference_video_urls.index(next_anchor_reference_video_url) + 1
+            locked_prompt = (
+                f"Treat @video {next_anchor_label} as the next 5-second anchor target: do not copy it, but land the final frame, movement direction, "
+                f"lighting logic, and emotional setup so the edit can cut seamlessly into @video {next_anchor_label}. {locked_prompt}"
+            ).strip()
+        if clip_role == "anchor_5s":
+            locked_prompt = (
+                "Create a precise 5-second key dramatic anchor. This is not filler or a disposable bridge: "
+                "stage a memorable reaction, reveal, symbolic insert, montage flash, power-shift beat, cliffhanger, or transition hook with polished cinematic intent. "
+                f"{locked_prompt}"
+            ).strip()
+        else:
+            locked_prompt = (
+                "Create a 15-second story movement between two 5-second anchors. Start by honoring the ending energy, screen direction, and emotional state of the previous 5-second anchor; "
+                "advance the plot with motivated montage, elliptical cuts, match cuts, or compressed action; then land cleanly into the opening image and emotional setup of the next 5-second anchor. "
+                f"{locked_prompt}"
+            ).strip()
 
         if not reference_video_urls:
             tc_id = await _emit_tool_call_card(
@@ -2840,7 +3023,7 @@ async def execute_storyboard(
                 args={
                     "prompt": locked_prompt,
                     "input_images": selected_world_image_urls,
-                    "duration": CANONICAL_DURATION_SECONDS,
+                    "duration": clip_duration_seconds,
                     "aspect_ratio": aspect_ratio,
                     "audio_urls": uploaded_audio_urls[:4] if uploaded_audio_urls else None,
                 },
@@ -2854,7 +3037,7 @@ async def execute_storyboard(
                     prompt=locked_prompt,
                     image_urls=selected_world_image_urls,
                     input_image_url=selected_world_image_urls[0] if selected_world_image_urls else None,
-                    duration=CANONICAL_DURATION_SECONDS,
+                    duration=clip_duration_seconds,
                     aspect_ratio=aspect_ratio,
                     audio_urls=uploaded_audio_urls[:4] if uploaded_audio_urls else None,
                     user_id=user_id,
@@ -2886,7 +3069,7 @@ async def execute_storyboard(
                 name="generate_video",
                 content=(
                     f"video generated successfully ![video_url: {public_url}]({public_url}) "
-                    f"- Mode: {'image_to_video' if selected_world_image_urls else 'text_to_video'}, Duration: {CANONICAL_DURATION_SECONDS}, Aspect Ratio: {aspect_ratio}, "
+                    f"- Mode: {'image_to_video' if selected_world_image_urls else 'text_to_video'}, Duration: {clip_duration_seconds:g}, Role: {clip_role}, Aspect Ratio: {aspect_ratio}, "
                     f"RequestRetries: {max(0, request_attempts - 1)}"
                 ),
             )
@@ -2894,6 +3077,9 @@ async def execute_storyboard(
             return VideoGenerationResult(
                 clip_index=clip_index,
                 shot_index=shot_index,
+                start_sec=clip_start_sec,
+                duration_seconds=clip_duration_seconds,
+                clip_role=clip_role,
                 mode=execution_mode,
                 public_url=public_url,
                 mime_type=mime_type,
@@ -2940,7 +3126,7 @@ async def execute_storyboard(
                 "prompt": continuation_prompt,
                 "input_videos": reference_video_urls,
                 "input_images": selected_world_image_urls,
-                "duration": CANONICAL_DURATION_SECONDS,
+                "duration": clip_duration_seconds,
                 "aspect_ratio": aspect_ratio,
                 "audio_urls": uploaded_audio_urls[:4] if uploaded_audio_urls else None,
             },
@@ -2954,7 +3140,7 @@ async def execute_storyboard(
                 prompt=continuation_prompt,
                 image_urls=selected_world_image_urls,
                 video_urls=reference_video_urls,
-                duration=CANONICAL_DURATION_SECONDS,
+                duration=clip_duration_seconds,
                 aspect_ratio=aspect_ratio,
                 audio_urls=uploaded_audio_urls[:4] if uploaded_audio_urls else None,
                 user_id=user_id,
@@ -2986,7 +3172,7 @@ async def execute_storyboard(
             name="generate_video",
             content=(
                 f"video generated successfully ![video_url: {public_url}]({public_url}) "
-                f"- Mode: video_to_video, Duration: {CANONICAL_DURATION_SECONDS}, Aspect Ratio: {aspect_ratio}, "
+                f"- Mode: video_to_video, Duration: {clip_duration_seconds:g}, Role: {clip_role}, Aspect Ratio: {aspect_ratio}, "
                 f"ReferenceVideos: {len(reference_video_urls)}, RequestRetries: {max(0, request_attempts - 1)}"
             ),
         )
@@ -2994,6 +3180,9 @@ async def execute_storyboard(
         return VideoGenerationResult(
             clip_index=clip_index,
             shot_index=shot_index,
+            start_sec=clip_start_sec,
+            duration_seconds=clip_duration_seconds,
+            clip_role=clip_role,
             mode="video_to_video",
             public_url=public_url,
             mime_type=mime_type,
@@ -3302,174 +3491,172 @@ async def execute_storyboard(
                 "request_attempts": request_attempts,
             }
 
-        for batch_start in range(0, len(world_jobs), MAX_PARALLEL_WORLD_GENERATIONS):
-            job_batch = world_jobs[batch_start: batch_start + MAX_PARALLEL_WORLD_GENERATIONS]
-            batch_results = await asyncio.gather(*[_generate_world_job(job) for job in job_batch])
+        batch_results = await asyncio.gather(*[_generate_world_job(job) for job in world_jobs])
 
-            for result in batch_results:
-                job = result["job"]
-                if not result.get("ok"):
-                    world_generation_failures.append(
-                        f"{job.get('element_id')}: {result.get('error') or 'unknown world audition failure'}"
-                    )
-                    continue
-
-                el = job["el"]
-                element_id = str(job["element_id"])
-                element_asset_id = str(job["element_asset_id"])
-                name = str(job["name"])
-                kind = str(job["kind"])
-                description = str(job["description"])
-                duration = float(job["duration"])
-                start_time = float(job["start_time"])
-                element_aspect_ratio = str(job["element_aspect_ratio"])
-                generation_prompt = str(result.get("generation_prompt") or job["generation_prompt"])
-                image_prompt = str(result.get("image_prompt") or "")
-                use_uploaded_identity_anchor = bool(job["use_uploaded_identity_anchor"])
-                mime_type = str(result["mime_type"])
-                raw_public_url = str(result["public_url"])
-                image_public_url = str(result.get("image_public_url") or "").strip()
-                image_mime_type = str(result.get("image_mime_type") or "image/png")
-                image_width = result.get("image_width")
-                image_height = result.get("image_height")
-                image_persisted = bool(result.get("image_persisted"))
-                provider_video_url = (
-                    str(result["provider_video_url"]).strip()
-                    if isinstance(result.get("provider_video_url"), str) and str(result["provider_video_url"]).strip()
-                    else None
+        for result in batch_results:
+            job = result["job"]
+            if not result.get("ok"):
+                world_generation_failures.append(
+                    f"{job.get('element_id')}: {result.get('error') or 'unknown world audition failure'}"
                 )
-                tool_name = str(result["tool_name"])
-                preferred_video_url = provider_video_url or raw_public_url
-                poster_url = image_public_url or raw_public_url
-                if image_public_url and not image_persisted:
-                    world_images_by_id[element_id] = image_public_url
-                    generated_images.append(image_public_url)
-                world_video_refs_by_id[element_id] = {
-                    "element_id": element_id,
+                continue
+
+            el = job["el"]
+            element_id = str(job["element_id"])
+            element_asset_id = str(job["element_asset_id"])
+            name = str(job["name"])
+            kind = str(job["kind"])
+            description = str(job["description"])
+            duration = float(job["duration"])
+            start_time = float(job["start_time"])
+            element_aspect_ratio = str(job["element_aspect_ratio"])
+            generation_prompt = str(result.get("generation_prompt") or job["generation_prompt"])
+            image_prompt = str(result.get("image_prompt") or "")
+            use_uploaded_identity_anchor = bool(job["use_uploaded_identity_anchor"])
+            mime_type = str(result["mime_type"])
+            raw_public_url = str(result["public_url"])
+            image_public_url = str(result.get("image_public_url") or "").strip()
+            image_mime_type = str(result.get("image_mime_type") or "image/png")
+            image_width = result.get("image_width")
+            image_height = result.get("image_height")
+            image_persisted = bool(result.get("image_persisted"))
+            provider_video_url = (
+                str(result["provider_video_url"]).strip()
+                if isinstance(result.get("provider_video_url"), str) and str(result["provider_video_url"]).strip()
+                else None
+            )
+            tool_name = str(result["tool_name"])
+            preferred_video_url = provider_video_url or raw_public_url
+            poster_url = image_public_url or raw_public_url
+            if image_public_url and not image_persisted:
+                world_images_by_id[element_id] = image_public_url
+                generated_images.append(image_public_url)
+            world_video_refs_by_id[element_id] = {
+                "element_id": element_id,
+                "name": name,
+                "reference_kind": _world_video_reference_kind_label(el),
+                "label": "",
+                "preferred_video_url": preferred_video_url,
+                "public_video_url": raw_public_url,
+                "provider_video_url": provider_video_url,
+                "poster_url": poster_url,
+                "duration_seconds": WORLD_ASSET_REFERENCE_DURATION_SECONDS,
+                "source_public_video_url": raw_public_url,
+            }
+
+            world_asset = create_world_asset(
+                asset_id=element_asset_id,
+                code=element_id,
+                name=name,
+                description=description,
+                duration=WORLD_ASSET_REFERENCE_DURATION_SECONDS,
+                start_time=start_time,
+                image_url=image_public_url or None,
+                video_url=raw_public_url,
+                thumbnail_url=poster_url,
+                metadata={
+                    "kind": "world_element_video",
+                    "worldElement": True,
+                    "runId": storyboard_run_id,
+                    "storyboardRunId": storyboard_run_id,
+                    "storyboardFingerprint": storyboard_fp,
+                    "elementId": element_id,
+                    "elementKind": kind,
                     "name": name,
-                    "reference_kind": _world_video_reference_kind_label(el),
-                    "label": "",
-                    "preferred_video_url": preferred_video_url,
-                    "public_video_url": raw_public_url,
-                    "provider_video_url": provider_video_url,
-                    "poster_url": poster_url,
-                    "duration_seconds": WORLD_ASSET_REFERENCE_DURATION_SECONDS,
-                    "source_public_video_url": raw_public_url,
-                }
-
-                world_asset = create_world_asset(
+                    "importance": el.get("importance"),
+                    "linkedShotIndexes": el.get("linked_shot_indexes") or [],
+                    "visualInvariants": el.get("visual_invariants"),
+                    "aestheticBinding": el.get("aesthetic_binding"),
+                    "designLanguage": el.get("design_language"),
+                    "paletteNotes": el.get("palette_notes"),
+                    "stagingNotes": el.get("staging_notes"),
+                    "tags": el.get("tags") or [],
+                    "voiceProfile": el.get("voice_profile") or {},
+                    "visualBible": visual_bible,
+                    "imagePromptEn": image_prompt,
+                    "videoPromptEn": generation_prompt,
+                    "basePromptEn": str(job.get("base_prompt") or ""),
+                    "aspectRatio": element_aspect_ratio,
+                    "resourceUrl": raw_public_url,
+                    "imageUrl": image_public_url,
+                    "imageMimeType": image_mime_type,
+                    "imageWidth": image_width,
+                    "imageHeight": image_height,
+                    "publicVideoUrl": raw_public_url,
+                    "generationDurationSeconds": WORLD_ASSET_VIDEO_GENERATION_SECONDS,
+                    "sourcePublicVideoUrl": raw_public_url,
+                    "sourceProviderVideoUrl": provider_video_url,
+                    "providerVideoUrl": provider_video_url,
+                    "preferredProviderVideoUrl": provider_video_url or raw_public_url,
+                    "posterUrl": poster_url,
+                    "usedUploadedIdentityAnchor": use_uploaded_identity_anchor,
+                    "uploadedIdentityImageUrls": uploaded_image_urls[:MAX_EDIT_INPUT_IMAGES] if use_uploaded_identity_anchor else [],
+                    "mimeType": mime_type,
+                },
+            )
+            if image_persisted:
+                persist_result = await api_client_service.update_timeline_asset_with_detail(
+                    canvas_id=canvas_id,
                     asset_id=element_asset_id,
-                    code=element_id,
-                    name=name,
-                    description=description,
-                    duration=WORLD_ASSET_REFERENCE_DURATION_SECONDS,
-                    start_time=start_time,
-                    image_url=image_public_url or None,
-                    video_url=raw_public_url,
-                    thumbnail_url=poster_url,
-                    metadata={
-                        "kind": "world_element_video",
-                        "worldElement": True,
-                        "runId": storyboard_run_id,
-                        "storyboardRunId": storyboard_run_id,
-                        "storyboardFingerprint": storyboard_fp,
-                        "elementId": element_id,
-                        "elementKind": kind,
-                        "name": name,
-                        "importance": el.get("importance"),
-                        "linkedShotIndexes": el.get("linked_shot_indexes") or [],
-                        "visualInvariants": el.get("visual_invariants"),
-                        "aestheticBinding": el.get("aesthetic_binding"),
-                        "designLanguage": el.get("design_language"),
-                        "paletteNotes": el.get("palette_notes"),
-                        "stagingNotes": el.get("staging_notes"),
-                        "tags": el.get("tags") or [],
-                        "voiceProfile": el.get("voice_profile") or {},
-                        "visualBible": visual_bible,
-                        "imagePromptEn": image_prompt,
-                        "videoPromptEn": generation_prompt,
-                        "basePromptEn": str(job.get("base_prompt") or ""),
-                        "aspectRatio": element_aspect_ratio,
-                        "resourceUrl": raw_public_url,
-                        "imageUrl": image_public_url,
-                        "imageMimeType": image_mime_type,
-                        "imageWidth": image_width,
-                        "imageHeight": image_height,
-                        "publicVideoUrl": raw_public_url,
-                        "generationDurationSeconds": WORLD_ASSET_VIDEO_GENERATION_SECONDS,
-                        "sourcePublicVideoUrl": raw_public_url,
-                        "sourceProviderVideoUrl": provider_video_url,
-                        "providerVideoUrl": provider_video_url,
-                        "preferredProviderVideoUrl": provider_video_url or raw_public_url,
-                        "posterUrl": poster_url,
-                        "usedUploadedIdentityAnchor": use_uploaded_identity_anchor,
-                        "uploadedIdentityImageUrls": uploaded_image_urls[:MAX_EDIT_INPUT_IMAGES] if use_uploaded_identity_anchor else [],
-                        "mimeType": mime_type,
+                    properties={
+                        "content": world_asset.get("content"),
+                        "metadata": world_asset.get("metadata"),
+                        "duration": world_asset.get("duration"),
                     },
+                    user_id=user_id,
                 )
-                if image_persisted:
-                    persist_result = await api_client_service.update_timeline_asset_with_detail(
-                        canvas_id=canvas_id,
-                        asset_id=element_asset_id,
-                        properties={
-                            "content": world_asset.get("content"),
-                            "metadata": world_asset.get("metadata"),
-                            "duration": world_asset.get("duration"),
-                        },
-                        user_id=user_id,
+                if not persist_result.get("ok"):
+                    fallback_reason = str(persist_result.get("error") or "timeline asset update failed")
+                    print(
+                        "⚠️ World asset timeline update failed; retrying as add: "
+                        f"canvas={canvas_id} element={element_id} error={fallback_reason}"
                     )
-                    if not persist_result.get("ok"):
-                        fallback_reason = str(persist_result.get("error") or "timeline asset update failed")
-                        print(
-                            "⚠️ World asset timeline update failed; retrying as add: "
-                            f"canvas={canvas_id} element={element_id} error={fallback_reason}"
-                        )
-                        persist_result = await api_client_service.add_timeline_asset_with_detail(
-                            canvas_id=canvas_id, asset_type="world", asset_data=world_asset, user_id=user_id
-                        )
-                else:
                     persist_result = await api_client_service.add_timeline_asset_with_detail(
                         canvas_id=canvas_id, asset_type="world", asset_data=world_asset, user_id=user_id
                     )
-                if not persist_result.get("ok"):
-                    persist_error = str(persist_result.get("error") or "unknown timeline persistence error")
-                    print(
-                        "❌ Failed to persist/update world asset to timeline: "
-                        f"canvas={canvas_id} element={element_id} error={persist_error}"
-                    )
-                    await send_session_update(
-                        user_id,
-                        session_id,
-                        canvas_id,
-                        {
-                            "type": "error",
-                            "error": f"Failed to add world element asset to timeline: {persist_error[:500]}",
-                        },
-                    )
-                else:
-                    print(
-                        "✅ World asset updated in timeline: "
-                        f"canvas={canvas_id} element={element_id} video={raw_public_url} "
-                        f"source_provider={provider_video_url or 'none'}"
-                    )
-                    existing_world_asset_ids.add(element_asset_id)
-                    existing_world_video_ready_asset_ids.add(element_asset_id)
-                    await send_session_update(
-                        user_id,
-                        session_id,
-                        canvas_id,
-                        {
-                            "type": "image_generated",
-                            "asset": world_asset,
-                            "image_url": image_public_url or poster_url,
-                            "video_url": raw_public_url,
-                            "source": "execute_storyboard",
-                            "tool_name": tool_name,
-                        },
-                    )
-                    review_event = build_review_event_from_asset(world_asset)
-                    if review_event:
-                        await send_session_update(user_id, session_id, canvas_id, review_event)
+            else:
+                persist_result = await api_client_service.add_timeline_asset_with_detail(
+                    canvas_id=canvas_id, asset_type="world", asset_data=world_asset, user_id=user_id
+                )
+            if not persist_result.get("ok"):
+                persist_error = str(persist_result.get("error") or "unknown timeline persistence error")
+                print(
+                    "❌ Failed to persist/update world asset to timeline: "
+                    f"canvas={canvas_id} element={element_id} error={persist_error}"
+                )
+                await send_session_update(
+                    user_id,
+                    session_id,
+                    canvas_id,
+                    {
+                        "type": "error",
+                        "error": f"Failed to add world element asset to timeline: {persist_error[:500]}",
+                    },
+                )
+            else:
+                print(
+                    "✅ World asset updated in timeline: "
+                    f"canvas={canvas_id} element={element_id} video={raw_public_url} "
+                    f"source_provider={provider_video_url or 'none'}"
+                )
+                existing_world_asset_ids.add(element_asset_id)
+                existing_world_video_ready_asset_ids.add(element_asset_id)
+                await send_session_update(
+                    user_id,
+                    session_id,
+                    canvas_id,
+                    {
+                        "type": "image_generated",
+                        "asset": world_asset,
+                        "image_url": image_public_url or poster_url,
+                        "video_url": raw_public_url,
+                        "source": "execute_storyboard",
+                        "tool_name": tool_name,
+                    },
+                )
+                review_event = build_review_event_from_asset(world_asset)
+                if review_event:
+                    await send_session_update(user_id, session_id, canvas_id, review_event)
 
         world_track_cursor_holder["value"] = max(float(world_track_cursor_holder["value"]), current_time)
 
@@ -3494,7 +3681,14 @@ async def execute_storyboard(
 
         shots = storyboard.get("shots") or []
         clips_count = len(clips) if clips else len(shots)
-        main_duration_seconds = float(clips_count * CANONICAL_DURATION_SECONDS) if clips_count > 0 else 0.0
+        main_duration_seconds = (
+            max(
+                _safe_float(clip.get("startSec"), 0.0) + _safe_float(clip.get("durationSeconds"), CANONICAL_DURATION_SECONDS)
+                for clip in clips
+            )
+            if clips
+            else float(clips_count * CANONICAL_DURATION_SECONDS)
+        )
 
         screenplay = storyboard.get("screenplay") or {}
         if isinstance(screenplay, str):
@@ -3599,7 +3793,12 @@ async def execute_storyboard(
         for clip in clips:
             clip_index = int(clip["clipIndex"])
             shot_index = int(clip["shotIndex"])
-            clip_start = (clip_index - 1) * CANONICAL_DURATION_SECONDS
+            clip_role = str(clip.get("clipRole") or "story_15s")
+            clip_start = _safe_float(clip.get("startSec"), (clip_index - 1) * CANONICAL_DURATION_SECONDS)
+            clip_duration = _safe_float(
+                clip.get("durationSeconds"),
+                ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else MAIN_STORY_DURATION_SECONDS,
+            )
             draft_asset_id = _draft_script_asset_id(shot_index)
 
             if draft_asset_id in existing_script_asset_ids:
@@ -3640,7 +3839,7 @@ async def execute_storyboard(
                 asset_id=seg_asset_id,
                 title=title,
                 text=seg_text,
-                duration=CANONICAL_DURATION_SECONDS,
+                duration=clip_duration,
                 start_time=clip_start,
                 metadata={
                     "kind": "script_segment",
@@ -3649,6 +3848,10 @@ async def execute_storyboard(
                     "storyboardFingerprint": storyboard_fp,
                     "clipIndex": clip_index,
                     "shotIndex": shot_index,
+                    "clipRole": clip_role,
+                    "startSec": clip_start,
+                    "durationSeconds": clip_duration,
+                    "anchorPair": shot.get("anchor_pair") or seg.get("anchor_pair"),
                     "bindingLock": shot.get("binding_lock") or seg.get("binding_lock"),
                     "worldRefs": seg_world_refs,
                     "dialogue": shot.get("dialogue") or seg.get("dialogue"),
@@ -3760,6 +3963,43 @@ async def execute_storyboard(
             raise
         await _persist_storyboard_resume_state(status="running", phase_name="world_track")
 
+    if run_videos:
+        try:
+            refreshed_canvas = await api_client_service.get_canvas_data(canvas_id, user_id=user_id)
+            refreshed_canvas_data = _unwrap_canvas_data(refreshed_canvas)
+            refreshed_world_assets = _timeline_track_assets(refreshed_canvas_data, "world-track")
+            if refreshed_world_assets:
+                _index_existing_world_assets(refreshed_world_assets)
+                world_track_cursor_holder["value"] = max(
+                    float(world_track_cursor_holder["value"]),
+                    max(
+                        (
+                            float(asset.get("startTime") or 0) + float(asset.get("duration") or 0)
+                            for asset in refreshed_world_assets
+                            if isinstance(asset, dict)
+                        ),
+                        default=0.0,
+                    ),
+                )
+                log_runtime_event(
+                    "storyboard.resume.world_refs_refreshed",
+                    session_id=session_id,
+                    canvas_id=canvas_id,
+                    user_id=user_id,
+                    world_video_ref_count=len(world_video_refs_by_id),
+                    world_image_ref_count=len(world_images_by_id),
+                    world_video_ref_ids=sorted(world_video_refs_by_id.keys())[:20],
+                    world_image_ref_ids=sorted(world_images_by_id.keys())[:20],
+                )
+        except Exception as exc:
+            log_runtime_warning(
+                "storyboard.resume.world_refs_refresh_failed",
+                session_id=session_id,
+                canvas_id=canvas_id,
+                user_id=user_id,
+                error=str(exc),
+            )
+
     missing_world_refs_by_clip: list[str] = []
     for clip in clips:
         clip_index = int(clip.get("clipIndex") or 0)
@@ -3771,7 +4011,11 @@ async def execute_storyboard(
             primary_world_ref,
             world_map,
         )
-        missing_ids = [element_id for element_id in required_ids if element_id not in world_video_refs_by_id]
+        missing_ids = [
+            element_id
+            for element_id in required_ids
+            if element_id not in world_video_refs_by_id and not world_images_by_id.get(element_id)
+        ]
         if missing_ids:
             missing_world_refs_by_clip.append(
                 f"clip {clip_index} / shot {shot_index}: missing world refs {', '.join(missing_ids[:6])}"
@@ -3988,7 +4232,13 @@ async def execute_storyboard(
             clip_index = int(clip["clipIndex"])
             shot_index = int(clip["shotIndex"])
             mode = str(clip["mode"])
-            clip_start = (clip_index - 1) * CANONICAL_DURATION_SECONDS
+            clip_role = str(clip.get("clipRole") or "story_15s")
+            clip_start = _safe_float(clip.get("startSec"), (clip_index - 1) * CANONICAL_DURATION_SECONDS)
+            clip_duration = _safe_float(
+                clip.get("durationSeconds"),
+                ANCHOR_DURATION_SECONDS if clip_role == "anchor_5s" else MAIN_STORY_DURATION_SECONDS,
+            )
+            clip_half_duration = max(0.5, clip_duration / 2.0)
 
             if mode == "image_to_video":
                 url = keyframes_by_shot.get(shot_index)
@@ -4005,7 +4255,7 @@ async def execute_storyboard(
                     height=int(meta.get("height") or 0),
                     mime_type=str(meta.get("mime_type") or "image/jpeg"),
                     prompt=str(meta.get("prompt") or ""),
-                    duration=CANONICAL_DURATION_SECONDS,
+                    duration=clip_duration,
                     start_time=clip_start,
                     storyboard={
                         "clipIndex": clip_index,
@@ -4014,6 +4264,9 @@ async def execute_storyboard(
                         "storyboardRunId": storyboard_run_id,
                         "mode": mode,
                         "role": "single",
+                        "clipRole": clip_role,
+                        "startSec": clip_start,
+                        "durationSeconds": clip_duration,
                     },
                 )
                 ok = await api_client_service.add_timeline_asset(
@@ -4051,7 +4304,7 @@ async def execute_storyboard(
                     height=int(first_meta.get("height") or 0),
                     mime_type=str(first_meta.get("mime_type") or "image/jpeg"),
                     prompt=str(first_meta.get("prompt") or ""),
-                    duration=HALF_DURATION_SECONDS,
+                    duration=clip_half_duration,
                     start_time=clip_start,
                     storyboard={
                         "clipIndex": clip_index,
@@ -4060,6 +4313,9 @@ async def execute_storyboard(
                         "storyboardRunId": storyboard_run_id,
                         "mode": mode,
                         "role": "flf_first",
+                        "clipRole": clip_role,
+                        "startSec": clip_start,
+                        "durationSeconds": clip_half_duration,
                     },
                 )
                 ok = await api_client_service.add_timeline_asset(
@@ -4096,8 +4352,8 @@ async def execute_storyboard(
                     height=int(last_meta.get("height") or 0),
                     mime_type=str(last_meta.get("mime_type") or "image/jpeg"),
                     prompt=str(last_meta.get("prompt") or ""),
-                    duration=HALF_DURATION_SECONDS,
-                    start_time=clip_start + HALF_DURATION_SECONDS,
+                    duration=clip_half_duration,
+                    start_time=clip_start + clip_half_duration,
                     storyboard={
                         "clipIndex": clip_index,
                         "shotIndex": shot_index,
@@ -4105,6 +4361,9 @@ async def execute_storyboard(
                         "storyboardRunId": storyboard_run_id,
                         "mode": mode,
                         "role": "flf_last",
+                        "clipRole": clip_role,
+                        "startSec": clip_start + clip_half_duration,
+                        "durationSeconds": clip_half_duration,
                     },
                 )
                 ok = await api_client_service.add_timeline_asset(
@@ -4154,6 +4413,9 @@ async def execute_storyboard(
                         "world_refs": storyboard_meta.get("worldRefs") or [],
                         "primary_world_ref": storyboard_meta.get("primaryWorldRef"),
                         "shot_index": storyboard_meta.get("shotIndex"),
+                        "clip_role": storyboard_meta.get("clipRole"),
+                        "start_sec": storyboard_meta.get("startSec"),
+                        "duration_seconds": storyboard_meta.get("durationSeconds"),
                     }
                 continue
             pending_video_clips.append(clip)
@@ -4206,7 +4468,12 @@ async def execute_storyboard(
             video_failures: list[str] = []
             ordered_pending_clip_indexes = sorted(int(clip["clipIndex"]) for clip in pending_video_clips)
             ordered_pending_clips = sorted(pending_video_clips, key=lambda item: int(item["clipIndex"]))
-            total_batches = max((((int(clip["clipIndex"]) - 1) // VIDEO_GENERATION_BATCH_SIZE) + 1) for clip in clips) if clips else 0
+            pending_anchor_clips = [clip for clip in ordered_pending_clips if str(clip.get("clipRole") or "") == "anchor_5s"]
+            pending_story_clips = [clip for clip in ordered_pending_clips if str(clip.get("clipRole") or "") != "anchor_5s"]
+            total_batches = (
+                ((len(pending_anchor_clips) + ANCHOR_VIDEO_BATCH_SIZE - 1) // ANCHOR_VIDEO_BATCH_SIZE)
+                + ((len(pending_story_clips) + MAIN_VIDEO_BATCH_SIZE - 1) // MAIN_VIDEO_BATCH_SIZE)
+            )
             completed_count = 0
 
             async def _persist_generated_video_result(result: VideoGenerationResult, clip: dict[str, Any]) -> None:
@@ -4217,8 +4484,11 @@ async def execute_storyboard(
                     "world_refs": list(result.world_refs),
                     "primary_world_ref": result.primary_world_ref,
                     "shot_index": result.shot_index,
+                    "clip_role": result.clip_role,
+                    "start_sec": result.start_sec,
+                    "duration_seconds": result.duration_seconds,
                 }
-                clip_start = (result.clip_index - 1) * CANONICAL_DURATION_SECONDS
+                clip_start = float(result.start_sec)
                 asset = create_video_asset(
                     file_id=generate_file_id(),
                     public_url=result.public_url,
@@ -4226,7 +4496,7 @@ async def execute_storyboard(
                     aspect_ratio=aspect_ratio,
                     mime_type=result.mime_type,
                     prompt=result.prompt,
-                    duration=CANONICAL_DURATION_SECONDS,
+                    duration=result.duration_seconds,
                     start_time=clip_start,
                     last_frame_url=result.last_frame_url,
                     reference_image_urls=result.reference_image_urls,
@@ -4239,6 +4509,9 @@ async def execute_storyboard(
                         "storyboardRunId": storyboard_run_id,
                         "scriptAssetId": f"script-seg-{storyboard_fp[:12]}-{result.clip_index:03d}",
                         "scriptClipIndex": result.clip_index,
+                        "clipRole": result.clip_role,
+                        "startSec": result.start_sec,
+                        "durationSeconds": result.duration_seconds,
                         "clipAttempt": result.clip_attempt,
                         "mode": result.mode,
                         "plannedMode": clip.get("mode"),
@@ -4316,12 +4589,6 @@ async def execute_storyboard(
                     return repr_message
                 return f"{task_error.__class__.__name__} raised without message"
 
-            batch_groups: dict[int, list[dict[str, Any]]] = {}
-            for clip in ordered_pending_clips:
-                clip_index = int(clip["clipIndex"])
-                batch_id = ((clip_index - 1) // VIDEO_GENERATION_BATCH_SIZE) + 1
-                batch_groups.setdefault(batch_id, []).append(clip)
-
             async def _record_video_failure(clip_index: int, failure_message: str) -> None:
                 video_failures.append(f"clip {clip_index}: {failure_message}")
                 await _persist_storyboard_resume_state(
@@ -4356,37 +4623,29 @@ async def execute_storyboard(
 
             batch_failed = False
             try:
-                for batch_id in sorted(batch_groups.keys()):
-                    clip_batch = sorted(batch_groups[batch_id], key=lambda item: int(item["clipIndex"]))
+                logical_batch_index = 0
+                phase_batches: list[tuple[str, int, list[dict[str, Any]]]] = []
+                for offset in range(0, len(pending_anchor_clips), ANCHOR_VIDEO_BATCH_SIZE):
+                    phase_batches.append(("anchors", ANCHOR_VIDEO_BATCH_SIZE, pending_anchor_clips[offset : offset + ANCHOR_VIDEO_BATCH_SIZE]))
+                for offset in range(0, len(pending_story_clips), MAIN_VIDEO_BATCH_SIZE):
+                    phase_batches.append(("story", MAIN_VIDEO_BATCH_SIZE, pending_story_clips[offset : offset + MAIN_VIDEO_BATCH_SIZE]))
+
+                for phase_name, _phase_batch_size, clip_batch in phase_batches:
+                    logical_batch_index += 1
+                    clip_batch = sorted(clip_batch, key=lambda item: int(item["clipIndex"]))
                     if not clip_batch:
                         continue
 
-                    if batch_id == 1:
-                        if any(int(clip["clipIndex"]) == 1 for clip in clip_batch):
-                            await _maybe_wait_for_video_gate(
-                                logical_batch_index=1,
-                                total_batches=total_batches,
-                                clip_batch=[clip_batch[0]],
-                                timeout_seconds=FIRST_VIDEO_GATE_TIMEOUT_SECONDS,
-                            )
-                        for clip in clip_batch:
-                            clip_index, clip_payload, result, task_error = await _run_video_clip_with_capture(clip)
-                            if task_error is not None:
-                                await _record_video_failure(clip_index, _format_video_failure_message(task_error))
-                                batch_failed = True
-                                break
-                            if result is None:
-                                await _record_video_failure(clip_index, "unknown video generation failure")
-                                batch_failed = True
-                                break
-                            await _commit_video_result(result, clip_payload)
-                        if batch_failed:
-                            break
-                        continue
-
-                    if batch_id == 2:
+                    if logical_batch_index == 1:
                         await _maybe_wait_for_video_gate(
-                            logical_batch_index=batch_id,
+                            logical_batch_index=1,
+                            total_batches=total_batches,
+                            clip_batch=clip_batch,
+                            timeout_seconds=FIRST_VIDEO_GATE_TIMEOUT_SECONDS,
+                        )
+                    elif phase_name == "story" and logical_batch_index == 1 + ((len(pending_anchor_clips) + ANCHOR_VIDEO_BATCH_SIZE - 1) // ANCHOR_VIDEO_BATCH_SIZE):
+                        await _maybe_wait_for_video_gate(
+                            logical_batch_index=logical_batch_index,
                             total_batches=total_batches,
                             clip_batch=clip_batch,
                             timeout_seconds=SECOND_BATCH_GATE_TIMEOUT_SECONDS,
@@ -4444,8 +4703,16 @@ async def execute_storyboard(
     )
     await _persist_storyboard_resume_state(status="completed", phase_name="finalize")
     await _emit_executor_progress("")
+    total_duration_seconds = (
+        max(
+            _safe_float(clip.get("startSec"), 0.0) + _safe_float(clip.get("durationSeconds"), CANONICAL_DURATION_SECONDS)
+            for clip in clips
+        )
+        if clips
+        else 0.0
+    )
     return (
         f"execute_storyboard completed: keyframes_planned={len(keyframe_plan)}, videos_planned={len(video_plan)}, "
         f"world_assets_available={len(world_video_refs_by_id)}, images_generated={len(generated_images)}, videos_generated={len(generated_videos)}, "
-        f"duration={CANONICAL_DURATION_SECONDS}, aspect_ratio={aspect_ratio}, memory_persisted=true"
+        f"duration={total_duration_seconds:g}, architecture=anchor_5s_story_15s, aspect_ratio={aspect_ratio}, memory_persisted=true"
     )
